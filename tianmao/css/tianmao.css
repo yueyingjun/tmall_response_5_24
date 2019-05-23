@@ -407,7 +407,7 @@ div.wdtb-x a {
 
 .ss-div div input {
     float: left;
-    width: 491px;
+    width: 610px;
     height: 36px;
     outline: none;
     border: none;
@@ -419,11 +419,11 @@ div.wdtb-x a {
     box-sizing: border-box;
     padding: 5px 3px 5px 5px;
 }
-@media screen and (min-width: 1200px) {
+/* @media screen and (min-width: 1200px) {
     .ss-div div input{
         width: 310px;
     }
-}
+} */
 
 .ss-div div button {
     float: left;
