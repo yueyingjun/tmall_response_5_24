@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>栅格化demo\css层叠样式</title>
+    <style>
+        .container{
+            width: 982px;
+            overflow: hidden;
+        }
+        .col-s-1{
+            width: 2.5%;
+        }
+        .col-s-2{
+            width: 5%;
+        }
+        .col-s-3{
+            width: 7.5%;
+        }
+        .col-s-4{
+            width: 10%;
+        }
+        .col-s-5{
+            width: 12.5%;
+        }
+        .col-s-6{
+            width: 15%;
+        }
+        .col-s-7{
+            width: 17.5%;
+        }
+        .col-s-8{
+            width: 20%;
+        }
+        .col-s-9{
+            width: 22.5%;
+        }
+        .col-s-10{
+            width: 25%;
+        }
+        .col-s-11{
+            width: 27.5%;
+        }
+        .col-s-12{
+            width: 30%;
+        }
+        .col-s-13{
+            width: 32.5%;
+        }
+        .col-s-14{
+            width: 35%;
+        }
+        .col-s-15{
+            width: 37.5%;
+        }
+        .col-s-16{
+            width: 40%;
+        }
+        .col-s-17{
+            width: 42.5%;
+        }
+        .col-s-18{
+            width: 44%;
+        }
+        .col-s-19{
+            width: 47.5%;
+        }
+        .col-s-20{
+            width: 50%;
+        }
+        .col-s-21{
+            width: 52.5%;
+        }
+        .col-s-22{
+            width: 55%;
+        }
+        .col-s-23{
+            width: 57.5%;
+        }
+        .col-s-24{
+            width: 60%;
+        }
+        .col-s-25{
+            width: 62.5%;
+        }
+        .col-s-26{
+            width: 65%;
+        }
+        .col-s-27{
+            width: 67.5%;
+        }
+        .col-s-28{
+            width: 70%;
+        }
+        .col-s-29{
+            width: 72.5%;
+        }
+        .col-s-30{
+            width: 75%;
+        }
+        .col-s-31{
+            width: 77.5%;
+        }
+        .col-s-32{
+            width: 80%;
+        }
+        .col-s-33{
+            width: 82.5%;
+        }
+        .col-s-34{
+            width: 85%;
+        }
+        .col-s-35{
+            width: 87.5%;
+        }
+        .col-s-36{
+            width: 90%;
+        }
+        .col-s-37{
+            width: 92.5%;
+        }
+        .col-s-38{
+            width: 95%;
+        }
+        .col-s-39{
+            width: 97.5%;
+        }
+        .col-s-40{
+            width: 100%;
+        }
+        @media screen and (min-width:1260px ){
+            .container{
+                width: 982px;
+            }
+            .col-l-1{
+                width: 2.5%;
+            }
+            .col-l-2{
+                width: 5%;
+            }
+            .col-l-3{
+                width: 7.5%;
+            }
+            .col-l-4{
+                width: 10%;
+            }
+            .col-l-5{
+                width: 12.5%;
+            }
+            .col-l-6{
+                width: 15%;
+            }
+            .col-l-7{
+                width: 17.5%;
+            }
+            .col-l-8{
+                width: 20%;
+            }
+            .col-l-9{
+                width: 22.5%;
+            }
+            .col-l-10{
+                width: 25%;
+            }
+            .col-l-11{
+                width: 27.5%;
+            }
+            .col-l-12{
+                width: 30%;
+            }
+            .col-l-13{
+                width: 32.5%;
+            }
+            .col-l-14{
+                width: 35%;
+            }
+            .col-l-15{
+                width: 37.5%;
+            }
+            .col-l-16{
+                width: 40%;
+            }
+            .col-l-17{
+                width: 42.5%;
+            }
+            .col-l-18{
+                width: 44%;
+            }
+            .col-l-19{
+                width: 47.5%;
+            }
+            .col-l-20{
+                width: 50%;
+            }
+            .col-l-21{
+                width: 52.5%;
+            }
+            .col-l-22{
+                width: 55%;
+            }
+            .col-l-23{
+                width: 57.5%;
+            }
+            .col-l-24{
+                width: 60%;
+            }
+            .col-l-25{
+                width: 62.5%;
+            }
+            .col-l-26{
+                width: 65%;
+            }
+            .col-l-27{
+                width: 67.5%;
+            }
+            .col-l-28{
+                width: 70%;
+            }
+            .col-l-29{
+                width: 72.5%;
+            }
+            .col-l-30{
+                width: 75%;
+            }
+            .col-l-31{
+                width: 77.5%;
+            }
+            .col-l-32{
+                width: 80%;
+            }
+            .col-l-33{
+                width: 82.5%;
+            }
+            .col-l-34{
+                width: 85%;
+            }
+            .col-l-35{
+                width: 87.5%;
+            }
+            .col-l-36{
+                width: 90%;
+            }
+            .col-l-37{
+                width: 92.5%;
+            }
+            .col-l-38{
+                width: 95%;
+            }
+            .col-l-39{
+                width: 97.5%;
+            }
+            .col-l-40{
+                width: 100%;
+            }
+
+        }
+    </style>
+
+</head>
+<script>
+
+    window.onload = function () {
+            /*具体内容*/
+            var xianshi = document.querySelectorAll(".xianshi")
+            /*菜单显示*/
+            var xian = document.querySelectorAll(".xian")
+
+            for (var i = 0;i<xian.length;i++) {
+                xian[i].index = i;
+                xian[i].onmouseenter=function () {
+                    for(var j=0;j<xianshi.length;j++){
+                        xianshi[j].style.display="block"
+                    }
+                    xianshi[this.index].style.display="none"
+                }
+
+            }
+            var banner = document.querySelectorAll(".banner")
+            var gan = document.querySelectorAll(".gan")
+            var num = 0
+            /*  s = document.querySelectorAll(".show");*/
+
+            setInterval(function () {
+
+                if (num == 6) {
+                    num = 0
+                }
+                for (var i = 0; i < banner.length; i++) {
+                    banner[i].style.display = "none"
+                    gan[i].style.background = "black"
+                }
+                banner[num].style.display = "block"
+                gan[num].style.background = "orange"
+                num++
+            }, 3000)
+
+            /*今日疯抢的轮播图*/
+            var b = document.querySelectorAll(".b");
+            var p = document.querySelectorAll(".p")
+            var a = document.querySelectorAll(".a")
+
+            var n=0
+            setInterval(function () {
+                if(n==2){
+                    n=0
+                }
+                for(var count=0;count<a.length;count++){
+                    b[count].style.background="darkgray"
+                    b[count].style.color="black"
+                    a[count].style.display="none"
+                    p[count].style.display="none"
+                }
+                console.log(n)
+                b[n].style.background="green"
+                b[n].style.color="white"
+                a[n].style.display="block"
+                p[n].style.display="block"
+                n++
+            },3000)
+            /*鼠标移动上去的时候的显示*/
+            for (var k = 0;k<b.length;k++) {
+                b[k].index = k;
+                b[k].onmouseenter=function () {
+                    for(var j=0;j<b.length;j++){
+                        b[j].style.background="darkgray"
+                        b[j].style.color="black"
+                        a[j].style.display="none"
+                        p[j].style.display="none"
+
+                    }
+                    a[this.index].style.display="block"
+                    p[this.index].style.display="block"
+                    b[this.index].style.background="green"
+                    b[this.index].style.color="white"
+
+                }
+
+            }
+
+
+            var min_height = 666
+
+            /*第一次刷新的时候，如果要是在规定的范围内，就要进行浮动*/
+            var ss = pageYOffset;
+            if(ss < min_height){
+                document.querySelector(".t-float").style.display="none"
+                document.querySelector(".left-nav").style.display="none"
+
+            }else{
+                document.querySelector(".t-float").style.display="block"
+                document.querySelector(".left-nav").style.display="block"
+            }
+            /*滚动*/
+            window.onscroll=function () {
+                var ss = pageYOffset;
+                if(ss < min_height){
+                    document.querySelector(".t-float").style.display="none"
+                    document.querySelector(".left-nav").style.display="none"
+
+                }else{
+                    document.querySelector(".t-float").style.display="block"
+                    document.querySelector(".left-nav").style.display="block"
+                }
+            }
+
+        }
+</script>
+<body>
+<!--最上面浮动的那一块地方-->
+<div class="t-float">
+    <img src="images/logo.png" alt="" height="50px" class="logo">
+    <div class="t-float-left">
+        <input type="text" placeholder="&nbsp;&nbsp;&nbsp;搜索 天猫 商品/品牌/店铺" value="" class="r ">
+        <span>搜索</span>
+    </div>
+</div>
+    <div class="container">
+
+    </div>
+</body>
+</html>
