@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>响应式联系</title>
+    <style>
+        /*
+        浏览器三大模块：
+        解析html、css模块   例如：webkit模块（谷歌内核，谷歌技术）
+        解析js              例如：v8引擎（谷歌的技术）
+        net               进行上网   http协议
+
+
+
+        */
+   /*   .wai{
+            width: 500px;
+            height: 100px;
+            margin: auto;
+            overflow: hidden;
+        }
+        .wai div{
+            height: 100px;
+            float: left;
+
+            width: 250px;
+            border: 1px solid rebeccapurple;
+            box-sizing: border-box;
+
+        }
+        !*!* html运行的媒介--屏幕
+
+        *!*!
+
+
+        @media screen and (min-width:750px ) {
+            .wai{
+                width: 750px;
+            }
+        }
+
+        @media screen and (min-width:1000px ){
+            .wai{
+                width:1000px ;
+            }
+        }*/
+    .wai{
+        height: 200px;
+        width: 600px;
+        box-sizing: border-box;
+        margin: auto;
+        overflow: hidden;
+        background: darkgray;
+
+    }
+    .left{
+        height: 100%;
+        box-sizing: border-box;
+        float: left;
+        background: rebeccapurple;
+    }
+    .left .one{
+        height: 50%;
+        background: yellow;
+        float: left;
+    }
+    .left .two{
+        height: 50%;
+        background: pink;
+        float: left;
+    }
+    .right{
+        background: darkgoldenrod;
+        height: 100%;
+        float: left;
+    }
+/*
+    @media screen and (min-width: 900px){
+        .wai{
+            width: 900px;
+        }
+        .wai .left{
+            width: 600px;
+        }
+
+    }
+    @media screen and (min-width: 1200px){
+        .wai{
+            width: 1200px;
+        }
+        .wai .left{
+            width: 900px;
+        }
+        .wai .two{
+            display: block;
+        }
+
+}*/
+     /*   .col-s-0{
+            width: 0%;
+        }
+        .col-s-1{
+            width: 8.333%;
+        }
+        .col-s-2{
+
+            width: 16.666%;
+        }
+        .col-s-3{
+            width: 25%
+        }
+        .col-s-4{
+            width: 33.333%;
+        }
+        .col-s-5{
+            width: 41.666%;
+        }
+        .col-s-6{
+            width: 50%;
+        }
+        .col-s-7{
+            width: 58.333%;
+        }
+        .col-s-8{
+            width: 66.666%
+        }
+
+        .col-s-9{
+            width: 75%;
+        }
+        .col-s-10{
+            width: 83.333%;
+        }
+        .col-s-11{
+            width: 91.666%;
+        }
+        .col-s-12{
+            width: 100%;
+        }*/
+
+      /*  @media screen and (min-width: 900px){
+            .col-m-0{
+                width: 0%;
+            }
+            .col-m-1{
+                width: 8.333%;
+            }
+            .col-m-2{
+
+                width: 16.666%;
+            }
+            .col-m-3{
+                width: 25%
+            }
+            .col-m-4{
+                width: 33.333%;
+            }
+            .col-m-5{
+                width: 41.666%;
+            }
+            .col-m-6{
+                width: 50%;
+            }
+            .col-m-7{
+                width: 58.333%;
+            }
+            .col-m-8{
+                width: 66.666%
+            }
+
+            .col-m-9{
+                width: 75%;
+            }
+            .col-m-10{
+                width: 83.333%;
+            }
+            .col-m-11{
+                width: 91.666%;
+            }
+            .col-m-12{
+                width: 100%;
+            }
+        }
+        @media screen and (min-width: 1200px){
+            .col-l-0{
+                width: 0%;
+            }
+            .col-l-1{
+                width: 8.333%;
+            }
+            .col-l-2{
+
+                width: 16.666%;
+            }
+            .col-l-3{
+                width: 25%
+            }
+            .col-l-4{
+                width: 33.333%;
+            }
+            .col-l-5{
+                width: 41.666%;
+            }
+            .col-l-6{
+                width: 50%;
+            }
+            .col-l-7{
+                width: 58.333%;
+            }
+            .col-l-8{
+                width: 66.666%
+            }
+
+            .col-l-9{
+                width: 75%;
+            }
+            .col-l-10{
+                width: 83.333%;
+            }
+            .col-l-11{
+                width: 91.666%;
+            }
+            .col-l-12{
+                width: 100%;
+            }
+
+        }*/
+
+        .lists{
+            width:1200px;
+            height: 600px;
+            overflow: hidden;
+            /*background-color: #b0291b;*/
+        }
+
+        .list-left{
+            width: 900px;
+            height: 600px;
+            float: left;
+            /*overflow: hidden;*/
+            /*float: left;background-color: #5f95b0;*/
+        }
+
+        .list-left-top{
+            width: 900px;
+            height: 300px;
+            float: top;/*background-color: #b07b89;*/
+        }
+
+        .list-left-top-2{
+            width: 300px;
+            height: 300px;/*display: block;*/
+            float: left;background-color: #2e4eb0;
+        }
+
+        .list-left-top-1{
+            width: 600px;
+            height: 300px;
+            float: left;background-color: #4db08b;
+        }
+
+        .list-left-bottom{
+            width: 900px;
+            height: 300px;
+            float: bottom;/*background-color: #70b044;*/
+            justify-content: space-between;
+        }
+
+        .list-left-bottom-1{
+            width: 300px;
+            height: 300px;/*display: block;*/
+            float: right;background-color: #b0882c;
+        }
+
+        .list-left-bottom-2{
+            width: 600px;
+            height: 300px;
+            float: right;background-color: #b0528e;
+        }
+
+        .list-right{
+            width: 300px;
+            height: 600px;
+            float: left;background-color: #1510b0;
+        }
+
+        @media screen and (min-width: 600px) {
+
+            .col-s-1 {
+                width: 8.333%;
+            }
+
+            .col-s-2 {
+
+                width: 16.666%;
+            }
+
+            .col-s-3 {
+                width: 25%
+            }
+
+            .col-s-4 {
+                width: 33.333%;
+            }
+
+            .col-s-5 {
+                width: 41.666%;
+            }
+
+            .col-s-6 {
+                width: 50%;
+            }
+
+            .col-s-7 {
+                width: 58.333%;
+            }
+
+            .col-s-8 {
+                width: 66.666%
+            }
+
+            .col-s-9 {
+                width: 75%;
+            }
+
+            .col-s-10 {
+                width: 83.333%;
+            }
+
+            .col-s-11 {
+                width: 91.666%;
+            }
+
+            .col-s-12 {
+                width: 100%;
+            }
+        }
+        @media screen and (min-width: 900px){
+
+            .col-m-0{
+                width: 0%;
+            }
+            .col-m-1{
+                width: 8.333%;
+            }
+            .col-m-2{
+
+                width: 16.666%;
+            }
+            .col-m-3{
+                width: 25%
+            }
+            .col-m-4{
+                width: 33.333%;
+            }
+            .col-m-5{
+                width: 41.666%;
+            }
+            .col-m-6{
+                width: 50%;
+            }
+            .col-m-7{
+                width: 58.333%;
+            }
+            .col-m-8{
+                width: 66.666%
+            }
+
+            .col-m-9{
+                width: 75%;
+            }
+            .col-m-10{
+                width: 83.333%;
+            }
+            .col-m-11{
+                width: 91.666%;
+            }
+            .col-m-12{
+                width: 100%;
+            }
+        }
+        @media screen and (min-width: 1200px){
+
+            .col-l-0{
+                width: 0%;
+            }
+            .col-l-1{
+                width: 8.333%;
+            }
+            .col-l-2{
+
+                width: 16.666%;
+            }
+            .col-l-3{
+                width: 25%
+            }
+            .col-l-4{
+                width: 33.333%;
+            }
+            .col-l-5{
+                width: 41.666%;
+            }
+            .col-l-6{
+                width: 50%;
+            }
+            .col-l-7{
+                width: 58.333%;
+            }
+            .col-l-8{
+                width: 66.666%
+            }
+
+            .col-l-9{
+                width: 75%;
+            }
+            .col-l-10{
+                width: 83.333%;
+            }
+            .col-l-11{
+                width: 91.666%;
+            }
+            .col-l-12{
+                width: 100%;
+            }
+
+        }
+
+        .lists{
+            width:1200px;
+            height: 600px;
+            overflow: hidden;
+            /*background-color: #b0291b;*/
+        }
+
+        .list-left{
+            width: 900px;
+            height: 600px;
+            float: left;
+            /*overflow: hidden;*/
+            /*float: left;background-color: #5f95b0;*/
+        }
+
+        .list-right{
+            width: 300px;
+            height: 600px;
+            float: left;background-color: #1510b0;
+        }
+
+        .list-left{
+            width: 900px;
+            height: 600px;
+            float: left;
+            overflow: hidden;
+            /*float: left;background-color: #5f95b0;*/
+        }
+
+        .list-right{
+            width: 300px;
+            height: 600px;
+            float: left;background-color: #1510b0;
+        }
+
+    div{
+        width: 750px;
+        height: 1434px;
+        background: rebeccapurple;
+    }
+    </style>
+</head>
+<body>
+<div>
+
+</div>
+<!--
+<div class="wai">
+    <div class="left col-s-12 col-m-8 col-l-9">
+        <div class="one col-s-12 col-m-12 col-l-8">左边1-1</div>
+        <div class="two col-s-0 col-m-0 col-l-4">左边1-2</div>
+        <div class="two  col-s-0 col-m-0 col-l-4">左边2-1</div>
+        <div class="one col-s-12 col-m-12 col-l-8">左边2-2</div>
+    </div>
+    <div class="right col-s-0 col-m-4 col-l-3">
+        右边
+    </div>
+
+</div>
+-->
+<!--<div class="lists col-s-12 col-m-12 col-l-12">
+    <div class="list-left col-s-12 col-m-8 col-l-9">
+        <div class="list-left-top-1 col-s-12 col-m-12 col-l-8">1</div>
+        <div class="list-left-top-2 col-l-4">2</div>
+        <div class="list-left-top-2 col-l-4">3</div>
+        <div class="list-left-top-1 col-s-12 col-m-12 col-l-8">4</div>
+
+
+    </div>
+    <div class="list-right col-m-4 col-l-3">5</div>
+</div>-->
+
+<!--<div class="wai">
+     <div>1</div>
+     <div>2</div>
+     <div>3</div>
+     <div>4</div>
+ </div>-->
+
+</body>
+</html>

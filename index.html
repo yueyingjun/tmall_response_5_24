@@ -1,0 +1,2068 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>天猫</title>
+</head>
+<link rel="stylesheet" href="css/index.css">
+<script>
+
+    window.onload = function () {
+        /*具体内容*/
+        var xianshi = document.querySelectorAll(".xianshi")
+        /*菜单显示*/
+        var xian = document.querySelectorAll(".xian")
+
+        for (var i = 0;i<xian.length;i++) {
+            xian[i].index = i;
+            xian[i].onmouseenter=function () {
+                for(var j=0;j<xianshi.length;j++){
+                    xianshi[j].style.display="block"
+                }
+                xianshi[this.index].style.display="none"
+            }
+
+        }
+        var banner = document.querySelectorAll(".banner")
+        var gan = document.querySelectorAll(".gan")
+        var num = 0
+        setInterval(function () {
+
+            if (num == 6) {
+                num = 0
+            }
+            for (var i = 0; i < banner.length; i++) {
+                banner[i].style.display = "none"
+                gan[i].style.background = "black"
+                }
+                banner[num].style.display = "block"
+                gan[num].style.background = "orange"
+                num++
+            }, 3000)
+
+        /*今日疯抢的轮播图*/
+        var b = document.querySelectorAll(".b");
+        var p = document.querySelectorAll(".p")
+        var a = document.querySelectorAll(".a")
+
+        var n=0
+        setInterval(function () {
+            if(n==2){
+                n=0
+            }
+            for(var count=0;count<a.length;count++){
+                b[count].style.background="darkgray"
+                b[count].style.color="black"
+                a[count].style.display="none"
+                p[count].style.display="none"
+            }
+            console.log(n)
+            b[n].style.background="green"
+            b[n].style.color="white"
+            a[n].style.display="block"
+            p[n].style.display="block"
+            n++
+        },3000)
+/*鼠标移动上去的时候的显示*/
+        for (var k = 0;k<b.length;k++) {
+            b[k].index = k;
+            b[k].onmouseenter=function () {
+                for(var j=0;j<b.length;j++){
+                    b[j].style.background="darkgray"
+                    b[j].style.color="black"
+                    a[j].style.display="none"
+                    p[j].style.display="none"
+
+                }
+                a[this.index].style.display="block"
+                p[this.index].style.display="block"
+                b[this.index].style.background="green"
+                b[this.index].style.color="white"
+
+            }
+
+        }
+
+
+        var min_height = 666
+
+        /*第一次刷新的时候，如果要是在规定的范围内，就要进行浮动*/
+        var ss = pageYOffset;
+        if(ss < min_height){
+            document.querySelector(".t-float").style.display="none"
+            document.querySelector(".left-nav").style.display="none"
+
+        }else{
+            document.querySelector(".t-float").style.display="block"
+            document.querySelector(".left-nav").style.display="block"
+        }
+        /*滚动*/
+        window.onscroll=function () {
+            var ss = pageYOffset;
+            if(ss < min_height){
+                document.querySelector(".t-float").style.display="none"
+                document.querySelector(".left-nav").style.display="none"
+
+            }else{
+                document.querySelector(".t-float").style.display="block"
+                document.querySelector(".left-nav").style.display="block"
+            }
+        }
+
+    }
+</script>
+<body>
+<!--最上面浮动的那一块地方-->
+
+
+ <div class="t-float">
+         <img src="images/logo.png" alt="" height="50px" class="logo">
+             <div class="t-float-left">
+                 <input type="text" placeholder="&nbsp;&nbsp;&nbsp;搜索 天猫 商品/品牌/店铺" value="" class="r ">
+                 <span>搜索</span>
+             </div>
+ </div>
+
+<!--最左边导航的那一部分 36 332-->
+<div class="left-nav">
+    <div class="color">导航</div>
+    <div class="color">天猫超市</div>
+    <div class="color">天猫国际</div>
+    <div class="color">美丽人生</div>
+    <div class="color">潮电酷玩</div>
+    <div class="color">居家生活</div>
+    <div class="color">打造爱巢</div>
+    <div class="color">户外出行</div>
+    <div class="color">猜你喜欢</div>
+
+</div>
+    <!--头部登录信息-->
+    <div class="top">
+        <div class="top-left">
+            &nbsp;&nbsp;&nbsp;&nbsp;喵，欢迎来天猫
+            <a href="">请登录</a>
+            <a href="">免费注册</a>
+        </div>
+        <div class="top-right">
+           <a href="" class="hong" >我的淘宝
+            <div class="sanjiao"></div>
+           </a>
+           <a href="" class="huang" >
+               <div class="cart"></div>
+               购物车0件</a>
+           <a href=""  class="hong" >收藏夹
+              <div class="sanjiao"></div></a>
+           <a href="" class="huang" >
+               <div class="phone"></div>
+               手机版</a>
+           <a href="" class="huang" >淘宝网</a>
+           <a href=""  class="hong" >商家支持
+               <div class="sanjiao"></div></a>
+           <a href=""  class="hong" id="meile">
+               网站导航
+               <div class="sanjiao"></div></a>
+        </div>
+    </div>
+<!--搜索框-->
+ 
+
+    <div class="san">
+        <img src="images/logo.png" alt="" height="130px" class="logo">
+        <div class="search">
+            <div class="search-top">
+                <input type="text" placeholder="&nbsp;&nbsp;&nbsp;搜索 天猫 商品/品牌/店铺" value="" class="r">
+                <input type="button" value="搜索" class="s">
+            </div>
+            <div class="search-bottom" >
+                <a href="">针织衫</a>|
+                <a href="" class="hs">连衣裙</a>|
+                <a href="">四件套</a>|
+                <a href=""  class="hs">摄像头</a>|
+                <a href="">客厅灯</a>|
+                <a href="">口红</a>|
+                <a href=""  class="hs">手机</a>|
+                <a href="">运动鞋</a>|
+                <a href="" class="hs">牛奶</a>
+            </div>
+        </div>
+    </div>
+    <!--轮番图上面的一个菜单-->
+ 
+    <div class="daohang">
+        <!--商品分类  天猫520活动-->
+        <div class="fen xian">商品分类</div>
+        <div class="huo xian">天猫520活动</div>
+        <img src="images/tl1.png" height="40px">
+        <img src="images/tl2.png" height="40px">
+        <div class="lian">
+            <a href="">天猫会员</a>
+            <a href="">电器城</a>
+            <a href="">喵鲜生</a>
+            <a href="">医药馆</a>
+            <a href="">营业厅</a>
+            <a href="">魅力惠</a>
+            <a href="">飞猪旅行</a>
+            <a href="" class="meile">苏宁易购</a>
+        </div>
+
+    </div>
+   <!--轮番图整个的部分-->
+        <div class="shangpin">
+            <!--左边透明的部分-->
+            <div class="shangpin-left">
+                <div class="shangpin-left-left xianshi">
+                    <a href="">女装/内衣</a>
+                    <a href="">男装/运动户外</a>
+                    <a href="">女鞋/男鞋/箱包</a>
+                    <a href="">美妆/个人护理</a>
+                    <a href="">腕表/眼镜/珠宝饰品</a>
+                    <a href="">手机/数码/电脑办公</a>
+                    <a href="">母婴玩具</a>
+                    <a href="">零食/茶酒/进口食品</a>
+                    <a href="">生鲜水果</a>
+                    <a href="">大家电/生活电器</a>
+                    <a href="">家具建材</a>
+                    <a href="">汽车/配件/用品</a>
+                    <a href="">家纺/家饰/鲜花</a>
+                    <a href="">医药保健</a>
+                    <a href="">厨具/收纳/宠物</a>
+                    <a href="">图书音像</a>
+                </div>
+
+                <!--天猫520活动-->
+                <div class="shangpin-left-right xianshi">
+                    <a href="">大牌女装</a>
+                    <a href="">家纺家饰</a>
+                    <a href="">运动户外</a>
+                    <a href="">型格男装</a>
+                    <a href="">大牌美妆</a>
+                    <a href="">纸品家清</a>
+                    <a href="">潮流个户</a>
+                    <a href="">大家电</a>
+                    <a href="">手机会场</a>
+                    <a href="">精品家具</a>
+
+                </div>
+
+            </div>
+            <!--轮播图 -->
+            <div class="banners">
+                <div class="banner banner1">
+                    <div class="q meile">
+                        <img src="images/q.webp" height="200px" width="200px">
+                    </div>
+                    <div class="q1 meile">
+                        <img src="images/q2.webp" width="200px" height="200px">
+                    </div>
+                </div>
+                <div class="banner banner2"></div>
+                <div class="banner banner3">
+                    <div class="xie meile">
+                        <img src="images/xie.webp" height="200px" width="200px">
+                    </div>
+                    <div class="chi meile">
+                        <img src="images/chi.webp" width="200px" height="200px">
+                    </div>
+                </div>
+                <div class="banner banner4"></div>
+                <div class="banner banner5">
+                    <div class="yao meile">
+                        <img src="images/yao.webp" height="200px" width="200px">
+                    </div>
+                    <div class="yi meile">
+                        <img src="images/yi.webp" width="200px" height="200px">
+                    </div>
+                </div>
+                <div class="banner banner6"></div>
+                <div class="gan gan1"></div>
+                <div class="gan gan2"></div>
+                <div class="gan gan3"></div>
+                <div class="gan gan4"></div>
+                <div class="gan gan5"></div>
+                <div class="gan gan6"></div>
+            </div>
+        </div>
+
+<div class="pjp">
+        <div class="shangou meile">
+            <div class="shangou-top " >
+                品牌闪购&nbsp;&nbsp;&nbsp;BRAND SALE
+                <img src="images/gengduo.png" alt="更多" width="20px">
+            </div>
+            <div  class="shangou-bottom">
+                <div class="bai"></div>
+            </div>
+        </div>
+
+        <div class="mingpin col-l-5">
+            <div class="mingpin-top">
+                聚名品&nbsp;&nbsp;&nbsp;LUXURY CHANNEL
+                <img src="images/gengduo.png" alt="更多" width="20px">
+            </div>
+            <div  class="mingpin-bottom col-l-12">
+                <div class="bai col-l-12"></div>
+            </div>
+        </div>
+
+        <div class="liangxi col-l-5">
+            <div class="liangxi-top">
+                品牌活动&nbsp;&nbsp;&nbsp;BRAND ACTIVITY
+                <img src="images/gengduo.png" alt="更多" width="20px">
+            </div>
+            <div  class="liangxi-bottom col-l-12">
+                <div class="bai col-l-12"></div>
+            </div>
+        </div>
+    </div>
+
+<!--一堆小图标的那一块-->
+ 
+    <div class="pinpai-tu">
+        <div class="row">
+            <div class="img diyi col-b-1"><div class="zizi"><p>优惠券</p><span>点击进入</span></div><img src="images/a27.png" alt="" ></div>
+            <div class="img diyi col-b-1"><div class="zizi"><p>优惠券</p><span>点击进入</span></div> <img src="images/a27.png" alt=""></div>
+            <div class="img diyi col-b-1"><div class="zizi"><p>优惠券</p><span>点击进入</span></div> <img src="images/a27.png" alt=""></div>
+            <div class="img diyi col-b-1"><div class="zizi"><p>优惠券</p><span>点击进入</span></div> <img src="images/a27.png" alt=""></div>
+            <div class="img diyi col-b-1"><div class="zizi"><p>优惠券</p><span>点击进入</span></div> <img src="images/a27.png" alt=""></div>
+            <div class="img diyi v"><div class="zizi"><p>优惠券</p><span>点击进入</span></div> <img src="images/a27.png" alt=""></div>
+            <div class="img diyi col-b-1"><div class="zizi"><p>优惠券</p><span>点击进入</span></div> <img src="images/a27.png" alt=""></div>
+            <div class="img diyi col-b-1"><div class="zizi"><p>优惠券</p><span>点击进入</span></div> <img src="images/a27.png" alt=""></div>
+            <div class="img diyi col-b-1"><div class="zizi"><p>优惠券</p><span>点击进入</span></div> <img src="images/a27.png" alt=""></div>
+            <div class="img diyi zuihou col-b-1"><div class="zizi"><p>优惠券</p><span>点击进入</span></div><img src="images/a27.png" alt=""></div>
+        </div>
+
+
+       <div class="row">
+           <div class="img col-b-1"><div class="zizi"><p>优惠券</p><span>点击进入</span></div><img src="images/a27.png" alt=""></div>
+           <div class="img col-b-1"><div class="zizi"><p>优惠券</p><span>点击进入</span></div><img src="images/a27.png" alt=""></div>
+           <div class="img col-b-1"><div class="zizi"><p>优惠券</p><span>点击进入</span></div><img src="images/a27.png" alt=""></div>
+           <div class="img col-b-1"><div class="zizi"><p>优惠券</p><span>点击进入</span></div><img src="images/a27.png" alt=""></div>
+           <div class="img col-b-1"><div class="zizi"><p>优惠券</p><span>点击进入</span></div><img src="images/a27.png" alt=""></div>
+           <div class="img col-b-1"><div class="zizi"><p>优惠券</p><span>点击进入</span></div><img src="images/a27.png" alt=""></div>
+           <div class="img col-b-1"><div class="zizi"><p>优惠券</p><span>点击进入</span></div><img src="images/a27.png" alt=""></div>
+           <div class="img col-b-1"><div class="zizi"><p>优惠券</p><span>点击进入</span></div><img src="images/a27.png" alt=""></div>
+           <div class="img col-b-1"><div class="zizi"><p>优惠券</p><span>点击进入</span></div><img src="images/a27.png" alt=""></div>
+
+           <div class="img zuihou col-b-1"><div class="zizi"><p>优惠券</p><span>点击进入</span></div> <img src="images/a27.png" alt=""></div>
+       </div>
+
+         <div class="row">
+             <div class="img col-b-1"><div class="zizi"><p>优惠券</p><span>点击进入</span></div> <img src="images/a27.png" alt=""></div>
+             <div class="img col-b-1"><div class="zizi"><p>优惠券</p><span>点击进入</span></div> <img src="images/a27.png" alt=""></div>
+             <div class="img col-b-1"><div class="zizi"><p>优惠券</p><span>点击进入</span></div> <img src="images/a27.png" alt=""></div>
+             <div class="img col-b-1"><div class="zizi"><p>优惠券</p><span>点击进入</span></div> <img src="images/a27.png" alt=""></div>
+             <div class="img col-b-1"><div class="zizi"><p>优惠券</p><span>点击进入</span></div> <img src="images/a27.png" alt=""></div>
+             <div class="img col-b-1"><div class="zizi"><p>优惠券</p><span>点击进入</span></div> <img src="images/a27.png" alt=""></div>
+             <div class="img col-b-1"><div class="zizi"><p>优惠券</p><span>点击进入</span></div> <img src="images/a27.png" alt=""></div>
+             <div class="img col-b-1"><div class="zizi"><p>优惠券</p><span>点击进入</span></div> <img src="images/a27.png" alt=""></div>
+             <div class="img col-b-1"><div class="zizi"><p>优惠券</p><span>点击进入</span></div> <img src="images/a27.png" alt=""></div>
+
+             <div class="img zuihou col-b-1"> <div class="zizi"><p>优惠券</p><span>点击进入</span></div><img src="images/a27.png" alt=""></div>
+         </div>
+    </div>
+<!--天猫超市那一块嗝拉拉里面的内容-->
+ 
+<div class="chaoshi">
+        <img src="images/tianmaochaoshi.png" alt="">
+        <div class="chaoshi-right">
+            <a href="">进口食品</a>
+            <a href="">食品饮料</a>
+            <a href="">粮油副食</a>
+            <a href="">美容洗护</a>
+            <a href="">家居家电</a>
+            <a href="">家庭清洁</a>
+            <a href="">母婴用品</a>
+            <a href="">生鲜水果</a>
+        </div>
+    </div>
+
+<!--天猫超市下面   超市商品-->
+ 
+    <div class="cssp">
+        <!-- 左边巴旦木那里-->
+            <div class="cssp-left">
+                <div class="bai">
+                     <div class="gengduo"></div>
+                </div>
+        <!--两个文字部分-->
+            <div class="cssp-bot">
+                <div class="cssp-left-bot-left">
+                    天猫超市
+                </div>
+                <div class="cssp-left-bot-right">
+                    零食欢乐购 <br>爆款直降
+                </div>
+            </div>
+
+        </div>
+        <!--右边所有的-->
+        <div class="cssp-right">
+            <!--今日疯抢  凉拌装-->
+            <div class="jl">
+                <div class="nei">
+                    <div class="jl-top">
+                        <div class="b b1">
+                            今日疯抢
+                        </div>
+                        <div class="b b2">
+                            量版装
+                        </div>
+                    </div>
+
+                    <!--上面的文字-->
+
+                    <div class="jl-bot">
+                        <div class="tu1 a">
+
+                        </div>
+                        <div class="tu2 a">
+
+                        </div>
+                    </div>
+                    <div class="jl-piao">
+                        <div class="p1 p">
+                            <img src="images/rili.png" alt="" height="20px">
+                            粮油调味
+                            <p>爆款直降</p>
+                        </div>
+                        <div class="p2 p">
+                            <img src="images/rili.png" alt="" height="20px">
+                            ABC卫生巾
+                            <p>抢第二件0元</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <!--商品部分块的内容-->
+            <div class="shop col-l-3">
+                <!--图片-->
+                <div class="shop-tu ">
+                    <div class="bai"></div>
+                </div>
+                <!--商品描述  价格-->
+                <div class="shop-jia">
+                    <p>三利毛巾纯棉 洗脸 家用 纱布大毛巾成人情</p>
+                    ￥12.9
+                </div>
+            </div>
+
+            <!--商品部分块的内容-->
+            <div class="shop col-l-3">
+                <!--图片-->
+                <div class="shop-tu1">
+                    <div class="bai"></div>
+                </div>
+                <!--商品描述  价格-->
+                <div class="shop-jia">
+                    <p>十月结晶受乳清清洁棉 乳房清洁棉高压消毒</p>
+                    ￥29.9
+                </div>
+            </div>
+            <!--商品部分块的内容-->
+            <div class="shop col-l-3">
+                <!--图片-->
+                <div class="shop-tu2">
+                    <div class="bai"></div>
+                </div>
+                <!--商品描述  价格-->
+                <div class="shop-jia">
+                    <p>枪手 无烟大盘蚊香 无香40单盘燃烧稳定 盘香</p>
+                    ￥13.4
+                </div>
+            </div>
+
+            <!--商品部分块的内容-->
+            <div class="shop col-l-3">
+                <!--图片-->
+                <div class="shop-tu3">
+                    <div class="bai"></div>
+                </div>
+                <!--商品描述  价格-->
+                <div class="shop-jia">
+                    <p>Joyoung/九阳 电压力锅双胆智能</p>
+                    ￥299
+                </div>
+            </div>
+
+            <!--商品部分块的内容-->
+            <div class="shop col-l-3">
+                <!--图片-->
+                <div class="shop-tu4">
+                    <div class="bai"></div>
+                </div>
+                <!--商品描述  价格-->
+                <div class="shop-jia">
+                    <p>鹰唛精炼一级大豆油5L</p>
+                    ￥33.8
+                </div>
+            </div>
+
+            <!--商品部分块的内容-->
+            <div class="shop">
+                <!--图片-->
+                <div class="shop-tu5">
+                    <div class="bai"></div>
+                </div>
+                <!--商品描述  价格-->
+                <div class="shop-jia">
+                    <p>南孚电池5号电池碱性五号电池8粒装</p>
+                    ￥16.9
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!--天猫国际那一块嗝拉拉里面的内容-->
+ 
+<div class="chaoshi">
+        <img src="images/tianmaoguoji.png" alt="">
+        <div class="chaoshi-right">
+            <a href="">口红</a>
+            <a href="">YSL</a>
+            <a href="">面膜</a>
+            <a href="">防晒</a>
+            <a href="">迪奥</a>
+        </div>
+    </div>
+<!--天猫国际中的一些商品-->
+ 
+    <div class="guoji">
+        <div class="cssp-left">
+            <div class="bai">
+                <div class="gengduo"></div>
+            </div>
+            <!--两个文字部分-->
+            <div class="cssp-bot">
+                <div class="cssp-left-bot-left">
+                    进口精选
+                </div>
+                <div class="cssp-left-bot-right">
+                    大牌好货 <br>轻松购入
+                </div>
+            </div>
+        </div>
+
+        <!--商品部分块的内容-->
+        <div class="cssp-right">
+        <div class="shop col-l-3">
+            <!--图片-->
+            <div class="shop-tu6 ">
+                <div class="bai">
+                    <span class="guanfang">
+                        官方直营优选
+                    </span>
+                    <span class="jizhi">
+                        极致购物感受
+                    </span>
+                </div>
+            </div>
+
+        </div>
+
+        <!--商品部分块的内容-->
+        <div class="shop col-l-3">
+            <!--图片-->
+            <div class="shop-tu7">
+                <div class="bai"></div>
+            </div>
+            <!--商品描述  价格-->
+            <div class="shop-jia">
+                <p>澳洲bioisland进口孕妇专用 60粒</p>
+                ￥139
+            </div>
+        </div>
+
+        <!--商品部分块的内容-->
+        <div class="shop col-l-3">
+            <!--图片-->
+            <div class="shop-tu8">
+                <div class="bai"></div>
+            </div>
+            <!--商品描述  价格-->
+            <div class="shop-jia">
+                <p>涂抹面膜泥补水保湿修复美白蓝白组合40片</p>
+                ￥188
+            </div>
+        </div>
+
+        <!--商品部分块的内容-->
+        <div class="shop col-l-3">
+            <!--图片-->
+            <div class="shop-tu9">
+                <div class="bai"></div>
+            </div>
+            <!--商品描述  价格-->
+            <div class="shop-jia">
+                <p>Diesel迪赛 叁仟良品 潮男  00ST5I 0NAVL</p>
+                ￥277
+            </div>
+        </div>
+        </div>
+
+    </div>
+<!--天猫直营2-->
+ 
+<div class="guoji2">
+        <div class="cssp-left">
+            <div class="bai">
+                <div class="gengduo"></div>
+            </div>
+            <!--两个文字部分-->
+            <div class="cssp-bot">
+                <div class="cssp-left-bot-left">
+                    直营品质
+                </div>
+                <div class="cssp-left-bot-right">
+                    放心体验 <br>畅享全球
+                </div>
+            </div>
+        </div>
+
+        <!--商品部分块的内容-->
+        <div class="cssp-right">
+        <div class="shop col-l-3">
+            <!--图片-->
+            <div class="shop-tu10">
+                <div class="bai"></div>
+            </div>
+            <!--商品描述  价格-->
+            <div class="shop-jia">
+                <p>保税日本资生堂AQUALABEL水之印 </p>
+                ￥85
+            </div>
+        </div>
+
+        <!--商品部分块的内容-->
+        <div class="shop col-l-3">
+            <!--图片-->
+            <div class="shop-tu11">
+                <div class="bai"></div>
+            </div>
+            <!--商品描述  价格-->
+            <div class="shop-jia">
+                <p>AVI8真皮原装通用均码B表链AVI－8 4050</p>
+                ￥259
+            </div>
+        </div>
+
+        <!--商品部分块的内容-->
+        <div class="shop col-l-3">
+            <!--图片-->
+            <div class="shop-tu12">
+                <div class="bai"></div>
+            </div>
+            <!--商品描述  价格-->
+            <div class="shop-jia">
+                <p>李维斯宽松直筒牛仔裤中腰潮流长裤秋冬款</p>
+                ￥458
+            </div>
+        </div>
+
+        <!--商品部分块的内容-->
+        <div class="shop col-l-3">
+            <!--图片-->
+            <div class="shop-tu13">
+                <div class="bai"></div>
+            </div>
+            <!--商品描述  价格-->
+            <div class="shop-jia">
+                <p>【会员专享】LACHESCA高保湿洁面</p>
+                ￥99
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!--划算-->
+    <div class="huasuan">
+        <img src="images/huasuan.jpg" alt="" width="1232px" height="90px">
+    </div>
+<!--美丽人生-->
+    <div class="meili">
+        <img src="images/shugang.png" alt="">
+        美丽人生 FANSHION & BEAUTY
+    </div>
+<!--美丽人生的小姐姐-->
+     
+    <div class="cssp">
+        <!-- 左边小姐姐-->
+        <div class="cssp-left3">
+            <div class="bai">
+                <div class="gengduo"></div>
+            </div>
+            <!--两个文字部分-->
+            <div class="cssp-bot">
+                <div class="cssp-left-bot-left">
+                    焕新换型
+                </div>
+                <div class="cssp-left-bot-right">
+                    时尚女装 <br>优雅而知性
+                </div>
+            </div>
+
+        </div>
+        <!--右边所有的-->
+        <div class="cssp-right">
+            <!--今日疯抢  凉拌装-->
+            <!--商品部分块的内容-->
+            <div class="shop">
+                <!--图片-->
+                <div class="shop-tu14">
+                    <div class="bai"></div>
+                </div>
+                <!--商品描述  价格-->
+                <div class="shop-jia">
+                    <p>adidas阿迪达斯2019年新款男子EEZAY FLIP </p>
+                    ￥131
+                </div>
+            </div>
+            <!--商品部分块的内容-->
+            <div class="shop">
+                <!--图片-->
+                <div class="shop-tu15">
+                    <div class="bai"></div>
+                </div>
+                <!--商品描述  价格-->
+                <div class="shop-jia">
+                    <p>花花公子短袖衬衫男中老年格子衬衣夏</p>
+                    ￥139
+                </div>
+            </div>
+
+            <!--商品部分块的内容-->
+            <div class="shop">
+                <!--图片-->
+                <div class="shop-tu16">
+                    <div class="bai"></div>
+                </div>
+                <!--商品描述  价格-->
+                <div class="shop-jia">
+                    <p>美丽加芬美丽加芬透明质酸化妆水200ml</p>
+                    ￥39
+                </div>
+            </div>
+            <!--商品部分块的内容-->
+            <div class="shop">
+                <!--图片-->
+                <div class="shop-tu17">
+                    <div class="bai"></div>
+                </div>
+                <!--商品描述  价格-->
+                <div class="shop-jia">
+                    <p>壹 925纯银项链女学生森系锁骨链日韩创意</p>
+                    ￥59
+                </div>
+            </div>
+
+            <!--商品部分块的内容-->
+            <div class="shop">
+                <!--图片-->
+                <div class="shop-tu21">
+                    <div class="bai"></div>
+                </div>
+                <!--商品描述  价格-->
+                <div class="shop-jia">
+                    <p>包包女2019新款法国小众洋水桶包时尚</p>
+                    ￥139
+                </div>
+            </div>
+
+            <!--商品部分块的内容-->
+            <div class="shop">
+                <!--图片-->
+                <div class="shop-tu18">
+                    <div class="bai"></div>
+                </div>
+                <!--商品描述  价格-->
+                <div class="shop-jia">
+                    <p>Dickies男鞋迪克斯男士休闲鞋韩版百布</p>
+                    ￥329
+                </div>
+            </div>
+
+            <!--商品部分块的内容-->
+            <div class="shop">
+                <!--图片-->
+                <div class="shop-tu19">
+                    <div class="bai"></div>
+                </div>
+                <!--商品描述  价格-->
+                <div class="shop-jia">
+                    <p>达芙妮旗下/杜拉拉女鞋夏季夹趾甜美少女</p>
+                    ￥59.9
+                </div>
+            </div>
+
+            <!--商品部分块的内容-->
+            <div class="shop">
+                <!--图片-->
+                <div class="shop-tu20">
+                    <div class="bai"></div>
+                </div>
+                <!--商品描述  价格-->
+                <div class="shop-jia">
+                    <p>手表带真皮硅胶防水橡胶男代用万国 天梭 </p>
+                    ￥138
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--潮点酷玩-->
+     
+    <div class="kuwan">
+        <img src="images/shugang.png" alt="">
+        潮电酷玩 ELECTRONICS
+    </div>
+
+    <div class="cssp">
+        <!-- 左边小姐姐-->
+        <div class="cssp-left4">
+            <div class="bai">
+                <div class="gengduo"></div>
+            </div>
+            <!--两个文字部分-->
+            <div class="cssp-bot">
+                <div class="cssp-left-bot-left">
+                    明星同款
+                </div>
+                <div class="cssp-left-bot-right">
+                    畅享音乐 <br>耳机发烧友
+                </div>
+            </div>
+
+        </div>
+        <!--右边所有的-->
+        <div class="cssp-right">
+            <!--今日疯抢  凉拌装-->
+            <!--商品部分块的内容-->
+            <div class="shop col-l-3">
+                <!--图片-->
+                <div class="shop-tu22">
+                    <div class="bai"></div>
+                </div>
+                <!--商品描述  价格-->
+                <div class="shop-jia">
+                    <p>先科 6A广场舞音箱带显示屏幕 </p>
+                    ￥378
+                </div>
+            </div>
+            <!--商品部分块的内容-->
+            <div class="shop col-l-3">
+                <!--图片-->
+                <div class="shop-tu23">
+                    <div class="bai"></div>
+                </div>
+                <!--商品描述  价格-->
+                <div class="shop-jia">
+                    <p>飞利浦毛球修剪器GC027剃毛球器衣式</p>
+                    ￥119
+                </div>
+            </div>
+
+            <!--商品部分块的内容-->
+            <div class="shop col-l-3">
+                <!--图片-->
+                <div class="shop-tu24">
+                    <div class="bai"></div>
+                </div>
+                <!--商品描述  价格-->
+                <div class="shop-jia">
+                    <p>朗科128g内存卡手机tf卡行车记录仪</p>
+                    ￥119
+                </div>
+            </div>
+            <!--商品部分块的内容-->
+            <div class="shop col-l-3">
+                <!--图片-->
+                <div class="shop-tu25">
+                    <div class="bai"></div>
+                </div>
+                <!--商品描述  价格-->
+                <div class="shop-jia">
+                    <p>影巨人蓝牙耳机无线运动跑步双耳耳塞式适</p>
+                    ￥99
+                </div>
+            </div>
+
+            <!--商品部分块的内容-->
+            <div class="shop col-l-3">
+                <!--图片-->
+                <div class="shop-tu26">
+                    <div class="bai"></div>
+                </div>
+                <!--商品描述  价格-->
+                <div class="shop-jia">
+                    <p>艾美特塔扇电风扇无遥控落地扇静音无</p>
+                    ￥269
+                </div>
+            </div>
+
+            <!--商品部分块的内容-->
+            <div class="shop col-l-3">
+                <!--图片-->
+                <div class="shop-tu27">
+                    <div class="bai"></div>
+                </div>
+                <!--商品描述  价格-->
+                <div class="shop-jia">
+                    <p>嘿哟音乐  Beyond《最佳现场》12寸</p>
+                    ￥299
+                </div>
+            </div>
+
+            <!--商品部分块的内容-->
+            <div class="shop col-l-3">
+                <!--图片-->
+                <div class="shop-tu28">
+                    <div class="bai"></div>
+                </div>
+                <!--商品描述  价格-->
+                <div class="shop-jia">
+                    <p>HP/惠普Envy系列可充电鼠标500 玫瑰金</p>
+                    ￥159
+                </div>
+            </div>
+
+            <!--商品部分块的内容-->
+            <div class="shop col-l-3">
+                <!--图片-->
+                <div class="shop-tu29">
+                    <div class="bai"></div>
+                </div>
+                <!--商品描述  价格-->
+                <div class="shop-jia">
+                    <p>【大派送】海尔无线吸尘器ZB1208B原</p>
+                    ￥199
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--划算-->
+     
+    <div class="huasuan">
+        <img src="images/huasuan.jpg" alt="" width="1232px" height="90px">
+    </div>
+    <!--居家生活-->
+     
+
+    <div class="jujia">
+        <img src="images/shugang.png" alt="">
+        居家生活 GROCERY & HEALTH
+    </div>
+
+
+    <div class="cssp">
+        <!-- 居家-->
+        <div class="cssp-left5">
+            <div class="bai">
+                <div class="gengduo"></div>
+            </div>
+            <!--两个文字部分-->
+            <div class="cssp-bot">
+                <div class="cssp-left-bot-left">
+                    美家
+                </div>
+                <div class="cssp-left-bot-right">
+                    家饰尚品 <br>清新居家
+                </div>
+            </div>
+
+        </div>
+        <!--右边所有的-->
+        <div class="cssp-right">
+            <!--今日疯抢  凉拌装-->
+            <!--商品部分块的内容-->
+            <div class="shop">
+                <!--图片-->
+                <div class="shop-tu30">
+                    <div class="bai"></div>
+                </div>
+                <!--商品描述  价格-->
+                <div class="shop-jia">
+                    <p>洋酒 格拉夫红牌和拉莫尼朗姆酒组合套餐 </p>
+                    ￥100
+                </div>
+            </div>
+            <!--商品部分块的内容-->
+            <div class="shop">
+                <!--图片-->
+                <div class="shop-tu31">
+                    <div class="bai"></div>
+                </div>
+                <!--商品描述  价格-->
+                <div class="shop-jia">
+                    <p>武汉辣鸭脖</p>
+                    ￥21.8
+                </div>
+            </div>
+
+            <!--商品部分块的内容-->
+            <div class="shop">
+                <!--图片-->
+                <div class="shop-tu32">
+                    <div class="bai"></div>
+                </div>
+                <!--商品描述  价格-->
+                <div class="shop-jia">
+                    <p>汤臣倍健</p>
+                    ￥98
+                </div>
+            </div>
+            <!--商品部分块的内容-->
+            <div class="shop">
+                <!--图片-->
+                <div class="shop-tu33">
+                    <div class="bai"></div>
+                </div>
+                <!--商品描述  价格-->
+                <div class="shop-jia">
+                    <p>儿童积木</p>
+                    ￥29
+                </div>
+            </div>
+
+            <!--商品部分块的内容-->
+            <div class="shop">
+                <!--图片-->
+                <div class="shop-tu34">
+                    <div class="bai"></div>
+                </div>
+                <!--商品描述  价格-->
+                <div class="shop-jia">
+                    <p>四川特产  酸奶</p>
+                    ￥29.8
+                </div>
+            </div>
+
+            <!--商品部分块的内容-->
+            <div class="shop">
+                <!--图片-->
+                <div class="shop-tu35">
+                    <div class="bai"></div>
+                </div>
+                <!--商品描述  价格-->
+                <div class="shop-jia">
+                    <p>喔喔奶糖</p>
+                    ￥21.8
+                </div>
+            </div>
+
+            <!--商品部分块的内容-->
+            <div class="shop">
+                <!--图片-->
+                <div class="shop-tu36">
+                    <div class="bai"></div>
+                </div>
+                <!--商品描述  价格-->
+                <div class="shop-jia">
+                    <p>四级英语单词</p>
+                    ￥16
+                </div>
+            </div>
+
+            <!--商品部分块的内容-->
+            <div class="shop">
+                <!--图片-->
+                <div class="shop-tu37">
+                    <div class="bai"></div>
+                </div>
+                <!--商品描述  价格-->
+                <div class="shop-jia">
+                    <p>奶茶空</p>
+                    ￥39
+                </div>
+            </div>
+        </div>
+    </div>
+<!--打造爱巢-->
+     
+
+    <div class="aichao">
+        <img src="images/shugang.png" alt="">
+        打造爱巢 HOME
+    </div>
+
+
+    <div class="cssp">
+        <!-- 爱巢-->
+        <div class="cssp-left6">
+            <div class="bai">
+                <div class="gengduo"></div>
+            </div>
+            <!--两个文字部分-->
+            <div class="cssp-bot">
+                <div class="cssp-left-bot-left">
+                    精品家具
+                </div>
+                <div class="cssp-left-bot-right">
+                    限量抢购 <br>买一送一
+                </div>
+            </div>
+
+        </div>
+        <!--右边所有的-->
+        <div class="cssp-right">
+            <!--商品部分块的内容-->
+            <div class="shop">
+                <!--图片-->
+                <div class="shop-tu38">
+                    <div class="bai"></div>
+                </div>
+                <!--商品描述  价格-->
+                <div class="shop-jia">
+                    <p>金正s33充电榨汁机 </p>
+                    ￥98
+                </div>
+            </div>
+            <!--商品部分块的内容-->
+            <div class="shop">
+                <!--图片-->
+                <div class="shop-tu39">
+                    <div class="bai"></div>
+                </div>
+                <!--商品描述  价格-->
+                <div class="shop-jia">
+                    <p>星星冷藏立式冰柜</p>
+                    ￥3399
+                </div>
+            </div>
+
+            <!--商品部分块的内容-->
+            <div class="shop">
+                <!--图片-->
+                <div class="shop-tu40">
+                    <div class="bai"></div>
+                </div>
+                <!--商品描述  价格-->
+                <div class="shop-jia">
+                    <p>奥克斯绞肉机</p>
+                    ￥149
+                </div>
+            </div>
+            <!--商品部分块的内容-->
+            <div class="shop">
+                <!--图片-->
+                <div class="shop-tu41">
+                    <div class="bai"></div>
+                </div>
+                <!--商品描述  价格-->
+                <div class="shop-jia">
+                    <p>华帝抽油烟机</p>
+                    ￥120
+                </div>
+            </div>
+
+            <!--商品部分块的内容-->
+            <div class="shop">
+                <!--图片-->
+                <div class="shop-tu42">
+                    <div class="bai"></div>
+                </div>
+                <!--商品描述  价格-->
+                <div class="shop-jia">
+                    <p>新功 F16升级烧水壶</p>
+                    ￥238
+                </div>
+            </div>
+
+            <!--商品部分块的内容-->
+            <div class="shop">
+                <!--图片-->
+                <div class="shop-tu43">
+                    <div class="bai"></div>
+                </div>
+                <!--商品描述  价格-->
+                <div class="shop-jia">
+                    <p>迪士尼枕头</p>
+                    ￥89
+                </div>
+            </div>
+
+            <!--商品部分块的内容-->
+            <div class="shop">
+                <!--图片-->
+                <div class="shop-tu44">
+                    <div class="bai"></div>
+                </div>
+                <!--商品描述  价格-->
+                <div class="shop-jia">
+                    <p>过滤  活性炭</p>
+                    ￥130
+                </div>
+            </div>
+
+            <!--商品部分块的内容-->
+            <div class="shop">
+                <!--图片-->
+                <div class="shop-tu45">
+                    <div class="bai"></div>
+                </div>
+                <!--商品描述  价格-->
+                <div class="shop-jia">
+                    <p>小熊冰激凌</p>
+                    ￥399
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--划算-->
+     
+
+    <div class="huasuan">
+        <img src="images/huasuan.jpg" alt="" width="1232px" height="90px">
+    </div>
+    <!--户外出行-->
+     
+
+    <div class="chuxing">
+        <img src="images/shugang.png" alt="">
+        户外出行OUTDOORS & AUTOMOTIVE
+    </div>
+
+
+    <div class="cssp">
+        <!-- 爱巢-->
+        <div class="cssp-left7">
+            <div class="bai">
+                <div class="gengduo"></div>
+            </div>
+            <!--两个文字部分-->
+            <div class="cssp-bot">
+                <div class="cssp-left-bot-left">
+                    精品家具
+                </div>
+                <div class="cssp-left-bot-right">
+                    限量抢购 <br>买一送一
+                </div>
+            </div>
+
+        </div>
+        <!--右边所有的-->
+        <div class="cssp-right">
+            <!--商品部分块的内容-->
+            <div class="shop">
+                <!--图片-->
+                <div class="shop-tu54">
+                    <div class="bai"></div>
+                </div>
+                <!--商品描述  价格-->
+                <div class="shop-jia">
+                    <p>防晒衣服 </p>
+                    ￥98
+                </div>
+            </div>
+            <!--商品部分块的内容-->
+            <div class="shop">
+                <!--图片-->
+                <div class="shop-tu53">
+                    <div class="bai"></div>
+                </div>
+                <!--商品描述  价格-->
+                <div class="shop-jia">
+                    <p>南极人</p>
+                    ￥100
+                </div>
+            </div>
+
+            <!--商品部分块的内容-->
+            <div class="shop">
+                <!--图片-->
+                <div class="shop-tu55">
+                    <div class="bai"></div>
+                </div>
+                <!--商品描述  价格-->
+                <div class="shop-jia">
+                    <p>短裤</p>
+                    ￥149
+                </div>
+            </div>
+            <!--商品部分块的内容-->
+            <div class="shop">
+                <!--图片-->
+                <div class="shop-tu56">
+                    <div class="bai"></div>
+                </div>
+                <!--商品描述  价格-->
+                <div class="shop-jia">
+                    <p>单反相机  接口</p>
+                    ￥120
+                </div>
+            </div>
+
+            <!--商品部分块的内容-->
+            <div class="shop">
+                <!--图片-->
+                <div class="shop-tu50">
+                    <div class="bai"></div>
+                </div>
+                <!--商品描述  价格-->
+                <div class="shop-jia">
+                    <p>花花公子 拖鞋</p>
+                    ￥238
+                </div>
+            </div>
+
+            <!--商品部分块的内容-->
+            <div class="shop">
+                <!--图片-->
+                <div class="shop-tu51">
+                    <div class="bai"></div>
+                </div>
+                <!--商品描述  价格-->
+                <div class="shop-jia">
+                    <p>半袖</p>
+                    ￥89
+                </div>
+            </div>
+
+            <!--商品部分块的内容-->
+            <div class="shop">
+                <!--图片-->
+                <div class="shop-tu52">
+                    <div class="bai"></div>
+                </div>
+                <!--商品描述  价格-->
+                <div class="shop-jia">
+                    <p>登上包</p>
+                    ￥130
+                </div>
+            </div>
+
+            <!--商品部分块的内容-->
+            <div class="shop">
+                <!--图片-->
+                <div class="shop-tu49">
+                    <div class="bai"></div>
+                </div>
+                <!--商品描述  价格-->
+                <div class="shop-jia">
+                    <p>户外 运动包</p>
+                    ￥399
+                </div>
+            </div>
+        </div>
+    </div>
+<!--猜你喜欢-->
+     
+
+    <div class="like">
+            <img src="images/cainixihuan.png" alt="">
+        </div>
+        <!--猜你喜欢额商品-->
+     
+
+    <div class="xihuanshangpin">
+        <!--商品部分块的内容-->
+
+        <!--dw-->
+        <div class="shop">
+            <!--图片-->
+            <div class="shop-tu60">
+                <div class="bai"></div>
+            </div>
+            <!--商品描述  价格-->
+            <div class="shop-jia">
+                <p>丹尼尔惠灵顿DW手表女28mm简约时尚女表</p>
+                ￥1289
+            </div>
+        </div>
+        <div class="shop">
+            <!--图片-->
+            <div class="shop-tu60">
+                <div class="bai"></div>
+            </div>
+            <!--商品描述  价格-->
+            <div class="shop-jia">
+                <p>丹尼尔惠灵顿DW手表女28mm简约时尚女表</p>
+                ￥1289
+            </div>
+        </div>
+        <div class="shop">
+            <!--图片-->
+            <div class="shop-tu60">
+                <div class="bai"></div>
+            </div>
+            <!--商品描述  价格-->
+            <div class="shop-jia">
+                <p>丹尼尔惠灵顿DW手表女28mm简约时尚女表</p>
+                ￥1289
+            </div>
+        </div>
+        <div class="shop">
+            <!--图片-->
+            <div class="shop-tu60">
+                <div class="bai"></div>
+            </div>
+            <!--商品描述  价格-->
+            <div class="shop-jia">
+                <p>丹尼尔惠灵顿DW手表女28mm简约时尚女表</p>
+                ￥1289
+            </div>
+        </div>
+        <div class="shop">
+            <!--图片-->
+            <div class="shop-tu60">
+                <div class="bai"></div>
+            </div>
+            <!--商品描述  价格-->
+            <div class="shop-jia">
+                <p>丹尼尔惠灵顿DW手表女28mm简约时尚女表</p>
+                ￥1289
+            </div>
+        </div>
+
+        <!--纪梵希-->
+        <div class="shop">
+            <!--图片-->
+            <div class="shop-tu61">
+                <div class="bai"></div>
+            </div>
+            <!--商品描述  价格-->
+            <div class="shop-jia">
+                <p>【新品上市】纪梵希心无禁忌香水 </p>
+                ￥615
+            </div>
+        </div>
+        <div class="shop">
+            <!--图片-->
+            <div class="shop-tu61">
+                <div class="bai"></div>
+            </div>
+            <!--商品描述  价格-->
+            <div class="shop-jia">
+                <p>【新品上市】纪梵希心无禁忌香水 </p>
+                ￥615
+            </div>
+        </div>
+        <div class="shop">
+            <!--图片-->
+            <div class="shop-tu61">
+                <div class="bai"></div>
+            </div>
+            <!--商品描述  价格-->
+            <div class="shop-jia">
+                <p>【新品上市】纪梵希心无禁忌香水 </p>
+                ￥615
+            </div>
+        </div>
+        <div class="shop">
+            <!--图片-->
+            <div class="shop-tu61">
+                <div class="bai"></div>
+            </div>
+            <!--商品描述  价格-->
+            <div class="shop-jia">
+                <p>【新品上市】纪梵希心无禁忌香水 </p>
+                ￥615
+            </div>
+        </div>
+        <div class="shop">
+            <!--图片-->
+            <div class="shop-tu61">
+                <div class="bai"></div>
+            </div>
+            <!--商品描述  价格-->
+            <div class="shop-jia">
+                <p>【新品上市】纪梵希心无禁忌香水 </p>
+                ￥615
+            </div>
+        </div>
+
+        <!--美的-->
+        <div class="shop">
+            <!--图片-->
+            <div class="shop-tu62">
+                <div class="bai"></div>
+            </div>
+            <!--商品描述  价格-->
+            <div class="shop-jia">
+                <p>美的燃气热水器家用天然气13升16l变频 </p>
+                ￥999
+            </div>
+        </div>
+        <div class="shop">
+            <!--图片-->
+            <div class="shop-tu62">
+                <div class="bai"></div>
+            </div>
+            <!--商品描述  价格-->
+            <div class="shop-jia">
+                <p>美的燃气热水器家用天然气13升16l变频 </p>
+                ￥999
+            </div>
+        </div>
+        <div class="shop">
+            <!--图片-->
+            <div class="shop-tu62">
+                <div class="bai"></div>
+            </div>
+            <!--商品描述  价格-->
+            <div class="shop-jia">
+                <p>美的燃气热水器家用天然气13升16l变频 </p>
+                ￥999
+            </div>
+        </div>
+        <div class="shop">
+            <!--图片-->
+            <div class="shop-tu62">
+                <div class="bai"></div>
+            </div>
+            <!--商品描述  价格-->
+            <div class="shop-jia">
+                <p>美的燃气热水器家用天然气13升16l变频 </p>
+                ￥999
+            </div>
+        </div>
+        <div class="shop">
+            <!--图片-->
+            <div class="shop-tu62">
+                <div class="bai"></div>
+            </div>
+            <!--商品描述  价格-->
+            <div class="shop-jia">
+                <p>美的燃气热水器家用天然气13升16l变频 </p>
+                ￥999
+            </div>
+        </div>
+        <!--美的空调-->
+        <div class="shop">
+            <!--图片-->
+            <div class="shop-tu63">
+                <div class="bai"></div>
+            </div>
+            <!--商品描述  价格-->
+            <div class="shop-jia">
+                <p>美的空调扇空调风扇制冷机器 </p>
+                ￥649
+            </div>
+        </div>
+        <div class="shop">
+            <!--图片-->
+            <div class="shop-tu63">
+                <div class="bai"></div>
+            </div>
+            <!--商品描述  价格-->
+            <div class="shop-jia">
+                <p>美的空调扇空调风扇制冷机器 </p>
+                ￥649
+            </div>
+        </div>
+        <div class="shop">
+            <!--图片-->
+            <div class="shop-tu63">
+                <div class="bai"></div>
+            </div>
+            <!--商品描述  价格-->
+            <div class="shop-jia">
+                <p>美的空调扇空调风扇制冷机器 </p>
+                ￥649
+            </div>
+        </div>
+        <div class="shop">
+            <!--图片-->
+            <div class="shop-tu63">
+                <div class="bai"></div>
+            </div>
+            <!--商品描述  价格-->
+            <div class="shop-jia">
+                <p>美的空调扇空调风扇制冷机器 </p>
+                ￥649
+            </div>
+        </div>
+        <div class="shop">
+            <!--图片-->
+            <div class="shop-tu63">
+                <div class="bai"></div>
+            </div>
+            <!--商品描述  价格-->
+            <div class="shop-jia">
+                <p>美的空调扇空调风扇制冷机器 </p>
+                ￥649
+            </div>
+        </div>
+        <!--圣罗兰-->
+        <div class="shop">
+            <!--图片-->
+            <div class="shop-tu64">
+                <div class="bai"></div>
+            </div>
+            <!--商品描述  价格-->
+            <div class="shop-jia">
+                <p>【520礼物】YSL圣罗兰黑管唇釉豆沙色唇蜜口</p>
+                ￥320
+            </div>
+        </div>
+        <div class="shop">
+            <!--图片-->
+            <div class="shop-tu64">
+                <div class="bai"></div>
+            </div>
+            <!--商品描述  价格-->
+            <div class="shop-jia">
+                <p>【520礼物】YSL圣罗兰黑管唇釉豆沙色唇蜜口</p>
+                ￥320
+            </div>
+        </div>
+        <div class="shop">
+            <!--图片-->
+            <div class="shop-tu64">
+                <div class="bai"></div>
+            </div>
+            <!--商品描述  价格-->
+            <div class="shop-jia">
+                <p>【520礼物】YSL圣罗兰黑管唇釉豆沙色唇蜜口</p>
+                ￥320
+            </div>
+        </div>
+        <div class="shop">
+            <!--图片-->
+            <div class="shop-tu64">
+                <div class="bai"></div>
+            </div>
+            <!--商品描述  价格-->
+            <div class="shop-jia">
+                <p>【520礼物】YSL圣罗兰黑管唇釉豆沙色唇蜜口</p>
+                ￥320
+            </div>
+        </div>
+        <div class="shop">
+            <!--图片-->
+            <div class="shop-tu64">
+                <div class="bai"></div>
+            </div>
+            <!--商品描述  价格-->
+            <div class="shop-jia">
+                <p>【520礼物】YSL圣罗兰黑管唇釉豆沙色唇蜜口</p>
+                ￥320
+            </div>
+        </div>
+        <!--skii-->
+        <div class="shop">
+            <!--图片-->
+            <div class="shop-tu65">
+                <div class="bai"></div>
+            </div>
+            <!--商品描述  价格-->
+            <div class="shop-jia">
+                <p>sk-iiskiisk2洗面奶氨基酸温和洁</p>
+                ￥460
+            </div>
+        </div>
+        <div class="shop">
+            <!--图片-->
+            <div class="shop-tu65">
+                <div class="bai"></div>
+            </div>
+            <!--商品描述  价格-->
+            <div class="shop-jia">
+                <p>sk-iiskiisk2洗面奶氨基酸温和洁</p>
+                ￥460
+            </div>
+        </div>
+        <div class="shop">
+            <!--图片-->
+            <div class="shop-tu65">
+                <div class="bai"></div>
+            </div>
+            <!--商品描述  价格-->
+            <div class="shop-jia">
+                <p>sk-iiskiisk2洗面奶氨基酸温和洁</p>
+                ￥460
+            </div>
+        </div>
+        <div class="shop">
+            <!--图片-->
+            <div class="shop-tu65">
+                <div class="bai"></div>
+            </div>
+            <!--商品描述  价格-->
+            <div class="shop-jia">
+                <p>sk-iiskiisk2洗面奶氨基酸温和洁</p>
+                ￥460
+            </div>
+        </div>
+        <div class="shop">
+            <!--图片-->
+            <div class="shop-tu65">
+                <div class="bai"></div>
+            </div>
+            <!--商品描述  价格-->
+            <div class="shop-jia">
+                <p>sk-iiskiisk2洗面奶氨基酸温和洁</p>
+                ￥460
+            </div>
+        </div>
+
+        <!--三只松鼠-->
+        <div class="shop">
+            <!--图片-->
+            <div class="shop-tu66">
+                <div class="bai"></div>
+            </div>
+            <!--商品描述  价格-->
+            <div class="shop-jia">
+                <p>三只松鼠</p>
+                ￥49
+            </div>
+        </div>
+        <div class="shop">
+            <!--图片-->
+            <div class="shop-tu66">
+                <div class="bai"></div>
+            </div>
+            <!--商品描述  价格-->
+            <div class="shop-jia">
+                <p>三只松鼠</p>
+                ￥49
+            </div>
+        </div>
+        <div class="shop">
+            <!--图片-->
+            <div class="shop-tu66">
+                <div class="bai"></div>
+            </div>
+            <!--商品描述  价格-->
+            <div class="shop-jia">
+                <p>三只松鼠</p>
+                ￥49
+            </div>
+        </div>
+        <div class="shop">
+            <!--图片-->
+            <div class="shop-tu66">
+                <div class="bai"></div>
+            </div>
+            <!--商品描述  价格-->
+            <div class="shop-jia">
+                <p>三只松鼠</p>
+                ￥49.0
+            </div>
+        </div>
+        <div class="shop">
+            <!--图片-->
+            <div class="shop-tu66">
+                <div class="bai"></div>
+            </div>
+            <!--商品描述  价格-->
+            <div class="shop-jia">
+                <p>三只松鼠</p>
+                ￥49.0
+            </div>
+        </div>
+
+        <!--s苏泊尔-->
+        <div class="shop">
+            <!--图片-->
+            <div class="shop-tu67">
+                <div class="bai"></div>
+            </div>
+            <!--商品描述  价格-->
+            <div class="shop-jia">
+                <p>苏泊尔电磁炉火锅家用智能正品学生</p>
+                ￥199.0
+            </div>
+        </div>
+        <div class="shop">
+            <!--图片-->
+            <div class="shop-tu67">
+                <div class="bai"></div>
+            </div>
+            <!--商品描述  价格-->
+            <div class="shop-jia">
+                <p>苏泊尔电磁炉火锅家用智能正品学生</p>
+                ￥199.0
+            </div>
+        </div>
+        <div class="shop">
+            <!--图片-->
+            <div class="shop-tu67">
+                <div class="bai"></div>
+            </div>
+            <!--商品描述  价格-->
+            <div class="shop-jia">
+                <p>苏泊尔电磁炉火锅家用智能正品学生</p>
+                ￥199.0
+            </div>
+        </div>
+        <div class="shop">
+            <!--图片-->
+            <div class="shop-tu67">
+                <div class="bai"></div>
+            </div>
+            <!--商品描述  价格-->
+            <div class="shop-jia">
+                <p>苏泊尔电磁炉火锅家用智能正品学生</p>
+                ￥199.0
+            </div>
+        </div>
+        <div class="shop">
+            <!--图片-->
+            <div class="shop-tu67">
+                <div class="bai"></div>
+            </div>
+            <!--商品描述  价格-->
+            <div class="shop-jia">
+                <p>苏泊尔电磁炉火锅家用智能正品学生</p>
+                ￥199.0
+            </div>
+        </div>
+
+        <!--周大福-->
+        <div class="shop">
+            <!--图片-->
+            <div class="shop-tu68">
+                <div class="bai"></div>
+            </div>
+            <!--商品描述  价格-->
+            <div class="shop-jia">
+                <p>[520礼物]周大福字母转运珠足金黄金吊坠</p>
+                ￥415.0
+            </div>
+        </div>
+        <div class="shop">
+            <!--图片-->
+            <div class="shop-tu68">
+                <div class="bai"></div>
+            </div>
+            <!--商品描述  价格-->
+            <div class="shop-jia">
+                <p>[520礼物]周大福字母转运珠足金黄金吊坠</p>
+                ￥415.0
+            </div>
+        </div>
+        <div class="shop">
+            <!--图片-->
+            <div class="shop-tu68">
+                <div class="bai"></div>
+            </div>
+            <!--商品描述  价格-->
+            <div class="shop-jia">
+                <p>[520礼物]周大福字母转运珠足金黄金吊坠</p>
+                ￥415.0
+            </div>
+        </div>
+        <div class="shop">
+            <!--图片-->
+            <div class="shop-tu68">
+                <div class="bai"></div>
+            </div>
+            <!--商品描述  价格-->
+            <div class="shop-jia">
+                <p>[520礼物]周大福字母转运珠足金黄金吊坠</p>
+                ￥415.0
+            </div>
+        </div>
+        <div class="shop">
+            <!--图片-->
+            <div class="shop-tu68">
+                <div class="bai"></div>
+            </div>
+            <!--商品描述  价格-->
+            <div class="shop-jia">
+                <p>[520礼物]周大福字母转运珠足金黄金吊坠</p>
+                ￥415.0
+            </div>
+        </div>
+
+        <!--樱桃-->
+        <div class="shop">
+            <!--图片-->
+            <div class="shop-tu69">
+                <div class="bai"></div>
+            </div>
+            <!--商品描述  价格-->
+            <div class="shop-jia">
+                <p>【买1送1】山东烟台大樱桃新鲜水果包邮</p>
+                ￥119.0
+            </div>
+        </div>
+        <div class="shop">
+            <!--图片-->
+            <div class="shop-tu69">
+                <div class="bai"></div>
+            </div>
+            <!--商品描述  价格-->
+            <div class="shop-jia">
+                <p>【买1送1】山东烟台大樱桃新鲜水果包邮</p>
+                ￥119.0
+            </div>
+        </div>
+        <div class="shop">
+            <!--图片-->
+            <div class="shop-tu69">
+                <div class="bai"></div>
+            </div>
+            <!--商品描述  价格-->
+            <div class="shop-jia">
+                <p>【买1送1】山东烟台大樱桃新鲜水果包邮</p>
+                ￥119.0
+            </div>
+        </div>
+        <div class="shop">
+            <!--图片-->
+            <div class="shop-tu69">
+                <div class="bai"></div>
+            </div>
+            <!--商品描述  价格-->
+            <div class="shop-jia">
+                <p>【买1送1】山东烟台大樱桃新鲜水果包邮</p>
+                ￥119.0
+            </div>
+        </div>
+        <div class="shop">
+            <!--图片-->
+            <div class="shop-tu69">
+                <div class="bai"></div>
+            </div>
+            <!--商品描述  价格-->
+            <div class="shop-jia">
+                <p>【买1送1】山东烟台大樱桃新鲜水果包邮</p>
+                ￥119.0
+            </div>
+        </div>
+
+
+
+    </div>
+<!--end图片-->
+     
+
+    <div class="like">
+        <img src="images/end.png" alt="">
+    </div>
+<!--end下面的那一堆 优 七 特 帮-->
+    <div class="pqtb">
+        <div class="you">
+            <img src="images/you.jpg" alt="">
+            <div class="pqtb-nei">
+                <p>品质保障</p>
+                <span>品质护航 购物无忧</span>
+            </div>
+
+        </div>
+        <div class="qi">
+            <img src="images/qi.jpg" alt="">
+            <div class="pqtb-nei">
+                <p>七天无理由退换货</p>
+                <span>为您提供售后无忧保障</span>
+            </div>
+        </div>
+        <div class="te">
+            <img src="images/te.jpg" alt="">
+            <div class="pqtb-nei">
+                <p>特色服务体验</p>
+                <span>为您呈现不一样的服务</span>
+            </div>
+        </div>
+        <div class="bang">
+            <img src="images/bang.jpg" alt="">
+            <div class="pqtb-nei">
+                <p>帮助中心</p>
+                <span>您的购物指南</span>
+            </div>
+        </div>
+    </div>
+<!--购物指南-->
+<div class="gouwu">
+    <div class="zhinan">
+        <h3>购物指南</h3>
+        <a href="">免费注册</a>
+        <a href="">开通支付宝</a>
+        <a href="">支付宝充值</a>
+    </div>
+    <div class="zhinan">
+        <h3>天猫保障</h3>
+        <a href="">发票保障</a>
+        <a href="">售后规则</a>
+        <a href="">缺货赔付</a>
+    </div>
+    <div class="zhinan">
+        <h3>支付方式</h3>
+        <a href="">快捷支付</a>
+        <a href="">信用卡</a>
+        <a href="">余额宝</a>
+        <a href="">蚂蚁花呗</a>
+        <a href="">货到付款</a>
+    </div>
+    <div class="zhinan">
+        <h3>商家服务</h3>
+        <a href="">天猫规则</a>
+        <a href="">商家入驻</a>
+        <a href="">商家中心</a>
+        <a href="">天猫智库</a>
+        <a href="">物流服务</a>
+        <a href="">喵言喵语</a>
+        <a href="">运营服务</a>
+
+    </div>
+    <div class="zhinan">
+        <h3>手机指南</h3>
+        <img src="images/erweima.png" alt="" height="92px">
+    </div>
+    <img src="images/tianmaojingling.png" alt="" height="25px" class="i">
+</div>
+<!--最底下的-->
+
+    <div class="page-bot">
+        <div class="one">
+            <a href="">关于天猫</a>
+            <a href="">帮助中心</a>
+            <a href="">开放平台</a>
+            <a href="">诚聘英才</a>
+            <a href="">联系我们</a>
+            <a href="">网站工作</a>
+            <a href="">法律声明</a>
+            <a href="">隐私权政策</a>
+            <a href="">知识产权</a>
+            <a href="">廉政举报</a>
+            <a href="">规则意见征集</a>
+        </div>
+
+        <div class="one">
+            <a href="">阿里巴巴集团</a> |
+            <a href="">淘宝网</a> |
+            <a href="">天猫</a> |
+            <a href="">聚划算</a> |
+            <a href="">全球速卖通</a> |
+            <a href="">阿里巴巴国际交易市场</a> |
+            <a href="">1688</a> |
+            <a href="">阿里妈妈</a> |
+            <a href="">飞猪</a> |
+            <a href="">阿里云计算</a> |
+            <a href="">AliOS</a> |
+            <a href="">阿里通信</a> |
+            <a href="">万网</a> |
+            <a href="">高德</a> |
+            <a href="">UC</a> |
+            <a href="">友盟</a> |
+            <a href="">虾米</a> |
+            <a href="">钉钉</a> |
+            <a href="">支付宝</a>
+        </div>
+
+        <div class="two">
+            增值电信业务经营许可证： 浙B2-20110446 &nbsp;&nbsp;&nbsp;&nbsp;市场名称登记证：工商网市字3301004119号&nbsp;&nbsp;&nbsp;&nbsp; 出版物网络交易平台服务经营备案证： 新出发浙备字第001号
+        </div>
+        <div class="two">
+            互联网违法和不良信息举报电话：0571-81683755 blxxjb@alibaba-inc.com&nbsp;&nbsp;&nbsp;&nbsp;  互联网药品信息服务资质证书编号：浙-（经营性）-2017-0005 &nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="images/gongwang.png" alt=""> 浙公网安备 33010002000120号
+        </div>
+        <div class="two">
+            医疗器械网络交易服务第三方平台备案：（浙）网械平台备字[2018]第00002号 &nbsp;&nbsp;&nbsp;&nbsp; 互联网药品交易服务资格证书：国A20150001
+        </div>
+        <div class="two">
+            浙江省网络食品销售第三方平台提供者备案：浙网食A33010002 12318举报
+        </div>
+        <div class="two">
+            © 2003-2019 TMALL.COM 版权所有
+        </div>
+        <div class="zw">
+            <img src="images/zhejiang.jpg" alt="">
+            <img src="images/wangluo.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
