@@ -1,0 +1,1581 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/tm.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css/bootstrap.min.css">
+    <script>
+        window.onload=function (ev) {
+            var banners=document.querySelectorAll(".banners");
+            var banner_opts=document.querySelectorAll(".banner_opt");
+            var a=0;
+            for(var i=0;i<banners.length;i++){
+                if(i==0){
+                    banners[i].style.display="block";
+                    banner_opts[i].style.background="rgba(255,255,255,04)"
+                }else{
+                    banners[i].style.display="none";
+                    banner_opts[i].style.background="rgba(0,0,0,04)"
+                }
+            }
+            setInterval(function () {
+                if(a==banners.length){
+                    a=0;
+                }
+                for(var i=0;i<banners.length;i++){
+                    if(a==i){
+                        banners[i].style.display="block";
+                        banner_opts[i].style.background="rgba(255,255,255,04)";
+                    }else{
+                        banners[i].style.display="none";
+                        banner_opts[i].style.background="rgba(0,0,0,04)"
+                    }
+                }
+                a++;
+
+                if(bodys[0].style.display=="block"){
+                    heads[1].style.background="green";
+                    heads[1].style.color="white";
+                    heads[0].style.background="rgb(241,241,241)";
+                    heads[0].style.color="black";
+                    bodys[1].style.display="block";
+                    bodys[0].style.display="none"
+                }else{
+                    heads[0].style.background="green";
+                    heads[0].style.color="white";
+                    heads[1].style.background="rgb(241,241,241)";
+                    heads[1].style.color="black";
+                    bodys[0].style.display="block";
+                    bodys[1].style.display="none"
+                }
+
+
+            },3000)
+
+
+            var banner_lefts=document.querySelectorAll(".banner_lefts");
+            var banner_catlog=document.querySelectorAll(".banner_head_a1");
+            var a=0;
+            var b=1;
+            banner_lefts[a].style.display="none";
+            banner_lefts[b].style.display="block";
+            banner_catlog[a].style.background="rgb(128,128,128)";
+            banner_catlog[a].style.color="white";
+            banner_catlog[b].style.background="yellow";
+            banner_catlog[b].style.color="rgb(255,0,0)";
+            banner_catlog[a].onmouseenter=function (ev1) {
+                var a=0;
+                var b=1;
+                banner_lefts[a].style.display="none";
+                banner_lefts[b].style.display="block";
+                banner_catlog[a].style.background="rgb(239,239,239)";
+                banner_catlog[a].style.color="red";
+                banner_catlog[b].style.background="yellow";
+                banner_catlog[b].style.color="rgb(255,0,0)"
+            };
+            banner_catlog[b].onmouseenter=function (ev2) {
+                var a=0;
+                var b=1;
+                banner_lefts[a].style.display="block";
+                banner_lefts[b].style.display="none";
+                banner_catlog[a].style.background="rgb(128,128,128)";
+                banner_catlog[a].style.color="white";
+                banner_catlog[b].style.background="rgb(65,63,63)";
+                banner_catlog[b].style.color="white"
+            }
+
+
+            var heads=document.querySelectorAll(".mart_c_head");
+            var bodys=document.querySelectorAll(".body");
+            heads[a].style.background="green";
+            heads[a].style.color="white";
+            heads[b].style.background="rgb(241,241,241)";
+            heads[b].style.color="black";
+            bodys[a].style.display="block";
+            bodys[b].style.display="none"
+            heads[a].onmouseenter=function (ev3) {
+                var a=0;
+                var b=1;
+                heads[a].style.background="green";
+                heads[a].style.color="white";
+                heads[b].style.background="rgb(241,241,241)";
+                heads[b].style.color="black";
+                bodys[a].style.display="block";
+                bodys[b].style.display="none"
+            }
+            heads[b].onmouseenter=function (ev4) {
+                var a=0;
+                var b=1;
+                heads[b].style.background="green";
+                heads[b].style.color="white";
+                heads[a].style.background="rgb(241,241,241)";
+                heads[a].style.color="black";
+                bodys[b].style.display="block";
+                bodys[a].style.display="none"
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <!--顶部导航栏-->
+    <div class="person_info_out">
+    <div class="person_info">
+        <div class="person_info_left">
+            <a>喵，欢迎来天猫</a>
+            <a href="">请登录</a>
+            <a href="">免费注册</a>
+        </div>
+        <div class="person_info_right">
+            <div class="person_info_right_box"><a href="">我的淘宝</a></div>
+            <div class="person_info_right_box"><a href="">购物车0件</a></div>
+            <div class="person_info_right_box"><a href="">收藏夹</a></div>
+            <div class="person_info_right_box"><a href="">手机版</a></div>
+            <div class="person_info_right_box"><a href="">淘宝网</a></div>
+            <div class="person_info_right_box"><a href="">商家支持</a></div>
+            <div class="person_info_right_box"><a href="">网站导航</a></div>
+        </div>
+    </div>
+    </div>
+<!--头部品牌-->
+    <div class="head_out">
+<div class="head">
+    <div class="head_pic" ><img src="images/tmall.png"></div>
+    <div class="head_search">
+        <div class="head_search_inner">
+            <div class="head_search_card">
+                <input type="text">
+                <div class="head_search_innner_txt">搜索</div>
+                <div class="head_search_inner_a1"><a href="">连衣裙</a></div>
+                <div class="head_search_inner_a"><a href="">摄像头</a></div>
+                <div class="head_search_inner_a"><a href="">四件套</a></div>
+                <div class="head_search_inner_a"><a href="">客厅灯</a></div>
+                <div class="head_search_inner_a"><a href="">口红</a></div>
+                <div class="head_search_inner_a"><a href="">手机</a></div>
+                <div class="head_search_inner_a"><a href="">运动鞋</a></div>
+                <div class="head_search_inner_a"><a href="">牛奶</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+
+
+<!--轮播图-->
+    <div class="banner_head_out">
+    <div class="banner_head">
+        <div class="banner_head_a1">商品分类</div>
+        <div class="banner_head_a1">天猫520活动</div>
+        <div class="banner_head_a1"><img src="images/supket.png" alt=""></div>
+        <div class="banner_head_a1"><img src="images/national.png" alt=""></div>
+        <div class="banner_head_b">天猫会员</div>
+        <div class="banner_head_b">电器城</div>
+        <div class="banner_head_b">喵鲜生</div>
+        <div class="banner_head_b">医药馆</div>
+        <div class="banner_head_b">营业厅</div>
+        <div class="banner_head_b">魅力惠</div>
+        <div class="banner_head_b">飞猪旅行</div>
+        <div class="banner_head_b">苏宁易购</div>
+    </div>
+    </div>
+
+<div class="banner_out">
+    <div class="banners_out">
+    <div class="banners banner1"></div>
+    <div class="banners banner2"></div>
+    <div class="banners_opts">
+        <div class="banner_opt_c">
+            <div class="banner_opt"></div>
+            <div class="banner_opt"></div>
+        </div>
+    </div>
+    <div class="banner_lefts">
+    <div class="banner_left1">
+        <div class="banner_left_cards">
+            <div class="banner_left_cards_pic banner_left_cards_pic1"></div>
+            大牌男装
+        </div>
+        <div class="banner_left_cards">
+            <div class="banner_left_cards_pic banner_left_cards_pic2"></div>
+            大牌男装
+        </div>
+        <div class="banner_left_cards">
+            <div class="banner_left_cards_pic banner_left_cards_pic3"></div>
+            大牌男装
+        </div>
+        <div class="banner_left_cards">
+            <div class="banner_left_cards_pic banner_left_cards_pic4"></div>
+            大牌男装
+        </div>
+        <div class="banner_left_cards">
+            <div class="banner_left_cards_pic banner_left_cards_pic5"></div>
+            大牌男装
+        </div>
+        <div class="banner_left_cards">
+            <div class="banner_left_cards_pic banner_left_cards_pic6"></div>
+            大牌男装
+        </div>
+        <div class="banner_left_cards">
+            <div class="banner_left_cards_pic banner_left_cards_pic7"></div>
+            大牌男装
+        </div>
+        <div class="banner_left_cards">
+            <div class="banner_left_cards_pic banner_left_cards_pic8"></div>
+            大牌男装
+        </div>
+        <div class="banner_left_cards">
+            <div class="banner_left_cards_pic banner_left_cards_pic9"></div>
+            大牌男装
+        </div>
+        <div class="banner_left_cards">
+            <div class="banner_left_cards_pic banner_left_cards_pic10"></div>
+            大牌男装
+        </div>
+    </div>
+    </div>
+    <div class="banner_lefts">
+        <div class="banner_left2">
+            <div class="banner_left2_cards">
+                <a href="">女装/内衣</a>
+            </div>
+            <div class="banner_left2_cards">
+                <a href="">男装/运动户外</a>
+            </div>
+            <div class="banner_left2_cards">
+                <a href="">女鞋/男鞋/箱包</a>
+            </div>
+            <div class="banner_left2_cards">
+                <a href="">美妆/个人护理</a>
+            </div>
+            <div class="banner_left2_cards">
+                <a href="">腕表/眼镜/珠宝饰品</a>
+            </div>
+            <div class="banner_left2_cards">
+                <a href="">手机/数码/电脑办公</a>
+            </div>
+            <div class="banner_left2_cards">
+                <a href="">母婴玩具</a>
+            </div>
+            <div class="banner_left2_cards">
+                <a href="">零食/茶酒/进口食品</a>
+            </div>
+            <div class="banner_left2_cards">
+                <a href="">生鲜水果</a>
+            </div>
+            <div class="banner_left2_cards">
+                <a href="">大家电/生活电器</a>
+            </div>
+            <div class="banner_left2_cards">
+                <a href="">家具器材</a>
+            </div>
+            <div class="banner_left2_cards">
+                <a href="">汽车/配件/用品</a>
+            </div>
+            <div class="banner_left2_cards">
+                <a href="">家纺/家饰/鲜花</a>
+            </div>
+            <div class="banner_left2_cards">
+                <a href="">医药保健</a>
+            </div>
+            <div class="banner_left2_cards">
+                <a href="">厨具/收纳/宠物</a>
+            </div>
+            <div class="banner_left2_cards">
+                <a href="">图书音像</a>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+<!--品牌闪购-->
+
+<div class="brandsale_out">
+    <div class="brandsale">
+    <div class="sale">
+        <div class="sale_head">
+            品牌闪购
+            <div class="sale_head_c">BRAND SALE</div>
+        </div>
+        <div class="sale_body">
+            <img src="https://img.alicdn.com/tfs/TB1eVWsUyrpK1RjSZFhXXXSdXXa-468-644.jpg_320x5000q100.jpg_.webp" alt="">
+            <div class="sale_body_up"></div>
+        </div>
+    </div>
+    <div class="luxu">
+        <div class="luxu_head">聚名品
+            <div class="luxu_head_c">LUXURY CHANNEL</div>
+            <div class="luxu_head_more">更多</div>
+        </div>
+        <div class="luxu_body">
+            <div class="luxu_body_up"></div>
+        </div>
+    </div>
+    <div class="luxu">
+        <div class="luxu_head">品牌活动
+            <div class="luxu_head_c">BRAND ACTIVITY</div>
+            <div class="luxu_head_more">更多</div>
+        </div>
+        <div class="acti_body">
+            <div class="luxu_body_up"></div>
+        </div>
+    </div>
+    </div>
+</div>
+
+<div class="clear"></div>
+
+<!--品牌-->
+    <div class="brandsale_out brands_out">
+        <div class="brands">
+    <div class="brand">
+        <img src="images/b1.jpg" alt="">
+        <div class="brand_up">优惠券&nbsp￥200
+            <div class="brand_up_open">点击开启</div>
+        </div>
+    </div>
+    <div class="brand">
+        <img src="images/b2.jpg" alt="">
+        <div class="brand_up">优惠券&nbsp￥200
+            <div class="brand_up_open">点击开启</div>
+        </div>
+    </div>
+    <div class="brand">
+        <img src="images/b3.jpg" alt="">
+        <div class="brand_up">优惠券&nbsp￥200
+            <div class="brand_up_open">点击开启</div>
+        </div>
+    </div>
+    <div class="brand">
+        <img src="images/b4.jpg" alt="">
+        <div class="brand_up">优惠券&nbsp￥200
+            <div class="brand_up_open">点击开启</div>
+        </div>
+    </div>
+    <div class="brand">
+        <img src="images/b5.jpg" alt="">
+        <div class="brand_up">优惠券&nbsp￥200
+            <div class="brand_up_open">点击开启</div>
+        </div>
+    </div>
+    <div class="brand">
+        <img src="images/b6.jpg" alt="">
+        <div class="brand_up">优惠券&nbsp￥200
+            <div class="brand_up_open">点击开启</div>
+        </div>
+    </div>
+    <div class="brand">
+        <img src="images/b7.jpg" alt="">
+        <div class="brand_up">优惠券&nbsp￥200
+            <div class="brand_up_open">点击开启</div>
+        </div>
+    </div>
+    <div class="brand">
+        <img src="images/b8.jpg" alt="">
+        <div class="brand_up">优惠券&nbsp￥200
+            <div class="brand_up_open">点击开启</div>
+        </div>
+    </div>
+    <div class="brand">
+        <img src="images/b9.jpg" alt="">
+        <div class="brand_up">优惠券&nbsp￥200
+            <div class="brand_up_open">点击开启</div>
+        </div>
+    </div>
+    <div class="brand">
+        <img src="images/b10.jpg" alt="">
+    </div>
+    <div class="brand">
+        <img src="images/b11.jpg" alt="">
+        <div class="brand_up">优惠券&nbsp￥200
+            <div class="brand_up_open">点击开启</div>
+        </div>
+    </div>
+    <div class="brand">
+        <img src="images/b12.jpg" alt="">
+        <div class="brand_up">优惠券&nbsp￥200
+            <div class="brand_up_open">点击开启</div>
+        </div>
+    </div>
+    <div class="brand">
+        <img src="images/b13.jpg" alt="">
+        <div class="brand_up">优惠券&nbsp￥200
+            <div class="brand_up_open">点击开启</div>
+        </div>
+    </div>
+    <div class="brand">
+        <img src="images/b14.jpg" alt="">
+        <div class="brand_up">优惠券&nbsp￥200
+            <div class="brand_up_open">点击开启</div>
+        </div>
+    </div>
+    <div class="brand">
+        <img src="images/b15.jpg" alt="">
+        <div class="brand_up">优惠券&nbsp￥200
+            <div class="brand_up_open">点击开启</div>
+        </div>
+    </div>
+    <div class="brand">
+        <img src="images/b16.jpg" alt="">
+        <div class="brand_up">优惠券&nbsp￥200
+            <div class="brand_up_open">点击开启</div>
+        </div>
+    </div>
+    <div class="brand">
+        <img src="images/b17.jpg" alt="">
+        <div class="brand_up">优惠券&nbsp￥200
+            <div class="brand_up_open">点击开启</div>
+        </div>
+    </div>
+    <div class="brand">
+        <img src="images/b18.jpg" alt="">
+        <div class="brand_up">优惠券&nbsp￥200
+            <div class="brand_up_open">点击开启</div>
+        </div>
+    </div>
+    <div class="brand">
+        <img src="images/b19.jpg" alt="">
+        <div class="brand_up">优惠券&nbsp￥200
+            <div class="brand_up_open">点击开启</div>
+        </div>
+    </div>
+    <div class="brand">
+        <img src="images/b20.jpg" alt="">
+        <div class="brand_up">优惠券&nbsp￥200
+            <div class="brand_up_open">点击开启</div>
+        </div>
+    </div>
+    <div class="brand">
+        <img src="images/b21.jpg" alt="">
+        <div class="brand_up">优惠券&nbsp￥200
+            <div class="brand_up_open">点击开启</div>
+        </div>
+    </div>
+    <div class="brand">
+        <img src="images/b22.jpg" alt="">
+        <div class="brand_up">优惠券&nbsp￥200
+            <div class="brand_up_open">点击开启</div>
+        </div>
+    </div>
+    <div class="brand">
+        <img src="images/b23.jpg" alt="">
+        <div class="brand_up">优惠券&nbsp￥200
+            <div class="brand_up_open">点击开启</div>
+        </div>
+    </div>
+    <div class="brand">
+        <img src="images/b24.jpg" alt="">
+        <div class="brand_up">优惠券&nbsp￥200
+            <div class="brand_up_open">点击开启</div>
+        </div>
+    </div>
+    <div class="brand">
+        <img src="images/b25.jpg" alt="">
+        <div class="brand_up">优惠券&nbsp￥200
+            <div class="brand_up_open">点击开启</div>
+        </div>
+    </div>
+    <div class="brand">
+        <img src="images/b26.jpg" alt="">
+        <div class="brand_up">优惠券&nbsp￥200
+            <div class="brand_up_open">点击开启</div>
+        </div>
+    </div>
+    <div class="brand">
+        <img src="images/b27.jpg" alt="">
+        <div class="brand_up">优惠券&nbsp￥200
+            <div class="brand_up_open">点击开启</div>
+        </div>
+    </div>
+    <div class="brand">
+        <img src="images/b28.jpg" alt="">
+        <div class="brand_up">优惠券&nbsp￥200
+            <div class="brand_up_open">点击开启</div>
+        </div>
+    </div>
+    <div class="brand">
+        <img src="images/b29.jpg" alt="">
+        <div class="brand_up">优惠券&nbsp￥200
+            <div class="brand_up_open">点击开启</div>
+        </div>
+    </div>
+    <div class="brand">
+        <img src="images/b30.jpg" alt="">
+    </div>
+</div>
+    </div>
+<!--天猫超市-->
+<div class="brandsale_out mart_out">
+    <div class="mart">
+        <div class="mart_head">
+            <img src="images/mart.png" alt="">
+            <a href="">进口食品</a>
+            <a href="">食品饮料</a>
+            <a href="">粮油副食</a>
+            <a href="">美容洗护</a>
+            <a href="">家具家电</a>
+            <a href="">家庭清洁</a>
+            <a href="">母婴用品</a>
+            <a href="">生鲜水果</a>
+        </div>
+        <div class="mart_body_left">
+            <img src="images/mart1.jpg" alt="">
+            <div class="mart_body_left_txt">
+                <div class="mart_body_left_mart">
+                    <div class="mart_body_left_mart1">天&nbsp猫</div>
+                    <div class="mart_body_left_mart2">超&nbsp市</div>
+                </div>
+                <div class="mart_body_left_txt1">欢乐零食购
+                    <br>爆款直降
+                </div>
+            </div>
+            <div class="mart_body_left_arrow">
+                <img src="images/mart2.png" alt="">
+            </div>
+            <div class="mart_body_left_up"></div>
+        </div>
+        <div class="mart_body_c">
+            <div class="mart_c_head">今日疯抢</div>
+            <div class="mart_c_head">量贩装</div>
+            <div class="mart_c_body">
+                <div class="body">
+                <img src="images/mart3.jpg" alt="">
+                    <div class="mart_c_body_info">
+                        <div class="mart_c_body_info_top">
+                            <div class="mart_c_body_info_top_txt">粮油调味</div>
+                            <div class="mart_c_body_info_pic">
+                                <img src="images/mart5.png" alt="">
+                            </div>
+                        </div>
+                        <div class="mart_c_body_info_bot">爆款直降</div>
+                    </div>
+                <div class="mart_c_body_info_up"></div>
+            </div>
+                <div class="body">
+                    <img src="images/mart6.jpg" alt="">
+                    <div class="mart_c_body_info">
+                        <div class="mart_c_body_info_top">
+                            <div class="mart_c_body_info_top_txt">力士洗浴套餐</div>
+                            <div class="mart_c_body_info_pic">
+                                <img src="images/mart5.png" alt="">
+                            </div>
+                        </div>
+                        <div class="mart_c_body_info_bot">抢第二件0元</div>
+                    </div>
+                    <div class="mart_c_body_info_up"></div>
+                </div>
+            </div>
+        </div>
+        <div class="mart_cards">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+            <div class="mart_cards_up"></div>
+        </div>
+        <div class="mart_cards">
+            <div class="mart_cards_top">
+                <img src="https://gw.alicdn.com/bao/uploaded/i3/725677994/O1CN01aFmGCi28vIfIlsNos_!!0-item_pic.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+            <div class="mart_cards_up"></div>
+        </div>
+        <div class="mart_cards">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+            <div class="mart_cards_up"></div>
+        </div>
+        <div class="mart_cards">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+            <div class="mart_cards_up"></div>
+        </div>
+        <div class="mart_cards">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+            <div class="mart_cards_up"></div>
+        </div>
+        <div class="mart_cards">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+            <div class="mart_cards_up"></div>
+        </div>
+    </div>
+</div>
+
+<div class="clear"></div>
+
+<!--天猫国际-->
+<div class="brandsale_out mart_out">
+    <div class="mart">
+        <div class="hk_head">
+            <img src="images/hk.png" alt="">
+            <a href="">口红</a>
+            <a href="">YSL</a>
+            <a href="">面膜</a>
+            <a href="">防晒</a>
+            <a href="">迪奥</a>
+        </div>
+        <div class="hk_body_left_cards">
+        <div class="hk_body_left">
+            <img src="images/hk1.png" alt="">
+            <div class="hk_body_left_txt">
+                <div class="mart_body_left_mart">
+                    <div class="mart_body_left_mart1">进&nbsp口</div>
+                    <div class="mart_body_left_mart2">精&nbsp选</div>
+                </div>
+                <div class="mart_body_left_txt1">大牌好货
+                    <br>轻松购入
+                </div>
+            </div>
+            <div class="hk_body_left_arrow">
+                <img src="images/mart2.png" alt="">
+            </div>
+            <div class="mart_body_left_up"></div>
+        </div>
+        <div class="hk_body_left">
+                <img src="images/hk2.png" alt="">
+                <div class="hk_body_left_txt">
+                    <div class="mart_body_left_mart">
+                        <div class="mart_body_left_mart1">直&nbsp营</div>
+                        <div class="mart_body_left_mart2">品&nbsp质</div>
+                    </div>
+                    <div class="mart_body_left_txt1">放心体验
+                        <br>畅享全球
+                    </div>
+                </div>
+                <div class="hk_body_left_arrow">
+                    <img src="images/mart2.png" alt="">
+                </div>
+                <div class="mart_body_left_up"></div>
+            </div>
+        </div>
+        <div class="mart_cards">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+            <div class="mart_cards_up"></div>
+        </div>
+        <div class="mart_cards">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+            <div class="mart_cards_up"></div>
+        </div>
+        <div class="mart_cards">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+            <div class="mart_cards_up"></div>
+        </div>
+        <div class="mart_cards">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+            <div class="mart_cards_up"></div>
+        </div>
+        <div class="mart_cards">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+            <div class="mart_cards_up"></div>
+        </div>
+        <div class="mart_cards">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+            <div class="mart_cards_up"></div>
+        </div>
+        <div class="mart_cards">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+            <div class="mart_cards_up"></div>
+        </div>
+        <div class="mart_cards">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+            <div class="mart_cards_up"></div>
+        </div>
+    </div>
+</div>
+
+<div class="clear"></div>
+
+<!--短袖-->
+<div class="t-shirt_out">
+    <div class="t-shirt">
+        <img src="images/tshirt.jpg" alt="">
+    </div>
+</div>
+
+<!--美丽人生-->
+<div class="brandsale_out mart_out">
+    <div class="mart">
+        <div class="fashion_head">
+            美丽人生&nbsp <span>FASHION&BEAUTY</span>
+        </div>
+        <div class="mart_body_left">
+            <img src="images/fashion1.jpg" alt="">
+            <div class="mart_body_left_txt">
+                <div class="mart_body_left_mart">
+                    <div class="mart_body_left_mart1">天&nbsp猫</div>
+                    <div class="mart_body_left_mart2">超&nbsp市</div>
+                </div>
+                <div class="mart_body_left_txt1">欢乐零食购
+                    <br>爆款直降
+                </div>
+            </div>
+            <div class="mart_body_left_arrow">
+                <img src="images/mart2.png" alt="">
+            </div>
+            <div class="mart_body_left_up"></div>
+        </div>
+        <div class="mart_cards">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+            <div class="mart_cards_up"></div>
+        </div>
+        <div class="mart_cards">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+            <div class="mart_cards_up"></div>
+        </div>
+        <div class="mart_cards">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+            <div class="mart_cards_up"></div>
+        </div>
+        <div class="mart_cards">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+            <div class="mart_cards_up"></div>
+        </div>
+        <div class="mart_cards">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+            <div class="mart_cards_up"></div>
+        </div>
+        <div class="mart_cards">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+            <div class="mart_cards_up"></div>
+        </div>
+        <div class="mart_cards">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+            <div class="mart_cards_up"></div>
+        </div>
+        <div class="mart_cards">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+            <div class="mart_cards_up"></div>
+        </div>
+    </div>
+</div>
+
+<div class="clear"></div>
+
+<!--潮店酷玩-->
+<div class="brandsale_out mart_out">
+    <div class="mart">
+        <div class="fashion_head">
+            潮店酷玩&nbsp <span>ELECTRONICS</span>
+        </div>
+        <div class="mart_body_left">
+            <img src="images/elec1.jpg" alt="">
+            <div class="mart_body_left_txt">
+                <div class="mart_body_left_mart">
+                    <div class="mart_body_left_mart1">心&nbsp动</div>
+                    <div class="mart_body_left_mart2">之&nbsp选</div>
+                </div>
+                <div class="mart_body_left_txt1">文具乐器
+                    <br>大额优惠
+                </div>
+            </div>
+            <div class="mart_body_left_arrow">
+                <img src="images/mart2.png" alt="">
+            </div>
+            <div class="mart_body_left_up"></div>
+        </div>
+        <div class="mart_cards">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+            <div class="mart_cards_up"></div>
+        </div>
+        <div class="mart_cards">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+            <div class="mart_cards_up"></div>
+        </div>
+        <div class="mart_cards">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+            <div class="mart_cards_up"></div>
+        </div>
+        <div class="mart_cards">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+            <div class="mart_cards_up"></div>
+        </div>
+        <div class="mart_cards">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+            <div class="mart_cards_up"></div>
+        </div>
+        <div class="mart_cards">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+            <div class="mart_cards_up"></div>
+        </div>
+        <div class="mart_cards">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+            <div class="mart_cards_up"></div>
+        </div>
+        <div class="mart_cards">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+            <div class="mart_cards_up"></div>
+        </div>
+    </div>
+</div>
+
+<!--潮流大牌-->
+<div class="t-shirt_out">
+    <div class="t-shirt">
+        <img src="images/fashion.jpg" alt="">
+    </div>
+</div>
+
+
+<!--居家生活-->
+<div class="brandsale_out mart_out">
+    <div class="mart">
+        <div class="fashion_head">
+            居家生活&nbsp <span>GROCERY & HEALTH</span>
+        </div>
+        <div class="mart_body_left">
+            <img src="images/life.png" alt="">
+            <div class="mart_body_left_txt">
+                <div class="mart_body_left_mart">
+                    <div class="mart_body_left_mart1">美</div>
+                    <div class="mart_body_left_mart2">家</div>
+                </div>
+                <div class="mart_body_left_txt1">家饰尚品
+                    <br>清新居家
+                </div>
+            </div>
+            <div class="mart_body_left_arrow">
+                <img src="images/mart2.png" alt="">
+            </div>
+            <div class="mart_body_left_up"></div>
+        </div>
+        <div class="mart_cards">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+            <div class="mart_cards_up"></div>
+        </div>
+        <div class="mart_cards">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+            <div class="mart_cards_up"></div>
+        </div>
+        <div class="mart_cards">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+            <div class="mart_cards_up"></div>
+        </div>
+        <div class="mart_cards">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+            <div class="mart_cards_up"></div>
+        </div>
+        <div class="mart_cards">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+            <div class="mart_cards_up"></div>
+        </div>
+        <div class="mart_cards">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+            <div class="mart_cards_up"></div>
+        </div>
+        <div class="mart_cards">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+            <div class="mart_cards_up"></div>
+        </div>
+        <div class="mart_cards">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+            <div class="mart_cards_up"></div>
+        </div>
+    </div>
+</div>
+
+<!--home-->
+<div class="brandsale_out mart_out">
+    <div class="mart">
+        <div class="fashion_head">
+           打造爱巢&nbsp <span>HOME</span>
+        </div>
+        <div class="mart_body_left">
+            <img src="images/home.jpg" alt="">
+            <div class="mart_body_left_txt">
+                <div class="mart_body_left_mart">
+                    <div class="mart_body_left_mart1">干&nbsp衣</div>
+                    <div class="mart_body_left_mart2">抽&nbsp湿</div>
+                </div>
+                <div class="mart_body_left_txt1">衣物护理季
+                    <br>除菌除湿
+                </div>
+            </div>
+            <div class="mart_body_left_arrow">
+                <img src="images/mart2.png" alt="">
+            </div>
+            <div class="mart_body_left_up"></div>
+        </div>
+        <div class="mart_cards">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+            <div class="mart_cards_up"></div>
+        </div>
+        <div class="mart_cards">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+            <div class="mart_cards_up"></div>
+        </div>
+        <div class="mart_cards">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+            <div class="mart_cards_up"></div>
+        </div>
+        <div class="mart_cards">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+            <div class="mart_cards_up"></div>
+        </div>
+        <div class="mart_cards">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+            <div class="mart_cards_up"></div>
+        </div>
+        <div class="mart_cards">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+            <div class="mart_cards_up"></div>
+        </div>
+        <div class="mart_cards">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+            <div class="mart_cards_up"></div>
+        </div>
+        <div class="mart_cards">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+            <div class="mart_cards_up"></div>
+        </div>
+    </div>
+</div>
+
+
+<!--名店潮搭-->
+    <div class="t-shirt_out">
+        <div class="t-shirt">
+            <img src="images/com.jpg" alt="">
+        </div>
+    </div>
+
+<!--户外出行-->
+<div class="brandsale_out mart_out">
+    <div class="mart">
+        <div class="fashion_head">
+           户外出行&nbsp <span>OUTDOORS & AUTOMOTIVE</span>
+        </div>
+        <div class="mart_body_left">
+            <img src="images/outdoor.jpg" alt="">
+            <div class="mart_body_left_txt">
+                <div class="mart_body_left_mart">
+                    <div class="mart_body_left_mart1">520</div>
+                    <div class="mart_body_left_mart2"></div>
+                </div>
+                <div class="mart_body_left_txt1">运动户外
+                    <br>抢到赚到
+                </div>
+            </div>
+            <div class="mart_body_left_arrow">
+                <img src="images/mart2.png" alt="">
+            </div>
+            <div class="mart_body_left_up"></div>
+        </div>
+        <div class="mart_cards">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+            <div class="mart_cards_up"></div>
+        </div>
+        <div class="mart_cards">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+            <div class="mart_cards_up"></div>
+        </div>
+        <div class="mart_cards">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+            <div class="mart_cards_up"></div>
+        </div>
+        <div class="mart_cards">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+            <div class="mart_cards_up"></div>
+        </div>
+        <div class="mart_cards">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+            <div class="mart_cards_up"></div>
+        </div>
+        <div class="mart_cards">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+            <div class="mart_cards_up"></div>
+        </div>
+        <div class="mart_cards">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+            <div class="mart_cards_up"></div>
+        </div>
+        <div class="mart_cards">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+            <div class="mart_cards_up"></div>
+        </div>
+    </div>
+</div>
+
+<div class="clear"></div>
+<div class="clear"></div>
+
+<!--猜你喜欢-->
+    <div class="brandsale_out like_up">
+<div class="like">
+    &nbsp&nbsp&nbsp猜你喜欢
+    <div class="like_line"></div>
+    <div class="like_line1"></div>
+</div>
+    </div>
+
+<div class="clear"></div>
+
+<!--底部产品-->
+    <div class="like_out_out">
+        <div class="like_out">
+            <div class="like_cards_rows">
+    <div class="like_cards">
+            <div class="like_cards_up">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+            </div>
+        </div>
+    <div class="like_cards">
+        <div class="like_cards_up">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+        </div>
+    </div>
+    <div class="like_cards">
+        <div class="like_cards_up">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+        </div>
+    </div>
+    <div class="like_cards">
+        <div class="like_cards_up">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+        </div>
+    </div>
+    <div class="like_cards">
+        <div class="like_cards_up">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+        </div>
+    </div>
+            </div>
+            <div class="like_cards_rows">
+    <div class="like_cards">
+        <div class="like_cards_up">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+        </div>
+    </div>
+    <div class="like_cards">
+        <div class="like_cards_up">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+        </div>
+    </div>
+    <div class="like_cards">
+        <div class="like_cards_up">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+        </div>
+    </div>
+    <div class="like_cards">
+        <div class="like_cards_up">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+        </div>
+    </div>
+    <div class="like_cards">
+        <div class="like_cards_up">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+        </div>
+    </div>
+            </div>
+            <div class="like_cards_rows">
+    <div class="like_cards">
+        <div class="like_cards_up">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+        </div>
+    </div>
+    <div class="like_cards">
+        <div class="like_cards_up">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+        </div>
+    </div>
+    <div class="like_cards">
+        <div class="like_cards_up">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+        </div>
+    </div>
+    <div class="like_cards">
+        <div class="like_cards_up">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+        </div>
+    </div>
+    <div class="like_cards">
+        <div class="like_cards_up">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+        </div>
+    </div>
+            </div>
+            <div class="like_cards_rows">
+    <div class="like_cards">
+        <div class="like_cards_up">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+        </div>
+    </div>
+    <div class="like_cards">
+        <div class="like_cards_up">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+        </div>
+    </div>
+    <div class="like_cards">
+        <div class="like_cards_up">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+        </div>
+    </div>
+    <div class="like_cards">
+        <div class="like_cards_up">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+        </div>
+    </div>
+    <div class="like_cards">
+        <div class="like_cards_up">
+            <div class="mart_cards_top">
+                <img src="images/mart_c1.jpg" alt="">
+            </div>
+            <div class="mart_cards_cen">屈臣氏苏打汽水<br>330ml*24整箱原味</div>
+            <div class="mart_cards_price">￥88</div>
+        </div>
+    </div>
+             </div>
+            <div class="like_end">
+                <img src="images/end.jpg" alt="">
+            </div>
+</div>
+    </div>
+
+
+<!--品质保证-->
+    <div class="end_out_up">
+<div class="end_out">
+    <div class="end1">
+        <div class="end_pic1"></div>
+        <div class="end_txt">
+            <span>品质保障</span>
+            <br>品质护航 购物无忧
+        </div>
+    </div>
+    <div class="end1">
+        <div class="end_pic2"></div>
+        <div class="end_txt">
+            <span>七天无理由退换货</span>
+            <br>为您提供售后无忧保障
+        </div>
+    </div>
+    <div class="end1">
+        <div class="end_pic3"></div>
+        <div class="end_txt">
+            <span>特色服务体验</span>
+            <br>为您呈现不一样的服务
+        </div>
+    </div>
+    <div class="end1">
+        <div class="end_pic4"></div>
+        <div class="end_txt">
+            <span>帮助中心</span>
+            <br>您的购物指南
+        </div>
+    </div>
+    <div class="end2">
+        <span>购物指南</span>
+        <br>免费注册
+        <br>开通支付宝
+        <br>支付宝充值
+        <img src="images/endtm.png" alt="">
+    </div>
+    <div class="end2">
+        <span>天猫保障</span>
+        <br>发票保障
+        <br>售后规则
+        <br>缺货赔付
+    </div>
+    <div class="end2">
+        <span>支付方式</span>
+        <br>快捷支付
+        <br>信用卡
+        <br>余额宝
+        <br>蚂蚁花呗
+        <br>货到付款
+    </div>
+    <div class="end2">
+        <span>商家服务</span>
+        <br>天猫规则
+        <br>商家入驻
+        <br>商家中心
+        <br>物流服务
+        <br>喵言喵语
+        <br>运营服务
+    </div>
+    <div class="end3">
+        手机天猫
+        <div class="end3_pic">
+            <img src="images/phone.png" alt="">
+        </div>
+    </div>
+</div>
+    </div>
+<!--页面底部信息-->
+    <div class="tmall-bottomshow_out">
+<div class="tmall-bottomshow">
+    <div class="tmall-tmallabout">
+        <a href="">关于天猫</a>
+        <a href="">帮助中心</a>
+        <a href="">开放平台</a>
+        <a href="">诚聘英才</a>
+        <a href="">联系我们</a>
+        <a href="">网站合作</a>
+        <a href="">法律声明</a>
+        <a href="">隐私权政策</a>
+        <a href="">知识产权</a>
+        <a href="">廉政举报</a>
+        <a href="">规则意见征集</a>
+    </div>
+    <div class="tmall-includecompany">
+        <div class="tmall-includecompany-otherweb-in"><a href="">阿里巴巴集团</a>&nbsp;|&nbsp;</div>
+        <div class="tmall-includecompany-otherweb-in"><a href="">淘宝网</a>&nbsp;|&nbsp;</div>
+        <div class="tmall-includecompany-otherweb-in"><a href="">天猫</a>&nbsp;|&nbsp;</div>
+        <div class="tmall-includecompany-otherweb-in"><a href="">聚划算</a>&nbsp;|&nbsp;</div>
+        <div class="tmall-includecompany-otherweb-in"><a href="">全球速卖通</a>&nbsp;|&nbsp;</div>
+        <div class="tmall-includecompany-otherweb-in"><a href="">阿里巴巴国际交易市场</a>&nbsp;|&nbsp;</div>
+        <div class="tmall-includecompany-otherweb-in"><a href="">1688</a>&nbsp;|&nbsp;</div>
+        <div class="tmall-includecompany-otherweb-in"><a href="">阿里妈妈</a>&nbsp;|&nbsp;</div>
+        <div class="tmall-includecompany-otherweb-in"><a href="">飞猪</a>&nbsp;|&nbsp;</div>
+        <div class="tmall-includecompany-otherweb-in"><a href="">阿里云计算</a>&nbsp;|&nbsp;</div>
+        <div class="tmall-includecompany-otherweb-in"><a href="">AliOS</a>&nbsp;|&nbsp;</div>
+        <div class="tmall-includecompany-otherweb-in"><a href="">汽车票预定</a>&nbsp;|&nbsp;</div>
+        <div class="tmall-includecompany-otherweb-in"><a href="">阿里通信</a>&nbsp;|&nbsp;</div>
+        <div class="tmall-includecompany-otherweb-in"><a href="">万网</a>&nbsp;|&nbsp;</div>
+        <div class="tmall-includecompany-otherweb-in"><a href="">高德</a>&nbsp;|&nbsp;</div>
+        <div class="tmall-includecompany-otherweb-in"><a href="">UC</a>&nbsp;|&nbsp;</div>
+        <div class="tmall-includecompany-otherweb-in"><a href="">友盟</a>&nbsp;|&nbsp;</div>
+        <div class="tmall-includecompany-otherweb-in"><a href="">虾米</a>&nbsp;|&nbsp;</div>
+        <div class="tmall-includecompany-otherweb-in"><a href="">钉钉</a>&nbsp;|&nbsp;</div>
+        <div class="tmall-includecompany-otherweb-in"><a href="">支付宝</a></div>
+    </div>
+    <!--许可证-->
+    <div class="tmall-certicate">
+        <div class="tmall-certicate-content">增值电信业务经营许可证： 浙B2-20110446</div>
+        <div class="tmall-certicate-content">市场名称登记证：工商网市字3301004119号</div>
+        <div class="tmall-certicate-content">出版物网络交易平台服务经营备案证： 新出发浙备字第001号 </div>
+    </div>
+    <!--举报方式-->
+    <div class="tmall-tell">
+        <div class="tmall-tell-content">互联网违法和不良信息举报电话：0571-81683755 blxxjb@alibaba-inc.com</div>
+        <div class="tmall-tell-content">互联网药品信息服务资质证书编号：浙-（经营性）-2017-0005</div>
+        <div class="tmall-tell-content-expre">浙公网安备 33010002000120号 </div>
+        <div class="tmall-tell-content">医疗器械网络交易服务第三方平台备案：（浙）网械平台备字[2018]第00002号</div>
+        <div class="tmall-tell-content">互联网药品交易服务资格证书：国A20150001</div>
+    </div>
+    <!--第三方平台-->
+    <div class="tmall-tmallthreesupport">
+        <div class="tmall-tmallthreesupport-content">浙江省网络食品销售第三方平台提供者备案：浙网食A33010002</div>
+        <div class="tmall-tmallthreesupport-content">12318举报</div>
+    </div>
+    <!--版权所有-->
+    <div class="tmall-tmallcopyright">
+        &copy;2003-2019 TMALL.COM 版权所有
+    </div>
+    <!--许可证明-->
+    <div class="tmall-agreebegin">
+        <div class="tmall-agreebegin-one"></div>
+        <div class="tmall-agreebegin-two"></div>
+    </div>
+</div>
+    </div>
+
+<!--右侧导航栏-->
+<div class="right_lead">
+    <div class="right_lead_clear"></div>
+    <div class="right_lead_pic"></div>
+    <div class="right_lead_location"></div>
+    <div class="right_lead_tm"></div>
+    <div class="right_lead_shop_out">
+        <div class="right_lead_shop">
+            <div class="right_lead_shop_car"></div>
+            购物车
+        </div>
+    </div>
+    <div class="right_lead_marks">
+        <div class="right_lead_mark1"></div>
+        <div class="right_lead_mark2"></div>
+        <div class="right_lead_mark3"></div>
+        <div class="right_lead_mark4"></div>
+        <div class="right_lead_mark5"></div>
+        <div class="right_lead_mark6"></div>
+    </div>
+</div>
+</body>
+</html>
