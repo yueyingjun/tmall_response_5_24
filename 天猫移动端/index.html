@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>天猫移动端</title>
+    <script>
+        window.onload = function (ev) {
+            var banner = document.querySelectorAll(".banner");
+            var num=0;
+            setInterval(function () {
+                num++;
+                if(num==2){
+                    num=0;
+                }
+                for (var i = 0; i < banner.length; i++) {
+                    console.log(banner[i]);
+                    banner[i].style.display="none";
+                }
+                // console.log(num);
+                banner[num].style.display="block";
+            },3000)
+
+        }
+    </script>
+</head>
+<body>
+<!--顶部-->
+    <div class="top">
+        <div class="top-right"></div>
+        <div class="top-center"> </div>
+        <span>登录</span>
+    </div>
+    <div class="top-sousuo">
+        <div class="sousuo-big">
+        <div class="sousuo-img">
+            <img src="./imgs/sousuo.webp" alt="" style="width: .3rem;margin-bottom: .52rem;margin-left: .2rem">
+        </div>
+        <input type="text" placeholder="搜索商品、品牌">
+        </div>
+    </div>
+    <div class="h40"></div>
+    <div class="top-yuan">
+        <div class="top-yuan1"></div>
+        <div class="top-yuan2"></div>
+        <div class="top-yuan3"></div>
+        <div class="top-yuan4"></div>
+        <div class="top-yuan5"></div>
+    </div>
+<div class="wenzi">
+    <span>苏宁易购</span>
+    <span>天猫超市</span>
+    <span>天猫国际</span>
+    <span>聚划算&nbsp;&nbsp;</span>
+    <span>分类&nbsp;&nbsp;&nbsp;&nbsp;</span>
+</div>
+<div class="h40"></div>
+<!--    轮播图-->
+    <div class="banners">
+            <div class="banner-box">
+                <div class="wheel-box">
+                    <div class="banner banner1"></div>
+                    <div class="banner banner2"></div>
+                </div>
+            </div>
+    </div>
+    <img src="./imgs/fuli.webp" alt="" class="fuli">
+<!--抢购-->
+<div class="leibie">
+        <div class="leibie-box">
+            <div class="leibie-box-tittle">
+                限时抢购
+            </div>
+            <img src="./imgs/shop.webp" alt="" class="leibie-box-img">
+            <img src="./imgs/shop.webp" alt="" class="leibie-box-img">
+        </div>
+        <div class="leibie-box">
+            <div class="leibie-box-tittle">
+                天猫好物
+            </div>
+            <img src="./imgs/shop.webp" alt="" class="leibie-box-img">
+            <img src="./imgs/shop.webp" alt="" class="leibie-box-img">
+        </div>
+        <div class="leibie-box">
+            <div class="leibie-box-tittle">
+                聚划算
+            </div>
+            <img src="./imgs/shop.webp" alt="" class="leibie-box-img">
+            <img src="./imgs/shop.webp" alt="" class="leibie-box-img">
+        </div>
+        <div class="leibie-box">
+            <div class="leibie-box-tittle">
+                天猫闪抢
+            </div>
+            <img src="./imgs/shop.webp" alt="" class="leibie-box-img">
+            <img src="./imgs/shop.webp" alt="" class="leibie-box-img">
+        </div>
+    </div>
+</div>
+<!--榜单-->
+<div class="bangdan">天猫榜单</div>
+<div class="bangdan-box">
+    <div class="shangpin1">
+    </div>
+    <div class="shangpin1"></div>
+    <div class="shangpin1"></div>
+</div>
+<div class="h40"></div>
+
+</body>
+</html>
