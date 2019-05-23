@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dd4609d8-168d-4a1d-b97c-45420161c7b1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/tmall-mobile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/tmall-副本.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/tamll-mobile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/tmall-响应式.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/tmall-响应式副本.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/3u3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/9c3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/ca3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/carl_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/cz3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/e1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/e2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/e3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/e4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/end.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/footer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/heart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/hk1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/hk2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/hu3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/life1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/life2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/life3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/life4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/life5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/life6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/life7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/life8.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/life9.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/lun1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/lun2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/lun3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/lun4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/main.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/more.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/mu3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/pin10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/pin11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/pin12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/pin13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/pin14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/pin15.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/pin16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/pin17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/pin18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/pin19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/pin2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/pin20.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/pin21.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/pin22.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/pin23.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/pin24.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/pin25.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/pin26.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/pin27.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/pin28.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/pin29.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/pin3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/pin4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/pin5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/pin6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/pin7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/pin8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/pin9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/play1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/play2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/play3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/play4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/play5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/play6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/play7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/play8.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/play9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/right-index1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/right-index2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/right-index3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/right-index4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/right-index5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/right-index6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/right-index7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/right-index8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/right-index9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/tmall-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/tmall-mobile/search_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/tmall-mobile/导航1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/tmall-mobile/导航2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/tmall-mobile/导航3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/tmall-mobile/导航4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/tmall-mobile/导航5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/tmall-mobile/小图标.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/tmall-mobile/顶部tmall.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/tmall-one1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/tmall-one2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/tmall.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/tmall1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/tmall2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/tmall3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/tmall4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/tmall5.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/tmall6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/zh3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/二维码.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/天猫国际.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/天猫超市logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/导航2-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/导航2-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/导航2-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/白色背景图900-900.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/note.md" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plane.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+              <folding>
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#4;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#ul#0;n#div#5;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#ul#1;n#div#5;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#ul#2;n#div#5;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#ul#3;n#div#5;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#ul#4;n#div#5;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#ul#5;n#div#5;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#ul#6;n#div#5;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#ul#7;n#div#5;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#ul#8;n#div#5;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#ul#9;n#div#5;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#80850#85670#0" />
+                <element signature="n#div#6;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#7;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#8;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/plane.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="13075">
+              <caret line="523" column="1" selection-start-line="523" selection-start-column="1" selection-end-line="523" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/tmall.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="994" column="19" selection-start-line="994" selection-start-column="1" selection-end-line="994" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/tmall-响应式.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="131">
+              <caret line="216" column="10" selection-start-line="216" selection-start-column="10" selection-end-line="216" selection-end-column="10" />
+              <folding>
+                <element signature="n#script#0;n#head#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#4;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#1;n#div#4;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#2;n#div#1;n#div#4;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#5;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#6;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#7;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#8;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#8;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#9;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#9;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#10;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#11;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#11;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#12;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#13;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/tamll-mobile.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="26" column="17" lean-forward="true" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/tmall-mobile.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="143" column="18" lean-forward="true" selection-start-line="143" selection-start-column="18" selection-end-line="143" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>top-name</find>
+      <find>life-bottom-left</find>
+      <find>a{</find>
+      <find>tmall</find>
+      <find>right-index</find>
+      <find>navigation-photo-type1-one-right</find>
+      <find>navigation-photo-type1</find>
+      <find>life-one-top</find>
+      <find>life-bottom-right-one</find>
+      <find>右导航</find>
+      <find>导航</find>
+      <find>left-index</find>
+      <find>life-seven-top</find>
+      <find>start</find>
+      <find>start{</find>
+      <find>col-lg-2</find>
+      <find>navigation2-middle</find>
+      <find>pin3</find>
+      <find>品牌导航</find>
+      <find>pin</find>
+      <find>导航2</find>
+      <find>人生</find>
+      <find>life-bottom-right-two</find>
+      <find>end</find>
+      <find>out</find>
+      <find>life</find>
+      <find>life-five-top</find>
+      <find>col-m</find>
+      <find>eightList</find>
+      <find>close</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>col-l</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/air.html" />
+        <option value="$PROJECT_DIR$/copy.html" />
+        <option value="$PROJECT_DIR$/float.html" />
+        <option value="$PROJECT_DIR$/test.html" />
+        <option value="$PROJECT_DIR$/515.html" />
+        <option value="$PROJECT_DIR$/css/515.css" />
+        <option value="$PROJECT_DIR$/note.md" />
+        <option value="$PROJECT_DIR$/css/plane.css" />
+        <option value="$PROJECT_DIR$/plane.html" />
+        <option value="$PROJECT_DIR$/html/tmall-副本.html" />
+        <option value="$PROJECT_DIR$/css/tmall-副本.css" />
+        <option value="$PROJECT_DIR$/css/tmall.css" />
+        <option value="$PROJECT_DIR$/html/tmallTest.html" />
+        <option value="$PROJECT_DIR$/html/tmall.html" />
+        <option value="$PROJECT_DIR$/html/tmall-响应式副本.html" />
+        <option value="$PROJECT_DIR$/html/tmall-响应式.html" />
+        <option value="$PROJECT_DIR$/html/tamll-mobile" />
+        <option value="$PROJECT_DIR$/html/tamll-mobile.html" />
+        <option value="$PROJECT_DIR$/css/tmall-mobile.css" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="1060" />
+    <option name="width" value="865" />
+    <option name="height" value="1030" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="webstorm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webstorm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webstorm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webstorm" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webstorm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webstorm" type="462c0819:PsiDirectoryNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webstorm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webstorm" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webstorm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webstorm" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="tmall-mobile" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/images/tmall-mobile" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\webstorm\images\tmall-mobile" />
+      <recent name="D:\webstorm\css" />
+      <recent name="D:\webstorm\images" />
+      <recent name="D:\webstorm" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\webstorm\images" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dd4609d8-168d-4a1d-b97c-45420161c7b1" name="Default Changelist" comment="" />
+      <created>1557804605796</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1557804605796</updated>
+      <workItem from="1557804609580" duration="1744000" />
+      <workItem from="1557808708173" duration="11000" />
+      <workItem from="1557808754628" duration="10000" />
+      <workItem from="1557808791171" duration="506000" />
+      <workItem from="1557809313854" duration="18595000" />
+      <workItem from="1557879303855" duration="13672000" />
+      <workItem from="1557905723320" duration="20716000" />
+      <workItem from="1557965566208" duration="5382000" />
+      <workItem from="1557975043446" duration="23669000" />
+      <workItem from="1558012847918" duration="13289000" />
+      <workItem from="1558027690502" duration="263000" />
+      <workItem from="1558053596834" duration="29832000" />
+      <workItem from="1558099979617" duration="730000" />
+      <workItem from="1558139694114" duration="34676000" />
+      <workItem from="1558183444803" duration="15991000" />
+      <workItem from="1558224312603" duration="4255000" />
+      <workItem from="1558237407737" duration="22154000" />
+      <workItem from="1558268796145" duration="12768000" />
+      <workItem from="1558313258682" duration="297000" />
+      <workItem from="1558314396635" duration="29182000" />
+      <workItem from="1558398079484" duration="646000" />
+      <workItem from="1558401047515" duration="2057000" />
+      <workItem from="1558424411078" duration="4466000" />
+      <workItem from="1558445143654" duration="601000" />
+      <workItem from="1558505220977" duration="869000" />
+      <workItem from="1558519876175" duration="5074000" />
+      <workItem from="1558570622691" duration="14931000" />
+      <workItem from="1558615364216" duration="11823000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="288209000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2291942" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/air.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1750">
+          <caret line="70" column="7" selection-start-line="7" selection-start-column="4" selection-end-line="70" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/float.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/copy.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1450">
+          <caret line="58" column="31" selection-start-line="58" selection-start-column="31" selection-end-line="58" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1381">
+          <caret line="65" column="37" selection-start-line="65" selection-start-column="37" selection-end-line="65" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/note.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="575">
+            <caret line="23" column="3" lean-forward="true" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/img.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/tmall-logo.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/logo.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="1614" column="86" selection-start-line="1614" selection-start-column="78" selection-end-line="1614" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/tmall-副本.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="1901" lean-forward="true" selection-start-line="1901" selection-end-line="1901" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/tmall-源副本.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="674" column="18" lean-forward="true" selection-start-line="674" selection-start-column="18" selection-end-line="674" selection-end-column="18" />
+          <folding>
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#4;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#div#4;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#1;n#div#4;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#5;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#6;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#7;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#8;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#8;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#8;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#9;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#10;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#11;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#12;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#13;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#14;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/tmall.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#4;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#div#4;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#1;n#div#4;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#5;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#6;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#8;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#8;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#8;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#9;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#10;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#11;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#12;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#13;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#14;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/tmall-响应式副本.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="140" column="53" lean-forward="true" selection-start-line="140" selection-start-column="53" selection-end-line="140" selection-end-column="53" />
+          <folding>
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#4;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#div#4;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#1;n#div#4;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#5;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#6;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#16594#17948#0" />
+            <element signature="n#div#7;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#8;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#8;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#8;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#9;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#9;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#10;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#11;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#12;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#13;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#14;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plane.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#4;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#div#5;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#1;n#div#5;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#2;n#div#5;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#3;n#div#5;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#4;n#div#5;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#5;n#div#5;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#6;n#div#5;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#7;n#div#5;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#8;n#div#5;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#9;n#div#5;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#80850#85670#0" />
+            <element signature="n#div#6;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#7;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#8;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/plane.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13075">
+          <caret line="523" column="1" selection-start-line="523" selection-start-column="1" selection-end-line="523" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/tmall.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="994" column="19" selection-start-line="994" selection-start-column="1" selection-end-line="994" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/tmall-响应式.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="216" column="10" selection-start-line="216" selection-start-column="10" selection-end-line="216" selection-end-column="10" />
+          <folding>
+            <element signature="n#script#0;n#head#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#4;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#div#4;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#1;n#div#4;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#5;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#6;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#7;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#8;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#8;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#9;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#9;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#10;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#11;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#11;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#12;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#13;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/tmall-mobile/小图标.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/tmall-mobile/导航1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/tamll-mobile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="26" column="17" lean-forward="true" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/tmall-mobile.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="143" column="18" lean-forward="true" selection-start-line="143" selection-start-column="18" selection-end-line="143" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

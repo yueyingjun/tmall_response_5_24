@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tmall-副本</title>
+    <link rel="stylesheet" href="../css/tmall.css">
+
+    <script>
+        window.onload=function (ev) {
+            var types=document.querySelectorAll(".types a");
+            var cons=document.querySelectorAll(".type");
+
+            for (var i=0;i<types.length;i++){
+                types[i].index=i;
+                types[i].onmouseover=function (ev) {
+                    for (var j=0;j<cons.length;j++){
+                        cons[j].style.display="none";
+                    }
+                    cons[this.index].style.display="block";
+                }
+            }
+
+
+            // 轮播图
+
+            var rectangles=document.querySelectorAll(".rectangle");
+            var luns=document.querySelectorAll(".lun");
+
+            var num=0;
+
+            setInterval(function () {
+                if (num == 4) {
+                    num = 0;
+                }
+
+                for (var i = 0; i < rectangles.length; i++) {
+                    luns[i].style.display="none";
+                    rectangles[i].style.backgroundColor="black"
+                }
+                luns[num].style.display="block"
+                rectangles[num].style.backgroundColor="white"
+                num++
+            },2000)
+
+            // 天猫超市
+            var supermarkets=document.querySelectorAll(".tmall-one-top div")
+            var changes=document.querySelectorAll(".tmall-one-bottom")
+            var index=0
+
+            for (i=0;i<supermarkets.length;i++){
+                supermarkets[i].index=i
+                supermarkets[i].onmouseover=function (ev) {
+                    for (var j = 0; j < changes.length; j++) {
+                        changes[j].style.display="none"
+                    }
+                    changes[this.index].style.display="block"
+
+                }
+            }
+
+            setInterval(function () {
+                if (index == 2) {
+                    index=0
+                }
+
+                for (var i=0;i<supermarkets.length;i++){
+                    changes[i].style.display="none"
+                }
+                changes[index].style.display="block"
+                index++
+
+            },4000)
+
+
+            /*// 品牌切换!!错
+            var pin=document.querySelectorAll(".pin30");
+            var pinList=document.querySelectorAll(".pinout");
+            var n=0;
+
+
+                pin.onclick=function (ev) {
+                    if (n==0){
+                        n=1
+                    }else {
+                        n=0
+                    }
+
+                    for (var j=0;j<pin.length;j++){
+                        pinList[j].style.display="none";
+                    }
+                    pinList[n].style.display="block";
+                    n++;
+                }*/
+
+
+        }
+    </script>
+</head>
+<body>
+
+<!--start-->
+<div class="tmallStart">
+    <div class="start">
+        <div class="start-left"><a href="">喵，欢迎来天猫 请登录 免费注册</a></div>
+        <div class="start-right"><a href="">我的淘宝
+            󰅈购物车0件
+            收藏夹
+            手机版 淘宝网
+            商家支持
+            网站导航</a>
+        </div>
+    </div>
+
+</div>
+
+<!--左导航-->
+<div class="left-index">
+    <div class="left-index-one"><a href="">导航</a></div>
+    <div class="left-index-two"><a href="">天猫<br>超市</a></div>
+    <div class="left-index-three"><a href="">天猫<br>国际</a></div>
+    <div class="left-index-four"><a href="">美丽<br>人生</a></div>
+    <div class="left-index-five"><a href="">潮电酷玩</a></div>
+    <div class="left-index-six"><a href="">居家生活</a></div>
+    <div class="left-index-seven"><a href="">打造爱巢</a></div>
+    <div class="left-index-eight"><a href="">户外出行</a></div>
+    <div class="left-index-nine"><a href="">猜你喜欢</a></div>
+    <div class="left-index-ten"><a href="">顶部</a></div>
+
+</div>
+
+<!--右导航-->
+<div class="right-index">
+    <a href="javascpipt；" class="right-index-520">
+
+    </a>
+    <div class="right-index-bottom">
+        <div class="right-index-bottom-left"></div>
+        <div class="right-index-bottom-right">
+            <div class="right-index2"></div>
+            <div class="right-index3"></div>
+            <div class="right-index4"></div>
+            <div class="right-index5"></div>
+            <div class="right-index6"></div>
+            <div class="right-index7"></div>
+            <div class="right-index9"></div>
+        </div>
+    </div>
+
+</div>
+<!--搜索-->
+<div class="whiteBackground">
+    <div class="header">
+        <div class="tmall-logo-img">
+            <img src="../images/tmall-logo.png" alt="" width="250" height="165">
+        </div>
+        <div class="tmallSearch">
+            <div class="tmallSearch-top">
+                <div class="tmallSearch-top-search">
+                    <div class="tmallSearch-top-search-left">搜索 天猫 商品/品牌/店铺</div>
+                    <div class="tmallSearch-top-search-right">
+                        <a href="">搜索</a>
+                    </div>
+                </div>
+            </div>
+            <div class="tmallSearch-bottom">
+                <div class="tmallSearch-bottom-index">
+                    <!--                        针织衫 | 连衣裙 | 四件套 | 摄像头 | 客厅灯 | 口红 | 手机 | 运动鞋 | 牛奶-->
+                    <a href="">针织衫 |</a>
+                    <a href="">连衣裙 |</a>
+                    <a href="">四件套 |</a>
+                    <a href="">摄像头 |</a>
+                    <a href="">客厅灯 |</a>
+                    <a href="">口红 |</a>
+                    <a href="">手机 |</a>
+                    <a href="">运动鞋 |</a>
+                    <a href="">牛奶 |</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--导航1-->
+<div class="navigation">
+    <div class="navigation-bar">
+        <div class="navigation-bar-left">
+            <div  class="navigation-bar-left-one types">
+                <a href="">商品分类</a>
+            </div>
+            <div  class="navigation-bar-left-two types">
+                <a href="">天猫520活动</a>
+            </div>
+        </div>
+        <div class="navigation-bar-right">
+            <a href="javascript:;">天猫超市</a>
+            <a href="javascript:;">天猫国际</a>
+            <a href="javascript:;">天猫会员</a>
+            <a href="javascript:;">电器城</a>
+            <a href="javascript:;">仙喵生</a>
+            <a href="javascript:;">医药馆</a>
+            <a href="javascript:;">营业厅</a>
+            <a href="javascript:;">魅力惠</a>
+            <a href="javascript:;">飞猪旅行</a>
+            <a href="javascript:;">苏宁易购</a>
+        </div>
+    </div>
+    <div class="navigation-photo">
+        <div class="navigation-photo-type1 type">
+            <div class="navigation-photo-type1-one">
+                <div class="navigation-photo-type1-one-left"></div>
+                <div class="navigation-photo-type1-one-right"><a href="">女装/内衣</a></div>
+            </div>
+            <div class="navigation-photo-type1-one">
+                <div class="navigation-photo-type1-one-left"></div>
+                <div class="navigation-photo-type1-one-right"><a href="">男装/运动户外</a></div>
+            </div>
+            <div class="navigation-photo-type1-one">
+                <div class="navigation-photo-type1-one-left"></div>
+                <div class="navigation-photo-type1-one-right"><a href="">女鞋/男鞋</a></div>
+            </div>
+            <div class="navigation-photo-type1-one">
+                <div class="navigation-photo-type1-one-left"></div>
+                <div class="navigation-photo-type1-one-right"><a href="">美妆/个人护理</a></div>
+            </div>
+            <div class="navigation-photo-type1-one">
+                <div class="navigation-photo-type1-one-left"></div>
+                <div class="navigation-photo-type1-one-right"><a href="">腕表/眼镜</a></div>
+            </div>
+            <div class="navigation-photo-type1-one">
+                <div class="navigation-photo-type1-one-left"></div>
+                <div class="navigation-photo-type1-one-right"><a href="">珠宝饰品/手机</a></div>
+            </div>
+            <div class="navigation-photo-type1-one">
+                <div class="navigation-photo-type1-one-left"></div>
+                <div class="navigation-photo-type1-one-right"><a href="">数码/电脑办公</a></div>
+            </div>
+            <div class="navigation-photo-type1-one">
+                <div class="navigation-photo-type1-one-left"></div>
+                <div class="navigation-photo-type1-one-right"><a href="">母婴玩具</a></div>
+            </div>
+            <div class="navigation-photo-type1-one">
+                <div class="navigation-photo-type1-one-left"></div>
+                <div class="navigation-photo-type1-one-right"><a href="">母婴玩具</a></div>
+            </div>
+            <div class="navigation-photo-type1-one">
+                <div class="navigation-photo-type1-one-left"></div>
+                <div class="navigation-photo-type1-one-right"><a href="">母婴玩具</a></div>
+            </div>
+        </div>
+        <div class="navigation-photo-type2 type">
+            <div class="navigation-photo-type1-one">
+                <div class="navigation-photo-type1-one-left"></div>
+                <div class="navigation-photo-type1-one-right"><a href="">大牌女装</a></div>
+            </div>
+            <div class="navigation-photo-type1-one">
+                <div class="navigation-photo-type1-one-left"></div>
+                <div class="navigation-photo-type1-one-right"><a href="">家纺家饰</a></div>
+            </div>
+            <div class="navigation-photo-type1-one">
+                <div class="navigation-photo-type1-one-left"></div>
+                <div class="navigation-photo-type1-one-right"><a href="">运动户外</a></div>
+            </div>
+            <div class="navigation-photo-type1-one">
+                <div class="navigation-photo-type1-one-left"></div>
+                <div class="navigation-photo-type1-one-right"><a href="">型格男装</a></div>
+            </div>
+            <div class="navigation-photo-type1-one">
+                <div class="navigation-photo-type1-one-left"></div>
+                <div class="navigation-photo-type1-one-right"><a href="">大型女装</a></div>
+            </div>
+            <div class="navigation-photo-type1-one">
+                <div class="navigation-photo-type1-one-left"></div>
+                <div class="navigation-photo-type1-one-right"><a href="">珠宝饰品/手机</a></div>
+            </div>
+            <div class="navigation-photo-type1-one">
+                <div class="navigation-photo-type1-one-left"></div>
+                <div class="navigation-photo-type1-one-right"><a href="">潮流客户</a></div>
+            </div>
+            <div class="navigation-photo-type1-one">
+                <div class="navigation-photo-type1-one-left"></div>
+                <div class="navigation-photo-type1-one-right"><a href="">母大家电</a></div>
+            </div>
+            <div class="navigation-photo-type1-one">
+                <div class="navigation-photo-type1-one-left"></div>
+                <div class="navigation-photo-type1-one-right"><a href="">母婴玩具</a></div>
+            </div>
+            <div class="navigation-photo-type1-one">
+                <div class="navigation-photo-type1-one-left"></div>
+                <div class="navigation-photo-type1-one-right"><a href="">母婴玩具</a></div>
+            </div>
+        </div>
+        <div class="navigation-photo-lun">
+            <div class="lun1 lun"></div>
+            <div class="lun2 lun"></div>
+            <div class="lun3 lun"></div>
+            <div class="lun4 lun"></div>
+            <div class="navigation-photo-lun-bottom">
+                <div class="navigation-photo-lun-bottom-one rectangle"></div>
+                <div class="navigation-photo-lun-bottom-two rectangle"></div>
+                <div class="navigation-photo-lun-bottom-three rectangle"></div>
+                <div class="navigation-photo-lun-bottom-four rectangle"></div>
+            </div>
+            <div class="navigation-photo-lun-right">
+                <div class="navigation-photo-lun-right-one"></div>
+                <div ></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--导航2-->
+<div class="navigation2">
+    <div class="navigation2-left">
+        <div class="navigation2-left-top">
+            <div class="navigation2-left-top-left"><sapn>品牌闪购 SALE</sapn></div>
+            <div class="navigation2-left-top-right"></div>
+        </div>
+        <div class="navigation2-left-bottom"></div>
+    </div>
+    <div class="navigation2-middle">
+        <div class="navigation2-middle-top">
+            <div class="navigation2-middle-top-left"><sapn>聚名品LUXURY CHANNEL</sapn></div>
+            <div class="navigation2-middle-top-right"></div>
+        </div>
+        <div class="navigation2-middle-bottom"></div>
+    </div>
+    <div class="navigation2-right">
+        <div class="navigation2-right-top">
+            <div class="navigation2-right-top-left"><sapn>品牌活动BRAND ACTIVITY</sapn></div>
+            <div class="navigation2-right-top-right"></div>
+        </div>
+        <div class="navigation2-right-bottom"></div>
+    </div>
+</div>
+
+<!--品牌导航-->
+
+<div class="pins">
+    <!--    <div class="pinout">-->
+    <div class="pin">
+        <div class="pin1 p">
+            <div class="in"><a href="">优惠券 ￥100</a></div>
+        </div>
+        <div class="pin2 p">
+            <div class="in"><a href="">优惠券 ￥100</a></div>
+        </div>
+        <div class="pin3 p"><div class="in"><a href="">优惠券 ￥100</a></div></div>
+        <div class="pin4 p"><div class="in"><a href="">优惠券 ￥100</a></div></div>
+        <div class="pin5 p"><div class="in"><a href="">优惠券 ￥100</a></div></div>
+        <div class="pin6 p"><div class="in"><a href="">优惠券 ￥100</a></div></div>
+        <div class="pin7 p"><div class="in"><a href="">优惠券 ￥100</a></div></div>
+        <div class="pin8 p"><div class="in"><a href="">优惠券 ￥100</a></div></div>
+        <div class="pin9 p"><div class="in"><a href="">优惠券 ￥100</a></div></div>
+        <div class="pin10 p"><div class="in"><a href="">优惠券 ￥100</a></div></div>
+    </div>
+    <div class="pin">
+        <div class="pin11 p"><div class="in"><a href="">优惠券 ￥100</a></div></div>
+        <div class="pin12 p"><div class="in"><a href="">优惠券 ￥100</a></div></div>
+        <div class="pin13 p"><div class="in"><a href="">优惠券 ￥100</a></div></div>
+        <div class="pin14 p"><div class="in"><a href="">优惠券 ￥100</a></div></div>
+        <div class="pin15 p"><div class="in"><a href="">优惠券 ￥100</a></div></div>
+        <div class="pin16 p"><div class="in"><a href="">优惠券 ￥100</a></div></div>
+        <div class="pin17 p"><div class="in"><a href="">优惠券 ￥100</a></div></div>
+        <div class="pin18 p"><div class="in"><a href="">优惠券 ￥100</a></div></div>
+        <div class="pin19 p"><div class="in"><a href="">优惠券 ￥100</a></div></div>
+        <div class="pin20 p"><div class="in"><a href="">优惠券 ￥100</a></div></div>
+    </div>
+    <div class="pin">
+        <div class="pin21 p"><div class="in"><a href="">优惠券 ￥100</a></div></div>
+        <div class="pin22 p"><div class="in"><a href="">优惠券 ￥100</a></div></div>
+        <div class="pin23 p"><div class="in"><a href="">优惠券 ￥100</a></div></div>
+        <div class="pin24 p"><div class="in"><a href="">优惠券 ￥100</a></div></div>
+        <div class="pin25 p "><div class="in"><a href="">优惠券 ￥100</a></div></div>
+        <div class="pin26 p"><div class="in"><a href="">优惠券 ￥100</a></div></div>
+        <div class="pin27 p"><div class="in"><a href="">优惠券 ￥100</a></div></div>
+        <div class="pin28 p"><div class="in"><a href="">优惠券 ￥100</a></div></div>
+        <div class="pin29 p"><div class="in"><a href="">优惠券 ￥100</a></div></div>
+        <div class="pin30">
+            <a href="javascript:;">换一批</a>
+        </div>
+    </div>
+
+    <!--    </div>-->
+
+    <!--<div class="pinout">
+
+        <div class="pin">
+            <div class="pin11"></div>
+            <div class="pin12"></div>
+            <div class="pin13"></div>
+            <div class="pin14"></div>
+            <div class="pin15"></div>
+            <div class="pin16"></div>
+            <div class="pin17"></div>
+            <div class="pin18"></div>
+            <div class="pin19"></div>
+            <div class="pin20"></div>
+        </div>
+        <div class="pin">
+            <div class="pin1"></div>
+            <div class="pin2"></div>
+            <div class="pin3"></div>
+            <div class="pin4"></div>
+            <div class="pin5"></div>
+            <div class="pin6"></div>
+            <div class="pin7"></div>
+            <div class="pin8"></div>
+            <div class="pin9"></div>
+            <div class="pin10"></div>
+        </div>
+        <div class="pin">
+            <div class="pin21"></div>
+            <div class="pin22"></div>
+            <div class="pin23"></div>
+            <div class="pin24"></div>
+            <div class="pin25"></div>
+            <div class="pin26"></div>
+            <div class="pin27"></div>
+            <div class="pin28"></div>
+            <div class="pin29"></div>
+            <div class="pin30">
+                <a href="javascript:;">换一批</a>
+            </div>
+        </div>
+
+    </div>-->
+</div>
+
+<!--天猫超市-->
+<div class="life">
+    <div class="life-top">
+        <div class="life-top-name"></div>
+        <div class="life-top-index">
+            <!--            进口食品 食品饮料 粮油副食 美容洗护 家居家电 家庭清洁 母婴用品 生鲜水果-->
+            <a href="">生鲜水果</a>
+            <a href="">母婴用品</a>
+            <a href="">家庭清洁</a>
+            <a href="">家居家电</a>
+            <a href="">美容洗护</a>
+            <a href="">粮油副食</a>
+            <a href="">食品饮料</a>
+            <a href="">进口食品</a>
+
+        </div>
+    </div>
+    <div class="life-bottom">
+        <div class="life-bottom-left">
+            <a href="javascript:;">
+                <div class="tmall-img"></div>
+                <div class="life-bottom-left-more"></div>
+            </a>
+        </div>
+        <div class="life-bottom-right">
+
+            <div class="tmall-one">
+                <div class="tmall-one-top">
+                    <div class="tmall-one-top-left"><a href="">今日疯抢</a></div>
+                    <div class="tmall-one-top-right"><a href="">量贩装</a></div>
+                </div>
+                <div class="tmall-one-bottom">
+                    <div class="tmall-one-bottom-left"><a href="">粮油调味</a></div>
+                    <div class="tmall-one-bottom-right"></div>
+                </div>
+                <div class="tmall-one-bottom">
+                    <div class="tmall-one-bottom-left"><a href="">纸巾特卖</a></div>
+                    <div class="tmall-one-bottom-right2"></div>
+                </div>
+            </div>
+            <!--<div class="life-bottom-right-one">
+                <a href="javascript:;">
+                    <div class="life-one-top"></div>
+                    <div class="life-one-middle">adidas阿迪达斯2019年新款男子EEZAY</div>
+                    <div class="life-one-bottom">¥ 199.00</div>
+                </a>
+
+            </div>
+            <div class="life-bottom-right-one">
+                <a href="javascript:;">
+                    <div class="life-two-top"></div>
+                    <div class="life-one-middle">春秋季环球低帮帆布鞋学生白色休闲韩版</div>
+                    <div class="life-one-bottom">¥ 199.00</div>
+                </a>
+            </div>-->
+            <div class="life-bottom-right-one">
+                <a href="javascript:;">
+                    <div class="tmall-three-top"></div>
+                    <div class="life-one-middle">壹 项链女纯银锁骨链吊坠小众</div>
+                    <div class="life-one-bottom">¥ 199.00</div>
+                </a>
+            </div>
+            <div class="life-bottom-right-one">
+                <a href="javascript:;">
+                    <div class="tmall-four-top"></div>
+                    <div class="life-one-middle">Stussy斯图西巡游反光短裤男女同款</div>
+                    <div class="life-one-bottom">¥ 199.00</div>
+                </a>
+            </div>
+            <div class="life-bottom-right-two">
+                <a href="javascript:;">
+                    <div class="tmall-five-top"></div>
+                    <div class="life-one-middle">Daphne/达芙妮旗下鞋柜休闲时尚拼色</div>
+                    <div class="life-one-bottom">¥ 199.00</div>
+                </a>
+            </div>
+            <div class="life-bottom-right-two">
+                <a href="javascript:;">
+                    <div class="tmall-six-top"></div>
+                    <div class="life-one-middle">COGI/高姿多效修容BB霜（会员）</div>
+                    <div class="life-one-bottom">¥ 199.00</div>
+                </a>
+            </div>
+            <div class="life-bottom-right-two">
+                <a href="javascript:;">
+                    <div class="tmall-seven-top"></div>
+                    <div class="life-one-middle">手表带真皮硅胶防水橡胶男代用万国</div>
+                    <div class="life-one-bottom">¥ 199.00</div>
+                </a>
+            </div>
+            <div class="life-bottom-right-two">
+                <a href="javascript:;">
+                    <div class="tmall-eight-top"></div>
+                    <div class="life-one-middle">唐狮2019夏装新款牛仔裤 女青年学生潮流</div>
+                    <div class="life-one-bottom">¥ 199.00</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!--天猫国际-->
+<div class="life">
+    <div class="life-top">
+        <div class="hk-top-name"></div>
+        <div class="life-top-index">
+            <!--            口红 YSL 面膜 防晒 迪奥-->
+            <a href="">迪奥</a>
+            <a href="">防晒</a>
+            <a href="">面膜</a>
+            <a href="">YSL</a>
+            <a href="">口红</a>
+
+        </div>
+    </div>
+    <div class="life-bottom">
+        <div class="life-bottom-left">
+            <a href="javascript:;">
+                <div class="tmall-img"></div>
+                <div class="life-bottom-left-more"></div>
+            </a>
+        </div>
+        <div class="life-bottom-right">
+
+            <!--<div class="tmall-one">
+                <div class="tmall-one-top">
+                    <div class="tmall-one-top-left"><a href="">今日疯抢</a></div>
+                    <div class="tmall-one-top-right"><a href="">量贩装</a></div>
+                </div>
+                <div class="tmall-one-bottom">
+                    <div class="tmall-one-bottom-left"><a href="">粮油调味</a></div>
+                    <div class="tmall-one-bottom-right"></div>
+                </div>
+                <div class="tmall-one-bottom">
+                    <div class="tmall-one-bottom-left"><a href="">纸巾特卖</a></div>
+                    <div class="tmall-one-bottom-right2"></div>
+                </div>
+            </div>-->
+            <div class="life-bottom-right-one">
+                <a href="javascript:;">
+                    <div class="life-one-top"></div>
+                    <div class="life-one-middle">adidas阿迪达斯2019年新款男子EEZAY</div>
+                    <div class="life-one-bottom">¥ 199.00</div>
+                </a>
+
+            </div>
+            <div class="life-bottom-right-one">
+                <a href="javascript:;">
+                    <div class="life-two-top"></div>
+                    <div class="life-one-middle">春秋季环球低帮帆布鞋学生白色休闲韩版</div>
+                    <div class="life-one-bottom">¥ 199.00</div>
+                </a>
+            </div>
+            <div class="life-bottom-right-one">
+                <a href="javascript:;">
+                    <div class="tmall-three-top"></div>
+                    <div class="life-one-middle">壹 项链女纯银锁骨链吊坠小众</div>
+                    <div class="life-one-bottom">¥ 199.00</div>
+                </a>
+            </div>
+            <div class="life-bottom-right-one">
+                <a href="javascript:;">
+                    <div class="tmall-four-top"></div>
+                    <div class="life-one-middle">Stussy斯图西巡游反光短裤男女同款</div>
+                    <div class="life-one-bottom">¥ 199.00</div>
+                </a>
+            </div>
+            <div class="life-bottom-right-two">
+                <a href="javascript:;">
+                    <div class="tmall-five-top"></div>
+                    <div class="life-one-middle">Daphne/达芙妮旗下鞋柜休闲时尚拼色</div>
+                    <div class="life-one-bottom">¥ 199.00</div>
+                </a>
+            </div>
+            <div class="life-bottom-right-two">
+                <a href="javascript:;">
+                    <div class="tmall-six-top"></div>
+                    <div class="life-one-middle">COGI/高姿多效修容BB霜（会员）</div>
+                    <div class="life-one-bottom">¥ 199.00</div>
+                </a>
+            </div>
+            <div class="life-bottom-right-two">
+                <a href="javascript:;">
+                    <div class="tmall-seven-top"></div>
+                    <div class="life-one-middle">手表带真皮硅胶防水橡胶男代用万国</div>
+                    <div class="life-one-bottom">¥ 199.00</div>
+                </a>
+            </div>
+            <div class="life-bottom-right-two">
+                <a href="javascript:;">
+                    <div class="tmall-eight-top"></div>
+                    <div class="life-one-middle">唐狮2019夏装新款牛仔裤 女青年学生潮流</div>
+                    <div class="life-one-bottom">¥ 199.00</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!--美丽人生-->
+<div class="life">
+    <div class="life-top">
+        <div class="life-top-lift"></div>
+        <div class="life-top-right">美丽人生 &nbsp;FASHION & BEAUTY</div>
+    </div>
+    <div class="life-bottom">
+        <div class="life-bottom-left">
+            <a href="javascript:;">
+                <div class="life-bottom-left-img"></div>
+                <div class="life-bottom-left-more"></div>
+            </a>
+        </div>
+        <div class="life-bottom-right">
+            <div class="life-bottom-right-one">
+                <a href="javascript:;">
+
+                    <div class="life-one-top">
+                        <div class="out"></div>
+                    </div>
+                    <div class="life-one-middle">adidas阿迪达斯2019年新款男子EEZAY</div>
+                    <div class="life-one-bottom">¥ 199.00</div>
+                </a>
+
+            </div>
+            <div class="life-bottom-right-one">
+                <a href="javascript:;">
+                    <div class="life-two-top"><div class="out"></div></div>
+                    <div class="life-one-middle">春秋季环球低帮帆布鞋学生白色休闲韩版</div>
+                    <div class="life-one-bottom">¥ 199.00</div>
+                </a>
+            </div>
+            <div class="life-bottom-right-one">
+                <a href="javascript:;">
+                    <div class="life-three-top"><div class="out"></div></div>
+                    <div class="life-one-middle">壹 项链女纯银锁骨链吊坠小众</div>
+                    <div class="life-one-bottom">¥ 199.00</div>
+                </a>
+            </div>
+            <div class="life-bottom-right-one">
+                <a href="javascript:;">
+                    <div class="life-four-top"><div class="out"></div></div>
+                    <div class="life-one-middle">Stussy斯图西巡游反光短裤男女同款</div>
+                    <div class="life-one-bottom">¥ 199.00</div>
+                </a>
+            </div>
+            <div class="life-bottom-right-two">
+                <a href="javascript:;">
+                    <div class="life-five-top"><div class="out"></div></div>
+                    <div class="life-one-middle">Daphne/达芙妮旗下鞋柜休闲时尚拼色</div>
+                    <div class="life-one-bottom">¥ 199.00</div>
+                </a>
+            </div>
+            <div class="life-bottom-right-two">
+                <a href="javascript:;">
+                    <div class="life-six-top"><div class="out"></div></div>
+                    <div class="life-one-middle">COGI/高姿多效修容BB霜（会员）</div>
+                    <div class="life-one-bottom">¥ 199.00</div>
+                </a>
+            </div>
+            <div class="life-bottom-right-two">
+                <a href="javascript:;">
+                    <div class="life-seven-top"><div class="out"></div></div>
+                    <div class="life-one-middle">手表带真皮硅胶防水橡胶男代用万国</div>
+                    <div class="life-one-bottom">¥ 199.00</div>
+                </a>
+            </div>
+            <div class="life-bottom-right-two">
+                <a href="javascript:;">
+                    <div class="life-eight-top"></div>
+                    <div class="life-one-middle">唐狮2019夏装新款牛仔裤 女青年学生潮流</div>
+                    <div class="life-one-bottom">¥ 199.00</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!--潮电酷玩-->
+<div class="life">
+    <div class="life-top">
+        <div class="life-top-lift"></div>
+        <div class="life-top-right">潮电酷玩 ELECTRONICS</div>
+    </div>
+    <div class="life-bottom">
+        <div class="life-bottom-left">
+            <a href="javascript:;">
+                <div class="play-bottom-left-img"></div>
+                <div class="life-bottom-left-more"></div>
+            </a>
+        </div>
+        <div class="life-bottom-right">
+            <div class="life-bottom-right-one">
+                <a href="javascript:;">
+                    <div class="play-one-top"></div>
+                    <div class="life-one-middle">先科 6A广场舞音箱带显示屏幕视频播放器</div>
+                    <div class="life-one-bottom">¥ 199.00</div>
+                </a>
+
+            </div>
+            <div class="life-bottom-right-one">
+                <a href="javascript:;">
+                    <div class="play-two-top"></div>
+                    <div class="life-one-middle">美国BOBOT SWEEP680/770/880 水箱链接</div>
+                    <div class="life-one-bottom">¥ 199.00</div>
+                </a>
+            </div>
+            <div class="life-bottom-right-one">
+                <a href="javascript:;">
+                    <div class="play-three-top"></div>
+                    <div class="life-one-middle">【大派送】海尔无线吸尘器ZB1208B原装电动除螨刷非卖品赠品
+                    </div>
+                    <div class="life-one-bottom">¥ 199.00</div>
+                </a>
+            </div>
+            <div class="life-bottom-right-one">
+                <a href="javascript:;">
+                    <div class="play-four-top"></div>
+                    <div class="life-one-middle">【自营】Bear/小熊 JSQ-C50X5家用香薰加湿器静音空气净化5.0L
+                    </div>
+                    <div class="life-one-bottom">¥ 199.00</div>
+                </a>
+            </div>
+            <div class="life-bottom-right-two">
+                <a href="javascript:;">
+                    <div class="play-five-top"></div>
+                    <div class="life-one-middle">摩托罗拉对讲机原装充电器</div>
+                    <div class="life-one-bottom">¥ 199.00</div>
+                </a>
+            </div>
+            <div class="life-bottom-right-two">
+                <a href="javascript:;">
+                    <div class="play-six-top"></div>
+                    <div class="life-one-middle">纽曼EX16蓝牙圆屏智能手表手环</div>
+                    <div class="life-one-bottom">¥ 199.00</div>
+                </a>
+            </div>
+            <div class="life-bottom-right-two">
+                <a href="javascript:;">
+                    <div class="play-seven-top"></div>
+                    <div class="life-one-middle">艾美特家用落地扇FSW61R立式三叶落地扇
+                    </div>
+                    <div class="life-one-bottom">¥ 199.00</div>
+                </a>
+            </div>
+            <div class="life-bottom-right-two">
+                <a href="javascript:;">
+                    <div class="play-eight-top"></div>
+                    <div class="life-one-middle">苹果手机u盘64g电脑两用iphone/ipad</div>
+                    <div class="life-one-bottom">¥ 199.00</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!--猜你喜欢-->
+<div class="like">
+    <div>
+        <span>---</span>
+        <span class="heart"></span>
+        <span>猜你喜欢 ---</span>
+    </div>
+
+</div>
+
+<div class="eightList">
+    <div class="like-lists">
+        <div class="like-lists-one">
+            <a href="javascript:;">
+                <div class="like-lists-one-top"></div>
+                <div class="like-lists-one-middle">adidas阿迪达斯2019年新款男子EEZAY</div>
+                <div class="like-lists-one-bottom">¥ 199.00</div>
+            </a>
+
+        </div>
+        <div class="like-lists-two">
+            <a href="javascript:;">
+                <div class="like-lists-two-top"></div>
+                <div class="like-lists-one-middle">春秋季环球低帮帆布鞋学生白色休闲韩版</div>
+                <div class="like-lists-one-bottom">¥ 199.00</div>
+            </a>
+        </div>
+        <div class="like-lists-two">
+            <a href="javascript:;">
+                <div class="like-lists-three-top"></div>
+                <div class="like-lists-one-middle">壹 项链女纯银锁骨链吊坠小众</div>
+                <div class="like-lists-one-bottom">¥ 199.00</div>
+            </a>
+        </div>
+        <div class="like-lists-two">
+            <a href="javascript:;">
+                <div class="like-lists-four-top"></div>
+                <div class="like-lists-one-middle">Stussy斯图西巡游反光短裤男女同款</div>
+                <div class="like-lists-one-bottom">¥ 199.00</div>
+            </a>
+        </div>
+        <div class="like-lists-two">
+            <a href="javascript:;">
+                <div class="like-lists-five-top"></div>
+                <div class="like-lists-one-middle">Daphne/达芙妮旗下鞋柜休闲时尚拼色</div>
+                <div class="like-lists-one-bottom">¥ 199.00</div>
+            </a>
+        </div>
+
+
+    </div>
+    <div class="like-lists">
+        <div class="like-lists-one">
+            <a href="javascript:;">
+                <div class="like-lists-one-top"></div>
+                <div class="like-lists-one-middle">adidas阿迪达斯2019年新款男子EEZAY</div>
+                <div class="like-lists-one-bottom">¥ 199.00</div>
+            </a>
+
+        </div>
+        <div class="like-lists-two">
+            <a href="javascript:;">
+                <div class="like-lists-two-top"></div>
+                <div class="like-lists-one-middle">春秋季环球低帮帆布鞋学生白色休闲韩版</div>
+                <div class="like-lists-one-bottom">¥ 199.00</div>
+            </a>
+        </div>
+        <div class="like-lists-two">
+            <a href="javascript:;">
+                <div class="like-lists-three-top"></div>
+                <div class="like-lists-one-middle">壹 项链女纯银锁骨链吊坠小众</div>
+                <div class="like-lists-one-bottom">¥ 199.00</div>
+            </a>
+        </div>
+        <div class="like-lists-two">
+            <a href="javascript:;">
+                <div class="like-lists-four-top"></div>
+                <div class="like-lists-one-middle">Stussy斯图西巡游反光短裤男女同款</div>
+                <div class="like-lists-one-bottom">¥ 199.00</div>
+            </a>
+        </div>
+        <div class="like-lists-two">
+            <a href="javascript:;">
+                <div class="like-lists-five-top"></div>
+                <div class="like-lists-one-middle">Daphne/达芙妮旗下鞋柜休闲时尚拼色</div>
+                <div class="like-lists-one-bottom">¥ 199.00</div>
+            </a>
+        </div>
+
+
+    </div>
+    <div class="like-lists">
+        <div class="like-lists-one">
+            <a href="javascript:;">
+                <div class="like-lists-one-top"></div>
+                <div class="like-lists-one-middle">adidas阿迪达斯2019年新款男子EEZAY</div>
+                <div class="like-lists-one-bottom">¥ 199.00</div>
+            </a>
+
+        </div>
+        <div class="like-lists-two">
+            <a href="javascript:;">
+                <div class="like-lists-two-top"></div>
+                <div class="like-lists-one-middle">春秋季环球低帮帆布鞋学生白色休闲韩版</div>
+                <div class="like-lists-one-bottom">¥ 199.00</div>
+            </a>
+        </div>
+        <div class="like-lists-two">
+            <a href="javascript:;">
+                <div class="like-lists-three-top"></div>
+                <div class="like-lists-one-middle">壹 项链女纯银锁骨链吊坠小众</div>
+                <div class="like-lists-one-bottom">¥ 199.00</div>
+            </a>
+        </div>
+        <div class="like-lists-two">
+            <a href="javascript:;">
+                <div class="like-lists-four-top"></div>
+                <div class="like-lists-one-middle">Stussy斯图西巡游反光短裤男女同款</div>
+                <div class="like-lists-one-bottom">¥ 199.00</div>
+            </a>
+        </div>
+        <div class="like-lists-two">
+            <a href="javascript:;">
+                <div class="like-lists-five-top"></div>
+                <div class="like-lists-one-middle">Daphne/达芙妮旗下鞋柜休闲时尚拼色</div>
+                <div class="like-lists-one-bottom">¥ 199.00</div>
+            </a>
+        </div>
+
+
+    </div>
+    <div class="like-lists">
+        <div class="like-lists-one">
+            <a href="javascript:;">
+                <div class="like-lists-one-top"></div>
+                <div class="like-lists-one-middle">adidas阿迪达斯2019年新款男子EEZAY</div>
+                <div class="like-lists-one-bottom">¥ 199.00</div>
+            </a>
+
+        </div>
+        <div class="like-lists-two">
+            <a href="javascript:;">
+                <div class="like-lists-two-top"></div>
+                <div class="like-lists-one-middle">春秋季环球低帮帆布鞋学生白色休闲韩版</div>
+                <div class="like-lists-one-bottom">¥ 199.00</div>
+            </a>
+        </div>
+        <div class="like-lists-two">
+            <a href="javascript:;">
+                <div class="like-lists-three-top"></div>
+                <div class="like-lists-one-middle">壹 项链女纯银锁骨链吊坠小众</div>
+                <div class="like-lists-one-bottom">¥ 199.00</div>
+            </a>
+        </div>
+        <div class="like-lists-two">
+            <a href="javascript:;">
+                <div class="like-lists-four-top"></div>
+                <div class="like-lists-one-middle">Stussy斯图西巡游反光短裤男女同款</div>
+                <div class="like-lists-one-bottom">¥ 199.00</div>
+            </a>
+        </div>
+        <div class="like-lists-two">
+            <a href="javascript:;">
+                <div class="like-lists-five-top"></div>
+                <div class="like-lists-one-middle">Daphne/达芙妮旗下鞋柜休闲时尚拼色</div>
+                <div class="like-lists-one-bottom">¥ 199.00</div>
+            </a>
+        </div>
+
+
+    </div>
+    <div class="like-lists">
+        <div class="like-lists-one">
+            <a href="javascript:;">
+                <div class="like-lists-one-top"></div>
+                <div class="like-lists-one-middle">adidas阿迪达斯2019年新款男子EEZAY</div>
+                <div class="like-lists-one-bottom">¥ 199.00</div>
+            </a>
+
+        </div>
+        <div class="like-lists-two">
+            <a href="javascript:;">
+                <div class="like-lists-two-top"></div>
+                <div class="like-lists-one-middle">春秋季环球低帮帆布鞋学生白色休闲韩版</div>
+                <div class="like-lists-one-bottom">¥ 199.00</div>
+            </a>
+        </div>
+        <div class="like-lists-two">
+            <a href="javascript:;">
+                <div class="like-lists-three-top"></div>
+                <div class="like-lists-one-middle">壹 项链女纯银锁骨链吊坠小众</div>
+                <div class="like-lists-one-bottom">¥ 199.00</div>
+            </a>
+        </div>
+        <div class="like-lists-two">
+            <a href="javascript:;">
+                <div class="like-lists-four-top"></div>
+                <div class="like-lists-one-middle">Stussy斯图西巡游反光短裤男女同款</div>
+                <div class="like-lists-one-bottom">¥ 199.00</div>
+            </a>
+        </div>
+        <div class="like-lists-two">
+            <a href="javascript:;">
+                <div class="like-lists-five-top"></div>
+                <div class="like-lists-one-middle">Daphne/达芙妮旗下鞋柜休闲时尚拼色</div>
+                <div class="like-lists-one-bottom">¥ 199.00</div>
+            </a>
+        </div>
+
+
+    </div>
+    <div class="like-lists">
+        <div class="like-lists-one">
+            <a href="javascript:;">
+                <div class="like-lists-one-top"></div>
+                <div class="like-lists-one-middle">adidas阿迪达斯2019年新款男子EEZAY</div>
+                <div class="like-lists-one-bottom">¥ 199.00</div>
+            </a>
+
+        </div>
+        <div class="like-lists-two">
+            <a href="javascript:;">
+                <div class="like-lists-two-top"></div>
+                <div class="like-lists-one-middle">春秋季环球低帮帆布鞋学生白色休闲韩版</div>
+                <div class="like-lists-one-bottom">¥ 199.00</div>
+            </a>
+        </div>
+        <div class="like-lists-two">
+            <a href="javascript:;">
+                <div class="like-lists-three-top"></div>
+                <div class="like-lists-one-middle">壹 项链女纯银锁骨链吊坠小众</div>
+                <div class="like-lists-one-bottom">¥ 199.00</div>
+            </a>
+        </div>
+        <div class="like-lists-two">
+            <a href="javascript:;">
+                <div class="like-lists-four-top"></div>
+                <div class="like-lists-one-middle">Stussy斯图西巡游反光短裤男女同款</div>
+                <div class="like-lists-one-bottom">¥ 199.00</div>
+            </a>
+        </div>
+        <div class="like-lists-two">
+            <a href="javascript:;">
+                <div class="like-lists-five-top"></div>
+                <div class="like-lists-one-middle">Daphne/达芙妮旗下鞋柜休闲时尚拼色</div>
+                <div class="like-lists-one-bottom">¥ 199.00</div>
+            </a>
+        </div>
+
+
+    </div>
+    <div class="like-lists">
+        <div class="like-lists-one">
+            <a href="javascript:;">
+                <div class="like-lists-one-top"></div>
+                <div class="like-lists-one-middle">adidas阿迪达斯2019年新款男子EEZAY</div>
+                <div class="like-lists-one-bottom">¥ 199.00</div>
+            </a>
+
+        </div>
+        <div class="like-lists-two">
+            <a href="javascript:;">
+                <div class="like-lists-two-top"></div>
+                <div class="like-lists-one-middle">春秋季环球低帮帆布鞋学生白色休闲韩版</div>
+                <div class="like-lists-one-bottom">¥ 199.00</div>
+            </a>
+        </div>
+        <div class="like-lists-two">
+            <a href="javascript:;">
+                <div class="like-lists-three-top"></div>
+                <div class="like-lists-one-middle">壹 项链女纯银锁骨链吊坠小众</div>
+                <div class="like-lists-one-bottom">¥ 199.00</div>
+            </a>
+        </div>
+        <div class="like-lists-two">
+            <a href="javascript:;">
+                <div class="like-lists-four-top"></div>
+                <div class="like-lists-one-middle">Stussy斯图西巡游反光短裤男女同款</div>
+                <div class="like-lists-one-bottom">¥ 199.00</div>
+            </a>
+        </div>
+        <div class="like-lists-two">
+            <a href="javascript:;">
+                <div class="like-lists-five-top"></div>
+                <div class="like-lists-one-middle">Daphne/达芙妮旗下鞋柜休闲时尚拼色</div>
+                <div class="like-lists-one-bottom">¥ 199.00</div>
+            </a>
+        </div>
+
+
+    </div>
+    <div class="like-lists">
+        <div class="like-lists-one">
+            <a href="javascript:;">
+                <div class="like-lists-one-top"></div>
+                <div class="like-lists-one-middle">adidas阿迪达斯2019年新款男子EEZAY</div>
+                <div class="like-lists-one-bottom">¥ 199.00</div>
+            </a>
+
+        </div>
+        <div class="like-lists-two">
+            <a href="javascript:;">
+                <div class="like-lists-two-top"></div>
+                <div class="like-lists-one-middle">春秋季环球低帮帆布鞋学生白色休闲韩版</div>
+                <div class="like-lists-one-bottom">¥ 199.00</div>
+            </a>
+        </div>
+        <div class="like-lists-two">
+            <a href="javascript:;">
+                <div class="like-lists-three-top"></div>
+                <div class="like-lists-one-middle">壹 项链女纯银锁骨链吊坠小众</div>
+                <div class="like-lists-one-bottom">¥ 199.00</div>
+            </a>
+        </div>
+        <div class="like-lists-two">
+            <a href="javascript:;">
+                <div class="like-lists-four-top"></div>
+                <div class="like-lists-one-middle">Stussy斯图西巡游反光短裤男女同款</div>
+                <div class="like-lists-one-bottom">¥ 199.00</div>
+            </a>
+        </div>
+        <div class="like-lists-two">
+            <a href="javascript:;">
+                <div class="like-lists-five-top"></div>
+                <div class="like-lists-one-middle">Daphne/达芙妮旗下鞋柜休闲时尚拼色</div>
+                <div class="like-lists-one-bottom">¥ 199.00</div>
+            </a>
+        </div>
+
+
+    </div>
+</div>
+
+<!--结束-->
+<div class="end">
+    <div>
+    </div>
+</div>
+
+<div class="close">
+    <div class="close-top">
+        <div class="close-top-one">
+            <div class="close-top-one-photo"></div>
+            <div class="close-top-one-text">
+                <a href="" class="close-top-one-text-a1">品质保障</a>
+                <a href="" class="close-top-one-text-a2">品质护航 购物无忧</a>
+            </div>
+        </div>
+        <div class="close-top-one">
+            <div class="close-top-two-photo"></div>
+            <div class="close-top-one-text">
+                <a href="" class="close-top-one-text-a1">七天无理由退换货</a>
+                <a href="" class="close-top-one-text-a2">售后无忧保障</a>
+            </div>
+        </div>
+
+        <div class="close-top-one">
+            <div class="close-top-three-photo"></div>
+            <div class="close-top-one-text">
+                <a href="" class="close-top-one-text-a1">特色服务体验</a>
+                <a href="" class="close-top-one-text-a2">不一样的服务</a>
+            </div>
+        </div>
+        <div class="close-top-one">
+            <div class="close-top-four-photo"></div>
+            <div class="close-top-one-text">
+                <a href="" class="close-top-one-text-a1">帮助中心</a>
+                <a href="" class="close-top-one-text-a2">购物指南</a>
+            </div>
+        </div>
+    </div>
+    <div class="close-bottom">
+        <div class="close-bottom-one">
+            <a href="" class="close-bottom-one-a1"><h4>购物指南</h4></a>
+            <a href="" class="close-bottom-one-a2">
+                免费注册<br>
+                开通支付宝<br>
+                充值
+            </a>
+        </div>
+        <div class="close-bottom-one">
+            <a href="" class="close-bottom-one-a1">天猫保障</a>
+            <a href="" class="close-bottom-one-a2">
+                免费注册<br>
+                开通支付宝<br>
+                充值
+            </a>
+        </div>
+        <div class="close-bottom-one">
+            <a href="" class="close-bottom-one-a1">支付方式</a>
+            <a href="" class="close-bottom-one-a2">
+                免费注册<br>
+                开通支付宝<br>
+                充值
+            </a>
+        </div>
+        <div class="close-bottom-one">
+            <a href="" class="close-bottom-one-a1">商家服务</a>
+            <a href="" class="close-bottom-one-a2">
+                免费注册<br>
+                开通支付宝<br>
+                免费注册<br>
+                开通支付宝<br>
+                充值
+            </a>
+        </div>
+        <div class="close-bottom-one">
+            <a href="" class="close-bottom-one-a1">手机天猫</a>
+            <a href="" class="close-bottom-five-a2">
+            </a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

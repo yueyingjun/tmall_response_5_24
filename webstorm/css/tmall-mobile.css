@@ -1,0 +1,165 @@
+body{
+    margin: 0;
+    padding: 0;
+
+}
+
+html{
+    font-size: 13.33333vw;
+}
+
+.header{
+    width: 100vw;
+    height: 1.8rem;
+    border: 1px solid black;
+    background-color: rgb(255, 0, 54);
+}
+
+.header-top{
+    width: 100vw;
+    height: .9rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-top-left{
+    width: 0.6rem;
+    height: .6rem;
+    background: url("../images/tmall-mobile/小图标.png") no-repeat -0.05rem -0.05rem;
+
+}
+
+.header-top-middle{
+    width: 2.37rem;
+    height: .41rem;
+    background: url("../images/tmall-mobile/顶部tmall.png") no-repeat;
+    margin-top: 0.15rem;
+    background-size: 100%;
+}
+
+.header-top-right{
+    width: .56rem;
+    height: .6rem;
+    font-size: 0.28rem;
+    margin-top: 0.15rem;
+}
+
+.header-bottom{
+    width: 100vw;
+    height: 0.9rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.search{
+    width: 7rem;
+    height: 0.72rem;
+    background-color: white;
+    border-radius: 0.1rem;
+    /*display: flex;*/
+}
+
+.search-left{
+    width: 0.7rem;
+    height: 0.7rem;
+    padding-top: 0.06rem;
+    box-sizing: border-box;
+    float: left;
+    background: url("../images/tmall-mobile/search_03.png") no-repeat -0.1rem -0.1rem;
+
+}
+
+.search-right{
+    width: 4em;
+    height: 0.7rem;
+    float: left;
+
+}
+
+a{
+    font-size: 0.28rem;
+    text-decoration: none;
+    color: white;
+}
+
+span{
+    display: block;
+    font-size: 0.4rem;
+    line-height: 0.28rem;
+    padding-top: 0.2rem;
+}
+
+
+.nav{
+    height: 1.5rem;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-p1{
+    width: 16%;
+    height: 100%;
+
+}
+
+.nav-top1{
+    width: 100%;
+    height: 90%;
+    background: url("../images/tmall-mobile/导航1.png") no-repeat;
+    background-size: 100%;
+}
+
+.nav-top2{
+    width: 100%;
+    height: 90%;
+    background: url("../images/tmall-mobile/导航2.png") no-repeat;
+    background-size: 100%;
+}
+
+.nav-top3{
+    width: 100%;
+    height: 90%;
+    background: url("../images/tmall-mobile/导航3.png") no-repeat;
+    background-size: 100%;
+}
+
+.nav-top4{
+    width: 100%;
+    height: 90%;
+    background: url("../images/tmall-mobile/导航4.png") no-repeat;
+    background-size: 100%;
+}
+
+.nav-top5{
+    width: 100%;
+    height: 90%;
+    background: url("../images/tmall-mobile/导航5.png") no-repeat;
+    background-size: 100%;
+}
+
+.nav-bottom{
+    height: 10%;
+    width: 100%;
+    float: bottom;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
