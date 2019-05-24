@@ -1,0 +1,1485 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+li{
+    list-style: none;
+}
+
+html { overflow-x:hidden;}
+
+.tupianbox{
+    width: 1348px;
+    margin: auto;
+}
+.tupian{
+    background: #f6f6f6;width: 1232px;
+}
+.tupian img{
+    height:90px;
+    width:992px;
+
+}
+@media screen and (min-width: 1200px){
+    .tupian{
+        width: 1348px;
+        background: #f6f6f6;
+        margin-left: 0;
+    }
+    .tupian img{
+        width:1232px;
+        margin-left: 0;
+    }
+}
+.line{
+    margin: auto;
+    float: left;
+    width: 1px;
+    height: 15px;
+    background: #c0c0c0;
+}
+.o{
+    width: 1348px;
+    height: 15px;
+    background: #f6f6f6;
+    margin: auto;
+}
+.p{
+    width: 25px;
+    height: 1px;
+    background: #adadad;
+    margin: auto;
+}
+.scfl{
+    width: 158px;
+    height: 54px;
+}
+.scfl1{
+    padding-top: 3px;
+    text-align: center;
+    margin-top: 180%;
+    float: left;
+    width: 50px;
+    height: 54px;
+   background-color: rgba(0,0,0,0.8);
+    font-size: 18px;
+    color: white;
+}
+.scfl2{
+    padding-left: 3px;
+    padding-top: 3px;
+    text-align: center;
+    margin-top: 180%;
+    float: left;
+    width: 106px;
+    height: 54px;
+    font-size: 18px;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+}
+.scfl11{
+    padding-top: 3px;
+    text-align: center;
+    width: 50px;
+    height: 54px;
+    background-color: rgba(0,0,0,0.8);
+    font-size: 18px;
+    color: white;
+}
+.scfl22{
+    padding-left: 3px;
+    padding-top: 3px;
+    padding-top: 3px;
+    width: 100px;
+    height: 54px;
+    font-size: 18px;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+}
+
+/*left_daohan*/
+.left_daohan{
+    display: none;
+    margin: auto;
+    width: 36px;
+    height: 370px;
+    position: fixed;
+    top: 150px;
+    margin-left: 2px;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+}
+.left_daohan1{
+    width: 36px;
+    height: 36px;
+    background: red;
+    line-height: 30px;
+}
+.left_daohan2{
+    margin-top: 1px;
+    width: 36px;
+    height: 36px;
+    background: rgba(0,0,0,0.6);
+}
+
+/*right_daohan*/
+.right_daohan{
+    margin: auto;
+    width: 35px;
+    height: 640px;
+    position: fixed;
+    right: 0;
+}
+.l520{
+    width: 40px;
+    height: 150px;
+    background: url("../images/right_daohan/520.png") no-repeat;
+    background-size: 100% 100%;
+}
+.l521{
+    width: 35px;
+    height: 45px;
+    background: #F9919D;
+}
+.bxx{
+    width: 35px;
+    height: 455px;
+    background: black;
+}
+
+/*head*/
+.head{
+    margin: auto;
+    width: 1348px;
+
+    height: 41px;
+    color: #FFFFFF;
+    font-size: 12px;
+    background: #F9919D;
+}
+.head_main{
+    line-height: 32px;
+    width: 992px;
+    height: 32px;
+    margin-left: 60px;
+}
+.head_main a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.head_main_left{
+    float: left;
+    width: 218px;
+    height: 32px;
+
+}
+@media screen and (min-width: 1200px){
+    .head_main{
+        width: 1232px;
+        margin: auto;
+    }
+}
+.head_main_left a{
+    padding: 0 10px;
+
+}
+.head_main_right{
+    float: right;
+    width: 605px;
+    height: 32px;
+
+}
+.head_main_right a{
+    float: left;
+    padding: 0 15px;
+}
+.head_main_right .a1_select{
+    padding-left: 70px;
+}
+.head_main_right .a1:hover{
+    color: red;
+    text-decoration: underline;
+}
+.head_main_right .a2:hover{
+    color: #ffe013;
+    text-decoration: none;
+}
+
+/*天猫搜索*/
+.search{
+    position: relative;
+    width: 1348px;
+    height: 130px;
+    margin: auto;
+}
+.search_left{
+    float: left;
+    width: 290px;
+    height: 100%;
+    background: url("../images/cat.png") no-repeat;
+    background-size: 80% 100%;
+    background-position: center;
+}
+.search_right{
+    float: left;
+    width: 750px;
+    height: 100%;
+
+}
+.container {
+    float: left;
+    width: 348px;
+    height: 42px;
+    margin: 40px 0px 0px 85px;
+
+}
+@media screen and (min-width: 1200px){
+    .container{
+        height: 40px;
+        width: 630px;
+    }
+    .search_right{
+        width: 1050px;
+    }
+}
+.container	.parent {
+    float: left;
+    width: 100%;
+    height: 40px;
+    position: relative;
+}
+.parent .text {
+    /*输入框高度设置为40px, border占据2px，总高度为42px*/
+    width: 80%;
+    height: 38px;
+    border: 1px solid red;
+    font-size: 16px;
+    outline: none;
+}
+.parent .text:focus {
+    border: 1px solid red;
+    padding-left: 10px;
+}
+.parent .button {
+    /*button按钮border并不占据外围大小，设置高度42px*/
+    width: 20%;
+    height: 42px;
+    position: absolute;
+    background: red;
+    border: 1px solid red;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+}
+.container_info {
+
+    width: 375px;
+    height: 20px;
+    margin: 5px 0px 0px 73px;
+    overflow: hidden;
+}
+@media screen and (min-width: 1200px){
+    .container_info {
+        width: 630px;
+    }
+}
+.container_info a{
+    display: block;
+    float: left;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 0 11px;
+}
+.container_info .a1{
+    color: #999999;
+}
+.container_info .a2{
+    color: #FF0036;
+}
+.container_info .line{
+    margin-top: 3px;
+}
+
+/*商品分类*/
+.product{
+    margin: auto;
+    width: 1348px;
+    height: 36px;
+}
+.product_left{
+    margin-left: 58px;
+    float: left;
+    color: white;
+    width: 200px;
+    height: 36px;
+}
+.product_left a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.product_left_one{
+    line-height: 30px;
+    text-align: center;
+    float: left;
+    width: 100px;
+    height: 36px;
+    background: red;
+}
+.product_left_two{
+    line-height: 30px;
+    text-align: center;
+    float: left;
+    width: 100px;
+    height: 36px;
+    background: #4a4a4a;
+}
+.product_right{
+    float: left;
+    width: 1080px;
+    height: 33px;
+    border-bottom: 3px solid red;
+}
+.TMCS{
+    padding-top: 8px;
+    float: left;
+    width: 120px;
+    height: 36px;
+    background: url("../images/TMCS.png") no-repeat;
+    background-size: 88% 88%;
+
+}
+.TMGJ{
+    padding-top: 8px;
+    float: left;
+    width: 120px;
+    height: 36px;
+    background: url("../images/TMGJ.png") no-repeat;
+    background-size: 80% 88%;
+}
+.product_right a{
+    color: #333333;
+    font-size: 18px;
+    text-decoration: none;
+}
+.product_right a:hover{
+    color: red;
+}
+.TMQT{
+    padding-top: 10px;
+    width: 1200px;
+    height: 36px;
+}
+.TMQT a{
+    padding-left: 8px;
+}
+.suning{
+    display: none;
+}
+@media screen and (min-width: 1200px){
+    .suning{
+        display: inline-block;
+    }
+}
+
+/*轮播图*/
+.banners{
+    margin: auto;
+    width: 1348px;
+    height: 500px;
+    background: url("../images/banners/lunbodicengshang_1.jpg") no-repeat -160px 0px;
+}
+.banners_content{
+    margin: auto;
+    width: 1228px;
+    height: 500px;
+    position: relative;
+}
+.wheel-box{
+    position: absolute;
+    left: 200px;
+    width: 778px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.wheel-box .banner1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../images/banners/lunbo1_wps.png") no-repeat left;
+    background-size: cover;
+}
+.wheel-box .banner2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../images/banners/lunbo2.jpg") no-repeat left;
+    background-size: cover;
+}
+.wheel-box .banner3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../images/banners/lunbo3.jpg") no-repeat left;
+    background-size: cover;
+}
+.wheel-box .banner4{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../images/banners/lunbo4_wps.jpg") no-repeat left;
+    background-size: cover;
+}
+.wheel-box .banner5{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../images/banners/lunbo5_wps.jpg") no-repeat left;
+    background-size: cover;
+}
+.wheel-box .banner6{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../images/banners/lunbo6.jpg") no-repeat left;
+    background-size: cover;
+}
+
+.wheel-box .bots{
+    position: absolute;
+    right: 500px;
+    bottom: 10px;
+    width: 250px;
+    height: 10px;
+    z-index: 10;
+    float: left;
+}
+.wheel-box .bots .btn1{
+    width: 30px;
+    height: 4px;
+    background-color: #a7a6a3;
+    position: absolute;
+    left: 5px;
+    top:1px;
+}
+.wheel-box .bots .btn2{
+    width: 30px;
+    height: 4px;
+    background-color: #a7a6a3;
+    position: absolute;
+    left: 45px;
+    top:1px;
+}
+.wheel-box .bots .btn3{
+    width: 30px;
+    height: 4px;
+    background-color: #a7a6a3;
+    position: absolute;
+    left: 85px;
+    top:1px;
+}
+.wheel-box .bots .btn4{
+    width: 30px;
+    height: 4px;
+    background-color: #a7a6a3;
+    position: absolute;
+    left: 125px;
+    top:1px;
+}
+.wheel-box .bots .btn5{
+    width: 30px;
+    height: 4px;
+    background-color: #a7a6a3;
+    position: absolute;
+    left: 165px;
+    top:1px;
+}
+.wheel-box .bots .btn6{
+    width: 30px;
+    height: 4px;
+    background-color: #a7a6a3;
+    position: absolute;
+    left: 205px;
+    top:1px;
+}
+.wheel-box .bots .btn1.select{
+    background-color: #e0dfdc;
+}
+
+.banners_content_left_1{
+    position: absolute;
+    width: 200px;height: 500px;
+    color: white;
+    font-size: 14px;
+    background-color: rgba(203, 203, 203, 0.5);
+    z-index: 3;
+    display: none;
+}
+.product_left_one a:hover{
+    z-index: 3;
+}
+.banners_content_left_2{
+    position: absolute;
+    width: 200px;height: 500px;
+    font-size: 14px;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+}
+.bcl2{
+    color: white;
+    line-height: 31px;
+    text-align: center;
+    font-size: 14px;
+    width: 152px;
+    height: 31.9px;
+    border: 1px solid red;
+    margin: 15px 20px 0px 20px;
+    border-radius: 1000px;
+    cursor: pointer;
+}
+.bcl2:hover{
+    background: red;
+}
+.banners_content_right{
+    display: none;
+}
+.banners_content_right1{
+    width: 220px;
+    height: 234px;
+    position: absolute;
+    background: url("../images/banners/right/1.png");
+    z-index: 2;
+    background-color: rgba(255,255,255,0.5);
+    right: 0px;
+    top: 10px;
+}
+.banners_content_right a:hover{
+    background-color: white;
+}
+.banners_content_right2{
+    width: 220px;
+    height: 234px;
+    position: absolute;
+    background: url("../images/banners/right/2.png");
+    z-index: 2;
+    background-color: rgba(255,255,255,0.5);
+    right: 0px;
+    top: 254px;
+}
+
+@media screen and (min-width: 1200px){
+    .wheel-box{
+        width: 1028px;
+    }
+    .banners_content_right{
+        display: block;
+    }
+}
+
+/*品牌闪购*/
+.brands{
+    margin: auto;
+    width: 1356px;
+    height: 410px;
+    background: url("../images/banners/lunbodicengshang_1.jpg") no-repeat -160px -475px;
+
+}
+.brands_content{
+    padding-top: 35px;
+    padding-left: 45px;
+    width: 1000px;
+    height: 371px;
+    position: relative;
+}
+.brands_content_left{
+    float: left;
+    width: 234px;
+    height: 100%;
+    display: none;
+
+}
+.brands_content_left_head{
+    width: 100%;
+    height: 55px;
+    background: #f4f4f4;
+}
+.brands_content_left_foot{
+    width: 100%;
+    height: 316px;
+   background: url("../images/super/pinpaishangou.jpg") no-repeat;
+    background-size:100% 103%;
+}
+.brands_content_left_foot:hover{
+    opacity: 0.8;
+}
+.brands_content_right{
+    float: right;
+    width: 990px;
+    height: 100%;
+}
+.brands_content_r1{
+    margin-left: 5px;
+    margin-right: 2.5px;
+    float: left;
+    width: 485px;
+    height: 100%;
+}
+.brands_content_right_head{
+    width: 100%;
+    height: 55px;
+    background: #f4f4f4;
+}
+.brands_content_right_foot1{
+    width: 100%;
+    height: 316px;
+    background: url("../images/brand2.jpg") no-repeat;
+}
+.brands_content_right_foot1:hover{
+    opacity: 0.8;
+}
+.brands_content_right_foot2:hover{
+    opacity: 0.8;
+}
+.brands_content_right_foot2{
+    width: 100%;
+    height: 316px;
+    background: url("../images/brand3.webp") no-repeat;
+}
+.brands .sp1{
+    font-size: 18px;
+    margin-top: 15px;
+    line-height: 55px;
+    padding-left: 10px;
+}
+.brands .sp2{
+    font-size: 14px;
+    margin-top: 15px;
+    line-height: 55px;
+    padding-left: 8px;
+}
+.brands .sp3{
+    float: right;
+    padding-top: 2px;
+    line-height: 55px;
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+    background: url("../images/banners/youjiantou.png") no-repeat 6px 18px;
+    background-size: 50% 50%;
+}
+
+
+@media screen and (min-width:1200px ){
+    .brands_content{
+        padding-left: 62px;
+        width: 1232px;
+    }
+    .brands_content_left{
+        display: block;
+    }
+}
+/*
+品牌种类*/
+.clazzs{
+    margin: auto;
+    background: #f6f6f6;
+    width: 1348px;
+    height: 327px;
+}
+.clazzs_content{
+
+    margin-left: 60px;
+    width: 986px;
+    height: 100%;
+   /* position: relative;*/
+    overflow: hidden;
+}
+
+
+.clazzs a{
+    width: 122px;
+    height: 33%;
+    float: left;
+    border: 0.3px solid #efeeeb;
+}
+.clazzs a:hover{
+    background: url("../images/LOGO/avro.png") no-repeat;
+}
+.box1{
+    background: url("../images/LOGO/logo1.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.box2{
+    background: url("../images/LOGO/logo2.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.box3{
+    background: url("../images/LOGO/logo3.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.box4{
+    background: url("../images/LOGO/logo4.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.box5{
+    background: url("../images/LOGO/logo5.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.box6{
+    background: url("../images/LOGO/logo6.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.box7{
+    background: url("../images/LOGO/logo7.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.box8{
+    background: url("../images/LOGO/logo8.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.box9{
+    background: url("../images/LOGO/logo9.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.box10{
+    background: url("../images/LOGO/logo10.jpg") no-repeat;
+    background-size: 100% 100%;
+    display: none;
+}
+.box11{
+    background: url("../images/LOGO/logo11.png") no-repeat;
+    background-size: 100% 100%;
+}
+.box12{
+    background: url("../images/LOGO/logo12.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.box13{
+    background: url("../images/LOGO/logo13.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.box14{
+    background: url("../images/LOGO/logo14.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.box15{
+    background: url("../images/LOGO/logo15.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.box16{
+    background: url("../images/LOGO/logo16.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.box17{
+    background: url("../images/LOGO/logo17.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.box18{
+    background: url("../images/LOGO/logo18.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.box19{
+    background: url("../images/LOGO/logo19.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.box20{
+    background: url("../images/LOGO/logo20.jpg") no-repeat;
+    background-size: 100% 100%;
+    display: none;
+}
+.box21{
+    background: url("../images/LOGO/logo21.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.box22{
+    background: url("../images/LOGO/logo22.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.box23{
+    background: url("../images/LOGO/logo23.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.box24{
+    background: url("../images/LOGO/logo24.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.box25{
+    background: url("../images/LOGO/logo25.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.box26{
+    background: url("../images/LOGO/logo26.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.box27{
+    background: url("../images/LOGO/logo27.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.box28{
+    background: url("../images/LOGO/logo28.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.box29{
+    background: url("../images/LOGO/logo29.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.box30{
+    background: url("../images/LOGO/logo30.jpg") no-repeat center;
+    background-size: 40% 40%;
+    display: none;
+}
+@media screen and (min-width:1200px ){
+    .clazzs_content{
+        margin-left: 55px;
+        width: 1232px;
+        height: 100%;
+    }
+    .box10{
+        display: block;
+    }
+    .box20{
+        display: block;
+    }
+    .box30{
+        display: block;
+    }
+}
+/*
+天猫超市*/
+.supers{
+    margin: auto;
+    width: 1348px;
+    height: 665px;
+    background: #f6f6f6;
+}
+.supers_content{
+    margin: 0 auto;
+    width: 1232px;
+    height: 100%;
+}
+.supers_content_head{
+    width: 996px;
+    height: 47px;
+}
+.supers_content_head_left{
+    margin: 10px 20px 10px 0;
+    float: left;
+    width: 214px;
+    height: 25px;
+    background: url("../images/super/1.png") no-repeat ;
+    background-size: 90% 83%;
+}
+.supers_content_head_right{
+    margin: 16px 0 0 0;
+    float: right;
+    width: 743px;
+    height: 31px;
+}
+
+.supers_content_head_right a{
+    text-decoration: none;
+    color: black;
+    margin-left: 15px;
+}
+.supers_content_head_right a:hover{
+    text-decoration: underline;
+}
+.supers_content_head_right a:nth-child(1){
+    margin-left: 75px;
+}
+@media screen and (min-width: 1200px){
+    .supers_content_head{
+        width: 1232px;
+    }
+    .supers_content_head_right{
+        width: 800px;
+    }
+    .supers_content_head_right a:nth-child(1){
+        margin-left: 130px;
+    }
+}
+.supers_content_foot{
+    width: 992px;
+    height: 618px;
+}
+.supers_content_foot_right1_select{
+    display: none;
+}
+.supers_content_foot_right3_select{
+    display: none;
+}
+@media screen and (min-width: 1200px){
+    .supers_content_foot{
+        width: 1232px;
+    }
+    .supers_content_foot_right1_select{
+        display: block;
+    }
+    .supers_content_foot_right3_select{
+        display: block;
+    }
+}
+.supers_content_foot_left{
+    float: left;
+    width: 235px;
+    height: 100%;
+    background: url("../images/super/hetao.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.supers_content_foot_center{
+    background: white;
+    padding-top: 0;
+    margin-top: 0;
+    margin-left: 11px;
+    float: left;
+    width: 484px;
+    height: 302px;
+}
+.supers_content_foot_centerr_one{
+    line-height: 57px;
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    margin:6px 0 0 6px;
+    float: left;
+    height: 57px;
+    width: 48%;
+    background-color: #f6f6f6;
+}
+.supers_content_foot_centerr_two{
+    line-height: 57px;
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    margin: 6px 6px 0 0 ;
+    float: left;
+    height: 57px;
+    width: 48%;
+    background-color: #70e35f;
+}
+.supers_content_foot_centerr_three{
+    float: left;
+    width: 462px;
+    height: 225px;
+    margin-left: 6px;
+    position: relative;
+}
+.you{
+
+}
+.you1{
+    color: green;
+    position: absolute;
+    width: 256px;
+    height: 36px;
+    top: 100px;
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: bolder;
+}
+.you2{
+    margin-left: 56px;
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top: 140px;
+    width: 256px;
+    height: 30px;
+}
+.supers_content_foot_right1{
+    background: white;
+    margin-left: 10px;
+    float: left;
+    width: 236px;
+    height: 302px;
+}
+
+.supers_content_foot_right11{
+    background: white;
+    margin-left: 0px;
+    float: left;
+    width: 236px;
+    height: 302px;
+}
+.supers_content_foot_right3{
+    background: white;
+    margin-top: 8px;
+    margin-left: 10px;
+    float: left;
+    width: 236px;
+    height: 302px;
+
+}
+.supers_content_foot_right33{
+    background: white;
+    margin-top: 5px;
+    margin-left: 0px;
+    float: left;
+    width: 236px;
+    height: 302px;
+}
+.supers_content_foot_right1:hover{
+    opacity: 0.8;
+    border: 0.03px solid red;
+    box-sizing: border-box;
+}
+.supers_content_foot_right11:hover{
+    opacity: 0.8;
+    box-sizing: border-box;
+    border: 0.03px solid red;
+}
+.supers_content_foot_right3:hover{
+    opacity: 0.8;
+    border: 0.03px solid red;
+}
+.supers_content_foot_right33:hover{
+    opacity: 0.8;
+    border: 0.03px solid red;
+}
+.supers_content_foot_center_one1{
+    background: url("../images/super/3.jpg");
+    background-size: 100% 100%;
+    margin-top: 20px;
+    margin-left: 25px;
+    width: 185px;
+    height: 185px;
+}
+.supers_content_foot_center_one2{
+    background: url("../images/super/4.jpg");
+    background-size: 100% 100%;
+    margin-top: 20px;
+    margin-left: 25px;
+    width: 185px;
+    height: 185px;
+}
+.supers_content_foot_center_one3{
+    background: url("../images/super/5.jpg");
+    background-size: 100% 100%;
+    margin-top: 20px;
+    margin-left: 25px;
+    width: 185px;
+    height: 185px;
+}
+.supers_content_foot_center_one4{
+    background: url("../images/super/6.jpg");
+    background-size: 100% 100%;
+    margin-top: 20px;
+    margin-left: 25px;
+    width: 185px;
+    height: 185px;
+}
+.supers_content_foot_center_one5{
+    background: url("../images/super/7.jpg");
+    background-size: 100% 100%;
+    margin-top: 20px;
+    margin-left: 25px;
+    width: 185px;
+    height: 185px;
+}
+.supers_content_foot_center_one6{
+    background: url("../images/super/8.jpg");
+    background-size: 100% 100%;
+    margin-top: 20px;
+    margin-left: 25px;
+    width: 185px;
+    height: 185px;
+}
+.supers_content_foot_center_two{
+    margin: 8px 49.5px;
+    width: 135px;
+    height: 40px;
+    color: black;
+    font-size: 14px;
+}
+.supers_content_foot_center_three{
+    margin: 10px 0;
+    width: 234px;
+    height: 18px;
+    text-align: center;
+    font-size: 18px;
+    color: red;
+}
+
+/*天猫国际*/
+.inters{
+    margin: auto;
+    width: 1348px;
+    height: 665px;
+    background: #f6f6f6;
+}
+.inters_content{
+    margin: 0 auto;
+    width: 1232px;
+    height: 100%;
+}
+.inters_content_head{
+
+    width: 996px;
+    height: 47px;
+}
+.inters_content_head_left{
+    margin: 10px 20px 10px 0;
+    float: left;
+    width: 214px;
+    height: 25px;
+    background: url("../images/inter/1.png") no-repeat center;
+    background-size: 90% 83%;
+}
+.inters_content_head_right{
+    margin: 16px 0 0 0;
+    float: right;
+    width: 743px;
+    height: 31px;
+}
+
+
+.inters_content_head_right a{
+    text-decoration: none;
+    color: black;
+    margin-left: 15px;
+}
+.inters_content_head_right a:hover{
+    text-decoration: underline;
+}
+.inters_content_head_right a:nth-child(1){
+    margin-left: 485px;
+}
+
+@media screen and (min-width: 1200px){
+    .inters_content_head{
+        width: 1232px;
+    }
+    .inters_content_head_right{
+        width: 800px;
+    }
+    .inters_content_head_right a:nth-child(1){
+        margin-left: 550px;
+    }
+}
+.inters_content_foot{
+    width: 992px;
+    height: 618px;
+}
+@media screen and (min-width: 1200px){
+    .inters_content_foot{
+        width: 1232px;
+    }
+}
+.inters_content_foot_left{
+    float: left;
+    width: 235px;
+    height: 100%;
+}
+
+.inters_content_foot_center{
+    background: white;
+    padding-top: 0;
+    margin-top: 0;
+    margin-left: 11px;
+    float: left;
+    width: 484px;
+    height: 302px;
+}
+
+/*美丽人生*/
+.beautis_content_head_left{
+    margin: 0px auto;
+    float: left;
+    width: 300px;
+    height: 25px;
+}
+.beautis_content_foot_left{
+    float: left;
+    width: 235px;
+    height: 100%;
+    background: url("../images/inter/girl.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+/*
+潮店酷玩*/
+.CDKWs_content_foot_left{
+    float: left;
+    width: 235px;
+    height: 100%;
+    background: url("../images/inter/CDKW.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+/*
+居家生活*/
+.homes_content_foot_left{
+    float: left;
+    width: 235px;
+    height: 100%;
+    background: url("../images/inter/home.png") no-repeat;
+    background-size: 100% 100%;
+}
+/*
+
+打造爱巢*/
+.loves_content_foot_left{
+    float: left;
+    width: 235px;
+    height: 100%;
+    background: url("../images/inter/love.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+/*户外出行*/
+.huwais_content_foot_left{
+    float: left;
+    width: 235px;
+    height: 100%;
+    background: url("../images/inter/huwaileft.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+/*猜你喜欢*/
+.likes{
+    margin: auto;
+    width: 1348px;
+    height: 665px;
+    background: #f6f6f6;
+}
+.likes_content{
+    margin: 0 auto;
+    width: 1232px;
+    height: 100%;
+}
+.likes_content_foot{
+    width: 992px;
+    height: 618px;
+    overflow: hidden;
+}
+@media screen and (min-width: 1200px){
+    .likes_content_foot{
+        width: 1232px;
+
+    }
+}
+
+.likes_content_foot_right1{
+    background: white;
+    margin-left: 10px;
+    float: left;
+    width: 19.1%;
+    height: 302px;
+}
+
+.likes_content_foot_right11{
+    background: white;
+    margin-left: 0px;
+    float: left;
+    width: 19.1%;
+    height: 302px;
+}
+.likes_content_foot_right3{
+    background: white;
+    margin-top: 8px;
+    margin-left: 10px;
+    float: left;
+    width: 19.1%;
+    height: 302px;
+
+}
+.likes_content_foot_right33{
+    background: white;
+    margin-top: 5px;
+    margin-left: 0px;
+    float: left;
+    width: 19.1%;
+    height: 302px;
+}
+
+
+/*
+
+底部*/
+.end{
+    margin: auto;
+    margin-top: -25px;
+    width: 1348px;
+    height: 40px;
+    background: #f6f6f6;
+    text-align: center;
+}
+
+<!--  结束-->
+          /*结束*/
+.boxx{
+    margin: auto;
+    width: 1348px;
+    height: 602.2px;
+    border: 1px solid red;
+    background: url("../images/banners/lunbodicengshang_1.jpg") no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+      }
+
+      @media screen and (min-width: 1200px){
+          .boxx{
+
+          }
+      }
+.box11-1{
+    margin: auto;
+    width: 1190px;
+    height: 100px;
+    margin-left: 100px;
+}
+.box11-1 img{
+    width: 1190px;
+    height: 100px;
+
+}
+.box11-2{
+    width: 1190px;
+    height: 270px;
+    margin-left: 100px;
+    border-top: 1px solid darkgray ;
+
+}
+.box11-2 ol{
+    width: 1190px;
+    height: 255px;
+
+}
+.box11-2 li{
+    float: left;
+    width: 226px;
+    height: 255px;
+    margin-left: 0;
+}
+.box11-2 li span{
+    display: block ;
+    float: left;
+    width: 226px;
+    height: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 10px;
+    line-height: 35px;
+}
+.box11-2 li a{
+    display: block;
+    float: left;
+    width: 115px;
+    height: 20px;
+    font-size: 14px;
+    margin:5px 10px;
+    color: darkgray;
+
+}
+.bxo11-2-1{
+    width: 105px;
+    height: 105px;
+    margin: auto;
+}
+.box11-2-1 img{
+    width: 105px;
+    height: 105px;
+}
+.box11-3{
+    float: left;
+    width: 1348px;
+    height: 50px;
+    margin-top: -50px;
+    border-bottom: 2px solid red;
+}
+.box11-3 img{
+    width: 136px;
+    height: 50px;
+    display: block;
+    margin-left: 150px;
+    z-index: 2;
+    background-color: white;
+}
+.box11-4{
+    background: url("../images/banners/lunbodicengshang_1.jpg") no-repeat;
+    font-size: 14px;
+    width: 1190px;
+    height: 225px;
+    background:black;
+    margin-left: 100px;
+}
+.box11-4_1 {
+    width: 1190px;
+    height: 34.8px;
+    float: left;
+}
+.box11-4_1 a{
+    color: white;
+
+}
+.box11-4_2 {
+    width: 1190px;
+    height: 34.8px;
+    float: left;
+
+}
+.box11-4_2 a{
+    color: white;
+
+}
+.box11-4_3{
+    margin-top: 10px;
+    font-size: 12px;
+    float: left;
+    width: 1190px;
+    height: 150.6px;
+}
+.box11-4_3 span{
+    color: darkgray;
+}
+.box11-4_3 a{
+    color: darkgray;
+}.box11-4_4 span{
+     color: darkgray;
+ }
+.box11-4_4 a{
+    color: darkgray;
+}
+.box11-4_5 span{
+    color: darkgray;
+}
+.box11-4_5 a{
+    color: darkgray;
+}
+.box11-4_6 span{
+    color: darkgray;
+}
+.box11-4_6 a{
+    color: darkgray;
+}
+.box11-4_7 span{
+    color: darkgray;
+}
+.box11-4_7 a{
+    color: darkgray;
+}
+.box11-4_3-2 img{
+    width: 20px;
+    height: 20px;
+}
+.box11-4_3-6{
+    margin-top: 10px;
+    width: 1330px;
+    height: 45px;
+}
+.box11-4_3-6 img{
+    display: block;
+    float: left;
+    width: 73px;
+    height: 30px;
+}
