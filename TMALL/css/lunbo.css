@@ -1,0 +1,187 @@
+
+ /*轮播图部分盒子*/
+ .lunboArea-box{
+     width: 100%;
+     height: 1265px;
+    /* border: 1px solid red;*/
+
+
+ }
+ /*
+ 左右两侧的图片 */
+ .bg-img{
+     width: 100%;
+     height: 1356px;
+     background: url("../image/p6.png") no-repeat -90px -207px;
+ }
+/* 中间轮播图*/
+ .lunbo-box{
+     width: 985px;
+     height: 500px;
+    /* border: 1px solid black;*/
+     margin: auto;
+ }
+ .lunbo-left-box{
+     width: 200px;
+     height: 100%;
+/*     border: 1px solid green;*/
+     box-sizing: border-box;
+     float: left;
+     background-color: #555;
+     display: none;
+ }
+ .lunbo-left-box2{
+     width: 200px;
+     height: 100%;
+     /*     border: 1px solid green;*/
+     box-sizing: border-box;
+     float: left;
+     background-color: #555;
+     display: block;
+ }
+
+
+
+ .lunbo-right-box{
+     width: 785px;
+     height: 100%;
+     /*border: 1px solid green;*/
+     box-sizing: border-box;
+     float: left;
+     box-sizing: border-box;
+     position: relative;
+
+ }
+
+/* 轮播图*/
+.banner1{
+    width: 100%;
+    height: 100%;
+    background: url("../image/1.webp") no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+ .banner2{
+     width: 100%;
+     height: 100%;
+     background: url("../image/b02.png") no-repeat center center;
+     position: absolute;
+     left: 0;
+     top: 0;
+ }
+ .banner3{
+     width: 100%;
+     height: 100%;
+     background: url("../image/3.webp") no-repeat center center;
+     position: absolute;
+     left: 0;
+     top: 0;
+ }
+ .banner4{
+     width: 100%;
+     height: 100%;
+     background: url("../image/4.jpg") no-repeat center center;
+     position: absolute;
+     left: 0;
+     top: 0;
+ }
+ .banner5{
+     width: 100%;
+     height: 100%;
+     background: url("../image/5.webp") no-repeat center center;
+     position: absolute;
+     left: 0;
+     top: 0;
+ }
+ .banner6{
+     width: 100%;
+     height: 100%;
+     background: url("../image/6.jpg") no-repeat center center;
+     position: absolute;
+     left: 0;
+     top: 0;
+ }
+
+
+/* 按钮*/
+ .btns{
+     position: absolute;
+     width:400px;
+     height: 17.6px;
+     right: 400px;
+     bottom: 30px;
+    /* border: 1px solid red;*/
+     float: right;
+ }
+ .btn{
+     width: 25px;
+     height: 5px;
+     background: #999;
+     float: left;
+     margin-left: 15px;
+ }
+ .btn.active{
+     background: red;
+ }
+
+.span{
+    margin-top: 15px
+}
+
+ /*左边盒子内容*/
+ .lunboleft-box{
+     width: 100%;
+     height: 31.2px;
+     /*border: 1px solid green;*/
+     box-sizing: border-box;
+     margin-top: 15px;
+ }
+ .content-box{
+     width: 150px;
+     height: 100%;
+     border: 1px solid red;
+     box-sizing: border-box;
+     margin: auto;
+     border-radius: 10px;
+     text-align: center;
+     line-height: 100%;
+ }
+ .content-box a{
+     text-decoration: none;
+     line-height: 29px;
+     color: white;
+ }
+
+
+ .lunboleft-box2{
+     width: 100%;
+     height: 31.2px;
+     /*border: 1px solid green;*/
+     box-sizing: border-box;
+     margin-top: -2px;
+ }
+ .content-box2{
+     width: 150px;
+     height: 100%;
+     box-sizing: border-box;
+     margin: auto;
+     text-align: left;
+     line-height: 100%;
+ }
+ .content-box2 a{
+     text-decoration: none;
+     line-height: 29px;
+     color: white;
+ }
+
+
+ @media screen and (min-width: 1230px){
+     .lunbo-box{
+         width: 1230px;
+     }
+     .lunbo-right-box{
+         width: 1030px;
+     }
+ }

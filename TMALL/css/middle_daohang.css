@@ -1,0 +1,97 @@
+
+/* 盒子*/
+.middle-dh-box{
+    width: 100%;
+    height: 36px;
+   /* border: 1px solid red;*/
+}
+.content{
+    width: 985px;
+    height: 100%;
+    /*border: 1px solid black;*/
+    box-sizing: border-box;
+    margin: auto;
+
+}
+
+/*左侧两个导航*/
+.left1 a{
+    width: 100px;
+    height: 100%;
+   /* border: 1px solid red;   rgba(238,238,238,.95);*/
+    background-color:#C60A0A;
+    float: left;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 36px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/*.left1 a:hover{
+    color: white;
+    background-color:  #000000;
+}*/
+
+
+.left2 a{
+    width: 100px;
+    height: 100%;
+   /* border: 1px solid red;*/
+    background-color: #000000;
+    font-size: 14px;
+    text-align: center;
+    line-height: 36px;
+    color: #fff;
+    float: left;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/*.left2 :hover{
+    background-color: #3b8de3;
+
+}*/
+/*两个图片导航*/
+.img-daohang-box{
+    width: 100px;
+    height: 30px;
+   /* border: 1px solid red;*/
+    box-sizing: border-box;
+    float: left;
+    margin-top: 3px;
+    margin-left: 8px;
+}
+.img-daohang-box img{
+    width: 100px;
+    height: 30px;
+    background-size: cover;
+}
+
+/*超链接部分*/
+.other{
+    width: fit-content;
+    height: 35px;
+   /* border: 1px solid green;*/
+    box-sizing: border-box;
+    float: left;
+    line-height: 35px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 5px;
+}
+
+.other a{
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+}
+.other a:hover{
+    color: red;
+}
+
+
+@media screen and (min-width: 1230px){
+    .content{
+        width: 1230px;
+    }
+}

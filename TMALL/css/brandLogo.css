@@ -1,0 +1,138 @@
+
+   /* 品牌图标*/
+   .brandLogo{
+       width: 100%;
+       height: 327px;
+      /* border: 1px solid green;*/
+       box-sizing: border-box;
+
+   }
+   .brand-content{
+       width: 985px;
+       height: 100%;
+      /* border: 1px solid red;*/
+       box-sizing: border-box;
+       margin: auto;
+       overflow: hidden;
+   }
+    /*小方格*/
+   .small-squares{
+       width: 122.8px;
+       height: 108px;
+       border: 0.25px solid #ccc;
+       float: left;
+       box-sizing: border-box;
+   }
+   .small-squares:hover .youhuiquan{
+       display: block;
+   }
+   .small-squares:hover .img-box{
+       display: none;
+   }
+
+
+
+ /*  图片边框*/
+   .img-box{
+       width: 100%;
+       height: 89.6px;
+       /*border: 1px solid blue;*/
+       box-sizing: border-box;
+   }
+   .img-box img{
+       width: 100%;
+       height: 89.6px;
+     /*  background: url("../image/品牌logo/logo1.jpg") no-repeat;*/
+       background-size: cover;
+   }
+   .last-img{
+       width: 40px;
+       height: 40px;
+      /* border: 1px solid black;*/
+       box-sizing: border-box;
+       background: url("../image/品牌logo/logo30.png") no-repeat center center;
+       background-size: cover;
+       margin-top: 15px;
+       margin-left: 40px;
+   }
+   .last-img-text a{
+       display: block;
+       font-size: 14px;
+       text-align: center;
+       color: #999;
+       text-decoration: none;
+   }
+
+
+ /*  优惠券*/
+   .youhuiquan{
+       width: 100%;
+       height: 100%;
+      /* border: 1px solid red;*/
+       box-sizing: border-box;
+       background: #000000;
+       opacity: 0.8;
+       display: none;
+   }
+   .youhuiquan-text{
+       color: white;
+       font-size: 12px;
+       text-align: center;
+       line-height: 90px;
+   }
+   .youhuiquan-bottomText{
+       width: 63px;
+       height: 18px;
+       background:red;
+       border-radius: 5px;
+       color: #fff;
+       font-size: 12px;
+       margin-top: -20px;
+       margin-left: 30px;
+       text-align: center;
+   }
+
+   .last-small-squares{
+       width: 122.8px;
+       height: 108px;
+       border: 0.25px solid #ccc;
+       float: left;
+       box-sizing: border-box;
+
+   }
+
+
+   .last-small-squares:hover {
+       background-color: red;
+       color: white;
+
+   }
+
+
+   @media screen and (min-width: 1200px){
+       .brand-content{
+           width: 1230px;
+
+       }
+       .l-small-squares{
+           width: 122.8px;
+           height: 108px;
+           border: 0.25px solid #ccc;
+           float: left;
+           box-sizing: border-box;
+
+       }
+
+
+
+   }
+  /* @media screen and(max-width: 1500px){
+       .brand-content{
+           width: 984px;
+              height: 100%;
+              !* border: 1px solid red;*!
+              box-sizing: border-box;
+              margin: auto;
+
+       }
+   }*/

@@ -1,0 +1,2337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>天猫商城</title>
+    <!--导入外部样式表-->
+    <link rel="stylesheet" href="../css/daohanglan.css">
+    <link rel="stylesheet" href="../css/search.css">
+    <link rel="stylesheet" href="../css/middle_daohang.css">
+    <link rel="stylesheet" href="../css/lunbo.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/brandLogo.css">
+    <link rel="stylesheet" href="../css/pro1.css">
+    <link rel="stylesheet" href="../css/pro2.css">
+    <link rel="stylesheet" href="../css/pictureGG.css">
+    <link rel="stylesheet" href="../css/pro3.css">
+    <link rel="stylesheet" href="../css/pro4.css">
+    <link rel="stylesheet" href="../css/cainixihuan.css">
+    <link rel="stylesheet" href="../css/bottom_a.css">
+    <link rel="stylesheet" href="../css/guding.css">
+
+    <script>
+        window.onload=function () {
+            var   banner = document.querySelectorAll(".banner");
+            var   btns = document.querySelectorAll(".btn");
+            var num= 0;
+            setInterval(function () {
+                if(num==6){
+                    num=0
+                }else{
+                    for(var i = 0;i<banner.length;i++){
+                        banner[i].style.display="none"
+                        btns[i].style.backgroundColor="#000000"
+                    }
+                    banner[num].style.display="block"
+                    btns[num].style.backgroundColor="#FFA500"
+                    num++
+                }
+            },3000)
+
+
+            var title=document.querySelectorAll(".pptitle");
+
+            var imgs=document.querySelectorAll(".bodisk")
+            var num1=0;
+            setInterval(function () {
+                if(num1==2){
+                    num1=0
+                }else{
+                    for(var i = 0;i<title.length;i++){
+                        imgs[i].style.display="none"
+                        title[i].style.backgroundColor="#ccc"
+                    }
+                    imgs[num1].style.display="block"
+                    title[num1].style.backgroundColor="#00B262"
+                    num1++
+                }
+            },2000)
+
+
+        }
+
+    </script>
+
+</head>
+<body>
+    <!-- 导航栏-->
+        <div class="daohang-box">
+            <div class="daohang-content">
+                <div class="dh-left">
+                    <div class="dh-left-text">
+                        喵，欢迎来天猫
+                    </div>
+                    <a href="">&nbsp;&nbsp;请登录</a>
+                    <a href="">免费注册</a>
+                </div>
+                <div class="dh-right">
+                    <div class="dh-right-1">
+                        <a href="">&nbsp;&nbsp;我的淘宝&nbsp;<div class="sanjiao"></div></a>
+                        <a href=""><div class="icon1"></div>购物车0件&nbsp;&nbsp</a>
+                        <a href="">&nbsp;&nbsp;收藏夹&nbsp;<div class="sanjiao"></div></a><div class="line"></div>
+                        <a href=""><div class="icon2"></div>手机版&nbsp;&nbsp;</a>
+                        <a href="">&nbsp;淘宝网&nbsp;&nbsp;</a>
+                        <a href="">&nbsp;商家支持&nbsp;<div class="sanjiao"></div></a>
+                        <a href=""><div class="icon3"></div>网站导航&nbsp;<div class="sanjiao"></div></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--搜索框-->
+    <div class="box">
+        <div class="zbox">
+            <div class="left-box">
+                <div class="logo">
+                    <img src="../image/5.png" alt="">
+                </div>
+            </div>
+            <div class="middle-box">
+                <div class="search-box">
+                    <div class="button-box">
+                        <form action="">
+                            <input type="text" placeholder="  搜索  天猫  商品/品牌/店铺">
+                            <button type="submit"></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="search-a-box">
+                    <div class="search-a1">
+                        <a href="">针织衫</a>
+                    </div>
+                    <div class="line2"></div>
+                    <div class="search-a2">
+                        <a href="">连衣裙</a>
+                    </div>
+                    <div class="line2"></div>
+                    <div class="search-a1">
+                        <a href="">四件套</a>
+                    </div>
+                    <div class="line2"></div>
+                    <div class="search-a2">
+                        <a href="">摄像头</a>
+                    </div>
+                    <div class="line2"></div>
+                    <div class="search-a1">
+                        <a href="">客厅灯</a>
+                    </div>
+                    <div class="line2"></div>
+                    <div class="search-a1">
+                        <a href="">口红</a>
+                    </div>
+                    <div class="line2"></div>
+                    <div class="search-a2">
+                        <a href="">手机</a>
+                    </div>
+                    <div class="line2"></div>
+                    <div class="search-a1">
+                        <a href="">运动鞋</a>
+                    </div>
+                    <div class="line2"></div>
+                    <div class="search-a2">
+                        <a href="">牛奶</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--中间导航栏-->
+    <div class="middle-dh-box">
+        <div class="content">
+            <div class="left left1"><a href="">商品分类</a></div>
+           <div class="left left2"><a href="">天猫520活动</a></div>
+            <a href="">
+                <div class="img-daohang-box">
+                     <img src="../image/s5.png" alt="">
+                </div>
+            </a>
+            <a href="">
+                <div class="img-daohang-box">
+                    <img src="../image/s6.png" alt="">
+                </div>
+            </a>
+            <div class="other"><a href="">天猫会员</a></div>
+            <div class="other"><a href="">电器城</a></div>
+            <div class="other"><a href="">喵先生</a></div>
+            <div class="other"><a href="">医药馆</a></div>
+            <div class="other"><a href="">营业厅</a></div>
+            <div class="other"><a href="">魅力惠</a></div>
+            <div class="other"><a href="">飞猪旅行</a></div>
+            <div class="other"><a href="">苏宁易购</a></div>
+
+        </div>
+    </div>
+    <!-- 轮播图  响应式  品牌logo-->
+    <div class="lunboArea-box">
+        <div class="bg-img">
+            <div class="lunbo-box">
+                <div class="lunbo-left-box">
+                    <div class="span"></div>
+                    <div class="lunboleft-box">
+                        <div class="content-box">
+                            <a href="">大牌女装</a>
+                        </div>
+                    </div>
+                    <div class="lunboleft-box">
+                        <div class="content-box">
+                            <a href="">家纺家饰</a>
+                        </div>
+                    </div>
+                    <div class="lunboleft-box">
+                        <div class="content-box">
+                            <a href="">运动户外</a>
+                        </div>
+                    </div>
+                    <div class="lunboleft-box">
+                        <div class="content-box">
+                            <a href="">型格男装</a>
+                        </div>
+                    </div>
+                    <div class="lunboleft-box">
+                        <div class="content-box">
+                            <a href="">大牌女妆</a>
+                        </div>
+                    </div>
+                    <div class="lunboleft-box">
+                        <div class="content-box">
+                            <a href="">纸品家清</a>
+                        </div>
+                    </div>
+                    <div class="lunboleft-box">
+                        <div class="content-box">
+                            <a href="">潮流个护</a>
+                        </div>
+                    </div>
+                    <div class="lunboleft-box">
+                        <div class="content-box">
+                            <a href="">大家电</a>
+                        </div>
+                    </div>
+                    <div class="lunboleft-box">
+                        <div class="content-box">
+                            <a href="">手机会场</a>
+                        </div>
+                    </div>
+                    <div class="lunboleft-box">
+                        <div class="content-box">
+                            <a href="">精品家具</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="lunbo-left-box2">
+                    <div class="span"></div>
+                    <div class="lunboleft-box2">
+                        <div class="content-box2">
+                            <a href="">女装/内衣</a>
+                        </div>
+                    </div>
+                    <div class="lunboleft-box2">
+                        <div class="content-box2">
+                            <a href="">男装/运动户外</a>
+                        </div>
+                    </div>
+                    <div class="lunboleft-box2">
+                        <div class="content-box2">
+                            <a href="">女鞋/男鞋/箱包</a>
+                        </div>
+                    </div>
+                    <div class="lunboleft-box2">
+                        <div class="content-box2">
+                            <a href="">美妆/个人护理</a>
+                        </div>
+                    </div>
+                    <div class="lunboleft-box2">
+                        <div class="content-box2">
+                            <a href="">腕表/眼镜/珠宝饰品</a>
+                        </div>
+                    </div>
+                    <div class="lunboleft-box2">
+                        <div class="content-box2">
+                            <a href="">手机/数码/电脑办公</a>
+                        </div>
+                    </div>
+                    <div class="lunboleft-box2">
+                        <div class="content-box2">
+                            <a href="">母婴玩具</a>
+                        </div>
+                    </div>
+                    <div class="lunboleft-box2">
+                        <div class="content-box2">
+                            <a href="">零食/茶酒/进口食品</a>
+                        </div>
+                    </div>
+                    <div class="lunboleft-box2">
+                        <div class="content-box2">
+                            <a href="">生鲜水果</a>
+                        </div>
+                    </div>
+                    <div class="lunboleft-box2">
+                        <div class="content-box2">
+                            <a href="">大家电/生活电器</a>
+                        </div>
+                    </div>
+                    <div class="lunboleft-box2">
+                        <div class="content-box2">
+                            <a href="">家具建材</a>
+                        </div>
+                    </div>
+                    <div class="lunboleft-box2">
+                        <div class="content-box2">
+                            <a href="">汽车/配件/用品</a>
+                        </div>
+                    </div>
+                    <div class="lunboleft-box2">
+                        <div class="content-box2">
+                            <a href="">家纺/家饰/鲜花</a>
+                        </div>
+                    </div>
+                    <div class="lunboleft-box2">
+                        <div class="content-box2">
+                            <a href="">医药保健</a>
+                        </div>
+                    </div>
+                    <div class="lunboleft-box2">
+                        <div class="content-box2">
+                            <a href="">厨具/收纳/宠物</a>
+                        </div>
+                    </div>
+                    <div class="lunboleft-box2">
+                        <div class="content-box2">
+                            <a href="">图书音像</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="lunbo-right-box">
+                    <div class="banner banner1"></div>
+                    <div class="banner banner2"></div>
+                    <div class="banner banner3"></div>
+                    <div class="banner banner4"></div>
+                    <div class="banner banner5"></div>
+                    <div class="banner banner6"></div>
+                    <!--按钮-->
+                    <div class="btns">
+                        <div class="btn"></div>
+                        <div class="btn"></div>
+                        <div class="btn"></div>
+                        <div class="btn"></div>
+                        <div class="btn"></div>
+                        <div class="btn"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!--响应式图片部分-->
+            <div class="white"></div>
+            <div class="responsive-box">
+                <div class="left-top">
+                    <div class="content-text">
+                       <strong> 品牌闪购</strong>
+                    </div>
+                    <div class="content-smallFont">
+                        <strong>BRAND SALE</strong>
+                    </div>
+                    <div class="more">
+                       <div class="more-left"></div>
+                        <div class="more-right">
+                            <img src="../image/响应式图片/p10.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="left-middle">
+                    <div class="content-text">
+                        <strong> 聚名品</strong>
+                    </div>
+                    <div class="content-smallFont">
+                        <strong>LUXURY CHANNEL</strong>
+                    </div>
+                    <div class="more2">
+                        <div class="more-left">
+                            <a href="">更多</a>
+                        </div>
+                        <div class="more-right">
+                            <img src="../image/响应式图片/p10.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="left-last">
+                    <div class="content-text">
+                        <strong> 品牌活动</strong>
+                    </div>
+                    <div class="content-smallFont">
+                        <strong>BRAND ACTIVITY</strong>
+                    </div>
+                    <div class="more2">
+                        <div class="more-left">
+                            <a href="">更多</a>
+                        </div>
+                        <div class="more-right">
+                            <img src="../image/响应式图片/p10.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+                <!--图片-->
+                <div class="left-img-box">
+                    <div class="left-img"></div>
+                </div>
+                <div class="middle-img-box">
+                    <div class="middle-img"></div>
+                </div>
+                <div class="right-img-box">
+                    <div class="right-img"></div>
+                </div>
+
+            </div>
+            <!--品牌logo-->
+            <div class="brandLogo">
+                <div class="brand-content">
+                    <div class="l-small-squares small-squares">
+                        <div class="youhuiquan">
+                            <div class="youhuiquan-text">优惠券 ￥50</div>
+                            <div class="youhuiquan-bottomText">点击进入</div>
+                        </div>
+                        <div class="img-box">
+                            <a href=""><img src="../image/品牌logo/logo1.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="small-squares">
+                        <div class="youhuiquan">
+                            <div class="youhuiquan-text">优惠券 ￥50</div>
+                            <div class="youhuiquan-bottomText">点击进入</div>
+                        </div>
+                        <div class="img-box">
+                            <a href=""><img src="../image/品牌logo/logo2.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="small-squares">
+                        <div class="youhuiquan">
+                            <div class="youhuiquan-text">优惠券 ￥50</div>
+                            <div class="youhuiquan-bottomText">点击进入</div>
+                        </div>
+                        <div class="img-box">
+                            <a href=""><img src="../image/品牌logo/logo3.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="small-squares">
+                        <div class="youhuiquan">
+                            <div class="youhuiquan-text">优惠券 ￥50</div>
+                            <div class="youhuiquan-bottomText">点击进入</div>
+                        </div>
+                        <div class="img-box">
+                            <a href=""><img src="../image/品牌logo/logo4.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="small-squares">
+                        <div class="youhuiquan">
+                            <div class="youhuiquan-text">优惠券 ￥50</div>
+                            <div class="youhuiquan-bottomText">点击进入</div>
+                        </div>
+                        <div class="img-box">
+                            <a href=""><img src="../image/品牌logo/logo5.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="small-squares">
+                        <div class="youhuiquan">
+                            <div class="youhuiquan-text">优惠券 ￥50</div>
+                            <div class="youhuiquan-bottomText">点击进入</div>
+                        </div>
+                        <div class="img-box">
+                            <a href=""><img src="../image/品牌logo/logo6.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="small-squares">
+                        <div class="youhuiquan">
+                            <div class="youhuiquan-text">优惠券 ￥50</div>
+                            <div class="youhuiquan-bottomText">点击进入</div>
+                        </div>
+                        <div class="img-box">
+                            <a href=""><img src="../image/品牌logo/logo7.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="small-squares">
+                        <div class="youhuiquan">
+                            <div class="youhuiquan-text">优惠券 ￥50</div>
+                            <div class="youhuiquan-bottomText">点击进入</div>
+                        </div>
+                        <div class="img-box">
+                            <a href=""><img src="../image/品牌logo/logo8.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="small-squares">
+                        <div class="youhuiquan">
+                            <div class="youhuiquan-text">优惠券 ￥50</div>
+                            <div class="youhuiquan-bottomText">点击进入</div>
+                        </div>
+                        <div class="img-box">
+                            <a href=""><img src="../image/品牌logo/logo9.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="small-squares">
+                        <div class="youhuiquan">
+                            <div class="youhuiquan-text">优惠券 ￥50</div>
+                            <div class="youhuiquan-bottomText">点击进入</div>
+                        </div>
+                        <div class="img-box">
+                            <a href=""><img src="../image/品牌logo/logo10.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="small-squares">
+                        <div class="youhuiquan">
+                            <div class="youhuiquan-text">优惠券 ￥50</div>
+                            <div class="youhuiquan-bottomText">点击进入</div>
+                        </div>
+                        <div class="img-box">
+                            <a href=""><img src="../image/品牌logo/logo11.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="small-squares">
+                        <div class="youhuiquan">
+                            <div class="youhuiquan-text">优惠券 ￥50</div>
+                            <div class="youhuiquan-bottomText">点击进入</div>
+                        </div>
+                        <div class="img-box">
+                            <a href=""><img src="../image/品牌logo/logo12.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="small-squares">
+                        <div class="youhuiquan">
+                            <div class="youhuiquan-text">优惠券 ￥50</div>
+                            <div class="youhuiquan-bottomText">点击进入</div>
+                        </div>
+                        <div class="img-box">
+                            <a href=""><img src="../image/品牌logo/logo13.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="small-squares">
+                        <div class="youhuiquan">
+                            <div class="youhuiquan-text">优惠券 ￥50</div>
+                            <div class="youhuiquan-bottomText">点击进入</div>
+                        </div>
+                        <div class="img-box">
+                            <a href=""><img src="../image/品牌logo/logo14.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="small-squares">
+                        <div class="youhuiquan">
+                            <div class="youhuiquan-text">优惠券 ￥50</div>
+                            <div class="youhuiquan-bottomText">点击进入</div>
+                        </div>
+                        <div class="img-box">
+                            <a href=""><img src="../image/品牌logo/logo15.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="small-squares">
+                        <div class="youhuiquan">
+                            <div class="youhuiquan-text">优惠券 ￥50</div>
+                            <div class="youhuiquan-bottomText">点击进入</div>
+                        </div>
+                        <div class="img-box">
+                            <a href=""><img src="../image/品牌logo/logo16.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="small-squares">
+                        <div class="youhuiquan">
+                            <div class="youhuiquan-text">优惠券 ￥50</div>
+                            <div class="youhuiquan-bottomText">点击进入</div>
+                        </div>
+                        <div class="img-box">
+                            <a href=""><img src="../image/品牌logo/logo17.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="small-squares">
+                        <div class="youhuiquan">
+                            <div class="youhuiquan-text">优惠券 ￥50</div>
+                            <div class="youhuiquan-bottomText">点击进入</div>
+                        </div>
+                        <div class="img-box">
+                            <a href=""><img src="../image/品牌logo/logo18.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="small-squares">
+                        <div class="youhuiquan">
+                            <div class="youhuiquan-text">优惠券 ￥50</div>
+                            <div class="youhuiquan-bottomText">点击进入</div>
+                        </div>
+                        <div class="img-box">
+                            <a href=""><img src="../image/品牌logo/logo19.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="small-squares">
+                        <div class="youhuiquan">
+                            <div class="youhuiquan-text">优惠券 ￥50</div>
+                            <div class="youhuiquan-bottomText">点击进入</div>
+                        </div>
+                        <div class="img-box">
+                            <a href=""><img src="../image/品牌logo/logo20.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="small-squares">
+                        <div class="youhuiquan">
+                            <div class="youhuiquan-text">优惠券 ￥50</div>
+                            <div class="youhuiquan-bottomText">点击进入</div>
+                        </div>
+                        <div class="img-box">
+                            <a href=""><img src="../image/品牌logo/logo21.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="small-squares">
+                        <div class="youhuiquan">
+                            <div class="youhuiquan-text">优惠券 ￥50</div>
+                            <div class="youhuiquan-bottomText">点击进入</div>
+                        </div>
+                        <div class="img-box">
+                            <a href=""><img src="../image/品牌logo/logo22.jpg" alt=""></a>
+                        </div>
+                    </div><div class="small-squares">
+                    <div class="youhuiquan">
+                        <div class="youhuiquan-text">优惠券 ￥50</div>
+                        <div class="youhuiquan-bottomText">点击进入</div>
+                    </div>
+                    <div class="img-box">
+                        <a href=""><img src="../image/品牌logo/logo23.jpg" alt=""></a>
+                    </div>
+                </div>
+                    <div class="small-squares">
+                        <div class="youhuiquan">
+                            <div class="youhuiquan-text">优惠券 ￥50</div>
+                            <div class="youhuiquan-bottomText">点击进入</div>
+                        </div>
+                        <div class="img-box">
+                            <a href=""><img src="../image/品牌logo/logo24.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="small-squares">
+                        <div class="youhuiquan">
+                            <div class="youhuiquan-text">优惠券 ￥50</div>
+                            <div class="youhuiquan-bottomText">点击进入</div>
+                        </div>
+                        <div class="img-box">
+                            <a href=""><img src="../image/品牌logo/logo25.jpg" alt=""></a>
+                        </div>
+                    </div><div class="small-squares">
+                    <div class="youhuiquan">
+                        <div class="youhuiquan-text">优惠券 ￥50</div>
+                        <div class="youhuiquan-bottomText">点击进入</div>
+                    </div>
+                    <div class="img-box">
+                        <a href=""><img src="../image/品牌logo/logo26.jpg" alt=""></a>
+                    </div>
+                </div><div class="small-squares">
+                    <div class="youhuiquan">
+                        <div class="youhuiquan-text">优惠券 ￥50</div>
+                        <div class="youhuiquan-bottomText">点击进入</div>
+                    </div>
+                    <div class="img-box">
+                        <a href=""><img src="../image/品牌logo/logo27.jpg" alt=""></a>
+                    </div>
+                </div><div class="small-squares">
+                    <div class="youhuiquan">
+                        <div class="youhuiquan-text">优惠券 ￥50</div>
+                        <div class="youhuiquan-bottomText">点击进入</div>
+                    </div>
+                    <div class="img-box">
+                        <a href=""><img src="../image/品牌logo/logo28.jpg" alt=""></a>
+                    </div>
+                </div><div class="small-squares">
+                    <div class="youhuiquan">
+                        <div class="youhuiquan-text">优惠券 ￥50</div>
+                        <div class="youhuiquan-bottomText">点击进入</div>
+                    </div>
+                    <div class="img-box">
+                        <a href=""><img src="../image/品牌logo/logo29.jpg" alt=""></a>
+                    </div>
+                </div>
+                    <div class="last-small-squares">
+                        <div class="last-youhuiquan">
+                        </div>
+                      <!--  <a href="">-->
+                            <div class="last-img"></div>
+                            <div class="last-img-text">
+                                <a href=""> 换一批</a>
+                            </div>
+                        </a>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <!--第一板块商品   天猫超市-->
+    <div class="pro1-box">
+        <div class="pro1-left">
+            <div class="pro1-left-logo"></div>
+        </div>
+        <div class="zhanwei"></div>
+        <div class="pro1-right">
+            <div class="pro1-right-daohang">
+                <div class="pro1-right-daohang-content">
+                    <a href="">进口食品</a>
+                </div>
+                <div class="pro1-right-daohang-content">
+                    <a href="">食品饮料</a>
+                </div>
+                <div class="pro1-right-daohang-content">
+                    <a href="">粮油副食</a>
+                </div>
+                <div class="pro1-right-daohang-content">
+                    <a href="">美容护肤</a>
+                </div>
+                <div class="pro1-right-daohang-content">
+                    <a href="">家居家电</a>
+                </div>
+                <div class="pro1-right-daohang-content">
+                    <a href="">家庭清洁</a>
+                </div>
+                <div class="pro1-right-daohang-content">
+                    <a href="">母婴用品</a>
+                </div>
+                <div class="pro1-right-daohang-content">
+                    <a href="">生鲜水果</a>
+                </div>
+            </div>
+        </div>
+        <div class="pro1-left-box"></div>
+        <div class="pro1-right-box">
+
+
+
+
+
+
+
+            <div class="pro1-right-box-top">
+                <div class="pro1-right-leftTop">
+                    <div class="pro1-right-leftTop-on">
+                        <div class="pptitle pon1">今日疯抢</div>
+                        <div class="pptitle pon1">量贩装</div>
+                    </div>
+                    <div class="bodisk pro1-right-leftTop-bottom">
+
+                        <div class="plefttop1">
+                            <img src="../image/pro1/top1.jpg" alt="">
+                        </div>
+                        <div class="plefttop2">
+                            <div class="greenFont"><b>粮油调味</b></div>
+                            <div class="greenFont2">爆款直降</div>
+                        </div>
+                    </div>
+
+                    <div class="bodisk pro1-right-leftTop-bottom2">
+
+                        <div class="plefttop1">
+                            <img src="../image/pro1/milk.jpg" alt="">
+                        </div>
+                        <div class="plefttop2">
+                            <div class="greenFont"><b>第二件0元</b></div>
+                            <div class="greenFont2">动力囤奶日</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-box">
+                    <img src="../image/pro1/1.jpg" alt="">
+                    <br>
+                    <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+                    <div class="redtext"><b>￥ 5488.0</b></div>
+                </div>
+                <div class="item-box">
+                    <img src="../image/pro1/2.jpg" alt="">
+                    <br>
+                    <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+                    <div class="redtext"><b>￥ 5488.0</b></div>
+                </div>
+
+            </div>
+            <div class="pro1-right-box-bottom">
+
+
+
+
+                <div class="item-box2">
+                    <img src="../image/pro1/3.jpg" alt="">
+                    <br>
+                    <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+                    <div class="redtext"><b>￥ 5488.0</b></div>
+                </div>
+                <div class="item-box2">
+                    <img src="../image/pro1/4.jpg" alt="">
+                    <br>
+                    <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+                    <div class="redtext"><b>￥ 5488.0</b></div>
+                </div>
+                <div class="item-box2">
+                    <img src="../image/pro1/5.jpg" alt="">
+                    <br>
+                    <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+                    <div class="redtext"><b>￥ 5488.0</b></div>
+                </div>
+                <div class="item-boxlast">
+                    <img src="../image/pro1/6.jpg" alt="">
+                    <br>
+                    <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+                    <div class="redtext"><b>￥ 5488.0</b></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--第二板块 天猫国际-->
+    <br><br>
+    <div class="pro2-box">
+        <div class="pro2-left">
+            <div class="pro2-left-logo"></div>
+        </div>
+
+           <div class="pro2-right-daohang">
+               <div class="pro2-right-daohang-content">
+                   <a href="">迪奥</a>
+               </div>
+               <div class="pro2-right-daohang-content">
+                   <a href="">防晒</a>
+               </div>
+               <div class="pro2-right-daohang-content">
+                   <a href="">面膜</a>
+               </div>
+               <div class="pro2-right-daohang-content">
+                   <a href="">YSL</a>
+               </div>
+               <div class="pro2-right-daohang-content">
+                   <a href="">口红</a>
+               </div>
+
+           </div>
+
+
+        <div class="pro2-left-box">
+            <div class="pro2-left-box-top">
+                <img src="../image/pro1/pro2.png" alt="">
+            </div>
+            <div class="pro2-left-box-top">
+                <img src="../image/pro1/pro2-bottom.png" alt="">
+            </div>
+        </div>
+        <div class="pro2-right-box">
+            <div class="pro2-right-box-top">
+                <div class="item-box2">
+                    <img src="../image/pro1/gj1.jpg" alt="">
+                    <br>
+                    <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+                    <div class="redtext"><b>￥ 5488.0</b></div>
+                </div>
+                <div class="item-box2">
+                    <img src="../image/pro1/gj2.jpg" alt="">
+                    <br>
+                    <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+                    <div class="redtext"><b>￥ 5488.0</b></div>
+                </div>
+                <div class="item-box2">
+                    <img src="../image/pro1/gj3.jpg" alt="">
+                    <br>
+                    <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+                    <div class="redtext"><b>￥ 5488.0</b></div>
+                </div>
+                <div class="item-boxlast">
+                    <img src="../image/pro1/gj4.jpg" alt="">
+                    <br>
+                    <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+                    <div class="redtext"><b>￥ 5488.0</b></div>
+                </div>
+            </div>
+
+
+
+
+            <div class="pro2-right-box-bottom">
+                <div class="item-box2">
+                    <img src="../image/pro1/gj5.jpg" alt="">
+                    <br>
+                    <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+                    <div class="redtext"><b>￥ 5488.0</b></div>
+                </div>
+                <div class="item-box2">
+                    <img src="../image/pro1/gj6.jpg" alt="">
+                    <br>
+                    <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+                    <div class="redtext"><b>￥ 5488.0</b></div>
+                </div>
+                <div class="item-box2">
+                    <img src="../image/pro1/gj7.jpg" alt="">
+                    <br>
+                    <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+                    <div class="redtext"><b>￥ 5488.0</b></div>
+                </div>
+                <div class="item-boxlast">
+                    <img src="../image/pro1/gj8.jpg" alt="">
+                    <br>
+                    <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+                    <div class="redtext"><b>￥ 5488.0</b></div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+    <!--  图片广告-->
+    <br>
+    <div class="gg-box">
+        <img src="../image/pro1/gg.jpg" alt="">
+    </div>
+    <!--第三模块  美丽人生-->
+    <div class="pro3-box">
+        <div class="pro3-left-logo">
+            <div class="p3-left-top">
+               <b> 美丽人生</b>&nbsp;FASHION & BEAUTY
+            </div>
+        </div>
+
+   <!--     <div class="pro3-right-daohang">
+
+        </div>-->
+        <div class="pro3-left-box"></div>
+        <div class="pro3-right-box">
+            <div class="pro2-right-box-top">
+                <div class="item-box2">
+                    <img src="../image/pro1/mm1.jpg" alt="">
+                    <br>
+                    <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+                    <div class="redtext"><b>￥ 5488.0</b></div>
+                </div>
+                <div class="item-box2">
+                    <img src="../image/pro1/mm2.jpg" alt="">
+                    <br>
+                    <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+                    <div class="redtext"><b>￥ 5488.0</b></div>
+                </div>
+                <div class="item-box2">
+                    <img src="../image/pro1/mm3.jpg" alt="">
+                    <br>
+                    <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+                    <div class="redtext"><b>￥ 5488.0</b></div>
+                </div>
+                <div class="item-boxlast">
+                    <img src="../image/pro1/mm4.jpg" alt="">
+                    <br>
+                    <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+                    <div class="redtext"><b>￥ 5488.0</b></div>
+                </div>
+            </div>
+            <div class="pro2-right-box-bottom">
+                <div class="item-box2-bottom">
+                <img src="../image/pro1/mm5.jpg" alt="">
+                <br>
+                <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+                <div class="redtext"><b>￥ 5488.0</b></div>
+            </div>
+                <div class="item-box2-bottom">
+                    <img src="../image/pro1/mm6.jpg" alt="">
+                    <br>
+                    <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+                    <div class="redtext"><b>￥ 5488.0</b></div>
+                </div>
+                <div class="item-box2-bottom">
+                    <img src="../image/pro1/mm7.jpg" alt="">
+                    <br>
+                    <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+                    <div class="redtext"><b>￥ 5488.0</b></div>
+                </div>
+                <div class="item-boxlast-bootom">
+                    <img src="../image/pro1/mm8.jpg" alt="">
+                    <br>
+                    <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+                    <div class="redtext"><b>￥ 5488.0</b></div>
+                </div></div>
+
+
+
+
+        </div>
+    </div>
+   <!-- 第四模块  潮电酷玩-->
+    <div class="pro4-box">
+        <div class="pro4-left-logo">
+            <div class="p4-left-top">
+                <b> 潮电酷玩</b>&nbsp;ELECTRONICE
+            </div>
+        </div>
+
+        <div class="pro4-right-daohang">
+
+        </div>
+        <div class="pro4-left-box">
+            <img src="../image/pro1/pro4.jpg" alt="">
+        </div>
+        <div class="pro4-right-box">
+            <div class="pro2-right-box-top">
+                <div class="item-box2">
+                    <img src="../image/pro1/cd1.jpg" alt="">
+                    <br>
+                    <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+                    <div class="redtext"><b>￥ 5488.0</b></div>
+                </div>
+                <div class="item-box2">
+                    <img src="../image/pro1/cd2.jpg" alt="">
+                    <br>
+                    <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+                    <div class="redtext"><b>￥ 5488.0</b></div>
+                </div>
+                <div class="item-box2">
+                    <img src="../image/pro1/cd3.jpg" alt="">
+                    <br>
+                    <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+                    <div class="redtext"><b>￥ 5488.0</b></div>
+                </div>
+                <div class="item-boxlast">
+                    <img src="../image/pro1/cd4.jpg" alt="">
+                    <br>
+                    <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+                    <div class="redtext"><b>￥ 5488.0</b></div>
+                </div>
+            </div>
+            <div class="pro2-right-box-bottom">
+                <div class="item-box2-bottom">
+                    <img src="../image/pro1/cd5.jpg" alt="">
+                    <br>
+                    <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+                    <div class="redtext"><b>￥ 5488.0</b></div>
+                </div>
+                <div class="item-box2-bottom">
+                    <img src="../image/pro1/cd6.jpg" alt="">
+                    <br>
+                    <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+                    <div class="redtext"><b>￥ 5488.0</b></div>
+                </div>
+                <div class="item-box2-bottom">
+                    <img src="../image/pro1/cd7.jpg" alt="">
+                    <br>
+                    <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+                    <div class="redtext"><b>￥ 5488.0</b></div>
+                </div>
+                <div class="item-boxlast-bootom">
+                    <img src="../image/pro1/cd8.jpg" alt="">
+                    <br>
+                    <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+                    <div class="redtext"><b>￥ 5488.0</b></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  图片广告-->
+    <br>
+    <div class="gg-box">
+        <img src="../image/pro1/gg2.jpg" alt="">
+    </div>
+    <!--第五  居家生活-->
+    <div class="pro4-box">
+        <div class="pro4-left-logo">
+            <div class="p4-left-top">
+                <b> 居家生活</b>&nbsp;GROCEPY & HEALTH
+            </div>
+        </div>
+        <div class="pro4-right-daohang">
+
+        </div>
+        <div class="pro4-left-box">
+            <img src="../image/pro1/pro5.png" alt="">
+        </div>
+        <div class="pro4-right-box">
+            <div class="pro2-right-box-top">
+                <div class="item-box2">
+                    <img src="../image/pro1/jj1.jpg" alt="">
+                    <br>
+                    <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+                    <div class="redtext"><b>￥ 5488.0</b></div>
+                </div>
+                <div class="item-box2">
+                    <img src="../image/pro1/jj2.jpg" alt="">
+                    <br>
+                    <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+                    <div class="redtext"><b>￥ 5488.0</b></div>
+                </div>
+                <div class="item-box2">
+                    <img src="../image/pro1/jj3.jpg" alt="">
+                    <br>
+                    <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+                    <div class="redtext"><b>￥ 5488.0</b></div>
+                </div>
+                <div class="item-boxlast">
+                    <img src="../image/pro1/jj4.jpg" alt="">
+                    <br>
+                    <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+                    <div class="redtext"><b>￥ 5488.0</b></div>
+                </div>
+            </div>
+            <div class="pro2-right-box-bottom">
+                <div class="item-box2-bottom">
+                    <img src="../image/pro1/jj5.jpg" alt="">
+                    <br>
+                    <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+                    <div class="redtext"><b>￥ 5488.0</b></div>
+                </div>
+                <div class="item-box2-bottom">
+                    <img src="../image/pro1/jj6.jpg" alt="">
+                    <br>
+                    <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+                    <div class="redtext"><b>￥ 5488.0</b></div>
+                </div>
+                <div class="item-box2-bottom">
+                    <img src="../image/pro1/jj7.jpg" alt="">
+                    <br>
+                    <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+                    <div class="redtext"><b>￥ 5488.0</b></div>
+                </div>
+                <div class="item-boxlast-bootom">
+                    <img src="../image/pro1/jj8.jpg" alt="">
+                    <br>
+                    <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+                    <div class="redtext"><b>￥ 5488.0</b></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--第六  打造爱巢-->
+    <div class="pro4-box">
+        <div class="pro4-left-logo">
+            <div class="p4-left-top">
+                <b> 打造爱巢</b>&nbsp;HOME
+            </div>
+        </div>
+        <div class="pro4-right-daohang">
+        </div>
+        <div class="pro4-left-box">
+            <img src="../image/pro1/pro6.jpg" alt="">
+        </div>
+        <div class="pro4-right-box">
+            <div class="pro2-right-box-top">
+                <div class="item-box2">
+                    <img src="../image/pro1/dz1.jpg" alt="">
+                    <br>
+                    <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+                    <div class="redtext"><b>￥ 5488.0</b></div>
+                </div>
+                <div class="item-box2">
+                    <img src="../image/pro1/dz2.jpg" alt="">
+                    <br>
+                    <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+                    <div class="redtext"><b>￥ 5488.0</b></div>
+                </div>
+                <div class="item-box2">
+                    <img src="../image/pro1/dz3.jpg" alt="">
+                    <br>
+                    <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+                    <div class="redtext"><b>￥ 5488.0</b></div>
+                </div>
+                <div class="item-boxlast">
+                    <img src="../image/pro1/dz4.jpg" alt="">
+                    <br>
+                    <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+                    <div class="redtext"><b>￥ 5488.0</b></div>
+                </div>
+            </div>
+            <div class="pro2-right-box-bottom">
+                <div class="item-box2-bottom">
+                    <img src="../image/pro1/dz5.jpg" alt="">
+                    <br>
+                    <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+                    <div class="redtext"><b>￥ 5488.0</b></div>
+                </div>
+                <div class="item-box2-bottom">
+                    <img src="../image/pro1/dz6.jpg" alt="">
+                    <br>
+                    <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+                    <div class="redtext"><b>￥ 5488.0</b></div>
+                </div>
+                <div class="item-box2-bottom">
+                    <img src="../image/pro1/dz7.jpg" alt="">
+                    <br>
+                    <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+                    <div class="redtext"><b>￥ 5488.0</b></div>
+                </div>
+                <div class="item-boxlast-bootom">
+                    <img src="../image/pro1/dz8.jpg" alt="">
+                    <br>
+                    <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+                    <div class="redtext"><b>￥ 5488.0</b></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  图片广告-->
+    <br>
+    <div class="gg-box">
+        <img src="../image/pro1/gg3.jpg" alt="">
+    </div>
+    <!--第七  户外出行-->
+    <div class="pro4-box">
+        <div class="pro4-left-logo">
+            <div class="p4-left-top">
+                <b> 户外出行</b>&nbsp;OUTDOORS & AUTOMOTIVE
+            </div>
+        </div>
+        <div class="zhanwei"></div>
+        <div class="pro4-right-daohang">
+
+        </div>
+        <div class="pro4-left-box">
+            <img src="../image/pro1/pro7.jpg" alt="">
+        </div>
+        <div class="pro4-right-box">
+            <div class="pro2-right-box-top">
+                <div class="item-box2">
+                    <img src="../image/pro1/hw1.jpg" alt="">
+                    <br>
+                    <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+                    <div class="redtext"><b>￥ 5488.0</b></div>
+                </div>
+                <div class="item-box2">
+                    <img src="../image/pro1/hw2.jpg" alt="">
+                    <br>
+                    <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+                    <div class="redtext"><b>￥ 5488.0</b></div>
+                </div>
+                <div class="item-box2">
+                    <img src="../image/pro1/hw3.jpg" alt="">
+                    <br>
+                    <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+                    <div class="redtext"><b>￥ 5488.0</b></div>
+                </div>
+                <div class="item-boxlast">
+                    <img src="../image/pro1/hw4.jpg" alt="">
+                    <br>
+                    <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+                    <div class="redtext"><b>￥ 5488.0</b></div>
+                </div>
+            </div>
+            <div class="pro2-right-box-bottom">
+                <div class="item-box2-bottom">
+                    <img src="../image/pro1/hw5.jpg" alt="">
+                    <br>
+                    <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+                    <div class="redtext"><b>￥ 5488.0</b></div>
+                </div>
+                <div class="item-box2-bottom">
+                    <img src="../image/pro1/hw6.jpg" alt="">
+                    <br>
+                    <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+                    <div class="redtext"><b>￥ 5488.0</b></div>
+                </div>
+                <div class="item-box2-bottom">
+                    <img src="../image/pro1/hw7.jpg" alt="">
+                    <br>
+                    <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+                    <div class="redtext"><b>￥ 5488.0</b></div>
+                </div>
+                <div class="item-boxlast-bootom">
+                    <img src="../image/pro1/hw8.jpg" alt="">
+                    <br>
+                    <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+                    <div class="redtext"><b>￥ 5488.0</b></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--猜你喜欢-->
+    <div class="cxh-box">
+        ----💗猜你喜欢----
+    </div>
+    <div class="cnxh-box">
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/cnxh1.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/cnxh2.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/cnxh3.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/cnxh4.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item2">
+            <div class="imgbox">
+                <img src="../image/cnxh/cnxh5.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;阿迪达斯官方adidas YEEZY</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+
+    </div>
+    <div class="cnxh-box">
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/cnxh6.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/cnxh7.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/cnxh8.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/cnxh9.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item2">
+            <div class="imgbox">
+                <img src="../image/cnxh/cnxh10.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+    </div>
+    <div class="cnxh-box">
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/cnxh11.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/cnxh12.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/cnxh13.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/cnxh14.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item2">
+            <div class="imgbox">
+                <img src="../image/cnxh/cnxh15.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+
+    </div>
+    <div class="cnxh-box">
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/cnxh16.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/cnxh17.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/cnxh18.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/cnxh19.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item2">
+            <div class="imgbox">
+                <img src="../image/cnxh/cnxh20.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+    </div>
+    <div class="cnxh-box">
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/21.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/22.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/23.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/24.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item2">
+            <div class="imgbox">
+                <img src="../image/cnxh/25.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+    </div>
+    <div class="cnxh-box">
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/26.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/27.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/28.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/29.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item2">
+            <div class="imgbox">
+                <img src="../image/cnxh/30.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+    </div>
+    <div class="cnxh-box">
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/31.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/32.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/33.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/34.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item2">
+            <div class="imgbox">
+                <img src="../image/cnxh/35.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+    </div>
+    <div class="cnxh-box">
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/36.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/37.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/38.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/39.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item2">
+            <div class="imgbox">
+                <img src="../image/cnxh/40.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+    </div>
+    <div class="cnxh-box">
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/41.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/42.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/43.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/44.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item2">
+            <div class="imgbox">
+                <img src="../image/cnxh/45.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+    </div>
+    <div class="cnxh-box">
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/46.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/47.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/48.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/49.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item2">
+            <div class="imgbox">
+                <img src="../image/cnxh/50.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+
+    </div>
+    <div class="cnxh-box">
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/51.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/52.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/53.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/54.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item2">
+            <div class="imgbox">
+                <img src="../image/cnxh/55.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+
+    </div>
+    <div class="cnxh-box">
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/56.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/57.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/58.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/59.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item2">
+            <div class="imgbox">
+                <img src="../image/cnxh/60.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+    </div>
+    <div class="cnxh-box">
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/61.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/62.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/63.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/64.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item2">
+            <div class="imgbox">
+                <img src="../image/cnxh/65.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+    </div>
+    <div class="cnxh-box">
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/66.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/67.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/68.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/69.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item2">
+            <div class="imgbox">
+                <img src="../image/cnxh/70.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+    </div>
+    <div class="cnxh-box">
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/71.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/72.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/73.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/74.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item2">
+            <div class="imgbox">
+                <img src="../image/cnxh/75.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+    </div>
+    <div class="cnxh-box">
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/76.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/77.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/78.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/79.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item2">
+            <div class="imgbox">
+                <img src="../image/cnxh/80.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+    </div>
+    <div class="cnxh-box">
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/81.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/82.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/83.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/84.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item2">
+            <div class="imgbox">
+                <img src="../image/cnxh/85.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+    </div>
+    <div class="cnxh-box">
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/86.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/87.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/88.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/89.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item2">
+            <div class="imgbox">
+                <img src="../image/cnxh/90.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+    </div>
+    <div class="cnxh-box">
+
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/91.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/92.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/93.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/94.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item2">
+            <div class="imgbox">
+                <img src="../image/cnxh/95.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+    </div>
+    <div class="cnxh-box">
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/96.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/97.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/98.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item1">
+            <div class="imgbox">
+                <img src="../image/cnxh/99.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+        <div class="item2">
+            <div class="imgbox">
+                <img src="../image/cnxh/100.jpg" alt="">
+            </div>
+            <br>
+            <div class="text">&nbsp;【限量套装每日10：08限量开启】</div>
+            <div class="redtext"><b>￥ 5488.0</b></div>
+        </div>
+    </div>
+
+
+   <!-- end结束图片-->
+    <div class="endbox" align="center">
+        <img src="../image/pro1/end.png" alt="">
+    </div>
+    <!--底部-->
+    <div class="bottom-logobox">
+        <div class="imglogo">
+            <img src="../image/pro1/qq.jpg" alt="">
+        </div>
+    </div>
+    <br>
+    <div class="bottom-abox">
+        <div class="aitem">
+            <div class="aitem-content">
+                <div class="aitem-content-text"><b>购物指南</b></div>
+                <div>
+                    <a href="">免费注册</a><br>
+                    <a href="">开通支付宝</a><br>
+                    <a href="">支付宝充值</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="aitem">
+            <div class="aitem-content">
+                <div class="aitem-content-text"><b>天猫保障</b></div>
+                <div>
+                    <a href="">发票保障</a><br>
+                    <a href="">售后规则</a><br>
+                    <a href="">缺货赔付</a>
+                </div>
+            </div>
+        </div>
+        <div class="aitem">
+            <div class="aitem-content">
+                <div class="aitem-content-text"><b>支付方式</b></div>
+                <div>
+                    <a href="">快捷支付</a><br>
+                    <a href="">信用卡</a><br>
+                    <a href="">余额宝</a><br>
+                    <a href="">蚂蚁花呗</a><br>
+                    <a href="">花呗付款</a>
+                </div>
+            </div>
+        </div>
+        <div class="aitem">
+            <div class="aitem-content">
+                <div class="aitem-content-text"><b>商家服务</b></div>
+                <div>
+                    <a href="">天猫规则</a><br>
+                    <a href="">商家入驻</a><br>
+                    <a href="">商家中心</a><br>
+                    <a href="">天猫智库</a><br>
+                    <a href="">物流服务</a><br>
+                    <a href="">喵言喵语</a><br>
+                    <a href="">运营服务</a>
+                </div>
+            </div>
+        </div>
+        <div class="aitem">
+            <div class="aitem-content">
+                <div class="aitem-content-text"><b>手机天猫</b></div>
+                <div class="erweima">
+                    <img src="../image/pro1/erweima.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--底部黑框-->
+    <div class="last-box">
+        <div class="last1-box">
+            <a href="">关于天猫</a>
+            <a href="">帮助中心</a>
+            <a href="">开放平台</a>
+            <a href="">诚聘英才</a>
+            <a href="">联系我们</a>
+            <a href="">网站合作</a>
+            <a href="">法律声明</a>
+            <a href="">隐私权政策</a>
+            <a href="">知识产权</a>
+            <a href="">廉政举报</a>
+            <a href="">规则意见征集</a>
+        </div>
+        <div class="last1-box">
+            <a href="">阿里巴巴集团</a>
+            <a href="">淘宝网</a>
+            <a href="">天猫</a>
+            <a href="">聚划算</a>
+            <a href="">全球速卖通</a>
+            <a href="">阿里巴巴国际交易市场</a>
+            <a href="">1688</a>
+            <a href="">阿里妈妈</a>
+            <a href="">飞猪</a>
+            <a href="">AliOS</a>
+            <a href="">阿里通信</a>
+            <a href="">万网</a>
+            <a href="">高德</a>
+            <a href="">UC</a>
+            <a href="">友盟</a>
+            <a href="">虾米</a>
+            <a href="">钉钉</a>
+            <a href="">支付宝</a>
+        </div>
+        <div class="last2-box">
+            <div class="last2-box-text">增值电信业务经营许可证： 浙B2-20110446</div>
+            <div class="last2-box-text">市场名称登记证：工商网市字3301004119号</div>
+            <div class="last2-box-text">出版物网络交易平台服务经营备案证： 新出发浙备字第001号 </div>
+            <div class="last2-box-text">互联网违法和不良信息举报电话：0571-81683755 blxxjb@alibaba-inc.com</div>
+            <div class="last2-box-text">互联网药品信息服务资质证书编号：浙-（经营性）-2017-0005</div>
+            <div class="last2-box-text">医疗器械网络交易服务第三方平台备案：（浙）网械平台备字[2018]第00002号</div>
+            <div class="last2-box-text">互联网药品交易服务资格证书：国A20150001</div>
+            <a href=""><div class="last2-box-text">   浙公网安备 33010002000120号</div></a>
+            <div class="last2-box-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;浙江省网络食品销售第三方平台提供者备案：浙网食A33010002</div>
+            <div class="last2-box-text"> 12318举报</div>
+        </div>
+    </div>
+
+
+
+     <!--设置固定样式-->
+    <div class="guding-box">
+        <a href=""><div class="gdcontent1">导航</div></a>
+        <a href=""><div class="gdcontent2">天猫超市</div></a>
+        <a href=""><div class="gdcontent3">天猫国际</div></a>
+        <a href=""><div class="gdcontent3">美丽人生</div></a>
+        <a href=""> <div class="gdcontent3">潮电酷玩</div></a>
+        <a href=""><div class="gdcontent3">居家生活</div></a>
+        <a href=""><div class="gdcontent3">打造爱巢</div></a>
+        <a href=""><div class="gdcontent3">户外出行</div></a>
+        <a href=""><div class="gdcontent3">猜你喜欢</div></a>
+        <a href=""><div class="gdcontent4">▲<br>顶部</div></a>
+
+    </div>
+    <!--右上角固定图片-->
+    <div class="rtop-box">
+        <div class="rtop-img"></div>
+        <div class="rtop-box2">
+            <div class="rtop-box2-img"></div>
+            <div class="rtop-text">主会场</div>
+        </div>
+    </div>
+
+   <!--右侧固定-->
+    <div class="rgd-box">
+        <a href=""><div class="rgd1"></div></a>
+        <a href="">
+            <div class="rgd2">
+                <div class="rgd2-img"></div>
+                <div class="rgd2-text">购物车</div>
+            </div>
+        </a>
+        <a href="">
+            <div class="rgd3">
+                <img src="../image/d.png" alt="">
+            </div>
+        </a>
+        <a href="">
+            <div class="rgd3">
+                <img src="../image/x.png" alt="">
+            </div>
+        </a>
+        <a href="">
+            <div class="rgd3">
+                <img src="../image/ac5.png" alt="">
+            </div>
+        </a>
+        <a href="">
+            <div class="rgd3">
+                <img src="../image/ac6.png" alt="">
+            </div>
+        </a>
+        <br><br><br>
+        <a href="">
+            <div class="rgd4">
+                <img src="../image/ewm.png" alt="">
+            </div>
+        </a>
+        <a href="">
+            <div class="rgd4">
+                <img src="../image/ewm.png" alt="">
+            </div>
+        </a>
+        <a href="">
+            <div class="rgd4">
+                <img src="../image/top.png" alt="">
+            </div>
+        </a>
+
+
+    </div>
+
+
+</body>
+<script>
+    var left=document.querySelectorAll(".left");
+
+    var t1=document.getElementsByClassName("lunbo-left-box");
+
+    var t2=document.getElementsByClassName("lunbo-left-box2");
+
+    left[0].onmouseover=function () {
+
+       for (var i=0;i<t1.length;i++){
+           t2[i].style.display="none";
+           t1[i].style.display="block";
+       }
+    }
+    left[0].onmouseout=function () {
+        for (var i=0;i<t1.length;i++){
+            t2[i].style.display="block";
+            t1[i].style.display="none";
+        }
+    }
+    left[1].onmouseover=function () {
+        for (var i=0;i<t1.length;i++){
+            t2[i].style.display="block";
+            t1[i].style.display="none";
+        }
+    }
+    left[1].onmouseout=function () {
+        for (var i=0;i<t1.length;i++){
+            t2[i].style.display="none";
+            t1[i].style.display="block";
+        }
+    }
+
+</script>
+
+
+
+</html>
