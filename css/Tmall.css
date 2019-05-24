@@ -1,0 +1,887 @@
+
+
+body{
+    margin: 0; padding: 0;
+    overflow-x: hidden;
+}
+
+
+ul,li{ padding:0;margin:0;list-style:none}
+em,i{ font-style: normal;}
+p{color: #fff; display: inline-block; padding: 0; margin: 0px;}
+.head{
+    width: 100%; height: 41px;
+    background-color: #f9919d;
+}
+.headidea{
+    width: 1230px; height: 35px;
+    color: #fff;
+    margin: auto;
+    font-size: 12px;
+}
+.headidea a{
+    text-decoration: none;
+    color: #fff;
+    padding-left: 20px;
+    line-height: 35px;
+}
+.headidea li{
+    float: left;
+    line-height: 35px;
+}
+.headidea ul{
+    float: right;
+}
+.headidea .shopcar{
+}
+
+.dingwei{
+   position: fixed;top: 0px; right: 0px;
+    float: right;
+    width: 200px; height: 100%;
+    z-index: 999;
+}
+.rightphoto {
+    position: absolute;top: 0px;right: 0px;
+    float: right;
+    width: 85px; height: 283px;
+    background-color: #f9919d;
+    z-index: 999;
+}
+.rightblack{
+    position: absolute;bottom: 0px; right: 0px;
+    background-color: black; width: 35px;height: 65%;
+    float: left; z-index: 998;
+}
+.rightblack .xiao{
+    width: 35px; height: 35px;
+    float: left;
+}
+.xiao .smalllogo:hover{
+    background-color: red;
+}
+.xiao .gouwuche:hover{
+    background-color: red;
+}
+.xiao .xie:hover{
+    background-color: red;
+}
+.xiao .top:hover{
+    background-color: red;
+}
+.xiao .wujiao:hover{
+    background-color: red;
+}
+.xiao .sige:hover{
+    background-color: red;
+}
+.xiao .money:hover{
+    background-color: red;
+}
+.xiao .addmoney:hover{
+    background-color: red;
+}
+.xiao .shizhong:hover{
+    background-color: red;
+}
+
+.xiao .gouwuche{
+    width: 35px; height: 100px;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid white;
+    color: white;
+    z-index: 999;
+    font-size: 18px;
+    text-align: center; line-height: 30px;
+}
+
+.xiao .smalllogo{
+    background: url("../imgs/smalllogo.png") no-repeat center;
+}
+.xiao .money{
+    background: url("../imgs/money.png") no-repeat center;
+}
+.xiao .wujiao{
+    background: url("../imgs/collect.png") no-repeat center;
+}
+.xiao .shizhong{
+    background: url("../imgs/clock.png") no-repeat center;
+}
+
+.xiao .addmoney{
+    background: url("../imgs/addmoney.png") no-repeat center;
+    margin-bottom: 100px;
+}
+
+.xiao .xie{
+    background: url("../imgs/rightwrite.png") no-repeat center;
+
+}
+.xiao .sige{
+    background: url("../imgs/twocode.png") no-repeat center;
+
+}
+.xiao .top{
+    background: url("../imgs/top.png") no-repeat center;
+
+}
+.gezi{
+    float: left; z-index: 998;
+    width: 40px;height: 130px;
+    position: absolute;right: 35px;
+    top: 283px; background: url("../imgs/hei.png");
+}
+
+.rightiimg{
+    margin-top: 80px;
+    width: 100%; height:150px;
+    background: url("../imgs/rightimg.png");
+
+}
+.maintubiao{
+    width: 100%; height: 45px;
+    background: url("../imgs/biaoji.png") no-repeat center;
+    position: relative;
+}
+.maintubiao a{
+    text-decoration: none;
+    color: white;
+    position: absolute; left: 20px; bottom: -4px;
+}
+
+.logo{
+    float: left;
+    width: 100%; height: 130px;
+    position: relative;
+}
+.logoimg{
+    float: left;
+    width: 240px; height: 130px;
+    margin: 1px 50px;
+    background: url("../imgs/logo.png") no-repeat center;
+    background-size: 100% 100%;
+}
+.select{
+    width: 625px; height: 106px;
+    padding-top: 35px;
+    margin: auto;
+}
+.select div{
+    float: left;
+    display: block;
+}
+.select a{
+    float: left;
+    text-decoration: none;
+    margin: 0px 5px;
+    font-size: 14px;
+}
+.select li{
+     float: none;
+    margin: 0px 0px;
+}
+.select .red a{
+    color: red;
+}
+.select .hui a{
+    color: #a4a4a4;
+}
+
+
+#box{
+    width: 500px;
+    margin: 30px auto;
+    font-family: Tahoma ,Arial;
+    font-size: 14px;
+    border: 2px solid #ff0036;
+}
+input{
+    box-sizing: border-box;
+    width: 450px;
+    border: 2px solid #ff0036;
+    height: 40px;
+    float: left;
+    padding:0 0 0 5px;
+    color: #a4a4a4;
+}
+#search{
+    width: 132px;
+    height: 40px;
+    float: right;
+    background: #ff0036;
+    color: white;
+    text-align: center;
+    line-height: 32px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/*菜单*/
+.zhumenu{
+    float: left;
+    width: 100%; height: 36px;
+}
+/*菜单内容*/
+.zhumenu .menuword{
+    margin: 1px 140px;
+    width:1030px; height: 100%;
+    position: relative;
+}
+.menuword a{
+    text-decoration: none;
+    color: black;
+}
+.shoplist{
+    float: left;
+    width: 240px; height: 100%;
+}
+.shoplist .shangpin{
+    float: left;
+    width: 100px;height: 100%;
+    line-height: 36px;
+    background-color: #ff0036;
+}
+
+.shoplist .jieri{
+    float: left; width: 100px;
+    height: 100%;   line-height: 36px;
+    background-color: rgb(65,63,63);
+}
+
+.shoplist a{
+    color: white;
+}
+.list{
+    float: left;
+    width: 760px; height: 100%;
+    position: absolute;top: 0px; right: 70px;
+    border-bottom: 2px solid red;
+    box-sizing: border-box;
+}
+.list a{
+    float: left;
+    margin: 0px 5px;
+    line-height: 36px;
+}
+.body{
+    float: left;
+    width: 100%;
+    height: 1010px;
+    background: url("../imgs/zhenbiejing.png") no-repeat  -100px -210px ;
+    position: relative;
+}
+.blacklist{
+    width: 200px; height: 500px;
+    float: left;
+    position: absolute;left: 140px; top: 0px;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.blacklist li{
+      width: 200px; height: 32px;
+      margin-top: 16px;
+}
+.blacklist .minblack{
+    width: 152px; height: 31px;
+    margin: auto;
+    border-radius: 12px;
+    border: 1px solid red;
+    text-align: center;
+}
+.minblack a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #ffffff;
+}
+.banner {
+    width: 1230px;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.imgBox {
+    width: 1230px;
+    height: 500px;
+}
+.imgBox li{
+    width: 1230px;
+    height: 500px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 1.2s;
+    opacity: 0.6;
+}
+
+.imgBox > li.active {
+    z-index: 1;
+    opacity: 1;
+}
+
+.imgBox li a {
+    display: block;
+    width: 1230px;
+    height: 500px;
+}
+
+.imgBox li a img {
+    width: 1230px;
+    height: 500px;
+    display: block;
+}
+
+.pagerBox {
+    width: 200px;
+    height: 10px;
+    position: absolute;
+    right: 450px;
+    bottom: 30px;
+    z-index: 9999;
+    display: flex;
+    justify-content: space-around;
+}
+
+.pagerBox li {
+    width: 26px;
+    height: 6px;
+    background: rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+.pagerBox > li.active {
+    background: #ccc;
+}
+
+.slides {
+    width: 40px;
+    height: 69px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 99999;
+}
+
+.prev {
+    left: 234px;
+    background-position: -83px 0;
+}
+
+.prev:hover {
+    background-position: 0 0;
+}
+
+.next{
+    right: 0;
+    background-position: -125px 0;
+}
+
+.next:hover {
+    background-position: -41px;
+}
+
+.menuindex{
+    width: 100%; height: 394px;
+    margin-left: 0px; margin-top: 40px;
+    position: absolute;
+    overflow: hidden;
+
+}
+.fastshop{
+    float: left;
+    margin-right: 20px;
+    width: 234px; height: 372px;
+    background-color: white;
+}
+.fastshop .fastshop-tubiao:hover{
+    opacity: 0.7;
+}
+.cntitle{
+    float: left;
+    font-size: 18px; font-weight: bold;
+    line-height: 56px;
+}
+.english{
+    float: left; font-weight: bold; font-size: 14px;
+    line-height: 56px;
+}
+.memore{
+    float: right;  line-height: 56px; padding-right: 40px;
+    background: url("../imgs/memore.png") no-repeat 37px 19px;
+    background-size: 20px 20px;
+}
+.memore a{
+    text-decoration: none; color: #666666;
+}
+.jushop{
+    float: left;
+    width: 485px; height: 372px;
+    margin-right: 20px;
+    background-color: white;
+}
+.jushop-tubiao:hover{
+    opacity: 0.7;
+
+}
+.brand{
+    float: left;
+    width: 485px; height: 372px;
+    background-color: white;
+
+}
+.brand-tubiao:hover{
+    opacity: 0.7;
+
+}
+.fastshop-tubiao{
+    float: left;
+    width: 234px; height: 316px;
+    background: url("../imgs/fastshop.webp");
+    background-size: 100% 100%;
+}
+.jushop-tubiao{
+
+    float: left;
+    width: 485px; height: 316px;
+    background: url("../imgs/juyoupin.webp");
+    background-size: 100% 100%;
+
+}
+
+.brand-tubiao{
+    float: left;
+    width: 485px; height: 316px;
+    background: url("../imgs/board.webp");
+    background-size: 100% 100%;
+}
+.pinpai{
+    width: 100%; height: 327px;
+    float: left;
+}
+.pinpaibigbox{
+    width: 1230px; height:  327px; margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.blackbox{
+    position: absolute; top:0px; left: 0px;
+    width: 1230px; height:  327px; margin: auto;
+
+}
+.blackbox1{
+    position: relative;
+    float: left;
+    width: 121px; height: 109px;
+    background-color: rgba(0,0,0,0.5);
+    box-sizing: border-box;
+    z-index: 2;
+}
+.blackbox1 .text{
+    width: 100%; height: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+.blackbox1  .init{
+    margin-left: 30px;
+    margin-top: 20px;
+    width: 60%; height: 20px;
+    background-color: #ff0036;
+    color: white;
+    border-radius: 10px;
+    text-align: center
+}
+.pinpai1:hover{
+     z-index: 1;
+}
+.pinpai1{
+    position: relative;
+    width: 121px; height: 109px;
+    float: left;
+    z-index: 3;
+}
+
+.pinpaibox{
+    width: 1230px; height:  327px; margin: auto;
+}
+.morelist{
+
+    width: 1230px; height: 50px;
+    float: left; margin: 10px 145px;
+
+}
+.morelistleft{
+     float: left;
+      margin-left: 0px; margin-top: 20px;
+      width: 214px; height: 25px;
+      background: url("../imgs/moreleft.png") no-repeat bottom;
+      background-size: 100% 100%;
+}
+.morelistright{
+    width: 650px; height: 25px;
+    float: right;
+    margin-top: 20px;
+}
+.s2{
+    width: 280px; height: 25px;
+    float: right;
+    margin-top: 20px;
+}
+
+.morelistright a{
+    text-decoration: none;
+    color: black;
+    margin: 0px 6px;
+}
+.morelistright a:hover{
+    text-decoration: underline;
+
+}
+
+.shangpinmore{
+    width: 1230px; height: 618px;
+    float: left;
+    margin: 0px 145px;
+}
+
+.more-leftimg{
+    float: left;
+     width: 235px;
+    height: 618px;
+    background: url("../imgs/guazi.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.more-rightimg{
+    float: left;
+    width: 976px; height: 100%;
+    margin: 0 0 0 13px;
+    overflow: hidden;
+}
+
+.fengqiang{
+    float: left;
+    width: 247px; height: 57px;
+    background-color: #cfcfcf;
+    text-align: center;
+    box-sizing: border-box;
+    line-height: 57px;
+}
+.liangfan{
+    float: left;
+    width: 231px; height: 57px;
+    background-color: #cfcfcf;
+    text-align: center;
+    line-height: 57px;
+}
+.zhixiang{
+    position: absolute; top:137px; left: 0px;
+     z-index: 100;
+    width: 291px; height:  87px;
+    background: url("../imgs/zhixiang.png") no-repeat;
+    background-size: 100% 100%;
+}
+.zhititle{
+    width: 265px; height: 36px;
+    font-size: 24px; color: #00b262;
+    padding-left: 65px;
+     background: url("../imgs/rili.png") no-repeat 25px 5px ;
+}
+.zhiname{
+    padding-top: 5px;
+    width: 265px; height: 30px;
+    color: black; font-size: 20px;
+    padding-left: 25px;
+}
+.more-bigimg-img{
+    width: 200px; height: 200px;
+    background: url("../imgs/baby1.jpg" ) no-repeat ;
+    background-size: 100% 100%;
+    position: absolute; top:57px; right: 20px;
+    z-index: 99;
+
+}
+.more-bigimg p{
+      font-size: 16px;
+    color: black;
+}
+
+.fengqiang:hover{
+    background-color: #00b262;
+    color: white;
+}
+.liangfan:hover{
+    background-color: #00b262;
+    color: white;
+}
+
+.more-bigimg{
+    float: left;
+   width: 478px; height: 300px;
+    border: 1px solid #a4a4a4;
+    position: relative;
+}
+.more-minimg{
+    float: left;
+    width: 236px; height: 302px;
+    margin: 0px 2px;
+    background: #ffffff;
+    box-sizing: border-box;
+    margin-top: 5px;
+    border: 1px solid white;
+}
+.more-minimg:hover{
+    box-sizing: border-box;
+    border: 1px solid red;
+    opacity: 0.7;
+}
+.name{
+    width: 236px; height: 50px;
+   float: left;
+}
+.tv{
+    margin:10px 29px;
+}
+.namebox{
+     margin: auto;
+    width: 135px; height: 40px;
+    text-align: center;
+    font-size: 14px;
+    overflow: hidden;
+}
+.price{
+    width: 236px; height: 40px;
+    text-align: center;
+    color: #ff0036;
+
+}
+.bodycolor{
+    float: left;
+    width: 100%; height: 5868px;
+    background-color: rgb(245,245,245);
+}
+.cncn{
+    float: left;
+    padding-left: 20px;
+    width: 83px;
+    font-size: 20px; font-weight: bold;
+    border-left: 3px solid black;
+}
+
+.enen{
+    float: left;
+    padding-left: 40px;
+    width: 200px;
+
+}
+.morelistleftcn{
+    float: left;
+    margin-left: 0px; margin-top: 20px;
+    width: 500px; height: 25px;
+    background-size: 100% 100%;
+}
+.chatu{
+    float: left;
+    margin-top: 30px;
+    width: 100%; height: 90px;
+    margin-bottom: 20px;
+    background: url("../imgs/chatu.jpg") no-repeat ;
+    background-size: 100% 100%;
+}
+
+.caini{
+
+    width: 100%; height: 60px;
+    float: left;
+    margin-left: 46%; margin-top: 20px;
+}
+.caini a{
+    text-decoration: none;
+}
+.cainibox{
+    width: 1230px; height: 65%;
+    float: left;
+    margin-left: 140px; margin-top: 10px;
+
+}
+
+.end{
+    float: left;
+    width: 100%; height: 80px;
+    background: url("../imgs/end.png") no-repeat center;
+
+}
+.endimg{
+
+
+    width: 100%; height: 130px;
+    float: left;
+    background: url("../imgs/foot.jpg") no-repeat 140px 0px;
+}
+
+
+.fenge2{
+    float: left;
+    margin-left: 140px;
+    width: 1230px; height: 2px;
+    border-top:  1px solid #a4a4a4;
+
+}
+.fankui{
+    width: 100%; height: 230px;
+    float: left;
+    background: url("../imgs/mao.png") no-repeat 200px 200px;
+    background-size: 68px 25px;
+}
+
+.block1{
+
+    display: inline;
+    float: left;
+    margin: 26px -100px 0 192px;
+    width: 160px;
+}
+
+.block1 a{
+    text-decoration: none;
+
+}
+
+span,dd{ padding:10px;margin:0;list-style:none}
+.block1 span dd{
+    float: left;
+    height: 24px;
+    line-height: 30px;
+    padding-left: 40px;
+    width: 100px;
+}
+.block1 span{
+    font-size: 16px;
+    font-weight: bold;
+    color: #646464;
+}
+.block1 dd a{
+    font-size: 12px;
+    color: #8b8b8b;
+
+}
+
+div{
+    display: block;
+}
+.bodylast{
+    margin: -150px 0px;
+    float: left;
+    width: 100%; height: 400px;
+    background: url("../imgs/bodylast.png") no-repeat ;
+}
+.black{
+    border-top: 2px solid red;
+    margin-left: 149px;
+    margin-top: 145px;
+    float: bottom;
+    width: 1230px; height: 280px;
+    background: black;
+
+}
+.black a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+.black span{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+#tmall-copyright{
+
+    text-align: left;
+}
+
+.footer-copyright{
+    color: #a4a4a4;
+}
+.footer-copyright a{
+     color: #a4a4a4;
+}
+.fastbox{
+     width: 1250px;
+    height: 316px;margin: auto;
+    z-index: 3;
+    padding-top: 20px;
+
+}
+
+
+@media screen and (max-width: 1300px){
+
+    .pinpaibigbox{
+        width:970px;
+    }
+    .more-rightimg{
+        width:948px;
+    }
+    .cainibox{
+        width: 948px;
+    }
+    .cainibox {
+       width: 1000px;
+    }
+    .morecaini .more-minimg{
+        width: 190px;
+    }
+    .morecaini .tv{
+        width: 160px;
+        margin: 10px 20px;
+    }
+    .morecaini .name{
+        width: 180px;
+    }
+    .morecaini .price{
+        width: 160px;
+        margin: 10px 20px;
+    }
+    .morelist{
+        width: 1015px;
+    }
+    .fastshop{
+        display: none;
+    }
+    .jushop{
+        margin-left: 117px;
+    }
+    .banner{
+        width: 900px;
+    }
+    .logobox{
+        width: 900px;
+    }
+    input{
+        width: 370px;
+    }
+    .select{
+        width: 740px;
+    }
+    .logoimg{
+        margin: 1px 120px;
+    }
+    .hotquery{
+        width: 374px;
+        height: 22px;
+        overflow: hidden;
+    }
+
+}
+.logobox{
+    width: 1226px; height: 130px;
+    margin: auto;
+}
+
+
+
+
