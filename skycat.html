@@ -1,0 +1,1523 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>天猫购物</title>
+    <link rel="stylesheet" href="css/skycat.css">
+
+    <script>
+        /*轮播图*/
+        window.onload = function () {
+            var banner = document.querySelectorAll(".lunbo>a");
+            var btn = document.querySelectorAll(".ban>div");
+            var num = 0;
+            setInterval(function () {
+                num++;
+                if (num == 6) {
+                    num = 0;
+                }
+                for (var i = 0; i < banner.length; i++) {
+                    banner[i].style.display = "none";
+                    btn[i].style.background = "#555";
+                }
+
+                banner[num].style.display = "block";
+                btn[num].style.background = "#fff";
+            }, 2000)
+        }
+    </script>
+</head>
+<body>
+<!--顶部-->
+<div class="header">
+    <div class="left">
+        <div class="left-1">
+            <span>喵，欢迎来天猫</span>
+        </div>
+        <div class="left-2">
+            <a class="lz1" href="">请登录</a>
+        </div>
+        <div class="left-2">
+            <a class="lz2" href="">免费注册</a>
+        </div>
+    </div>
+    <div class="right">
+        <div class="right-1">
+            <a href="" class="own">我的淘宝</a>
+        </div>
+        <div class="right-2">
+            <div class="xtb"></div>
+            <a href="">购物车0件</a>
+        </div>
+        <div class="right-3">
+            <a href="" class="scj">收藏夹</a>
+        </div>
+        <b>|</b>
+        <div class="right-4">
+            <div class="xtb"></div>
+            <a href="">手机版</a>
+        </div>
+        <div class="right-5">
+            <a href="">淘宝网</a>
+        </div>
+        <div class="right-6">
+            <a href="" class="sj">商家支持</a>
+        </div>
+        <div class="right-7">
+            <div class="xtb"></div>
+            <a href="" class="wz">网站导航</a>
+        </div>
+    </div>
+</div>
+
+<!--固定头-->
+<div class="guding">
+    <div class="top">
+        <img src="./images/520.png">
+        <a href="" class="tz">
+            <img src="./images/zuobiao.png" class="zuobiao">
+            <div class="zhc">主会场</div>
+        </a>
+    </div>
+    <div class="di">
+        <img src="./images/block.png">
+        <div class="diright">
+            <div class="tubiao1">
+                <img src="./images7/3.png" class="mao">
+            </div>
+            <span>购物车</span>
+            <div class="tubiao2">
+                <img src="./images7/6.png">
+            </div>
+            <div class="tubiao3">
+                <img src="./images7/4.png">
+            </div>
+            <div class="tubiao4">
+                <img src="./images7/2.png">
+            </div>
+            <div class="tubiao5">
+                <img src="./images7/5.png">
+            </div>
+
+            <div class="tubiao6">
+                <img src="./images7/7.png">
+            </div>
+            <div class="tubiao7">
+                <img src="./images7/1.png">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--导航栏-->
+<div class="DHL">
+    <div class="LHD">导航</div>
+    <div class="LHD1">天猫超市</div>
+    <div class="LHD1">天猫国际</div>
+    <div class="LHD1">美丽人生</div>
+    <div class="LHD1">潮店酷玩</div>
+    <div class="LHD1">居家生活</div>
+    <div class="LHD1">打造爱巢</div>
+    <div class="LHD1">户外出行</div>
+    <div class="LHD1">猜你喜欢</div>
+    <div class="LHD2">顶部</div>
+
+</div>
+<!--搜索栏-->
+<div class="ssl">
+    <div class="ssl-left">
+        <div class="zm">
+            <img src="./images/stm.png">
+        </div>
+        <div class="fL">
+            <a class="sm1" href="">商品分类</a>
+            <a class="sm2" href="">天猫520活动</a>
+        </div>
+    </div>
+    <div class="ssl-right">
+        <div class="shang">
+            <div class="suosou">
+                <input type="text" class="shuru" placeholder="搜索&nbsp;天猫&nbsp;商品/品牌/店铺">
+                <input type="submit" class="djss" value="搜索">
+            </div>
+            <div class="sdh">
+                <a href="" class="pt">针织衫</a><b class="zhx">|</b>
+                <a href="" class="tb">连衣裙</a><b class="zhx">|</b>
+                <a href="" class="pt">四件套</a><b class="zhx">|</b>
+                <a href="" class="tb">摄像头</a><b class="zhx">|</b>
+                <a href="" class="pt">客厅灯</a><b class="zhx">|</b>
+                <a href="" class="pt">口红</a><b class="zhx">|</b>
+                <a href="" class="tb">手机</a><b class="zhx">|</b>
+                <a href="" class="pt">运动鞋</a><b class="zhx">|</b>
+                <a href="" class="tb">牛奶</a>
+            </div>
+        </div>
+        <ul class="xia">
+            <li class="tp"><img class="cs" src="./images/tmcs.png"></li>
+            <li class="tp"><img class="cs" src="./images/tmgj.png"></li>
+            <li class="dh"><a href="">天猫会员</a></li>
+            <li class="dh"><a href="">电器城</a></li>
+            <li class="dh"><a href="">喵鲜生</a></li>
+            <li class="dh"><a href="">医药馆</a></li>
+            <li class="dh"><a href="">营业厅</a></li>
+            <li class="dh"><a href="">魅力惠</a></li>
+            <li class="dh"><a href="">飞猪旅行</a></li>
+            <li class="dh"><a href="">苏宁易购</a></li>
+        </ul>
+    </div>
+</div>
+<!--主封面-->
+<div class="zfm">
+    <img src="./images1/love1.png" class="love">
+    <div class="zfm-top">
+        <div class="xianqing">
+            <ul class="XQ">
+                <li class="aa">大牌女装</li>
+                <li class="aa">家访修饰</li>
+                <li class="aa">精品男装</li>
+                <li class="aa">日常用品</li>
+                <li class="aa">美食美味</li>
+                <li class="aa">玩具天堂</li>
+                <li class="aa">大冒险</li>
+                <li class="aa">家具</li>
+                <li class="aa">男士衣服</li>
+                <li class="aa">家电大全</li>
+            </ul>
+            <ul class="XQ1">
+                <li class="aa">1111</li>
+                <li class="aa">2222</li>
+                <li class="aa">3333</li>
+                <li class="aa">4444</li>
+                <li class="aa">5555</li>
+                <li class="aa">6666</li>
+                <li class="aa">7777</li>
+                <li class="aa">8888</li>
+                <li class="aa">9999</li>
+                <li class="aa">0000</li>
+            </ul>
+        </div>
+        <div class="lunbo">
+            <a href=""><img src="./images1/lunbo1.jpg" class="lunbo1"></a>
+            <a href=""><img src="./images1/lunbo2.jpg" class="lunbo1"></a>
+            <a href=""><img src="./images1/lunbo3.jpg" class="lunbo1"></a>
+            <a href=""><img src="./images1/lunbo4.jpg" class="lunbo1"></a>
+            <a href=""><img src="./images1/lunbo5.jpg" class="lunbo1"></a>
+            <a href=""><img src="./images1/lunbo6.jpg" class="lunbo1"></a>
+        </div>
+        <div class="ban">
+            <div class="ban1" style="background: #fff;"></div>
+            <div class="ban1"></div>
+            <div class="ban1"></div>
+            <div class="ban1"></div>
+            <div class="ban1"></div>
+            <div class="ban1"></div>
+        </div>
+    </div>
+
+    <div class="active">
+        <div class="left">
+            <a href=""><img src="./images1/1.jpg"></a>
+        </div>
+        <div class="center">
+            <a href=""><img src="./images1/2.jpg"></a>
+        </div>
+        <div class="right">
+            <a href=""><img src="./images1/3.jpg"></a>
+        </div>
+    </div>
+</div>
+<!--商标-->
+<div class="shanbiao">
+
+    <ul class="shanbiao-xiao">
+        <li>
+            <a href=""><img src="./images8/brand/brand1.png">
+                <div class="WM">
+                    <div class="ML1">优惠卷￥200</div>
+                    <div class="ML">点击进入</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href=""><img src="./images8/brand/brand3.png">
+                <div class="WM">
+                    <div class="ML1">优惠卷￥200</div>
+                    <div class="ML">点击进入</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href=""><img src="./images8/brand/brand4.png">
+                <div class="WM">
+                    <div class="ML1">优惠卷￥200</div>
+                    <div class="ML">点击进入</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href=""><img src="./images8/brand/brand5.png">
+                <div class="WM">
+                    <div class="ML1">优惠卷￥200</div>
+                    <div class="ML">点击进入</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href=""><img src="./images8/brand/brand6.png">
+                <div class="WM">
+                    <div class="ML1">优惠卷￥200</div>
+                    <div class="ML">点击进入</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href=""><img src="./images8/brand/brand7.png">
+                <div class="WM">
+                    <div class="ML1">优惠卷￥200</div>
+                    <div class="ML">点击进入</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href=""><img src="./images8/brand/brand7.png">
+                <div class="WM">
+                    <div class="ML1">优惠卷￥200</div>
+                    <div class="ML">点击进入</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href=""><img src="./images8/brand/brand8.png">
+                <div class="WM">
+                    <div class="ML1">优惠卷￥200</div>
+                    <div class="ML">点击进入</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href=""><img src="./images8/brand/brand9.png">
+                <div class="WM">
+                    <div class="ML1">优惠卷￥200</div>
+                    <div class="ML">点击进入</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href=""><img src="./images8/brand/brand10.png">
+                <div class="WM">
+                    <div class="ML1">优惠卷￥200</div>
+                    <div class="ML">点击进入</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href=""><img src="./images8/brand/brand11.png">
+                <div class="WM">
+                    <div class="ML1">优惠卷￥200</div>
+                    <div class="ML">点击进入</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href=""><img src="./images8/brand/brand12.png">
+                <div class="WM">
+                    <div class="ML1">优惠卷￥200</div>
+                    <div class="ML">点击进入</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href=""><img src="./images8/brand/brand13.png">
+                <div class="WM">
+                    <div class="ML1">优惠卷￥200</div>
+                    <div class="ML">点击进入</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href=""><img src="./images8/brand/brand14.png">
+                <div class="WM">
+                    <div class="ML1">优惠卷￥200</div>
+                    <div class="ML">点击进入</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href=""><img src="./images8/brand/brand15.png">
+                <div class="WM">
+                    <div class="ML1">优惠卷￥200</div>
+                    <div class="ML">点击进入</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href=""><img src="./images8/brand/brand16.png">
+                <div class="WM">
+                    <div class="ML1">优惠卷￥200</div>
+                    <div class="ML">点击进入</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href=""><img src="./images8/brand/brand17.png">
+                <div class="WM">
+                    <div class="ML1">优惠卷￥200</div>
+                    <div class="ML">点击进入</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href=""><img src="./images8/brand/brand18.png">
+                <div class="WM">
+                    <div class="ML1">优惠卷￥200</div>
+                    <div class="ML">点击进入</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href=""><img src="./images8/brand/brand19.png">
+                <div class="WM">
+                    <div class="ML1">优惠卷￥200</div>
+                    <div class="ML">点击进入</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href=""><img src="./images8/brand/brand20.png">
+                <div class="WM">
+                    <div class="ML1">优惠卷￥200</div>
+                    <div class="ML">点击进入</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href=""><img src="./images8/brand/brand21.png">
+                <div class="WM">
+                    <div class="ML1">优惠卷￥200</div>
+                    <div class="ML">点击进入</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href=""><img src="./images8/brand/brand22.png">
+                <div class="WM">
+                    <div class="ML1">优惠卷￥200</div>
+                    <div class="ML">点击进入</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href=""><img src="./images8/brand/brand23.png">
+                <div class="WM">
+                    <div class="ML1">优惠卷￥200</div>
+                    <div class="ML">点击进入</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href=""><img src="./images8/brand/brand15.png">
+                <div class="WM">
+                    <div class="ML1">优惠卷￥200</div>
+                    <div class="ML">点击进入</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href=""><img src="./images8/brand/brand25.png">
+                <div class="WM">
+                    <div class="ML1">优惠卷￥200</div>
+                    <div class="ML">点击进入</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href=""><img src="./images8/brand/brand26.png">
+                <div class="WM">
+                    <div class="ML1">优惠卷￥200</div>
+                    <div class="ML">点击进入</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href=""><img src="./images8/brand/brand27.png">
+                <div class="WM">
+                    <div class="ML1">优惠卷￥200</div>
+                    <div class="ML">点击进入</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href=""><img src="./images8/brand/brand28.png">
+                <div class="WM">
+                    <div class="ML1">优惠卷￥200</div>
+                    <div class="ML">点击进入</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href=""><img src="./images8/brand/brand29.png">
+                <div class="WM">
+                    <div class="ML1">优惠卷￥200</div>
+                    <div class="ML">点击进入</div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href=""><img src="./images8/brand/brand30.png">
+                <div class="WM">
+                    <div class="ML1">优惠卷￥200</div>
+                    <div class="ML">点击进入</div>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<!--食物-->
+<div class="food">
+    <div class="food-left">
+        <a href=""><img src="./images2/cs.png"></a>
+    </div>
+    <div class="food-right">
+        <a href="" class="fenlei">进口食品</a>
+        <a href="" class="fenlei">食品饮料</a>
+        <a href="" class="fenlei">粮油副食</a>
+        <a href="" class="fenlei">美容洗护</a>
+        <a href="" class="fenlei">家居家电</a>
+        <a href="" class="fenlei">家庭清洁</a>
+        <a href="" class="fenlei">母婴用品</a>
+        <a href="" class="fenlei">生鲜水果</a>
+    </div>
+</div>
+<!--食物详情-->
+<div class="foodFL">
+    <div class="FFL-left">
+        <a href=""><img src="./images2/hetao.jpg"></a>
+    </div>
+    <div class="FFL-right">
+        <div class="RT">
+            <div class="RT-left">
+                <div class="shuoming">
+                    <a href="" class="ljzd OO">今日疯抢</a>
+                    <a href="" class="ljzd1 OO">限量版</a>
+                </div>
+
+                <div class="BF">
+                    <div class="tupian">
+                        <div class="kong">
+                            <div class="jiantou">
+                                <img src="./images2/jiantou.png">
+                                <div class="dawenzi">ABC</div>
+                                <div class="xiaowenzi">抢第二件0元</div>
+                            </div>
+                        </div>
+                        <img src="./images2/you.jpg" class="zt">
+                    </div>
+                    <div class="tupian">
+                        <div class="kong">
+                            <div class="jiantou">
+                                <img src="./images2/jiantou.png">
+                                <div class="dawenzi">粮油调味</div>
+                                <div class="xiaowenzi">爆款直降</div>
+                            </div>
+                        </div>
+                        <img src="./images2/you1.jpg" class="zt">
+                    </div>
+                </div>
+            </div>
+            <div class="RT-right">
+                <div class="aaa">
+                    <div class="aaa-s">
+                        <img src="./images2/jiage.jpg">
+                    </div>
+                    <div class="aaa-x">
+                        <div class="x-s">领导和公开还是大厉害厉害嘎哈</div>
+                        <div class="x-x">￥52.9</div>
+                    </div>
+                </div>
+                <div class="aaa">
+                    <div class="aaa-s">
+                        <img src="./images2/jiage1.jpg">
+                    </div>
+                    <div class="aaa-x">
+                        <div class="x-s">领导和公开还是大厉害厉害嘎哈</div>
+                        <div class="x-x">￥52.9</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="RB">
+            <div class="aaa">
+                <div class="aaa-s">
+                    <img src="./images2/jiage2.jpg">
+                </div>
+                <div class="aaa-x">
+                    <div class="x-s">领导和公开还是大厉害厉害嘎哈</div>
+                    <div class="x-x">￥52.9</div>
+                </div>
+            </div>
+            <div class="aaa">
+                <div class="aaa-s">
+                    <img src="./images2/jiage3.jpg">
+                </div>
+                <div class="aaa-x">
+                    <div class="x-s">领导和公开还是大厉害厉害嘎哈</div>
+                    <div class="x-x">￥52.9</div>
+                </div>
+            </div>
+            <div class="aaa">
+                <div class="aaa-s">
+                    <img src="./images2/jiage4.jpg">
+                </div>
+                <div class="aaa-x">
+                    <div class="x-s">领导和公开还是大厉害厉害嘎哈</div>
+                    <div class="x-x">￥52.9</div>
+                </div>
+            </div>
+            <div class="aaa">
+                <div class="aaa-s">
+                    <img src="./images2/jiage5.jpg">
+                </div>
+                <div class="aaa-x">
+                    <div class="x-s">领导和公开还是大厉害厉害嘎哈</div>
+                    <div class="x-x">￥52.9</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--日常用品顶部-->
+<div class="yonpin">
+    <div class="yonpin-left">
+        <img src="./images4/1.png">
+    </div>
+    <div class="yonpin-right">
+        <a href="" class="biaoqian">口红</a>
+        <a href="" class="biaoqian">YSL</a>
+        <a href="" class="biaoqian">面膜</a>
+        <a href="" class="biaoqian">防嗮</a>
+        <a href="" class="biaoqian">迪奥</a>
+    </div>
+</div>
+<!--日常用品-->
+<div class="YP">
+    <div class="YP-left">
+        <a href="" class="s"><img src="./images4/2.png" class="TP"></a>
+        <a href="" class="s1"><img src="./images4/5.png" class="TP"></a>
+    </div>
+    <div class="YP-right">
+        <div class="R-T">
+            <div class="AAA">
+                <div class="AAA-s">
+                    <img src="./images4/3.jpg">
+                </div>
+                <div class="AAA-x">
+                    <div class="X-s">领导和公开还是大厉害厉害嘎哈</div>
+                    <div class="X-x">￥52.9</div>
+                </div>
+            </div>
+
+            <div class="AAA">
+                <div class="AAA-s">
+                    <img src="./images4/4.jpg">
+                </div>
+                <div class="AAA-x">
+                    <div class="X-s">领导和公开还是大厉害厉害嘎哈</div>
+                    <div class="X-x">￥52.9</div>
+                </div>
+            </div>
+
+            <div class="AAA">
+                <div class="AAA-s">
+                    <img src="./images4/7.jpg">
+                </div>
+                <div class="AAA-x">
+                    <div class="X-s">领导和公开还是大厉害厉害嘎哈</div>
+                    <div class="X-x">￥52.9</div>
+                </div>
+            </div>
+
+            <div class="AAA">
+                <div class="AAA-s">
+                    <img src="./images4/8.jpg">
+                </div>
+                <div class="AAA-x">
+                    <div class="X-s">领导和公开还是大厉害厉害嘎哈</div>
+                    <div class="X-x">￥52.9</div>
+                </div>
+            </div>
+        </div>
+        <div class="R-B">
+            <div class="AAA">
+                <div class="AAA-s">
+                    <img src="./images4/8.jpg">
+                </div>
+                <div class="AAA-x">
+                    <div class="X-s">领导和公开还是大厉害厉害嘎哈</div>
+                    <div class="X-x">￥52.9</div>
+                </div>
+            </div>
+
+            <div class="AAA">
+                <div class="AAA-s">
+                    <img src="./images4/7.jpg">
+                </div>
+                <div class="AAA-x">
+                    <div class="X-s">领导和公开还是大厉害厉害嘎哈</div>
+                    <div class="X-x">￥52.9</div>
+                </div>
+            </div>
+
+            <div class="AAA">
+                <div class="AAA-s">
+                    <img src="./images4/4.jpg">
+                </div>
+                <div class="AAA-x">
+                    <div class="X-s">领导和公开还是大厉害厉害嘎哈</div>
+                    <div class="X-x">￥52.9</div>
+                </div>
+            </div>
+
+            <div class="AAA">
+                <div class="AAA-s">
+                    <img src="./images4/3.jpg">
+                </div>
+                <div class="AAA-x">
+                    <div class="X-s">领导和公开还是大厉害厉害嘎哈</div>
+                    <div class="X-x">￥52.9</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--推荐1-->
+<div class="TJ">
+    <a href=""><img src="./images4/man.jpg"></a>
+</div>
+
+<div class="SM">
+    <b>|</b>
+    <span>美丽人生 &nbsp; FHSDKHFHFHA&KSHF</span>
+</div>
+
+
+<div class="CZ">
+    <div class="CZ-left">
+        <a href=""><img src="./images4/meili.jpg"></a>
+    </div>
+    <div class="CZ-right">
+        <div class="C-T">
+            <div class="bbb">
+                <div class="bbb-s">
+                    <img src="./images4/3.jpg">
+                </div>
+                <div class="bbb-x">
+                    <div class="X-S">领导和公开还是大厉害厉害嘎哈</div>
+                    <div class="X-X">￥52.9</div>
+                </div>
+            </div>
+            <div class="bbb">
+                <div class="bbb-s">
+                    <img src="./images6/6.jpg">
+                </div>
+                <div class="bbb-x">
+                    <div class="X-S">领导和公开还是大厉害厉害嘎哈</div>
+                    <div class="X-X">￥52.9</div>
+                </div>
+            </div>
+            <div class="bbb">
+                <div class="bbb-s">
+                    <img src="./images6/1.jpg">
+                </div>
+                <div class="bbb-x">
+                    <div class="X-S">领导和公开还是大厉害厉害嘎哈</div>
+                    <div class="X-X">￥52.9</div>
+                </div>
+            </div>
+            <div class="bbb">
+                <div class="bbb-s">
+                    <img src="./images6/3.jpg">
+                </div>
+                <div class="bbb-x">
+                    <div class="X-S">领导和公开还是大厉害厉害嘎哈</div>
+                    <div class="X-X">￥52.9</div>
+                </div>
+            </div>
+        </div>
+        <div class="C-B">
+            <div class="bbb">
+                <div class="bbb-s">
+                    <img src="./images6/8.jpg">
+                </div>
+                <div class="bbb-x">
+                    <div class="X-S">领导和公开还是大厉害厉害嘎哈</div>
+                    <div class="X-X">￥52.9</div>
+                </div>
+            </div>
+            <div class="bbb">
+                <div class="bbb-s">
+                    <img src="./images6/11.jpg">
+                </div>
+                <div class="bbb-x">
+                    <div class="X-S">领导和公开还是大厉害厉害嘎哈</div>
+                    <div class="X-X">￥52.9</div>
+                </div>
+            </div>
+            <div class="bbb">
+                <div class="bbb-s">
+                    <img src="./images6/12.jpg">
+                </div>
+                <div class="bbb-x">
+                    <div class="X-S">领导和公开还是大厉害厉害嘎哈</div>
+                    <div class="X-X">￥52.9</div>
+                </div>
+            </div>
+            <div class="bbb">
+                <div class="bbb-s">
+                    <img src="./images6/3.jpg">
+                </div>
+                <div class="bbb-x">
+                    <div class="X-S">领导和公开还是大厉害厉害嘎哈</div>
+                    <div class="X-X">￥52.9</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="SM1">
+    <b>|</b>
+    <spa>潮店酷玩 &nbsp; FHSDKHFHFHA&KSHF</spa>
+</div>
+<div class="CZ1">
+    <div class="CZ1-left">
+        <a href=""><img src="./images4/wenju.jpg"></a>
+    </div>
+    <div class="CZ1-right">
+        <div class="C1-T">
+            <div class="bbb1">
+                <div class="bbb1-s">
+                    <img src="./images6/3.jpg">
+                </div>
+                <div class="bbb1-x">
+                    <div class="X1-S">领导和公开还是大厉害厉害嘎哈</div>
+                    <div class="X1-X">￥52.9</div>
+                </div>
+            </div>
+            <div class="bbb1">
+                <div class="bbb1-s">
+                    <img src="./images6/1.jpg">
+                </div>
+                <div class="bbb1-x">
+                    <div class="X1-S">领导和公开还是大厉害厉害嘎哈</div>
+                    <div class="X1-X">￥52.9</div>
+                </div>
+            </div>
+            <div class="bbb1">
+                <div class="bbb1-s">
+                    <img src="./images6/9.jpg">
+                </div>
+                <div class="bbb1-x">
+                    <div class="X1-S">领导和公开还是大厉害厉害嘎哈</div>
+                    <div class="X1-X">￥52.9</div>
+                </div>
+            </div>
+            <div class="bbb1">
+                <div class="bbb1-s">
+                    <img src="./images6/7.jpg">
+                </div>
+                <div class="bbb1-x">
+                    <div class="X1-S">领导和公开还是大厉害厉害嘎哈</div>
+                    <div class="X1-X">￥52.9</div>
+                </div>
+            </div>
+        </div>
+        <div class="C1-B">
+            <div class="bbb1">
+                <div class="bbb1-s">
+                    <img src="./images6/3.jpg">
+                </div>
+                <div class="bbb1-x">
+                    <div class="X1-S">领导和公开还是大厉害厉害嘎哈</div>
+                    <div class="X1-X">￥52.9</div>
+                </div>
+            </div>
+            <div class="bbb1">
+                <div class="bbb1-s">
+                    <img src="./images6/6.jpg">
+                </div>
+                <div class="bbb1-x">
+                    <div class="X1-S">领导和公开还是大厉害厉害嘎哈</div>
+                    <div class="X1-X">￥52.9</div>
+                </div>
+            </div>
+            <div class="bbb1">
+                <div class="bbb1-s">
+                    <img src="./images6/9.jpg">
+                </div>
+                <div class="bbb1-x">
+                    <div class="X1-S">领导和公开还是大厉害厉害嘎哈</div>
+                    <div class="X1-X">￥52.9</div>
+                </div>
+            </div>
+            <div class="bbb1">
+                <div class="bbb1-s">
+                    <img src="./images6/5.jpg">
+                </div>
+                <div class="bbb1-x">
+                    <div class="X1-S">领导和公开还是大厉害厉害嘎哈</div>
+                    <div class="X1-X">￥52.9</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--推荐2-->
+<div class="TJ2">
+    <a href=""><img src="./images4/man1.jpg"></a>
+</div>
+
+<div class="SM2">
+    <b>|</b>
+    <span>居家生活 &nbsp; FHSDKHFHFHA&KSHF</span>
+</div>
+<div class="CZ2">
+    <div class="CZ2-left">
+        <a href=""><img src="./images4/jujia.png"></a>
+    </div>
+    <div class="CZ2-right">
+        <div class="C2-T">
+            <div class="bbb2">
+                <div class="bbb2-s">
+                    <img src="./images6/2.jpg">
+                </div>
+                <div class="bbb2-x">
+                    <div class="X2-S">领导和公开还是大厉害厉害嘎哈</div>
+                    <div class="X2-X">￥52.9</div>
+                </div>
+            </div>
+            <div class="bbb2">
+                <div class="bbb2-s">
+                    <img src="./images6/4.jpg">
+                </div>
+                <div class="bbb2-x">
+                    <div class="X2-S">领导和公开还是大厉害厉害嘎哈</div>
+                    <div class="X2-X">￥52.9</div>
+                </div>
+            </div>
+            <div class="bbb2">
+                <div class="bbb2-s">
+                    <img src="./images6/1.jpg">
+                </div>
+                <div class="bbb2-x">
+                    <div class="X2-S">领导和公开还是大厉害厉害嘎哈</div>
+                    <div class="X2-X">￥52.9</div>
+                </div>
+            </div>
+            <div class="bbb2">
+                <div class="bbb2-s">
+                    <img src="./images6/7.jpg">
+                </div>
+                <div class="bbb2-x">
+                    <div class="X2-S">领导和公开还是大厉害厉害嘎哈</div>
+                    <div class="X2-X">￥52.9</div>
+                </div>
+            </div>
+        </div>
+        <div class="C2-B">
+            <div class="bbb2">
+                <div class="bbb2-s">
+                    <img src="./images6/12.jpg">
+                </div>
+                <div class="bbb2-x">
+                    <div class="X2-S">领导和公开还是大厉害厉害嘎哈</div>
+                    <div class="X2-X">￥52.9</div>
+                </div>
+            </div>
+            <div class="bbb2">
+                <div class="bbb2-s">
+                    <img src="./images6/3.jpg">
+                </div>
+                <div class="bbb2-x">
+                    <div class="X2-S">领导和公开还是大厉害厉害嘎哈</div>
+                    <div class="X2-X">￥52.9</div>
+                </div>
+            </div>
+            <div class="bbb2">
+                <div class="bbb2-s">
+                    <img src="./images6/6.jpg">
+                </div>
+                <div class="bbb2-x">
+                    <div class="X2-S">领导和公开还是大厉害厉害嘎哈</div>
+                    <div class="X2-X">￥52.9</div>
+                </div>
+            </div>
+            <div class="bbb2">
+                <div class="bbb2-s">
+                    <img src="./images6/2.jpg">
+                </div>
+                <div class="bbb2-x">
+                    <div class="X2-S">领导和公开还是大厉害厉害嘎哈</div>
+                    <div class="X2-X">￥52.9</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--推荐3-->
+<div class="SM3">
+    <b>|</b>
+    <span>打造爱巢 &nbsp; FHSDKHFHFHA&KSHF</span>
+</div>
+<div class="CZ3">
+    <div class="CZ3-left">
+        <a href=""><img src="./images4/aichao.jpg"></a>
+    </div>
+    <div class="CZ3-right">
+        <div class="C3-T">
+            <div class="bbb3">
+                <div class="bbb3-s">
+                    <img src="./images6/3.jpg">
+                </div>
+                <div class="bbb3-x">
+                    <div class="X3-S">领导和公开还是大厉害厉害嘎哈</div>
+                    <div class="X3-X">￥52.9</div>
+                </div>
+            </div>
+            <div class="bbb3">
+                <div class="bbb3-s">
+                    <img src="./images6/1.jpg">
+                </div>
+                <div class="bbb3-x">
+                    <div class="X3-S">领导和公开还是大厉害厉害嘎哈</div>
+                    <div class="X3-X">￥52.9</div>
+                </div>
+            </div>
+            <div class="bbb3">
+                <div class="bbb3-s">
+                    <img src="./images6/2.jpg">
+                </div>
+                <div class="bbb3-x">
+                    <div class="X3-S">领导和公开还是大厉害厉害嘎哈</div>
+                    <div class="X3-X">￥52.9</div>
+                </div>
+            </div>
+            <div class="bbb3">
+                <div class="bbb3-s">
+                    <img src="./images6/3.jpg">
+                </div>
+                <div class="bbb3-x">
+                    <div class="X3-S">领导和公开还是大厉害厉害嘎哈</div>
+                    <div class="X3-X">￥52.9</div>
+                </div>
+            </div>
+        </div>
+        <div class="C3-B">
+            <div class="bbb3">
+                <div class="bbb3-s">
+                    <img src="./images6/6.jpg">
+                </div>
+                <div class="bbb3-x">
+                    <div class="X3-S">领导和公开还是大厉害厉害嘎哈</div>
+                    <div class="X3-X">￥52.9</div>
+                </div>
+            </div>
+            <div class="bbb3">
+                <div class="bbb3-s">
+                    <img src="./images6/8.jpg">
+                </div>
+                <div class="bbb3-x">
+                    <div class="X3-S">领导和公开还是大厉害厉害嘎哈</div>
+                    <div class="X3-X">￥52.9</div>
+                </div>
+            </div>
+            <div class="bbb3">
+                <div class="bbb3-s">
+                    <img src="./images6/7.jpg">
+                </div>
+                <div class="bbb3-x">
+                    <div class="X3-S">领导和公开还是大厉害厉害嘎哈</div>
+                    <div class="X3-X">￥52.9</div>
+                </div>
+            </div>
+            <div class="bbb3">
+                <div class="bbb3-s">
+                    <img src="./images6/3.jpg">
+                </div>
+                <div class="bbb3-x">
+                    <div class="X3-S">领导和公开还是大厉害厉害嘎哈</div>
+                    <div class="X3-X">￥52.9</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--推荐4-->
+<div class="TJ4">
+    <a href=""><img src="./images4/minchao.jpg"></a>
+</div>
+<div class="SM4">
+    <b>|</b>
+    <span>户外出行 &nbsp; FHSDKHFHFHA&KSHF</span>
+</div>
+<div class="CZ4">
+    <div class="CZ4-left">
+        <a href=""><img src="./images4/aichao.jpg"></a>
+    </div>
+    <div class="CZ4-right">
+        <div class="C4-T">
+            <div class="bbb4">
+                <div class="bbb4-s">
+                    <img src="./images6/1.jpg">
+                </div>
+                <div class="bbb4-x">
+                    <div class="X4-S">领导和公开还是大厉害厉害嘎哈</div>
+                    <div class="X4-X">￥52.9</div>
+                </div>
+            </div>
+            <div class="bbb4">
+                <div class="bbb4-s">
+                    <img src="./images6/3.jpg">
+                </div>
+                <div class="bbb4-x">
+                    <div class="X4-S">领导和公开还是大厉害厉害嘎哈</div>
+                    <div class="X4-X">￥52.9</div>
+                </div>
+            </div>
+            <div class="bbb4">
+                <div class="bbb4-s">
+                    <img src="./images6/8.jpg">
+                </div>
+                <div class="bbb4-x">
+                    <div class="X4-S">领导和公开还是大厉害厉害嘎哈</div>
+                    <div class="X4-X">￥52.9</div>
+                </div>
+            </div>
+            <div class="bbb4">
+                <div class="bbb4-s">
+                    <img src="./images4/3.jpg">
+                </div>
+                <div class="bbb4-x">
+                    <div class="X4-S">领导和公开还是大厉害厉害嘎哈</div>
+                    <div class="X4-X">￥52.9</div>
+                </div>
+            </div>
+        </div>
+        <div class="C4-B">
+            <div class="bbb4">
+                <div class="bbb4-s">
+                    <img src="./images6/7.jpg">
+                </div>
+                <div class="bbb4-x">
+                    <div class="X4-S">领导和公开还是大厉害厉害嘎哈</div>
+                    <div class="X4-X">￥52.9</div>
+                </div>
+            </div>
+            <div class="bbb4">
+                <div class="bbb4-s">
+                    <img src="./images6/5.jpg">
+                </div>
+                <div class="bbb4-x">
+                    <div class="X4-S">领导和公开还是大厉害厉害嘎哈</div>
+                    <div class="X4-X">￥52.9</div>
+                </div>
+            </div>
+            <div class="bbb4">
+                <div class="bbb4-s">
+                    <img src="./images6/9.jpg">
+                </div>
+                <div class="bbb4-x">
+                    <div class="X4-S">领导和公开还是大厉害厉害嘎哈</div>
+                    <div class="X4-X">￥52.9</div>
+                </div>
+            </div>
+            <div class="bbb4">
+                <div class="bbb4-s">
+                    <img src="./images6/11.jpg">
+                </div>
+                <div class="bbb4-x">
+                    <div class="X4-S">领导和公开还是大厉害厉害嘎哈</div>
+                    <div class="X4-X">￥52.9</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--猜你喜欢-->
+<div class="love11">
+    <span>--猜你喜欢——</span>
+</div>
+<ul class="CZ5">
+    <li class="LV">
+        <div class="bbb5-s">
+            <img src="./images6/2.jpg">
+        </div>
+        <div class="bbb5-x">
+            <div class="X5-S">领导和公开还是大厉害厉害嘎哈</div>
+            <div class="X5-X">￥52.9</div>
+        </div>
+    </li>
+    <li class="LV">
+        <div class="bbb5-s">
+            <img src="./images6/3.jpg">
+        </div>
+        <div class="bbb5-x">
+            <div class="X5-S">领导和公开还是大厉害厉害嘎哈</div>
+            <div class="X5-X">￥52.9</div>
+        </div>
+    </li>
+    <li class="LV">
+        <div class="bbb5-s">
+            <img src="./images6/4.jpg">
+        </div>
+        <div class="bbb5-x">
+            <div class="X5-S">领导和公开还是大厉害厉害嘎哈</div>
+            <div class="X5-X">￥52.9</div>
+        </div>
+    </li>
+    <li class="LV">
+        <div class="bbb5-s">
+            <img src="./images6/10.jpg">
+        </div>
+        <div class="bbb5-x">
+            <div class="X5-S">领导和公开还是大厉害厉害嘎哈</div>
+            <div class="X5-X">￥52.9</div>
+        </div>
+    </li>
+    <li class="LV">
+        <div class="bbb5-s">
+            <img src="./images6/13.jpg">
+        </div>
+        <div class="bbb5-x">
+            <div class="X5-S">领导和公开还是大厉害厉害嘎哈</div>
+            <div class="X5-X">￥52.9</div>
+        </div>
+    </li>
+    <li class="LV">
+        <div class="bbb5-s">
+            <img src="./images6/12.jpg">
+        </div>
+        <div class="bbb5-x">
+            <div class="X5-S">领导和公开还是大厉害厉害嘎哈</div>
+            <div class="X5-X">￥52.9</div>
+        </div>
+    </li>
+    <li class="LV">
+        <div class="bbb5-s">
+            <img src="./images6/11.jpg">
+        </div>
+        <div class="bbb5-x">
+            <div class="X5-S">领导和公开还是大厉害厉害嘎哈</div>
+            <div class="X5-X">￥52.9</div>
+        </div>
+    </li>
+    <li class="LV">
+        <div class="bbb5-s">
+            <img src="./images6/1.jpg">
+        </div>
+        <div class="bbb5-x">
+            <div class="X5-S">领导和公开还是大厉害厉害嘎哈</div>
+            <div class="X5-X">￥52.9</div>
+        </div>
+    </li>
+    <li class="LV">
+        <div class="bbb5-s">
+            <img src="./images6/7.jpg">
+        </div>
+        <div class="bbb5-x">
+            <div class="X5-S">领导和公开还是大厉害厉害嘎哈</div>
+            <div class="X5-X">￥52.9</div>
+        </div>
+    </li>
+    <li class="LV">
+        <div class="bbb5-s">
+            <img src="./images6/4.jpg">
+        </div>
+        <div class="bbb5-x">
+            <div class="X5-S">领导和公开还是大厉害厉害嘎哈</div>
+            <div class="X5-X">￥52.9</div>
+        </div>
+    </li>
+    <li class="LV">
+        <div class="bbb5-s">
+            <img src="./images6/8.jpg">
+        </div>
+        <div class="bbb5-x">
+            <div class="X5-S">领导和公开还是大厉害厉害嘎哈</div>
+            <div class="X5-X">￥52.9</div>
+        </div>
+    </li>
+    <li class="LV">
+        <div class="bbb5-s">
+            <img src="./images6/9.jpg">
+        </div>
+        <div class="bbb5-x">
+            <div class="X5-S">领导和公开还是大厉害厉害嘎哈</div>
+            <div class="X5-X">￥52.9</div>
+        </div>
+    </li>
+    <li class="LV">
+        <div class="bbb5-s">
+            <img src="./images6/3.jpg">
+        </div>
+        <div class="bbb5-x">
+            <div class="X5-S">领导和公开还是大厉害厉害嘎哈</div>
+            <div class="X5-X">￥52.9</div>
+        </div>
+    </li>
+    <li class="LV">
+        <div class="bbb5-s">
+            <img src="./images6/1.jpg">
+        </div>
+        <div class="bbb5-x">
+            <div class="X5-S">领导和公开还是大厉害厉害嘎哈</div>
+            <div class="X5-X">￥52.9</div>
+        </div>
+    </li>
+    <li class="LV">
+        <div class="bbb5-s">
+            <img src="./images6/13.jpg">
+        </div>
+        <div class="bbb5-x">
+            <div class="X5-S">领导和公开还是大厉害厉害嘎哈</div>
+            <div class="X5-X">￥52.9</div>
+        </div>
+    </li>
+    <li class="LV">
+        <div class="bbb5-s">
+            <img src="./images6/11.jpg">
+        </div>
+        <div class="bbb5-x">
+            <div class="X5-S">领导和公开还是大厉害厉害嘎哈</div>
+            <div class="X5-X">￥52.9</div>
+        </div>
+    </li>
+    <li class="LV">
+        <div class="bbb5-s">
+            <img src="./images6/8.jpg">
+        </div>
+        <div class="bbb5-x">
+            <div class="X5-S">领导和公开还是大厉害厉害嘎哈</div>
+            <div class="X5-X">￥52.9</div>
+        </div>
+    </li>
+    <li class="LV">
+        <div class="bbb5-s">
+            <img src="./images4/3.jpg">
+        </div>
+        <div class="bbb5-x">
+            <div class="X5-S">领导和公开还是大厉害厉害嘎哈</div>
+            <div class="X5-X">￥52.9</div>
+        </div>
+    </li>
+    <li class="LV">
+        <div class="bbb5-s">
+            <img src="./images6/3.jpg">
+        </div>
+        <div class="bbb5-x">
+            <div class="X5-S">领导和公开还是大厉害厉害嘎哈</div>
+            <div class="X5-X">￥52.9</div>
+        </div>
+    </li>
+    <li class="LV">
+        <div class="bbb5-s">
+            <img src="./images6/11.jpg">
+        </div>
+        <div class="bbb5-x">
+            <div class="X5-S">领导和公开还是大厉害厉害嘎哈</div>
+            <div class="X5-X">￥52.9</div>
+        </div>
+    </li>
+
+</ul>
+
+
+<!--结束-->
+<div class="end">
+    <img src="./images5/end.png">
+</div>
+<!--dfs-->
+<div class="ZDB">
+
+    <div class="TOP">
+        <div class="TOP-1">
+            <div class="left">
+                <span class="TWZ">优</span>
+            </div>
+            <div class="right">
+                <div class="SWZ">品质保障</div>
+                <div class="QWZ">品质护航购物无忧</div>
+
+            </div>
+        </div>
+
+        <div class="TOP-1">
+            <div class="left">
+                <span class="TWZ">七</span>
+            </div>
+            <div class="right">
+                <div class="SWZ">七天无理由退换货</div>
+                <div class="QWZ">为您提供售后无忧保障</div>
+
+            </div>
+        </div>
+        <div class="TOP-1">
+            <div class="left">
+                <span class="TWZ">特</span>
+            </div>
+            <div class="right">
+                <div class="SWZ">特色服务体验</div>
+                <div class="QWZ">为您呈现不一样的服务</div>
+
+            </div>
+        </div>
+        <div class="TOP-1">
+            <div class="left">
+                <span class="TWZ">帮</span>
+            </div>
+            <div class="right">
+                <div class="SWZ">帮助中心</div>
+                <div class="QWZ">您的购物指南</div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="CEN">
+        <div class="CEN-1">
+            <span class="MS">购物指南</span>
+            <span class="JT">
+                免费注册<br>
+                开通支付宝<br>
+                支付宝充值
+            </span>
+            <div class="cat">
+                <img src="./images6/cat.jpg">
+            </div>
+        </div>
+        <div class="CEN-1">
+            <span class="MS">天猫保障</span>
+            <span class="JT">
+                发票保障<br>
+                售后规则<br>
+                缺货赔付
+            </span>
+        </div>
+
+        <div class="CEN-1">
+            <span class="MS">支付方式</span>
+            <span class="JT">
+                快捷支付<br>
+                余额宝<br>
+                支付宝充值<br>
+                蚂蚁花呗<br>
+                货到付款
+            </span>
+        </div>
+
+        <div class="CEN-1">
+            <span class="MS">商家服务</span>
+            <span class="JT">
+                天猫规则<br>
+                商家中心<br>
+                天猫智库<br>
+                物流服务<br>
+                喵言喵语<br>
+                运营服务
+            </span>
+        </div>
+        <div class="CEN-1">
+            <span class="MS">手机天猫</span>
+            <div class="erwima">
+                <img src="./images5/erweima.png">
+            </div>
+        </div>
+    </div>
+    <div class="beijing">
+        <img src="./images6/diceng.png" alt="">
+    </div>
+    <div class="DL">
+        <div class="DL-1">
+            <a href="">关于天猫</a>
+            <a href="">帮助中心</a>
+            <a href="">关于天猫</a>
+            <a href="">关于天猫</a>
+            <a href="">关于天猫</a>
+            <a href="">关于天猫</a>
+            <a href="">关于天猫</a>
+            <a href="">关于天猫</a>
+            <a href="">关于天猫</a>
+            <a href="">关于天猫</a>
+            <a href="">关于天猫</a>
+        </div>
+
+        <div class="DL-2">
+            <a href="">阿里巴巴</a><b>|</b>
+            <a href="">关于天猫</a><b>|</b>
+            <a href="">关于天猫</a><b>|</b>
+            <a href="">关于天猫</a><b>|</b>
+            <a href="">关于天猫</a><b>|</b>
+            <a href="">关于天猫</a><b>|</b>
+            <a href="">关于天猫</a><b>|</b>
+            <a href="">关于天猫</a><b>|</b>
+            <a href="">关于天猫</a><b>|</b>
+            <a href="">关于天猫</a><b>|</b>
+            <a href="">关于天猫</a><b>|</b>
+            <a href="">关于天猫</a><b>|</b>
+            <a href="">关于天猫</a><b>|</b>
+            <a href="">关于天猫</a><b>|</b>
+            <a href="">关于天猫</a><b>|</b>
+            <a href="">关于天猫</a><b>|</b>
+            <a href="">关于天猫</a>
+        </div>
+
+        <div class="YMS">
+            <span>增值电信业务经营许可证:</span>
+            <a href="">浙B2-20110446</a>
+            <span>市场名称登记证：工商网市字3301004119号</span>
+            <span> 出版物网络交易平台服务经营备案证： 新出发浙备字第001号 </span>
+            <span>互联网违法和不良信息举报电话：0571-81683755 blxxjb@alibaba-inc.com</span>
+            <span> 互联网药品信息服务资质证书编号：</span>
+            <a href="">浙-（经营性）-2017-0005</a>
+            <span> 互联网药品信息服务资质证书编号：</span>
+            <a href="">浙-（经营性）-2017-0005</a>
+            <span> 互联网药品信息服务资质证书编号：</span>
+            <a href="">浙-（经营性）-2017-0005</a>
+            <span> 互联网药品信息服务资质证书编号：</span>
+            <a href="">浙-（经营性）-2017-0005</a>
+            <span> 互联网药品信息服务资质证书编号：</span>
+            <a href="">浙-（经营性）-2017-0005</a>
+            <span> 互联网药品信息服务资质证书编号：</span>
+            <a href="">浙-（经营性）-2017-0005</a>
+            <span> 互联网药品信息服务资质证书编号：</span>
+            <a href="">浙-（经营性）-2017-0005</a>
+            <span> 互联网药品信息服务资质证书编号：</span>
+            <a href="">浙-（经营性）-2017-0005</a>
+            <span> 互联网药品信息服务资质证书编号：</span>
+            <a href="">浙-（经营性）-2017-0005</a>
+            <span>增值电信业务经营许可证:</span>
+            <a href="">浙B2-20110446</a>
+            <span>市场名称登记证：工商网市字3301004119号</span>
+            <span> 出版物网络交易平台服务经营备案证： 新出发浙备字第001号 </span>
+
+        </div>
+        <div class="JSL1">
+            <img src="./images5/1.jpg">
+        </div>
+        <div class="JSL2">
+            <img src="./images5/2.jpg">
+        </div>
+    </div>
+</div>
+</body>
+</html>
