@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tmall</title>
+    <link rel="stylesheet" href="CSS/TianMao.css">
+    <!--<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">-->
+
+    <script>
+        window.onload=function(ev){
+            var banner = document.querySelectorAll(".banner");
+            var btns = document.querySelectorAll(".btn");
+            var num=0;
+            banner[0].style.zIndex=2
+            setInterval(function () {
+                if (num==6) {
+                    num = 0;
+                }
+                for (var i = 0; i < banner.length; i++) {
+                    banner[i].style.display = "none";
+                    btns[i].style.background="#a7a6a3"
+                }
+                banner[num].style.display = "block";
+                btns[num].style.background="#e0dfdc";
+                num++
+            },5000)
+        }
+
+
+        window.onscroll = function () {
+            var top = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+            var node = document.getElementById('topbar');
+            if (top > 700) {//500就是滚动条滚动到的位置，大于500(500指500px)才显示
+                node.style.display = 'block';
+            } else {
+                node.style.display = 'none';
+            }
+        }
+    </script>
+</head>
+<body>
+<!--left_daohan-->
+<div class="left_daohan" id="topbar">
+    <div class="left_daohan1">导航</div>
+    <div class="left_daohan2">天猫<br>超市</div>
+    <div class="left_daohan2">天猫<br>国际</div>
+    <div class="left_daohan2">美丽<br>人生</div>
+    <div class="left_daohan2">潮店<br>酷玩</div>
+    <div class="left_daohan2">居家<br>生活</div>
+    <div class="left_daohan2">打造<br>爱巢</div>
+    <div class="left_daohan2">户外<br>出行</div>
+    <div class="left_daohan2">猜你<br>喜欢</div>
+    <div class="left_daohan2">天猫<br>顶部</div>
+</div>
+
+<!--right_daohan-->
+<div class="right_daohan">
+    <div class="l520"></div>
+    <div class="l521"> <img src="images/right_daohan/l521.png" alt="" width="35px" height="30px" style="margin-top: 7.5px"></div>
+    <div class="bxx">
+        <div class="bxx1"><img src="images/right_daohan/bx1.png" alt=""></div>
+        <div class="p"></div>
+       <img src="images/right_daohan/car.png" alt="" style="margin-top: 10px">
+        <div style="color: white;margin-top: -10px;font-size: 8px;width: 10px;margin-bottom: 10px;margin-left: 10px;" >购物车</div>
+        <div class="p"></div>
+        <img src="images/right_daohan/money.png" alt="" style="margin-top: 8px">
+        <img src="images/right_daohan/star.png" alt=""  style="margin-top: 8px">
+        <img src="images/right_daohan/biao.png" alt=""   style="margin-top: 8px">
+        <img src="images/right_daohan/chong.png" alt=""  style="margin-top: 8px">
+        <img src="images/right_daohan/rightwrite.png" alt="">
+        <img src="images/right_daohan/youce7.png" alt="">
+        <img src="images/right_daohan/top.png" alt="">
+    </div>
+</div>
+
+
+<!--head-->
+<div class="head">
+    <div class="head_main">
+        <div class="head_main_left">
+            <span>嗨，欢迎来到天猫</span>
+            <a href="">请登录</a>
+            <a href="">免费注册</a>
+        </div>
+        <div class="head_main_right">
+            <a href="" class="a1 a1_select" >我的淘宝</a>
+            <a href="" class="a2">购物车0件</a>
+            <a href="" class="a1">收藏夹</a>
+            <a href="" class="a2">手机版</a>
+            <a href="" class="a2">淘宝网</a>
+            <a href="" class="a1">商家支持</a>
+            <a href="" class="a1">网站导航</a>
+        </div>
+    </div>
+</div>
+
+<!--天猫搜索-->
+<div class="search">
+
+    <div class="search_left">
+
+    </div>
+    <div class="search_right">
+        <div class="container">
+            <form action="" class="parent">
+                <input type="text" placeholder="搜索 天猫 商品/品牌/店铺" class="text">
+                <input type="button" value="搜索" class="button">
+            </form>
+        </div>
+        <div class="container_info">
+            <a href="" class="a1">针织衫</a><div class="line"></div>
+            <a href="" class="a2">连衣裙</a><div class="line"></div>
+            <a href="" class="a1">四件套</a><div class="line"></div>
+            <a href="" class="a2">摄像头</a><div class="line"></div>
+            <a href="" class="a1">客厅灯</a><div class="line"></div>
+            <a href="" class="a1">口红</a><div class="line"></div>
+            <a href="" class="a2">手机</a><div class="line"></div>
+            <a href="" class="a1">运动鞋</a><div class="line"></div>
+            <a href="" class="a2">牛奶</a><div class="line"></div>
+        </div>
+    </div>
+</div>
+
+<!--商品分类-->
+<div class="product">
+    <div class="product_left">
+        <div class="product_left_one">
+            <a href="" class="left">商品分类</a>
+        </div>
+        <div class="product_left_two">
+            <a href="">天猫520活动</a>
+        </div>
+    </div>
+    <div class="product_right">
+        <a href=""><div class="TMCS"></div></a>
+        <a href=""><div class="TMGJ"></div></a>
+        <div class="TMQT">
+            <a href="">天猫会员</a>
+            <a href="">电器城</a>
+            <a href="">喵鲜生</a>
+            <a href="">医药馆</a>
+            <a href="">营业厅</a>
+            <a href="">魅力惠</a>
+            <a href="">飞猪旅行</a>
+            <a href="" class="suning">苏宁易购</a>
+        </div>
+    </div>
+</div>
+
+</div>
+<!--轮播图-->
+<div class="banners">
+    <div class="banners_content">
+        <div class="wheel-box">
+            <div class="banner banner1" active></div>
+            <div class="banner banner2"></div>
+            <div class="banner banner3"></div>
+            <div class="banner banner4"></div>
+            <div class="banner banner5"></div>
+            <div class="banner banner6"></div>
+            <div class="bots">
+                <div class="btn btn1 select"></div>
+                <div class="btn btn2"></div>
+                <div class="btn btn3"></div>
+                <div class="btn btn4"></div>
+                <div class="btn btn5"></div>
+                <div class="btn btn6"></div>
+            </div>
+
+            <div class="banners_content_right">
+                <a href="" class="banners_content_right1 rrr"></a>
+                <a href="" class="banners_content_right2 rrr"></a>
+            </div>
+        </div>
+
+        <div class="banners_content_left">
+            <div class="banners_content_left_1"></div>
+            <div class="banners_content_left_2">
+                <div class="bcl2">大牌女装</div>
+                <div class="bcl2">家纺家纺</div>
+                <div class="bcl2">运动户外</div>
+                <div class="bcl2">型格男装</div>
+                <div class="bcl2">大牌美妆</div>
+                <div class="bcl2">纸品家清</div>
+                <div class="bcl2">潮流个护</div>
+                <div class="bcl2">大家电</div>
+                <div class="bcl2">手机会场</div>
+                <div class="bcl2">精品家具</div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<!--品牌闪购-->
+<div class="brands">
+    <div class="brands_content">
+        <div class="brands_content_left">
+            <div class="brands_content_left_head">
+                <span class="sp1"><strong>品牌闪购</strong></span>
+                <span class="sp2"><strong>BRAND&nbsp;SALE</strong></span>
+                <span class="sp3"></span>
+            </div>
+            <div class="brands_content_left_foot">
+
+            </div>
+        </div>
+        <div class="brands_content_right">
+            <div class="brands_content_r1">
+                <div class="brands_content_right_head">
+                    <span class="sp1"><strong>聚名品</strong></span>
+                    <span class="sp2"><strong>LUXURY&nbsp;CHANNEL</strong></span>
+                    <span class="sp3"></span>
+                </div>
+                <div class="brands_content_right_foot1">
+
+                </div>
+            </div>
+            <div class="brands_content_r1">
+                <div class="brands_content_right_head">
+                    <span class="sp1"><strong>品牌活动</strong></span>
+                    <span class="sp2"><strong>BRAND&nbsp;ACTIVITY</strong></span>
+                    <span class="sp3"></span>
+                </div>
+                <div class="brands_content_right_foot2">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="o"></div>
+
+<!--品牌种类-->
+<div class="clazzs">
+    <div class="clazzs_content">
+        <a href="" class="box1"></a><a href="" class="box2"></a><a href="" class="box3"></a><a href="" class="box4"></a>
+        <a href="" class="box5"></a><a href="" class="box6"></a><a href="" class="box7"></a><a href="" class="box8"></a>
+        <a href="" class="box9"></a><a href="" class="box10"></a><a href="" class="box11"></a><a href="" class="box12"></a>
+        <a href="" class="box13"></a><a href="" class="box14"></a><a href="" class="box15"></a><a href="" class="box16"></a>
+        <a href="" class="box17"></a><a href="" class="box18"></a><a href="" class="box19"></a><a href="" class="box20"></a>
+        <a href="" class="box21"></a><a href="" class="box22"></a><a href="" class="box23"></a><a href="" class="box24"></a>
+        <a href="" class="box25"></a><a href="" class="box26"></a><a href="" class="box27"></a><a href="" class="box28"></a>
+        <a href="" class="box29"></a><a href="" class="box30"></a>
+    </div>
+</div>
+
+<div class="o"></div>
+<!--天猫超市-->
+<div class="supers">
+    <div class="supers_content">
+        <div class="supers_content_head">
+            <div class="supers_content_head_left">
+            </div>
+            <div class="supers_content_head_right">
+                <a href="">进口食品</a>
+                <a href="">食品饮料</a>
+                <a href="">粮油副食</a>
+                <a href="">美容洗护</a>
+                <a href="">家具家电</a>
+                <a href="">家庭清洁</a>
+                <a href="">母婴用品</a>
+                <a href="">生鲜水果</a>
+            </div>
+        </div>
+        <div class="supers_content_foot">
+            <a href=""><div class="supers_content_foot_left">
+                <div class="scfl1" >天猫超市</div>
+                <div class="scfl2" >零食欢乐购爆款直降</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_center">
+                <div class="supers_content_foot_centerr_one" >今日疯抢</div>
+                <div class="supers_content_foot_centerr_two">限量版</div>
+                <div class="supers_content_foot_centerr_three">
+                    <img src="images/super/you.jpg" alt="" width="200px" height="200px" style="margin: 10px 30px 0 0;float: right">
+                    <img src="images/super/dajiantou.png" style="position: absolute;top: 90px" alt="">
+                    <div class="you">
+                        <div class="you1"><img src="images/super/duigou.png" alt="" style="margin: 5px 10px 5px 60px;float: left">
+                            <div style="float: left;padding-top: 5px">粮油调味</div>
+                        </div>
+                        <div class="you2">爆款直降</div>
+                    </div>
+                </div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right1">
+                <div class="supers_content_foot_center_one1"></div>
+                <div class="supers_content_foot_center_two">温碧泉去角质面部全身磨砂去死皮去鸡皮</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right1 supers_content_foot_right1_select">
+                <div class="supers_content_foot_center_one2"></div>
+                <div class="supers_content_foot_center_two">原装进口尚牌避孕套大颗粒超博润滑安全</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right3">
+                <div class="supers_content_foot_center_one3"></div>
+                <div class="supers_content_foot_center_two">温碧泉去角质面部全身磨砂去死皮去鸡皮</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right3">
+                <div class="supers_content_foot_center_one4"></div>
+                <div class="supers_content_foot_center_two">3M思高百洁布超洁净去污耐用家用厨房清</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right3">
+                <div class="supers_content_foot_center_one5"></div>
+                <div class="supers_content_foot_center_two">温碧泉去角质面部全身磨砂去死皮去鸡皮</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right3 supers_content_foot_right3_select">
+                <div class="supers_content_foot_center_one6"></div>
+                <div class="supers_content_foot_center_two">温碧泉去角质面部全身磨砂去死皮去鸡皮</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+        </div>
+    </div>
+</div>
+
+<div class="o"></div>
+<!--天猫国际-->
+<div class="inters">
+    <div class="inters_content">
+        <div class="inters_content_head">
+            <div class="inters_content_head_left">
+            </div>
+            <div class="inters_content_head_right">
+                <a href="">口红</a>
+                <a href="">YSL</a>
+                <a href="">面膜</a>
+                <a href="">防晒</a>
+                <a href="">迪奥</a>
+            </div>
+        </div>
+        <div class="inters_content_foot">
+            <div class="inters_content_foot_left" >
+                <a href="" style="position: relative">
+                    <img src="images/inter/leftUP.png" width="235px" height="301px">
+                    <div class="scfl11" style="position:absolute;left: 0;top: -100px;z-index: 2">进口海选</div>
+                    <div class="scfl22" style="position:absolute;left: 50px;top:-100px;z-index: 2">大牌好货轻松购入</div>
+                </a>
+                <a href="" style="position: relative">
+                    <img src="images/inter/leftDown.png" alt="" width="235px" height="301px" style="margin-top: 9.8px">
+                    <div class="scfl11" style="position:absolute;left: 0;top: -100px;z-index: 2">直营品质</div>
+                    <div class="scfl22" style="position:absolute;left: 50px;top:-100px;z-index: 2">放心体验畅享全球</div>
+                </a>
+            </div>
+            <a href=""><div class="supers_content_foot_right1">
+                <div style="width: 180px;height: 24px;margin: 10px;font-size: 18px;color: black">官方直营优选</div>
+                <div style="width: 180px;height: 18px;margin: 0 10px;font-size: 14px">极致购物感受</div>
+                <div ><img src="images/inter/baobao.jpg" alt="" width="170px" height="170px" style="margin: 32px 33px 42px 32px"></div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right1">
+                <div class="supers_content_foot_center_one1"></div>
+                <div class="supers_content_foot_center_two">温碧泉去角质面部全身磨砂去死皮去鸡皮</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right1">
+                <div class="supers_content_foot_center_one1"></div>
+                <div class="supers_content_foot_center_two">温碧泉去角质面部全身磨砂去死皮去鸡皮</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right1 supers_content_foot_right1_select">
+                <div class="supers_content_foot_center_one2"></div>
+                <div class="supers_content_foot_center_two">原装进口尚牌避孕套大颗粒超博润滑安全</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right3">
+                <div class="supers_content_foot_center_one3"></div>
+                <div class="supers_content_foot_center_two">温碧泉去角质面部全身磨砂去死皮去鸡皮</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right3">
+                <div class="supers_content_foot_center_one4"></div>
+                <div class="supers_content_foot_center_two">3M思高百洁布超洁净去污耐用家用厨房清</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right3">
+                <div class="supers_content_foot_center_one5"></div>
+                <div class="supers_content_foot_center_two">温碧泉去角质面部全身磨砂去死皮去鸡皮</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right3 supers_content_foot_right1_select">
+                <div class="supers_content_foot_center_one6"></div>
+                <div class="supers_content_foot_center_two">温碧泉去角质面部全身磨砂去死皮去鸡皮</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+        </div>
+    </div>
+</div>
+
+<div class="tupianbox"><div class="tupian" ><img src="images/inter/yifu0.jpg" alt=""  ></div></div>
+
+
+
+<!--美丽人生-->
+<div class="supers">
+    <div class="supers_content">
+        <div class="supers_content_head">
+            <div class="beautis_content_head_left">
+                <div class="he" style="width: 5px;height: 20px;background: black;float: left;margin: 12px 13px 0 0"></div>
+                <div style="width: 90px;height: 27px;font-size: 18px;float: left;margin:10px 0 0 0">美丽人生&nbsp;</div>
+                <div style="width: 130px;height: 18px;font-size: 14px;float: left;margin:13px 0 0 0">FASHION&nbsp;&BEAUTY</div>
+            </div>
+        </div>
+        <div class="supers_content_foot">
+            <a href=""><div class="beautis_content_foot_left">
+                <div class="scfl1" >大牌男装</div>
+                <div class="scfl2" >多件多折领劵再减</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right1">
+                <div class="supers_content_foot_center_one1"></div>
+                <div class="supers_content_foot_center_two">温碧泉去角质面部全身磨砂去死皮去鸡皮</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right1">
+                <div class="supers_content_foot_center_one1"></div>
+                <div class="supers_content_foot_center_two">温碧泉去角质面部全身磨砂去死皮去鸡皮</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right1">
+                <div class="supers_content_foot_center_one1"></div>
+                <div class="supers_content_foot_center_two">温碧泉去角质面部全身磨砂去死皮去鸡皮</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right1 supers_content_foot_right1_select">
+                <div class="supers_content_foot_center_one2"></div>
+                <div class="supers_content_foot_center_two">原装进口尚牌避孕套大颗粒超博润滑安全</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right3">
+                <div class="supers_content_foot_center_one3"></div>
+                <div class="supers_content_foot_center_two">温碧泉去角质面部全身磨砂去死皮去鸡皮</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right3">
+                <div class="supers_content_foot_center_one4"></div>
+                <div class="supers_content_foot_center_two">3M思高百洁布超洁净去污耐用家用厨房清</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right3">
+                <div class="supers_content_foot_center_one5"></div>
+                <div class="supers_content_foot_center_two">温碧泉去角质面部全身磨砂去死皮去鸡皮</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right3 supers_content_foot_right1_select">
+                <div class="supers_content_foot_center_one6"></div>
+                <div class="supers_content_foot_center_two">温碧泉去角质面部全身磨砂去死皮去鸡皮</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+        </div>
+    </div>
+</div>
+<div style="width: 1348px;height: 5px;background: #f6f6f6;margin: auto"></div>
+<!--潮店酷玩-->
+<div class="supers">
+    <div class="supers_content">
+        <div class="supers_content_head">
+            <div class="beautis_content_head_left">
+                <div class="he" style="width: 5px;height: 20px;background: black;float: left;margin: 12px 13px 0 0"></div>
+                <div style="width: 90px;height: 27px;font-size: 18px;float: left;margin:10px 0 0 0">潮店酷玩&nbsp;</div>
+                <div style="width: 130px;height: 18px;font-size: 14px;float: left;margin:13px 0 0 0">ELECTRONICS</div>
+            </div>
+        </div>
+        <div class="supers_content_foot">
+            <a href=""><div class="CDKWs_content_foot_left">
+                <div class="scfl1" >新品开枪</div>
+                <div class="scfl2" >手机会场限时秒杀</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right1">
+                <div class="supers_content_foot_center_one1"></div>
+                <div class="supers_content_foot_center_two">温碧泉去角质面部全身磨砂去死皮去鸡皮</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right1">
+                <div class="supers_content_foot_center_one1"></div>
+                <div class="supers_content_foot_center_two">温碧泉去角质面部全身磨砂去死皮去鸡皮</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right1">
+                <div class="supers_content_foot_center_one1"></div>
+                <div class="supers_content_foot_center_two">温碧泉去角质面部全身磨砂去死皮去鸡皮</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right1 supers_content_foot_right1_select">
+                <div class="supers_content_foot_center_one2"></div>
+                <div class="supers_content_foot_center_two">原装进口尚牌避孕套大颗粒超博润滑安全</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right3">
+                <div class="supers_content_foot_center_one3"></div>
+                <div class="supers_content_foot_center_two">温碧泉去角质面部全身磨砂去死皮去鸡皮</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right3">
+                <div class="supers_content_foot_center_one4"></div>
+                <div class="supers_content_foot_center_two">3M思高百洁布超洁净去污耐用家用厨房清</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right3">
+                <div class="supers_content_foot_center_one5"></div>
+                <div class="supers_content_foot_center_two">温碧泉去角质面部全身磨砂去死皮去鸡皮</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right3 supers_content_foot_right1_select">
+                <div class="supers_content_foot_center_one6"></div>
+                <div class="supers_content_foot_center_two">温碧泉去角质面部全身磨砂去死皮去鸡皮</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+        </div>
+    </div>
+</div>
+<!--衣服DIV-->
+<div class="tupianbox"><div  class="tupian" ><img src="images/inter/yifu.jpg" alt="" ></div></div>
+<!--居家生活-->
+<div class="supers">
+    <div class="supers_content">
+        <div class="supers_content_head">
+            <div class="beautis_content_head_left">
+                <div class="he" style="width: 5px;height: 20px;background: black;float: left;margin: 12px 13px 0 0"></div>
+                <div style="width: 90px;height: 27px;font-size: 18px;float: left;margin:10px 0 0 0">居家生活&nbsp;</div>
+                <div style="width: 130px;height: 18px;font-size: 14px;float: left;margin:13px 0 0 0">GROCERY&nbsp;&HEALTH</div>
+            </div>
+        </div>
+        <div class="supers_content_foot">
+            <a href=""><div class="homes_content_foot_left">
+                <div class="scfl1" >美家</div>
+                <div class="scfl2" >家饰尚品清新居家</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right1">
+                <div class="supers_content_foot_center_one1"></div>
+                <div class="supers_content_foot_center_two">温碧泉去角质面部全身磨砂去死皮去鸡皮</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right1">
+                <div class="supers_content_foot_center_one1"></div>
+                <div class="supers_content_foot_center_two">温碧泉去角质面部全身磨砂去死皮去鸡皮</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right1">
+                <div class="supers_content_foot_center_one1"></div>
+                <div class="supers_content_foot_center_two">温碧泉去角质面部全身磨砂去死皮去鸡皮</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right1 supers_content_foot_right1_select">
+                <div class="supers_content_foot_center_one2"></div>
+                <div class="supers_content_foot_center_two">原装进口尚牌避孕套大颗粒超博润滑安全</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right3">
+                <div class="supers_content_foot_center_one3"></div>
+                <div class="supers_content_foot_center_two">温碧泉去角质面部全身磨砂去死皮去鸡皮</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right3">
+                <div class="supers_content_foot_center_one4"></div>
+                <div class="supers_content_foot_center_two">3M思高百洁布超洁净去污耐用家用厨房清</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right3">
+                <div class="supers_content_foot_center_one5"></div>
+                <div class="supers_content_foot_center_two">温碧泉去角质面部全身磨砂去死皮去鸡皮</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right3 supers_content_foot_right1_select">
+                <div class="supers_content_foot_center_one6"></div>
+                <div class="supers_content_foot_center_two">温碧泉去角质面部全身磨砂去死皮去鸡皮</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+        </div>
+    </div>
+</div>
+<div style="width: 1348px;height: 5px;background: #f6f6f6;margin: auto"></div>
+<!--打造爱巢-->
+<div class="supers">
+    <div class="supers_content">
+        <div class="supers_content_head">
+            <div class="beautis_content_head_left">
+                <div class="he" style="width: 5px;height: 20px;background: black;float: left;margin: 12px 13px 0 0"></div>
+                <div style="width: 90px;height: 27px;font-size: 18px;float: left;margin:10px 0 0 0">打造爱巢&nbsp;</div>
+                <div style="width: 130px;height: 18px;font-size: 14px;float: left;margin:13px 0 0 0">HOME</div>
+            </div>
+        </div>
+        <div class="supers_content_foot">
+            <a href=""><div class="loves_content_foot_left">
+                <div class="scfl1" >干衣抽湿</div>
+                <div class="scfl2" >衣物护理季除菌除湿</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right1">
+                <div class="supers_content_foot_center_one1"></div>
+                <div class="supers_content_foot_center_two">温碧泉去角质面部全身磨砂去死皮去鸡皮</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right1">
+                <div class="supers_content_foot_center_one1"></div>
+                <div class="supers_content_foot_center_two">温碧泉去角质面部全身磨砂去死皮去鸡皮</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right1">
+                <div class="supers_content_foot_center_one1"></div>
+                <div class="supers_content_foot_center_two">温碧泉去角质面部全身磨砂去死皮去鸡皮</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right1 supers_content_foot_right1_select">
+                <div class="supers_content_foot_center_one2"></div>
+                <div class="supers_content_foot_center_two">原装进口尚牌避孕套大颗粒超博润滑安全</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right3">
+                <div class="supers_content_foot_center_one3"></div>
+                <div class="supers_content_foot_center_two">温碧泉去角质面部全身磨砂去死皮去鸡皮</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right3">
+                <div class="supers_content_foot_center_one4"></div>
+                <div class="supers_content_foot_center_two">3M思高百洁布超洁净去污耐用家用厨房清</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right3">
+                <div class="supers_content_foot_center_one5"></div>
+                <div class="supers_content_foot_center_two">温碧泉去角质面部全身磨砂去死皮去鸡皮</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right3 supers_content_foot_right1_select">
+                <div class="supers_content_foot_center_one6"></div>
+                <div class="supers_content_foot_center_two">温碧泉去角质面部全身磨砂去死皮去鸡皮</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+        </div>
+    </div>
+</div>
+<!--户外DIV-->
+<div class="tupianbox"><div class="tupian" ><img src="images/inter/huwai.jpg" alt="" ></div></div>
+<!--户外出行-->
+<div class="supers">
+    <div class="supers_content">
+        <div class="supers_content_head">
+            <div class="beautis_content_head_left">
+                <div class="he" style="width: 5px;height: 20px;background: black;float: left;margin: 12px 13px 0 0"></div>
+                <div style="width: 90px;height: 27px;font-size: 18px;float: left;margin:10px 0 0 0">户外出行&nbsp;</div>
+                <div style="width: 130px;height: 18px;font-size: 14px;float: left;margin:13px 0 0 0">OUTDOORS&nbsp;AUTOMOTIVE</div>
+            </div>
+        </div>
+        <div class="supers_content_foot">
+            <a href=""><div class="huwais_content_foot_left">
+                <div class="scfl1" >520</div>
+                <div class="scfl2" >运动大牌海货钜惠</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right1 ">
+                <div class="supers_content_foot_center_one1"></div>
+                <div class="supers_content_foot_center_two">温碧泉去角质面部全身磨砂去死皮去鸡皮</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right1">
+                <div class="supers_content_foot_center_one1"></div>
+                <div class="supers_content_foot_center_two">温碧泉去角质面部全身磨砂去死皮去鸡皮</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right1">
+                <div class="supers_content_foot_center_one1"></div>
+                <div class="supers_content_foot_center_two">温碧泉去角质面部全身磨砂去死皮去鸡皮</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right1 supers_content_foot_right1_select">
+                <div class="supers_content_foot_center_one2"></div>
+                <div class="supers_content_foot_center_two">原装进口尚牌避孕套大颗粒超博润滑安全</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right3">
+                <div class="supers_content_foot_center_one3"></div>
+                <div class="supers_content_foot_center_two">温碧泉去角质面部全身磨砂去死皮去鸡皮</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right3">
+                <div class="supers_content_foot_center_one4"></div>
+                <div class="supers_content_foot_center_two">3M思高百洁布超洁净去污耐用家用厨房清</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right3">
+                <div class="supers_content_foot_center_one5"></div>
+                <div class="supers_content_foot_center_two">温碧泉去角质面部全身磨砂去死皮去鸡皮</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right3 supers_content_foot_right1_select">
+                <div class="supers_content_foot_center_one6"></div>
+                <div class="supers_content_foot_center_two">温碧泉去角质面部全身磨砂去死皮去鸡皮</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+        </div>
+    </div>
+</div>
+<div style="width: 1348px;height: 5px;background: #f6f6f6;margin: auto;width: 1348px"></div>
+<!--猜你喜欢DIV-->
+<div style="width: 1348px;height: 80px;background: #f6f6f6;line-height: 80px;text-align: center;margin: auto;width: 1348px">-----<img src="images/inter/xin.jpg" alt="" style="margin-top: 15px">猜你喜欢-----</div>
+<!--<div class="supers">
+    <div class="supers_content">
+        <div class="supers_content_foot">
+            <a href=""><div class="supers_content_foot_right11">
+                <div class="supers_content_foot_center_one1"></div>
+                <div class="supers_content_foot_center_two">温碧泉去角质面部全身磨砂去死皮去鸡皮</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right1">
+                <div class="supers_content_foot_center_one1"></div>
+                <div class="supers_content_foot_center_two">温碧泉去角质面部全身磨砂去死皮去鸡皮</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right1">
+                <div class="supers_content_foot_center_one1"></div>
+                <div class="supers_content_foot_center_two">温碧泉去角质面部全身磨砂去死皮去鸡皮</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right1">
+                <div class="supers_content_foot_center_one1"></div>
+                <div class="supers_content_foot_center_two">温碧泉去角质面部全身磨砂去死皮去鸡皮</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right1">
+                <div class="supers_content_foot_center_one1"></div>
+                <div class="supers_content_foot_center_two">温碧泉去角质面部全身磨砂去死皮去鸡皮</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right33">
+                <div class="supers_content_foot_center_one2"></div>
+                <div class="supers_content_foot_center_two">原装进口尚牌避孕套大颗粒超博润滑安全</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right3">
+                <div class="supers_content_foot_center_one3"></div>
+                <div class="supers_content_foot_center_two">温碧泉去角质面部全身磨砂去死皮去鸡皮</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right3">
+                <div class="supers_content_foot_center_one4"></div>
+                <div class="supers_content_foot_center_two">3M思高百洁布超洁净去污耐用家用厨房清</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right3">
+                <div class="supers_content_foot_center_one5"></div>
+                <div class="supers_content_foot_center_two">温碧泉去角质面部全身磨砂去死皮去鸡皮</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+            <a href=""><div class="supers_content_foot_right3">
+                <div class="supers_content_foot_center_one6"></div>
+                <div class="supers_content_foot_center_two">温碧泉去角质面部全身磨砂去死皮去鸡皮</div>
+                <div class="supers_content_foot_center_three">￥88</div>
+            </div></a>
+        </div>
+    </div>
+</div>-->
+<div class="likes">
+<div class="likes_content">
+    <div class="likes_content_foot">
+        <a href=""><div class="likes_content_foot_right11">
+            <div class="supers_content_foot_center_one1"></div>
+            <div class="supers_content_foot_center_two">温碧泉去角质面部全身磨砂去死皮去鸡皮</div>
+            <div class="supers_content_foot_center_three">￥88</div>
+        </div></a>
+        <a href=""><div class="likes_content_foot_right1">
+            <div class="supers_content_foot_center_one1"></div>
+            <div class="supers_content_foot_center_two">温碧泉去角质面部全身磨砂去死皮去鸡皮</div>
+            <div class="supers_content_foot_center_three">￥88</div>
+        </div></a>
+        <a href=""><div class="likes_content_foot_right1">
+            <div class="supers_content_foot_center_one1"></div>
+            <div class="supers_content_foot_center_two">温碧泉去角质面部全身磨砂去死皮去鸡皮</div>
+            <div class="supers_content_foot_center_three">￥88</div>
+        </div></a>
+        <a href=""><div class="likes_content_foot_right1">
+            <div class="supers_content_foot_center_one1"></div>
+            <div class="supers_content_foot_center_two">温碧泉去角质面部全身磨砂去死皮去鸡皮</div>
+            <div class="supers_content_foot_center_three">￥88</div>
+        </div></a>
+        <a href=""><div class="likes_content_foot_right1">
+            <div class="supers_content_foot_center_one1"></div>
+            <div class="supers_content_foot_center_two">温碧泉去角质面部全身磨砂去死皮去鸡皮</div>
+            <div class="supers_content_foot_center_three">￥88</div>
+        </div></a>
+        <a href=""><div class="likes_content_foot_right33">
+            <div class="supers_content_foot_center_one1"></div>
+            <div class="supers_content_foot_center_two">温碧泉去角质面部全身磨砂去死皮去鸡皮</div>
+            <div class="supers_content_foot_center_three">￥88</div>
+        </div></a>
+        <a href=""><div class="likes_content_foot_right3">
+            <div class="supers_content_foot_center_one1"></div>
+            <div class="supers_content_foot_center_two">温碧泉去角质面部全身磨砂去死皮去鸡皮</div>
+            <div class="supers_content_foot_center_three">￥88</div>
+        </div></a>
+        <a href=""><div class="likes_content_foot_right3">
+            <div class="supers_content_foot_center_one1"></div>
+            <div class="supers_content_foot_center_two">温碧泉去角质面部全身磨砂去死皮去鸡皮</div>
+            <div class="supers_content_foot_center_three">￥88</div>
+        </div></a>
+        <a href=""><div class="likes_content_foot_right3">
+            <div class="supers_content_foot_center_one1"></div>
+            <div class="supers_content_foot_center_two">温碧泉去角质面部全身磨砂去死皮去鸡皮</div>
+            <div class="supers_content_foot_center_three">￥88</div>
+        </div></a>
+        <a href=""><div class="likes_content_foot_right3">
+            <div class="supers_content_foot_center_one1"></div>
+            <div class="supers_content_foot_center_two">温碧泉去角质面部全身磨砂去死皮去鸡皮</div>
+            <div class="supers_content_foot_center_three">￥88</div>
+        </div></a>
+    </div>
+</div>
+</div>
+<!--底部-->
+<div class="end"><img src="images/inter/end.png" alt="" width="80" height="40px"></div>
+
+<div class="o"></div>
+<!--  结束-->
+<div style="width: 1348px;margin:auto;"><div class="boxx">
+    <div class="box11-1">
+        <img src="images/inter/qitianwuliyou.jpg" alt="">
+    </div>
+    <div class="box11-2">
+        <ol>
+            <li>
+                <span>购物指南</span>
+                <a href="">免费注册</a>
+                <a href="">开通支付宝</a>
+                <a href="">支付宝充值</a>
+            </li>
+            <li>
+                <span>天猫保障</span>
+                <a href="">发票故障</a>
+                <a href="">售后规则</a>
+                <a href="">缺货赔付</a>
+            </li>
+            <li>
+                <span>支付方式</span>
+                <a href="">快捷支付</a>
+                <a href="">信用卡</a>
+                <a href="">余额宝</a>
+                <a href="">蚂蚁花呗</a>
+                <a href="">货到付款</a>
+            </li>
+            <li>
+                <span>商家服务</span>
+                <a href="">天猫规则</a>
+                <a href="">商家入驻</a>
+                <a href="">商家中心</a>
+                <a href="">天猫智库</a>
+                <a href="">物流服务</a>
+                <a href="">喵言喵语</a>
+                <a href="">运营服务</a>
+            </li>
+            <li>
+                <span>手机天猫</span>
+                <div class="box11-2-1">
+                    <img src="images/foot/tianmaoerweima.jpg" alt="">
+                </div>
+
+            </li>
+        </ol>
+    </div>
+    <div class="box11-3">
+        <img src="images/foot/catfoot.png" alt="">
+    </div >
+    <div class="box11-4">
+        <div class="box11-4_1">
+            <p>
+                <a href="">关于天猫</a>
+                <a href="">帮助中心</a>
+                <a href="">开放平台</a>
+                <a href="">诚聘英才</a>
+                <a href="">联系我们</a>
+                <a href="">网站合作</a>
+                <a href="">法律声明</a>
+                <a href="">隐私权政策</a>
+                <a href="">知识产权</a>
+                <a href="">廉政举报</a>
+                <a href="">规则意见征集</a>
+            </p>
+        </div>
+        <div class="box11-4_2">
+            <p>
+                <a href="">阿里巴巴集团</a><b>|</b>
+                <a href="">淘宝网</a><b>|</b>
+                <a href="">天猫</a><b>|</b>
+                <a href="">聚划算</a><b>|</b>
+                <a href="">全球速卖通</a><b>|</b>
+                <a href="">阿里巴巴国际交易市场</a><b>|</b>
+                <a href="">1688</a><b>|</b>
+                <a href="">阿里妈妈</a><b>|</b>
+                <a href="">飞猪</a><b>|</b>
+                <a href="">阿里云计算</a><b>|</b>
+                <a href="">ALIOS</a><b>|</b>
+                <a href="">阿里通信</a><b>|</b>
+                <a href="">万网</a><b>|</b>
+                <a href="">高德</a><b>|</b>
+                <a href="">UC</a><b>|</b>
+                <a href="">友盟</a><b>|</b>
+                <a href="">虾米</a><b>|</b>
+                <a href="">钉钉</a><b>|</b>
+                <a href="">支付宝</a>
+            </p>
+        </div>
+        <div class="box11-4_3">
+            <div class="box11-4_3-1">
+                    <span>
+                        增值电信业务经营许可证：
+                        <a href="">浙B2-20110446</a>
+                    </span>
+                <span>
+                        市场名称登记证：
+                        <a href="">工商网市字3301004119号</a>
+                    </span>
+                <span>
+                        出版物网络交易平台服务经营备案证：
+                        <a href="">新出发浙备字第001号</a>
+                    </span>
+            </div>
+            <div class="box11-4_3-2">
+                    <span>
+                        互联网违法和不良信息举报电话：
+                        <a href="">0571-81683755 blxxjb@alibaba-inc.com</a>
+                    </span>
+                <span>
+                        互联网药品信息服务资质证书编号：
+                        <a href="">浙-（经营性）-2017-0005</a>
+                    </span>
+                <span>
+                        <img src="images/foot/gonan.png" alt="">
+                        <a href="">浙公网安备 33010002000120号</a>
+                    </span>
+            </div>
+            <div class="box11-4_3-3">
+
+                    <span>
+                        医疗器械网络交易服务第三方平台备案：
+                        <a href="">（浙）网械平台备字[2018]第00002号</a>
+                    </span>
+                <span>
+                        互联网药品交易服务资格证书：
+                        <a href="">国A20150001</a>
+                    </span>
+
+            </div>
+            <div class="box11-4_3-4">
+                    <span>
+                        浙江省网络食品销售第三方平台提供者备案：：
+                        <a href="">浙网食A33010002</a>
+                    </span>
+                <span>
+
+                        <a href=""></a>
+                    </span>
+
+            </div>
+            <div class="box11-4_3-5">
+                <span> © 2003-2019 TMALL.COM版权所有</span>
+            </div>
+            <div class="box11-4_3-6">
+                <img src="images/foot/zhejiang.jpg" alt="" style="margin-right: 20px">
+                <img src="images/foot/wangluo.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</div></div>
+</body>
+</html>

@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="676066cb-05c3-4adb-bdb5-28ef9dff89e0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../XiaoMi/.idea/XiaoMi.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XiaoMi/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XiaoMi/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../XiaoMi/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2019_5_20" beforeDir="false" afterPath="$PROJECT_DIR$/../2019_5_20" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/TianMao.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/TianMao.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TianMao.html" beforeDir="false" afterPath="$PROJECT_DIR$/TianMao.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/brand1-wps图片-wps图片.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TianMao.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-224">
+              <caret line="633" column="92" selection-start-line="633" selection-start-column="92" selection-end-line="633" selection-end-column="92" />
+              <folding>
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#6;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#8;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#10;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#a#1;n#div#1;n#div#0;n#div#10;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#1;n#div#2;n#div#0;n#a#1;n#div#1;n#div#0;n#div#10;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#2;n#div#0;n#a#1;n#div#1;n#div#0;n#div#10;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#a#1;n#div#1;n#div#0;n#div#10;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#12;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#14;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#div#15;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#16;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#18;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#div#19;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#20;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#22;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#div#23;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#24;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#34670#37928#0" />
+                <element signature="n#div#0;n#div#0;n#div#25;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#div#28;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#0;n#div#0;n#div#28;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CSS/TianMao.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="1320" column="17" lean-forward="true" selection-start-line="1320" selection-start-column="17" selection-end-line="1320" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1650">
+              <caret line="66" column="46" selection-start-line="66" selection-start-column="46" selection-end-line="66" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="850">
+              <caret line="34" column="25" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2200">
+              <caret line="88" column="13" selection-start-line="88" selection-start-column="13" selection-end-line="88" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>.box11-3</find>
+      <find>.right1</find>
+      <find>pro</find>
+      <find>.e</find>
+      <find>.pro</find>
+      <find>.supers_content_foot_centerr_three</find>
+      <find>.you</find>
+      <find>.brands_content_left_foot</find>
+      <find>.o</find>
+      <find>.boxx</find>
+      <find>.box11-4</find>
+      <find>.br</find>
+      <find>.supe</find>
+      <find>.supers_content_foot_left</find>
+      <find>html</find>
+      <find>q</find>
+      <find>right11</find>
+      <find>brands</find>
+      <find>.clazz</find>
+      <find>.sup</find>
+      <find>.int</find>
+      <find>supers</find>
+      <find>.inter</find>
+      <find>.li</find>
+      <find>likes</find>
+      <find>.brands</find>
+      <find>.banners</find>
+      <find>.c</find>
+      <find>.</find>
+      <find>.cl</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>likes</replace>
+      <replace>inters</replace>
+      <replace>supers</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/images/brand1.jpg" />
+        <option value="$PROJECT_DIR$/images/brand1-wps图片.jpg" />
+        <option value="$PROJECT_DIR$/demo.html" />
+        <option value="$PROJECT_DIR$/test1.html" />
+        <option value="$PROJECT_DIR$/test.html" />
+        <option value="$PROJECT_DIR$/TianMao.html" />
+        <option value="$PROJECT_DIR$/CSS/TianMao.css" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-68" />
+    <option name="width" value="1280" />
+    <option name="height" value="728" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="TianMao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TianMao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TianMao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TianMao" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap-3.3.7-dist" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TianMao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TianMao" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap-3.3.7-dist" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WebStorm\TianMao" />
+      <recent name="D:\WebStorm\TianMao\images\super" />
+      <recent name="D:\WebStorm\TianMao\images\right_daohan" />
+      <recent name="D:\WebStorm\TianMao\images\beautis" />
+      <recent name="D:\WebStorm\TianMao\images\foot" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="676066cb-05c3-4adb-bdb5-28ef9dff89e0" name="Default Changelist" comment="" />
+      <created>1558144156344</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1558144156344</updated>
+      <workItem from="1558144157988" duration="28807000" />
+      <workItem from="1558180841291" duration="13743000" />
+      <workItem from="1558227958232" duration="16495000" />
+      <workItem from="1558246385399" duration="3755000" />
+      <workItem from="1558250283067" duration="9886000" />
+      <workItem from="1558266273027" duration="2887000" />
+      <workItem from="1558269421722" duration="91000" />
+      <workItem from="1558312607636" duration="30669000" />
+      <workItem from="1558398807781" duration="463000" />
+      <workItem from="1558504660711" duration="5714000" />
+      <workItem from="1558532941651" duration="4766000" />
+      <workItem from="1558571376754" duration="28001000" />
+      <workItem from="1558618989025" duration="6899000" />
+      <workItem from="1558626129572" duration="2198000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="154374000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15104167" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/images/banners/lunbo5_wps.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/banners/lunbo3.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/banners/lunbo4.jpg" />
+    <entry file="file://$PROJECT_DIR$/images/banners/lunbo4_wps.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/brand1.jpg" />
+    <entry file="file://$PROJECT_DIR$/images/brand1-wps图片.jpg" />
+    <entry file="file://$PROJECT_DIR$/images/LOGO/logo30.jpg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/LOGO/logo11.jpg">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/LOGO/logo11.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/banners/lunbo6.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/banners/lunbo2.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/super/3.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/inter/1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/inter/leftUP.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/inter/girl.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/inter/end.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/inter/qitianwuliyou.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/LOGO/logo15.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/banners/youjiantou.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/banners/lunbo1_wps.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/inter/huwai.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/right_daohan/520.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/right_daohan/l521.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/right_daohan/bx1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/right_daohan/car.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/super/you.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/jian.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/brand3-wps图片.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/brand2.jpg">
+      <provider selected="true" editor-type-id="images" />
+      <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/brand1-wps图片-wps图片.png" />
+    <entry file="file://$PROJECT_DIR$/images/inter/yifu.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/banners/lunbodicengshang_1.jpg">
+      <provider selected="true" editor-type-id="images" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7-dist/js/npm.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1650">
+          <caret line="66" column="46" selection-start-line="66" selection-start-column="46" selection-end-line="66" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="34" column="25" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2200">
+          <caret line="88" column="13" selection-start-line="88" selection-start-column="13" selection-end-line="88" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TianMao.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-224">
+          <caret line="633" column="92" selection-start-line="633" selection-start-column="92" selection-end-line="633" selection-end-column="92" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#6;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#8;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#10;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#a#1;n#div#1;n#div#0;n#div#10;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#1;n#div#2;n#div#0;n#a#1;n#div#1;n#div#0;n#div#10;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#2;n#div#0;n#a#1;n#div#1;n#div#0;n#div#10;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#a#1;n#div#1;n#div#0;n#div#10;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#12;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#14;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#15;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#16;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#18;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#19;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#20;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#22;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#23;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#24;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#34670#37928#0" />
+            <element signature="n#div#0;n#div#0;n#div#25;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#28;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#div#28;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS/TianMao.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="1320" column="17" lean-forward="true" selection-start-line="1320" selection-start-column="17" selection-end-line="1320" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
