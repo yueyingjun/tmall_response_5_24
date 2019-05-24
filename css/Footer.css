@@ -1,0 +1,75 @@
+.footer{
+    width:100%;
+    height:600px;
+}
+.footer .footer_one{
+    width:1280px;
+    height:185px;
+    border-bottom:1px solid rgb(245,245,245);
+    background:url("../image/footer/promise.jpg") no-repeat 0 +50px;
+    background-size: 100% 60%;
+    margin:auto;
+}
+.footer .footer_two{
+    width:100%;
+    height:470px;
+    margin:auto;
+    background:url("../image/footer/TMBottomBackground.png") no-repeat 0 +30px;
+    background-size: 100% 100%;
+}
+
+.footer_two .footer_two_abc{
+    width:1280px;
+    height:180px;
+    margin:auto;
+}
+.footer_two_abc .footer_two_abc_same{
+    width:200px;
+    height:230px;
+    float:left;
+    margin-left:50px;
+}
+.footer_two_abc_same h3{
+    font-weight:bolder;
+}
+.footer_two_abc_same p{
+    font-size:15px;
+    color:darkgrey;
+    cursor:pointer;
+}
+.footer_two_abc_same .phone{
+    width:100px;
+    height:100px;
+    background: url("../image/footer/PhoneTM.png") no-repeat 0 0;
+    background-size: 100% 100%;
+}
+.footer_two_abc_same .cat{
+    width:130px;
+    height:70px;
+    background: url("../image/footer/cat.png") no-repeat 0 0;
+    background-size: 100% 100%;
+}
+.footer_two .footer_two_abc2{
+    width:1280px;
+    height:280px;
+    margin:auto;
+    background-color:black;
+    padding-top:10px;
+}
+.footer_two_abc2 p{
+    color:white;
+    font-size:15px;
+
+}
+.footer_two_abc2 .bb p{
+    font-size:10px;
+    color:grey;
+}
+@media screen and (max-width:1070px){
+    .footer .footer_one,.footer_two .footer_two_abc{
+        width:1070px;
+    }
+    .footer_two_abc .footer_two_abc_same{
+        width:150px;
+    }
+}
