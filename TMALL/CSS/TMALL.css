@@ -1,0 +1,2496 @@
+body{
+    padding: 0;
+    margin: auto auto;
+}
+/*-----------------------------------顶部导航-------------------------------------*/
+.direct{
+    width: 100%;height: 42px;background-color: #F9919D;
+    position: relative;margin: auto auto;
+}
+.direct-leftandright{
+    width: 1260px;height: 40px;margin: auto auto;
+}
+.direct-left{
+    width: 240px;height: 40px;
+    margin-left: 30px;float: left;
+}
+.direct-left-one{
+    width: 84px;height: 40px;line-height: 40px;
+    font-size: 12px;color: white;
+}
+.direct-left-two{
+    width: 66px;height: 16px;line-height: 40px;
+    font-size: 12px;color: white;
+    padding: 0px 10px 0px 10px;text-decoration: none;
+}
+.direct-left-three{
+    width: 68px;height: 16px;line-height: 40px;
+    font-size: 12px;color: white;
+    padding: 0px 0px 0px 10px;text-decoration: none;
+}
+.direct-left a:hover{
+    cursor: pointer;
+}
+.direct-right{
+    width: 550px;height: 40px;
+    font-size: 12px;color: white;
+    text-decoration: none;
+}
+/*-----------------------------------顶部导航响应式-----------------------------------*/
+@media screen and (min-width: 900px){
+    .direct-right{
+        margin-left: 450px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .direct-right{
+        margin-left: 720px;
+    }
+}
+/*-----------------------------------顶部导航响应式-----------------------------------*/
+.direct-right a{
+    font-size: 12px;color: white;
+    text-decoration: none;
+}
+.direct-right-one{
+    width: 50px;height: 42px;
+    margin-left: 5px;line-height: 42px;
+    float: left;
+}
+.direct-right-one:hover a{
+    color:red;text-decoration:underline red;
+}
+.direct-right-one:hover{
+    background-color: white;
+}
+.direct-right-sanjiao1{
+    width: 10px;height: 10px;
+    float: left;margin-top: 16px;margin-left: 1px;
+}
+.direct-right-sanjiao1-logo{
+    width: 0;height: 0;float: left;
+    border-top: 6px solid darkgrey;
+    border-left: 3px solid #F9919D;
+    border-right: 3px solid #F9919D;
+    margin-left: 1px;margin-top: 3px;
+}
+.direct-right-two{
+    width: 60px;height: 42px;
+    margin-left: 5px;
+    float: left;padding-left: 20px;line-height: 42px;
+    background: url("../Image/gouwuchelogo.png") no-repeat left;
+}
+.direct-right-two a:hover{
+    color: yellow;
+}
+.direct-right-three{
+    width: 40px;height: 42px;line-height: 42px;
+    margin-left: 15px;
+    float: left;
+}
+.direct-right-three:hover a{
+    color:red;text-decoration:underline red;
+}
+.direct-right-three:hover{
+    background-color: white;
+}
+.direct-right-sanjiao2{
+    width: 10px;height: 10px;
+    float: left;margin-top: 16px;margin-left: 1px;
+}
+.direct-right-sanjiao2-logo{
+    width: 0;height: 0;float: left;
+    border-top: 6px solid darkgrey;
+    border-left: 3px solid #F9919D;
+    border-right: 3px solid #F9919D;
+    margin-left: 1px;margin-top: 3px;
+}
+.direct-right-four{
+    width: 10px;height: 18px;line-height: 40px;
+    color: darkgrey;font-size: 18px;float: left;margin-left: 10px;margin-right: 10px;
+}
+.direct-right-five{
+    width: 40px;height: 42px;margin-left: 0px;line-height: 42px;
+    float: left;padding-left: 18px;line-height: 42px;
+    background: url("../Image/phonelogo.png") no-repeat left;
+}
+.direct-right-five a:hover{
+    color: yellow;
+}
+.direct-right-six{
+    width: 40px;height: 42px;line-height:42px;margin-left: 15px;
+    float: left;
+}
+.direct-right-six a:hover{
+    color: yellow;
+}
+.direct-right-seven{
+    width: 50px;height: 42px;line-height: 42px;
+    margin-left: 15px;
+    float: left;
+}
+.direct-right-seven:hover a{
+    color:red;text-decoration:underline red;
+}
+.direct-right-seven:hover{
+    background-color: white;
+}
+.direct-right-sanjiao3{
+    width: 10px;height: 10px;
+    float: left;margin-top: 16px;margin-left: 1px;
+}
+.direct-right-sanjiao3-logo{
+    width: 0;height: 0;float: left;
+    border-top: 6px solid darkgrey;
+    border-left: 3px solid #F9919D;
+    border-right: 3px solid #F9919D;
+    margin-left: 1px;margin-top: 3px;
+}
+.direct-right-eight{
+    width: 50px;height: 42px;line-height: 42px;
+    margin-left: 15px;
+    float: left;padding-left: 22px;line-height: 42px;
+    background: url("../Image/daohanglogo.png") no-repeat left;
+}
+.direct-right-eight a:hover{
+    color: yellow;
+}
+.direct-right-sanjiao4{
+    width: 10px;height: 10px;
+    float: left;margin-top: 17px;margin-left: 1px;
+}
+.direct-right-sanjiao4-logo{
+    width: 0;height: 0;float: left;
+    border-top: 6px solid darkgrey;
+    border-left: 3px solid #F9919D;
+    border-right: 3px solid #F9919D;
+    margin-left: 1px;margin-top: 3px;
+}
+/*-----------------------------------顶部搜索框-----------------------------------*/
+.tmall-selectbox{
+    width: 100%;height: 130px;margin:auto auto;
+}
+.tmall-select{
+    width: 1242px;height: 130px;margin: auto auto;
+}
+.tmall-select-tmalllogo{
+    width: 240px;height: 100%;
+    background: url("../Image/tianmaologo.png") no-repeat;
+    background-size: 100%;float: left;
+}
+.tmall-select-tmallsousuo{
+    width: 630px;height: 106px;float: left;
+    margin-left: 100px;
+}
+.tmall-select-tmallsousuo-one{
+    width: 430px;height: 40px;margin-top: 35px;
+    background: red;position: relative;
+}
+.tmall-select-tmallsousuo-one-white{
+    width: 290px;height: 34px;
+    position: absolute;left: 3px;top: 3px;
+    background: white;padding-left: 5px;
+    font-size: 14px;font-family: 宋体;line-height: 34px;
+}
+.tmall-select-tmallsousuo-one-text{
+    width: 50px;height: 20px;
+    position: absolute;left: 340px;top: 6px;
+}
+/*-----------------------------------顶部搜索框响应式-----------------------------------*/
+@media screen and (min-width: 900px){
+    .tmall-select-tmallsousuo-one{
+        width: 430px;
+    }
+    .tmall-select-tmallsousuo-one-white{
+        width: 290px;
+    }
+    .tmall-select-tmallsousuo-one-text{
+        position: absolute;left: 340px;top: 6px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .tmall-select-tmallsousuo-one{
+        width: 630px;
+    }
+    .tmall-select-tmallsousuo-one-white{
+        width: 490px;
+    }
+    .tmall-select-tmallsousuo-one-text{
+        position: absolute;left: 540px;top: 6px;
+    }
+}
+/*-----------------------------------顶部搜索框响应式-----------------------------------*/
+.tmall-select-tmallsousuo-one-text a{
+    text-decoration: none;font-size: 18px;
+    font-family: 微软雅黑;color: white;
+}
+.tmall-select-tmallsousuo-two{
+    width: 630px;height: 20px;margin-top: 5px;
+    font-size: 14px;font-family: 宋体;
+}
+.tmall-select-tmallsousuo-two a{
+    text-decoration: none;color: #999999;
+}
+/*-----------------------------------右部导航栏-----------------------------------*/
+.tmall-right-direct{
+    width: 35px;height: 700px;
+    position: fixed;right: 0px;top:40px;
+}
+.tmall-right-direct-one{
+    width: 35px;height: 72px;margin-top: -41px;
+    background-color: #f9919d;
+}
+.tmall-right-direct-two{
+    width: 35px;
+    height: 170px;
+    background:url("../Image/rightdaohang1.png") no-repeat;
+    background-size:100% 110%;
+}
+.tmall-right-direct-three{
+    width: 35px;
+    height: 50px;
+    background-color: #f9919d;
+    text-align: center;
+    line-height: 80px;
+    font-size: 12px;
+    background-size: 35px 30px;
+    cursor: pointer;
+}
+.tmall-right-direct-three-symbol{
+    width: 35px;
+    height: 30px;
+    float: right;
+    margin:10px 0px 10px 0px;
+    background: url("../Image/TBDirect.png") no-repeat;
+}
+.tmall-right-direct-three a{
+    color:white;
+    margin: 0px 0px 0px -65px;
+    text-decoration: none;
+}
+.tmall-right-direct-four{
+    width: 35px;
+    height: 450px;
+    background-color: black;
+}
+.tmall-right-direct-icon1{
+    cursor: pointer;
+    width: 35px;height: 35px;
+    background: url("../Image/smalllogo.png") no-repeat;
+}
+.tmall-right-direct-icon1:hover{
+    background-color: red;
+}
+.tmall-right-direct-icon2{
+    width: 35px;
+    height: 60px;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    cursor: pointer;
+    border-top: 1px solid #555152;
+    border-bottom: 1px solid #555152;
+}
+.tmall-right-direct-icon2:hover{
+    background-color: red;
+}
+.tmall-right-direct-icon3{
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    margin-top: 5px;
+    background: url("../Image/money.png") no-repeat;
+}
+.tmall-right-direct-icon3:hover{
+    background-color: red;
+}
+.tmall-right-direct-icon4{
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    margin-top: 5px;
+    background: url("../Image/collect.png") no-repeat;
+}
+.tmall-right-direct-icon4:hover{
+    background-color: red;
+}
+.tmall-right-direct-icon5{
+    cursor: pointer;
+    width: 35px;
+    margin-top: 5px;
+    height: 35px;
+    background: url("../Image/clock.png") no-repeat;
+}
+.tmall-right-direct-icon5:hover{
+    background-color: red;
+}
+.tmall-right-direct-icon6{
+    cursor: pointer;
+    width: 35px;
+    margin-top: 5px;
+    height: 35px;
+    background: url("../Image/addmoney.png") no-repeat;
+}
+.tmall-right-direct-icon6:hover{
+    background-color: red;
+}
+.tmall-right-direct-icon7{
+    cursor: pointer;
+    width: 35px;
+    margin-top:5px;
+    height: 35px;
+    background: url("../Image/rightwrite.png") no-repeat;
+}
+.tmall-right-direct-icon7:hover{
+    background-color: red;
+}
+.tmall-right-direct-icon8{
+    cursor: pointer;
+    width: 35px;
+    margin-top:5px;
+    height: 35px;
+    background: url("../Image/twocode.png") no-repeat;
+}
+.tmall-right-direct-icon8:hover{
+    background-color: red;
+}
+.tmall-right-direct-icon9{
+    cursor: pointer;
+    width: 35px;
+    margin-top: 5px;
+    height: 35px;
+    background: url("../Image/top.png") no-repeat;
+}
+.tmall-right-direct-icon9:hover{
+    background-color: red;
+}
+/*-----------------------------------天猫的经营分店-----------------------------------*/
+.tmall-kinds{
+    width: 100%;height:40px;margin: auto auto;
+}
+.tmall-companys{
+    width: 1200px;height: 40px;margin: auto auto;
+}
+.tmall-companys-one{
+    width: 100px;height: 40px;line-height: 40px;
+    float: left;background: #C60A0A;color: white;text-align: center;
+}
+.tmall-companys-two{
+    width: 100px;height: 40px;line-height: 40px;
+    float: left;background: #555152;color: white;text-align: center;
+}
+.tmall-companys-three{
+    width: 120px;height: 38px;line-height: 38px;
+    float: left;background:url("../Image/tmallsumarket.png") no-repeat center;
+    border-bottom: 2px solid red;
+}
+.tmall-companys-four{
+    width: 120px;height: 38px;line-height: 38px;
+    float: left;background:url("../Image/tmallcontry.png") no-repeat center;
+    border-bottom: 2px solid red;
+}
+.tmall-companys-five{
+    width: 80px;height: 38px;line-height: 38px;
+    float: left;border-bottom: 2px solid red;
+}
+.tmall-companys-six{
+    width: 65px;height: 38px;line-height: 38px;
+    float: left;border-bottom: 2px solid red;
+}
+.tmall-companys a{
+    text-decoration: none;
+    color: black;
+}
+.tmall-companys a:hover{
+    color: red;
+}
+/*-----------------------------------左部导航-----------------------------------*/
+.left-direct{
+    z-index: 4;margin: auto auto;
+    width:40px;height:400px;
+    position: fixed;left:2%;top:220px;
+}
+/*-----------------------------------左部导航响应式-----------------------------------*/
+@media screen and (min-width: 900px){
+    .left-direct{
+        display: none;
+    }
+}
+@media screen and (min-width: 1200px){
+    .left-direct{
+        display: block;
+    }
+}
+/*-----------------------------------左部导航响应式-----------------------------------*/
+.left-direct-part{
+    width:40px;height:40px;
+    border-bottom:1px #ffffff solid;
+    text-align: center;line-height: 20px;
+    background: rgba(0,0,0,0.6);
+    color:#ffffff;font-size: 13px;
+}
+.left-direct-active{
+    background: red;
+}
+.left-direct-part:hover{
+    cursor: pointer;
+    background:#f9919d;
+}
+.left-direct-active:hover{
+    cursor: pointer;
+    background: rgba(0,0,0,0.2);
+}
+/*-----------------------------------大背景 包括轮播图 会场-----------------------------------*/
+.bigbackground{
+    width: 100%;height: 1000px;margin: auto auto;
+    background: url("../Image/background.png") no-repeat center;
+}
+.bigbackground-top{
+    width:1200px ;height: 500px;
+    margin:auto auto;
+    position: relative;
+}
+.bigbackground-top-left{
+    width: 200px;height: 500px;background-color: rgba(0,0,0,0.7);
+    float: left;z-index: 111!important;
+    position: absolute;left: 0;top: 0;
+}
+.bigbackground-top-left-list{
+    width: 200px;height: 400px;
+    margin-top: 30px;
+}
+.bigbackground-top-left-list a{
+    display: block;padding:7px 25px 7px 60px;width: 60px;height: 15px;
+    color: #ffffff;text-decoration: none;
+    border: 1px solid #c80000;
+    margin: auto;margin-top: 14px;
+    border-radius: 10px;line-height: 15px;
+    font-size: 14px;background: url("../Image/twocode.png") no-repeat;
+    background-position: 26px,6px;
+}
+.bigbackground-top-left-list a:hover{
+    background-color: #c80000;
+}
+/*-----------------------------------轮播图-----------------------------------*/
+.bigbackground-top-right{
+    width: 900px;height: 500px;
+    float: left;margin-left: 50px;margin-top: 0px;
+    position: relative;overflow: hidden;
+}
+/*-----------------------------------轮播图响应式-----------------------------------*/
+@media screen and (min-width: 900px){
+    .bigbackground-top-right{
+        width: 900px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .bigbackground-top-right{
+        width: 1150px;
+    }
+}
+/*-----------------------------------轮播图响应式-----------------------------------*/
+.bigbackground-top-right-banner1{
+    width: 100%;height: 100%;
+    position: absolute;left: 0;top:0px;
+    background: url("../Image/lunbo1.jpg") no-repeat right;
+}
+.bigbackground-top-right-banner2{
+    width: 100%;height: 100%;
+    position: absolute;left:0;top:0px;
+    background: url("../Image/lunbo2.jpg") no-repeat right;
+}
+.bigbackground-top-right-banner3{
+    width: 100%;height: 100%;
+    position: absolute;left:0;top:0px;
+    background: url("../Image/lunbo3.jpg") no-repeat right;
+}
+.bigbackground-top-right-banner4{
+    width: 100%;height: 100%;
+    position: absolute;left:0;top:0px;
+    background: url("../Image/lunbo4.jpg") no-repeat right;
+}
+.bigbackground-top-right-banner5{
+    width: 100%;height: 100%;
+    position: absolute;left:0;top:0px;
+    background: url("../Image/lunbo5.jpg") no-repeat right;
+}
+.bigbackground-top-right-banner6{
+    width: 100%;height: 100%;
+    position: absolute;left:0;top:0px;
+    background: url("../Image/lunbo6.jpg") no-repeat right;
+}
+.bigbackground-top-right-banner7{
+    width: 100%;height: 100%;
+    position: absolute;left:0;top:0px;
+    background: url("../Image/lunbo7.jpg") no-repeat right;
+}
+.bigbackground-top-right-banner8{
+    width: 100%;height: 100%;
+    position: absolute;left:0;top:0px;
+    background: url("../Image/lunbo8.jpg") no-repeat right;
+}
+.bigbackground-top-right-bots{
+    position: absolute;left: 450px;top: 480px;
+    width: 280px;height: 10px;
+    z-index: 10;float: left;
+}
+.bigbackground-top-right-bots-btn1{
+    width: 25px;height: 4px;
+    background-color: #000000;
+    position: absolute;left: 5px;top:2px;
+}
+.bigbackground-top-right-bots-btn2{
+    width: 25px;height: 4px;
+    background-color: #000000;
+    position: absolute;left: 40px;top:2px;
+}
+.bigbackground-top-right-bots-btn3{
+    width: 25px;height: 4px;
+    background-color: #000000;
+    position: absolute;left: 75px;top:2px;
+}
+.bigbackground-top-right-bots-btn4{
+    width: 25px;height: 4px;
+    background-color: #000000;
+    position: absolute;left: 110px;top:2px;
+}
+.bigbackground-top-right-bots-btn5{
+    width: 25px;height: 4px;
+    background-color: #000000;
+    position: absolute;left: 145px;top:2px;
+}
+.bigbackground-top-right-bots-btn6{
+    width: 25px;height: 4px;
+    background-color: #000000;
+    position: absolute;left: 180px;top:2px;
+}
+.bigbackground-top-right-bots-btn7{
+    width: 25px;height: 4px;
+    background-color: #000000;
+    position: absolute;left: 215px;top:2px;
+}
+.bigbackground-top-right-bots-btn8{
+    width: 25px;height: 4px;
+    background-color: #000000;
+    position: absolute;left: 250px;top:2px;
+}
+.bigbackground-top-right-bots-btn1-select{
+    background-color: white;
+}
+.bigbackground-mid{
+    width:100%;height: 120px;
+    margin:auto auto;background: url("../Image/mid520.png") no-repeat center;
+}
+/*-----------------------------------品牌活动-----------------------------------*/
+.bigbackground-bottom{
+    width:960px ;height: 374px;
+    margin:auto auto;overflow: hidden;
+}
+/*-----------------------------------品牌活动响应式-----------------------------------*/
+@media screen and (min-width: 900px){
+    .bigbackground-bottom{
+        width: 1000px;
+    }
+    .bigbackground-bottom-one{
+        display: none;
+    }
+}
+@media screen and (min-width: 1200px){
+    .bigbackground-bottom{
+        width: 1200px;
+    }
+    .bigbackground-bottom-one{
+        display: block;
+    }
+}
+/*-----------------------------------品牌活动响应式-----------------------------------*/
+.bigbackground-bottom span{
+    font-size: 18px;font-family: 微软雅黑;
+}
+.bigbackground-bottom-one{
+    width: 235px;height: 100%;
+    float: left;
+}
+.bigbackground-bottom-one-top{
+    width: 100%;height: 54px;;
+    background-color: white;
+}
+.bigbackground-bottom-one-top-left-one{
+    width:75px;height:100%;float: left;
+    line-height: 54px;margin-left: 5px;
+}
+.bigbackground-bottom-one-top-left-two{
+    width: 120px;height:100%;
+    float: left;
+    line-height: 54px;padding-left: 4px;
+}
+.bigbackground-bottom-one-top-right{
+    width:20px;height: 20px;float: right;
+    margin-top: 18px;margin-right: 10px;
+    background:url("../Image/pinpaigengduo.png") no-repeat center;
+    background-size: 100%;
+}
+.bigbackground-bottom-one-bottom{
+    width: 100%;height: 320px;
+    background: url("../Image/pinpaishangou.jpg") no-repeat center;
+    background-size: 100%;
+}
+.bigbackground-bottom-two{
+    width: 480px;height: 100%;
+    float: left;margin-left: 5px;
+}
+.bigbackground-bottom-two-top{
+    width: 100%;height: 54px;
+    background-color: white;
+}
+.bigbackground-bottom-two-top-left-one{
+    width:57px;height:100%;float: left;
+    line-height: 54px;margin-left: 5px;
+}
+.bigbackground-bottom-two-top-left-two{
+    width: 160px;height:100%;
+    float: left;
+    line-height: 54px;padding-left: 4px;
+}
+.bigbackground-bottom-two-bottom{
+    width: 100%;height: 320px;
+    background: url("../Image/jumingpin.jpg") no-repeat center;
+    background-size: 100%;
+}
+.bigbackground-bottom-three{
+    width: 475px;height: 100%;
+    float: left;margin-left: 5px;
+}
+.bigbackground-bottom-three-top{
+    width: 100%;height: 54px;
+    background-color: white;
+}
+.bigbackground-bottom-three-bottom{
+    width: 100%;height: 320px;
+    background: url("../Image/pinpaihuodong.jpg") no-repeat top;
+    background-size: 100%;
+}
+/*-----------------------------------全页面最大的颜色背景图-----------------------------------*/
+.maxground{
+    width: 100%;height: 11900px;
+    background-color: #F9F9F9;margin: auto auto;
+}
+/*-----------------------------------品牌logo-----------------------------------*/
+.maxground-pinpais{
+    width: 1000px;height: 330px;overflow: hidden;
+    margin:auto auto;margin-top: 20px;
+}
+/*-------------------------------品牌墙响应式代码-------------------------------*/
+@media screen and(min-width: 1000px) {
+    .maxground-pinpais{
+        width: 1000px;
+    }
+    .maxground-pinpais-pinpailogo1{
+        display: none;
+    }
+    .maxground-pinpais-pinpailogo2{
+        display: none;
+    }
+    .maxground-pinpais-pinpailogo11{
+        display: none;
+    }
+    .maxground-pinpais-pinpailogo12{
+        display: none;
+    }
+    .maxground-pinpais-pinpailogo21{
+        display: none;
+    }
+    .maxground-pinpais-pinpailogo22{
+        display: none;
+    }
+}
+@media screen and(min-width: 1200px) {
+    .maxground-pinpais{
+        width: 1200px;
+    }
+    .maxground-pinpais-pinpailogo1{
+        display: block;
+    }
+    .maxground-pinpais-pinpailogo2{
+        display: block;
+    }
+    .maxground-pinpais-pinpailogo11{
+        display: block;
+    }
+    .maxground-pinpais-pinpailogo12{
+        display: block;
+    }
+    .maxground-pinpais-pinpailogo21{
+        display: block;
+    }
+    .maxground-pinpais-pinpailogo22{
+        display: block;
+    }
+}
+/*-------------------------------品牌墙响应式代码-------------------------------*/
+.maxground-pinpais-pinpailogo-replace{
+    display: none;
+}
+.maxground-pinpais-pinpailogo1{
+    width: 119px;height: 110px;float: left;cursor: pointer;
+    background-size: 100%;border-bottom: 1px solid #F9F9F9;border-right: 1px solid #F9F9F9;
+    background-color: white;
+    background: url("../Image/brand1.png") no-repeat center;background-size: 119px 110px;
+}
+.maxground-pinpais-pinpailogo2{
+    width: 119px;height: 110px;float: left;cursor: pointer;
+    background-size: 100%;border-bottom: 1px solid #F9F9F9;border-right: 1px solid #F9F9F9;
+    background-color: white;
+    background: url("../Image/brand2.png") no-repeat center;background-size: 119px 110px;
+}
+.maxground-pinpais-pinpailogo3{
+    width: 119px;height: 110px;float: left;cursor: pointer;
+    background-size: 100%;border-bottom: 1px solid #F9F9F9;border-right: 1px solid #F9F9F9;
+    background-color: white;
+    background: url("../Image/brand3.png") no-repeat center;background-size: 119px 110px;
+}
+.maxground-pinpais-pinpailogo4{
+    width: 119px;height: 110px;float: left;cursor: pointer;
+    background-size: 100%;border-bottom: 1px solid #F9F9F9;border-right: 1px solid #F9F9F9;
+    background-color: white;
+    background: url("../Image/brand4.png") no-repeat center;background-size: 119px 110px;
+}
+.maxground-pinpais-pinpailogo5{
+    width: 119px;height: 110px;float: left;cursor: pointer;
+    background-size: 100%;border-bottom: 1px solid #F9F9F9;border-right: 1px solid #F9F9F9;
+    background-color: white;
+    background: url("../Image/brand5.png") no-repeat center;background-size: 119px 110px;
+}
+.maxground-pinpais-pinpailogo6{
+    width: 119px;height: 110px;float: left;cursor: pointer;
+    background-size: 100%;border-bottom: 1px solid #F9F9F9;border-right: 1px solid #F9F9F9;
+    background-color: white;
+    background: url("../Image/brand6.png") no-repeat center;background-size: 119px 110px;
+}
+.maxground-pinpais-pinpailogo7{
+    width: 119px;height: 110px;float: left;cursor: pointer;
+    background-size: 100%;border-bottom: 1px solid #F9F9F9;border-right: 1px solid #F9F9F9;
+    background-color: white;
+    background: url("../Image/brand7.png") no-repeat center;background-size: 119px 110px;
+}
+.maxground-pinpais-pinpailogo8{
+    width: 119px;height: 110px;float: left;cursor: pointer;
+    background-size: 100%;border-bottom: 1px solid #F9F9F9;border-right: 1px solid #F9F9F9;
+    background-color: white;
+    background: url("../Image/brand8.png") no-repeat center;background-size: 119px 110px;
+}
+.maxground-pinpais-pinpailogo9{
+    width: 119px;height: 110px;float: left;cursor: pointer;
+    background-size: 100%;border-bottom: 1px solid #F9F9F9;border-right: 1px solid #F9F9F9;
+    background-color: white;
+    background: url("../Image/brand9.png") no-repeat center;background-size: 119px 110px;
+}
+.maxground-pinpais-pinpailogo10{
+    width: 119px;height: 110px;float: left;cursor: pointer;
+    background-size: 100%;border-bottom: 1px solid #F9F9F9;
+    background: url("../Image/brand10.png") no-repeat center;background-size: 119px 110px;
+}
+.maxground-pinpais-pinpailogo11{
+    width: 119px;height: 110px;float: left;cursor: pointer;
+    background-size: 100%;border-bottom: 1px solid #F9F9F9;border-right: 1px solid #F9F9F9;
+    background-color: white;
+    background: url("../Image/brand11.png") no-repeat center;background-size: 119px 110px;
+}
+.maxground-pinpais-pinpailogo12{
+    width: 119px;height: 110px;float: left;cursor: pointer;
+    background-size: 100%;border-bottom: 1px solid #F9F9F9;border-right: 1px solid #F9F9F9;
+    background-color: white;
+    background: url("../Image/brand12.png") no-repeat center;background-size: 119px 110px;
+}
+.maxground-pinpais-pinpailogo13{
+    width: 119px;height: 110px;float: left;cursor: pointer;
+    background-size: 100%;border-bottom: 1px solid #F9F9F9;border-right: 1px solid #F9F9F9;
+    background-color: white;
+    background: url("../Image/brand13.png") no-repeat center;background-size: 119px 110px;
+}
+.maxground-pinpais-pinpailogo14{
+    width: 119px;height: 110px;float: left;cursor: pointer;
+    background-size: 100%;border-bottom: 1px solid #F9F9F9;border-right: 1px solid #F9F9F9;
+    background-color: white;
+    background: url("../Image/brand14.png") no-repeat center;background-size: 119px 110px;
+}
+.maxground-pinpais-pinpailogo15{
+    width: 119px;height: 110px;float: left;cursor: pointer;
+    background-size: 100%;border-bottom: 1px solid #F9F9F9;border-right: 1px solid #F9F9F9;
+    background-color: white;
+    background: url("../Image/brand15.png") no-repeat center;background-size: 119px 110px;
+}
+.maxground-pinpais-pinpailogo16{
+    width: 119px;height: 110px;float: left;cursor: pointer;
+    background-size: 100%;border-bottom: 1px solid #F9F9F9;border-right: 1px solid #F9F9F9;
+    background-color: white;
+    background: url("../Image/brand16.png") no-repeat center;background-size: 119px 110px;
+}
+.maxground-pinpais-pinpailogo17{
+    width: 119px;height: 110px;float: left;cursor: pointer;
+    background-size: 100%;border-bottom: 1px solid #F9F9F9;border-right: 1px solid #F9F9F9;
+    background-color: white;
+    background: url("../Image/brand17.png") no-repeat center;background-size: 119px 110px;
+}
+.maxground-pinpais-pinpailogo18{
+    width: 119px;height: 110px;float: left;cursor: pointer;
+    background-size: 100%;border-bottom: 1px solid #F9F9F9;border-right: 1px solid #F9F9F9;
+    background-color: white;
+    background: url("../Image/brand18.png") no-repeat center;background-size: 119px 110px;
+}
+.maxground-pinpais-pinpailogo19{
+    width: 119px;height: 110px;float: left;cursor: pointer;
+    background-size: 100%;border-bottom: 1px solid #F9F9F9;border-right: 1px solid #F9F9F9;
+    background-color: white;
+    background: url("../Image/brand19.png") no-repeat center;background-size: 119px 110px;
+}
+.maxground-pinpais-pinpailogo20{
+    width: 119px;height: 110px;float: left;cursor: pointer;
+    background-size: 100%;border-bottom: 1px solid #F9F9F9;
+    background: url("../Image/brand20.png") no-repeat center;background-size: 119px 110px;
+}
+.maxground-pinpais-pinpailogo21{
+    width: 119px;height: 110px;float: left;cursor: pointer;
+    background-size: 100%;border-bottom: 1px solid #F9F9F9;border-right: 1px solid #F9F9F9;
+    background-color: white;
+    background: url("../Image/brand21.png") no-repeat center;background-size: 119px 110px;
+}
+.maxground-pinpais-pinpailogo22{
+    width: 119px;height: 110px;float: left;cursor: pointer;
+    background-size: 100%;border-bottom: 1px solid #F9F9F9;border-right: 1px solid #F9F9F9;
+    background-color: white;
+    background: url("../Image/brand22.png") no-repeat center;background-size: 119px 110px;
+}
+.maxground-pinpais-pinpailogo23{
+    width: 119px;height: 110px;float: left;cursor: pointer;
+    background-size: 100%;border-bottom: 1px solid #F9F9F9;border-right: 1px solid #F9F9F9;
+    background-color: white;
+    background: url("../Image/brand23.png") no-repeat center;background-size: 119px 110px;
+}
+.maxground-pinpais-pinpailogo24{
+    width: 119px;height: 110px;float: left;cursor: pointer;
+    background-size: 100%;border-bottom: 1px solid #F9F9F9;border-right: 1px solid #F9F9F9;
+    background-color: white;
+    background: url("../Image/brand24.png") no-repeat center;background-size: 119px 110px;
+}
+.maxground-pinpais-pinpailogo25{
+    width: 119px;height: 110px;float: left;cursor: pointer;
+    background-size: 100%;border-bottom: 1px solid #F9F9F9;border-right: 1px solid #F9F9F9;
+    background-color: white;
+    background: url("../Image/brand25.png") no-repeat center;background-size: 119px 110px;
+}
+.maxground-pinpais-pinpailogo26{
+    width: 119px;height: 110px;float: left;cursor: pointer;
+    background-size: 100%;border-bottom: 1px solid #F9F9F9;border-right: 1px solid #F9F9F9;
+    background-color: white;
+    background: url("../Image/brand26.png") no-repeat center;background-size: 119px 110px;
+}
+.maxground-pinpais-pinpailogo27{
+    width: 119px;height: 110px;float: left;cursor: pointer;
+    background-size: 100%;border-bottom: 1px solid #F9F9F9;border-right: 1px solid #F9F9F9;
+    background-color: white;
+    background: url("../Image/brand27.png") no-repeat center;background-size: 119px 110px;
+}
+.maxground-pinpais-pinpailogo28{
+    width: 119px;height: 110px;float: left;cursor: pointer;
+    background-size: 100%;border-bottom: 1px solid #F9F9F9;border-right: 1px solid #F9F9F9;
+    background-color: white;
+    background: url("../Image/brand28.png") no-repeat center;background-size: 119px 110px;
+}
+.maxground-pinpais-pinpailogo29{
+    width: 119px;height: 110px;float: left;cursor: pointer;
+    background-size: 100%;border-bottom: 1px solid #F9F9F9;border-right: 1px solid #F9F9F9;
+    background-color: white;
+    background: url("../Image/brand29.png") no-repeat center;background-size: 119px 110px;
+}
+.maxground-pinpais-pinpailogo30{
+    width: 119px;height: 110px;float: left;cursor: pointer;
+    background-size: 100%;border-bottom: 1px solid #F9F9F9;
+    background: url("../Image/brand30.png") no-repeat center;background-size: 119px 110px;
+}
+.maxground-pinpais-pinpailogo1:hover .maxground-pinpais-pinpailogo-replace{
+    display: block;z-index: 3;text-align: center;
+    line-height: 15px;width:119px;height:70px;
+    float:left;color:#ffffff;font-size: 10px;padding-top: 40px;
+    position: relative;background: rgba(0,0,0,0.8);
+}
+.maxground-pinpais-pinpailogo2:hover .maxground-pinpais-pinpailogo-replace{
+    display: block;z-index: 3;text-align: center;
+    line-height: 15px;width:119px;height:70px;
+    float:left;color:#ffffff;font-size: 10px;padding-top: 40px;
+    position: relative;background: rgba(0,0,0,0.8);
+}
+.maxground-pinpais-pinpailogo3:hover .maxground-pinpais-pinpailogo-replace{
+    display: block;z-index: 3;text-align: center;
+    line-height: 15px;width:119px;height:70px;
+    float:left;color:#ffffff;font-size: 10px;padding-top: 40px;
+    position: relative;background: rgba(0,0,0,0.8);
+}
+.maxground-pinpais-pinpailogo4:hover .maxground-pinpais-pinpailogo-replace{
+    display: block;z-index: 3;text-align: center;
+    line-height: 15px;width:119px;height:70px;
+    float:left;color:#ffffff;font-size: 10px;padding-top: 40px;
+    position: relative;background: rgba(0,0,0,0.8);
+}
+.maxground-pinpais-pinpailogo5:hover .maxground-pinpais-pinpailogo-replace{
+    display: block;z-index: 3;text-align: center;
+    line-height: 15px;width:119px;height:70px;
+    float:left;color:#ffffff;font-size: 10px;padding-top: 40px;
+    position: relative;background: rgba(0,0,0,0.8);
+}
+.maxground-pinpais-pinpailogo6:hover .maxground-pinpais-pinpailogo-replace{
+    display: block;z-index: 3;text-align: center;
+    line-height: 15px;width:119px;height:70px;
+    float:left;color:#ffffff;font-size: 10px;padding-top: 40px;
+    position: relative;background: rgba(0,0,0,0.8);
+}
+.maxground-pinpais-pinpailogo7:hover .maxground-pinpais-pinpailogo-replace{
+    display: block;z-index: 3;text-align: center;
+    line-height: 15px;width:119px;height:70px;
+    float:left;color:#ffffff;font-size: 10px;padding-top: 40px;
+    position: relative;background: rgba(0,0,0,0.8);
+}
+.maxground-pinpais-pinpailogo8:hover .maxground-pinpais-pinpailogo-replace{
+    display: block;z-index: 3;text-align: center;
+    line-height: 15px;width:119px;height:70px;
+    float:left;color:#ffffff;font-size: 10px;padding-top: 40px;
+    position: relative;background: rgba(0,0,0,0.8);
+}
+.maxground-pinpais-pinpailogo9:hover .maxground-pinpais-pinpailogo-replace{
+    display: block;z-index: 3;text-align: center;
+    line-height: 15px;width:119px;height:70px;
+    float:left;color:#ffffff;font-size: 10px;padding-top: 40px;
+    position: relative;background: rgba(0,0,0,0.8);
+}
+.maxground-pinpais-pinpailogo10:hover .maxground-pinpais-pinpailogo-replace{
+    display: block;z-index: 3;text-align: center;
+    line-height: 15px;width:119px;height:70px;
+    float:left;color:#ffffff;font-size: 10px;padding-top: 40px;
+    position: relative;background: rgba(0,0,0,0.8);
+}
+.maxground-pinpais-pinpailogo11:hover .maxground-pinpais-pinpailogo-replace{
+    display: block;z-index: 3;text-align: center;
+    line-height: 15px;width:119px;height:70px;
+    float:left;color:#ffffff;font-size: 10px;padding-top: 40px;
+    position: relative;background: rgba(0,0,0,0.8);
+}
+.maxground-pinpais-pinpailogo12:hover .maxground-pinpais-pinpailogo-replace{
+    display: block;z-index: 3;text-align: center;
+    line-height: 15px;width:119px;height:70px;
+    float:left;color:#ffffff;font-size: 10px;padding-top: 40px;
+    position: relative;background: rgba(0,0,0,0.8);
+}
+.maxground-pinpais-pinpailogo13:hover .maxground-pinpais-pinpailogo-replace{
+    display: block;z-index: 3;text-align: center;
+    line-height: 15px;width:119px;height:70px;
+    float:left;color:#ffffff;font-size: 10px;padding-top: 40px;
+    position: relative;background: rgba(0,0,0,0.8);
+}
+.maxground-pinpais-pinpailogo14:hover .maxground-pinpais-pinpailogo-replace{
+    display: block;z-index: 3;text-align: center;
+    line-height: 15px;width:119px;height:70px;
+    float:left;color:#ffffff;font-size: 10px;padding-top: 40px;
+    position: relative;background: rgba(0,0,0,0.8);
+}
+.maxground-pinpais-pinpailogo15:hover .maxground-pinpais-pinpailogo-replace{
+    display: block;z-index: 3;text-align: center;
+    line-height: 15px;width:119px;height:70px;
+    float:left;color:#ffffff;font-size: 10px;padding-top: 40px;
+    position: relative;background: rgba(0,0,0,0.8);
+}
+.maxground-pinpais-pinpailogo16:hover .maxground-pinpais-pinpailogo-replace{
+    display: block;z-index: 3;text-align: center;
+    line-height: 15px;width:119px;height:70px;
+    float:left;color:#ffffff;font-size: 10px;padding-top: 40px;
+    position: relative;background: rgba(0,0,0,0.8);
+}
+.maxground-pinpais-pinpailogo17:hover .maxground-pinpais-pinpailogo-replace{
+    display: block;z-index: 3;text-align: center;
+    line-height: 15px;width:119px;height:70px;
+    float:left;color:#ffffff;font-size: 10px;padding-top: 40px;
+    position: relative;background: rgba(0,0,0,0.8);
+}
+.maxground-pinpais-pinpailogo18:hover .maxground-pinpais-pinpailogo-replace{
+    display: block;z-index: 3;text-align: center;
+    line-height: 15px;width:119px;height:70px;
+    float:left;color:#ffffff;font-size: 10px;padding-top: 40px;
+    position: relative;background: rgba(0,0,0,0.8);
+}
+.maxground-pinpais-pinpailogo19:hover .maxground-pinpais-pinpailogo-replace{
+    display: block;z-index: 3;text-align: center;
+    line-height: 15px;width:119px;height:70px;
+    float:left;color:#ffffff;font-size: 10px;padding-top: 40px;
+    position: relative;background: rgba(0,0,0,0.8);
+}
+.maxground-pinpais-pinpailogo20:hover .maxground-pinpais-pinpailogo-replace{
+    display: block;z-index: 3;text-align: center;
+    line-height: 15px;width:119px;height:70px;
+    float:left;color:#ffffff;font-size: 10px;padding-top: 40px;
+    position: relative;background: rgba(0,0,0,0.8);
+}
+.maxground-pinpais-pinpailogo21:hover .maxground-pinpais-pinpailogo-replace{
+    display: block;z-index: 3;text-align: center;
+    line-height: 15px;width:119px;height:70px;
+    float:left;color:#ffffff;font-size: 10px;padding-top: 40px;
+    position: relative;background: rgba(0,0,0,0.8);
+}
+.maxground-pinpais-pinpailogo22:hover .maxground-pinpais-pinpailogo-replace{
+    display: block;z-index: 3;text-align: center;
+    line-height: 15px;width:119px;height:70px;
+    float:left;color:#ffffff;font-size: 10px;padding-top: 40px;
+    position: relative;background: rgba(0,0,0,0.8);
+}
+.maxground-pinpais-pinpailogo23:hover .maxground-pinpais-pinpailogo-replace{
+    display: block;z-index: 3;text-align: center;
+    line-height: 15px;width:119px;height:70px;
+    float:left;color:#ffffff;font-size: 10px;padding-top: 40px;
+    position: relative;background: rgba(0,0,0,0.8);
+}
+.maxground-pinpais-pinpailogo24:hover .maxground-pinpais-pinpailogo-replace{
+    display: block;z-index: 3;text-align: center;
+    line-height: 15px;width:119px;height:70px;
+    float:left;color:#ffffff;font-size: 10px;padding-top: 40px;
+    position: relative;background: rgba(0,0,0,0.8);
+}
+.maxground-pinpais-pinpailogo25:hover .maxground-pinpais-pinpailogo-replace{
+    display: block;z-index: 3;text-align: center;
+    line-height: 15px;width:119px;height:70px;
+    float:left;color:#ffffff;font-size: 10px;padding-top: 40px;
+    position: relative;background: rgba(0,0,0,0.8);
+}
+.maxground-pinpais-pinpailogo26:hover .maxground-pinpais-pinpailogo-replace{
+    display: block;z-index: 3;text-align: center;
+    line-height: 15px;width:119px;height:70px;
+    float:left;color:#ffffff;font-size: 10px;padding-top: 40px;
+    position: relative;background: rgba(0,0,0,0.8);
+}
+.maxground-pinpais-pinpailogo27:hover .maxground-pinpais-pinpailogo-replace{
+    display: block;z-index: 3;text-align: center;
+    line-height: 15px;width:119px;height:70px;
+    float:left;color:#ffffff;font-size: 10px;padding-top: 40px;
+    position: relative;background: rgba(0,0,0,0.8);
+}
+.maxground-pinpais-pinpailogo28:hover .maxground-pinpais-pinpailogo-replace{
+    display: block;z-index: 3;text-align: center;
+    line-height: 15px;width:119px;height:70px;
+    float:left;color:#ffffff;font-size: 10px;padding-top: 40px;
+    position: relative;background: rgba(0,0,0,0.8);
+}
+.maxground-pinpais-pinpailogo29:hover .maxground-pinpais-pinpailogo-replace{
+    display: block;z-index: 3;text-align: center;
+    line-height: 15px;width:119px;height:70px;
+    float:left;color:#ffffff;font-size: 10px;padding-top: 40px;
+    position: relative;background: rgba(0,0,0,0.8);
+}
+.maxground-pinpais-pinpailogo30:hover .maxground-pinpais-pinpailogo-replace{
+    display: block;z-index: 3;width:119px;height:110px;
+    position: relative;background: rgba(0,0,0,0.8);
+}
+/*-----------------------------------天猫超市-----------------------------------*/
+.maxground-tmallmarket{
+    width: 1200px;height: 685px;margin:auto auto;
+}
+.maxground-tmallmarket-top{
+    width: 100%;height: 40px;float: left;
+    margin-bottom: 10px;margin-top: 10px;
+}
+.maxground-tmallmarket-top-left{
+    width: 215px;height: 100%;float: left;
+    background: url("../Image/tianmaochaoshi.png") no-repeat center;
+    line-height: 40px;background-size: 100%;
+}
+.maxground-tmallmarket-top-right{
+    width: 620px;height: 100%;line-height: 40px;
+    float: left;margin-left: 130px;
+
+}
+/*-----------------------------------天猫超市顶部菜单响应式-----------------------------------*/
+@media screen and (min-width: 900px){
+    .maxground-tmallmarket-top-right{
+        margin-left: 130px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .maxground-tmallmarket-top-right{
+        margin-left: 365px;
+    }
+}
+/*-----------------------------------天猫超市顶部菜单响应式-----------------------------------*/
+.maxground-tmallmarket-top-right-kinds{
+    width: 56px;height: 100%;line-height: 40px;
+    float: left;margin-left: 20px;
+}
+.maxground-tmallmarket-top-right a{
+    font-size: 14px;color: black;
+    text-decoration: none;
+}
+.maxground-tmallmarket-top-right a:hover{
+    text-decoration:underline;
+}
+.maxground-tmallmarket-bottom{
+    width: 100%;height: 625px;float: left;
+}
+.maxground-tmallmarket-bottom-left{
+    width: 238px;height: 625px;float: left;
+    background: url("../Image/chaoshilingshi.jpg") no-repeat center;
+    background-size: 100%;font-size: 18px;color: white;
+}
+.maxground-tmallmarket-bottom-left-one{
+    width: 70px;height: 54px;float: left;
+    margin-top: 430px;background-color: black;background: rgba(0,0,0,0.9);
+    text-align: center;line-height: 24px;padding-top: 10px;
+    cursor: pointer;
+}
+.maxground-tmallmarket-bottom-left-two{
+    width: 128px;height: 54px;float: left;
+    margin-top: 430px;background-color: #999999;background: rgba(0,0,0,0.6);
+    text-align: center;line-height: 24px;padding-top: 10px;
+    cursor: pointer;
+}
+.maxground-tmallmarket-bottom-left-three{
+    width: 32px;height: 32px;
+    margin-top: 580px;margin-left: 188px;
+    background: url("../Image/lingshigengduologo.png") no-repeat center;
+    background-size: 100%;cursor: pointer;
+}
+.maxground-tmallmarket-bottom-right{
+    width: 948px;height: 625px;margin-left: 14px;
+    float: left;
+}
+.maxground-tmallmarket-bottom-right-top{
+    width:948px;height: 305px;float: left;
+}
+.maxground-tmallmarket-bottom-right-top-left{
+    width: 464px;height: 305px;
+    background-color: white;float: left;
+}
+.maxground-tmallmarket-bottom-right-top-left-top1{
+    width:222px;height: 59px;margin-left: 10px;margin-top: 10px;
+    background-color: #00B262;float: left;
+    font-size: 18px;line-height: 59px;text-align: center;color: white;
+    border-left: 0.5px solid #F9F9F9;border-right: 0.5px solid #F9F9F9;border-top: 0.5px solid #F9F9F9;
+}
+.maxground-tmallmarket-bottom-right-top-left-top2{
+    width:222px;height: 59px;margin-top: 10px;
+    float: left;background-color: #F9F9F9;
+    font-size: 18px;line-height: 59px;text-align: center;
+    border-left: 0.5px solid #F9F9F9;border-right: 0.5px solid #F9F9F9;border-top: 0.5px solid #F9F9F9;
+}
+.maxground-tmallmarket-bottom-right-top-left-bottom{
+    width: 444px;height: 225px;float: left;margin-left: 10px;position: relative;
+    border-left: 0.5px solid #F9F9F9;border-right: 0.5px solid #F9F9F9;border-bottom: 0.5px solid #F9F9F9;
+}
+.maxground-tmallmarket-bottom-right-top-left-bottom-left1{
+    width: 138px;height: 33px;float: left;margin-left: 20px;margin-top: 100px;
+    font-size: 24px;line-height: 33px;text-align: right;color: #00B262;
+    background: url("../Image/liangyoulogo.png") no-repeat left;
+}
+.maxground-tmallmarket-bottom-right-top-left-bottom-left2{
+    width: 80px;height: 33px;float: left;position: absolute;left: 20px;top: 133px;
+    font-size: 20px;text-align: left;
+}
+.maxground-tmallmarket-bottom-right-top-left-bottom-right{
+    width: 200px;height: 200px;float: left;position: absolute;left: 220px;top: 12.5px;
+    background: url("../Image/liangyou.jpg") no-repeat center;background-size: 100%;
+}
+
+.maxground-tmallmarket-bottom-right-top-right{
+    width: 244px;height: 305px;overflow: hidden;
+    float: left;margin-left: 20px;
+}
+/*-------------------------------天猫超市响应式代码1-------------------------------*/
+@media screen and (min-width: 900px){
+    .maxground-tmallmarket-bottom-right-top-right{
+        width: 244px;
+    }
+    .maxground-tmallmarket-bottom-right-top-right-two{
+        display: none;
+    }
+}
+@media screen and (min-width: 1200px){
+    .maxground-tmallmarket-bottom-right-top-right{
+        width: 464px;
+    }
+    .maxground-tmallmarket-bottom-right-top-right-two{
+        display: block;
+    }
+}
+/*-------------------------------天猫超市响应式代码1-------------------------------*/
+.maxground-tmallmarket-bottom-right-top-right-one{
+    width: 220px;height: 100%;float: left;
+    background-color: white;
+}
+.maxground-tmallmarket-bottom-right-top-right-one:hover{
+    border: 1px solid red;
+}
+.maxground-tmallmarket-bottom-right-top-right-one-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 18.5px;margin-top: 18.5px;
+    background: url("../Image/juanzhi.jpg") no-repeat center;
+    background-size: 100%;
+}
+.maxground-tmallmarket-bottom-right-top-right-two{
+    width: 220px;height: 100%;float: left;
+    margin-left: 20px;background-color: white;
+}
+.maxground-tmallmarket-bottom-right-top-right-two:hover{
+    border: 1px solid red;
+}
+.maxground-tmallmarket-bottom-right-top-right-two-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 18.5px;margin-top: 18.5px;
+    background: url("../Image/quchenshi.jpg") no-repeat center;
+    background-size: 100%;
+}
+.maxground-tmallmarket-bottom-right-bottom{
+    width:720px;height: 300px;float: left;
+    margin-top: 20px;overflow: hidden;
+}
+/*-------------------------------天猫超市响应式代码2-------------------------------*/
+@media screen and (min-width: 900px){
+    .maxground-tmallmarket-bottom-right-bottom{
+        width: 740px;
+    }
+    .maxground-tmallmarket-bottom-right-bottom-four{
+        display: none;
+    }
+}
+@media screen and (min-width: 1200px){
+    .maxground-tmallmarket-bottom-right-bottom{
+        width: 948px;
+    }
+    .maxground-tmallmarket-bottom-right-bottom-four{
+        display: block;
+    }
+}
+/*-------------------------------天猫超市响应式代码2-------------------------------*/
+.maxground-tmallmarket-bottom-right-bottom-one{
+    width: 220px;height: 100%;float: left;
+    margin-right: 20px;background-color: white;
+}
+.maxground-tmallmarket-bottom-right-bottom-one:hover{
+    border: 1px solid red;
+}
+.maxground-tmallmarket-bottom-right-bottom-one-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 18.5px;margin-top: 18.5px;
+    background: url("../Image/jieceye.gif") no-repeat center;
+    background-size: 100%;
+}
+.maxground-tmallmarket-bottom-right-bottom-one-mid{
+    width: 135px;height: 40px;float: left;
+    margin-top: 8px;margin-left: 49.5px;
+    text-align: center;font-size: 14px;
+}
+.maxground-tmallmarket-bottom-right-bottom-one-bottom{
+    width: 222px;height: 18px;float: left;
+    margin-top: 8px;line-height: 18px;
+    text-align: center;font-size: 18px;color: red;
+}
+.maxground-tmallmarket-bottom-right-bottom-two{
+    width: 222px;height: 100%;float: left;
+    margin-right: 20px;background-color: white;
+}
+.maxground-tmallmarket-bottom-right-bottom-two:hover{
+    border: 1px solid red;
+}
+.maxground-tmallmarket-bottom-right-bottom-two-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 18.5px;margin-top: 18.5px;
+    background: url("../Image/qujiaozhi.jpg") no-repeat center;
+    background-size: 100%;
+}
+.maxground-tmallmarket-bottom-right-bottom-three{
+    width: 222px;height: 100%;float: left;
+    margin-right: 20px;background-color: white;
+}
+.maxground-tmallmarket-bottom-right-bottom-three:hover{
+    border: 1px solid red;
+}
+.maxground-tmallmarket-bottom-right-bottom-three-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 18.5px;margin-top: 18.5px;
+    background: url("../Image/biyuntao.gif") no-repeat center;
+    background-size: 100%;
+}
+.maxground-tmallmarket-bottom-right-bottom-four{
+    width: 222px;height: 100%;float: left;
+    background-color: white;
+}
+.maxground-tmallmarket-bottom-right-bottom-four:hover{
+    border: 1px solid red;
+}
+.maxground-tmallmarket-bottom-right-bottom-four-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 18.5px;margin-top: 18.5px;
+    background: url("../Image/baijiebu.gif") no-repeat center;
+    background-size: 100%;
+}
+/*-----------------------------------天猫国际-----------------------------------*/
+.maxground-tmallguoji{
+    width: 1200px;height: 705px;margin:auto auto;
+}
+.maxground-tmallguoji-top{
+    width: 100%;height: 40px;float: left;
+    margin-bottom: 10px;margin-top: 10px;
+}
+.maxground-tmallguoji-top-left{
+    width: 215px;height: 100%;float: left;
+    background: url("../Image/tianmaoguoji.png") no-repeat center;
+    line-height: 40px;background-size: 100%;
+}
+.maxground-tmallguoji-top-right{
+    width: 250px;height: 100%;line-height: 40px;
+    float: left;margin-left: 490px;float: left;
+}
+/*-----------------------------------天猫国际顶部菜单响应式-----------------------------------*/
+@media screen and (min-width: 900px){
+    .maxground-tmallguoji-top-right{
+        margin-left: 490px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .maxground-tmallguoji-top-right{
+        margin-left: 725px;
+    }
+}
+/*-----------------------------------天猫国际顶部菜单响应式-----------------------------------*/
+.maxground-tmallguoji-top-right-kinds{
+    width: 30px;height: 100%;line-height: 40px;
+    float: left;margin-left: 20px;
+}
+.maxground-tmallguoji-top-right a{
+    font-size: 14px;color: black;
+    text-decoration: none;
+}
+.maxground-tmallguoji-top-right a:hover{
+    text-decoration:underline;
+}
+.maxground-tmallguoji-bottom{
+    width: 100%;height: 625px;float: left;
+}
+.maxground-tmallguoji-bottom-left{
+    width: 238px;height: 625px;float: left;
+}
+.maxground-tmallguoji-bottom-left-1{
+    width: 238px;height: 300px;float: left;margin-bottom: 20px;
+    background: url("../Image/jinkoujingxuan.png") no-repeat center;
+    background-size: 100%;font-size: 18px;color: white;
+}
+.maxground-tmallguoji-bottom-left-1-one{
+    width: 70px;height: 54px;float: left;
+    margin-top: 180px;background-color: black;background: rgba(0,0,0,0.9);
+    text-align: center;line-height: 24px;padding-top: 10px;
+    cursor: pointer;
+}
+.maxground-tmallguoji-bottom-left-1-two{
+    width: 128px;height: 54px;float: left;
+    margin-top: 180px;background-color: #999999;background: rgba(0,0,0,0.6);
+    text-align: center;line-height: 24px;padding-top: 10px;
+    cursor: pointer;
+}
+.maxground-tmallguoji-bottom-left-1-three{
+    width: 32px;height: 32px;
+    margin-top: 260px;margin-left: 188px;
+    background: url("../Image/lingshigengduologo.png") no-repeat center;
+    background-size: 100%;cursor: pointer;
+}
+.maxground-tmallguoji-bottom-left-2{
+    width: 238px;height: 300px;float: left;
+    background: url("../Image/zhiyingpinzhi.png") no-repeat center;
+    background-size: 100%;font-size: 18px;color: white;
+}
+.maxground-tmallguoji-bottom-left-2-one{
+    width: 70px;height: 54px;float: left;
+    margin-top: 180px;background-color: black;background: rgba(0,0,0,0.9);
+    text-align: center;line-height: 24px;padding-top: 10px;
+    cursor: pointer;
+}
+.maxground-tmallguoji-bottom-left-2-two{
+    width: 128px;height: 54px;float: left;
+    margin-top: 180px;background-color: #999999;background: rgba(0,0,0,0.6);
+    text-align: center;line-height: 24px;padding-top: 10px;
+    cursor: pointer;
+}
+.maxground-tmallguoji-bottom-left-2-three{
+    width: 32px;height: 32px;
+    margin-top: 260px;margin-left: 188px;
+    background: url("../Image/lingshigengduologo.png") no-repeat center;
+    background-size: 100%;cursor: pointer;
+}
+.maxground-tmallguoji-bottom-right{
+    width: 948px;height: 625px;margin-left: 14px;
+    float: left;
+}
+.maxground-tmallguoji-bottom-right-top{
+    width:740px;height: 300px;float: left;
+    overflow: hidden;
+}
+/*-------------------------------天猫国际响应式代码1-------------------------------*/
+@media screen and (min-width: 900px){
+    .maxground-tmallguoji-bottom-right-top{
+        width: 740px;
+    }
+    .maxground-tmallguoji-bottom-right-top-four-top{
+        display: none;
+    }
+}
+@media screen and (min-width: 1200px){
+    .maxground-tmallguoji-bottom-right-top{
+        width: 948px;
+    }
+    .maxground-tmallguoji-bottom-right-top-four-top{
+        display: block;
+    }
+}
+/*-------------------------------天猫国际响应式代码1-------------------------------*/
+.maxground-tmallguoji-bottom-right-top-one-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 18.5px;margin-top: 18.5px;
+    background: url("../Image/duanxiu.gif") no-repeat center;
+    background-size: 100%;
+}
+.maxground-tmallguoji-bottom-right-top-two-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 18.5px;margin-top: 18.5px;
+    background: url("../Image/dourumianmo.gif") no-repeat center;
+    background-size: 100%;
+}
+.maxground-tmallguoji-bottom-right-top-three-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 18.5px;margin-top: 18.5px;
+    background: url("../Image/jiaonang.gif") no-repeat center;
+    background-size: 100%;
+}
+.maxground-tmallguoji-bottom-right-top-four-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 18.5px;margin-top: 18.5px;
+    background: url("../Image/pidai.png") no-repeat center;
+    background-size: 100%;
+}
+.maxground-tmallguoji-bottom-right-bottom{
+    width:740px;height: 300px;float: left;
+    margin-top: 20px;overflow: hidden;
+}
+/*-------------------------------天猫国际响应式代码2-------------------------------*/
+@media screen and (min-width: 900px){
+    .maxground-tmallguoji-bottom-right-bottom{
+        width: 740px;
+    }
+    .maxground-tmallguoji-bottom-right-bottom-four{
+        display: none;
+    }
+}
+@media screen and (min-width: 1200px){
+    .maxground-tmallguoji-bottom-right-bottom{
+        width: 948px;
+    }
+    .maxground-tmallguoji-bottom-right-bottom-four{
+        display: block;
+    }
+}
+/*-------------------------------天猫国际响应式代码2-------------------------------*/
+.maxground-tmallguoji-bottom-right-bottom-one{
+    width: 222px;height: 100%;float: left;
+    margin-right: 20px;background-color: white;
+}
+.maxground-tmallguoji-bottom-right-bottom-one-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 18.5px;margin-top: 18.5px;
+    background: url("../Image/gaolujie.jpg") no-repeat center;
+    background-size: 100%;
+}
+.maxground-tmallguoji-bottom-right-bottom-one-mid{
+    width: 135px;height: 40px;float: left;
+    margin-top: 8px;margin-left: 49.5px;
+    text-align: center;font-size: 14px;
+}
+.maxground-tmallguoji-bottom-right-bottom-one-bottom{
+    width: 222px;height: 18px;float: left;
+    margin-top: 8px;line-height: 18px;
+    text-align: center;font-size: 18px;color: red;
+}
+.maxground-tmallguoji-bottom-right-bottom-two{
+    width: 222px;height: 100%;float: left;
+    margin-right: 20px;background-color: white;
+}
+.maxground-tmallguoji-bottom-right-bottom-two-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 18.5px;margin-top: 18.5px;
+    background: url("../Image/lanmei.jpg") no-repeat center;
+    background-size: 100%;
+}
+.maxground-tmallguoji-bottom-right-bottom-three{
+    width: 222px;height: 100%;float: left;
+    margin-right: 20px;background-color: white;
+}
+.maxground-tmallguoji-bottom-right-bottom-three-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 18.5px;margin-top: 18.5px;
+    background: url("../Image/niuzaiku.gif") no-repeat center;
+    background-size: 100%;
+}
+.maxground-tmallguoji-bottom-right-bottom-four{
+    width: 222px;height: 100%;float: left;
+    background-color: white;
+}
+.maxground-tmallguoji-bottom-right-bottom-four-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 18.5px;margin-top: 18.5px;
+    background: url("../Image/layered.jpg") no-repeat center;
+    background-size: 100%;
+}
+/*-----------------------------------给老公抢一件-----------------------------------*/
+.maxground-geilaogong{
+    width: 1200px;height: 120px;margin:auto auto;
+    background: url("../Image/geilaogong.jpg") no-repeat center;
+}
+@media screen and (min-width: 900px){
+    .maxground-geilaogong{
+        width: 1000px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .maxground-geilaogong{
+        width: 1200px;
+    }
+}
+/*-----------------------------------美丽人生-----------------------------------*/
+.maxground-beautylife{
+    width: 1200px;height: 665px;margin:auto auto;
+}
+.maxground-beautylife-top{
+    width: 100%;height: 40px;float: left;
+    margin-top: 10px;
+}
+.maxground-beautylife-top-1{
+    width: 5px;height: 18px;float: left;
+    background-color: black;
+}
+.maxground-beautylife-top-2{
+    width: 72px;height: 18px;float: left;
+    font-size:18px;margin-left: 20px;
+    text-align: left;margin-top: -4px;
+}
+.maxground-beautylife-top-3{
+    width: 140px;height: 14px;float: left;margin-left: 15px;
+    font-size:14px;text-align: left;margin-bottom: 2px;
+}
+.maxground-beautylife-bottom{
+    width: 100%;height: 625px;float: left;
+}
+.maxground-beautylife-bottom-left{
+    width: 238px;height: 620px;float: left;
+    background: url("../Image/dapaizhijiang.jpg") no-repeat center;
+    background-size: 100%;font-size: 18px;color: white;
+}
+.maxground-beautylife-bottom-right{
+    width: 948px;height: 625px;margin-left: 14px;
+    float: left;
+}
+.maxground-beautylife-bottom-right-top{
+    width:948px;height: 300px;float: left;
+}
+.maxground-beautylife-bottom-right-top-one-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 18.5px;margin-top: 18.5px;
+    background: url("../Image/adidasi.jpg") no-repeat center;
+    background-size: 100%;
+}
+.maxground-beautylife-bottom-right-top-two-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 18.5px;margin-top: 18.5px;
+    background: url("../Image/fanbu.jpg") no-repeat center;
+    background-size: 100%;
+}
+.maxground-beautylife-bottom-right-top-three-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 18.5px;margin-top: 18.5px;
+    background: url("../Image/xianglian.jpg") no-repeat center;
+    background-size: 100%;
+}
+.maxground-beautylife-bottom-right-top-four-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 18.5px;margin-top: 18.5px;
+    background: url("../Image/duanku.gif") no-repeat center;
+    background-size: 100%;
+}
+.maxground-beautylife-bottom-right-bottom{
+    width:948px;height: 300px;float: left;
+    margin-top: 20px;
+}
+.maxground-beautylife-bottom-right-bottom-one-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 18.5px;margin-top: 18.5px;
+    background: url("../Image/duanxiu.gif") no-repeat center;
+    background-size: 100%;
+}
+.maxground-beautylife-bottom-right-bottom-two-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 18.5px;margin-top: 18.5px;
+    background: url("../Image/xiurongshuang.jpg") no-repeat center;
+    background-size: 100%;
+}
+.maxground-beautylife-bottom-right-bottom-three-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 18.5px;margin-top: 18.5px;
+    background: url("../Image/biaodai.gif") no-repeat center;
+    background-size: 100%;
+}
+.maxground-beautylife-bottom-right-bottom-four-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 18.5px;margin-top: 18.5px;
+    background: url("../Image/tangshi.jpg") no-repeat center;
+    background-size: 100%;
+}
+/*-----------------------------------潮电酷玩-----------------------------------*/
+.maxground-coolplay{
+    width: 1200px;height: 705px;margin:auto auto;
+}
+.maxground-coolplay-top{
+    width: 100%;height: 40px;float: left;
+    margin-top: 10px;
+}
+.maxground-coolplay-top-1{
+    width: 5px;height: 18px;float: left;
+    background-color: black;
+}
+.maxground-coolplay-top-2{
+    width: 72px;height: 18px;float: left;
+    font-size:18px;margin-left: 20px;
+    text-align: left;margin-top: -4px;
+}
+.maxground-coolplay-top-3{
+    width: 140px;height: 14px;float: left;margin-left: 15px;
+    font-size:14px;text-align: left;margin-bottom: 2px;
+}
+.maxground-coolplay-bottom{
+    width: 100%;height: 625px;float: left;
+}
+.maxground-coolplay-bottom-left{
+    width: 238px;height: 620px;float: left;
+    background: url("../Image/xindongzhixuan.jpg") no-repeat center;
+    background-size: 100%;font-size: 18px;color: white;
+}
+.maxground-coolplay-bottom-right{
+    width: 948px;height: 625px;margin-left: 14px;
+    float: left;
+}
+.maxground-coolplay-bottom-right-top{
+    width:948px;height: 300px;float: left;
+}
+.maxground-coolplay-bottom-right-top-one-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 18.5px;margin-top: 18.5px;
+    background: url("../Image/guangchangwuyinxiang.jpg") no-repeat center;
+    background-size: 100%;
+}
+.maxground-coolplay-bottom-right-top-two-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 18.5px;margin-top: 18.5px;
+    background: url("../Image/meiguobobo.jpg") no-repeat center;
+    background-size: 100%;
+}
+.maxground-coolplay-bottom-right-top-three-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 18.5px;margin-top: 18.5px;
+    background: url("../Image/xichenqi.jpg") no-repeat center;
+    background-size: 100%;
+}
+.maxground-coolplay-bottom-right-top-four-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 18.5px;margin-top: 18.5px;
+    background: url("../Image/xiangjiaoji.jpg") no-repeat center;
+    background-size: 100%;
+}
+.maxground-coolplay-bottom-right-bottom{
+    width:948px;height: 300px;float: left;
+    margin-top: 20px;
+}
+.maxground-coolplay-bottom-right-bottom-one-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 18.5px;margin-top: 18.5px;
+    background: url("../Image/duijiangji.jpg") no-repeat center;
+    background-size: 100%;
+}
+.maxground-coolplay-bottom-right-bottom-two-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 18.5px;margin-top: 18.5px;
+    background: url("../Image/zhinengshoubiao.jpg") no-repeat center;
+    background-size: 100%;
+}
+.maxground-coolplay-bottom-right-bottom-three-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 18.5px;margin-top: 18.5px;
+    background: url("../Image/luodishan.gif") no-repeat center;
+    background-size: 100%;
+}
+.maxground-coolplay-bottom-right-bottom-four-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 18.5px;margin-top: 18.5px;
+    background: url("../Image/iphoneu.jpg") no-repeat center;
+    background-size: 100%;
+}
+/*-----------------------------------现在买划算1-----------------------------------*/
+.maxground-buynow1{
+    width: 1000px;height: 90px;margin:auto auto;
+    background: url("../Image/bynow.jpg") no-repeat center;
+}
+@media screen and (min-width: 900px){
+    .maxground-buynow1{
+        width: 1000px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .maxground-buynow1{
+        width: 1200px;
+    }
+}
+/*-----------------------------------居家生活-----------------------------------*/
+.maxground-homelife{
+    width: 1200px;height: 665px;margin:auto auto;
+}
+.maxground-homelife-top{
+    width: 100%;height: 40px;float: left;
+    margin-top: 10px;
+}
+.maxground-homelife-top-1{
+    width: 5px;height: 18px;float: left;
+    background-color: black;
+}
+.maxground-homelife-top-2{
+    width: 72px;height: 18px;float: left;
+    font-size:18px;margin-left: 20px;
+    text-align: left;margin-top: -4px;
+}
+.maxground-homelife-top-3{
+    width: 200px;height: 14px;float: left;margin-left: 15px;
+    font-size:14px;text-align: left;margin-bottom: 2px;
+}
+.maxground-homelife-bottom{
+    width: 100%;height: 625px;float: left;
+}
+.maxground-homelife-bottom-left{
+    width: 238px;height: 620px;float: left;
+    background: url("../Image/meijia.png") no-repeat center;
+    background-size: 100%;font-size: 18px;color: white;
+}
+.maxground-homelife-bottom-right{
+    width: 948px;height: 625px;margin-left: 14px;
+    float: left;
+}
+.maxground-homelife-bottom-right-top{
+    width:948px;height: 300px;float: left;
+}
+.maxground-homelife-bottom-right-top-one-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 18.5px;margin-top: 18.5px;
+    background: url("../Image/danmaibinggan.gif") no-repeat center;
+    background-size: 100%;
+}
+.maxground-homelife-bottom-right-top-two-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 18.5px;margin-top: 18.5px;
+    background: url("../Image/sichuanyinliao.jpg") no-repeat center;
+    background-size: 100%;
+}
+.maxground-homelife-bottom-right-top-three-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 18.5px;margin-top: 18.5px;
+    background: url("../Image/yangjiu.jpg") no-repeat center;
+    background-size: 100%;
+}
+.maxground-homelife-bottom-right-top-four-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 18.5px;margin-top: 18.5px;
+    background: url("../Image/oupian.gif") no-repeat center;
+    background-size: 100%;
+}
+.maxground-homelife-bottom-right-bottom{
+    width:948px;height: 300px;float: left;
+    margin-top: 20px;
+}
+.maxground-homelife-bottom-right-bottom-one-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 18.5px;margin-top: 18.5px;
+    background: url("../Image/yintai.jpg") no-repeat center;
+    background-size: 100%;
+}
+.maxground-homelife-bottom-right-bottom-two-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 18.5px;margin-top: 18.5px;
+    background: url("../Image/yusan.jpg") no-repeat center;
+    background-size: 100%;
+}
+.maxground-homelife-bottom-right-bottom-three-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 18.5px;margin-top: 18.5px;
+    background: url("../Image/mao.jpg") no-repeat center;
+    background-size: 100%;
+}
+.maxground-homelife-bottom-right-bottom-four-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 18.5px;margin-top: 18.5px;
+    background: url("../Image/zhuanjiexian.jpg") no-repeat center;
+    background-size: 100%;
+}
+/*-----------------------------------打造爱巢-----------------------------------*/
+.maxground-lovehome{
+    width: 1200px;height: 705px;margin:auto auto;
+}
+.maxground-lovehome-top{
+    width: 100%;height: 40px;float: left;
+    margin-top: 10px;
+}
+.maxground-lovehome-top-1{
+    width: 5px;height: 18px;float: left;
+    background-color: black;
+}
+.maxground-lovehome-top-2{
+    width: 72px;height: 18px;float: left;
+    font-size:18px;margin-left: 20px;
+    text-align: left;margin-top: -4px;
+}
+.maxground-lovehome-top-3{
+    width: 140px;height: 14px;float: left;margin-left: 15px;
+    font-size:14px;text-align: left;margin-bottom: 2px;
+}
+.maxground-lovehome-bottom{
+    width: 100%;height: 625px;float: left;
+}
+.maxground-lovehome-bottom-left{
+    width: 238px;height: 620px;float: left;
+    background: url("../Image/ganyichoushi.jpg") no-repeat center;
+    background-size: 100%;font-size: 18px;color: white;
+}
+.maxground-lovehome-bottom-right{
+    width: 948px;height: 625px;margin-left: 14px;
+    float: left;
+}
+.maxground-lovehome-bottom-right-top{
+    width:948px;height: 300px;float: left;
+}
+.maxground-lovehome-bottom-right-top-one-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 18.5px;margin-top: 18.5px;
+    background: url("../Image/zhazhiji.jpg") no-repeat center;
+    background-size: 100%;
+}
+.maxground-lovehome-bottom-right-top-two-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 18.5px;margin-top: 18.5px;
+    background: url("../Image/meiguobobo.jpg") no-repeat center;
+    background-size: 100%;
+}
+.maxground-lovehome-bottom-right-top-three-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 18.5px;margin-top: 18.5px;
+    background: url("../Image/xichenqi.jpg") no-repeat center;
+    background-size: 100%;
+}
+.maxground-lovehome-bottom-right-top-four-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 18.5px;margin-top: 18.5px;
+    background: url("../Image/xiangjiaoji.jpg") no-repeat center;
+    background-size: 100%;
+}
+.maxground-lovehome-bottom-right-bottom{
+    width:948px;height: 300px;float: left;
+    margin-top: 20px;
+}
+.maxground-lovehome-bottom-right-bottom-one-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 18.5px;margin-top: 18.5px;
+    background: url("../Image/jiaobanji.jpg") no-repeat center;
+    background-size: 100%;
+}
+.maxground-lovehome-bottom-right-bottom-two-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 18.5px;margin-top: 18.5px;
+    background: url("../Image/zhinengshoubiao.jpg") no-repeat center;
+    background-size: 100%;
+}
+.maxground-lovehome-bottom-right-bottom-three-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 18.5px;margin-top: 18.5px;
+    background: url("../Image/luodishan.gif") no-repeat center;
+    background-size: 100%;
+}
+.maxground-lovehome-bottom-right-bottom-four-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 18.5px;margin-top: 18.5px;
+    background: url("../Image/guolvqi.jpg") no-repeat center;
+    background-size: 100%;
+}
+/*-----------------------------------现在买划算2-----------------------------------*/
+.maxground-buynow2{
+    width: 1200px;height: 90px;margin:auto auto;
+    background: url("../Image/bynow.jpg") no-repeat center;
+}
+@media screen and (min-width: 900px){
+    .maxground-buynow2{
+        width: 1000px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .maxground-buynow2{
+        width: 1200px;
+    }
+}
+/*-----------------------------------户外出行-----------------------------------*/
+.maxground-outside{
+    width: 1200px;height: 705px;margin:auto auto;margin-top: 20px;
+}
+.maxground-outside-top{
+    width: 100%;height: 40px;float: left;
+}
+.maxground-outside-top-1{
+    width: 5px;height: 18px;float: left;
+    background-color: black;
+}
+.maxground-outside-top-2{
+    width: 72px;height: 18px;float: left;
+    font-size:18px;margin-left: 20px;
+    text-align: left;margin-top: -4px;
+}
+.maxground-outside-top-3{
+    width: 200px;height: 14px;float: left;margin-left: 15px;
+    font-size:14px;text-align: left;margin-bottom: 2px;
+}
+.maxground-outside-bottom{
+    width: 100%;height: 625px;float: left;
+}
+.maxground-outside-bottom-left{
+    width: 238px;height: 620px;float: left;
+    background: url("../Image/yundonghuwai.jpg") no-repeat center;
+    background-size: 100%;font-size: 18px;color: white;
+}
+.maxground-outside-bottom-right{
+    width: 948px;height: 625px;margin-left: 14px;
+    float: left;
+}
+.maxground-outside-bottom-right-top{
+    width:948px;height: 300px;float: left;
+}
+.maxground-outside-bottom-right-top-one-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 18.5px;margin-top: 18.5px;
+    background: url("../Image/bag.jpg") no-repeat center;
+    background-size: 100%;
+}
+.maxground-outside-bottom-right-top-two-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 18.5px;margin-top: 18.5px;
+    background: url("../Image/suganduanxiu.jpg") no-repeat center;
+    background-size: 100%;
+}
+.maxground-outside-bottom-right-top-three-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 18.5px;margin-top: 18.5px;
+    background: url("../Image/liningtongxie.jpg") no-repeat center;
+    background-size: 100%;
+}
+.maxground-outside-bottom-right-top-four-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 18.5px;margin-top: 18.5px;
+    background: url("../Image/wangyuanjing.jpg") no-repeat center;
+    background-size: 100%;
+}
+.maxground-outside-bottom-right-bottom{
+    width:948px;height: 300px;float: left;
+    margin-top: 20px;
+}
+.maxground-outside-bottom-right-bottom-one-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 18.5px;margin-top: 18.5px;
+    background: url("../Image/diaoyufu.jpg") no-repeat center;
+    background-size: 100%;
+}
+.maxground-outside-bottom-right-bottom-two-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 18.5px;margin-top: 18.5px;
+    background: url("../Image/rongyi.gif") no-repeat center;
+    background-size: 100%;
+}
+.maxground-outside-bottom-right-bottom-three-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 18.5px;margin-top: 18.5px;
+    background: url("../Image/shuangjianbao.jpg") no-repeat center;
+    background-size: 100%;
+}
+.maxground-outside-bottom-right-bottom-four-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 18.5px;margin-top: 18.5px;
+    background: url("../Image/pumabag.gif") no-repeat center;
+    background-size: 100%;
+}
+/*-----------------------------------猜你喜欢-----------------------------------*/
+.maxground-caititle{
+    width: 1200px;height: 43px;margin:auto;
+}
+.maxground-caititle-1{
+    width: 30px;height: 1px;float: left;
+    background-color: #979797;margin-top: 10px;margin-left: 530px;
+}
+.maxground-caititle-2{
+    width: 100px;height: 23px;float: left;
+    color: #666666;font-size: 18px;font-family: 微软雅黑;
+    line-height: 23px;text-align: right;
+    background: url("../Image/guessyourlove/lovelogo.jpg") no-repeat left center;
+}
+.maxground-caititle-3{
+    width: 30px;height: 1px;float: left;
+    background-color: #979797;margin-top: 10px;
+}
+.maxground-cainiproducts{
+    width: 1200px;height: 6200px;margin:auto auto;
+    overflow: hidden;
+}
+/*-----------------------------------猜你喜欢响应式-----------------------------------*/
+@media screen and(min-width: 900px){
+    .maxground-cainiproducts{
+        width: 960px;
+    }
+    .maxground-cainiproducts-topone-five{
+        display: none;
+    }
+    .maxground-cainiproducts-topone-ten{
+        display: none;
+    }
+    .maxground-cainiproducts-topone-shiwu{
+        display: none;
+    }
+    .maxground-cainiproducts-topone-ershi{
+        display: none;
+    }
+}
+@media screen and(min-width: 1200px){
+    .maxground-cainiproducts{
+        width: 1200px;
+    }
+    .maxground-cainiproducts-topone-five{
+        display: block;
+    }
+    .maxground-cainiproducts-topone-ten{
+        display: block;
+    }
+    .maxground-cainiproducts-topone-shiwu{
+        display: block;
+    }
+    .maxground-cainiproducts-topone-ershi{
+        display: block;
+    }
+}
+/*-----------------------------------猜你喜欢响应式-----------------------------------*/
+.maxground-cainiproducts-topone{
+    width: 1200px;height: 300px;float: left;margin-bottom: 10px;
+}
+.maxground-cainiproducts-topone-one{
+    width: 231px;height: 100%;float: left;
+    margin-right: 10px;background-color: white;
+}
+.maxground-cainiproducts-topone-one:hover{
+    border: 1px solid red;
+}
+.maxground-cainiproducts-topone-one-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 23.5px;margin-top: 18.5px;
+    background: url("../Image/guessyourlove/huaweip30.jpg") no-repeat center;
+    background-size: 100%;
+}
+.maxground-cainiproducts-topone-one-mid{
+    width: 180px;height: 40px;float: left;
+    margin-top: 8px;margin-left: 19.5px;
+    text-align: center;font-size: 14px;
+    overflow: hidden;
+}
+.maxground-cainiproducts-topone-one-bottom{
+    width: 222px;height: 18px;float: left;
+    margin-top: 8px;line-height: 18px;
+    text-align: center;font-size: 18px;color: red;
+}
+.maxground-cainiproducts-topone-two{
+    width: 231px;height: 100%;float: left;
+    margin-right: 10px;background-color: white;
+}
+.maxground-cainiproducts-topone-two:hover{
+    border: 1px solid red;
+}
+.maxground-cainiproducts-topone-two-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 23.5px;margin-top: 18.5px;
+    background: url("../Image/guessyourlove/gelikongtiao.jpg") no-repeat center;
+    background-size: 100%;
+}
+.maxground-cainiproducts-topone-three{
+    width: 231px;height: 100%;float: left;
+    margin-right: 10px;background-color: white;
+}
+.maxground-cainiproducts-topone-three:hover{
+    border: 1px solid red;
+}
+.maxground-cainiproducts-topone-three-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 23.5px;margin-top: 18.5px;
+    background: url("../Image/guessyourlove/kewosijiqiren.png") no-repeat center;
+    background-size: 100%;
+}
+.maxground-cainiproducts-topone-four{
+    width: 231px;height: 100%;float: left;
+    background-color: white;margin-right: 10px;
+}
+.maxground-cainiproducts-topone-four:hover{
+    border: 1px solid red;
+}
+.maxground-cainiproducts-topone-four-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 23.5px;margin-top: 18.5px;
+    background: url("../Image/guessyourlove/olaydanban.png") no-repeat center;
+    background-size: 100%;
+}
+.maxground-cainiproducts-topone-five{
+    width: 231px;height: 100%;float: left;
+    background-color: white;
+}
+.maxground-cainiproducts-topone-five:hover{
+    border: 1px solid red;
+}
+.maxground-cainiproducts-topone-five-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 23.5px;margin-top: 18.5px;
+    background: url("../Image/guessyourlove/zishengtangjinghuasu.png") no-repeat center;
+    background-size: 100%;
+}
+.maxground-cainiproducts-topone-six{
+    width: 231px;height: 100%;float: left;
+    background-color: white;margin-right: 10px;
+}
+.maxground-cainiproducts-topone-six:hover{
+    border: 1px solid red;
+}
+.maxground-cainiproducts-topone-six-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 23.5px;margin-top: 18.5px;
+    background: url("../Image/guessyourlove/adidasi.png") no-repeat center;
+    background-size: 100%;
+}
+.maxground-cainiproducts-topone-seven{
+    width: 231px;height: 100%;float: left;
+    background-color: white;margin-right: 10px;
+}
+.maxground-cainiproducts-topone-seven:hover{
+    border: 1px solid red;
+}
+.maxground-cainiproducts-topone-seven-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 23.5px;margin-top: 18.5px;
+    background: url("../Image/guessyourlove/xiaomidianshi.jpg") no-repeat center;
+    background-size: 100%;
+}
+.maxground-cainiproducts-topone-eight{
+    width: 231px;height: 100%;float: left;
+    background-color: white;margin-right: 10px;
+}
+.maxground-cainiproducts-topone-eight:hover{
+    border: 1px solid red;
+}
+.maxground-cainiproducts-topone-eight-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 23.5px;margin-top: 18.5px;
+    background: url("../Image/guessyourlove/yingermianjin.jpg") no-repeat center;
+    background-size: 100%;
+}
+.maxground-cainiproducts-topone-nine{
+    width: 231px;height: 100%;float: left;
+    background-color: white;margin-right: 10px;
+}
+.maxground-cainiproducts-topone-nine:hover{
+    border: 1px solid red;
+}
+.maxground-cainiproducts-topone-nine-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 23.5px;margin-top: 18.5px;
+    background: url("../Image/guessyourlove/paobuji.png") no-repeat center;
+    background-size: 100%;
+}
+.maxground-cainiproducts-topone-ten{
+    width: 231px;height: 100%;float: left;
+    background-color: white;
+}
+.maxground-cainiproducts-topone-ten:hover{
+    border: 1px solid red;
+}
+.maxground-cainiproducts-topone-ten-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 23.5px;margin-top: 18.5px;
+    background: url("../Image/guessyourlove/yashilandai.png") no-repeat center;
+    background-size: 100%;
+}
+.maxground-cainiproducts-topone-shiyi{
+    width: 231px;height: 100%;float: left;
+    background-color: white;margin-right: 10px;
+}
+.maxground-cainiproducts-topone-shiyi:hover{
+    border: 1px solid red;
+}
+.maxground-cainiproducts-topone-shiyi-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 23.5px;margin-top: 18.5px;
+    background: url("../Image/guessyourlove/haier.jpg") no-repeat center;
+    background-size: 100%;
+}
+.maxground-cainiproducts-topone-shier{
+    width: 231px;height: 100%;float: left;
+    background-color: white;margin-right: 10px;
+}
+.maxground-cainiproducts-topone-shier:hover{
+    border: 1px solid red;
+}
+.maxground-cainiproducts-topone-shier-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 23.5px;margin-top: 18.5px;
+    background: url("../Image/guessyourlove/lankou.png") no-repeat center;
+    background-size: 100%;
+}
+.maxground-cainiproducts-topone-shisan{
+    width: 231px;height: 100%;float: left;
+    background-color: white;margin-right: 10px;
+}
+.maxground-cainiproducts-topone-shisan:hover{
+    border: 1px solid red;
+}
+.maxground-cainiproducts-topone-shisan-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 23.5px;margin-top: 18.5px;
+    background: url("../Image/guessyourlove/shengluolan.png") no-repeat center;
+    background-size: 100%;
+}
+.maxground-cainiproducts-topone-shisi{
+    width: 231px;height: 100%;float: left;
+    background-color: white;margin-right: 10px;
+}
+.maxground-cainiproducts-topone-shisi:hover{
+    border: 1px solid red;
+}
+.maxground-cainiproducts-topone-shisi-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 23.5px;margin-top: 18.5px;
+    background: url("../Image/guessyourlove/niuzaiku.png") no-repeat center;
+    background-size: 100%;
+}
+.maxground-cainiproducts-topone-shiwu{
+    width: 231px;height: 100%;float: left;
+    background-color: white;
+}
+.maxground-cainiproducts-topone-shiwu:hover{
+    border: 1px solid red;
+}
+.maxground-cainiproducts-topone-shiwu-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 23.5px;margin-top: 18.5px;
+    background: url("../Image/guessyourlove/hailanzhimi.png") no-repeat center;
+    background-size: 100%;
+}
+.maxground-cainiproducts-topone-shiliu{
+    width: 231px;height: 100%;float: left;
+    background-color: white;margin-right: 10px;
+}
+.maxground-cainiproducts-topone-shiliu:hover{
+    border: 1px solid red;
+}
+.maxground-cainiproducts-topone-shiliu-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 23.5px;margin-top: 18.5px;
+    background: url("../Image/guessyourlove/yuanlingduanxiu.png") no-repeat center;
+    background-size: 100%;
+}
+.maxground-cainiproducts-topone-shiqi{
+    width: 231px;height: 100%;float: left;
+    background-color: white;margin-right: 10px;
+}
+.maxground-cainiproducts-topone-shiqi:hover{
+    border: 1px solid red;
+}
+.maxground-cainiproducts-topone-shiqi-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 23.5px;margin-top: 18.5px;
+    background: url("../Image/guessyourlove/dayanjinghua.png") no-repeat center;
+    background-size: 100%;
+}
+.maxground-cainiproducts-topone-shiba{
+    width: 231px;height: 100%;float: left;
+    background-color: white;margin-right: 10px;
+}
+.maxground-cainiproducts-topone-shiba:hover{
+    border: 1px solid red;
+}
+.maxground-cainiproducts-topone-shiba-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 23.5px;margin-top: 18.5px;
+    background: url("../Image/guessyourlove/haierbingxiang.jpg") no-repeat center;
+    background-size: 100%;
+}
+.maxground-cainiproducts-topone-shijiu{
+    width: 231px;height: 100%;float: left;
+    background-color: white;margin-right: 10px;
+}
+.maxground-cainiproducts-topone-shijiu:hover{
+    border: 1px solid #ff0000;
+}
+.maxground-cainiproducts-topone-shijiu-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 23.5px;margin-top: 18.5px;
+    background: url("../Image/guessyourlove/wangyannvzhuang.png") no-repeat center;
+    background-size: 100%;
+}
+.maxground-cainiproducts-topone-ershi{
+    width: 231px;height: 100%;float: left;
+    background-color: white;
+}
+.maxground-cainiproducts-topone-ershi:hover{
+    border: 1px solid red;
+}
+.maxground-cainiproducts-topone-ershi-top{
+    width: 185px;height: 185px;float: left;
+    margin-left: 23.5px;margin-top: 18.5px;
+    background: url("../Image/guessyourlove/ipad.jpg") no-repeat center;
+    background-size: 100%;
+}
+/*-----------------------------------商品展示收尾logo-----------------------------------*/
+.maxground-end{
+    width: 100%;height: 45px;margin-top: 10px;
+}
+.maxground-end-logo{
+    width: 80px;height: 45px;margin:auto auto;
+    background: url("../Image/tmallend.png") no-repeat center;
+}
+/*-----------------------------------帮助和服务-----------------------------------*/
+.helpserver{
+    width: 100%;height: 357px;margin: auto auto;
+    background-color: white;
+}
+.helpserver-top{
+    width: 1192px;height: 133px;
+    border-bottom: 1px solid #999999;margin: auto auto;
+    background: url("../Image/tmallservice.png") no-repeat center;
+    background-size: 100%;
+}
+.helpserver-bottom{
+    width: 1192px;height: 220px;
+    margin: auto;margin: auto auto;
+    background: url("../Image/tmllfoot.png") no-repeat;
+    background-position: 50px 195px;
+    background-size: 70px 25px;
+    border-bottom: 3px solid #c80000;
+}
+.helpserver-bottom a{
+    display: block;text-decoration: none;
+    margin-top: 7px;font-size: 12px;color: black;
+}
+.helpserver-bottom-title{
+    font-size: 20px;margin-top: 20px;
+}
+.helpserver-bottom-one{
+    width: 150px;height: 100%;float: left;
+    margin-left: 40px;margin-right: 85px;
+}
+.helpserver-bottom-two{
+    width: 150px;height: 100%;float: left;
+    margin-right: 85px;
+}
+.helpserver-bottom-three{
+    width: 150px;height: 100%;float: left;
+    margin-right: 85px;
+}
+.helpserver-bottom-four{
+    width: 150px;height: 100%;
+    float: left;margin-right: 85px;
+}
+.helpserver-bottom-five{
+    width: 150px;height: 100%;float: left;
+}
+.helpserver-bottom-erweima{
+    width: 120px;height: 120px;
+    background: url("../Image/erweima.png") no-repeat center;
+    background-size: 100%;margin-left: -7px;
+}
+/*-----------------------------------网站结尾说明-----------------------------------*/
+.tmallend{
+    width: 100%;height: 235px;
+    margin: auto auto;
+    background: url("../Image/endbackground.jpg") no-repeat center;
+    background-size: 100%;
+}
+.tmallend-bottomshow{
+    width: 1192px;height: 235px;
+    background-color: #020202;
+    margin: auto auto;
+    border: 1px black;
+}
+.tmallend-tmallabout{
+    width: 650px;height: 21px;color: white;
+    overflow: hidden;
+}
+.tmallend-tmallabout a{
+    font-size: 12px;float: left;color: white;
+    text-decoration: none;margin-right: 5px;margin-top: 7px;
+}
+.tmallend-includecompany{
+    width: 1100px;height: 20px;
+    font-size: 12px;margin-top: 20px;color: white;
+}
+.tmallend-includecompany-otherweb-in{
+    float: left;
+}
+.tmallend-includecompany-otherweb-in a{
+    color: white;
+    text-decoration: none;
+}
+.tmallend-certicate{
+    width: 1200px;height: 20px;margin-top: 5px;
+    font-size: 12px;color: #cccccc;
+}
+.tmallend-certicate-content{
+    float: left;margin-right:60px;
+}
+.tmallend-tell{
+    width: 1200px;height: 22px;
+    margin-top: 5px;font-size: 12px;line-height: 20px;
+    color: #cccccc;
+}
+.tmallend-tell-content{
+    float: left;margin-right: 80px;
+}
+.tmallend-tell-content-expre{
+    margin-right: 80px;height: 20px;
+    padding-left: 22px;background: url("../Image/zhegongwang.png") no-repeat;
+    background-size: 20px 20px;background-position: left center;
+    line-height: 20px;float: left;
+}
+.tmallend-tmallthreesupport{
+    width: 100%;height: 20px;margin-top: 5px;
+    font-size: 12px;line-height: 20px;overflow: hidden;color: #cccccc;
+}
+.tmallend-tmallthreesupport-content{
+    float: left;margin-right: 80px;
+}
+.tmallend-tmallcopyright{
+    width:100%;height: 20px;line-height: 20px;
+    font-size: 12px;color: #999999;
+}
+.tmallend-agreebegin{
+    width: 100%;height: 30px;
+    margin-top: 10px;
+}
+.tmallend-agreebegin-one{
+    width: 80px;float: left;height: 30px;
+    background: url("../Image/zhejianggongshang.jpg") no-repeat;
+    background-size:100%;margin-right: 20px;
+}
+.tmallend-agreebegin-two{
+    width: 80px;float: left;height: 30px;
+    background: url("../Image/xukezheng.jpg") no-repeat;
+    background-size: 100%;
+}
