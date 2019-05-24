@@ -1,0 +1,431 @@
+
+.top-bottom{
+    width:1000px ;
+    height: 330px;
+    position: relative;
+    margin: 30px auto  0  auto;
+    overflow: hidden;
+}
+.top-bottom-item{
+    width: 12.2%;
+    height: 33%;
+    float: left;
+    border:1px solid rgb(245,245,245);
+    box-sizing: border-box;
+    position: relative;
+}
+
+.mallc-item{
+    float: left;
+    width:172px;
+    height: 230px;
+    background: #ffffff;
+    margin-left: 25px;
+    margin-top: 10px;
+
+}
+.mallc-item:hover{
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+.item_pic{
+    width: 150px;
+    height: 150px;
+    background: url("../image/item_pic.jpg") no-repeat;
+    margin-left:10px;
+    background-size:150px 150px ;
+}
+.mallall{
+    width: 1000px;
+    height:4880px;
+    margin:50px auto 0 auto;
+}
+.middle-mall2{
+    width: 1000px;
+    height: 600px;
+    margin: 0px auto 0px auto;
+    position: relative;
+    overflow: hidden;
+}
+.middle-mall3{
+    width: 1000px;
+    height: 600px;
+    margin:0px auto 0px auto;
+    position: relative;
+    overflow: hidden;
+}
+.middle-mall4{
+    width: 1000px;
+    height: 600px;
+    margin: 0px auto 0px auto;
+    position: relative; overflow: hidden;
+}
+.middle-mall5{
+    width: 1000px;
+    height: 600px;
+    margin: 0px auto 0px auto;
+    position: relative;overflow: hidden;
+}
+.middle-mall6{
+    width: 1000px;
+    height: 600px;
+    margin:0px auto 0px auto;
+    position: relative;overflow: hidden;
+}
+.middle-mall7{
+    width: 1000px;
+    height: 600px;
+    margin: 0px auto 0px auto;
+    position: relative; overflow: hidden;
+}
+.mall1-right-item2{
+    width: 280px;
+    height: 50%;
+    float: left;
+    margin-left: 13px ;
+    background: rgb(245,245,245);
+    position: relative;
+    overflow: hidden;
+}
+.mall1-right-item4{
+    width: 280px;
+    height: 50%;
+    float: left;
+    margin-left: 13px ;
+    margin-top: 10px;
+    background: rgb(245,245,245);
+    position: relative;
+    overflow: hidden;
+}
+.top-middle-1{
+    width:230px ;
+    height:380px;
+    float: left;
+    display: none;
+}
+.tianmao-right2{
+    width:300px;
+    float: left;
+    height: 50%;
+    line-height:30px;
+    margin-left: 460px;
+}
+.tianmao-right{
+    width:622px;
+    float: left;
+    height: 100%;
+    margin-left: 125px;
+}
+.mallall-c1{
+    width:140px;
+    height: 40px;
+    font-size:13px;
+    line-height: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
+    text-align: center;
+}
+.mallall-c2{
+    width:40px;
+    height: 20px;
+    font-size:16px;
+    line-height: 20px;
+    margin-left: 60px;
+    margin-right: 10px;
+    text-align: center;
+    margin-top:20px;
+    color: red;
+}
+.top-middle-2{
+    height:380px;
+    width:484px;
+    margin-left:0px;
+    float: left;
+}
+.leftfix{
+    display: none;
+}
+.cainixihuan{
+    width: 100%;
+    height:4880px;
+    margin: auto;
+    background: rgb(245,245,245);
+    position: relative;
+    overflow: hidden;
+}
+.meilirensheng{
+    width: 1000px;
+    height:30px;
+    margin: 30px auto 0 auto;
+
+}
+.tianmaochaoshi{
+    width: 1000px;
+    height: 40px;
+    margin: 20px auto 0px auto;
+}
+.tianmaoguoji{
+    width: 1000px;
+    height: 40px;
+    margin: 30px auto 0px auto;
+}
+.chaodiankuwan{
+    width: 1000px;
+    height:30px;
+    margin: 30px auto 0 auto;
+}
+.jujiashenghuo{
+    width: 1000px;
+    height:30px;
+    margin: 30px auto 0 auto;
+}
+.dazaoaichao{
+    width: 1000px;
+    height:30px;
+    margin: 30px auto 0 auto;
+
+}
+.huwaichuxing{
+    width: 1000px;
+    height:30px;
+    margin: 30px auto 0 auto;
+}
+.middle-pic1{
+    width: 1000px;
+    height: 80px;
+    margin: 30px auto 0px auto;
+
+    background: url("../image/middlepic1.jpg") no-repeat;
+    background-size:967px 80px;
+
+}
+.middle-pic2{
+    width: 1000px;
+    height: 80px;
+    margin: 30px auto 0px auto;
+
+    background: url("../image/middlepic2.jpg") no-repeat;
+    background-size:967px 80px;
+
+}
+.middle-pic3{
+    width: 1000px;
+    height: 80px;
+    margin: 30px auto 0px auto;
+
+    background: url("../image/middlepic3.jpg") no-repeat;
+    background-size:967px 80px;
+
+}
+.middle-mall1{
+    width: 1000px;
+    height: 600px;
+    margin: 10px auto 0px auto;
+    position: relative;
+}
+/*最上方*/
+.sn-container{
+    width: 980px;
+    height: 32px;
+    margin:auto;
+}
+.header-extra{
+    width: 1000px;
+    height: 150px;
+    margin: auto;
+}
+.inner-con{
+    width: 1000px;
+    height: 40px;
+    margin:auto;
+}
+.lunbo {
+    width: 1000px;
+    height: 510px;
+    position: relative;
+    margin: auto;
+
+}
+.top-middle{
+    width:1000px ;
+    height: 380px;
+    margin:30px  auto 0 auto;
+}
+.inner-con2{
+    width: 500px;
+    height: 38px;
+    float: left;
+    margin-left: 50px;
+    overflow: hidden;
+}
+@media  screen and  (min-width: 1230px){
+    .inner-con2{
+        width: 750px;
+        height: 38px;
+
+    }
+    .lunbo {
+        width: 1215px;
+        height: 510px;
+        position: relative;
+        margin: auto;
+    }
+    /*上中*/
+    .top-middle{
+        width:1215px ;
+    }
+    .middle-mall1{
+        width: 1212px;
+    }
+    .top-middle-1{
+        display: block;
+    }
+    /*最上方*/
+    .sn-container{
+        width: 1250px;
+    }
+    /*搜索栏*/
+    .header-extra{
+        width: 1250px;
+    }
+    .inner-con{
+        width: 1215px;
+    }
+    .top-middle-1{
+        width:230px ;
+        height:380px;
+        float: left;
+    }
+    .top-bottom{
+        width:1215px ;
+        height: 330px;
+    }
+    .top-bottom-item{
+        width: 10%;
+        height: 33%;
+    }
+    .mall2-item{
+        width:232px;
+        height: 285px;
+        margin-left: 13px;
+        margin-top: 10px;
+        overflow: hidden;
+    }
+    .mallall{
+        width: 1215px;
+        height: 5950px;
+
+        overflow: hidden;
+    }
+    .middle-mall2{
+        width: 1212px;
+    }
+    .middle-mall3{
+        width: 1212px;
+    }
+    .mall1-right-item2{
+        width: 476px;
+    }
+    .mall1-right-item4{
+        width: 476px;
+    }
+    .mallc-item{
+        width:230px;
+        height: 285px;
+        margin-left:15px;
+        cursor: pointer;
+    }
+    .item_pic{
+        width: 85%;
+        height: 200px;
+        background: url("../image/item_pic.jpg") no-repeat;
+        margin-left: 20px;
+        background-size:176px 195px ;
+    }
+    .middle-mall4{
+        width: 1212px;
+        height: 600px;
+    }
+    .middle-mall5{
+        width: 1212px;
+        height: 600px;
+
+    }
+    .middle-mall6{
+        width: 1212px;
+        height: 600px;
+    }
+    .middle-mall7{
+        width: 1212px;
+        height: 600px;
+    }
+    .tianmao-right2{
+        margin-left: 670px;
+    }
+    .tianmao-right{
+        margin-left: 350px;
+    }
+    .mallall-c1{
+        font-size:14px;
+        margin-left: 40px;
+    }
+    .mallall-c2{
+        font-size:18px;
+        margin-left: 90px;;
+    }
+    .top-middle-2{
+        margin-left:8px;
+    }
+    .leftfix{
+        position:fixed;
+        width: 35px;
+        height: 380px;
+        top: 200px;
+        left: 85px;
+        cursor: pointer;
+        z-index: 9;
+        display: block;
+    }
+    .cainixihuan{
+        width: 100%;
+        height: 6000px;
+    }
+    .meilirensheng{
+        width: 1212px;
+    }
+    .tianmaochaoshi{
+        width: 1212px;
+    }
+    .tianmaoguoji{
+        width: 1212px;
+    }
+    .chaodiankuwan{
+        width: 1212px;
+    }
+    .jujiashenghuo{
+        width: 1212px;
+    }
+    .dazaoaichao{
+        width: 1212px;
+    }
+    .huwaichuxing{
+        width: 1212px;
+    }
+    .middle-pic1{
+        width: 1210px;
+        background: url("../image/middlepic1.jpg") no-repeat;
+        background-size:1212px 80px;
+    }
+    .middle-pic2{
+        width: 1210px;
+        background: url("../image/middlepic2.jpg") no-repeat;
+        background-size:1212px 80px;
+    }
+
+    .middle-pic3{
+        width: 1210px;
+        background: url("../image/middlepic3.jpg") no-repeat;
+        background-size:1212px 80px;
+
+    }
+}
