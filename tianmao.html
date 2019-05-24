@@ -1,0 +1,2307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>天猫超市</title>
+  <link rel="stylesheet" href="css/tianmao.css">
+  <link rel="stylesheet" href="ll.css">
+</head>
+
+<script>
+window.onload=function(ev){
+var banner = document.querySelectorAll(".banner");
+var btns=document.querySelectorAll(".slider-nav>li");
+var floorCon = document.querySelectorAll(".floor-con");
+var floorTab=document.querySelectorAll(".floor-tab-head>li");
+var bannerRight = document.querySelectorAll(".banner-right");
+var sp = document.querySelectorAll(".lixiang-out-left");
+var nav = document.querySelectorAll(".nav");
+
+var num=0
+var count=0;
+setInterval(function () {
+if (num == 6) {
+num = 0;
+}
+for (var i = 0; i < banner.length; i++) {
+banner[i].style.display = "none"
+btns[i].style.background="#ccc"
+  bannerRight[i].style.display="none"
+}
+banner[num].style.display = "block";
+btns[num].style.background="#fff";
+bannerRight[num].style.display="block";
+
+if (count == 2) {
+count = 0;
+}
+for (var i = 0; i < floorCon.length; i++) {
+  floorCon[i].style.display = "none";
+  floorTab[i].style.background="white";
+  sp[i].style.background="#666";
+  nav[i].style.display="none";
+}
+  floorCon[count].style.display = "block";
+  floorTab[count].style.background="#00b162"
+  sp[count].style.background="red";
+  nav[count].style.display="block";
+num++;
+count++;
+},2000)
+}
+</script>
+<style>
+  /*理想生活上天猫*/
+  .lixiang-in{
+    width: 992px;
+    overflow: hidden;
+  }
+  .lixiang-ss{
+    width:55%;
+    margin-right:120px;
+  }
+
+  .lixiang-ss-up-right{
+    width:25%;
+  }
+  @media screen and (min-width: 1230px){
+    .lixiang-in{
+      width: 1230px;
+    }
+    .lixiang-ss{
+      width:650px;
+    }
+  }
+
+  .lixiang-out{
+    width: 992px;
+    overflow: hidden;
+  }
+  .lixiang-out-left{
+    width: 30%;
+  }
+  .lixiang-out ul{
+    width: 65%;
+  }
+
+  @media screen and (min-width:1230px){
+    .lixiang-out{
+      width: 1230px;
+    }
+  }
+
+  /*轮播*/
+  .bc{
+    float: right;
+  }
+  .lunbo{
+    width:992px;
+    overflow: hidden;
+  }
+  .banner-box{
+    width:100%;
+  }
+  .banner img{
+    width:992px;
+  }
+  @media screen and (min-width:1230px){
+    .lunbo{
+      width: 1230px;
+    }
+    .banner img{
+      width:1230px;
+    }
+  }
+
+  .activity-con{
+    width: 1050px;
+    overflow: hidden;
+  }
+  .activity-pinpai0{
+    width: 234px;
+    display: none;
+  }
+  .activity-right{
+    width:1024px;
+    float: left;
+  }
+
+  .activity-right .activity-pinpai{
+    float: left;
+  }
+  .activity-right .col-sm-6 {
+    width: 47%;
+  }
+
+  @media screen and (min-width: 1230px){
+    .activity-con{
+      width: 1230px;
+    }
+    .activity-pinpai0{
+      display: block;
+    }
+    .activity-right{
+      width: 990px;
+    }
+
+    .activity-right .col-lg-6 {
+      width: 47%;
+    }
+  }
+
+  .zhong-nav{
+    width: 1005px;
+    height: 333px;
+  }
+  .zhong-nav .libox{
+    width: 1005px;
+    height: 108px;
+  }
+
+
+  .zhong-nav .libox .col-sm-5 {
+    width: 12%;
+  }
+
+  @media screen and (min-width:1230px){
+    .zhong-nav{
+      width: 1255px;
+      overflow: hidden;
+    }
+    .zhong-nav .libox{
+      width: 1270px;
+      overflow: hidden;
+    }
+    .zhong-nav .libox .col-lg-4 {
+      width: 9.5%;
+    }
+  }
+
+
+  .new-floor-con{
+    width:992px;
+  }
+  .floor-name{
+    width: 992px;
+  }
+  .hot-word-con{
+    width:758px;
+  }
+  .line-body{
+    width: 992px;
+  }
+  .middle-column-con{
+    width: 757px;
+    overflow: hidden;
+  }
+
+  .middle-column-con .grid{
+    width: 757px;
+  }
+  .grid .col-sm-4 {
+    width: 31.5%;
+  }
+  .grid .col-sm-8 {
+    width: 60.5%;
+  }
+  @media screen  and (min-width: 1230px){
+    .new-floor-con{
+      width: 1230px;
+    }
+    .floor-name{
+      width: 1230px;
+    }
+    .hot-word-con{
+      width:995px;
+    }
+    .line-body{
+      width: 995px;
+    }
+    .middle-column-con{
+      width:995px;
+      overflow: hidden;
+    }
+    .middle-column-con .grid{
+      width: 995px;
+    }
+    .grid .col-lg-3 {
+      width: 23.5%;
+    }
+
+  }
+
+  .floor-grid{
+    width: 992px;
+    height: 308px;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+
+  .floor-grid .col-sm-5 {
+    width: 23%;
+  }
+  @media screen and (min-width:1230px ) {
+    .floor-grid{
+      width: 1230px;
+    }
+    .floor-grid .col-lg-4 {
+      width: 19%;
+    }
+  }
+
+  .footer col--bl-1{
+    width: 85%;
+  }
+
+  .full-banner{
+    width:992px;
+  }
+  .full-banner img{
+    width: 992px;
+    margin:0 auto;
+  }
+  @media screen and (min-width: 1230px){
+    .full-banner{
+      width:1230px;
+    }
+    .full-banner img{
+      width: 1230px;
+    }
+  }
+
+  /*猜你喜欢*/
+  .floor-line-con1{
+    width: 992px;
+  }
+  @media screen and (min-width: 1230px){
+    .floor-line-con1{
+      width: 1270px;
+    }
+  }
+  /*底部*/
+  .tmall-ensure{
+    width:992px;
+    overflow: hidden;
+  }
+  .tmall-ensure img{
+    width:992px;
+  }
+  .tmall-desc{
+    width:992px;
+    overflow: hidden;
+  }
+  .tmall-desc dl{
+    width: 145px;
+  }
+  .tmall-copyright{
+    width:992px;
+    overflow: hidden;
+  }
+
+  @media screen and (min-width: 1230px){
+    .tmall-ensure{
+      width:1230px;
+      overflow: hidden;
+    }
+    .tmall-ensure a{
+      width:25%;
+    }
+    .tmall-desc{
+      width:1230px;
+    }
+    .tmall-desc dl{
+      width: 194px;
+    }
+    .tmall-copyright{
+      width:1230px;
+    }
+  }
+</style>
+
+
+<body>
+
+<!--头部-->
+<div class="box">
+  <div class="box-all">
+  <div class="box-left">
+    <span>喵，欢迎来到天猫</span>
+    <span>
+      <a href="">请登陆</a>
+    </span>
+    <span>
+      <a href="">免费注册</a>
+    </span>
+  </div>
+  <div class="box-right">
+    <span>
+      <a href="">我的淘宝</a>
+    </span>
+    <span>
+      <a href="">购物车0件</a>
+    </span>
+    <span>
+      <a href="">收藏夹</a>
+    </span>
+    <span>
+      <b>|</b>
+      <a href="">手机版</a>
+    </span>
+    <span>
+      <a href="">淘宝网</a>
+    </span>
+    <span>
+      <a href="">商家支持</a>
+    </span>
+    <span>
+      <a href="">网站导航</a>
+    </span>
+
+  </div>
+</div>
+</div>
+<div class="bj">
+
+  <!--理想生活上天猫-->
+  <div class="lixiang-in">
+    <div class="lixiang-loginLeft">
+      <img src="image/tm.png" alt="" width="250px" height="123px">
+    </div>
+    <div class="lixiang-ss">
+      <div class="lixiang-ss-up">
+        <div class="lixiang-ss-up-right">
+          <span>搜索</span>
+        </div>
+      </div>
+      <div class="lixiang-ss-down">
+        <span style="margin-left:-10px"><a href="">针织衫</a></span>
+        <b>|</b>
+        <span><a href="">连衣裙</a></span>
+        <b>|</b>
+        <span><a href="">四件套</a></span>
+        <b>|</b>
+        <span><a href="">摄像头</a></span>
+        <b>|</b>
+        <span><a href="">客厅灯</a></span>
+        <b>|</b>
+        <span><a href="">口红</a></span>
+        <b>|</b>
+        <span><a href="">手机</a></span>
+        <b>|</b>
+        <span><a href="">运动鞋</a></span>
+        <b>|</b>
+        <span><a href="">牛奶</a></span>
+      </div>
+    </div>
+  </div>
+  <!--商品分类-->
+  <div class="lixiang-out">
+    <div class="lixiang-out-left">
+      商品分类
+    </div>
+    <div class="lixiang-out-left" style="background: rgba(0,0,0,0.5);">
+      商品分类
+    </div>
+    <ul>
+      <li><span>
+        <a href="">
+          <img src="//img.alicdn.com/tfs/TB1ztBlaMMPMeJjy1XbXXcwxVXa-200-60.png" width="100px">
+        </a></span>
+      </li>
+      <li>
+        <a href="">
+          <img src="//img.alicdn.com/tfs/TB1t5ObaBxRMKJjy0FdXXaifFXa-200-60.png " alt="" width="100px">
+        </a>
+      </li>
+      <li><a href="">天猫会员</a></li>
+      <li><a href="">电器城</a></li>
+      <li><a href="">喵鲜生</a></li>
+      <li><a href="">医药馆</a></li>
+      <li><a href="">营业厅</a></li>
+      <li><a href="">魅力惠</a></li>
+      <li><a href="">飞猪旅行</a></li>
+      <li><a href="">苏宁易购</a></li>
+    </ul>
+  </div>
+
+  <div class="lunbo">
+    <div class="banner-box">
+      <div class="banner">
+          <img
+               src="https://img.alicdn.com/imgextra/i2/169/O1CN01x9bzpF1D7RSdfoxuJ_!!169-0-luban.jpg_q100.jpg_.webp" alt="">
+      </div>
+      <div class="banner">
+        <img
+            src="//img.alicdn.com/tps/i4/TB13KvqVFzqK1RjSZFCSuvbxVXa.jpg" alt="">
+      </div>
+      <div class="banner">
+        <img
+             src="//img.alicdn.com/imgextra/i4/8/O1CN019kcp0B1Bvhh2NYXDx_!!8-0-luban.jpg_q100.jpg_.webp" alt="">
+      </div>
+      <div class="banner">
+        <img
+             src="//img.alicdn.com/imgextra/i2/4/O1CN01QqS62v1Bts6xZ5ia8_!!4-0-lubanu.jpg_q100.jpg_.webp" alt="">
+      </div>
+      <div class="banner">
+        <img
+             src="https://aecpm.alicdn.com/simba/img/TB1_JXrLVXXXXbZXVXXSutbFXXX.jpg" alt="">
+      </div>
+      <div class="banner">
+        <img
+             src="https://aecpm.alicdn.com/simba/img/TB1W4nPJFXXXXbSXpXXSutbFXXX.jpg" alt="">
+      </div>
+      <div class="slider-nav">
+        <li class="active"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </div>
+      <div class="banner-right">
+        <img  class="bimag" src="//img.alicdn.com/imgextra/i3/33/O1CN01cRsN5Z1C79b9PaJF1_!!33-2-lubanu.png_196x196q100.jpg_.webp" alt="">
+        <img class="bimag" src="//img.alicdn.com/imgextra/i1/130/O1CN01NKSUPR1CpZzpPaBAs_!!130-2-luban.png_196x196q100.jpg_.webp" alt="">
+      </div>
+      <div class="banner-right">
+        <img  class="bimag" src="//img.alicdn.com/imgextra/i4/71/O1CN01NoiOhZ1COYeFvD4WP_!!71-2-lubanu.png_294x430q100.jpg_.webp" alt="">
+        <img class="bimag" src="//img.alicdn.com/imgextra/i4/71/O1CN01NoiOhZ1COYeFvD4WP_!!71-2-lubanu.png_294x430q100.jpg_.webp" alt="">
+      </div>
+      <div class="banner-right">
+        <img  class="bimag" src="//img.alicdn.com/imgextra/i3/128/O1CN01IfhyAc1CofDw27Fyi_!!128-2-lubanu.png_294x430q100.jpg_.webp" alt="">
+        <img class="bimag" src="//img.alicdn.com/imgextra/i3/128/O1CN01IfhyAc1CofDw27Fyi_!!128-2-lubanu.png_294x430q100.jpg_.webp" alt="">
+      </div>
+      <div class="banner-right">
+        <img  class="bimag" src="//img.alicdn.com/imgextra/i3/33/O1CN01cRsN5Z1C79b9PaJF1_!!33-2-lubanu.png_196x196q100.jpg_.webp" alt="">
+        <img class="bimag" src="//img.alicdn.com/imgextra/i1/130/O1CN01NKSUPR1CpZzpPaBAs_!!130-2-luban.png_196x196q100.jpg_.webp" alt="">
+      </div>
+      <div class="banner-right">
+        <img  class="bimag" src="//img.alicdn.com/imgextra/i4/71/O1CN01NoiOhZ1COYeFvD4WP_!!71-2-lubanu.png_294x430q100.jpg_.webp" alt="">
+        <img class="bimag" src="//img.alicdn.com/imgextra/i4/71/O1CN01NoiOhZ1COYeFvD4WP_!!71-2-lubanu.png_294x430q100.jpg_.webp" alt="">
+      </div>
+      <div class="banner-right">
+        <img  class="bimag" src="//img.alicdn.com/imgextra/i3/128/O1CN01IfhyAc1CofDw27Fyi_!!128-2-lubanu.png_294x430q100.jpg_.webp" alt="">
+        <img class="bimag" src="//img.alicdn.com/imgextra/i3/128/O1CN01IfhyAc1CofDw27Fyi_!!128-2-lubanu.png_294x430q100.jpg_.webp" alt="">
+      </div>
+    </div>
+    <div class="nav">
+      <ul>
+        <li>
+          <i></i>
+          大牌女装
+        </li>
+        <li>大牌女装</li>
+        <li>大牌女装</li>
+        <li>大牌女装</li>
+        <li>大牌女装</li>
+        <li>大牌女装</li>
+        <li>大牌女装</li>
+        <li>大牌女装</li>
+        <li>大牌女装</li>
+        <li>大牌女装</li>
+      </ul>
+    </div>
+    <div class="nav">
+      <ul>
+        <li>
+          <i></i>
+          女装/衣服
+        </li>
+        <li>女装/衣服</li>
+        <li>女装/衣服</li>
+        <li>女装/衣服</li>
+        <li>女装/衣服</li>
+        <li>女装/衣服</li>
+        <li>女装/衣服</li>
+        <li>大牌女装</li>
+        <li>大牌女装</li>
+        <li>大牌女装</li>
+      </ul>
+    </div>
+  </div>
+  <div class="activity-bg">
+
+    <div class="activity-con">
+
+      <div class="activity-pinpai0">
+        <div class="activity-head">
+          <span class="cn">品牌闪购</span>
+          <span class="more"></span>
+        </div>
+        <a href="" class="activity-img" style="display: block">
+        <img src="https://img.alicdn.com/tfs/TB1eVWsUyrpK1RjSZFhXXXSdXXa-468-644.jpg_300x1000q100.jpg_.webp" alt="">
+        </a>
+        <a href="" class="activity-hover"
+           style="display: none;background-color:rgba(0,0,0,.8); width: 100px;height:100px">
+            <div>进入</div>
+        </a>
+      </div>
+      <div class="activity-right">
+        <div class="activity-pinpai col-sm-6 col-lg-6 ac">
+          <div class="activity-head">
+            <span class="cn">品牌闪购</span>
+            <span class="more">更多</span>
+          </div>
+          <a href="" class="activity-img">
+            <img src="https://img.alicdn.com/tfs/TB1ZkoLukCWBuNjy0FaXXXUlXXa-966-644.jpg_460x460q100.jpg_.webp" alt="">
+          </a>
+        </div>
+        <div class="activity-pinpai col-sm-6 col-lg-6 bc">
+          <div class="activity-head">
+            <span class="cn">品牌闪购</span>
+            <span class="more">更多</span>
+          </div>
+          <a href="" class="activity-img">
+            <img src="https://img.alicdn.com/tps/i4/TB1gVyRShYaK1RjSZFnSuu80pXa.jpg_460x460q100.jpg_.webp" alt="">
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="zhong">
+<!--  商标-->
+  <div class="zhong-nav">
+    <ul class="libox" style="height: 110px;">
+      <li class="brand-item col-sm-5 col-lg-4">
+        <div class="brand-img">
+          <img src="https://img.alicdn.com/i2/2/TB1D0sLnHSYBuNjSspiXXXNzpXa?abtest=&pos=1&abbucket=&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000_64x64q100.jpg_.webp" alt="">
+        </div>
+        <a class="brand-mask"
+          href="https://store.taobao.com/shop/view_shop.htm?user_number_id=2811185140&abtest=&pvid=5a02d3bf-6b17-43cd-b907-1b8a2cef90e1&pos=1&abbucket=&brandId=99906590&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000">
+          <div class="coupon">
+            <span>优惠券￥200</span>
+          </div>
+          <div class="enter">
+            <span>点击进入</span>
+          </div>
+        </a>
+      </li>
+      <li class="brand-item col-sm-5 col-lg-4">
+        <div class="brand-img">
+          <img src="//img.alicdn.com/i2/2/TB1eIWtutcnBKNjSZR0XXcFqFXa?abtest=&pos=2&abbucket=&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000_230x87q100.jpg_.webp" alt="">
+        </div>
+        <a class="brand-mask"
+           href="https://store.taobao.com/shop/view_shop.htm?user_number_id=2811185140&abtest=&pvid=5a02d3bf-6b17-43cd-b907-1b8a2cef90e1&pos=1&abbucket=&brandId=99906590&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000">
+          <div class="coupon">
+            <span>优惠券￥200</span>
+          </div>
+          <div class="enter">
+            <span>点击进入</span>
+          </div>
+        </a>
+      </li>
+      <li class="brand-item col-sm-5 col-lg-4">
+        <div class="brand-img">
+          <img src="//img.alicdn.com/i2/2/TB1ilbUHpXXXXb8XXXXSutbFXXX.jpg_230x87q100.jpg_.webp" alt="">
+        </div>
+        <a class="brand-mask"
+           href="https://store.taobao.com/shop/view_shop.htm?user_number_id=2811185140&abtest=&pvid=5a02d3bf-6b17-43cd-b907-1b8a2cef90e1&pos=1&abbucket=&brandId=99906590&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000">
+          <div class="coupon">
+            <span>优惠券￥200</span>
+          </div>
+          <div class="enter">
+            <span>点击进入</span>
+          </div>
+        </a>
+      </li>
+      <li class="brand-item col-sm-5 col-lg-4">
+        <div class="brand-img">
+          <img src="//img.alicdn.com/i2/2/TB1TJNTPXXXXXcqXVXXSutbFXXX.jpg_230x87q100.jpg_.webp" alt="">
+        </div>
+        <a class="brand-mask"
+           href="https://store.taobao.com/shop/view_shop.htm?user_number_id=2811185140&abtest=&pvid=5a02d3bf-6b17-43cd-b907-1b8a2cef90e1&pos=1&abbucket=&brandId=99906590&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000">
+          <div class="coupon">
+            <span>优惠券￥200</span>
+          </div>
+          <div class="enter">
+            <span>点击进入</span>
+          </div>
+        </a>
+      </li>
+      <li class="brand-item col-sm-5 col-lg-4">
+        <div class="brand-img">
+          <img src="https://img.alicdn.com/i2/2/TB1D0sLnHSYBuNjSspiXXXNzpXa?abtest=&pos=1&abbucket=&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000_64x64q100.jpg_.webp" alt="">
+        </div>
+        <a class="brand-mask"
+           href="https://store.taobao.com/shop/view_shop.htm?user_number_id=2811185140&abtest=&pvid=5a02d3bf-6b17-43cd-b907-1b8a2cef90e1&pos=1&abbucket=&brandId=99906590&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000">
+          <div class="coupon">
+            <span>优惠券￥200</span>
+          </div>
+          <div class="enter">
+            <span>点击进入</span>
+          </div>
+        </a>
+      </li>
+      <li class="brand-item col-sm-5 col-lg-4">
+        <div class="brand-img">
+          <img src="//img.alicdn.com/i2/2/TB1a3bVRXXXXXbfXFXXXXXXXXXX?abtest=&pos=5&abbucket=&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000_230x87q100.jpg_.webp" alt="">
+        </div>
+        <a class="brand-mask"
+           href="https://store.taobao.com/shop/view_shop.htm?user_number_id=2811185140&abtest=&pvid=5a02d3bf-6b17-43cd-b907-1b8a2cef90e1&pos=1&abbucket=&brandId=99906590&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000">
+          <div class="coupon">
+            <span>优惠券￥200</span>
+          </div>
+          <div class="enter">
+            <span>点击进入</span>
+          </div>
+        </a>
+
+      </li>
+      <li class="brand-item col-sm-5 col-lg-4">
+        <div class="brand-img">
+          <img src="//img.alicdn.com/i2/2/TB1kloQx8mWBuNkSndVSuwsApXa.jpg_230x87q100.jpg_.webp" alt="">
+        </div>
+        <a class="brand-mask"
+           href="https://store.taobao.com/shop/view_shop.htm?user_number_id=2811185140&abtest=&pvid=5a02d3bf-6b17-43cd-b907-1b8a2cef90e1&pos=1&abbucket=&brandId=99906590&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000">
+          <div class="coupon">
+            <span>优惠券￥200</span>
+          </div>
+          <div class="enter">
+            <span>点击进入</span>
+          </div>
+        </a>
+
+      </li>
+      <li class="brand-item col-sm-5 col-lg-4">
+        <div class="brand-img">
+          <img src="//img.alicdn.com/i2/2/TB1gD8NhDlYBeNjSszcXXbwhFXa?abtest=&pos=7&abbucket=&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000_230x87q100.jpg_.webp" alt="">
+        </div>
+        <a class="brand-mask"
+           href="https://store.taobao.com/shop/view_shop.htm?user_number_id=2811185140&abtest=&pvid=5a02d3bf-6b17-43cd-b907-1b8a2cef90e1&pos=1&abbucket=&brandId=99906590&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000">
+          <div class="coupon">
+            <span>优惠券￥200</span>
+          </div>
+          <div class="enter">
+            <span>点击进入</span>
+          </div>
+        </a>
+
+      </li>
+      <li class="brand-item col-sm-5 col-lg-4">
+        <div class="brand-img">
+          <img src="//img.alicdn.com/i2/2/TB1_aF7pG6qK1RjSZFmXXX0PFXa?abtest=&pos=8&abbucket=&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000_230x87q100.jpg_.webp" alt="">
+        </div>
+        <a class="brand-mask"
+           href="https://store.taobao.com/shop/view_shop.htm?user_number_id=2811185140&abtest=&pvid=5a02d3bf-6b17-43cd-b907-1b8a2cef90e1&pos=1&abbucket=&brandId=99906590&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000">
+          <div class="coupon">
+            <span>优惠券￥200</span>
+          </div>
+          <div class="enter">
+            <span>点击进入</span>
+          </div>
+        </a>
+
+      </li>
+      <li class="brand-item col-sm-5 col-lg-4">
+        <div class="brand-img">
+          <img src="//img.alicdn.com/i2/2/TB12cBSirGYBuNjy0FoXXciBFXa?abtest=&pos=9&abbucket=&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000_230x87q100.jpg_.webp" alt="">
+        </div>
+        <a class="brand-mask"
+           href="https://store.taobao.com/shop/view_shop.htm?user_number_id=2811185140&abtest=&pvid=5a02d3bf-6b17-43cd-b907-1b8a2cef90e1&pos=1&abbucket=&brandId=99906590&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000">
+          <div class="coupon">
+            <span>优惠券￥200</span>
+          </div>
+          <div class="enter">
+            <span>点击进入</span>
+          </div>
+        </a>
+
+      </li>
+    </ul>
+    <ul class="libox" style="height: 110px;">
+      <li class="brand-item col-sm-5 col-lg-4">
+        <div class="brand-img">
+          <img src="//img.alicdn.com/i2/2/TB1IJymuk9WBuNjSspeXXaz5VXa?abtest=&pos=10&abbucket=&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000_230x87q100.jpg_.webp" alt="">
+        </div>
+        <a class="brand-mask"
+           href="https://store.taobao.com/shop/view_shop.htm?user_number_id=2811185140&abtest=&pvid=5a02d3bf-6b17-43cd-b907-1b8a2cef90e1&pos=1&abbucket=&brandId=99906590&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000">
+          <div class="coupon">
+            <span>优惠券￥200</span>
+          </div>
+          <div class="enter">
+            <span>点击进入</span>
+          </div>
+        </a>
+
+      </li>
+      <li class="brand-item col-sm-5 col-lg-4">
+        <div class="brand-img">
+          <img src="//img.alicdn.com/imgextra/i4/928417138/O1CN019OFNEK22bFcXdLUb5_!!928417138.png_230x87q100.jpg_.webp" alt="">
+        </div>
+        <a class="brand-mask"
+           href="https://store.taobao.com/shop/view_shop.htm?user_number_id=2811185140&abtest=&pvid=5a02d3bf-6b17-43cd-b907-1b8a2cef90e1&pos=1&abbucket=&brandId=99906590&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000">
+          <div class="coupon">
+            <span>优惠券￥200</span>
+          </div>
+          <div class="enter">
+            <span>点击进入</span>
+          </div>
+        </a>
+
+      </li>
+      <li class="brand-item col-sm-5 col-lg-4">
+        <div class="brand-img">
+          <img src="//img.alicdn.com/i2/2/TB1KH4GQpXXXXb_apXXSutbFXXX.jpg_230x87q100.jpg_.webp" alt="">
+        </div>
+        <a class="brand-mask"
+           href="https://store.taobao.com/shop/view_shop.htm?user_number_id=2811185140&abtest=&pvid=5a02d3bf-6b17-43cd-b907-1b8a2cef90e1&pos=1&abbucket=&brandId=99906590&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000">
+          <div class="coupon">
+            <span>优惠券￥200</span>
+          </div>
+          <div class="enter">
+            <span>点击进入</span>
+          </div>
+        </a>
+
+      </li>
+      <li class="brand-item col-sm-5 col-lg-4">
+        <div class="brand-img">
+          <img src="//img.alicdn.com/i2/2/TB1_kq7j1SSBuNjy0FlXXbBpVXa?abtest=&pos=13&abbucket=&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000_230x87q100.jpg_.webp" alt="">
+        </div>
+        <a class="brand-mask"
+           href="https://store.taobao.com/shop/view_shop.htm?user_number_id=2811185140&abtest=&pvid=5a02d3bf-6b17-43cd-b907-1b8a2cef90e1&pos=1&abbucket=&brandId=99906590&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000">
+          <div class="coupon">
+            <span>优惠券￥200</span>
+          </div>
+          <div class="enter">
+            <span>点击进入</span>
+          </div>
+        </a>
+
+      </li>
+      <li class="brand-item col-sm-5 col-lg-4">
+        <div class="brand-img">
+          <img src="//img.alicdn.com/i2/2/TB1sM7GSXXXXXb3aXXXXXXXXXXX?abtest=&pos=14&abbucket=&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000_230x87q100.jpg_.webp" alt="">
+        </div>
+        <a class="brand-mask"
+           href="https://store.taobao.com/shop/view_shop.htm?user_number_id=2811185140&abtest=&pvid=5a02d3bf-6b17-43cd-b907-1b8a2cef90e1&pos=1&abbucket=&brandId=99906590&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000">
+          <div class="coupon">
+            <span>优惠券￥200</span>
+          </div>
+          <div class="enter">
+            <span>点击进入</span>
+          </div>
+        </a>
+
+      </li>
+      <li class="brand-item col-sm-5 col-lg-4">
+        <div class="brand-img">
+          <img src="//img.alicdn.com/i2/2/TB1A9Eicf5TBuNjSspmXXaDRVXa?abtest=&pos=15&abbucket=&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000_230x87q100.jpg_.webp" alt="">
+        </div>
+        <a class="brand-mask"
+           href="https://store.taobao.com/shop/view_shop.htm?user_number_id=2811185140&abtest=&pvid=5a02d3bf-6b17-43cd-b907-1b8a2cef90e1&pos=1&abbucket=&brandId=99906590&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000">
+          <div class="coupon">
+            <span>优惠券￥200</span>
+          </div>
+          <div class="enter">
+            <span>点击进入</span>
+          </div>
+        </a>
+
+      </li>
+      <li class="brand-item col-sm-5 col-lg-4">
+        <div class="brand-img">
+          <img src="//img.alicdn.com/i2/2/TB1R1K4GFmWBuNjSspdSuvugXXa.jpg_230x87q100.jpg_.webp" alt="">
+        </div>
+        <a class="brand-mask"
+           href="https://store.taobao.com/shop/view_shop.htm?user_number_id=2811185140&abtest=&pvid=5a02d3bf-6b17-43cd-b907-1b8a2cef90e1&pos=1&abbucket=&brandId=99906590&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000">
+          <div class="coupon">
+            <span>优惠券￥200</span>
+          </div>
+          <div class="enter">
+            <span>点击进入</span>
+          </div>
+        </a>
+
+      </li>
+      <li class="brand-item col-sm-5 col-lg-4">
+        <div class="brand-img">
+          <img src="//img.alicdn.com/i2/2/TB1_aF7pG6qK1RjSZFmXXX0PFXa?abtest=&pos=8&abbucket=&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000_230x87q100.jpg_.webp" alt="">
+        </div>
+        <a class="brand-mask"
+           href="https://store.taobao.com/shop/view_shop.htm?user_number_id=2811185140&abtest=&pvid=5a02d3bf-6b17-43cd-b907-1b8a2cef90e1&pos=1&abbucket=&brandId=99906590&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000">
+          <div class="coupon">
+            <span>优惠券￥200</span>
+          </div>
+          <div class="enter">
+            <span>点击进入</span>
+          </div>
+        </a>
+
+      </li>
+      <li class="brand-item col-sm-5 col-lg-4">
+        <div class="brand-img">
+          <img src="//img.alicdn.com/i2/2/TB12cBSirGYBuNjy0FoXXciBFXa?abtest=&pos=9&abbucket=&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000_230x87q100.jpg_.webp" alt="">
+        </div>
+        <a class="brand-mask"
+           href="https://store.taobao.com/shop/view_shop.htm?user_number_id=2811185140&abtest=&pvid=5a02d3bf-6b17-43cd-b907-1b8a2cef90e1&pos=1&abbucket=&brandId=99906590&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000">
+          <div class="coupon">
+            <span>优惠券￥200</span>
+          </div>
+          <div class="enter">
+            <span>点击进入</span>
+          </div>
+        </a>
+
+      </li>
+      <li class="brand-item col-sm-5 col-lg-4">
+        <div class="brand-img">
+          <img src="//img.alicdn.com/i2/2/TB1IJymuk9WBuNjSspeXXaz5VXa?abtest=&pos=10&abbucket=&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000_230x87q100.jpg_.webp" alt="">
+        </div>
+        <a class="brand-mask"
+           href="https://store.taobao.com/shop/view_shop.htm?user_number_id=2811185140&abtest=&pvid=5a02d3bf-6b17-43cd-b907-1b8a2cef90e1&pos=1&abbucket=&brandId=99906590&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000">
+          <div class="coupon">
+            <span>优惠券￥200</span>
+          </div>
+          <div class="enter">
+            <span>点击进入</span>
+          </div>
+        </a>
+
+      </li>
+    </ul>
+    <ul class="libox" style="height: 110px;">
+    <li class="brand-item col-sm-5 col-lg-4">
+        <div class="brand-img">
+          <img src="//img.alicdn.com/imgextra/i4/928417138/O1CN019OFNEK22bFcXdLUb5_!!928417138.png_230x87q100.jpg_.webp" alt="">
+        </div>
+        <a class="brand-mask"
+           href="https://store.taobao.com/shop/view_shop.htm?user_number_id=2811185140&abtest=&pvid=5a02d3bf-6b17-43cd-b907-1b8a2cef90e1&pos=1&abbucket=&brandId=99906590&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000">
+          <div class="coupon">
+            <span>优惠券￥200</span>
+          </div>
+          <div class="enter">
+            <span>点击进入</span>
+          </div>
+        </a>
+
+      </li>
+    <li class="brand-item col-sm-5 col-lg-4">
+        <div class="brand-img">
+          <img src="//img.alicdn.com/i2/2/TB1KH4GQpXXXXb_apXXSutbFXXX.jpg_230x87q100.jpg_.webp" alt="">
+        </div>
+        <a class="brand-mask"
+           href="https://store.taobao.com/shop/view_shop.htm?user_number_id=2811185140&abtest=&pvid=5a02d3bf-6b17-43cd-b907-1b8a2cef90e1&pos=1&abbucket=&brandId=99906590&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000">
+          <div class="coupon">
+            <span>优惠券￥200</span>
+          </div>
+          <div class="enter">
+            <span>点击进入</span>
+          </div>
+        </a>
+
+      </li>
+    <li class="brand-item col-sm-5 col-lg-4">
+        <div class="brand-img">
+          <img src="//img.alicdn.com/i2/2/TB1_kq7j1SSBuNjy0FlXXbBpVXa?abtest=&pos=13&abbucket=&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000_230x87q100.jpg_.webp" alt="">
+        </div>
+        <a href="https://store.taobao.com/shop/view_shop.htm?user_number_id=2811185140&abtest=&pvid=5a02d3bf-6b17-43cd-b907-1b8a2cef90e1&pos=1&abbucket=&brandId=99906590&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000"></a>
+      </li>
+    <li class="brand-item col-sm-5 col-lg-4">
+        <div class="brand-img">
+          <img src="//img.alicdn.com/i2/2/TB1sM7GSXXXXXb3aXXXXXXXXXXX?abtest=&pos=14&abbucket=&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000_230x87q100.jpg_.webp" alt="">
+        </div>
+        <a href="https://store.taobao.com/shop/view_shop.htm?user_number_id=2811185140&abtest=&pvid=5a02d3bf-6b17-43cd-b907-1b8a2cef90e1&pos=1&abbucket=&brandId=99906590&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000"></a>
+      </li>
+    <li class="brand-item col-sm-5 col-lg-4">
+        <div class="brand-img">
+          <img src="//img.alicdn.com/i2/2/TB1A9Eicf5TBuNjSspmXXaDRVXa?abtest=&pos=15&abbucket=&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000_230x87q100.jpg_.webp" alt="">
+        </div>
+        <a href="https://store.taobao.com/shop/view_shop.htm?user_number_id=2811185140&abtest=&pvid=5a02d3bf-6b17-43cd-b907-1b8a2cef90e1&pos=1&abbucket=&brandId=99906590&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000"></a>
+      </li>
+    <li class="brand-item col-sm-5 col-lg-4">
+        <div class="brand-img">
+          <img src="//img.alicdn.com/i2/2/TB1ilbUHpXXXXb8XXXXSutbFXXX.jpg_230x87q100.jpg_.webp" alt="">
+        </div>
+        <a href="https://store.taobao.com/shop/view_shop.htm?user_number_id=2811185140&abtest=&pvid=5a02d3bf-6b17-43cd-b907-1b8a2cef90e1&pos=1&abbucket=&brandId=99906590&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000"></a>
+      </li>
+    <li class="brand-item col-sm-5 col-lg-4">
+        <div class="brand-img">
+          <img src="//img.alicdn.com/i2/2/TB1TJNTPXXXXXcqXVXXSutbFXXX.jpg_230x87q100.jpg_.webp" alt="">
+        </div>
+        <a href="https://store.taobao.com/shop/view_shop.htm?user_number_id=2811185140&abtest=&pvid=5a02d3bf-6b17-43cd-b907-1b8a2cef90e1&pos=1&abbucket=&brandId=99906590&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000"></a>
+      </li>
+    <li class="brand-item col-sm-5 col-lg-4">
+        <div class="brand-img">
+          <img src="https://img.alicdn.com/i2/2/TB1D0sLnHSYBuNjSspiXXXNzpXa?abtest=&pos=1&abbucket=&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000_64x64q100.jpg_.webp" alt="">
+        </div>
+        <a href="https://store.taobao.com/shop/view_shop.htm?user_number_id=2811185140&abtest=&pvid=5a02d3bf-6b17-43cd-b907-1b8a2cef90e1&pos=1&abbucket=&brandId=99906590&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000"></a>
+      </li>
+    <li class="brand-item col-sm-5 col-lg-4">
+        <div class="brand-img">
+          <img src="//img.alicdn.com/i2/2/TB1a3bVRXXXXXbfXFXXXXXXXXXX?abtest=&pos=5&abbucket=&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000_230x87q100.jpg_.webp" alt="">
+        </div>
+        <a href="https://store.taobao.com/shop/view_shop.htm?user_number_id=2811185140&abtest=&pvid=5a02d3bf-6b17-43cd-b907-1b8a2cef90e1&pos=1&abbucket=&brandId=99906590&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000"></a>
+      </li>
+    <li class="brand-item col-sm-5 col-lg-4">
+        <div class="brand-img">
+          <img src="//img.alicdn.com/i2/2/TB1a3bVRXXXXXbfXFXXXXXXXXXX?abtest=&pos=5&abbucket=&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000_230x87q100.jpg_.webp" alt="">
+        </div>
+        <a href="https://store.taobao.com/shop/view_shop.htm?user_number_id=2811185140&abtest=&pvid=5a02d3bf-6b17-43cd-b907-1b8a2cef90e1&pos=1&abbucket=&brandId=99906590&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000"></a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="new-floor-con">
+    <!--  天猫超市-->
+  <div class="floor-line-con">
+    <div class="floor-name">
+      <img src="https://img.alicdn.com/tfs/TB1Q67hXPihSKJjy0FeXXbJtpXa-428-50.png" alt="">
+    </div>
+    <div class="hot-word-con">
+      <a href="" class="hot-word">
+        进口食品
+      </a>
+      <a href="" class="hot-word">
+        食品饮料
+      </a>
+      <a href="" class="hot-word">
+        粮油副食
+      </a>
+      <a href="" class="hot-word">
+        美容洗护
+      </a>
+      <a href="" class="hot-word">
+        家具家电
+      </a>
+      <a href="" class="hot-word">
+        家庭清洁
+      </a>
+      <a href="" class="hot-word">
+        母婴用品
+      </a>
+      <a href="" class="hot-word">
+        生鲜水果
+      </a>
+    </div>
+    <div class="line-body">
+      <div class="big-banner-con-2">
+        <a href="" class="big-banner-con-2-img">
+          <img src="https://img.alicdn.com/tfs/TB13FixCeuSBuNjy1XcXXcYjFXa-468-1236.jpg" alt="">
+          <div class="banner-detail">
+            <div class="left-title-wrap">
+              <span class="left-title">
+                天猫超市
+              </span>
+            </div>
+            <div class="right-title-wrap">
+              <span class="right-title">零食欢乐购</span>
+              <span class="right-title">爆款直降</span>
+            </div>
+          </div>
+          <div class="detail-wrap">
+            <img src="https://img.alicdn.com/tfs/TB1IQBtXaagSKJjy0FbXXa.mVXa-68-68.png" alt="">
+          </div>
+        </a>
+      </div>
+      <div class="middle-column-con">
+
+        <div class="grid" style="margin-bottom: 10px;">
+        <div class="grid-two-grid">
+          <div class="floor-tabs">
+            <ul class="floor-tab-head">
+              <li style="background:#00b262;">
+                <p class="tab-title" >今日疯抢</p>
+              </li>
+              <li>
+                <p class="tab-title" >量贩装</p>
+              </li>
+            </ul>
+            <div class="floor-con">
+              <div class="tab-left">
+                <div class="title-wrap">
+                  <img src="https://img.alicdn.com/tfs/TB12RqQewMPMeJjy1XdXXasrXXa-23-23.png" alt="">
+                  <span class="tab-item-title">ABC卫生巾</span>
+                </div>
+                <div>
+                  <span class="tab-desp">抢第2件0元</span>
+                </div>
+              </div>
+              <div class="tab-right">
+                <img src="https://img.alicdn.com/tfs/TB1jNScP6TpK1RjSZKPXXa3UpXa-400-400.jpg" alt="">
+              </div>
+            </div>
+            <div class="floor-con">
+              <div class="tab-left">
+                <div class="title-wrap">
+                  <img src="https://img.alicdn.com/tfs/TB12RqQewMPMeJjy1XdXXasrXXa-23-23.png" alt="">
+                  <span class="tab-item-title">力士洗浴套装</span>
+                </div>
+                <div>
+                  <span class="tab-desp">抢第2件0元</span>
+                </div>
+              </div>
+              <div class="tab-right">
+                <img src="https://img.alicdn.com/tfs/TB13n7yQ8LoK1RjSZFuXXXn0XXa-400-400.jpg" alt="">
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <a href="" class="grid-one-grid col-sm-4 col-lg-3">
+          <div class="floor-item-content-wrap">
+            <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i1/725677994/O1CN0131eA6M28vId7wCQgy_!!0-item_pic.jpg" alt="">
+            <div class="floor-item-title">
+              屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+            </div>
+            <div class="floor-price">
+              ￥88
+            </div>
+          </div>
+        </a>
+        <a href="" class="grid-one-grid col-sm-4 col-lg-3">
+          <div class="floor-item-content-wrap">
+            <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i3/113462038/TB1Ide3XqmgSKJjSspiXXXyJFXa_!!0-item_pic.jpg" alt="">
+            <div class="floor-item-title">
+              屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+            </div>
+            <div class="floor-price">
+              ￥88
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <div class="grid">
+          <a href="" class="grid-one-grid col-sm-4 col-lg-3">
+            <div class="floor-item-content-wrap">
+              <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i4/725677994/O1CN014iBbbz28vIfOZHn0W_!!0-item_pic.jpg" alt="">
+              <div class="floor-item-title">
+                屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+              </div>
+              <div class="floor-price">
+                ￥88
+              </div>
+            </div>
+          </a>
+          <a href="" class="grid-one-grid col-sm-4 col-lg-3">
+            <div class="floor-item-content-wrap">
+              <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i4/725677994/TB2tqg0cYvpK1RjSZFqXXcXUVXa_!!725677994-0-sm.jpg" alt="">
+              <div class="floor-item-title">
+                屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+              </div>
+              <div class="floor-price">
+                ￥88
+              </div>
+            </div>
+          </a>
+          <a href="" class="grid-one-grid col-sm-4 col-lg-3">
+            <div class="floor-item-content-wrap">
+              <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i4/725677994/TB24QcTcYPpK1RjSZFFXXa5PpXa_!!725677994-0-sm.jpg" alt="">
+              <div class="floor-item-title">
+                屈臣氏苏打汽水2000整箱原味无糖苏打水饮料
+              </div>
+              <div class="floor-price">
+                ￥88
+              </div>
+            </div>
+          </a>
+          <a href="" class="grid-one-grid col-sm-4 col-lg-3">
+            <div class="floor-item-content-wrap">
+              <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i4/725677994/O1CN01MYlGhl28vIgAdOgMc_!!0-item_pic.jpg" alt="">
+              <div class="floor-item-title">
+                屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+              </div>
+              <div class="floor-price">
+                ￥88
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!--  天猫国际-->
+    <div class="floor-line-con">
+      <div class="floor-name">
+        <img src="https://img.alicdn.com/tfs/TB1R.slXGagSKJjy0FgXXcRqFXa-428-50.png" alt="">
+      </div>
+      <div class="hot-word-con">
+        <a href="" class="hot-word">
+          口红
+        </a>
+        <a href="" class="hot-word">
+          面膜
+        </a>
+        <a href="" class="hot-word">
+          防晒
+        </a>
+        <a href="" class="hot-word">
+          迪奥
+        </a>
+        <a href="" class="hot-word">
+          YSL
+        </a>
+      </div>
+      <div class="line-body">
+        <div class="big-banner-con-2">
+          <div href="" class="up">
+            <img
+              src="https://img.alicdn.com/tps/i4/TB1g9jGSSzqK1RjSZPxwu34tVXa.png" alt="">
+            <div class="banner-detail">
+              <div class="left-title-wrap">
+              <span class="left-title">
+                天猫超市
+              </span>
+              </div>
+              <div class="right-title-wrap">
+                <span class="right-title">零食欢乐购</span>
+                <span class="right-title">爆款直降</span>
+              </div>
+            </div>
+            <div class="detail-wrap">
+              <img
+                src="https://img.alicdn.com/tfs/TB1IQBtXaagSKJjy0FbXXa.mVXa-68-68.png" alt="">
+            </div>
+          </div>
+          <div href="" class="up" style="margin-top:10px;">
+            <img style="margin-top:10px;"
+              src="https://img.alicdn.com/tps/i4/TB1Rl5zS3HqK1RjSZFEwu3GMXXa.png" alt="">
+            <div class="banner-detail">
+              <div class="left-title-wrap">
+              <span class="left-title">
+                天猫超市
+              </span>
+              </div>
+              <div class="right-title-wrap">
+                <span class="right-title">零食欢乐购</span>
+                <span class="right-title">爆款直降</span>
+              </div>
+            </div>
+            <div class="detail-wrap">
+              <img src="https://img.alicdn.com/tfs/TB1IQBtXaagSKJjy0FbXXa.mVXa-68-68.png" alt="">
+            </div>
+          </div>
+
+        </div>
+        <div class="middle-column-con">
+          <div class="grid" style="margin-bottom: 10px;">
+          <a href="" class="grid-one-grid col-sm-4 col-lg-3" style="margin-left: 6px;">
+            <div class="floor-item-content-wrap">
+              <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i1/725677994/O1CN0131eA6M28vId7wCQgy_!!0-item_pic.jpg" alt="">
+              <div class="floor-item-title">
+                屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+              </div>
+              <div class="floor-price">
+                ￥88
+              </div>
+            </div>
+          </a>
+          <a href="" class="grid-one-grid col-sm-4 col-lg-3">
+            <div class="floor-item-content-wrap">
+              <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i1/2063458233/O1CN01R2fz0i2AglKzEbBrI_!!0-item_pic.jpg" alt="">
+              <div class="floor-item-title">
+                屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+              </div>
+              <div class="floor-price">
+                ￥88
+              </div>
+            </div>
+          </a>
+          <a href="" class="grid-one-grid col-sm-4 col-lg-3">
+            <div class="floor-item-content-wrap">
+              <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i1/725677994/O1CN0131eA6M28vId7wCQgy_!!0-item_pic.jpg" alt="">
+              <div class="floor-item-title">
+                屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+              </div>
+              <div class="floor-price">
+                ￥88
+              </div>
+            </div>
+          </a>
+          <a href="" class="grid-one-grid col-sm-4 col-lg-3">
+            <div class="floor-item-content-wrap">
+              <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i1/2200783431665/O1CN01VFqOQL1OAbxu7rOgl_!!0-item_pic.jpg" alt="">
+              <div class="floor-item-title">
+                屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+              </div>
+              <div class="floor-price">
+                ￥88
+              </div>
+            </div>
+          </a>
+          </div>
+
+          <div class="grid">
+            <a href="" class="grid-one-grid col-sm-4 col-lg-3">
+              <div class="floor-item-content-wrap">
+                <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i1/2200657724932/O1CN01lvBQWO1mItvN8lp2b_!!2200657724932-0-sm.jpg" alt="">
+                <div class="floor-item-title">
+                  屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+                </div>
+                <div class="floor-price">
+                  ￥88
+                </div>
+              </div>
+            </a>
+            <a href="" class="grid-one-grid col-sm-4 col-lg-3">
+              <div class="floor-item-content-wrap">
+                <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i1/2495029969/O1CN018ApZnn2NVquPGp2Se_!!0-item_pic.jpg" alt="">
+                <div class="floor-item-title">
+                  屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+                </div>
+                <div class="floor-price">
+                  ￥88
+                </div>
+              </div>
+            </a>
+            <a href="" class="grid-one-grid col-sm-4 col-lg-3">
+              <div class="floor-item-content-wrap">
+                <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i4/3842381468/O1CN01vMsKUF1MiNvBkQQjx_!!2-item_pic.png" alt="">
+                <div class="floor-item-title">
+                  屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+                </div>
+                <div class="floor-price">
+                  ￥88
+                </div>
+              </div>
+            </a>
+            <a href="" class="grid-one-grid">
+              <div class="floor-item-content-wrap">
+                <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i2/2877976327/O1CN01EsOiWB1wboOSVAGEI_!!0-item_pic.jpg" alt="">
+                <div class="floor-item-title">
+                  屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+                </div>
+                <div class="floor-price">
+                  ￥88
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+ <!--   中间图片-->
+    <div class="full-banner">
+      <a href="">
+      <img src="https://img.alicdn.com/simba/img/TB14J_gNPDpK1RjSZFrSuu78VXa.jpg" alt="">
+      </a>
+    </div>
+<!--美丽人生-->
+    <div class="floor-line-con">
+      <div class="floor-name" style="font-size: 18px;">
+        <strong style="font-weight: bold;">|</strong>美丽人生 FASHION & BEAUTY
+      </div>
+      <div class="line-body">
+        <div class="big-banner-con-2">
+          <a href="">
+            <img style="width:100%" src="https://img.alicdn.com/tps/i4/TB1GXNOlpcJL1JjSZFOSuwWlXXa.jpg" alt="">
+            <div class="banner-detail">
+              <div class="left-title-wrap">
+              <span class="left-title">
+                天猫超市
+              </span>
+              </div>
+              <div class="right-title-wrap">
+                <span class="right-title">零食欢乐购</span>
+                <span class="right-title">爆款直降</span>
+              </div>
+            </div>
+            <div class="detail-wrap">
+              <img src="https://img.alicdn.com/tfs/TB1IQBtXaagSKJjy0FbXXa.mVXa-68-68.png" alt="">
+            </div>
+          </a>
+        </div>
+        <div class="middle-column-con">
+          <div class="grid" style="margin-bottom: 10px;">
+          <a href="" class="grid-one-grid"style="margin-left: 6px;">
+            <div class="floor-item-content-wrap">
+              <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i2/325718097/O1CN01PRnWvo29gTRpRhEB3_!!0-item_pic.jpg" alt="">
+              <div class="floor-item-title">
+                屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+              </div>
+              <div class="floor-price">
+                ￥88
+              </div>
+            </div>
+          </a>
+          <a href="" class="grid-one-grid">
+            <div class="floor-item-content-wrap">
+              <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i2/T1f0WkFI0XXXXXXXXX_!!0-item_pic.jpg" alt="">
+              <div class="floor-item-title">
+                屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+              </div>
+              <div class="floor-price">
+                ￥88
+              </div>
+            </div>
+          </a>
+          <a href="" class="grid-one-grid">
+            <div class="floor-item-content-wrap">
+              <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i1/2107874554/O1CN01cTiOfT1jVmAMmhdf0_!!0-item_pic.jpg" alt="">
+              <div class="floor-item-title">
+                屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+              </div>
+              <div class="floor-price">
+                ￥88
+              </div>
+            </div>
+          </a>
+          <a href="" class="grid-one-grid">
+            <div class="floor-item-content-wrap">
+              <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i4/1596191928/O1CN01GcGM9j1Q746vD8dG6_!!0-item_pic.jpg" alt="">
+              <div class="floor-item-title">
+                屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+              </div>
+              <div class="floor-price">
+                ￥88
+              </div>
+            </div>
+          </a>
+          </div>
+
+          <div class="grid">
+            <a href="" class="grid-one-grid">
+              <div class="floor-item-content-wrap">
+                <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i2/2924703009/O1CN01IWjExp1Y6AGkpoTOl_!!0-item_pic.jpg" alt="">
+                <div class="floor-item-title">
+                  屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+                </div>
+                <div class="floor-price">
+                  ￥88
+                </div>
+              </div>
+            </a>
+            <a href="" class="grid-one-grid">
+              <div class="floor-item-content-wrap">
+                <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i4/1596191928/O1CN01GcGM9j1Q746vD8dG6_!!0-item_pic.jpg" alt="">
+                <div class="floor-item-title">
+                  屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+                </div>
+                <div class="floor-price">
+                  ￥88
+                </div>
+              </div>
+            </a>
+            <a href="" class="grid-one-grid">
+              <div class="floor-item-content-wrap">
+                <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i3/188124207/O1CN01Plsp5U1gwql6uFTnO_!!0-item_pic.jpg" alt="">
+                <div class="floor-item-title">
+                  屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+                </div>
+                <div class="floor-price">
+                  ￥88
+                </div>
+              </div>
+            </a>
+            <a href="" class="grid-one-grid">
+              <div class="floor-item-content-wrap">
+                <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i2/2924703009/O1CN01IWjExp1Y6AGkpoTOl_!!0-item_pic.jpg" alt="">
+                <div class="floor-item-title">
+                  屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+                </div>
+                <div class="floor-price">
+                  ￥88
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--    潮店酷玩-->
+    <div class="floor-line-con">
+      <div class="floor-name" style="font-size: 18px;">
+        <strong style="font-weight: bold;">|</strong>潮电酷玩 ELECTRONICS
+      </div>
+      <div class="line-body">
+        <div class="big-banner-con-2">
+          <a href="">
+            <img style="width:100%" src="https://img.alicdn.com/tfs/TB1TjFaV6DpK1RjSZFrXXa78VXa-468-1236.jpg" alt="">
+            <div class="banner-detail">
+              <div class="left-title-wrap">
+              <span class="left-title">
+                天猫超市
+              </span>
+              </div>
+              <div class="right-title-wrap">
+                <span class="right-title">零食欢乐购</span>
+                <span class="right-title">爆款直降</span>
+              </div>
+            </div>
+            <div class="detail-wrap">
+              <img src="https://img.alicdn.com/tfs/TB1IQBtXaagSKJjy0FbXXa.mVXa-68-68.png" alt="">
+            </div>
+          </a>
+        </div>
+        <div class="middle-column-con">
+          <div class="grid" style="margin-bottom: 10px;">
+          <a href="" class="grid-one-grid" style="margin-left: 6px;">
+            <div class="floor-item-content-wrap">
+              <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i2/852198828/O1CN01yZ28hg2F5Gx9vfLMp_!!0-item_pic.jpg" alt="">
+              <div class="floor-item-title">
+                屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+              </div>
+              <div class="floor-price">
+                ￥88
+              </div>
+            </div>
+          </a>
+          <a href="" class="grid-one-grid">
+            <div class="floor-item-content-wrap">
+              <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i3/470358766/TB11MVemdbJ8KJjy1zjXXaqapXa_!!0-item_pic.jpg" alt="">
+              <div class="floor-item-title">
+                屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+              </div>
+              <div class="floor-price">
+                ￥88
+              </div>
+            </div>
+          </a>
+          <a href="" class="grid-one-grid">
+            <div class="floor-item-content-wrap">
+              <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i3/3849134134/TB27i9_pgmTBuNjy1XbXXaMrVXa_!!3849134134-0-item_pic.jpg" alt="">
+              <div class="floor-item-title">
+                屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+              </div>
+              <div class="floor-price">
+                ￥88
+              </div>
+            </div>
+          </a>
+          <a href="" class="grid-one-grid">
+            <div class="floor-item-content-wrap">
+              <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i3/3849134134/TB27i9_pgmTBuNjy1XbXXaMrVXa_!!3849134134-0-item_pic.jpg" alt="">
+              <div class="floor-item-title">
+                屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+              </div>
+              <div class="floor-price">
+                ￥88
+              </div>
+            </div>
+          </a>
+          </div>
+          <div class="grid">
+            <a href="" class="grid-one-grid">
+              <div class="floor-item-content-wrap">
+                <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i2/1872223496/O1CN011bhD6uRGEz0yEi9_!!0-item_pic.jpg" alt="">
+                <div class="floor-item-title">
+                  屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+                </div>
+                <div class="floor-price">
+                  ￥88
+                </div>
+              </div>
+            </a>
+            <a href="" class="grid-one-grid">
+              <div class="floor-item-content-wrap">
+                <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i1/TB1wJZwHpXXXXbEXpXXXXXXXXXX_!!0-item_pic.jpg" alt="">
+                <div class="floor-item-title">
+                  屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+                </div>
+                <div class="floor-price">
+                  ￥88
+                </div>
+              </div>
+            </a>
+            <a href="" class="grid-one-grid">
+              <div class="floor-item-content-wrap">
+                <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i4/3601909300/O1CN01yRoJyt2IZRuFrDYQy_!!0-item_pic.jpg" alt="">
+                <div class="floor-item-title">
+                  屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+                </div>
+                <div class="floor-price">
+                  ￥88
+                </div>
+              </div>
+            </a>
+            <a href="" class="grid-one-grid">
+              <div class="floor-item-content-wrap">
+                <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i1/2879001585/O1CN01z88GYN1NZyEy2nxZH_!!0-item_pic.jpg" alt="">
+                <div class="floor-item-title">
+                  屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+                </div>
+                <div class="floor-price">
+                  ￥88
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--   中间图片-->
+    <div class="full-banner">
+      <a href="">
+        <img src="https://aecpm.alicdn.com/simba/img/TB1_EfIJFXXXXXOXFXXSutbFXXX.jpg" alt="">
+      </a>
+    </div>
+<!--    居家生活-->
+    <div class="floor-line-con">
+      <div class="floor-name" style="font-size: 18px;">
+        <strong style="font-weight: bold;">|</strong>居家生活 GROCERY & HEALTH
+      </div>
+      <div class="line-body">
+        <div class="big-banner-con-2">
+          <a href="">
+            <img style="width:100%" src="https://img.alicdn.com/tps/i4/TB1QsmZhUQIL1JjSZFhwu1DZFXa.png" alt="">
+            <div class="banner-detail">
+              <div class="left-title-wrap">
+              <span class="left-title">
+                天猫超市
+              </span>
+              </div>
+              <div class="right-title-wrap">
+                <span class="right-title">零食欢乐购</span>
+                <span class="right-title">爆款直降</span>
+              </div>
+            </div>
+            <div class="detail-wrap">
+              <img src="https://img.alicdn.com/tfs/TB1IQBtXaagSKJjy0FbXXa.mVXa-68-68.png" alt="">
+            </div>
+          </a>
+        </div>
+        <div class="middle-column-con">
+          <div class="grid" style="margin-bottom: 10px;">
+          <a href="" class="grid-one-grid" style="margin-left: 6px;">
+            <div class="floor-item-content-wrap">
+              <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i4/681185851/O1CN01hgwBPy1t5nuQh3FXf_!!0-item_pic.jpg" alt="">
+              <div class="floor-item-title">
+                屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+              </div>
+              <div class="floor-price">
+                ￥88
+              </div>
+            </div>
+          </a>
+          <a href="" class="grid-one-grid">
+            <div class="floor-item-content-wrap">
+              <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i4/3246902985/O1CN01kj1nCF1XvAmIoWxrO_!!0-item_pic.jpg" alt="">
+              <div class="floor-item-title">
+                屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+              </div>
+              <div class="floor-price">
+                ￥88
+              </div>
+            </div>
+          </a>
+          <a href="" class="grid-one-grid">
+            <div class="floor-item-content-wrap">
+              <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i2/2619099633/O1CN012L1xlrSh3uCOHwp_!!0-item_pic.jpg" alt="">
+              <div class="floor-item-title">
+                屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+              </div>
+              <div class="floor-price">
+                ￥88
+              </div>
+            </div>
+          </a>
+          <a href="" class="grid-one-grid">
+            <div class="floor-item-content-wrap">
+              <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i2/TB1IUkaNpXXXXcMXVXXXXXXXXXX_!!0-item_pic.jpg" alt="">
+              <div class="floor-item-title">
+                屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+              </div>
+              <div class="floor-price">
+                ￥88
+              </div>
+            </div>
+          </a>
+          </div>
+          <div class="grid">
+            <a href="" class="grid-one-grid">
+              <div class="floor-item-content-wrap">
+                <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i1/1969706706/TB1dVDUqMoQMeJjy0FnXXb8gFXa_!!0-item_pic.jpg" alt="">
+                <div class="floor-item-title">
+                  屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+                </div>
+                <div class="floor-price">
+                  ￥88
+                </div>
+              </div>
+            </a>
+            <a href="" class="grid-one-grid">
+              <div class="floor-item-content-wrap">
+                <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i3/T1_3ekFz8aXXXXXXXX_!!0-item_pic.jpg" alt="">
+                <div class="floor-item-title">
+                  屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+                </div>
+                <div class="floor-price">
+                  ￥88
+                </div>
+              </div>
+            </a>
+            <a href="" class="grid-one-grid">
+              <div class="floor-item-content-wrap">
+                <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i3/3478774823/O1CN01T0J6I01lUykn7B9Qs_!!0-item_pic.jpg" alt="">
+                <div class="floor-item-title">
+                  屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+                </div>
+                <div class="floor-price">
+                  ￥88
+                </div>
+              </div>
+            </a>
+            <a href="" class="grid-one-grid">
+              <div class="floor-item-content-wrap">
+                <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i1/2879001585/O1CN01z88GYN1NZyEy2nxZH_!!0-item_pic.jpg" alt="">
+                <div class="floor-item-title">
+                  屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+                </div>
+                <div class="floor-price">
+                  ￥88
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 打造爱巢-->
+    <div class="floor-line-con">
+      <div class="floor-name" style="font-size: 18px;">
+        <strong style="font-weight: bold;">|</strong>打造爱巢 GROCERY & HEALTH
+      </div>
+      <div class="line-body">
+        <div class="big-banner-con-2">
+          <a href="">
+            <img style="width:100%" src="https://img.alicdn.com/tfs/TB1ABmeWXzqK1RjSZFCXXbbxVXa-468-1236.jpg" alt="">
+            <div class="banner-detail">
+              <div class="left-title-wrap">
+              <span class="left-title">
+                天猫超市
+              </span>
+              </div>
+              <div class="right-title-wrap">
+                <span class="right-title">零食欢乐购</span>
+                <span class="right-title">爆款直降</span>
+              </div>
+            </div>
+            <div class="detail-wrap">
+              <img src="https://img.alicdn.com/tfs/TB1IQBtXaagSKJjy0FbXXa.mVXa-68-68.png" alt="">
+            </div>
+          </a>
+        </div>
+        <div class="middle-column-con">
+          <div class="grid" style="margin-bottom: 10px;">
+          <a href="" class="grid-one-grid" style="margin-left: 6px;">
+            <div class="floor-item-content-wrap">
+              <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i2/924448679/O1CN01VtYw3V2Dz1xJoA1tQ_!!0-item_pic.jpg" alt="">
+              <div class="floor-item-title">
+                屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+              </div>
+              <div class="floor-price">
+                ￥88
+              </div>
+            </div>
+          </a>
+          <a href="" class="grid-one-grid">
+            <div class="floor-item-content-wrap">
+              <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i4/3246902985/O1CN01kj1nCF1XvAmIoWxrO_!!0-item_pic.jpg" alt="">
+              <div class="floor-item-title">
+                屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+              </div>
+              <div class="floor-price">
+                ￥88
+              </div>
+            </div>
+          </a>
+          <a href="" class="grid-one-grid">
+            <div class="floor-item-content-wrap">
+              <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i2/2619099633/O1CN012L1xlrSh3uCOHwp_!!0-item_pic.jpg" alt="">
+              <div class="floor-item-title">
+                屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+              </div>
+              <div class="floor-price">
+                ￥88
+              </div>
+            </div>
+          </a>
+          <a href="" class="grid-one-grid">
+            <div class="floor-item-content-wrap">
+              <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i2/TB1IUkaNpXXXXcMXVXXXXXXXXXX_!!0-item_pic.jpg" alt="">
+              <div class="floor-item-title">
+                屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+              </div>
+              <div class="floor-price">
+                ￥88
+              </div>
+            </div>
+          </a>
+          </div>
+          <div class="grid">
+            <a href="" class="grid-one-grid">
+              <div class="floor-item-content-wrap">
+                <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i1/1969706706/TB1dVDUqMoQMeJjy0FnXXb8gFXa_!!0-item_pic.jpg" alt="">
+                <div class="floor-item-title">
+                  屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+                </div>
+                <div class="floor-price">
+                  ￥88
+                </div>
+              </div>
+            </a>
+            <a href="" class="grid-one-grid">
+              <div class="floor-item-content-wrap">
+                <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i3/T1_3ekFz8aXXXXXXXX_!!0-item_pic.jpg" alt="">
+                <div class="floor-item-title">
+                  屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+                </div>
+                <div class="floor-price">
+                  ￥88
+                </div>
+              </div>
+            </a>
+            <a href="" class="grid-one-grid">
+              <div class="floor-item-content-wrap">
+                <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i3/3478774823/O1CN01T0J6I01lUykn7B9Qs_!!0-item_pic.jpg" alt="">
+                <div class="floor-item-title">
+                  屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+                </div>
+                <div class="floor-price">
+                  ￥88
+                </div>
+              </div>
+            </a>
+            <a href="" class="grid-one-grid">
+              <div class="floor-item-content-wrap">
+                <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i1/2879001585/O1CN01z88GYN1NZyEy2nxZH_!!0-item_pic.jpg" alt="">
+                <div class="floor-item-title">
+                  屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+                </div>
+                <div class="floor-price">
+                  ￥88
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--   中间图片-->
+    <div class="full-banner">
+      <a href="">
+        <img src="https://aecpm.alicdn.com/simba/img/TB1x8DCJFXXXXc7XFXXSutbFXXX.jpg" alt="">
+      </a>
+    </div>
+    <!--户外出行-->
+    <div class="floor-line-con">
+      <div class="floor-name" style="font-size: 18px;">
+        <strong style="font-weight: bold;">|</strong>户外出行 GROCERY & HEALTH
+      </div>
+      <div class="line-body">
+        <div class="big-banner-con-2">
+          <a href="">
+            <img style="width:100%" src="https://img.alicdn.com/tps/i4/TB1wvwgV4jaK1RjSZKzSutVwXXa.jpg" alt="">
+            <div class="banner-detail">
+              <div class="left-title-wrap">
+              <span class="left-title">
+                天猫超市
+              </span>
+              </div>
+              <div class="right-title-wrap">
+                <span class="right-title">零食欢乐购</span>
+                <span class="right-title">爆款直降</span>
+              </div>
+            </div>
+            <div class="detail-wrap">
+              <img src="https://img.alicdn.com/tfs/TB1IQBtXaagSKJjy0FbXXa.mVXa-68-68.png" alt="">
+            </div>
+          </a>
+        </div>
+        <div class="middle-column-con">
+          <div class="grid" style="margin-bottom: 10px;">
+          <a href="" class="grid-one-grid" style="margin-left: 6px;">
+            <div class="floor-item-content-wrap">
+              <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i4/681185851/O1CN01hgwBPy1t5nuQh3FXf_!!0-item_pic.jpg" alt="">
+              <div class="floor-item-title">
+                屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+              </div>
+              <div class="floor-price">
+                ￥88
+              </div>
+            </div>
+          </a>
+          <a href="" class="grid-one-grid">
+            <div class="floor-item-content-wrap">
+              <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i4/3246902985/O1CN01kj1nCF1XvAmIoWxrO_!!0-item_pic.jpg" alt="">
+              <div class="floor-item-title">
+                屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+              </div>
+              <div class="floor-price">
+                ￥88
+              </div>
+            </div>
+          </a>
+          <a href="" class="grid-one-grid">
+            <div class="floor-item-content-wrap">
+              <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i2/2619099633/O1CN012L1xlrSh3uCOHwp_!!0-item_pic.jpg" alt="">
+              <div class="floor-item-title">
+                屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+              </div>
+              <div class="floor-price">
+                ￥88
+              </div>
+            </div>
+          </a>
+          <a href="" class="grid-one-grid">
+            <div class="floor-item-content-wrap">
+              <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i2/TB1IUkaNpXXXXcMXVXXXXXXXXXX_!!0-item_pic.jpg" alt="">
+              <div class="floor-item-title">
+                屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+              </div>
+              <div class="floor-price">
+                ￥88
+              </div>
+            </div>
+          </a>
+          </div>
+          <div class="grid">
+            <a href="" class="grid-one-grid">
+              <div class="floor-item-content-wrap">
+                <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i1/1969706706/TB1dVDUqMoQMeJjy0FnXXb8gFXa_!!0-item_pic.jpg" alt="">
+                <div class="floor-item-title">
+                  屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+                </div>
+                <div class="floor-price">
+                  ￥88
+                </div>
+              </div>
+            </a>
+            <a href="" class="grid-one-grid">
+              <div class="floor-item-content-wrap">
+                <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i3/T1_3ekFz8aXXXXXXXX_!!0-item_pic.jpg" alt="">
+                <div class="floor-item-title">
+                  屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+                </div>
+                <div class="floor-price">
+                  ￥88
+                </div>
+              </div>
+            </a>
+            <a href="" class="grid-one-grid">
+              <div class="floor-item-content-wrap">
+                <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i3/3478774823/O1CN01T0J6I01lUykn7B9Qs_!!0-item_pic.jpg" alt="">
+                <div class="floor-item-title">
+                  屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+                </div>
+                <div class="floor-price">
+                  ￥88
+                </div>
+              </div>
+            </a>
+            <a href="" class="grid-one-grid">
+              <div class="floor-item-content-wrap">
+                <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i1/2879001585/O1CN01z88GYN1NZyEy2nxZH_!!0-item_pic.jpg" alt="">
+                <div class="floor-item-title">
+                  屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+                </div>
+                <div class="floor-price">
+                  ￥88
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+   <!-- 猜你喜欢-->
+    <div style="text-align: center; font-size:20px;">——猜你喜欢——</div>
+   <div class="floor-line-con1">
+     <div class="floor-grid">
+     <a href="" class="grid-one-grid col-sm-5 col-lg-4 ">
+       <div class="floor-item-content-wrap">
+         <img  class="floor-item-tag" src="//img.alicdn.com/bao/uploaded/i3/836315067/O1CN01uWMeLw1nIjOF3ZW1v_!!2-item_pic.png_400x400q60.jpg" alt="">
+         <div class="floor-item-title">
+           屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+         </div>
+         <div class="floor-price">
+           ￥88
+         </div>
+       </div>
+     </a>
+     <a href="" class="grid-one-grid col-sm-5 col-lg-4">
+       <div class="floor-item-content-wrap">
+         <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i1/2063458233/O1CN01R2fz0i2AglKzEbBrI_!!0-item_pic.jpg" alt="">
+         <div class="floor-item-title">
+           屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+         </div>
+         <div class="floor-price">
+           ￥88
+         </div>
+       </div>
+     </a>
+     <a href="" class="grid-one-grid col-sm-5 col-lg-4">
+       <div class="floor-item-content-wrap">
+         <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i1/725677994/O1CN0131eA6M28vId7wCQgy_!!0-item_pic.jpg" alt="">
+         <div class="floor-item-title">
+           屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+         </div>
+         <div class="floor-price">
+           ￥88
+         </div>
+       </div>
+     </a>
+     <a href="" class="grid-one-grid col-sm-5 col-lg-4">
+       <div class="floor-item-content-wrap">
+         <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i1/2200783431665/O1CN01VFqOQL1OAbxu7rOgl_!!0-item_pic.jpg" alt="">
+         <div class="floor-item-title">
+           屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+         </div>
+         <div class="floor-price">
+           ￥88
+         </div>
+       </div>
+     </a>
+     <a href="" class="grid-one-grid col-sm-5 col-lg-4">
+       <div class="floor-item-content-wrap">
+         <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i1/2063458233/O1CN01R2fz0i2AglKzEbBrI_!!0-item_pic.jpg" alt="">
+         <div class="floor-item-title">
+           屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+         </div>
+         <div class="floor-price">
+           ￥88
+         </div>
+       </div>
+     </a>
+     </div>
+     <div class="floor-grid">
+     <a href="" class="grid-one-grid col-sm-5 col-lg-4">
+       <div class="floor-item-content-wrap">
+         <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i1/725677994/O1CN0131eA6M28vId7wCQgy_!!0-item_pic.jpg" alt="">
+         <div class="floor-item-title">
+           屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+         </div>
+         <div class="floor-price">
+           ￥88
+         </div>
+       </div>
+     </a>
+     <a href="" class="grid-one-grid col-sm-5 col-lg-4">
+       <div class="floor-item-content-wrap">
+         <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i1/2200783431665/O1CN01VFqOQL1OAbxu7rOgl_!!0-item_pic.jpg" alt="">
+         <div class="floor-item-title">
+           屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+         </div>
+         <div class="floor-price">
+           ￥88
+         </div>
+       </div>
+     </a>
+     <a href="" class="grid-one-grid col-sm-5 col-lg-4">
+       <div class="floor-item-content-wrap">
+         <img  class="floor-item-tag" src="//img.alicdn.com/bao/uploaded/i4/3570503317/O1CN010cFqUg1aNEFQ6jrBj_!!2-item_pic.png_400x400q60.jpg" alt="">
+         <div class="floor-item-title">
+           屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+         </div>
+         <div class="floor-price">
+           ￥88
+         </div>
+       </div>
+     </a>
+     <a href="" class="grid-one-grid col-sm-5 col-lg-4">
+       <div class="floor-item-content-wrap">
+         <img  class="floor-item-tag" src="//img.alicdn.com/bao/uploaded/i3/836315067/O1CN01uWMeLw1nIjOF3ZW1v_!!2-item_pic.png_400x400q60.jpg" alt="">
+         <div class="floor-item-title">
+           屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+         </div>
+         <div class="floor-price">
+           ￥88
+         </div>
+       </div>
+     </a>
+     <a href="" class="grid-one-grid col-sm-5 col-lg-4">
+       <div class="floor-item-content-wrap">
+         <img  class="floor-item-tag" src="//img.alicdn.com/bao/uploaded/i3/2088151283/TB23fxvi4TI8KJjSspiXXbM4FXa_!!2088151283.png_400x400q60.jpg" alt="">
+         <div class="floor-item-title">
+           屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+         </div>
+         <div class="floor-price">
+           ￥88
+         </div>
+       </div>
+     </a>
+     </div>
+     <!--<div class="floor-grid">
+     <a href="" class="grid-one-grid">
+       <div class="floor-item-content-wrap">
+         <img  class="floor-item-tag" src="//img.alicdn.com/bao/uploaded/bao/upload/TB1qWl5B9zqK1RjSZFjXXblCFXa.png_400x400q60.jpg" alt="">
+         <div class="floor-item-title">
+           屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+         </div>
+         <div class="floor-price">
+           ￥88
+         </div>
+       </div>
+     </a>
+     <a href="" class="grid-one-grid">
+       <div class="floor-item-content-wrap">
+         <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i4/3246902985/O1CN01kj1nCF1XvAmIoWxrO_!!0-item_pic.jpg" alt="">
+         <div class="floor-item-title">
+           屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+         </div>
+         <div class="floor-price">
+           ￥88
+         </div>
+       </div>
+     </a>
+     <a href="" class="grid-one-grid">
+       <div class="floor-item-content-wrap">
+         <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i2/2619099633/O1CN012L1xlrSh3uCOHwp_!!0-item_pic.jpg" alt="">
+         <div class="floor-item-title">
+           屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+         </div>
+         <div class="floor-price">
+           ￥88
+         </div>
+       </div>
+     </a>
+     <a href="" class="grid-one-grid">
+       <div class="floor-item-content-wrap">
+         <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i2/TB1IUkaNpXXXXcMXVXXXXXXXXXX_!!0-item_pic.jpg" alt="">
+         <div class="floor-item-title">
+           屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+         </div>
+         <div class="floor-price">
+           ￥88
+         </div>
+       </div>
+     </a>
+     <a href="" class="grid-one-grid">
+       <div class="floor-item-content-wrap">
+         <img  class="floor-item-tag" src="//img.alicdn.com/bao/uploaded/bao/upload/TB1h7PGiMHqK1RjSZFEwu3GMXXa.png_400x400q60.jpg" alt="">
+         <div class="floor-item-title">
+           屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+         </div>
+         <div class="floor-price">
+           ￥88
+         </div>
+       </div>
+     </a>
+     </div>
+     <div class="floor-grid">
+     <a href="" class="grid-one-grid">
+       <div class="floor-item-content-wrap">
+         <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i4/1596191928/O1CN01GcGM9j1Q746vD8dG6_!!0-item_pic.jpg" alt="">
+         <div class="floor-item-title">
+           屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+         </div>
+         <div class="floor-price">
+           ￥88
+         </div>
+       </div>
+     </a>
+     <a href="" class="grid-one-grid">
+       <div class="floor-item-content-wrap">
+         <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i2/2924703009/O1CN01IWjExp1Y6AGkpoTOl_!!0-item_pic.jpg" alt="">
+         <div class="floor-item-title">
+           屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+         </div>
+         <div class="floor-price">
+           ￥88
+         </div>
+       </div>
+     </a>
+     <a href="" class="grid-one-grid">
+       <div class="floor-item-content-wrap">
+         <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i4/1596191928/O1CN01GcGM9j1Q746vD8dG6_!!0-item_pic.jpg" alt="">
+         <div class="floor-item-title">
+           屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+         </div>
+         <div class="floor-price">
+           ￥88
+         </div>
+       </div>
+     </a>
+     <a href="" class="grid-one-grid">
+       <div class="floor-item-content-wrap">
+         <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i3/188124207/O1CN01Plsp5U1gwql6uFTnO_!!0-item_pic.jpg" alt="">
+         <div class="floor-item-title">
+           屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+         </div>
+         <div class="floor-price">
+           ￥88
+         </div>
+       </div>
+     </a>
+     <a href="" class="grid-one-grid">
+       <div class="floor-item-content-wrap">
+         <img  class="floor-item-tag" src="//gw.alicdn.com/bao/uploaded/i2/2924703009/O1CN01IWjExp1Y6AGkpoTOl_!!0-item_pic.jpg" alt="">
+         <div class="floor-item-title">
+           屈臣氏苏打汽水330ml*24 整箱原味无糖苏打水饮料
+         </div>
+         <div class="floor-price">
+           ￥88
+         </div>
+       </div>
+     </a>
+     </div>-->
+  </div>
+  </div>
+  <div class="footer">
+    <div class="tmall-ensure">
+      <img src="//img.alicdn.com/tfs/TB14dANRXXXXXbdXXXXXXXXXXXX-1190-100.jpg" alt="">
+    </div>
+    <div class="tmall-desc col--bl-1">
+      <dl>
+        <dt><sapn>购物指南</sapn></dt>
+        <dd>免费注册</dd>
+        <dd>免费注册</dd>
+        <dd>免费注册</dd>
+      </dl>
+      <dl>
+        <dt><sapn>天猫保障</sapn></dt>
+        <dd>免费注册</dd>
+        <dd>免费注册</dd>
+        <dd>免费注册</dd>
+      </dl>
+      <dl>
+        <dt><sapn>支付方式</sapn></dt>
+        <dd>免费注册</dd>
+        <dd>免费注册</dd>
+        <dd>免费注册</dd>
+      </dl>
+      <dl>
+        <dt><sapn>商家服务</sapn></dt>
+        <dd>天猫规则</dd>
+        <dd>商家入驻</dd>
+        <dd>商家中心</dd>
+        <dd>天猫智库</dd>
+        <dd>物流服务</dd>
+        <dd>猫言猫语</dd>
+        <dd>运营服务</dd>
+      </dl>
+      <dl>
+        <dt>手机天猫</dt>
+          <dd>
+        <a href="">
+          <img  width="105px" height="105px"
+            src="//img.alicdn.com/tfscom/TB14MWoNhjaK1RjSZFAwu2dLFXa.png" alt="">
+        </a>
+      </dd>
+      </dl>
+    </div>
+    <div class="tmall-copyright col--bl-1">
+      <p style="color: #fff;">
+        <a href="">关于天猫</a>
+        <a href="">帮助中心</a>
+        <a href="">开放平台</a>
+        <a href="">诚聘英才</a>
+        <a href="">联系我们</a>
+        <a href="">网站合作</a>
+        <a href="">法律声明</a>
+        <a href="">隐私权政策</a>
+        <a href="">只是产权</a>
+        <a href="">廉政举报</a>
+        <a href="">规则意见征集</a>
+      </p>
+      <p style="color: #fff;">
+        <a href="">阿里巴巴集团</a>
+        <a href="">淘宝网</a>
+        <a href="">天猫</a>
+        <a href="">聚划算</a>
+        <a href="">全球速卖通</a>
+        <a href="">阿里巴巴国际交易市场</a>
+        <a href="">1688</a>
+        <a href="">阿里妈妈</a>
+        <a href="">只是产权</a>
+        <a href="">廉政举报</a>
+        <a href="">规则意见征集</a>
+        <a href="">全球速卖通</a>
+        <a href="">阿里巴巴国际交易市场</a>
+        <a href="">1688</a>
+        <a href="">支付宝</a>
+      </p>
+      <div class="footer-copyright col--bl-1">
+        增值电信业务经营许可证：
+        <a href="">浙B2-20110446</a>
+        <span>市场名称登记证：工商网市字3301004119号</span>
+        <span>出版物网络交易平台服务经营备案证： 新出发浙备字第001号</span><br>
+        <span>互联网违法和不良信息举报电话：0571-81683755 blxxjb@alibaba-inc.com</span>
+        <span>&nbsp&nbsp互联网药品信息服务资质证书编号：</span>
+        <a href="">浙-（经营性）-2017-0005</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="">
+          <img style="position: relative;top: 5px; vertical-align: baseline; width:20px; height: 20px; display: inline-block;"
+            src="//img.alicdn.com/tps/TB1yEqRPXXXXXXPXpXXXXXXXXXX-20-20.png" alt="">
+          浙公网安备 33010002000120号</a><br>
+        <span>医疗器械网络交易服务第三方平台备案：（浙）网械平台备字[2018]第00002号</span>
+        <sapn>互联网药品交易服务资格证书：国A20150001</sapn>
+        <br>
+        <span>浙江省网络食品销售第三方平台提供者备案：浙网食A33010002</span>
+        <a href="">12318举报</a>
+        <b>© 2003-2019 TMALL.COM 版权所有</b>
+        <p style="display: inline-block;">
+          <a href="" style=" display: inline-block; width: 73px;height: 30px;">
+            <img style="width: 73px; height: 30px; display: inline-block;"
+              src="//img.alicdn.com/tps/i4/TB1j5gtHXXXXXXjaXXXydRxIFXX-73-30.jpg" alt="">
+          </a>
+          <a href="" style="width:73px;height: 30px;">
+            <img src="//img.alicdn.com/tps/i1/TB13mgzHXXXXXbjXVXXzby4IVXX-80-30.jpg" alt="">
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="as-total-container">
+    <div class="attached-search-container">
+      <div class="fp-iconfont-new">
+        <span class="logo-en">TMALL</span>
+        <span class="logo-zh">天猫</span>
+      </div>
+      <div class="mall-search">
+        <div class="mall-seach-left">搜索 天猫 商品/品牌/店铺</div>
+        <div class="mall-seach-right">搜索</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!--树导航栏-->
+<div class="sn-nav-wrapper">
+  <div class="mui-lift-nav">导航</div>
+  <a href="" class="mui-lift-nav">
+    <div class="mui-lift-nav-name">天猫超市</div>
+  </a>
+  <a href="" class="mui-lift-nav">
+    <div class="mui-lift-nav-name">天猫超市</div>
+  </a>
+  <a href="" class="mui-lift-nav">
+    <div class="mui-lift-nav-name">天猫超市</div>
+  </a>
+  <a href="" class="mui-lift-nav">
+    <div class="mui-lift-nav-name">天猫超市</div>
+  </a>
+  <a href="" class="mui-lift-nav">
+    <div class="mui-lift-nav-name">天猫超市</div>
+  </a>
+  <a href="" class="mui-lift-nav">
+    <div class="mui-lift-nav-name">天猫超市</div>
+  </a>
+  <a href="" class="mui-lift-nav">
+    <div class="mui-lift-nav-name">天猫超市</div>
+  </a>
+  <a href="" class="mui-lift-nav">
+    <div class="mui-lift-nav-name">天猫超市</div>
+  </a>
+  <a href="" class="mui-lift-nav">
+    <div class="mui-lift-nav-name">天猫超市</div>
+  </a>
+
+</div>
+<!--右边log-->
+<div class="right-log"></div>
+<a href="" class="mbar-tab-one"></a>
+<a href="" class="mbar-tab-two">购物车</a>
+<div href="" class="mbar-tab-three">
+  <a href="" class="tab"></a>
+  <a href="" class="tab"></a>
+  <a href="" class="tab"></a>
+</div>
+<div href="" class="mbar-tab-four">
+  <a href="" class="tab"></a>
+  <a href="" class="tab"></a>
+  <a href="" class="tab"></a>
+</div>
+<a href="" class="mbar-top">
+  <div class="mbar-top-img"></div>
+  <div class="zhuhuichang">主会场
+  </div>
+</a>
+<div class="mbar-left"></div>
+
+</body>
+</html>

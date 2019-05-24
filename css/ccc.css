@@ -1,0 +1,184 @@
+html{
+  font-size: 13.33333333vw;
+}
+body{
+  margin:0;
+  padding:0;
+  font-size:0.20rem;
+}
+ul,li,h1,h2,h3,h4,h5,h6{
+  margin:0;
+  padding:0;
+  list-style: none;
+}
+header{
+  width: 100vw;
+  height: 2rem;
+  background-color: orangered;
+}
+.top{
+  width: 100vw;
+  height: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size:0.4rem;
+  line-height: 1rem;
+}
+.top a{
+  width:1rem;
+  height: 1rem;
+  border: 1px solid black;
+  color: #000;
+  text-decoration: none;
+}
+.top img{
+  width:2.32rem ;
+  height: 0.4rem;
+}
+.search{
+  width: 7.0rem;
+  height: 0.8rem;
+  background: white;
+  border: 1px solid white;
+  border-radius: 0.1rem;
+  margin:0 auto;
+  display: flex;
+  line-height: 0.8rem;
+  align-items: center;
+  font-size: 0.4rem;
+  color: rgba(0,0,0,.6);
+}
+.search-icon{
+  width: 0.3rem;
+  height: 0.3rem;
+  border: 1px solid red;
+  margin-right: 0.2rem;
+}
+.search-icon img{
+  width: 0.3rem;
+}
+
+/*品牌*/
+.pinpai{
+  width: 100vw;
+  height: 2rem;
+  border: 1px solid red;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 0.3rem;
+}
+.pinpai-opt{
+  width: 1.2rem;
+  height: 1.7rem;
+  border: 1px solid red;
+}
+.pinpai-one{
+  width:1.2rem;
+  height: 1.2rem;
+  border:1px solid red;
+  border-radius: 50%;
+}
+/*轮播*/
+.lunbo{
+  width: 100vw;
+  height: 3rem;
+  align-items: center;
+  display: flex;
+}
+.lunbo-con{
+  width: 95vw;
+  justify-content: space-around;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.lunbo-con-one{
+  width: 95vw;
+}
+
+/*
+红包*/
+.hongbao{
+  width: 100vw;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+}
+.hongbao-con{
+  width: 95vw;
+  justify-content: space-around;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.hongbao-con-one{
+  width: 95vw;
+}
+
+/*限时抢购*/
+.xianshi{
+  width:100vw;
+  height:6.5rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border: 1px solid red;
+}
+.xianshi-list{
+  width: 48%;
+  height:48%;
+  background: url("../images/bj-one.png") no-repeat;
+  align-items: center;
+  display: flex;
+  margin-bottom: .2rem;
+  overflow: hidden;
+  border: 1px solid black;
+}
+.xianshi-list-con{
+  width: 90%;
+  height:90%;
+  margin: 0 auto;
+  display: flex;
+}
+.xianshi-list-con-one{
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  font-size: .4rem;
+  overflow: hidden;
+}
+.xianshi-list-con-one img{
+  margin-top: 0.15rem;
+  width: 100%;
+}
+.xianshi-list-con-one span{
+  width: 1rem;
+  display: block;
+  border: 1px solid red;
+  color: red;
+  font-size: 0.16rem;
+  margin: 0 auto;
+}
+
+/*天猫榜单*/
+.bangdan{
+  width: 100vw;
+  height: 7rem;
+  display: flex;
+  margin-top: 0.4rem;
+  justify-content: space-around;
+}
+.bangdan-con{
+  width: 95vw;
+  height: 6.5rem;
+  border: 1px solid blue;
+  align-items: center;
+  margin:0 auto;
+}
+.bangdan-con-list{
+  width: 33%;
+  height: 6.5rem;
+  border: 1px solid red;
+}
+
