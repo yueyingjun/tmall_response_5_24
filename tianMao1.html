@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="./css/tianMao1.css">
+    <script>
+        window.onload=function (ev) {
+            /*轮播图*/
+            var lunbotu2 = document.querySelector(".lunbotu2");
+            var lunbotu3 = document.querySelector(".lunbotu3");
+            var lunbotu4 = document.querySelectorAll(".lunbotu4");
+            lunbotu4[0].onmouseover=function () {
+                lunbotu2.style.display="inline";
+                lunbotu3.style.display="none";
+                num=1;
+                lunbotu4[0].style.background="orange";
+                lunbotu4[1].style.background="rgb(166 166 166)";
+            }
+            lunbotu4[1].onmouseover=function () {
+                lunbotu3.style.display="inline";
+                lunbotu2.style.display="none";
+                num=0;
+                lunbotu4[0].style.background="rgb(166 166 166)";
+                lunbotu4[1].style.background="orange";
+            }
+            var num=0;
+            setInterval(function () {
+                if(num==0){
+                    lunbotu2.style.display="inline";
+                    lunbotu3.style.display="none";
+                    num=1;
+                    lunbotu4[0].style.background="orange";
+                    lunbotu4[1].style.background="rgb(166 166 166)";
+                }else{
+                    lunbotu3.style.display="inline";
+                    lunbotu2.style.display="none";
+                    num=0;
+                    lunbotu4[0].style.background="rgb(166 166 166)";
+                    lunbotu4[1].style.background="orange";
+                }
+            },3000)
+            /*列表变换*/
+            var leibiao1 = document.querySelector(".xuangxiangka1");
+            var leibiao11 = document.querySelector(".xuangxiangka1 a");
+            var leibiao21 = document.querySelector(".xuangxiangka2 a");
+            var leibiao2 = document.querySelector(".xuangxiangka2");
+            var biao1 =document.querySelector(".lunbotu1");
+            var biao2 =document.querySelector(".lunbotu1f");
+            leibiao1.onmouseover = function () {
+                leibiao1.style.background="#ffffff";
+                leibiao11.style.color="#f00";
+
+                leibiao2.style.background="rgb(198 10 10)";
+                biao1.style.display="none";
+                biao2.style.display="block";
+            }
+            leibiao2.onmouseover = function () {
+                leibiao1.style.background="rgb(198 10 10)";
+                leibiao11.style.color="#fff";
+                leibiao21.style.color="#fff";
+                leibiao2.style.background="rgb(70 68 68)";
+                biao2.style.display="none";
+                biao1.style.display="block";
+            }
+        }
+    </script>
+</head>
+<body>
+<div class="dingwei">
+    <div class="dingwei1">
+    </div>
+    <div class="dingwei2">
+        <a href=""><b>主会场</b></a>
+    </div>
+</div>
+<div class="dingwei3">
+    <div  class="dingwei31"><div class="dingwei32">
+        <a href="">购物车</a>
+    </div>
+    </div>
+    <div  class="dingwei31"><div class="dingwei32">
+        <a href="">我的资产</a>
+    </div>
+    </div>
+    <div  class="dingwei31"><div class="dingwei32">
+        <a href="">我的收藏</a>
+    </div>
+    </div>
+    <div  class="dingwei31"><div class="dingwei32">
+        <a href="">我看过的</a>
+    </div>
+    </div>
+    <div  class="dingwei31"><div class="dingwei32">
+        <a href="">充值中心</a>
+    </div>
+    </div>
+</div>
+<div class="dingwei4">
+    <div class="dingwei41" style="line-height: 300% ;background-color: rgb(255 0 54)">导航</div>
+    <div class="dingwei42"></div>
+    <div class="dingwei41">天猫超市</div>
+    <div class="dingwei42"></div>
+    <div class="dingwei41">天猫国际</div>
+    <div class="dingwei42"></div>
+    <div class="dingwei41">美丽人生</div>
+    <div class="dingwei42"></div>
+    <div class="dingwei41">居家生活</div>
+    <div class="dingwei42"></div>
+    <div class="dingwei41">酷电潮玩</div>
+    <div class="dingwei42"></div>
+    <div class="dingwei41">打造爱巢</div>
+    <div class="dingwei42"></div>
+    <div class="dingwei41">户外出行</div>
+    <div class="dingwei42"></div>
+    <div class="dingwei41">猜你喜欢</div>
+    <div class="dingwei42"></div>
+    <div class="dingwei41" style="line-height: 300% ;background-color: rgb(171 171 171)">顶部</div>
+</div>
+
+
+
+
+
+<div class="tou">
+    <div class="tou1">喵，欢迎来天猫</div>
+    <a href="">请登录</a>
+    <a href="" style="left: 260px">免费注册</a>
+    <a href="" style="left: 800px" >我的淘宝</a>
+    <a href="" style="left: 840px" >购物车</a>
+    <a href="" style="left: 880px" >收藏夹</a>
+    <a href="" style="left: 920px" >手机版</a>
+    <a href="" style="left: 960px" >淘宝网</a>
+    <a href="" style="left: 1000px" >商家支持</a>
+    <a href="" style="left: 1040px" >网站导航</a>
+</div>
+
+
+<div class="sousuo">
+    <div class="sousuotubiao"></div>
+    <div class="sousuokang">
+        <form action="" class="sousuokang1">
+            <input type="text">
+            <input type="button" value="搜索">
+        </form>
+        <a href="">针织衫</a>&nbsp;
+        &nbsp;<a href="">连衣裙</a>&nbsp;
+        &nbsp;<a href="">四件套</a>&nbsp;
+        &nbsp;<a href="">摄像头</a>&nbsp;
+        &nbsp;<a href="">客厅灯</a>&nbsp;
+        &nbsp;<a href="">口红</a>&nbsp;
+        &nbsp;<a href="">手机</a>&nbsp;
+        &nbsp;<a href="">运动鞋</a>&nbsp;
+        &nbsp;<a href="">牛奶</a>&nbsp;
+    </div>
+</div>
+
+
+
+<div class="xuangxiangka">
+    <div class="xuangxiangka1">&nbsp;&nbsp;&nbsp;&nbsp;<a href="">商品分类</a>&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="xuangxiangka2">&nbsp;&nbsp;<a href="">天猫520活动</a>&nbsp;&nbsp;</div>
+    <div class="xuangxiangka3"></div>
+    <div class="xuangxiangka4"></div>
+    <div class="xuangxiangka5">&nbsp;&nbsp;&nbsp;&nbsp;<a href="">天猫会员</a></div>
+    <div class="xuangxiangka5">&nbsp;&nbsp;&nbsp;&nbsp;<a href="">电器城</a></div>
+    <div class="xuangxiangka5">&nbsp;&nbsp;&nbsp;&nbsp;<a href="">喵鲜生</a></div>
+    <div class="xuangxiangka5">&nbsp;&nbsp;&nbsp;&nbsp;<a href="">医药馆</a></div>
+    <div class="xuangxiangka5">&nbsp;&nbsp;&nbsp;&nbsp;<a href="">营业厅</a></div>
+    <div class="xuangxiangka5">&nbsp;&nbsp;&nbsp;&nbsp;<a href="">魅力惠</a></div>
+    <div class="xuangxiangka5">&nbsp;&nbsp;&nbsp;&nbsp;<a href="">飞猪旅行</a></div>
+    <div class="xuangxiangka5">&nbsp;&nbsp;&nbsp;&nbsp;<a href="">苏宁易购</a></div>
+</div>
+
+
+
+
+
+<div class="lunbotu">
+<div class="lunbotu1">
+    <div class="lunbotuleibiao"><a href=""> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;大牌女装</a></div>
+    <div class="lunbotuleibiao"><a href=""> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;家纺家饰</a></div>
+    <div class="lunbotuleibiao"><a href="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;运动户外</a></div>
+    <div class="lunbotuleibiao"><a href="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;型格男装</a></div>
+    <div class="lunbotuleibiao"><a href="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;大牌美妆</a></div>
+    <div class="lunbotuleibiao"><a href="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;纸品家清</a></div>
+    <div class="lunbotuleibiao"><a href="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;潮流个护</a></div>
+    <div class="lunbotuleibiao"><a href="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;大家电</a></div>
+    <div class="lunbotuleibiao"><a href="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;手机会场</a></div>
+    <div class="lunbotuleibiao"><a href="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;精品家具</a></div>
+</div>
+<div class="lunbotu1f" >
+    <div class="lunbotuleibiaof">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;女装 /内衣</div>
+    <div class="lunbotuleibiaof">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;男装 /户外运动</div>
+    <div class="lunbotuleibiaof">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;男鞋 /女鞋 /箱包</div>
+    <div class="lunbotuleibiaof">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;美妆 /个人护理</div>
+    <div class="lunbotuleibiaof">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;腕表 /眼镜 /首饰</div>
+    <div class="lunbotuleibiaof">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;手机 /数码 /办公</div>
+    <div class="lunbotuleibiaof">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;母婴玩具</div>
+    <div class="lunbotuleibiaof">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;零食 /茶酒 /进口食品</div>
+    <div class="lunbotuleibiaof">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;生鲜水果</div>
+    <div class="lunbotuleibiaof">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;大家居 /生活电器</div>
+    <div class="lunbotuleibiaof">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;家具建材</div>
+    <div class="lunbotuleibiaof">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;汽车 /配件 /用品</div>
+    <div class="lunbotuleibiaof">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;家访 /家饰 /鲜花</div>
+    <div class="lunbotuleibiaof">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;医药保健</div>
+    <div class="lunbotuleibiaof">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;厨具 /收纳 /宠物</div>
+    <div class="lunbotuleibiaof">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;图书音像</div>
+</div>
+   <div class="lunbotu2"></div>
+    <div class="lunbotu3"></div>
+    <div class="lunbotu4"></div>
+    <div class="lunbotu4" style="left: 55%;background-color:rgb(166 166 166);"></div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="shangpingda">
+    <div class="shangping"></div>
+    <div class="shangping"></div>
+    <div class="shangping"></div>
+</div>
+
+<div class="yiduishangpingbaba">
+    <div class="yiduishangping"><div class="mask"><b>优惠券 150 </b><div class="mask1"><b>点击进入</b></div></div></div>
+    <div class="yiduishangping"><div class="mask"><b>优惠券 150 </b><div class="mask1"><b>点击进入</b></div></div></div>
+    <div class="yiduishangping"><div class="mask"><b>优惠券 150 </b><div class="mask1"><b>点击进入</b></div></div></div>
+    <div class="yiduishangping"><div class="mask"><b>优惠券 150 </b><div class="mask1"><b>点击进入</b></div></div></div>
+    <div class="yiduishangping"><div class="mask"><b>优惠券 150 </b><div class="mask1"><b>点击进入</b></div></div></div>
+    <div class="yiduishangping"><div class="mask"><b>优惠券 150 </b><div class="mask1"><b>点击进入</b></div></div></div>
+    <div class="yiduishangping"><div class="mask"><b>优惠券 150 </b><div class="mask1"><b>点击进入</b></div></div></div>
+    <div class="yiduishangping"><div class="mask"><b>优惠券 150 </b><div class="mask1"><b>点击进入</b></div></div></div>
+    <div class="yiduishangping"><div class="mask"><b>优惠券 150 </b><div class="mask1"><b>点击进入</b></div></div></div>
+    <div class="yiduishangping"><div class="mask"><b>优惠券 150 </b><div class="mask1"><b>点击进入</b></div></div></div>
+    <div class="yiduishangping"><div class="mask"><b>优惠券 150 </b><div class="mask1"><b>点击进入</b></div></div></div>
+    <div class="yiduishangping"><div class="mask"><b>优惠券 150 </b><div class="mask1"><b>点击进入</b></div></div></div>
+    <div class="yiduishangping"><div class="mask"><b>优惠券 150 </b><div class="mask1"><b>点击进入</b></div></div></div>
+    <div class="yiduishangping"><div class="mask"><b>优惠券 150 </b><div class="mask1"><b>点击进入</b></div></div></div>
+    <div class="yiduishangping"><div class="mask"><b>优惠券 150 </b><div class="mask1"><b>点击进入</b></div></div></div>
+    <div class="yiduishangping"><div class="mask"><b>优惠券 150 </b><div class="mask1"><b>点击进入</b></div></div></div>
+    <div class="yiduishangping"><div class="mask"><b>优惠券 150 </b><div class="mask1"><b>点击进入</b></div></div></div>
+    <div class="yiduishangping"><div class="mask"><b>优惠券 150 </b><div class="mask1"><b>点击进入</b></div></div></div>
+    <div class="yiduishangping"><div class="mask"><b>优惠券 150 </b><div class="mask1"><b>点击进入</b></div></div></div>
+    <div class="yiduishangping"><div class="mask"><b>优惠券 150 </b><div class="mask1"><b>点击进入</b></div></div></div>
+    <div class="yiduishangping"><div class="mask"><b>优惠券 150 </b><div class="mask1"><b>点击进入</b></div></div></div>
+    <div class="yiduishangping"><div class="mask"><b>优惠券 150 </b><div class="mask1"><b>点击进入</b></div></div></div>
+    <div class="yiduishangping"><div class="mask"><b>优惠券 150 </b><div class="mask1"><b>点击进入</b></div></div></div>
+    <div class="yiduishangping"><div class="mask"><b>优惠券 150 </b><div class="mask1"><b>点击进入</b></div></div></div>
+    <div class="yiduishangping"><div class="mask"><b>优惠券 150 </b><div class="mask1"><b>点击进入</b></div></div></div>
+    <div class="yiduishangping"><div class="mask"><b>优惠券 150 </b><div class="mask1"><b>点击进入</b></div></div></div>
+    <div class="yiduishangping"><div class="mask"><b>优惠券 150 </b><div class="mask1"><b>点击进入</b></div></div></div>
+    <div class="yiduishangping"><div class="mask"><b>优惠券 150 </b><div class="mask1"><b>点击进入</b></div></div></div>
+    <div class="yiduishangping"><div class="mask"><b>优惠券 150 </b><div class="mask1"><b>点击进入</b></div></div></div>
+    <div class="yiduishangping"></div>
+</div>
+
+<div class="daxiaoshangping">
+    <div class="daxiaoshangping1"></div>
+    <div class="daxiaoshangping2"></div>
+    <div class="daxiaoshangping2"></div>
+    <div class="daxiaoshangping2" ></div>
+    <div class="daxiaoshangping2"></div>
+    <div class="daxiaoshangping2" style="top: 4%"></div>
+    <div class="daxiaoshangping2" style="top: 4%"></div>
+    <div class="daxiaoshangping2" style="top: 4%"></div>
+    <div class="daxiaoshangping2" style="top: 4%"></div>
+</div>
+<div class="youxibeng" style="top: 30px"></div>
+<div class="daxiaoshangping" style="top: 60px">
+    <div class="daxiaoshangping3"></div>
+    <div class="daxiaoshangping4"></div>
+    <div class="daxiaoshangping4"></div>
+    <div class="daxiaoshangping4"></div>
+    <div class="daxiaoshangping4"></div>
+    <div class="daxiaoshangping4" style="top: 4%"></div>
+    <div class="daxiaoshangping4" style="top: 4%"></div>
+    <div class="daxiaoshangping4" style="top: 4%"></div>
+    <div class="daxiaoshangping4" style="top: 4%"></div>
+</div>
+<div class="yanjing" style="top: 90px"></div>
+<div class="allshangping" style="top: 120px">
+    <div class="img" ></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"></div>
+    <div class="img"style="top: 20px"></div>
+    <div class="img"style="top: 20px"></div>
+    <div class="img"style="top: 20px"></div>
+    <div class="img"style="top: 20px"></div>
+    <div class="img"style="top: 20px"></div>
+
+    <div class="img"style="top: 30px"></div>
+    <div class="img"style="top: 30px"></div>
+    <div class="img"style="top: 30px"></div>
+    <div class="img"style="top: 30px"></div>
+    <div class="img"style="top: 30px;left: 70px"></div>
+
+    <div class="img"style="top: 40px"></div>
+    <div class="img"style="top: 40px"></div>
+    <div class="img"style="top: 40px"></div>
+    <div class="img"style="top: 40px"></div>
+    <div class="img"style="top: 40px"></div>
+
+    <div class="img"style="top: 50px"></div>
+    <div class="img"style="top: 50px"></div>
+    <div class="img"style="top: 50px"></div>
+    <div class="img"style="top: 50px"></div>
+    <div class="img"style="top: 50px"></div>
+
+    <div class="img"style="top: 60px"></div>
+    <div class="img"style="top: 60px"></div>
+    <div class="img"style="top: 60px"></div>
+    <div class="img"style="top: 60px"></div>
+    <div class="img"style="top: 60px"></div>
+</div>
+<div class="fuwu" style="top: 120px"></div>
+<div class="xuanchuan" style="top: 120px">
+    <div  class="xuanchuan1">
+        <div  class="xuanchuan11"><div><b>购物指南</b></div>
+            <div><a href="">免费注册</a></div>
+            <div> <a href="">开通支付宝</a></div>
+            <div> <a href="">支付宝充值</a></div>
+        </div>
+    </div>
+    <div  class="xuanchuan1">
+        <div  class="xuanchuan11"><div><b>天猫保障</b></div>
+            <div><a href="">发货保障</a></div>
+            <div> <a href="">售后规则</a></div>
+            <div> <a href="">缺货赔付</a></div>
+        </div>
+    </div>
+    <div  class="xuanchuan1">
+        <div  class="xuanchuan11"><div><b>支付方式</b></div>
+            <div><a href="">快捷支付</a></div>
+            <div><a href="">信用卡</a></div>
+            <div><a href="">余额宝</a></div>
+            <div><a href="">蚂蚁花呗</a></div>
+            <div><a href="">货到付款</a></div>
+
+        </div>
+    </div>
+    <div  class="xuanchuan1">
+        <div  class="xuanchuan11"><div><b>商家服务</b></div>
+            <div><a href="">天猫规则</a></div>
+            <div><a href="">商家入驻</a></div>
+            <div><a href="">商家中心</a></div>
+            <div><a href="">天猫智库</a></div>
+            <div><a href="">物流服务</a></div>
+            <div><a href="">喵言喵语</a></div>
+            <div><a href="">运营服务</a></div>
+        </div>
+    </div>
+    <div  class="xuanchuan2">
+
+    </div>
+</div>
+<div class="zuihou" style="top: 120px"></div>
+</body>
+</html>

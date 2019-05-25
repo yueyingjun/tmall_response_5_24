@@ -1,0 +1,789 @@
+body{
+    margin: auto;
+}
+.dingwei{
+    position: fixed;
+    left: 94.4%;
+    background-color: #f9919D;
+    width: 5.6%;
+    height: 40%;
+    z-index: 1;
+}
+.dingwei1{
+    z-index: 1;
+    position: relative;
+    top: 28%;
+    width: 100%;
+    height: 50%;
+    background-image: url("../imgs/定位.png");
+}
+.dingwei2{
+    line-height: 20px;
+    position: relative;
+    top: 28%;
+    width: 100%;
+    height: 22%;
+    background-image: url("../imgs/位置图.png");
+    background-repeat: no-repeat;
+    background-position: center 6px;
+}
+.dingwei2 a{
+    font-size: 14px;
+    color: white;
+    position: relative;
+text-decoration: none;
+    float: left;
+    top: 50%;
+    height: 50%;
+    left: 25%;
+}
+.dingwei3{
+    z-index: 1;
+    position: fixed;
+    top: 40%;
+    left: 97.4%;
+    background-color: #000000;
+    width: 2.6%;
+    height: 60%;
+}
+.dingwei31{
+    font-size: 10px;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+}
+.dingwei32{
+    position: relative;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+}
+.dingwei31 a{
+    text-decoration: none;
+    color: white;
+}
+.dingwei31 a:hover{
+    color: blue;
+}
+.dingwei4{
+    z-index: 1;
+    position: fixed;
+    top: 45%;
+    left: 6%;
+    width: 2.2%;
+    height: 53%;
+}
+.dingwei41{
+    font-size: 12px;
+    width: 100%;
+    height: 9%;
+    background-color: rgb(98 98 98);
+    color: white;
+    text-align: center;
+}
+.dingwei42{
+    font-size: 14px;
+    width: 100%;
+    height: 1%;
+}
+
+
+
+.tou{
+    margin: auto;
+    line-height: 40px;
+    font-size: 12px;
+    background-color: #f9919D;
+    height: 41px;
+    /*box-shadow: 2px 2px #666;*/
+}
+.tou a{
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    float: left;
+    position: relative;
+    left: 220px;
+    height: 30px;
+}
+.tou a:hover{
+    color: orange;
+}
+.tou1{
+    color: white;
+    float: left;
+    position: absolute;
+    left: 110px;
+    height: 30px;
+}
+.sousuo{
+    margin: auto;
+    width: 100%;
+    height: 130px;
+}
+.sousuotubiao{
+    float: left;
+    position: relative;
+    left: 120px;
+    width: 243px;
+    height: 100%;
+    background-color: white;
+    background-image: url("../imgs/天猫2.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;/*只放一个*/
+    background-position: center center/*背景图放置位置居中*/;
+}
+.sousuokang{
+float: left;
+    position: relative;
+    left: 95px;
+width: 60%;
+    height: 100%;
+}
+.sousuokang1{
+    position: relative;
+    width: 70%;
+    margin: auto;
+    top: 25%;
+}
+.sousuokang1>input:first-of-type {
+    width: 75%;
+    height: 35px;
+    border: 2px solid rgb(255 0 54);
+    font-size: 16px;
+    outline: none;
+}
+/*
+.sousuokang1>input:first-of-type:focus {点击框时触发
+    border: 1px solid #317ef3;
+    padding-left: 10px;
+}*/
+.sousuokang1>input:last-of-type{
+    position: absolute;/*可以取消间隙*/
+    color: white;
+    font-size: 18px;
+    width: 20%;
+    height: 41px;
+    background-color: red;
+    outline: none;
+    border: 2px solid red
+}
+.sousuokang a{
+    font-size: 14px;
+    text-decoration: none;
+    position: relative;
+    top: 35px;
+    left: 135px;
+    width: 72px;
+    height: 29px;
+    color: rgb(166 187 179);
+}
+.sousuokang a:nth-child(3){
+    font-size: 14px;
+    text-decoration: none;
+    position: relative;
+    top: 35px;
+    left: 135px;
+    width: 72px;
+    height: 29px;
+    color:  rgb(255 0 54);
+}
+.sousuokang a:nth-child(5){
+    font-size: 14px;
+    text-decoration: none;
+    position: relative;
+    top: 35px;
+    left: 135px;
+    width: 72px;
+    height: 29px;
+    color: rgb(255 0 54);
+}
+.sousuokang a:nth-child(8){
+    font-size: 14px;
+    text-decoration: none;
+    position: relative;
+    top: 35px;
+    left: 135px;
+    width: 72px;
+    height: 29px;
+    color: rgb(255 0 54);
+}
+.sousuokang a:nth-child(10){
+    font-size: 14px;
+    text-decoration: none;
+    position: relative;
+    top: 35px;
+    left: 135px;
+    width: 72px;
+    height: 29px;
+    color: rgb(255 0 54);
+}
+.xuangxiangka{
+    margin: auto;
+    color: white;
+    float: left;
+    position: absolute;
+    left: 140px;
+    height: 35px;
+    width: 100%;
+    z-index: 1;
+}
+.xuangxiangka a{
+    text-decoration: none;
+    color:white;
+}
+.xuangxiangka1{
+    float: left;
+    height: 100%;
+    background-color: rgb(198 10 10);
+    line-height: 30px;
+}
+.xuangxiangka2{
+    float: left;
+    height: 100%;
+    background-color: rgb(70 68 68);
+    line-height: 30px;
+}
+.xuangxiangka3{
+    float: left;
+    width: 115px;
+    height: 100%;
+    background-image: url("../imgs/天猫超市.png");
+    line-height: 30px;
+    background-size: 100% 100%;
+}
+.xuangxiangka4{
+    float: left;
+    width: 115px;
+    height: 100%;
+    background-image: url("../imgs/天猫国际.png");
+    line-height: 30px;
+    background-size: 100% 100%;
+}
+.xuangxiangka5{
+    float: left;
+    height: 100%;
+    line-height: 40px;
+}
+.xuangxiangka5 a{
+color: rgb(51 51 51);
+}
+.xuangxiangka a:hover{
+    color: orange;
+}
+.lunbotu{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 1184px;
+    background:  url("../imgs/轮播图背景.png") no-repeat -100px -172px ;
+}
+.lunbotu1 a{
+    color: white;
+    text-decoration: none;
+}
+.lunbotu1{
+width: 213px;
+    height: 502px;
+    float: left;
+    position: relative;
+    top: 35px;
+    left: 140px;
+    background-color: rgb(66 64 64);
+    z-index: 1;
+}
+.lunbotu1f{
+    display: none;
+    color: white;
+    opacity: 0.9;
+    width: 213px;
+    height: 502px;
+    float: left;
+    position: relative;
+    top: 35px;
+    left: 140px;
+    background-color: rgb(115 115 115);
+    z-index: 1;
+}
+.lunbotuleibiaof{
+    line-height: 200%;
+    text-align: left;
+    cursor:pointer;
+    position: relative;
+    height: 6.25%;
+    width: 100%;
+}
+.lunbotuleibiaof:hover{
+background-color: white;
+    color: rgb(229 64 119);
+}
+
+
+
+.lunbotuleibiao{
+    position: relative;
+text-align: center;
+    top: 30px;
+height: 9%;
+    width: 80%;
+}
+.lunbotuleibiao a:hover{
+    color: blue;
+}
+.lunbotu2{
+
+    cursor:pointer;
+    background-image: url("../imgs/轮播1.jpg");
+    width: 1050px;
+    height: 502px;
+    float: left;
+    position: relative;
+    top: 35px;
+    left:140px;
+    background-color: rgb(66 64 64);
+    background-position: -200px 0;
+
+
+}
+.lunbotu3{
+    cursor:pointer;
+    background-image: url("../imgs/轮播图.jpg");
+    width: 1263px;
+    height: 502px;
+    float: left;
+    position: absolute;
+    top: 35px;
+    left: 140px;
+    background-color: rgb(66 64 64);
+    background-position: 10px 0;
+    display: none;
+}
+.lunbotu4{
+    cursor:pointer;
+    width: 30px;
+    height: 5px;
+    float: left;
+    position: absolute;
+    top: 500px;
+    left: 750px;
+    background-color: orange;
+    background-position: 20px 20px;
+    z-index: 1;
+}
+.shangping1{
+    position: absolute;
+    background-color: white;
+    float: left;
+    width:293px;
+    height: 350px;
+}
+.shangping2{
+    position: absolute;
+    background-color: white;
+    float: left;
+    left: 318px;
+    height: 350px;
+    width:440px;
+}
+.shangping3{
+    position: absolute;
+    background-color: white;
+    left: 783px;
+    float: left;
+    width:440px;
+    height: 350px;
+}
+.shangping{
+    cursor:pointer;
+    position: relative;
+background-image: url("../imgs/商品1.png");
+    float: left;
+    width:293px;
+    height: 350px;
+}
+.shangping:hover{
+    opacity: 0.7;
+}
+.shangping:nth-child(5){
+    background-image: url("../imgs/商品2.png");
+    width:440px;
+}
+.shangping:nth-child(6){
+    background-image: url("../imgs/商品3.png");
+    width:440px;
+}
+.shangpingda{
+    position: relative;
+    top: -610px;
+    left: 140px;
+    width: 1220px;
+    height: 350px;
+}
+.yiduishangping{
+
+    cursor: pointer;
+    position: relative;
+    float: left;
+   background-image: url("../imgs/11.png");
+    width:120px;
+    height: 100px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;/*只放一个*/
+    border-right: 1px solid #eeeeee;
+    border-top: 1px solid #eeeeee;
+    line-height: 80px;
+    text-align: center;
+    font-size: 13px;
+    color: white;
+}
+.mask{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: #000000;
+
+}
+.mask1{
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    background-color: red;
+    height: 15%;
+    width: 50%;
+    line-height: 15px;
+    border-radius: 45%;
+    font-size: 11px;
+}
+.yiduishangping:hover .mask{
+    opacity: 0.75;
+}
+.yiduishangping:nth-child(2){
+    background-image: url("../imgs/12.png");
+}
+.yiduishangping:nth-child(3){
+    background-image: url("../imgs/13.png");
+}
+.yiduishangping:nth-child(4){
+    background-image: url("../imgs/14.png");
+}
+.yiduishangping:nth-child(5){
+    background-image: url("../imgs/15.png");
+}
+.yiduishangping:nth-child(6){
+    background-image: url("../imgs/16.png");
+}
+.yiduishangping:nth-child(7){
+    background-image: url("../imgs/17.png");
+}
+.yiduishangping:nth-child(8){
+    background-image: url("../imgs/18.png");
+}
+.yiduishangping:nth-child(9){
+    background-image: url("../imgs/19.png");
+}
+.yiduishangping:nth-child(10){
+    background-image: url("../imgs/20.png");
+}.yiduishangping:nth-child(11){
+     border-left: 1px solid #eeeeee;
+     background-image: url("../imgs/21.png");
+ }.yiduishangping:nth-child(12){
+      background-image: url("../imgs/22.png");
+  }.yiduishangping:nth-child(13){
+       background-image: url("../imgs/23.png");
+   }
+.yiduishangping:nth-child(14){
+    background-image: url("../imgs/24.png");
+}
+
+.yiduishangping:nth-child(15){
+    background-image: url("../imgs/25.png");
+}
+.yiduishangping:nth-child(16){
+    background-image: url("../imgs/26.png");
+}
+.yiduishangping:nth-child(17){
+    background-image: url("../imgs/27.png");
+}
+.yiduishangping:nth-child(18){
+    background-image: url("../imgs/28.png");
+}
+.yiduishangping:nth-child(19){
+    background-image: url("../imgs/29.png");
+}
+.yiduishangping:nth-child(20){
+    background-image: url("../imgs/30.png");
+}
+.yiduishangping:nth-child(21){
+    border-bottom: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+    background-image: url("../imgs/31.png");
+}
+.yiduishangping:nth-child(22){
+    border-bottom: 1px solid #eeeeee;
+    background-image: url("../imgs/32.png");
+}
+.yiduishangping:nth-child(23){
+    border-bottom: 1px solid #eeeeee;
+    background-image: url("../imgs/33.png");
+}
+.yiduishangping:nth-child(24){
+    border-bottom: 1px solid #eeeeee;
+    background-image: url("../imgs/34.png");
+}
+.yiduishangping:nth-child(25){
+    background-image: url("../imgs/35.png");
+}
+.yiduishangping:nth-child(26){
+    border-bottom: 1px solid #eeeeee;
+    background-image: url("../imgs/36.png");
+}
+.yiduishangping:nth-child(27){
+    background-image: url("../imgs/37.png");
+}
+.yiduishangping:nth-child(28){
+    border-bottom: 1px solid #eeeeee;
+    background-image: url("../imgs/38.png");
+}
+
+.yiduishangping:nth-child(29){
+    border-bottom: 1px solid #eeeeee;
+    background-image: url("../imgs/39.png");
+}
+.yiduishangping:nth-child(30){
+    background-image: url("../imgs/40.png");
+}
+.yiduishangpingbaba{
+    position: relative;
+    top: -540px;
+    left: 140px;
+    width:1225px;
+    height: 450px;
+
+}
+.daxiaoshangping{
+    cursor:pointer;
+    background-color: rgb(244 244 244);
+    position: relative;
+    top: -670px;
+    left: 140px;
+    width:1225px;
+    height: 600px;
+}
+
+.daxiaoshangping1:hover{
+
+    box-sizing: border-box;
+    border:1.5px solid red;
+    opacity: 0.8;
+}
+.daxiaoshangping2:hover{
+    box-sizing: border-box;
+    border:1.5px solid red;
+    opacity: 0.8;
+}
+.daxiaoshangping1{
+    cursor:pointer;
+    background-color: rgb(214 214 214);
+    float: left;
+    height: 100%;
+    width: 20%;
+    background-image: url("../imgs/手机1.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;/*只放一个*/
+}
+.daxiaoshangping2{
+    cursor:pointer;
+    background-color: rgb(214 214 214);
+    float: left;
+    position: relative;
+    left: 2%;
+    height: 48%;
+    width: 18%;
+    background-image: url("../imgs/手机2.png");
+    background-size: 100% 102%;
+    background-repeat: no-repeat;/*只放一个*/
+}
+.daxiaoshangping2:nth-child(3){
+    background-image: url("../imgs/手机3.png");
+}
+.daxiaoshangping2:nth-child(4){
+    background-image: url("../imgs/手机4.png");
+}
+.daxiaoshangping2:nth-child(5){
+    background-image: url("../imgs/手机5.png");
+}
+.daxiaoshangping2:nth-child(6){
+    background-image: url("../imgs/手机6.png");
+}
+.daxiaoshangping2:nth-child(7){
+    background-image: url("../imgs/手机7.png");
+}
+.daxiaoshangping2:nth-child(8){
+    background-image: url("../imgs/手机8.png");
+}
+.daxiaoshangping2:nth-child(9){
+    background-image: url("../imgs/手机9.png");
+}
+.youxibeng{
+    position: relative;
+    top: -650px;
+    left: 140px;
+    width:1225px;
+    height: 90px;
+    background-image: url("../imgs/游戏本.png");
+    background-size: 100% 102%;
+    background-repeat: no-repeat;/*只放一个*/
+}
+
+
+
+
+.daxiaoshangping3:hover{
+
+    box-sizing: border-box;
+    border:1.5px solid red;
+    opacity: 0.8;
+}
+.daxiaoshangping4:hover{
+    box-sizing: border-box;
+    border:1.5px solid red;
+    opacity: 0.8;
+}
+.daxiaoshangping3{
+    cursor:pointer;
+    background-color: rgb(214 214 214);
+    float: left;
+    height: 100%;
+    width: 20%;
+    background-image: url("../imgs/衣服1.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;/*只放一个*/
+}
+.daxiaoshangping4{
+    cursor:pointer;
+    background-color: rgb(214 214 214);
+    float: left;
+    position: relative;
+    left: 2%;
+    height: 48%;
+    width: 18%;
+    background-image: url("../imgs/衣服2.png");
+    background-size: 100% 102%;
+    background-repeat: no-repeat;/*只放一个*/
+}
+.daxiaoshangping4:nth-child(3){
+    background-image: url("../imgs/衣服3.png");
+}
+.daxiaoshangping4:nth-child(4){
+    background-image: url("../imgs/衣服4.png");
+}
+.daxiaoshangping4:nth-child(5){
+    background-image: url("../imgs/衣服5.png");
+}
+.daxiaoshangping4:nth-child(6){
+    background-image: url("../imgs/衣服6.png");
+}
+.daxiaoshangping4:nth-child(7){
+    background-image: url("../imgs/衣服7.png");
+}
+.daxiaoshangping4:nth-child(8){
+    background-image: url("../imgs/衣服8.png");
+}
+.daxiaoshangping4:nth-child(9){
+    background-image: url("../imgs/衣服9.png");
+}
+.yanjing{
+    position: relative;
+    top: -600px;
+    left: 140px;
+    width:1225px;
+    height: 90px;
+    background-image: url("../imgs/眼睛.png");
+    background-size: 100% 102%;
+    background-repeat: no-repeat;/*只放一个*/
+}
+.allshangping{
+    cursor:pointer;
+    background-color: rgb(244 244 244);/*rgb(244 244 244)*/
+    position: relative;
+    top: -580px;
+    left: 140px;
+    width:1225px;
+    height: 1900px;
+}
+.img{
+    float: left;
+    height: 300px;
+    width: 225px;
+    position: relative;
+    top: 10px;
+    left: 30px;
+    background-image: url("../imgs/眼睛1.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;/*只放一个*/
+}
+
+.img:hover{
+    box-sizing: border-box;
+    border:1px solid red;
+    opacity: 0.8;
+}
+.fuwu{
+    position: relative;
+    top: -580px;
+    left: 140px;
+    width:1225px;
+    height: 150px;
+    background-image:url("../imgs/服务.png") ;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;/*只放一个*/
+}
+.xuanchuan{
+    position: relative;
+    top: -580px;
+    left: 140px;
+    width:1225px;
+    height: 200px;
+}
+.xuanchuan1{
+    float: left;
+    position: relative;
+    width:20%;
+    height: 100%;
+}
+.xuanchuan11{
+    position: relative;
+    width:50%;
+    height:50%;
+    top: 15%;
+    left: 20%;
+}
+.xuanchuan a{
+    font-size: 13px;
+    color: rgb(171 171 171);
+    text-decoration: none;
+}
+.xuanchuan2{
+    float: left;
+    position: relative;
+    width:20%;
+    height: 100%;
+    background-image: url("../imgs/二维码.png");
+
+    background-size: 100% 100%;
+    background-repeat: no-repeat;/*只放一个*/
+}
+.zuihou{
+    position: relative;
+    top: -580px;
+    left: 140px;
+    width:1225px;
+    height: 300px;
+    background-image: url("../imgs/最后.png");
+
+    background-size: 100% 100%;
+    background-repeat: no-repeat;/*只放一个*/
+}

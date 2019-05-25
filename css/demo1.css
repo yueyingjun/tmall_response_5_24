@@ -1,0 +1,1249 @@
+body{
+    margin: 0;
+}
+/*导航栏*/
+.one{
+    height: 40px;
+    background: #3b8de3;
+}
+.two{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+}
+.left{
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+.two a{
+    text-align: center;/*设置居中*/
+    float: left;/*左浮动*/
+    line-height: 40px;/*文字的高度*/
+    text-decoration: none;/*去掉下划线*/
+    color: white;/*字体颜色*/
+}
+.left a{
+    width: 20%;height: 100%;
+}
+.right a{
+    width: 20%;height: 100%;
+}
+.right{
+    float: right;
+    width: 30%;
+    height: 100%;
+}
+.shou a{
+    background: white;
+    color: #3b8de3;
+    border-top:2px solid orange;
+}
+.two a:hover{
+    background: white;
+
+    color: #3b8de3;
+    border-top: 2px solid orange;
+}
+.sanjiao{
+    margin: 15px 75px;
+    float: right;
+    background-color: white;
+    transform: rotate(-45deg);
+    position: absolute;
+
+    border-top: 8px solid transparent;
+    border-left: 8px solid #3b8de3;
+}
+
+/*头部*/
+.tou{
+    height: 80px;
+    background-image: url("../imgs/tou1.png");
+    background-repeat: no-repeat;
+    background-position: 150px 0px;
+}
+/*城市*/
+.chengshi a{
+    font-size: 14px;
+    text-align: center;/*设置居中*/
+    float: left;/*左浮动*/
+    line-height: 20px;/*文字的高度*/
+    text-decoration: none;/*去掉下划线*/
+    color:blue;/*字体颜色*/
+}
+.chengshitou a{
+    font-size: 14px;
+    text-align: center;/*设置居中*/
+    float: left;/*左浮动*/
+    line-height: 20px;/*文字的高度*/
+    text-decoration: none;/*去掉下划线*/
+    color:#000000;/*字体颜色*/
+}
+/*中部*/
+.duzi{
+    position: relative;
+    height: 430px;
+}
+.banner{
+    width:100%;
+    height:400px;
+    position: absolute;
+    top: 31px;
+}
+.banner:nth-child(1){
+    background-image: url("../imgs/duzi1.png");
+    background-size: 100% 100%;
+    z-index: 1;
+}
+.banner:nth-child(2){
+    background-image: url("../imgs/duzi2.png");
+    background-size: 100% 100%;
+}
+.btns{
+    float: right;
+    width: 70px;
+    height: 7px;
+    position: absolute;
+    right: 300px;
+    bottom: 40px;
+    padding: 0;
+    z-index: 2;
+       /* z-index: 1;*/
+}
+.btn{
+    float: left;
+    height: 5px;
+    width: 27px;
+    background: black;
+    margin: 0 3px;
+}
+.btn.active{
+    background: orange;
+}
+/*购票流程*/
+@keyframes a {
+    0%{
+        transform:rotate(0deg);
+    }
+    12%{
+   transform: rotate(60deg);
+    }
+    25%{
+        transform: rotate(0deg);
+    }
+    37%{
+        transform:rotate(-60deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    62%{
+        transform:rotate(60deg);
+    }
+    75%{
+        transform: rotate(0deg);
+    }
+    87%{
+        transform: rotate(-60deg);
+    }
+    100%{
+        transform:rotate(0deg);
+    }
+
+}
+.goupiaoliucheng{
+    width: 100%;
+    height: 360px;
+    position: relative;
+}
+.goupiaoliucheng1{
+     width: 80%;
+     height: 60px;
+    background-color: rgb(247,247,246);
+     position: absolute;
+     left: 100px;
+ }
+.goupiaoliucheng2{
+    font-size: 20px;
+    width: 15%;
+    height: 60px;
+    position: relative;
+    float: left;
+    background-color: rgb(247,247,246);
+}
+.goupiaoliucheng2 a{
+    position: relative;
+    float: left;
+    top: 20px;
+    left: 40px;
+    background-color: rgb(247,247,246);
+}
+.goupiaoliucheng3{
+     width: 22%;
+    height: 100%;
+    background-color: rgb(247,247,246);
+     position: relative;
+  float: left;
+ }
+.goupiaoliucheng4{
+    width: 18%;
+    height: 100%;
+
+    position: relative;
+    float: left;
+}
+.goupiaoliucheng5{
+    position: relative;
+    left: 50px;
+    top: 1px;
+    float: left;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(247,247,246);
+    background-image: url("../imgs/购票流程.png");
+    background-position: 230px 189px;
+
+}
+.goupiaoliucheng6:hover{
+    animation: a 0.5s;
+    animation-direction:alternate ;
+    animation-timing-function: ease-in-out;
+}
+.goupiaoliucheng11:hover{
+    animation: a 0.5s;
+    animation-direction:alternate ;
+    animation-timing-function: ease-in-out;
+}
+.goupiaoliucheng12:hover{
+    animation: a 0.5s;
+    animation-direction:alternate ;
+    animation-timing-function: ease-in-out;
+}
+.goupiaoliucheng10:hover{
+    animation: a 0.5s;
+    animation-direction:alternate ;
+    animation-timing-function: ease-in-out;
+}
+.goupiaoliucheng6{
+
+    position: relative;
+    left: 7px;
+    top: 7px;
+    float: left;
+    width: 30px;
+    height: 30px;
+
+    background-image: url("../imgs/购票流程.png");
+    background-position: 250px 250px;
+}
+.goupiaoliucheng7{
+    font-size: 20px;
+    color: #3b8de3;
+    position: absolute;
+    left: 110px;
+    top: 7px;
+    float: left;
+
+}
+.goupiaoliucheng8{
+    font-size: 15px;
+    position: absolute;
+    left: 110px;
+    top: 30px;
+    float: left;
+
+}
+.goupiaoliucheng9{
+    background-image: url("../imgs/购票流程.png");
+    position: absolute;
+    height: 100%;
+    width: 25%;
+    float: left;
+    left: 210px;
+
+    background-position: 70px 190px;
+}
+.goupiaoliucheng10{
+
+    position: relative;
+    left: 7px;
+    top: 7px;
+    float: left;
+    width: 30px;
+    height: 30px;
+
+    background-image: url("../imgs/购票流程.png");
+    background-position: 200px 250px;
+}
+.goupiaoliucheng11{
+
+    position: relative;
+    left: 7px;
+    top: 7px;
+    float: left;
+    width: 30px;
+    height: 30px;
+
+    background-image: url("../imgs/购票流程.png");
+    background-position: 145px 250px;
+}
+.goupiaoliucheng12{
+
+    position: relative;
+    left: 7px;
+    top: 7px;
+    float: left;
+    width: 30px;
+    height: 30px;
+
+    background-image: url("../imgs/购票流程.png");
+    background-position: 89px 250px;
+}
+/*资讯*/
+.zixun{
+    width: 80%;
+    height: 270px;
+    position: absolute;
+    left: 100px;
+    top: 70px;
+    background-color: rgb(247,247,246);
+}
+.zixun1{
+    height: 100%;
+    width: 30%;
+    float: left;
+    position: relative;
+}
+.zixun12{
+    height: 33%;
+    width: 50%;
+    float: left;
+
+    position: relative;
+}.zixun13{
+     height: 33%;
+     width: 50%;
+     float: left;
+
+     position: relative;
+ }.zixun14{
+      height: 33%;
+      width: 50%;
+      float: left;
+
+      position: relative;
+  }.zixun15{
+       height: 33%;
+       width: 50%;
+       float: left;
+
+       position: relative;
+   }.zixun16{
+        height: 33%;
+        width: 50%;
+        float: left;
+
+        position: relative;
+    }.zixun11{
+         height: 33%;
+         width: 50%;
+         float: left;
+
+         position: relative;
+     }
+
+.zixun17 a{
+    font-size: 15px;
+    position: absolute;
+    left: 110px;
+    top: 20px;
+    float: left;
+    text-decoration: none;
+}
+.zixun111{
+    position: relative;
+    left: 7px;
+    top: 7px;
+    float: left;
+    width: 30px;
+    height: 30px;
+
+    background-image: url("../imgs/购票流程.png");
+    background-position: 399px 274px;
+}
+.zixun111:hover{
+    animation: a 0.5s;
+    animation-direction:alternate ;
+    animation-timing-function: ease-in-out;
+}
+.zixun121{
+    position: relative;
+    left: 7px;
+    top: 7px;
+    float: left;
+    width: 30px;
+    height: 30px;
+
+    background-image: url("../imgs/购票流程.png");
+    background-position: 326px 270px;
+}
+.zixun121:hover{
+    animation: a 0.5s;
+    animation-direction:alternate ;
+    animation-timing-function: ease-in-out;
+}
+.zixun131{
+    position: relative;
+    left: 7px;
+    top: 7px;
+    float: left;
+    width: 30px;
+    height: 30px;
+
+    background-image: url("../imgs/购票流程.png");
+    background-position: 400px 202px;
+}
+.zixun131:hover{
+    animation: a 0.5s;
+    animation-direction:alternate ;
+    animation-timing-function: ease-in-out;
+}
+.zixun141{
+    position: relative;
+    left: 7px;
+    top: 7px;
+    float: left;
+    width: 30px;
+    height: 30px;
+
+    background-image: url("../imgs/购票流程.png");
+    background-position: 328px 204px;
+}
+.zixun141:hover{
+    animation: a 0.5s;
+    animation-direction:alternate ;
+    animation-timing-function: ease-in-out;
+}
+.zixun151{
+    position: relative;
+    left: 7px;
+    top: 7px;
+    float: left;
+    width: 30px;
+    height: 30px;
+
+    background-image: url("../imgs/购票流程.png");
+    background-position: 400px 134px;
+}
+.zixun151:hover{
+    animation: a 0.5s;
+    animation-direction:alternate ;
+    animation-timing-function: ease-in-out;
+}
+.zixun161{
+    position: relative;
+    left: 7px;
+    top: 7px;
+    float: left;
+    width: 30px;
+    height: 30px;
+
+    background-image: url("../imgs/购票流程.png");
+    background-position: 324px 134px;
+}
+.zixun161:hover{
+    animation: a 0.5s;
+    animation-direction:alternate ;
+    animation-timing-function: ease-in-out;
+}
+
+
+
+.zixun2{
+    height: 100%;
+    width: 70%;
+    float: left;
+    position: relative;
+
+}
+.zixun21{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.zixun22{
+    font-size: 30px;
+    position: relative;
+    top: 35px;
+    left: 35px;
+    height: 40px;
+    width: 50%;
+  float: left;
+}
+.zixun24{
+    font-size: 10px;
+    position: relative;
+    top: -40px;
+    left: 15px;
+    height: 20px;
+    width: 10%;
+    text-decoration: none;
+    float: left;
+}
+.zixun a{
+    text-decoration: none;
+}
+.zixun a:hover{
+    color: red;
+}
+.zixun23{
+    font-size: 15px;
+    position: relative;
+    top: 50px;
+    left: 35px;
+    height: 20px;
+    width: 70%;
+    float: left;
+}
+.zixun25{
+    font-size: 15px;
+    position: relative;
+    top: 65px;
+    left: 35px;
+    height: 20px;
+    width: 70%;
+    text-decoration: none;
+    float: left;
+}
+.zixun26{
+    font-size: 15px;
+    position: relative;
+    top: 80px;
+    left: 35px;
+    height: 20px;
+    width: 70%;
+    float: left;
+}
+.zixun27{
+    font-size: 15px;
+    position: relative;
+    top: 95px;
+    left: 35px;
+    height: 20px;
+    width: 70%;
+    float: left;
+}
+
+/*航线预定*/
+.hangxian{
+    position: relative;
+}
+.hangxian a{
+    text-decoration: none;
+    float: left;
+    text-align: center;
+
+}
+.hangxian0{
+    width: 30%;
+    float: left;
+}
+.hangxian1{
+    width: 70%;
+    float: right;
+}
+
+.hangxian0 a{
+    width: 100%;
+
+}
+.hangxian1 a{
+    width: 8%;
+    line-height: 50px;
+    border-bottom: 2px solid #999999;
+}
+.hangxian1 a:hover{
+    background: #eeeeee;
+    color: #3b8de3;
+    border-bottom: 2px solid blue;
+}
+.hangxian3 a{
+    background: #eeeeee;
+    color: #3b8de3;
+    border-bottom: 2px solid blue;
+
+}
+/*热门航线*/
+.hangxianshows{
+    top: 60px;
+    width:1600px;
+    height:400px;
+    position: relative;
+}
+.hangxianshows a{
+     text-decoration: none;
+ }
+.hangxianshow{
+    text-decoration: none;
+    background-image: url("../imgs/航线.png");
+    background-size: 200% 100%;
+    width:230px;
+    height:150px;
+     float: left;
+    position: absolute;
+
+}
+.hangxianshow:hover {
+    background-position-x: 100%;
+}
+.hangxianshow1{
+    float: left;
+    line-height: 10px;/*文字的高度*/
+    width:150px;
+    height:30px;
+    position: absolute;
+    top: 20px;
+    left: 40px;
+}
+.hangxianshow11{
+
+    float: left;
+    position: relative;
+    top: 10px;
+    font-size: 15px;
+}
+.hangxianshow12{
+height: 100%;
+    width: 40%;
+    float: left;
+    position: relative;
+    background-image: url("../imgs/img.png");
+    background-position: 310px 680px;
+
+}
+.hangxianshow13{
+
+    float: left;
+    position: relative;
+    top: 10px;
+    font-size: 15px;
+}
+.hangxianshow2{
+    font-size: 14px;
+    float: left;
+    line-height: 30px;/*文字的高度*/
+    width:150px;
+    height:30px;
+    position: absolute;
+
+    top: 50px;
+    left: 70px;
+}
+div.hangxianshow3:hover hangxianshow31{
+    transition: c 1s;
+}
+.hangxianshow3{
+    float: left;
+    line-height: 10px;/*文字的高度*/
+    width:150px;
+    height:30px;
+    position: absolute;
+
+    top: 100px;
+    left: 40px;
+}
+
+.hangxianshow31{
+    float: left;
+    width: 20%;
+    height: 100%;
+background-image: url("../imgs/img.png");
+    background-position: 295px 650px;
+}
+.hangxianshow31:hover{
+    animation: c 5s;
+}
+@keyframes c{
+    0%{
+        transform:translate(0 ,0);
+    }
+    100%{
+        transform:translate(100px 100px);
+    }
+}
+.hangxianshow32{
+    font-size: 15px;
+    line-height: 40px;
+    float: left;
+    position: relative;
+    width: 30%;
+    height: 100%;
+}
+.hangxianshow33{
+    color: rgb(255,107,97);
+    font-size: 15px;
+    line-height: 40px;
+    float: left;
+    position: relative;
+    width: 10%;
+    height: 100%;
+
+}
+.hangxianshow34{
+    color: rgb(255,107,97);
+    font-size: 25px;
+    line-height: 40px;
+    float: left;
+    position: relative;
+    width: 30%;
+    height: 100%;
+
+}
+/*热门航空公司*/
+.gongsi{
+
+    width: 1200px;
+    height: 500px;
+    position: relative;
+    top: 50px;
+    left: 100px;
+
+}
+.gongsi .hangxian0{
+    position: absolute;
+    float: left;
+    width: 100%;
+    border-bottom: 2px solid rgb(204,204,204);
+}
+.gongsi1{
+    height: 80%;
+    width: 38%;
+    position: relative;
+    left: 10px;
+    top: 15%;
+    background-color: rgb(246,246,246);
+    float: left;
+}
+.gongsi14{
+    height: 70%;
+    width: 50%;
+    background-color:rgb(204,204,204);
+    position: relative;
+    left: 5%;
+    top: 10%;
+    float: left;
+    text-align: center;
+
+
+ }
+.gongsi111{
+    height: 83%;
+    width: 100%;
+    background-size: 100% 100%;
+    position: relative;
+
+}
+.gongsi11{
+    height: 100%;
+    width: 100%;
+    background-size: 100% 100%;
+    background-image: url("../imgs/0.png");
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.gongsi11:hover{
+    animation: b 0.5s;
+    animation-direction:alternate ;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+.gongsi13{
+    font-size: 15px;
+    height: 70%;
+    width: 40%;
+    position: relative;
+    left: 8%;
+    top: 10%;
+    float: left;
+}
+
+.gongsi2{
+    height: 80%;
+    width: 60%;
+    position: relative;
+
+    left: 30px;
+    top: 15%;
+float: left;
+}
+.gongsi21{
+
+     height: 47%;
+     width: 30%;
+     position: relative;
+     left: 2%;
+     top: 0;
+     float: left;
+    background-size: 100% 100%;
+    background-image: url("../imgs/1.png");
+ }
+.gongsi21:hover{
+    animation: b 0.5s;
+    animation-direction:alternate ;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+.gongsi22:hover{
+    animation: b 0.5s;
+    animation-direction:alternate ;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+.gongsi23:hover{
+    animation: b 0.5s;
+    animation-direction:alternate ;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+.gongsi24:hover{
+    animation: b 0.5s;
+    animation-direction:alternate ;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.gongsi25:hover{
+    animation: b 0.5s;
+    animation-direction:alternate ;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+.gongsi26:hover{
+    animation: b 0.5s;
+    animation-direction:alternate ;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+.gongsi22{
+    height: 47%;
+    width: 30%;
+    position: relative;
+    left: 5%;
+    top: 0;
+    float: left;
+    background-size: 100% 100%;
+    background-image: url("../imgs/2.png");
+}
+.gongsi23{
+    height: 47%;
+    width: 30%;
+    position: relative;
+    left: 8%;
+    top: 0;
+    float: left;
+    background-size: 100% 100%;
+    background-image: url("../imgs/3.png");
+}
+.gongsi24{
+    height: 47%;
+    width: 30%;
+    position: relative;
+    left: 2%;
+    top: 5%;
+    float: left;
+    background-size: 100% 100%;
+    background-image: url("../imgs/4.png");
+}
+.gongsi25{
+    height: 47%;
+    width: 30%;
+    position: relative;
+    left: 5%;
+    top: 5%;
+    float: left;
+    background-size: 100% 100%;
+    background-image: url("../imgs/5.png");
+}
+.gongsi26{
+    height: 47%;
+    width: 30%;
+    position: relative;
+    left: 8%;
+    top: 5%;
+    float: left;
+    background-size: 100% 100%;
+    background-image: url("../imgs/6.png");
+}
+.gongsi211{
+
+    line-height: 40px;
+    color: #fff;
+    height: 25%;
+    position: relative;
+    left: 0;
+    top: 75%;
+    float: left;
+    width: 100%;
+    background-color: rgb(127,127,127);
+    text-align: center;
+    opacity: 0.5;
+}
+@keyframes b {
+    0%{
+        transform:scale(1.0);
+    }
+
+    100%{
+        transform:scale(1.1);
+    }
+}
+/*国际*/
+.guoji{
+    float: left;
+    left: 100px;
+    top: 50px;
+    height: 400px;
+    width: 1200px;
+    position: relative;
+}
+.guoji1{
+    float: left;
+    height: 100%;
+    width: 28%;
+    position: relative;
+
+}
+.guoji2{
+     float: left;
+    left: 2%;
+     height: 100%;
+     width: 28%;
+     position: relative;
+
+ }
+.guoji3 a{
+    text-decoration: none;
+}
+.guoji3{
+
+    float: left;
+    left: 4%;
+    height: 100%;
+    width: 40%;
+
+    position: relative;
+
+}
+.guoji11{
+    float: left;
+    height: 20%;
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: 0;
+    font-size: 35px;
+    line-height: 100px;
+    border-bottom: 2px solid rgb(127,127,127); ;
+    text-decoration: none;
+}
+.guoji11 a{
+    font-size: 15px;
+    float: right;
+    text-decoration: none;
+    line-height: 120px;
+
+}
+.guoji12{
+    float: right;
+
+    width: 20%;
+    height: 97%;
+    text-align: center;
+
+}
+.guoji12 a{
+    font-size: 25px;
+    text-decoration: none;
+    line-height: 120px;
+}
+.guoji12 a:hover{
+color: red;
+}
+.guoji13{
+    float:left;
+position: relative;
+    left: 2%;
+    width: 48%;
+    height: 8%;
+    text-align: center;
+    line-height: 60px;
+}
+.guoji14{
+    line-height: 60px;
+    float: left;
+    position: relative;
+    left: 4%;
+    width: 48%;
+    height: 8%;
+    text-align: center;
+}
+.guoji14 a{
+    text-decoration: none;
+    color: rgb(0,85,170);
+}
+.guoji13 a{
+    text-decoration: none;
+    color: rgb(0,85,170);
+}
+.guoji14 a:hover{
+    color: red;
+}
+.guoji13 a:hover{
+    color: red;
+}
+.guoji17{
+    line-height: 30px;
+    font-size: 10px;
+    float: left;
+    position: relative;
+    left: 4%;
+    width: 90%;
+    height: 13%;
+    top: 2%;
+    text-decoration: none;
+}
+.guoji17 a{text-decoration: none;}
+.guoji16 a:hover{
+    color: red;
+}
+
+/*结尾*/
+.jieweitou{
+    float: left;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(59,141,227);
+    float: left;
+    position: relative;
+    top: 70px;
+
+}
+.kuai1{
+    height: 100%;
+    width: 270px;
+    float: left;
+    position: relative;
+    left: 110px;
+}
+.kuai2{
+    height: 100%;
+    width: 270px;
+    float: left;
+    position: absolute;
+    left: 443px;
+}
+.kuai3{
+    height: 100%;
+    width: 270px;
+    float: left;
+    position: absolute;
+    left: 760px;
+}
+.kuai4{
+    height: 100%;
+    width: 270px;
+    float: left;
+    position: absolute;
+    left: 1090px;
+}
+
+
+.kuai15{
+    border-radius: 50%;
+    position: relative;
+    left: 50px;
+    top: 1px;
+    float: left;
+    width: 50px;
+    height: 50px;
+
+   background-image: url("../imgs/最后1.png");
+    background-position: 44px 137px;
+
+}
+.kuai16{
+
+    position: relative;
+    left: 7px;
+    top: 7px;
+    float: left;
+    width: 30px;
+    height: 30px;
+  background-image: url("../imgs/最后1.png");
+    background-position: 317px 127px;
+}
+.kuai19{
+    position: relative;
+     left: 7px;
+     top: 7px;
+     float: left;
+     width: 30px;
+     height: 30px;
+     background-image: url("../imgs/最后1.png");
+     background-position: 240px 127px;
+    z-index: 1;
+ }
+.kuai20{
+    z-index: 1;
+    position: relative;
+    left: 7px;
+    top: 7px;
+    float: left;
+    width: 30px;
+    height: 30px;
+    background-image: url("../imgs/最后1.png");
+    background-position: 161px 128px;
+}
+.kuai21{
+    z-index: 1;
+    position: relative;
+    left: 7px;
+    top: 7px;
+    float: left;
+    width: 30px;
+    height: 30px;
+    background-image: url("../imgs/最后1.png");
+    background-position: 95px 127px;
+}
+.kuai17{
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    left: 110px;
+    top: 7px;
+    float: left;
+
+}
+@keyframes d1{
+    0%{
+        transform:rotate(0deg);
+    }
+    50%{
+        transform:rotate(180deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+.kuai16:hover{
+    animation: a 0.5s;
+    animation-direction:alternate;
+    animation-timing-function: ease;
+}
+.kuai19:hover{
+    animation: d1 0.5s;
+    animation-direction:alternate;
+    animation-timing-function: ease;
+}
+.kuai20:hover{
+    animation: d1 0.5s;
+    animation-direction:alternate;
+    animation-timing-function: ease;
+}
+.kuai21:hover{
+    animation: d1 0.5s;
+    animation-direction:alternate;
+    animation-timing-function: ease;
+}
+.kuai18{
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    left: 110px;
+    top: 30px;
+    float: left;
+
+}
+.zuihou{
+    width: 100%;
+    height: 160px;
+    position: relative;
+    background-color: rgb(239,239,239);
+    top: 528px;
+}
+.zuihou1{
+    z-index: 1;
+    float: left;
+    width: 14%;
+    height: 160px;
+    position: relative;
+    top: -460px;
+    border-right: 1px solid rgb(229,229,228)
+}
+.zuihou11{
+    float: left;
+    width: 40%;
+    height: 100%;
+    position: relative;
+    left: -50px;
+}
+.zuihou111{
+    top: 15%;
+    float: left;
+    width: 100%;
+    height: 15%;
+    position: relative;
+}
+.zuihou111 a{
+    text-decoration: none;
+}
+.zuihou1111{
+    top: 15%;
+    float: left;
+    width: 100%;
+    height: 40%;
+    position: relative;
+    background-image: url("../imgs/最后1.png");
+    background-position: 200px 68px;
+}
+.zuihou2{
+    font-size: 13px;
+    width: 80%;
+
+    position: relative;
+    top: 90px;
+    left: 320px;
+
+}
+.zuihou21{
+    width: 80%;
+    height: 74px;
+    background-image:url("../imgs/营业执照.jpg");
+    background-repeat: no-repeat;
+    position: relative;
+    top: 90px;
+    left: 640px;
+
+}
+.zuihou22{
+    color: red;
+    font-size: 20px;
+    text-decoration: none;
+}
+.zuihou23{
+    color: rgb(166,156,166);
+    font-size: 11px;
+    width: 50%;
+
+    position: relative;
+    top: 90px;
+    left: 320px;
+
+}
+
+
