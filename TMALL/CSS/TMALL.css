@@ -1,6 +1,7 @@
 body{
     padding: 0;
     margin: auto auto;
+    overflow-x:hidden;
 }
 /*-----------------------------------顶部导航-------------------------------------*/
 .direct{
@@ -674,7 +675,7 @@ body{
 }
 /*-----------------------------------全页面最大的颜色背景图-----------------------------------*/
 .maxground{
-    width: 100%;height: 11900px;
+    width: 100%;height: 11800px;
     background-color: #F9F9F9;margin: auto auto;
 }
 /*-----------------------------------品牌logo-----------------------------------*/
@@ -683,7 +684,7 @@ body{
     margin:auto auto;margin-top: 20px;
 }
 /*-------------------------------品牌墙响应式代码-------------------------------*/
-@media screen and(min-width: 1000px) {
+@media screen and (min-width: 1000px) {
     .maxground-pinpais{
         width: 1000px;
     }
@@ -706,7 +707,7 @@ body{
         display: none;
     }
 }
-@media screen and(min-width: 1200px) {
+@media screen and (min-width: 1200px) {
     .maxground-pinpais{
         width: 1200px;
     }
@@ -2032,7 +2033,7 @@ body{
 }
 .maxground-caititle-1{
     width: 30px;height: 1px;float: left;
-    background-color: #979797;margin-top: 10px;margin-left: 530px;
+    background-color: #979797;margin-top: 10px;margin-left: 350px;
 }
 .maxground-caititle-2{
     width: 100px;height: 23px;float: left;
@@ -2049,7 +2050,13 @@ body{
     overflow: hidden;
 }
 /*-----------------------------------猜你喜欢响应式-----------------------------------*/
-@media screen and(min-width: 900px){
+@media screen and (min-width:900px){
+    .maxground-caititle{
+        width: 900px;
+    }
+    .maxground-caititle-1{
+        margin-left: 350px;
+    }
     .maxground-cainiproducts{
         width: 960px;
     }
@@ -2066,7 +2073,13 @@ body{
         display: none;
     }
 }
-@media screen and(min-width: 1200px){
+@media screen and (min-width:1200px){
+    .maxground-caititle{
+        width: 1200px;
+    }
+    .maxground-caititle-1{
+        margin-left: 530px;
+    }
     .maxground-cainiproducts{
         width: 1200px;
     }
