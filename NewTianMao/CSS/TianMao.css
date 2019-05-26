@@ -4,7 +4,7 @@ body{
 }
 /*一些必备的*/
 h1,h2,h3,h4,h5,h6,ul,li,strong,p,em,a,span,b{
-    pading:0;
+    padding:0;
     margin:0;
     font-size: 16px;
     font-weight: normal;
@@ -289,7 +289,7 @@ h1,h2,h3,h4,h5,h6,ul,li,strong,p,em,a,span,b{
 /*首页开头-3*/
 /*轮播*/
 .box4_5{
-    width:1550px;
+    width:100%;
     height:900px;
     background: url("../Imgs/lunbodicengshang_5.jpg") no-repeat;
     background-size: cover;
@@ -432,6 +432,11 @@ h1,h2,h3,h4,h5,h6,ul,li,strong,p,em,a,span,b{
     background-size: cover;
 }
 /*轮播*/
+.box4--5{
+    width: 100%;
+    height: 50px;
+    margin: auto;
+}
 /*品牌闪购*/
 .box5{
     width: 934px;
@@ -547,13 +552,13 @@ h1,h2,h3,h4,h5,h6,ul,li,strong,p,em,a,span,b{
 /*品牌logo展示*/
 .box_6{
     width: 100%;
-    height: 385px;
+    height: 400px;
     background: rgba(213, 213, 213, 0.28);
     margin: auto;
 }
 .box6{
     width: 1064px;
-    height: 366px;
+    height: 100%;
     margin: auto;
     padding-top:40px;
     overflow: hidden;
@@ -583,8 +588,9 @@ h1,h2,h3,h4,h5,h6,ul,li,strong,p,em,a,span,b{
 .box6 .box6-1 .box6_1-1{
     width:100px;
     height:50px;
-    margin: auto;
+
     margin-top: 36px;
+    margin-left: 17.5px;
 }
 
 .box6_1-1  img{
@@ -640,12 +646,13 @@ h1,h2,h3,h4,h5,h6,ul,li,strong,p,em,a,span,b{
 /*品牌logo展示*/
 /*首页开头-3*/
 /*新的天猫超市*/
-.tianmaoname_{
+.tianmaonamebox{
     width: 100%;
-    height: 31px;
-    margin: auto;
-    background: #f2f2f2;
+    height:65px;
+    padding-top: 15px;
+    background: rgba(213, 213, 213, 0.28);
 }
+
 .tianmaoname{
     width:994.7px ;
     height: 31px;
@@ -672,6 +679,8 @@ h1,h2,h3,h4,h5,h6,ul,li,strong,p,em,a,span,b{
     line-height:30px;
 }
 .box7_1-2 a:hover{
+    color: black;
+    text-decoration: none;
     border-bottom: 2px solid black;
 }
 
@@ -700,12 +709,15 @@ h1,h2,h3,h4,h5,h6,ul,li,strong,p,em,a,span,b{
 
 }
 
+
 .row .m1 .center{
-        width: 482.5px;
-        height: 294px;
-        margin-left: 15px;
-        margin-bottom: 15px;
-        background: white;
+    width: 482px;
+    height: 294px;
+    margin-left:15px;
+
+    margin-bottom: 15px;
+    background: white;
+
 
 }
 .row .m2 .center{
@@ -862,16 +874,22 @@ h1,h2,h3,h4,h5,h6,ul,li,strong,p,em,a,span,b{
     color: #ff325b;
     text-align: center;
 }
+.tianmaoboxda{
+    width: 100%;
+    height: 618px;
+    background: rgba(213, 213, 213, 0.28);
+}
 .tianmaobox{
 
     width:994.7px ;
     height: 618px;
     margin: auto;
-    background: rgba(213, 213, 213, 0.28);
+
 }
 .tianmaobox-left{
     height: 100%;
     float: left;
+    position: relative;
 
 }
 .tianmaobox-right{
@@ -949,31 +967,31 @@ h1,h2,h3,h4,h5,h6,ul,li,strong,p,em,a,span,b{
 /*天猫国际*/
 
 /*天猫国际*/
-.box7_2-left-fu-1{/*1号大框体*/
+.m2 .box7_2-left-fu-1{/*1号大框体*/
     float: left;
     width: 250px;
-    height: 306px;
+    height: 294px;
     position: relative;
     cursor: pointer;
     margin-bottom: 6px;
 }
 .box7_2-left-fu-1 img{/*1号大框体背景图*/
     width: 250px;
-    height: 306px;
+    height: 294px;
 }
-.box7_1-left-fu-2{/*1号大框体黑色大图*/
+.box7_2-left-fu-1 .box7_1-left-fu-2{/*1号大框体黑色大图*/
 
     width: 198px;
     height: 64px;
     background: rgba(0, 0, 0, 0.69);
     position: absolute;
     left: 0px;
-    top: 180px;
+    top: 150px;
     border: 2px solid black;
     box-sizing: border-box;
 
 }
-.box7_1-left-fu-2_1{/*1号大框体黑色左小图*/
+.box7_2-left-fu-1 .box7_1-left-fu-2_1{/*1号大框体黑色左小图*/
     float: left;
     width: 70.4px;
     height: 64px;
@@ -981,7 +999,7 @@ h1,h2,h3,h4,h5,h6,ul,li,strong,p,em,a,span,b{
 
 
 }
-.box7_1-left-fu-2_1 span{
+.box7_2-left-fu-1 .box7_1-left-fu-2 .box7_1-left-fu-2_1 span{
     width: 36px;
     height: 48px;
 
@@ -998,12 +1016,12 @@ h1,h2,h3,h4,h5,h6,ul,li,strong,p,em,a,span,b{
 
 
 }
-.box7_1-left-fu-2_2{/*1号大框体右小图*/
+.box7_1-left-fu-2 .box7_1-left-fu-2_2{/*1号大框体右小图*/
     width: 100px;
     height: 64px;
     float:right;
 }
-.box7_1-left-fu-2_2 span{
+.box7_1-left-fu-2 .box7_1-left-fu-2_2 span{
     width: 114px;
     height: 24px;
     margin-left:-25px;
@@ -1013,14 +1031,14 @@ h1,h2,h3,h4,h5,h6,ul,li,strong,p,em,a,span,b{
     text-align: center;
     line-height: 35px;
 }
-.box7_1-left-fu-3{/*1号大框体右下角图*/
+.box7_1-left-fu-2 .box7_1-left-fu-3{/*1号大框体右下角图*/
     width:32px;
     height: 32px;
     position: absolute;
     right: 20px;
     bottom: 20px;
 }
-.box7_1-left-fu-3 img{
+.box7_1-left-fu-2 .box7_1-left-fu-3 img{
     width:32px;
     height: 32px;
 }
@@ -1401,25 +1419,37 @@ h1,h2,h3,h4,h5,h6,ul,li,strong,p,em,a,span,b{
     .box5{
         width: 1330px;
         height:380px;
-        margin-left:100px;
-        margin-top: 50px;
+        margin: auto;
         overflow: hidden;
     }
     .box6{
         width: 1330px;
-        height: 366px;
+        height:400px;
         margin: auto;
         padding-top:40px;
         overflow: hidden;
     }
+
     .tianmaoname{
-        width:1230px ;
-        height: 31px;
+        width:1330px ;
+        height: 50px;
         margin: auto;
+
     }
     .tianmaobox{
 
-        width:1243.75px;
+        width:1330px;
+        margin: auto;
+
+    }
+    .row .m1 .center{
+        width: 502px;
+        height: 294px;
+        margin-left:30px;
+
+        margin-bottom: 15px;
+        background: white;
+
 
     }
     .tip{
@@ -1435,7 +1465,7 @@ h1,h2,h3,h4,h5,h6,ul,li,strong,p,em,a,span,b{
         margin: auto;
     }
     .box9-content{
-        width: 1230px;
+        width: 1330px;
         height:333px;
         margin: auto;
 
