@@ -274,17 +274,17 @@ body{
     float: left;
 }*/
 .middle_left .show1 li{
-    width: 140px;height: 27px;
-    margin: 4px;
+    width: 180px;height: 27px;
+    margin-top: 6px;
     display: block;
     float: left;
-    border-radius: 8px 8px 8px 8px ;
     list-style: none;
     color: white;
     font-size: 13px;
     position: relative;
-    left:-23px;top:0px;
+    left:-38px;top:0px;
     text-align: left;
+    padding-left: 15px;
     line-height: 30px;
 }
 .middle_left .show2 li{
@@ -1253,6 +1253,68 @@ body{
     background: url("../pictures/pl.png") no-repeat;
     background-size: 100% 100%;
 }
+.select{
+    width:900px;height: 550px;
+    position: relative;
+    left: 16.2%;top:0px;
+    background-color: #f3f3f3;
+    font-size: 14px;
+}
+.select_left{
+    width:650px;height: 550px;
+    float: left;
+    text-align: center;
+    background-color: white;
+    line-height: 35px;
+}
+.select_right{
+    width:200px;height: 530px;
+    background-color: white;
+    float: right;
+    margin: 10px;
+    margin-right: 15px;
+}
+.select_left_{
+    width:650px;height: 60px;
+    margin-top: 5px;
+}
+.select_left_left{
+    width:100px;height: 60px;
+    float: left;
+    color: black;
+    font-weight: bold;
+}
+.select_left_right{
+    width:540px;height: 60px;
+    float: right;
+    color: gray;
+    cursor: pointer;
+    border-bottom: 1px solid gray;
+
+}
+.select_left_right a{
+    width: 70px;height: 20px;
+    display: block;
+    float: left;
+    margin-right: 10px;
+
+}
+.select_left_right a:hover{
+    color: red;
+
+}
+.select_right div{
+    width:97px;height: 50px;
+    float: left;
+    border: 1px solid #e0e0e0;
+}
+.select_left .noborderbottom{
+    border-bottom: 1px solid rgba(255,255,255,0);
+}
+.select_right .select_right_bottom{
+    width: 194px;height: 80px;
+    float: left;
+}
 @media screen and (max-width: 1200px){
     body{
         position: relative;
@@ -1321,6 +1383,20 @@ body{
         position: relative;
         left: 10.8%;
     }
+    .select{
+        width:800px;
+        left: 19.5%;
+    }
+    .select_left,.select_left_{
+        width:570px;
+    }
+    .select_left_right{
+        width: 460px;
+    }
+    .select_left_,.select_left_left,.select_left_right{
+        height: 65px;
+    }
+
 
 
     .col-s-1{
