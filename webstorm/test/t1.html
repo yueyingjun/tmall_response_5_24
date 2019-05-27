@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        // 鸡兔同笼3种方法
+        // 36 94
+        for (var m=0;m<=36;m++){
+            if ((m*2+(36-m)*4)==94){
+                console.log(m,36-m)
+            }
+        }
+        // 算数法:脚数的1/2减头数，即为兔数；头数减兔数即为鸡数。
+        for (r = 0; r < 36; r++) {
+            if ((r + 36) == 94 / 2) {
+                console.log(36-r,r)
+            }
+        }
+
+        /*抬脚法:假设鸡和兔子都抬起2只脚，所有抬起的脚：35×2=70只，那么地上剩余的脚：94-70=24只，
+        此时地上的脚只能是兔子的脚，而且每只兔子有2只脚着地。*/
+
+        for (r = 0; r < 36; r++) {
+            if (2*r==(94-2*36)) {
+                console.log(36-r,r)
+            }
+        }
+
+        // 斐波那契数列的三种算法
+
+        /*var num1
+        var num2
+        var n=1
+        for (var arr=0;arr<n;arr++){
+            if (n>=1){
+                num1=0
+                console.log(num1)
+            }
+
+            if (n>=2){
+                num1=1
+                console.log(num1)
+            }
+
+            for (var i=0;i<n;i++){
+
+            }
+        }*/
+
+        /*var feiArr=function (n) {
+            if(n>=1){
+                var num1=1
+                console.log(num1)
+            }
+
+            if(n>=2){
+                var num2=1
+                console.log(num2)
+            }
+
+            if(n>=3){
+                var num=feiArr(n-1)+feiArr(n-2)
+                console.log(num)
+            }
+            feiArr(3)
+
+        }*/
+
+        var a = 1;
+        var b = 1;
+        var c = 0;
+        console.log(a)
+        console.log(b)
+        var n=10
+        for (var i = 3; i <= n; i++) {
+            //第三个数即为c，a+b等于c的值
+            c = a + b;
+            //将第一个加数a赋值为数列中的第二个数b的值
+            a = b;
+            //将第二个加数b赋值为数列中的第三个数c的值
+            b = c;
+            //在第二次循环打印时，将打印数列中的第四个数为：b + c = b + (a + b)
+            console.log(c)
+        }
+
+        // 2.
+        var arr=[]
+        arr.length=10
+        arr[0] = 1;
+        arr[1] = 1;
+        for(var i = 0;i < arr.length;i++) {
+            //判断：当打印第三个数前，给第三个数赋值
+            if(i > 1) {
+                arr[i] = arr[i - 2] + arr[i - 1];
+            }
+            console.log(arr[i]);
+        }
+
+        // 3.
+        // 有问题
+
+        function feiArr(n) {
+            if(n == 1 || n == 2) {
+                console.log(1)
+            }else {
+                //循环调用本函数
+                var num=feiArr(n - 2) + feiArr(n - 1)
+                console.log(num) ;
+            }
+        }
+
+        for(var i = 1;i <= 10;i++) {
+            //调用函数进行打印
+            feiArr(i)
+        }
+
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

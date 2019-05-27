@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        /*for (var i=100;i<200;i++){
+            if (i%3==1){
+                if(i%4==2){
+                    if (i%5==3) {
+                        console.log(i)
+                    }
+                }
+            }
+        }
+
+        // 36 94
+        for (var m=0;m<=36;m++){
+            if ((m*2+(36-m)*4)==94){
+                console.log(m,36-m)
+            }
+        }*/
+        window.onload=function () {
+            /*var n=5
+            for (var i=0;i<n;i++){
+                document.write("<div>1</div>")
+            }*/
+
+            var nm=10;
+            document.write("<table>")
+            for (var row = 0; row < nm; row++) {
+                document.write("<tr>")
+                for (var col = 0; col < nm;col++) {
+                    document.write("<td>"+col+"</td>")
+                }
+                document.write("</tr>")
+            }
+            document.write("</table>")
+        }
+    </script>
+    <style>
+        /*div{
+            width: 10px;
+            height: 10px;
+            float: left;
+            border: red 1px solid;
+            box-sizing: border-box;
+        }*/
+
+        div{
+
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

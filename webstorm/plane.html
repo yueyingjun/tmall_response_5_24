@@ -45,6 +45,8 @@
             var lun = document.querySelectorAll(".lun");
             var btn=document.querySelectorAll(".btn");
             var num=0
+            var active=document.querySelector(".active")
+            active.style.background="orange"
             setInterval(function () {
 
                 if (num == 2) {
@@ -58,7 +60,29 @@
                 lun[num].style.display = "block";
                 btn[num].style.background="orange"
                 num++
-            },3000)
+            },4000)
+
+            /*for (var i=0; i < btn.length; i++) {
+                btn[i].index=i;
+                btn[i].onclick=function () {
+                    for (var j = 0; j < lun.length; j++) {
+                        lun[j].style.display="none"
+                    }
+                    lun[this.index].style.display="block"
+                }
+            }*/
+
+            for (var i = 0; i < btn.length; i++) {
+                btn[i].index=i
+                btn[i].onclick=function () {
+                    for (var j = 0; j < lun.length; j ++) {
+                        lun[j].style.display="none"
+                        btn[j].style.background="#000"
+                    }
+                    lun[this.index].style.display="block"
+                    btn[this.index].style.background="orange"
+                }
+            }
         }
 
     </script>
@@ -72,7 +96,7 @@
 <div class="box">
     <div class="con">
         <div class="left">
-            <a href="" class="active">首页</a>
+            <a href="">首页</a>
             <a href="">国内航空</a>
             <a href="">国际航空</a>
             <a href="">出行咨讯</a>
@@ -116,7 +140,7 @@
     </div>
     <div class="lun lun2"></div>
     <div class="btns">
-        <div class="btn active"></div>
+        <div class="btn active" style="color: orange"></div>
         <div class="btn"></div>
     </div>
 </div>
