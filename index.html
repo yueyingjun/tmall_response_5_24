@@ -1,0 +1,1466 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>天猫</title>
+    <link rel="stylesheet" href="CSS/tmall.css">
+    <script>
+        window.onload=function () {
+
+            var navs=document.querySelectorAll(".navs");
+            var show=document.querySelectorAll(".show");
+
+            for(var i=0;i<navs.length;i++){
+                navs[i].index=i;
+                navs[i].onmouseenter=function () {
+                    for(var n=0;n<show.length;n++){
+                        show[n].style.display="none";
+                    }
+                    show[this.index].style.display="block";
+                    /*if(i==0){
+                        navs[this.index+1].style.backgroundColor="#c50000"
+                        navs[this.index+1].style.color="#ff9c1d"
+                    }*/
+                }
+            }
+
+            var selected=document.querySelectorAll(".show li");
+            var selectShow=document.querySelectorAll(".select");
+
+            for(var i=0;i<selected.length;i++){
+                selected[i].index=i;
+                selected[i].onmouseenter=function () {
+                    for(var n=0;n<selectShow.length;n++){
+                        selectShow[n].style.display="none";
+                        selectShow[n].style.zIndex="0";
+                        selected[n].style.backgroundColor="rgba(0,0,0,0)";
+                        selected[n].style.color="white";
+                    }
+                    selectShow[this.index].style.display="block";
+                    selectShow[this.index].style.zIndex="5";
+                    this.style.backgroundColor="white";
+                    this.style.color="red";
+                    this.onmouseleave=function () {
+                        selectShow[this.index].style.zIndex="0";
+                        selectShow[this.index].style.display="none";
+                        this.style.backgroundColor="rgba(0,0,0,0)";
+                        this.style.color="white";
+                    }
+                    /*if(i==0){
+                        navs[this.index+1].style.backgroundColor="#c50000"
+                        navs[this.index+1].style.color="#ff9c1d"
+                    }*/
+                }
+            }
+
+            var num1=0;
+            setInterval(function () {
+
+                if(num1==6){
+                    num1=0;
+                }
+                var imgs = document.querySelectorAll(".imgs");
+                console.log(num1);
+                var btns = document.querySelectorAll(".btns");
+
+                for (var i = 0; i < btns.length; i++) {
+                    btns[i].style.background = "rgba(0,0,0,0.6)";
+                    imgs[i].style.display = "none";
+                }
+                btns[num1].style.background = "rgba(255,255,255,0.6)";
+                imgs[num1].style.display = "block";
+
+                num1++;
+            },3000)
+
+
+            var num=0;
+            setInterval(function () {
+
+                if(num==2){
+                    num=0;
+                }
+                var m1ts = document.querySelectorAll(".m1_top_");
+                console.log(num);
+                var m1s = document.querySelectorAll(".m1_");
+
+                for (var i = 0; i < m1ts.length; i++) {
+                    m1ts[i].style.background = "#e3e3e3";
+                    m1ts[i].style.color = "#000";
+                    m1s[i].style.display = "none";
+                }
+                m1ts[num].style.background = "#28ab50";
+                m1ts[num].style.color = "#fff";
+                m1s[num].style.display = "block";
+
+                num++;
+            },3000)
+
+            var as=document.querySelectorAll(".a");
+            var a_s=document.querySelectorAll(".a_");
+            var inters=document.querySelectorAll(".inter");
+
+            for(var n=0;n<inters.length;n++){
+                inters[n].style.display="none";
+            }
+
+            for(var i=0;i<as.length;i++){
+                as[i].index=i;
+                as[i].onmouseenter=function () {
+                    for(var n=0;n<inters.length;n++){
+                        inters[n].style.display="none";
+                    }
+                    inters[this.index].style.display="block";
+                    /*as[j].onmouseout=function () {
+                        for(var n=0;n<inters.length;n++){
+                            inters[n].style.display="none";
+                        }
+                        inters[this.index].style.display="none";
+                    }*/
+                    this.onmouseleave=function () {
+                        /*for(var n=0;n<inters.length;n++){
+                            inters[n].style.display="none";
+                        }*/
+                        inters[this.index].style.display="none";
+                        /*as[j].onmouseout=function () {
+                            for(var n=0;n<inters.length;n++){
+                                inters[n].style.display="none";
+                            }
+                            inters[this.index].style.display="none";
+                        }*/
+
+                    }
+                }
+            }
+            for(var m=0;m<as.length;m++){
+                as[m].index=m;
+                inters[this].style.backgroundColor="rgb(255,255,255,0)";
+            }
+
+
+        }
+        function get_scrollTop_of_body() {
+            var a = document.getElementById('navvv');
+            var aa = document.getElementById('daohang');
+            var scrollTop;
+            if (typeof window.pageYOffset != 'undefined') {
+                scrollTop = window.pageYOffset;
+            } else if (typeof document.compatMode != 'undefined' &&
+                document.compatMode != 'BackCompat') {
+                scrollTop = document.documentElement.scrollTop;
+            } else if (typeof document.body != 'undefined') {
+                scrollTop = document.body.scrollTop;
+            }
+            if (scrollTop != 0) {
+                a.style.display = 'block';
+                aa.style.display = 'block';
+            } else {
+                a.style.display = 'none';
+                aa.style.display = 'none';
+            }
+        }
+
+
+
+    </script>
+</head>
+<body onscroll="get_scrollTop_of_body()">
+    <div class="navvv" id="navvv">
+        <div class="logo"></div>
+        <input type="text" placeholder="搜索 天猫 商品/品牌/店铺" class="text col-s-7"><input type="submit" value="搜索" class="t_btn_search">
+    </div>
+    <div class="head">
+        <div class="head_left">
+            <span>喵，欢迎来天猫</span>
+            <span><a href="">请登录</a></span>
+            <span><a href="">免费注册</a></span>
+        </div>
+        <div class="head_right">
+            <span>我的淘宝<a></a></span><span><div class="cart"></div>购物车0件</span><span>收藏夹<a></a></span><span>|</span>
+            <span><div class="phone"></div>手机版</span><span>淘宝网</span><span>商家支持<a></a></span><span class="hidden1">网站导航<a></a></span>
+        </div>
+    </div>
+    <div class="header">
+        <div class="header_left"></div>
+        <div class="header_right">
+            <input type="text" placeholder="  搜索 天猫 商品/品牌/店铺" class="search">
+            <input type="submit" value="搜索" class="btn_search">
+            <div class="header_right_down">
+                <span>针织衫</span><span class="red">连衣裙</span><span>四件套</span><span class="red">摄像头</span>
+                <span>客厅灯</span><span id="before_hidden2">口红</span><span class="red hidden2">手机</span><span class="hidden3">运动鞋</span><span style="border: none" class="red hidden4">牛奶</span>
+            </div>
+        </div>
+        <div class="nav">
+            <div class="nav_left">
+                <a href="javascript:;" class="navs"><span class="white">商品分类</span></a>
+                <a href="javascript:;" class="navs"><span class="black active">天猫520活动</span></a>
+            </div>
+            <div class="nav_right">
+                <div class="pic pic1"></div>
+                <div class="pic pic2"></div>
+                <a href=""><span>天猫会员</span></a><a href=""><span>电器城</span></a><a href=""><span>喵鲜生</span></a><a href=""><span>医药馆</span></a>
+                <a href=""><span>营业厅</span></a><a href=""><span>魅力惠</span></a><a href=""><span>飞猪旅行</span></a><a href=""><span id="hidden5">苏宁易购</span></a>
+            </div>
+        </div>
+    </div>
+    <div class="middle">
+        <div class="whole-sheet">
+            <div class="imgs img1">
+                <div class="w1_">
+                    <div class="img1_1"><img src="pictures/w1_1.jpg_.webp" width="100%" height="100%"></div>
+                    <div class="img1_2"><img src="pictures/w1_2.jpg_.webp" width="100%" height="100%"></div>
+                </div>
+            </div>
+            <div class="imgs img2"></div>
+            <div class="imgs img3"></div>
+            <div class="imgs img4"></div>
+            <div class="imgs img5"></div>
+            <div class="imgs img6"></div>
+            <div class="btns btn1"></div>
+            <div class="btns btn2"></div>
+            <div class="btns btn3"></div>
+            <div class="btns btn4"></div>
+            <div class="btns btn5"></div>
+            <div class="btns btn6"></div>
+            <div class="middle_left">
+                <ul class="show show1">
+                    <li> 女装/内衣</li>
+                    <li> 男装/运动户外</li>
+                    <li> 女鞋/男鞋/箱包</li>
+                    <li> 美妆/个人护理</li>
+                    <li> 腕表/眼镜/珠宝饰品</li>
+                    <li> 手机/数码/电脑办公</li>
+                    <li> 母婴玩具</li>
+                    <li> 零食/茶酒/进口食品</li>
+                    <li> 生鲜水果</li>
+                    <li> 大家电/生活电器</li>
+                    <li> 家具建材</li>
+                    <li> 汽车/配件/用品</li>
+                    <li> 家纺/家饰/鲜花</li>
+                    <li> 医药保健</li>
+                    <li> 厨具/收纳/宠物</li>
+                    <li> 图书音像</li>
+                </ul>
+                <ul class="show show2">
+                    <li> 大牌女装</li>
+                    <li> 家纺家饰</li>
+                    <li> 运动户外</li>
+                    <li> 型格男装</li>
+                    <li> 大牌美妆</li>
+                    <li> 纸品家清</li>
+                    <li> 潮流个护</li>
+                    <li> 大家电</li>
+                    <li> 手机会场</li>
+                    <li> 精品家具</li>
+                </ul>
+            </div>
+            <div class="select">
+                <div class="select_left">
+                    <div class="select_left_">
+                        <div class="select_left_left">当季流行</div>
+                        <div class="select_left_right"><a>女装新品</a><a>商场同款</a><a>仙女连衣裙</a><a>T恤</a><a>衬衫</a><a>时髦外套</a><a>休闲裤</a><a>牛仔裤</a><a>无痕文胸</a><a>运动文胸</a><a>潮流家居服</a><a>百搭船袜</a></div>
+                    </div>
+                    <div class="select_left_">
+                        <div class="select_left_left">精选上装</div>
+                        <div class="select_left_right"><a>毛呢外套</a><a>羽绒服</a><a>棉服</a><a>丝绒卫衣</a><a>毛针织衫</a><a>皮毛一体</a><a>皮草</a><a>毛衣</a><a>衬衫</a><a>卫衣</a><a>针织衫</a><a>T恤</a></div>
+                    </div>
+                    <div class="select_left_">
+                        <div class="select_left_left">浪漫裙装</div>
+                        <div class="select_left_right">
+                            <a>连衣裙</a><a>半身裙</a><a>A字裙</a><a>荷叶边裙</a><a>大摆裙</a><a>包臀裙</a><a>百褶裙</a><a>长袖</a><a>连衣裙</a><a>棉麻连衣裙</a>
+                            <a>牛仔裙</a>
+                        </div>
+                    </div>
+                    <div class="select_left_">
+                        <div class="select_left_left">女士下装</div>
+                        <div class="select_left_right"><a>休闲裤</a><a>阔腿裤</a><a>牛仔裤</a><a>打底裤</a><a>小脚裤</a><a>短裤</a></div>
+                    </div>
+                    <div class="select_left_">
+                        <div class="select_left_left">特色女装</div>
+                        <div class="select_left_right"><a>时尚套装</a><a>休闲套装</a><a>日系女装</a><a>精选妈妈装</a><a>大码女装</a><a>职业套装</a><a>优雅旗袍</a><a>精致礼服</a><a>小码女装</a></div>
+                    </div>
+                    <div class="select_left_">
+                        <div class="select_left_left">文胸塑身</div>
+                        <div class="select_left_right"><a>女装新品</a><a>商场同款</a><a>仙女连衣裙</a><a>T恤</a><a>衬衫</a><a>时髦外套</a></div>
+                    </div>
+                    <div class="select_left_">
+                        <div class="select_left_left">家居服</div>
+                        <div class="select_left_right"><a>女装新品</a><a>商场同款</a><a>仙女连衣裙</a><a>T恤</a><a>衬衫</a><a>时髦外套</a></div>
+                    </div>
+                    <div class="select_left_ ">
+                        <div class="select_left_left">内裤背心</div>
+                        <div class="select_left_right noborderbottom"><a>女装新品</a><a>商场同款</a><a>仙女连衣裙</a><a>T恤</a><a>衬衫</a><a>时髦外套</a></div>
+                    </div>
+                </div>
+                <div class="select_right">
+                    <div><img src="pictures/1.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/2.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/1.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/2.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/1.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/2.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/1.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/2.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/1.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/2.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/1.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/2.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/1.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/2.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/1.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/2.jpg" width="100%" height="100%"></div>
+                    <div class="select_right_bottom">
+                        <img src="pictures/3.jpg" width="100%" height="100%">
+                    </div>
+                </div>
+            </div>
+            <div class="select">
+                <div class="select_left">
+                    <div class="select_left_">
+                        <div class="select_left_left">当季流行</div>
+                        <div class="select_left_right"><a>女装新品</a><a>商场同款</a><a>仙女连衣裙</a><a>T恤</a><a>衬衫</a><a>时髦外套</a><a>休闲裤</a><a>牛仔裤</a><a>无痕文胸</a><a>运动文胸</a><a>潮流家居服</a><a>百搭船袜</a></div>
+                    </div>
+                    <div class="select_left_">
+                        <div class="select_left_left">精选上装</div>
+                        <div class="select_left_right"><a>毛呢外套</a><a>羽绒服</a><a>棉服</a><a>丝绒卫衣</a><a>毛针织衫</a><a>皮毛一体</a><a>皮草</a><a>毛衣</a><a>衬衫</a><a>卫衣</a><a>针织衫</a><a>T恤</a></div>
+                    </div>
+                    <div class="select_left_">
+                        <div class="select_left_left">浪漫裙装</div>
+                        <div class="select_left_right">
+                            <a>连衣裙</a><a>半身裙</a><a>A字裙</a><a>荷叶边裙</a><a>大摆裙</a><a>包臀裙</a><a>百褶裙</a><a>长袖</a><a>连衣裙</a><a>棉麻连衣裙</a>
+                            <a>牛仔裙</a>
+                        </div>
+                    </div>
+                    <div class="select_left_">
+                        <div class="select_left_left">女士下装</div>
+                        <div class="select_left_right"><a>休闲裤</a><a>阔腿裤</a><a>牛仔裤</a><a>打底裤</a><a>小脚裤</a><a>短裤</a></div>
+                    </div>
+                    <div class="select_left_">
+                        <div class="select_left_left">特色女装</div>
+                        <div class="select_left_right"><a>时尚套装</a><a>休闲套装</a><a>日系女装</a><a>精选妈妈装</a><a>大码女装</a><a>职业套装</a><a>优雅旗袍</a><a>精致礼服</a><a>小码女装</a></div>
+                    </div>
+                    <div class="select_left_">
+                        <div class="select_left_left">文胸塑身</div>
+                        <div class="select_left_right"><a>女装新品</a><a>商场同款</a><a>仙女连衣裙</a><a>T恤</a><a>衬衫</a><a>时髦外套</a></div>
+                    </div>
+                    <div class="select_left_">
+                        <div class="select_left_left">家居服</div>
+                        <div class="select_left_right"><a>女装新品</a><a>商场同款</a><a>仙女连衣裙</a><a>T恤</a><a>衬衫</a><a>时髦外套</a></div>
+                    </div>
+                    <div class="select_left_ ">
+                        <div class="select_left_left">内裤背心</div>
+                        <div class="select_left_right noborderbottom"><a>女装新品</a><a>商场同款</a><a>仙女连衣裙</a><a>T恤</a><a>衬衫</a><a>时髦外套</a></div>
+                    </div>
+                </div>
+                <div class="select_right">
+                    <div><img src="pictures/1.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/2.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/1.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/2.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/1.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/2.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/1.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/2.jpg" width="100%" height="100%"></div>
+                </div>
+            </div>
+            <div class="select">
+                <div class="select_left">
+                    <div class="select_left_">
+                        <div class="select_left_left">当季流行</div>
+                        <div class="select_left_right"><a>女装新品</a><a>商场同款</a><a>仙女连衣裙</a><a>T恤</a><a>衬衫</a><a>时髦外套</a><a>休闲裤</a><a>牛仔裤</a><a>无痕文胸</a><a>运动文胸</a><a>潮流家居服</a><a>百搭船袜</a></div>
+                    </div>
+                    <div class="select_left_">
+                        <div class="select_left_left">精选上装</div>
+                        <div class="select_left_right"><a>毛呢外套</a><a>羽绒服</a><a>棉服</a><a>丝绒卫衣</a><a>毛针织衫</a><a>皮毛一体</a><a>皮草</a><a>毛衣</a><a>衬衫</a><a>卫衣</a><a>针织衫</a><a>T恤</a></div>
+                    </div>
+                    <div class="select_left_">
+                        <div class="select_left_left">浪漫裙装</div>
+                        <div class="select_left_right">
+                            <a>连衣裙</a><a>半身裙</a><a>A字裙</a><a>荷叶边裙</a><a>大摆裙</a><a>包臀裙</a><a>百褶裙</a><a>长袖</a><a>连衣裙</a><a>棉麻连衣裙</a>
+                            <a>牛仔裙</a>
+                        </div>
+                    </div>
+                    <div class="select_left_">
+                        <div class="select_left_left">女士下装</div>
+                        <div class="select_left_right"><a>休闲裤</a><a>阔腿裤</a><a>牛仔裤</a><a>打底裤</a><a>小脚裤</a><a>短裤</a></div>
+                    </div>
+                    <div class="select_left_">
+                        <div class="select_left_left">特色女装</div>
+                        <div class="select_left_right"><a>时尚套装</a><a>休闲套装</a><a>日系女装</a><a>精选妈妈装</a><a>大码女装</a><a>职业套装</a><a>优雅旗袍</a><a>精致礼服</a><a>小码女装</a></div>
+                    </div>
+                    <div class="select_left_">
+                        <div class="select_left_left">文胸塑身</div>
+                        <div class="select_left_right"><a>女装新品</a><a>商场同款</a><a>仙女连衣裙</a><a>T恤</a><a>衬衫</a><a>时髦外套</a></div>
+                    </div>
+                    <div class="select_left_">
+                        <div class="select_left_left">家居服</div>
+                        <div class="select_left_right"><a>女装新品</a><a>商场同款</a><a>仙女连衣裙</a><a>T恤</a><a>衬衫</a><a>时髦外套</a></div>
+                    </div>
+                    <div class="select_left_ ">
+                        <div class="select_left_left">内裤背心</div>
+                        <div class="select_left_right noborderbottom"><a>女装新品</a><a>商场同款</a><a>仙女连衣裙</a><a>T恤</a><a>衬衫</a><a>时髦外套</a></div>
+                    </div>
+                </div>
+                <div class="select_right">
+                    <div><img src="pictures/1.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/2.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/1.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/2.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/1.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/2.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/1.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/2.jpg" width="100%" height="100%"></div>
+                </div>
+            </div>
+            <div class="select">
+                <div class="select_left">
+                    <div class="select_left_">
+                        <div class="select_left_left">当季流行</div>
+                        <div class="select_left_right"><a>女装新品</a><a>商场同款</a><a>仙女连衣裙</a><a>T恤</a><a>衬衫</a><a>时髦外套</a><a>休闲裤</a><a>牛仔裤</a><a>无痕文胸</a><a>运动文胸</a><a>潮流家居服</a><a>百搭船袜</a></div>
+                    </div>
+                    <div class="select_left_">
+                        <div class="select_left_left">精选上装</div>
+                        <div class="select_left_right"><a>毛呢外套</a><a>羽绒服</a><a>棉服</a><a>丝绒卫衣</a><a>毛针织衫</a><a>皮毛一体</a><a>皮草</a><a>毛衣</a><a>衬衫</a><a>卫衣</a><a>针织衫</a><a>T恤</a></div>
+                    </div>
+                    <div class="select_left_">
+                        <div class="select_left_left">浪漫裙装</div>
+                        <div class="select_left_right">
+                            <a>连衣裙</a><a>半身裙</a><a>A字裙</a><a>荷叶边裙</a><a>大摆裙</a><a>包臀裙</a><a>百褶裙</a><a>长袖</a><a>连衣裙</a><a>棉麻连衣裙</a>
+                            <a>牛仔裙</a>
+                        </div>
+                    </div>
+                    <div class="select_left_">
+                        <div class="select_left_left">女士下装</div>
+                        <div class="select_left_right"><a>休闲裤</a><a>阔腿裤</a><a>牛仔裤</a><a>打底裤</a><a>小脚裤</a><a>短裤</a></div>
+                    </div>
+                    <div class="select_left_">
+                        <div class="select_left_left">特色女装</div>
+                        <div class="select_left_right"><a>时尚套装</a><a>休闲套装</a><a>日系女装</a><a>精选妈妈装</a><a>大码女装</a><a>职业套装</a><a>优雅旗袍</a><a>精致礼服</a><a>小码女装</a></div>
+                    </div>
+                    <div class="select_left_">
+                        <div class="select_left_left">文胸塑身</div>
+                        <div class="select_left_right"><a>女装新品</a><a>商场同款</a><a>仙女连衣裙</a><a>T恤</a><a>衬衫</a><a>时髦外套</a></div>
+                    </div>
+                    <div class="select_left_">
+                        <div class="select_left_left">家居服</div>
+                        <div class="select_left_right"><a>女装新品</a><a>商场同款</a><a>仙女连衣裙</a><a>T恤</a><a>衬衫</a><a>时髦外套</a></div>
+                    </div>
+                    <div class="select_left_ ">
+                        <div class="select_left_left">内裤背心</div>
+                        <div class="select_left_right noborderbottom"><a>女装新品</a><a>商场同款</a><a>仙女连衣裙</a><a>T恤</a><a>衬衫</a><a>时髦外套</a></div>
+                    </div>
+                </div>
+                <div class="select_right">
+                    <div><img src="pictures/1.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/2.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/1.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/2.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/1.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/2.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/1.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/2.jpg" width="100%" height="100%"></div>
+                </div>
+            </div>
+            <div class="select">
+                <div class="select_left">
+                    <div class="select_left_">
+                        <div class="select_left_left">当季流行</div>
+                        <div class="select_left_right"><a>女装新品</a><a>商场同款</a><a>仙女连衣裙</a><a>T恤</a><a>衬衫</a><a>时髦外套</a><a>休闲裤</a><a>牛仔裤</a><a>无痕文胸</a><a>运动文胸</a><a>潮流家居服</a><a>百搭船袜</a></div>
+                    </div>
+                    <div class="select_left_">
+                        <div class="select_left_left">精选上装</div>
+                        <div class="select_left_right"><a>毛呢外套</a><a>羽绒服</a><a>棉服</a><a>丝绒卫衣</a><a>毛针织衫</a><a>皮毛一体</a><a>皮草</a><a>毛衣</a><a>衬衫</a><a>卫衣</a><a>针织衫</a><a>T恤</a></div>
+                    </div>
+                    <div class="select_left_">
+                        <div class="select_left_left">浪漫裙装</div>
+                        <div class="select_left_right">
+                            <a>连衣裙</a><a>半身裙</a><a>A字裙</a><a>荷叶边裙</a><a>大摆裙</a><a>包臀裙</a><a>百褶裙</a><a>长袖</a><a>连衣裙</a><a>棉麻连衣裙</a>
+                            <a>牛仔裙</a>
+                        </div>
+                    </div>
+                    <div class="select_left_">
+                        <div class="select_left_left">女士下装</div>
+                        <div class="select_left_right"><a>休闲裤</a><a>阔腿裤</a><a>牛仔裤</a><a>打底裤</a><a>小脚裤</a><a>短裤</a></div>
+                    </div>
+                    <div class="select_left_">
+                        <div class="select_left_left">特色女装</div>
+                        <div class="select_left_right"><a>时尚套装</a><a>休闲套装</a><a>日系女装</a><a>精选妈妈装</a><a>大码女装</a><a>职业套装</a><a>优雅旗袍</a><a>精致礼服</a><a>小码女装</a></div>
+                    </div>
+                    <div class="select_left_">
+                        <div class="select_left_left">文胸塑身</div>
+                        <div class="select_left_right"><a>女装新品</a><a>商场同款</a><a>仙女连衣裙</a><a>T恤</a><a>衬衫</a><a>时髦外套</a></div>
+                    </div>
+                    <div class="select_left_">
+                        <div class="select_left_left">家居服</div>
+                        <div class="select_left_right"><a>女装新品</a><a>商场同款</a><a>仙女连衣裙</a><a>T恤</a><a>衬衫</a><a>时髦外套</a></div>
+                    </div>
+                    <div class="select_left_ ">
+                        <div class="select_left_left">内裤背心</div>
+                        <div class="select_left_right noborderbottom"><a>女装新品</a><a>商场同款</a><a>仙女连衣裙</a><a>T恤</a><a>衬衫</a><a>时髦外套</a></div>
+                    </div>
+                </div>
+                <div class="select_right">
+                    <div><img src="pictures/1.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/2.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/1.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/2.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/1.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/2.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/1.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/2.jpg" width="100%" height="100%"></div>
+                </div>
+            </div>
+            <div class="select">
+                <div class="select_left">
+                    <div class="select_left_">
+                        <div class="select_left_left">当季流行</div>
+                        <div class="select_left_right"><a>女装新品</a><a>商场同款</a><a>仙女连衣裙</a><a>T恤</a><a>衬衫</a><a>时髦外套</a><a>休闲裤</a><a>牛仔裤</a><a>无痕文胸</a><a>运动文胸</a><a>潮流家居服</a><a>百搭船袜</a></div>
+                    </div>
+                    <div class="select_left_">
+                        <div class="select_left_left">精选上装</div>
+                        <div class="select_left_right"><a>毛呢外套</a><a>羽绒服</a><a>棉服</a><a>丝绒卫衣</a><a>毛针织衫</a><a>皮毛一体</a><a>皮草</a><a>毛衣</a><a>衬衫</a><a>卫衣</a><a>针织衫</a><a>T恤</a></div>
+                    </div>
+                    <div class="select_left_">
+                        <div class="select_left_left">浪漫裙装</div>
+                        <div class="select_left_right">
+                            <a>连衣裙</a><a>半身裙</a><a>A字裙</a><a>荷叶边裙</a><a>大摆裙</a><a>包臀裙</a><a>百褶裙</a><a>长袖</a><a>连衣裙</a><a>棉麻连衣裙</a>
+                            <a>牛仔裙</a>
+                        </div>
+                    </div>
+                    <div class="select_left_">
+                        <div class="select_left_left">女士下装</div>
+                        <div class="select_left_right"><a>休闲裤</a><a>阔腿裤</a><a>牛仔裤</a><a>打底裤</a><a>小脚裤</a><a>短裤</a></div>
+                    </div>
+                    <div class="select_left_">
+                        <div class="select_left_left">特色女装</div>
+                        <div class="select_left_right"><a>时尚套装</a><a>休闲套装</a><a>日系女装</a><a>精选妈妈装</a><a>大码女装</a><a>职业套装</a><a>优雅旗袍</a><a>精致礼服</a><a>小码女装</a></div>
+                    </div>
+                    <div class="select_left_">
+                        <div class="select_left_left">文胸塑身</div>
+                        <div class="select_left_right"><a>女装新品</a><a>商场同款</a><a>仙女连衣裙</a><a>T恤</a><a>衬衫</a><a>时髦外套</a></div>
+                    </div>
+                    <div class="select_left_">
+                        <div class="select_left_left">家居服</div>
+                        <div class="select_left_right"><a>女装新品</a><a>商场同款</a><a>仙女连衣裙</a><a>T恤</a><a>衬衫</a><a>时髦外套</a></div>
+                    </div>
+                    <div class="select_left_ ">
+                        <div class="select_left_left">内裤背心</div>
+                        <div class="select_left_right noborderbottom"><a>女装新品</a><a>商场同款</a><a>仙女连衣裙</a><a>T恤</a><a>衬衫</a><a>时髦外套</a></div>
+                    </div>
+                </div>
+                <div class="select_right">
+                    <div><img src="pictures/1.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/2.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/1.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/2.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/1.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/2.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/1.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/2.jpg" width="100%" height="100%"></div>
+                </div>
+            </div>
+            <div class="select">
+                <div class="select_left">
+                    <div class="select_left_">
+                        <div class="select_left_left">当季流行</div>
+                        <div class="select_left_right"><a>女装新品</a><a>商场同款</a><a>仙女连衣裙</a><a>T恤</a><a>衬衫</a><a>时髦外套</a><a>休闲裤</a><a>牛仔裤</a><a>无痕文胸</a><a>运动文胸</a><a>潮流家居服</a><a>百搭船袜</a></div>
+                    </div>
+                    <div class="select_left_">
+                        <div class="select_left_left">精选上装</div>
+                        <div class="select_left_right"><a>毛呢外套</a><a>羽绒服</a><a>棉服</a><a>丝绒卫衣</a><a>毛针织衫</a><a>皮毛一体</a><a>皮草</a><a>毛衣</a><a>衬衫</a><a>卫衣</a><a>针织衫</a><a>T恤</a></div>
+                    </div>
+                    <div class="select_left_">
+                        <div class="select_left_left">浪漫裙装</div>
+                        <div class="select_left_right">
+                            <a>连衣裙</a><a>半身裙</a><a>A字裙</a><a>荷叶边裙</a><a>大摆裙</a><a>包臀裙</a><a>百褶裙</a><a>长袖</a><a>连衣裙</a><a>棉麻连衣裙</a>
+                            <a>牛仔裙</a>
+                        </div>
+                    </div>
+                    <div class="select_left_">
+                        <div class="select_left_left">女士下装</div>
+                        <div class="select_left_right"><a>休闲裤</a><a>阔腿裤</a><a>牛仔裤</a><a>打底裤</a><a>小脚裤</a><a>短裤</a></div>
+                    </div>
+                    <div class="select_left_">
+                        <div class="select_left_left">特色女装</div>
+                        <div class="select_left_right"><a>时尚套装</a><a>休闲套装</a><a>日系女装</a><a>精选妈妈装</a><a>大码女装</a><a>职业套装</a><a>优雅旗袍</a><a>精致礼服</a><a>小码女装</a></div>
+                    </div>
+                    <div class="select_left_">
+                        <div class="select_left_left">文胸塑身</div>
+                        <div class="select_left_right"><a>女装新品</a><a>商场同款</a><a>仙女连衣裙</a><a>T恤</a><a>衬衫</a><a>时髦外套</a></div>
+                    </div>
+                    <div class="select_left_">
+                        <div class="select_left_left">家居服</div>
+                        <div class="select_left_right"><a>女装新品</a><a>商场同款</a><a>仙女连衣裙</a><a>T恤</a><a>衬衫</a><a>时髦外套</a></div>
+                    </div>
+                    <div class="select_left_ ">
+                        <div class="select_left_left">内裤背心</div>
+                        <div class="select_left_right noborderbottom"><a>女装新品</a><a>商场同款</a><a>仙女连衣裙</a><a>T恤</a><a>衬衫</a><a>时髦外套</a></div>
+                    </div>
+                </div>
+                <div class="select_right">
+                    <div><img src="pictures/1.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/2.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/1.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/2.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/1.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/2.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/1.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/2.jpg" width="100%" height="100%"></div>
+                    <div class="select_right_bottom">
+                        <img src="pictures/3.jpg" width="100%" height="100%">
+                    </div>
+                </div>
+            </div>
+            <div class="select">
+                <div class="select_left">
+                    <div class="select_left_">
+                        <div class="select_left_left">当季流行</div>
+                        <div class="select_left_right"><a>女装新品</a><a>商场同款</a><a>仙女连衣裙</a><a>T恤</a><a>衬衫</a><a>时髦外套</a><a>休闲裤</a><a>牛仔裤</a><a>无痕文胸</a><a>运动文胸</a><a>潮流家居服</a><a>百搭船袜</a></div>
+                    </div>
+                    <div class="select_left_">
+                        <div class="select_left_left">精选上装</div>
+                        <div class="select_left_right"><a>毛呢外套</a><a>羽绒服</a><a>棉服</a><a>丝绒卫衣</a><a>毛针织衫</a><a>皮毛一体</a><a>皮草</a><a>毛衣</a><a>衬衫</a><a>卫衣</a><a>针织衫</a><a>T恤</a></div>
+                    </div>
+                    <div class="select_left_">
+                        <div class="select_left_left">浪漫裙装</div>
+                        <div class="select_left_right">
+                            <a>连衣裙</a><a>半身裙</a><a>A字裙</a><a>荷叶边裙</a><a>大摆裙</a><a>包臀裙</a><a>百褶裙</a><a>长袖</a><a>连衣裙</a><a>棉麻连衣裙</a>
+                            <a>牛仔裙</a>
+                        </div>
+                    </div>
+                    <div class="select_left_">
+                        <div class="select_left_left">女士下装</div>
+                        <div class="select_left_right"><a>休闲裤</a><a>阔腿裤</a><a>牛仔裤</a><a>打底裤</a><a>小脚裤</a><a>短裤</a></div>
+                    </div>
+                    <div class="select_left_">
+                        <div class="select_left_left">特色女装</div>
+                        <div class="select_left_right"><a>时尚套装</a><a>休闲套装</a><a>日系女装</a><a>精选妈妈装</a><a>大码女装</a><a>职业套装</a><a>优雅旗袍</a><a>精致礼服</a><a>小码女装</a></div>
+                    </div>
+                    <div class="select_left_">
+                        <div class="select_left_left">文胸塑身</div>
+                        <div class="select_left_right"><a>女装新品</a><a>商场同款</a><a>仙女连衣裙</a><a>T恤</a><a>衬衫</a><a>时髦外套</a></div>
+                    </div>
+                    <div class="select_left_">
+                        <div class="select_left_left">家居服</div>
+                        <div class="select_left_right"><a>女装新品</a><a>商场同款</a><a>仙女连衣裙</a><a>T恤</a><a>衬衫</a><a>时髦外套</a></div>
+                    </div>
+                    <div class="select_left_ ">
+                        <div class="select_left_left">内裤背心</div>
+                        <div class="select_left_right noborderbottom"><a>女装新品</a><a>商场同款</a><a>仙女连衣裙</a><a>T恤</a><a>衬衫</a><a>时髦外套</a></div>
+                    </div>
+                </div>
+                <div class="select_right">
+                    <div><img src="pictures/1.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/2.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/1.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/2.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/1.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/2.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/1.jpg" width="100%" height="100%"></div>
+                    <div><img src="pictures/2.jpg" width="100%" height="100%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="daohang" id="daohang">
+        <div class="d1">导航</div>
+        <div class="d">天猫<br>超市</div>
+        <div class="d">天猫<br>国际</div>
+        <div class="d">美丽<br>人生</div>
+        <div class="d">潮店<br>酷玩</div>
+        <div class="d">居家<br>生活</div>
+        <div class="d">打造<br>爱巢</div>
+        <div class="d">户外<br>出行</div>
+        <div class="d">猜你<br>喜欢</div>
+        <div class="bottom"><div class="topjiantou"></div>顶部</div>
+    </div>
+    <div class="middle_down">
+        <div class="middle_down_left">
+            <div class="middle_down_left_head"><strong class="bolder">&nbsp;&nbsp;品牌闪购</strong><span class="bolder_small"> BRAND SALE</span><a href=""></a></div>
+            <div class="middle_down_left_body">
+                <div class="mohu"></div>
+            </div>
+        </div>
+        <div class="middle_down_middle">
+            <div class="middle_down_left_head"><strong class="bolder">&nbsp;&nbsp;聚名品</strong><span class="bolder_small"> LUXURY CHANNEL</span><span class="more">更多<a href=""></a></span></div>
+            <div class="middle_down_middle_body">
+                <div class="mohu"></div>
+            </div>
+        </div>
+        <div class="middle_down_right">
+            <div class="middle_down_left_head"><strong class="bolder">&nbsp;&nbsp;品牌活动</strong><span class="bolder_small"> BRAND ACTIVITY</span><span class="more">更多<a href=""></a></span></div>
+            <div class="middle_down_right_body">
+                <div class="mohu"></div>
+            </div>
+        </div>
+        <div class="all">
+            <div class="a">
+                <div class="a1">
+                    <div class="a_">优惠卷 ￥200<br>
+                        <div class="inter">点击进入</div>
+                    </div>
+                </div>
+            </div>
+            <div class="a"><div class="a2"><div class="a_">优惠卷 ￥200<br><div class="inter">点击进入</div></div></div></div>
+            <div class="a"><div class="a3"><div class="a_">优惠卷 ￥200<br><div class="inter">点击进入</div></div></div></div>
+            <div class="a"><div class="a4"><div class="a_">优惠卷 ￥200<br><div class="inter">点击进入</div></div></div></div>
+            <div class="a"><div class="a5"><div class="a_">优惠卷 ￥200<br><div class="inter">点击进入</div></div></div></div>
+            <div class="a"><div class="a6"><div class="a_">优惠卷 ￥200<br><div class="inter">点击进入</div></div></div></div>
+            <div class="a"><div class="a7"><div class="a_">优惠卷 ￥200<br><div class="inter">点击进入</div></div></div></div>
+            <div class="a"><div class="a8"><div class="a_">优惠卷 ￥200<br><div class="inter">点击进入</div></div></div></div>
+            <div class="a"><div class="a9"><div class="a_">优惠卷 ￥200<br><div class="inter">点击进入</div></div></div></div>
+            <div class="a"><div class="a10"><div class="a_">优惠卷 ￥200<br><div class="inter">点击进入</div></div></div></div>
+            <div class="a"><div class="a11"><div class="a_">优惠卷 ￥200<br><div class="inter">点击进入</div></div></div></div>
+            <div class="a"><div class="a12"><div class="a_">优惠卷 ￥200<br><div class="inter">点击进入</div></div></div></div>
+            <div class="a"><div class="a13"><div class="a_">优惠卷 ￥200<br><div class="inter">点击进入</div></div></div></div>
+            <div class="a"><div class="a14"><div class="a_">优惠卷 ￥200<br><div class="inter">点击进入</div></div></div></div>
+            <div class="a"><div class="a15"><div class="a_">优惠卷 ￥200<br><div class="inter">点击进入</div></div></div></div>
+            <div class="a"><div class="a16"><div class="a_">优惠卷 ￥200<br><div class="inter">点击进入</div></div></div></div>
+            <div class="a"><div class="a17"><div class="a_">优惠卷 ￥200<br><div class="inter">点击进入</div></div></div></div>
+            <div class="a"><div class="a18"><div class="a_">优惠卷 ￥200<br><div class="inter">点击进入</div></div></div></div>
+            <div class="a"><div class="a19"><div class="a_">优惠卷 ￥200<br><div class="inter">点击进入</div></div></div></div>
+            <div class="a"><div class="a20"><div class="a_">优惠卷 ￥200<br><div class="inter">点击进入</div></div></div></div>
+            <div class="a"><div class="a21"><div class="a_">优惠卷 ￥200<br><div class="inter">点击进入</div></div></div></div>
+            <div class="a"><div class="a22"><div class="a_">优惠卷 ￥200<br><div class="inter">点击进入</div></div></div></div>
+            <div class="a"><div class="a23"><div class="a_">优惠卷 ￥200<br><div class="inter">点击进入</div></div></div></div>
+            <div class="a"><div class="a24"><div class="a_">优惠卷 ￥200<br><div class="inter">点击进入</div></div></div></div>
+            <div class="a"><div class="a25"><div class="a_">优惠卷 ￥200<br><div class="inter">点击进入</div></div></div></div>
+            <div class="a"><div class="a26"><div class="a_">优惠卷 ￥200<br><div class="inter">点击进入</div></div></div></div>
+            <div class="a"><div class="a27"><div class="a_">优惠卷 ￥200<br><div class="inter">点击进入</div></div></div></div>
+            <div class="a"><div class="a28"><div class="a_">优惠卷 ￥200<br><div class="inter">点击进入</div></div></div></div>
+            <div class="a"><div class="a29"><div class="a_">优惠卷 ￥200<br><div class="inter">点击进入</div></div></div></div>
+            <div class="a"><div class="a30"><div class="xunhuan"></div><span class="a30_text">换一批</span></div></div>
+        </div>
+    </div>
+    <div class="market">
+        <div class="market_top">
+            <div class="market_top_left"></div>
+            <div class="market_top_right">
+                <span>进口食品</span><span>食品饮料</span><span>粮油副食</span><span>美容洗护</span>
+                <span>家居家电</span><span>家庭清洁</span><span>母婴用品</span><span>生鲜水果</span>
+            </div>
+        </div>
+        <div class="market_body col-s-20 col-l-20">
+            <div class="market_body_left">
+                <div class="mk1">
+                    <div class="mk1_1">天猫<br>超市</div>
+                    <div class="mk1_2">零食欢乐购<br>爆款直降</div>
+                </div>
+                <div class="jiantou"></div>
+                <div class="mohu"></div>
+            </div>
+            <div class="market_body_right">
+                <div class="m1">
+                    <div class="m1_top">
+                        <div class="m1_top_ m1_top_left">今日疯抢</div>
+                        <div class="m1_top_ m1_top_right">量贩装</div>
+                    </div>
+                    <div class="m1_bottom">
+                        <div class="m1_ m1_1">
+                            <div class="m1_1_">
+                                <div class="m1_1_t"></div>
+                                <span class="t_green">粮油调味</span><br>
+                                <span class="t_black">爆款直降</span>
+                            </div>
+                        </div>
+                        <div class="m1_ m1_2">
+                            <div class="m1_1_">
+                                <div class="m1_1_t"></div>
+                                <span class="t_green">ABC卫生巾</span><br>
+                                <span class="t_black">抢第2件0元</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="m1">-->
+                    <div class="m">
+                        <div class="m_1"><img src="pictures/m3.jpg" width="100%" height="100%"></div>
+                        <div class="m_2"><span>三利毛巾纯棉 洗脸 家用 纱布大毛巾</span></div>
+                        <div class="m_3"><span>￥ 12.9</span></div>
+                        <div class="hover"></div>
+                    </div>
+                    <div class="m mhidden1">
+                        <div class="m_1"><img src="pictures/m4.jpg" width="100%" height="100%"></div>
+                        <div class="m_2"><span>十月结晶授乳清洁棉乳房清洁棉高压消毒</span></div>
+                        <div class="m_3"><span>￥ 29.9</span></div>
+                        <div class="hover"></div>
+                    </div>
+                <!--</div>-->
+               <!-- <div class="m1">-->
+                    <div class="m">
+                        <div class="m_1"><img src="pictures/m5.jpg" width="100%" height="100%"></div>
+                        <div class="m_2"><span>三利毛巾纯棉 洗脸 家用 纱布大毛巾</span></div>
+                        <div class="m_3"><span>￥ 12.9</span></div>
+                        <div class="hover"></div>
+                    </div>
+                    <div class="m">
+                        <div class="m_1"><img src="pictures/m6.jpg" width="100%" height="100%"></div>
+                        <div class="m_2"><span>十月结晶授乳清洁棉乳房清洁棉高压消毒</span></div>
+                        <div class="m_3"><span>￥ 29.9</span></div>
+                        <div class="hover"></div>
+                    </div>
+                <!--</div>-->
+                <!--<div class="m1">-->
+                    <div class="m">
+                        <div class="m_1"><img src="pictures/m7.jpg" width="100%" height="100%"></div>
+                        <div class="m_2"><span>三利毛巾纯棉 洗脸 家用 纱布大毛巾</span></div>
+                        <div class="m_3"><span>￥ 12.9</span></div>
+                        <div class="hover"></div>
+                    </div>
+                    <div class="m mhidden2">
+                        <div class="m_1"><img src="pictures/m8.jpg" width="100%" height="100%"></div>
+                        <div class="m_2"><span>十月结晶授乳清洁棉乳房清洁棉高压消毒</span></div>
+                        <div class="m_3"><span>￥ 29.9</span></div>
+                        <div class="hover"></div>
+                    </div>
+                <!--</div>-->
+            </div>
+        </div>
+    </div>
+    <div class="hk">
+        <div class="market_top">
+            <div class="market_top_left"></div>
+            <div class="market_top_right">
+                <span>口红</span><span>YSL</span><span>面膜</span><span>防晒</span><span>迪奥</span>
+            </div>
+        </div>
+        <div class="market_body">
+            <div class="left">
+                <div class="market_body_left market_body_left1">
+                    <div class="mk1">
+                        <div class="mk1_1">天猫<br>超市</div>
+                        <div class="mk1_2">零食欢乐购<br>爆款直降</div>
+                    </div>
+                    <div class="jiantou"></div>
+                    <div class="mohu"></div>
+                </div>
+                <div class="market_body_left market_body_left2">
+                    <div class="mk1">
+                        <div class="mk1_1">天猫<br>超市</div>
+                        <div class="mk1_2">零食欢乐购<br>爆款直降</div>
+                    </div>
+                    <div class="jiantou"></div>
+                    <div class="mohu"></div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="m">
+                    <div class="m_2" style="text-align: left;margin-top: 10px;margin-left: 10px;"><span style="font-size: 17px;font-weight: bold;">官方直营优选</span></div>
+                    <div class="m_3" style="text-align: left;margin-top: 5px;margin-left: 10px;"><span style="color: purple;font-size:14px;font-weight: normal;">极致购物感受</span></div>
+                    <div class="m_1"><img src="pictures/h3.jpg" width="100%" height="100%"></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/h5.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>澳洲bioisland进口孕妇专用海藻油DHA胶</span></div>
+                    <div class="m_3"><span>￥ 139</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/h7.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>波兰ziaja齐叶雅山羊奶涂抹面膜泥补水保</span></div>
+                    <div class="m_3"><span>￥ 188</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m hidden">
+                    <div class="m_1"><img src="pictures/h9.png" width="100%" height="100%"></div>
+                    <div class="m_2"><span>波兰ziaja齐叶雅山羊奶涂抹面膜泥补水保</span></div>
+                    <div class="m_3"><span>￥ 188</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/h4.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>波兰ziaja齐叶雅山羊奶涂抹面膜泥补水保</span></div>
+                    <div class="m_3"><span>￥ 188</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/h6.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>波兰ziaja齐叶雅山羊奶涂抹面膜泥补水保</span></div>
+                    <div class="m_3"><span>￥ 188</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/h8.png" width="100%" height="100%"></div>
+                    <div class="m_2"><span>波兰ziaja齐叶雅山羊奶涂抹面膜泥补水保</span></div>
+                    <div class="m_3"><span>￥ 188</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m hidden">
+                    <div class="m_1"><img src="pictures/h10.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>波兰ziaja齐叶雅山羊奶涂抹面膜泥补水保</span></div>
+                    <div class="m_3"><span>￥ 188</span></div>
+                    <div class="hover"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pretty">
+        <div class="market_top">
+            <div class="pretty_left"><strong style="font-size: 18px">&nbsp;美丽人生</strong> FASHION & BEAUTY</div>
+        </div>
+        <div class="market_body">
+            <div class="market_body_left">
+                <div class="mk1">
+                    <div class="mk1_1">焕新<br>换型</div>
+                    <div class="mk1_2">时尚女装<br>优雅而知性</div>
+                </div>
+                <div class="jiantou"></div>
+                <div class="mohu"></div>
+            </div>
+            <div class="right">
+                <div class="m">
+                    <div class="m_1"><img src="pictures/p2.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>adidas阿迪达斯2019年新款男子</span></div>
+                    <div class="m_3"><span>￥ 131</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/p4.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>花花公子短袖衬衫男中老年格子衬衣夏季中年人爸</span></div>
+                    <div class="m_3"><span>￥ 139</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/p6.png" width="100%" height="100%"></div>
+                    <div class="m_2"><span>美丽加芬美丽加芬透明质酸化妆水200ml补水</span></div>
+                    <div class="m_3"><span>￥ 39</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m hidden">
+                    <div class="m_1"><img src="pictures/p8.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>壹 925纯银项链女学生森系锁骨链日韩创意生日5</span></div>
+                    <div class="m_3"><span>￥ 59</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/p3.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>Dickies男鞋迪克斯男士休闲鞋韩版</span></div>
+                    <div class="m_3"><span>￥ 329</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/p5.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>达芙妮旗下/杜拉拉女鞋夏季夹趾甜美少女</span></div>
+                    <div class="m_3"><span>￥ 29.9</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/p7.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>手表带真皮硅胶防水橡胶男代用万国 天梭 </span></div>
+                    <div class="m_3"><span>￥ 138</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m hidden">
+                    <div class="m_1"><img src="pictures/p9.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>包包女2019新款法国小众洋气高端百搭手提水桶</span></div>
+                    <div class="m_3"><span>￥ 139</span></div>
+                    <div class="hover"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ele">
+        <div class="market_top">
+            <div class="pretty_left"><strong style="font-size: 18px">&nbsp;潮店酷玩</strong> ELECTRONICS</div>
+        </div>
+        <div class="market_body">
+            <div class="market_body_left">
+                <div class="mk1">
+                    <div class="mk1_1">明星<br>同款</div>
+                    <div class="mk1_2">畅享音乐<br>耳机发烧友</div>
+                </div>
+                <div class="jiantou"></div>
+                <div class="mohu"></div>
+            </div>
+            <div class="right">
+                <div class="m">
+                    <div class="m_1"><img src="pictures/e2.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>先科 6A广场舞音箱带显示屏幕视频播放器</span></div>
+                    <div class="m_3"><span>￥ 378</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/e4.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>飞利浦毛球修剪器GC027剃毛球器衣服家用去</span></div>
+                    <div class="m_3"><span>￥ 119</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/e6.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>朗科128g内存卡手机tf卡行车记录仪C10</span></div>
+                    <div class="m_3"><span>￥ 79.9</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m hidden">
+                    <div class="m_1"><img src="pictures/e8.png" width="100%" height="100%"></div>
+                    <div class="m_2"><span>影巨人蓝牙耳机无线运动跑步双耳耳塞式适用</span></div>
+                    <div class="m_3"><span>￥ 99</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/e3.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>艾美特塔扇电风扇无遥控落地扇静音无叶风扇</span></div>
+                    <div class="m_3"><span>￥ 269</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/e5.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>嘿哟音乐 Beyond《最佳现场》12寸黑胶唱片</span></div>
+                    <div class="m_3"><span>￥ 299</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/e7.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>HP/惠普Envy系列可充电鼠标500 玫瑰</span></div>
+                    <div class="m_3"><span>￥ 199</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m hidden">
+                    <div class="m_1"><img src="pictures/e9.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>【大派送】海尔无线吸尘器ZB1208B原装电动除螨</span></div>
+                    <div class="m_3"><span>￥ 199</span></div>
+                    <div class="hover"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="jujia">
+        <div class="market_top">
+            <div class="pretty_left"><strong style="font-size: 18px">&nbsp;居家生活</strong> GROCERY & HEALTH</div>
+        </div>
+        <div class="market_body">
+            <div class="market_body_left">
+                <div class="mk1">
+                    <div class="mk1_1" style="line-height: 35px">美家</div>
+                    <div class="mk1_2">家饰尚品<br>清新居家</div>
+                </div>
+                <div class="jiantou"></div>
+                <div class="mohu"></div>
+            </div>
+            <div class="right">
+                <div class="m">
+                    <div class="m_1"><img src="pictures/j2.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>洋酒 格拉夫红牌和拉莫尼朗姆酒组合套餐 鸡尾酒基酒</span></div>
+                    <div class="m_3"><span>￥ 100</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/j3.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>武汉精武鸭脖190g香辣麻辣酱香鸭脖子独</span></div>
+                    <div class="m_3"><span>￥ 21.8</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/j4.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>240片汤臣倍健 维生素C片（橘子味） </span></div>
+                    <div class="m_3"><span>￥ 98</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m hidden">
+                    <div class="m_1"><img src="pictures/j5.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>Loz/俐智mini小颗粒儿童拼插积木迷你</span></div>
+                    <div class="m_3"><span>￥ 29</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/j6.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>五月新日期四川特产菊乐酸乐奶含乳饮料</span></div>
+                    <div class="m_3"><span>￥ 29.8</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/j7.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>wowo喔喔奶糖佳佳牛奶糖500g散装结婚</span></div>
+                    <div class="m_3"><span>￥ 21.8</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/j8.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>【官方旗舰店】四级英语新大纲词汇表 完</span></div>
+                    <div class="m_3"><span>￥ 8.4</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m hidden">
+                    <div class="m_1"><img src="pictures/j9.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>生和堂龟苓爽奶茶控小鲜萃390g*3杯草本</span></div>
+                    <div class="m_3"><span>￥ 39.8</span></div>
+                    <div class="hover"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="home">
+        <div class="market_top">
+            <div class="pretty_left"><strong style="font-size: 18px">&nbsp;打造爱巢</strong> HOME</div>
+        </div>
+        <div class="market_body">
+            <div class="market_body_left">
+                <div class="mk1">
+                    <div class="mk1_1">精品<br>家具</div>
+                    <div class="mk1_2">限量抢购<br>买一送一</div>
+                </div>
+                <div class="jiantou"></div>
+                <div class="mohu"></div>
+            </div>
+            <div class="right">
+                <div class="m">
+                    <div class="m_1"><img src="pictures/hh2.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>金正S33充电式便携式榨汁机多功能榨汁杯户外旅游迷你摇</span></div>
+                    <div class="m_3"><span>￥ 98</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/hh4.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>星星BC-980Y厨房冰箱 全冷藏立式冰柜 玻璃麻辣烫展示柜</span></div>
+                    <div class="m_3"><span>￥ 3399</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/hh6.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>奥克斯绞肉机家用电动不锈钢绞馅碎肉蒜蓉蒜泥器</span></div>
+                    <div class="m_3"><span>￥ 149</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m hidden">
+                    <div class="m_1"><img src="pictures/hh8.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>Vatti/华帝 厨房抽油烟机止逆阀公共烟道出</span></div>
+                    <div class="m_3"><span>￥ 120</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/hh3.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>Seko/新功 F16升级t13自动上水烧水壶不</span></div>
+                    <div class="m_3"><span>￥ 238</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/hh5.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>Disney/迪士尼枕芯决明子枕头</span></div>
+                    <div class="m_3"><span>￥ 89</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/hh7.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>300B2/1500P0纳滤机5级专用后置活性炭滤芯</span></div>
+                    <div class="m_3"><span>￥ 130</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m hidden">
+                    <div class="m_1"><img src="pictures/hh9.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>小熊 BQL-A08A1 冰淇淋机全自动家用冰激凌机</span></div>
+                    <div class="m_3"><span>￥ 129</span></div>
+                    <div class="hover"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="out">
+        <div class="market_top">
+            <div class="pretty_left"><strong style="font-size: 18px">&nbsp;户外出行</strong> OUTDOORS & AUTOMOTIVE</div>
+        </div>
+        <div class="market_body">
+            <div class="market_body_left">
+                <div class="mk1">
+                    <div class="mk1_1">520</div>
+                    <div class="mk1_2">运动大牌<br>好货钜惠</div>
+                </div>
+                <div class="jiantou"></div>
+                <div class="mohu"></div>
+            </div>
+            <div class="right">
+                <div class="m">
+                    <div class="m_1"><img src="pictures/o2.png" width="100%" height="100%"></div>
+                    <div class="m_2"><span>Adidas阿迪达斯男包女包2018冬季新款健身包户外休</span></div>
+                    <div class="m_3"><span>￥ 219</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/o4.png" width="100%" height="100%"></div>
+                    <div class="m_2"><span>尼康/单反相机转接环 转接卡口配件可接天文望远</span></div>
+                    <div class="m_3"><span>￥ 50</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/o6.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>花花公子户外男款人字拖沙滩鞋夹趾运动夹拖</span></div>
+                    <div class="m_3"><span>￥ 79</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m hidden">
+                    <div class="m_1"><img src="pictures/o8.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>龙牙B1级银离子圆领打底衫 抗菌短袖T恤内</span></div>
+                    <div class="m_3"><span>￥ 128</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/o3.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>牧高笛户外背包防雨罩徒步登山包防水罩防尘罩防</span></div>
+                    <div class="m_3"><span>￥ 50</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/o5.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>南极人户外抓绒衣男秋冬开衫运动摇粒绒外套女</span></div>
+                    <div class="m_3"><span>￥ 79</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/o7.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>佳钓尼 钓鱼服 防晒服 透气速干衣男款夏季冰</span></div>
+                    <div class="m_3"><span>￥ 69</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m hidden">
+                    <div class="m_1"><img src="pictures/o9.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>探路者跑步短裤 户外2018秋季新款男式弹力吸湿</span></div>
+                    <div class="m_3"><span>￥ 159</span></div>
+                    <div class="hover"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="whole">
+        <div class="whole_center">
+            <div class="love_text">————&nbsp;&nbsp;<div class="love"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;猜你喜欢————</div>
+            <div class="whole_all">
+                <div class="m">
+                    <div class="m_1"><img src="pictures/hh2.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>金正S33充电式便携式榨汁机多功能榨汁杯户外旅游迷你摇</span></div>
+                    <div class="m_3"><span>￥ 98</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/hh4.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>星星BC-980Y厨房冰箱 全冷藏立式冰柜 玻璃麻辣烫展示柜</span></div>
+                    <div class="m_3"><span>￥ 3399</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/hh6.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>奥克斯绞肉机家用电动不锈钢绞馅碎肉蒜蓉蒜泥器</span></div>
+                    <div class="m_3"><span>￥ 149</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/hh8.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>Vatti/华帝 厨房抽油烟机止逆阀公共烟道出</span></div>
+                    <div class="m_3"><span>￥ 120</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/hh3.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>Seko/新功 F16升级t13自动上水烧水壶不</span></div>
+                    <div class="m_3"><span>￥ 238</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/hh5.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>Disney/迪士尼枕芯决明子枕头</span></div>
+                    <div class="m_3"><span>￥ 89</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/hh7.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>300B2/1500P0纳滤机5级专用后置活性炭滤芯</span></div>
+                    <div class="m_3"><span>￥ 130</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/hh9.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>小熊 BQL-A08A1 冰淇淋机全自动家用冰激凌机</span></div>
+                    <div class="m_3"><span>￥ 129</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/j2.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>洋酒 格拉夫红牌和拉莫尼朗姆酒组合套餐 鸡尾酒基酒</span></div>
+                    <div class="m_3"><span>￥ 100</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/j3.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>武汉精武鸭脖190g香辣麻辣酱香鸭脖子独</span></div>
+                    <div class="m_3"><span>￥ 21.8</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/j4.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>240片汤臣倍健 维生素C片（橘子味） </span></div>
+                    <div class="m_3"><span>￥ 98</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/j5.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>Loz/俐智mini小颗粒儿童拼插积木迷你</span></div>
+                    <div class="m_3"><span>￥ 29</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/j6.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>五月新日期四川特产菊乐酸乐奶含乳饮料</span></div>
+                    <div class="m_3"><span>￥ 29.8</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/j7.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>wowo喔喔奶糖佳佳牛奶糖500g散装结婚</span></div>
+                    <div class="m_3"><span>￥ 21.8</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/j8.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>【官方旗舰店】四级英语新大纲词汇表 完</span></div>
+                    <div class="m_3"><span>￥ 8.4</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/j9.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>生和堂龟苓爽奶茶控小鲜萃390g*3杯草本</span></div>
+                    <div class="m_3"><span>￥ 39.8</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/hh2.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>金正S33充电式便携式榨汁机多功能榨汁杯户外旅游迷你摇</span></div>
+                    <div class="m_3"><span>￥ 98</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/hh4.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>星星BC-980Y厨房冰箱 全冷藏立式冰柜 玻璃麻辣烫展示柜</span></div>
+                    <div class="m_3"><span>￥ 3399</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/hh6.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>奥克斯绞肉机家用电动不锈钢绞馅碎肉蒜蓉蒜泥器</span></div>
+                    <div class="m_3"><span>￥ 149</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/hh8.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>Vatti/华帝 厨房抽油烟机止逆阀公共烟道出</span></div>
+                    <div class="m_3"><span>￥ 120</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/hh3.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>Seko/新功 F16升级t13自动上水烧水壶不</span></div>
+                    <div class="m_3"><span>￥ 238</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/hh5.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>Disney/迪士尼枕芯决明子枕头</span></div>
+                    <div class="m_3"><span>￥ 89</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/hh7.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>300B2/1500P0纳滤机5级专用后置活性炭滤芯</span></div>
+                    <div class="m_3"><span>￥ 130</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/hh9.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>小熊 BQL-A08A1 冰淇淋机全自动家用冰激凌机</span></div>
+                    <div class="m_3"><span>￥ 129</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/o2.png" width="100%" height="100%"></div>
+                    <div class="m_2"><span>Adidas阿迪达斯男包女包2018冬季新款健身包户外休</span></div>
+                    <div class="m_3"><span>￥ 219</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/o4.png" width="100%" height="100%"></div>
+                    <div class="m_2"><span>尼康/单反相机转接环 转接卡口配件可接天文望远</span></div>
+                    <div class="m_3"><span>￥ 50</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/o6.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>花花公子户外男款人字拖沙滩鞋夹趾运动夹拖</span></div>
+                    <div class="m_3"><span>￥ 79</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/o8.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>龙牙B1级银离子圆领打底衫 抗菌短袖T恤内</span></div>
+                    <div class="m_3"><span>￥ 128</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/o3.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>牧高笛户外背包防雨罩徒步登山包防水罩防尘罩防</span></div>
+                    <div class="m_3"><span>￥ 50</span></div>
+                    <div class="hover"></div>
+                </div>
+                <div class="m">
+                    <div class="m_1"><img src="pictures/o5.jpg" width="100%" height="100%"></div>
+                    <div class="m_2"><span>南极人户外抓绒衣男秋冬开衫运动摇粒绒外套女</span></div>
+                    <div class="m_3"><span>￥ 79</span></div>
+                    <div class="hover"></div>
+                </div>
+            </div>
+            <div class="end"></div>
+        </div>
+    </div>
+
+    <div class="footer_top">
+        <div class="f f1"></div>
+        <div class="f f2"></div>
+        <div class="f f3"></div>
+        <div class="f f4"></div>
+    </div>
+    <div class="footer">
+        <div class="footer_middle">
+            <div class="footer_middle_ footer_middle_1"><span style="font-weight: bold;font-size: 15px;color: #656565">购物指南</span><br>
+                <span>免费注册</span><br>
+                <span>开通支付宝</span><br>
+                <span>支付宝充值</span><br>
+                <div class="tmall_down"></div>
+            </div>
+            <div class="footer_middle_ footer_middle_2"><span style="font-weight: bold;font-size: 15px;color: #656565">天猫保障</span><br>
+                <span>发票保障</span><br>
+                <span>售后规则</span><br>
+                <span>缺货赔付</span><br></div>
+            <div class="footer_middle_ footer_middle_3"><span style="font-weight: bold;font-size: 15px;color: #656565">支付方式</span><br>
+                <span>快捷支付</span><br>
+                <span>信用卡</span><br>
+                <span>余额宝</span><br>
+                <span>蚂蚁花呗</span><br>
+                <span>货到付款</span><br></div>
+            <div class="footer_middle_ footer_middle_4"><span style="font-weight: bold;font-size: 15px;color: #656565">商家服务</span><br>
+                <span>天猫规则</span><br>
+                <span>商家入驻</span><br>
+                <span>商家中心</span><br>
+                <span>天猫智库</span><br>
+                <span>物流服务</span><br>
+                <span>喵言喵语</span><br>
+                <span>运营服务</span><br></div>
+            <div class="footer_middle_5">
+                <span style="font-weight: bold;font-size: 15px;color: #656565">手机天猫</span><br>
+                <div class="tmall"></div>
+            </div>
+        </div>
+    </div>
+    <div class="foott">
+        <div class="a"><br>
+            关于天猫 帮助中心 开放平台 诚聘英才 联系我们 网站合作 法律声明 隐私权政策 知识产权 廉正举报 规则意见征集<br><br>
+
+            阿里巴巴集团| 淘宝网 | 天猫 | 聚划算 | 全球速卖通 | 阿里巴巴国际交易市场| 1688 | 阿里妈妈 | 飞猪 | 阿里云计算 | AliOS | 阿里通信 | 万网 | 高德 | UC | 友盟 | 虾米 | 钉钉 | 支付宝
+        </div><br>
+        增值电信业务经营许可证： 浙B2-20110446&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;市场名称登记证：工商网市字3301004119号&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;出版物网络交易平台服务经营备案证： 新出发浙备字第001号<br><br>
+        互联网违法和不良信息举报电话：0571-81683755 blxxjb@alibaba-inc.com&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;互联网药品信息服务资质证书编号：浙-（经营性）-2017-0005&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pl"></span>浙公网安备 33010002000120号<br><br>
+        医疗器械网络交易服务第三方平台备案：（浙）网械平台备字[2018]第00002号&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;互联网药品交易服务资格证书：国A20150001<br><br>
+        浙江省网络食品销售第三方平台提供者备案：浙网食A33010002&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12318举报<br><br>
+        <span style="color: #656565">© 2003-2019 TMALL.COM 版权所有</span>
+    </div>
+</body>
+</html>
