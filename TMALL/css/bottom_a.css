@@ -1,0 +1,133 @@
+/* 到底图片*/
+.endbox{
+    width: 985px;
+    height: 55px;
+    margin: auto;
+   /* border: 1px solid orange;*/
+    box-sizing: border-box
+}
+.endbox img{
+    width: 80px;
+    height: 45px;
+    margin-top: 10px;
+    background-size: cover;
+   /* margin-left: 575px;*/
+    display: inline-block;
+    /*align-items: center;*/
+}
+
+
+/*底部链接*/
+.bottom-abox{
+    width: 985px;  /*1190*/
+    height: 213px;
+  /*  border: 1px solid red;*/
+    margin: auto;
+
+}
+.aitem{
+    width: 190px;
+    height: fit-content;
+   /* border: 1px solid black;*/
+    float: left;
+    box-sizing: border-box;
+}
+.aitem-content{
+    width: 186px;
+    height: fit-content;
+  /*  border: 1px solid yellow;*/
+    box-sizing: border-box;
+    float: right;
+
+}
+.aitem-content-text{
+    text-align: left;
+    font-size: 16px;
+}
+.aitem-content a{
+    height: fit-content;
+    text-align: left;
+    font: 12px/1.5 tahoma,arial,"\5b8b\4f53";
+    color: #000;
+    text-decoration: none;
+
+}
+.erweima{
+    width: fit-content;
+    height: fit-content;
+  /*  border: 1px solid red;*/
+    box-sizing: border-box;
+
+}
+.erweima img{
+    width: 105px;
+    height: 105px;
+    background-size: cover;
+}
+
+
+/*底部黑框*/
+.last-box{
+    width: 985px;
+    height: 200px;
+    background-color: #000000;
+    margin: auto;
+}
+.last1-box{
+    width: 100%;
+    height: 34.8px;
+   /* border: 1px solid white;*/
+    box-sizing: border-box;
+    margin-right: 3px;
+}
+.last1-box a{
+    width: fit-content;
+    height: 16px;
+    text-align: center;
+    line-height: 34.8px;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+.last2-box{
+    width: 100%;
+    height: fit-content;
+    /*border: 1px solid white;*/
+    box-sizing: border-box;
+
+}
+.last2-box a{
+    width: fit-content;
+    height: 16px;
+    text-align: center;
+    line-height: 34.8px;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+.last2-box-text{
+    width: fit-content;
+    height: 16px;
+    text-align: center;
+    line-height: 34.8px;
+    color: white;
+    font-size: 12px;
+    float: left;
+    margin-right: 35px;
+    margin-top: 7px;
+}
+
+@media screen and (min-width: 1230px){
+    .endbox{
+        width: 1230px;
+    }
+    .bottom-abox{
+        width: 1190px;
+    }
+    .aitem{
+        width: 238px;
+    }
+    .last-box{
+        width: 1190px;
+    }
+}

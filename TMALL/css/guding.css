@@ -1,0 +1,205 @@
+
+.guding-box{
+    width: 36px;
+    height: 380px;
+    /*border: 1px solid red;*/
+    box-sizing: border-box;
+    position: fixed;
+    left: 80px;
+    bottom: 80px;
+    display: none;
+}
+.guding-box a{
+   text-decoration: none;
+}
+.gdcontent1{
+    width: 100%;
+    height: 36px;
+    background-color: red;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    line-height: 36px;
+}
+.gdcontent2{
+    margin-top: 3px;
+    width: 100%;
+    height: 36px;
+    background-color: #64c333;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+
+}
+.gdcontent3{
+    margin-top: 2px;
+    width: 100%;
+    height: 36px;
+    background-color: #555555;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+
+}
+.gdcontent3:hover{
+    background-color: #3b8de3;
+}
+
+
+
+.gdcontent4{
+    margin-top: 2px;
+    width: 36px;
+    height: 36px;
+    background-color: #cccccc;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    box-sizing: border-box;
+
+}
+
+
+/*右上角图片*/
+.rtop-box{
+    width: 85px;
+    height: 196.5px;
+    background-color: #f9919d;
+/*    border: 1px solid red;*/
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: none;
+}
+.rtop-img{
+    width: 85px;
+    height: 150px;
+    background: url("../image/p1.png") no-repeat;
+    background-size: cover;
+    margin-top: 46.5px;
+}
+.rtop-box2{
+    width: 85px;
+    height: 45px;
+/*    border: 1px solid green ;*/
+    box-sizing: border-box;
+    background-color: #f9919d;
+    position: fixed;
+    top: 196.5px;
+    right: 0;
+    display: none;
+
+}
+.rtop-box2-img{
+    width: 35px;
+    height: 30px;
+    margin: auto;
+/*    border: 1px solid red;*/
+    box-sizing: border-box;
+    background: url("../image/dw.png") no-repeat;
+    background-size: cover;
+
+}
+.rtop-text{
+    width: 91px;
+    height: 17.6px;
+    margin: auto;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+}
+
+/*右侧固定*/
+.rgd-box{
+    width: 35px;
+   /* height: 358.5px;*/
+/*    border: 1px solid black;*/
+    position: fixed;
+    top: 241.5px;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    display: none;
+}
+.rgd1{
+    width: 35px;
+    height: 35px;
+/*    border: 1px solid white;*/
+    box-sizing: border-box;
+    background: url("../image/ao.png") no-repeat;
+    background-size: cover;
+}
+.rgd1:hover{
+    background-color: red;
+}
+.rgd2:hover{
+    background-color: red;
+}
+.rgd3:hover{
+    background-color: red;
+}
+.rgd4:hover{
+    background-color: red;
+}
+
+
+
+.rgd2{
+    width: 35px;
+    height: 100px;
+/*    border: 1px solid white;*/
+    box-sizing: border-box;
+    margin: auto;
+    color: white;
+
+}
+.rgd2-img{
+    margin-top: 5px;
+    width: 35px;
+    height: 35px;
+    background: url("../image/ac2.png") no-repeat;
+    background-size: cover;
+}
+.rgd2-text{
+    width: 20px;
+    height: fit-content;
+    margin: auto;
+    text-align: center;
+    font-size: 14px;
+}
+.rgd3{
+    width: 35px;
+    height: 35px;
+    margin-top: 5px;
+/*    border: 1px solid white;*/
+    box-sizing: border-box;
+
+}
+.rgd3,.rgd4 img{
+    width: 35px;
+    height: 35px;
+    background-size: cover;
+}
+
+
+.rgd4{
+    width: 35px;
+    height: 35px;
+    margin-top: 5px;
+/*    border: 1px solid white;*/
+    box-sizing: border-box;
+}
+
+
+@media screen and (min-width: 1200px){
+    .guding-box{
+        display: block;
+    }
+    .rgd-box{
+        display: block;
+    }
+    .rtop-box,.rtop-box2{
+        display: block;
+    }
+}

@@ -1,0 +1,144 @@
+/*首页*/
+
+/*1.设置整体页面边距为0*/
+
+
+body{
+    margin: 0;
+    padding: 0;
+
+
+}
+/*2.导航栏整体大小*/
+.daohang-box{
+    width: 100%;
+    height: 40px;
+    background-color: #f9919d; /*16进制*/
+    /* position: fixed;*/  /*设置固定样式*/
+}
+/*3.导航栏内容大小*/
+.daohang-content{
+    width: 1000px;
+    height: 32px;
+    margin-top: 0;
+/*    border: 1px solid green;*/
+    margin: auto;   /*居中*/
+    box-sizing: border-box;
+}
+/* 4.导航栏左侧内容*/
+.dh-left{
+    width: 220px;
+    height: 100%;
+    box-sizing: border-box;
+    float: left;
+}
+.dh-left-text{
+    width: fit-content;
+    height: 16px;
+    margin-top: 6px;
+    color: #fff;
+    font: 12px/1.5 tahoma,arial,"\5b8b\4f53";
+    line-height: 16px;
+    float: left;
+    box-sizing: border-box;
+}
+.dh-left a{
+    display: block;
+    width: 66px;
+    height: 16px;
+    margin-top: 6px;
+    color: #fff;
+    font: 12px/1.5 tahoma,arial,"\5b8b\4f53";
+    text-decoration: none;
+    line-height: 16px;
+    text-align: center;
+    float: left;
+    box-sizing: border-box;
+
+}
+/* 5.导航栏右侧内容*/
+.dh-right{
+    width: 523px;
+    height: 100%;
+    float: right;
+    margin-top: 3px;
+   /* border: 1px solid black;*/
+    box-sizing: border-box;
+}
+   /* 我的淘宝*/
+.dh-right a{
+    width: fit-content;
+    height: 30px;
+   /* border: 1px solid black;*/
+    float: left;
+    box-sizing: border-box;
+    color: #fff;
+    font: 12px/1.5 tahoma,arial,"\5b8b\4f53";
+    text-align: center;
+    padding-top: 3px;
+    text-decoration: none;
+
+}
+.dh-right a:hover{
+   color: #EFDC15;
+}
+
+
+/* 购物车*/
+.icon1{
+    width: 18px;
+    height: 21px;
+    margin-left: 10px;
+    margin-top: -1px;
+    margin-right: 3px;
+    background: url("../image/s1.png") no-repeat  ;
+    float: left;
+}
+/*手机*/
+.icon2{
+    width: 18px;
+    height: 21px;
+    margin-left: 10px;
+    margin-top: -1px;
+    margin-right: 3px;
+  /*  border: 1px solid yellow;*/
+    background: url("../image/s2.png") no-repeat ;
+    float: left;
+}
+
+/*导航菜单*/
+.icon3{
+    width: 25px;
+    height: 18px;
+    margin-left: 5px;
+    margin-top: 2px;
+    margin-right: 3px;
+    /*  border: 1px solid yellow;*/
+    background: url("../image/s3.png") no-repeat ;
+    float: left;
+}
+/*竖线*/
+.line{
+    width: 0.5px;
+    height: 14px;
+    border: 0.25px solid #ccc;
+    margin-top: 7px;
+    float: left;
+}
+/*倒三角*/
+.sanjiao {
+    width: 0;
+    height: 0;
+    border-top: 6px solid #999;
+    border-left: 3px solid #f9919d;
+    border-right: 3px solid #f9919d;
+    float: right;
+    margin-top: 7px;
+    margin-right: 4px;
+}
+
+@media screen and (min-width: 1200px){
+    .daohang-content{
+        width:1230px;
+    }
+}

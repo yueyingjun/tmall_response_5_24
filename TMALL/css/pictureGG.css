@@ -1,0 +1,12 @@
+
+.gg-box{
+    width: 1230px;
+    height: 90px;
+   /* border: 1px solid red;*/
+    margin: auto;
+}
+.gg-box img{
+    width: 1230px;
+    height: 90px;
+    background-size: cover;
+}

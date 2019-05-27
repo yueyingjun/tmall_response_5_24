@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .bigbox{
+            width: 600px;
+            height: 200px;
+            border: 1px solid red;
+        }
+        .leftbox{
+            width: 600px;
+            height: 200px;
+            border: 1px solid black;
+            float: left;
+            box-sizing: border-box;
+        }
+        .rightbox{
+            width: 300px;
+            height: 200px;
+            border: 1px solid green;
+            float: left;
+            box-sizing: border-box;
+            display: none;
+        }
+        .one{
+            width: 600px;
+            height: 50%;
+            background: yellow;
+            float: left;
+            box-sizing: border-box;
+            border: 1px solid black;
+        }
+        .two{
+            width: 290px;
+            height: 50%;
+            background: #3b8de3;
+            box-sizing: border-box;
+            border: 1px solid black;
+            float: left;
+            display: none;
+
+        }
+        .four{
+            width: 600px;
+            height: 50%;
+            background: yellow;
+            float: left;
+            box-sizing: border-box;
+            border: 1px solid black;
+        }
+        .three{
+            width: 290px;
+            height: 50%;
+            background: #3b8de3;
+            box-sizing: border-box;
+            border: 1px solid black;
+            float: left;
+            display: none;
+
+        }
+        .rightbox div{
+            width: 300px;
+            height: 25%;
+            border: 1px solid orange;
+            float: left;
+            box-sizing: border-box;
+
+        }
+
+        @media screen and (max-width: 900px){
+            .bigbox{
+                width: 900px;
+            }
+
+            .rightbox{
+                display: block;
+            }
+
+        }
+
+        @media screen and (max-width: 1200px){
+            .bigbox{
+                width: 1200px;
+            }
+            .leftbox{
+                width: 900px;
+            }
+            .two{
+                display: block;
+            }
+            .three{
+                display: block;
+            }
+
+        }
+    </style>
+</head>
+<body>
+        <div class="bigbox">
+            <div class="leftbox">
+                <div class="one">1</div>
+                <div class="two">2</div>
+                <div class="three">3</div>
+                <div class="four">4</div>
+
+            </div>
+            <div class="rightbox">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+            </div>
+        </div>
+</body>
+</html>

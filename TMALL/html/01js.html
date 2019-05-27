@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+       for(var i=100;i<200;i++){
+           if(i%3==1&&i%4==2&&i%5==3){
+               console.log(i)
+           }else{
+               console.log("没有这样的值")
+           }
+       }
+
+      /* 解法一*/
+      /* for(var j=1;j<=36;j++){
+           if(4*j+(36-j)*2==94){
+               console.log("兔子的个数为："+j)
+               console.log("鸡的个数为："+(36-j))
+           }else{
+               console.log("没有")
+           }
+       }*/
+       /*解法二*/
+        /*假设全是兔子，则有144只脚，多出来50只脚，即记得个数为25*/
+       /* var t=36;
+        var j=((36*4)-94)/2;
+        console.log(j)*/
+
+       /*解法三：*/
+        /*假设全是鸡   94/2=47 47-36=11*/
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

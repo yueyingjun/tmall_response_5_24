@@ -1,0 +1,155 @@
+.cxh-box{
+    width: 991px;
+    height: 86px;
+   /* border: 1px solid red;*/
+    margin: auto;
+    text-align: center;
+    line-height: 86px;
+}
+.cnxh-box{
+    width: 991px;
+    height: 319px;
+  /*  border: 1px solid red;*/
+    margin: auto;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+.cxh100-box{
+    width: 1230px;
+    height: 6573px;
+   /* border: 1px solid red;*/
+    box-sizing: border-box;
+    margin: auto;
+    background-color: #fff;
+}
+.item1{
+    width: 239px;
+    height: 319px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-right: 8px;
+    float: left;
+    background-color: white;
+}
+.item1:hover{
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+.item2{
+    width: 239px;
+    height: 319px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    float: right;
+}
+.item2:hover{
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+.item3{
+    width: 239px;
+    height: 319px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-right: 8px;
+    float: left;
+}
+.item3:hover{
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+
+.item4{
+    width: 239px;
+    height: 319px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 10px;
+    float: right;
+}
+.item4:hover{
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+.imgbox{
+    width: 185px;
+    height: 185px;
+ /*   border: 1px solid green;*/
+    box-sizing: border-box;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+.imgbox img{
+    width: 185px;
+    height: 185px;
+    background-size: cover;
+}
+
+.bottom-logobox{
+    width: 985px;
+    height: 150px;
+/*    border: 1px solid blue;*/
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.imglogo{
+    width: 985px;
+    height: 100px;
+  /*  border: 1px solid green;*/
+    float: right;
+    margin-top: 25px;
+    margin-left: 2px;
+}
+.imglogo img{
+    width: 985px;
+    height: 100px;
+    background-size: cover;
+}
+
+.text{
+    width: 135px;
+    height: 40px;
+   /* border: 1px solid red;*/
+    text-align: center;
+    margin-top: 100px;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #000;
+    box-sizing: border-box;
+}
+.redtext{
+    width: 163px;
+    height: 33px;
+   /* border: 1px solid red;*/
+    text-align: center;
+    margin:  auto;
+    font-size: 15px;
+    color: red;
+    box-sizing: border-box;
+}
+@media screen and (min-width: 1230px){
+    .cxh-box{
+        width: 1230px;
+    }
+    .cnxh-box{
+        width: 1230px;
+    }
+    .bottom-logobox{
+        width: 1230px;
+    }
+    .imglogo{
+        width: 1190px;
+    }
+    .imglogo img{
+        width: 1190px;
+    }
+}
