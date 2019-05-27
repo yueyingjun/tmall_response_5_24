@@ -1,0 +1,1636 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>天猫tmall.com--理想生活上天猫</title>
+    <link rel="stylesheet" href="css/tianmao.css">
+   <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.css">-->
+    <script>
+        window.onload = function(){a();b();}
+        function a() {
+            var banners = document.querySelectorAll(".banner");
+            var btns = document.querySelectorAll(".btn");
+            var num = 0;
+            setInterval(function () {
+                if (num==5){
+                    num = 0
+                }else {
+                    for (var i = 0; i < banners.length; i++) {
+                        banners[i].style.display = "none";
+                        btns[i].style.backgroundColor = "#000"
+                    }
+                    banners[num].style.display = "block";
+                    btns[num].style.backgroundColor = "#fff";
+                    num++
+                }
+            },3000)
+        }
+
+       function b() {
+            var floors = document.querySelectorAll(".floor-bottom");
+            var tabs = document.querySelectorAll(".floor-current-tab");
+            var num = 0;
+            setInterval(function () {
+                if (num == 2) {
+                    num = 0
+                } else {
+                    for (var i = 0; i < floors.length; i++) {
+                        floors[i].style.display = "none";
+                        tabs[i].style.backgroundColor = " #00b262"
+                    }
+                    floors[num].style.display = "block";
+                    tabs[num].style.backgroundColor = "#f5f5f5";
+                    tabs[num].style.color = "black";
+                    num++
+                }
+            }, 2000)
+        }
+
+    </script>
+</head>
+<body>
+<script>
+
+</script>
+
+<div class=" header">
+    <div class=" site-nav">
+        <div class=" site-top">
+            <div class="site-top-left">
+                <span>喵，欢迎来天猫</span>
+                <a href="">&nbsp;&nbsp;请登录</a>
+                <a href="">&nbsp;&nbsp;免费注册</a>
+            </div>
+            <div class="site-top-right">
+                <div class="right-1">
+                    <a href="">我的淘宝</a>
+                    <div class="xiasanjia"></div>
+                </div>
+                <div class="right-2">
+                    <div class="img"></div>
+                    <a href="">购物车0件</a>
+                </div>
+                <div class="right-3">
+                    <a href="">收藏夹</a>
+                    <div class="xiasanjia"></div>
+                </div>
+                <div class="right-4">
+                    <div class="img"></div>
+                    <a href="">手机版</a>
+                </div>
+                <div class="right-5">
+                    <a href="">淘宝网</a>
+                </div>
+                <div class="right-6">
+                    <a href="">商家支持</a>
+                    <div class="xiasanjia"></div>
+                </div>
+                <div class="right-7">
+                    <div class="img"></div>
+                    <a href="">网站导航</a>
+                </div>
+            </div>
+        </div>
+    </div>
+   <!-- <div class="container">-->
+    <div class="logo"></div>
+    <div class="sousuo">
+        <div class="sslan">
+            <div class="s1">
+                <div class="s11">
+                    <span>搜索&nbsp;天猫&nbsp;商品/品牌/店铺</span>
+                </div>
+                <div class="s12">
+                    <span>搜索</span>
+                </div>
+            </div>
+            <div class="s2">
+                <div class="s21">
+                    <a href="">针织衫</a>
+                </div>
+                <div class="s22">
+                    <a href="">连衣裙</a>
+                </div>
+                <div class="s21">
+                    <a href="">四件套</a>
+                </div>
+                <div class="s22">
+                    <a href="">摄像头</a>
+                </div>
+                <div class="s21">
+                    <a href="">客厅灯</a>
+                    <a></a>
+                </div>
+                <div class="s21">
+                    <a href="">口红</a>
+                </div>
+                <div class="s22">
+                    <a href="">手机</a>
+                </div>
+                <div class="s21">
+                    <a href="">运动鞋</a>
+                </div>
+                <div class="s23">
+                    <a href="">牛奶</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--    </div>-->
+    <!--商品菜单-->
+    <div class="menu">
+        <div class="menu-1">
+            <a href="">商品分类</a>
+        </div>
+        <div class="menu-2">
+            <a href="">天猫520活动</a>
+        </div>
+        <div class="menu-3"></div>
+        <div class="menu-4"></div>
+        <div class="menu-5">
+            <ul>
+                <li>
+                        <a href="">天猫会员</a>
+                </li>
+                <li>
+                        <a href="">电器城</a>
+                </li>
+                <li>
+                        <a href="">喵鲜生</a>
+                </li>
+                <li>
+                        <a href="">医药馆</a>
+                </li>
+                <li>
+                        <a href="">营业厅</a>
+                </li>
+                <li>
+                    <a href="">魅力惠</a>
+                </li>
+                <li>
+                        <a href="">飞猪旅行</a>
+                </li>
+                <li>
+                        <a href="">苏宁易购</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container lunbo-box">
+        <div class="banner banner1"></div>
+        <div class="banner banner2"></div>
+        <div class="banner banner3"></div>
+        <div class="banner banner4"></div>
+        <div class="banner banner5"></div>
+        <div class="btns">
+            <div class="btn" style="background-color: white" ></div>
+            <div class="btn"></div>
+            <div class="btn"></div>
+            <div class="btn"></div>
+            <div class="btn"></div>
+        </div>
+
+        <div class="menu-info">
+            <ul>
+                <li>
+                    <div class="l1">
+                        <div class="l1img"></div>
+                        <a href="">大牌女装</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="l1">
+
+                        <div class="l1img"></div>
+                        <a href="">家纺家饰</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="l1">
+
+                        <div class="l1img"></div>
+                        <a href="">运动户外</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="l1">
+
+                        <div class="l1img"></div>
+                        <a href="">型格男装</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="l1">
+
+                        <div class="l1img"></div>
+                        <a href="">大牌美妆</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="l1">
+
+                        <div class="l1img"></div>
+                        <a href="">纸品家清</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="l1">
+
+                        <div class="l1img"></div>
+                        <a href="">潮流个护</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="l1">
+
+                        <div class="l1img"></div>
+                        <a href="">大家电&nbsp;&nbsp;&nbsp;</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="l1">
+
+                        <div class="l1img"></div>
+                        <a href="">手机会场</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="l1">
+
+                        <div class="l1img"></div>
+                        <a href="">精品家具</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class=" dianpu">
+        <div class="brand">
+            <div class="brand-head">
+                <span class="cn">品牌闪购</span>
+                <span class="en">BRAND&nbsp;SALE</span>
+                <a href="" class="more"></a>
+            </div>
+            <div class="brand-body"></div>
+        </div>
+        <div class=" brand2">
+            <div class="brand-head2">
+                <span class="cn">聚名品</span>
+                <span class="en">LUXURY&nbsp;CHANNEL</span>
+                <a href="" class="more">更多</a>
+            </div>
+            <div class="brand-body2"></div>
+        </div>
+        <div class=" brand3">
+            <div class="brand-head3">
+                <span class="cn">品牌活动</span>
+                <span class="en">BRAND&nbsp;ACTIVITY</span>
+                <a href="" class="more">更多</a>
+            </div>
+            <div class="brand-body3"></div>
+        </div>
+    </div>
+    <!--图标-->
+    <div class=" tubiao">
+        <ul>
+            <li class=" tubiao-li">
+                <div class="tubiao-li1">
+                </div>
+                <a href="" class="tubiao-coupon">
+                    <div class="coupon">
+                        <span>优惠券&nbsp;￥&nbsp;300</span>
+                    </div>
+                    <div class="enter">
+                        <span>点击进入</span>
+                    </div>
+                </a>
+            </li>
+            <li class="  tubiao-li">
+                <div class="tubiao-li2">
+                </div>
+                <a href="" class="tubiao-coupon">
+                    <div class="coupon">
+                        <span>优惠券&nbsp;￥&nbsp;300</span>
+                    </div>
+                    <div class="enter">
+                        <span>点击进入</span>
+                    </div>
+                </a>
+            </li>
+            <li class=" tubiao-li">
+                <div class="tubiao-li3">
+                </div>
+                <a href="" class="tubiao-coupon">
+                    <div class="coupon">
+                        <span>优惠券&nbsp;￥&nbsp;300</span>
+                    </div>
+                    <div class="enter">
+                        <span>点击进入</span>
+                    </div>
+                </a>
+            </li>
+            <li class="tubiao-li">
+                <div class="tubiao-li4">
+                </div>
+                <a href="" class="tubiao-coupon">
+                    <div class="coupon">
+                        <span>优惠券&nbsp;￥&nbsp;300</span>
+                    </div>
+                    <div class="enter">
+                        <span>点击进入</span>
+                    </div>
+                </a>
+            </li>
+            <li class=" tubiao-li" >
+                <div class="tubiao-li5">
+                </div>
+                <a href="" class="tubiao-coupon">
+                    <div class="coupon">
+                        <span>优惠券&nbsp;￥&nbsp;300</span>
+                    </div>
+                    <div class="enter">
+                        <span>点击进入</span>
+                    </div>
+                </a>
+            </li>
+            <li class="tubiao-li">
+                <div class="tubiao-li6">
+                </div>
+                <a href="" class="tubiao-coupon">
+                    <div class="coupon">
+                        <span>优惠券&nbsp;￥&nbsp;300</span>
+                    </div>
+                    <div class="enter">
+                        <span>点击进入</span>
+                    </div>
+                </a>
+            </li>
+            <li class=" tubiao-li">
+                <div class="tubiao-li7">
+                </div>
+                <a href="" class="tubiao-coupon">
+                    <div class="coupon">
+                        <span>优惠券&nbsp;￥&nbsp;300</span>
+                    </div>
+                    <div class="enter">
+                        <span>点击进入</span>
+                    </div>
+                </a>
+            </li>
+            <li class=" tubiao-li" >
+                <div class="tubiao-li8">
+                </div>
+                <a href="" class="tubiao-coupon">
+                    <div class="coupon">
+                        <span>优惠券&nbsp;￥&nbsp;300</span>
+                    </div>
+                    <div class="enter">
+                        <span>点击进入</span>
+                    </div>
+                </a>
+            </li>
+            <li class=" tubiao-li" >
+                <div class="tubiao-li9">
+                </div>
+                <a href="" class="tubiao-coupon">
+                    <div class="coupon">
+                        <span>优惠券&nbsp;￥&nbsp;300</span>
+                    </div>
+                    <div class="enter">
+                        <span>点击进入</span>
+                    </div>
+                </a>
+            </li>
+            <li class=" tubiao-li">
+                <div class="tubiao-li10">
+                </div>
+                <a href="" class="tubiao-coupon">
+                    <div class="coupon">
+                        <span>优惠券&nbsp;￥&nbsp;300</span>
+                    </div>
+                    <div class="enter">
+                        <span>点击进入</span>
+                    </div>
+                </a>
+            </li>
+            <li class=" tubiao-li" >
+                <div class="tubiao-li11">
+                </div>
+                <a href="" class="tubiao-coupon">
+                    <div class="coupon">
+                        <span>优惠券&nbsp;￥&nbsp;300</span>
+                    </div>
+                    <div class="enter">
+                        <span>点击进入</span>
+                    </div>
+                </a>
+            </li>
+            <li class=" tubiao-li" >
+                <div class="tubiao-li12">
+                </div>
+                <a href="" class="tubiao-coupon">
+                    <div class="coupon">
+                        <span>优惠券&nbsp;￥&nbsp;300</span>
+                    </div>
+                    <div class="enter">
+                        <span>点击进入</span>
+                    </div>
+                </a>
+            </li>
+            <li class=" tubiao-li" >
+                <div class="tubiao-li13">
+                </div>
+                <a href="" class="tubiao-coupon">
+                    <div class="coupon">
+                        <span>优惠券&nbsp;￥&nbsp;300</span>
+                    </div>
+                    <div class="enter">
+                        <span>点击进入</span>
+                    </div>
+                </a>
+            </li>
+            <li class=" tubiao-li">
+                <div class="tubiao-li14">
+                </div>
+                <a href="" class="tubiao-coupon">
+                    <div class="coupon">
+                        <span>优惠券&nbsp;￥&nbsp;300</span>
+                    </div>
+                    <div class="enter">
+                        <span>点击进入</span>
+                    </div>
+                </a>
+            </li>
+            <li class=" tubiao-li" >
+                <div class="tubiao-li15">
+                </div>
+                <a href="" class="tubiao-coupon">
+                    <div class="coupon">
+                        <span>优惠券&nbsp;￥&nbsp;300</span>
+                    </div>
+                    <div class="enter">
+                        <span>点击进入</span>
+                    </div>
+                </a>
+            </li>
+            <li class=" tubiao-li" >
+                <div class="tubiao-li16">
+                </div>
+                <a href="" class="tubiao-coupon">
+                    <div class="coupon">
+                        <span>优惠券&nbsp;￥&nbsp;300</span>
+                    </div>
+                    <div class="enter">
+                        <span>点击进入</span>
+                    </div>
+                </a>
+            </li>
+            <li class=" tubiao-li">
+                <div class="tubiao-li17">
+                </div>
+                <a href="" class="tubiao-coupon">
+                    <div class="coupon">
+                        <span>优惠券&nbsp;￥&nbsp;300</span>
+                    </div>
+                    <div class="enter">
+                        <span>点击进入</span>
+                    </div>
+                </a>
+            </li>
+            <li class="tubiao-li" >
+                <div class="tubiao-li18">
+                </div>
+                <a href="" class="tubiao-coupon">
+                    <div class="coupon">
+                        <span>优惠券&nbsp;￥&nbsp;300</span>
+                    </div>
+                    <div class="enter">
+                        <span>点击进入</span>
+                    </div>
+                </a>
+            </li>
+            <li class=" tubiao-li" >
+                <div class="tubiao-li19">
+                </div>
+                <a href="" class="tubiao-coupon">
+                    <div class="coupon">
+                        <span>优惠券&nbsp;￥&nbsp;300</span>
+                    </div>
+                    <div class="enter">
+                        <span>点击进入</span>
+                    </div>
+                </a>
+            </li>
+            <li class="tubiao-li">
+                <div class="tubiao-li20">
+                </div>
+                <a href="" class="tubiao-coupon">
+                    <div class="coupon">
+                        <span>优惠券&nbsp;￥&nbsp;300</span>
+                    </div>
+                    <div class="enter">
+                        <span>点击进入</span>
+                    </div>
+                </a>
+            </li>
+            <li class="tubiao-li">
+                <div class="tubiao-li21">
+                </div>
+                <a href="" class="tubiao-coupon">
+                    <div class="coupon">
+                        <span>优惠券&nbsp;￥&nbsp;300</span>
+                    </div>
+                    <div class="enter">
+                        <span>点击进入</span>
+                    </div>
+                </a>
+            </li>
+            <li class="tubiao-li">
+                <div class="tubiao-li22">
+                </div>
+                <a href="" class="tubiao-coupon">
+                    <div class="coupon">
+                        <span>优惠券&nbsp;￥&nbsp;300</span>
+                    </div>
+                    <div class="enter">
+                        <span>点击进入</span>
+                    </div>
+                </a>
+            </li>
+            <li class="tubiao-li">
+                <div class="tubiao-li23">
+                </div>
+                <a href="" class="tubiao-coupon">
+                    <div class="coupon">
+                        <span>优惠券&nbsp;￥&nbsp;300</span>
+                    </div>
+                    <div class="enter">
+                        <span>点击进入</span>
+                    </div>
+                </a>
+            </li>
+            <li class="tubiao-li">
+                <div class="tubiao-li24">
+                </div>
+                <a href="" class="tubiao-coupon">
+                    <div class="coupon">
+                        <span>优惠券&nbsp;￥&nbsp;300</span>
+                    </div>
+                    <div class="enter">
+                        <span>点击进入</span>
+                    </div>
+                </a>
+            </li>
+            <li class="tubiao-li">
+                <div class="tubiao-li25">
+                </div>
+                <a href="" class="tubiao-coupon">
+                    <div class="coupon">
+                        <span>优惠券&nbsp;￥&nbsp;300</span>
+                    </div>
+                    <div class="enter">
+                        <span>点击进入</span>
+                    </div>
+                </a>
+            </li>
+            <li class="tubiao-li">
+                <div class="tubiao-li26">
+                </div>
+                <a href="" class="tubiao-coupon">
+                    <div class="coupon">
+                        <span>优惠券&nbsp;￥&nbsp;300</span>
+                    </div>
+                    <div class="enter">
+                        <span>点击进入</span>
+                    </div>
+                </a>
+            </li>
+            <li class="tubiao-li">
+                <div class="tubiao-li27">
+                </div>
+                <a href="" class="tubiao-coupon">
+                    <div class="coupon">
+                        <span>优惠券&nbsp;￥&nbsp;300</span>
+                    </div>
+                    <div class="enter">
+                        <span>点击进入</span>
+                    </div>
+                </a>
+            </li>
+            <li class="tubiao-li">
+                <div class="tubiao-li28">
+                </div>
+                <a href="" class="tubiao-coupon">
+                    <div class="coupon">
+                        <span>优惠券&nbsp;￥&nbsp;300</span>
+                    </div>
+                    <div class="enter">
+                        <span>点击进入</span>
+                    </div>
+                </a>
+            </li>
+            <li class="tubiao-li">
+                <div class="tubiao-li29">
+                </div>
+                <a href="" class="tubiao-coupon">
+                    <div class="coupon">
+                        <span>优惠券&nbsp;￥&nbsp;300</span>
+                    </div>
+                    <div class="enter">
+                        <span>点击进入</span>
+                    </div>
+                </a>
+            </li>
+            <li class="tubiao-li">
+                <div class="tubiao-li30">
+                    <div class="zhuan"></div>
+                    <span>换一批</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--商品-->
+<div class="foods">
+    <div class="foods-top">
+        <div class="foods-logo">
+            <div class="logo-img"></div>
+        </div>
+        <div class="foods-menu">
+            <a href="" class="hot-word">进口食品</a>
+            <a href="" class="hot-word">食品饮料</a>
+            <a href="" class="hot-word">粮油副食</a>
+            <a href="" class="hot-word">美容洗护</a>
+            <a href="" class="hot-word">家居家电</a>
+            <a href="" class="hot-word">家庭清洁</a>
+            <a href="" class="hot-word">母婴用品</a>
+            <a href="" class="hot-word">生鲜水果</a>
+
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="foods-left">
+            <div class="floor"></div>
+            <div class="detail">
+                <div class="left-title-wrap">
+                    <span class="left-title">天猫超市</span>
+                </div>
+                <div class="right-title-wrap">
+                    <div class="right-title-absolute">
+                        <span class="right-title">零食欢乐购</span>
+                        <span class="right-title">爆款直降</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="foods-right">
+            <div class="gird">
+                <div class="floor-tabs">
+                    <ul class="floor-tab-head">
+                        <li class=" floor-current-tab floor-current-tab1">
+                            <p class="tab-title">今日疯抢</p>
+                        </li>
+                        <li class=" floor-current-tab floor-current-tab2">
+                            <p class="tab-title">量贩装</p>
+                        </li>
+                    </ul>
+                    <div class="floor-bottom floor-bottom1">
+                        <div class="floor-bottom-r"></div>
+                        <div class="right-detai1">
+                            <div class="title-wrap">
+                                <img src="imgs/food2-2.png" alt="" class="cla-icon" >
+                                <span class="tab-item-title">粮油调味</span>
+                            </div>
+                            <div class="tab-desp">
+                                <span>爆款直降</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" floor-bottom floor-bottom2">
+                        <div class="floor-bottom-r2"></div>
+                        <div class=" right-detai1">
+                            <div class="title-wrap">
+                                <img src="imgs/food2-2.png" alt="" class="cla-icon" >
+                                <span class="tab-item-title">力士洗浴套装</span>
+                            </div>
+                            <div class="tab-desp">
+                                <span>抢第2件0元</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="floor-content-warp">
+                    <div class="floor-content-img"></div>
+                    <div class="floor-item-title">原装进口上牌避孕套大颗粒超薄润滑安全套
+                        成人计生男情趣性10只装
+                    </div>
+                    <div class="floor-price">￥9.9</div>
+                </div>
+                <div class="floor-content-warp">
+                    <div class="floor-content-img2"></div>
+                    <div class="floor-item-title">
+                        Watsons/屈臣氏骨胶原盈润温和洁面泡沫
+                    </div>
+                    <div class="floor-price">￥27</div>
+                </div>
+            </div>
+            <div class="floor-content-warp">
+                <div class="floor-content-img3"></div>
+                <div class="floor-item-title">
+                    绿伞洁厕剂洁厕液800g&nbsp;厕所除臭马桶
+                </div>
+                <div class="floor-price">￥13.9</div>
+            </div>
+            <div class="floor-content-warp">
+                <div class="floor-content-img4"></div>
+                <div class="floor-item-title">
+                   枪手&nbsp;电热蚊香片套装无导线无味&nbsp;72片+1
+                </div>
+                <div class="floor-price">￥23</div>
+            </div>
+            <div class="floor-content-warp">
+                <div class="floor-content-img5"></div>
+                <div class="floor-item-title">
+                    润本植物精油驱蚊扣儿童防蚊手环宝宝户
+                </div>
+                <div class="floor-price">￥19.9</div>
+            </div>
+            <div class="floor-content-warp">
+                <div class="floor-content-img6"></div>
+                <div class="floor-item-title">
+                   泉林本色纸卷健康本色纸品无心扁卷卫生
+                </div>
+                <div class="floor-price">￥14.9</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!--商品2-->
+<div class="foods">
+    <div class="foods-top">
+        <div class="foods-logo">
+            <div class="logo-img2"></div>
+        </div>
+        <div class="hot-word-con">
+            <a href="" class="hot-word">口红</a>
+            <a href="" class="hot-word">YSL</a>
+            <a href="" class="hot-word">面膜</a>
+            <a href="" class="hot-word">防晒</a>
+            <a href="" class="hot-word">迪奥</a>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="foods-left">
+            <div class="foods-left2-1">
+                <div class="floor2-1"></div>
+                <div class="detail2">
+                    <div class="left-title-wrap2">
+                        <span class="left-title2">进口精选</span>
+                    </div>
+                    <div class="right-title-wrap2">
+                        <div class="right-title-absolute2">
+                            <span class="right-title2">大牌好货</span>
+                            <span class="right-title2">轻松购入</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="foods-left2-1">
+                <div class="floor2-2"></div>
+                <div class="detail2">
+                    <div class="left-title-wrap2">
+                        <span class="left-title2">进口精选</span>
+                    </div>
+                    <div class="right-title-wrap2">
+                        <div class="right-title-absolute2">
+                            <span class="right-title2">大牌好货</span>
+                            <span class="right-title2">轻松购入</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="foods-right">
+            <div class="floor-content-warp">
+                <div class="warp-title">官方直营优选</div>
+                <div class="sub-title">极致购物感受</div>
+                <div class="zhiying-img"></div>
+            </div>
+            <div class="floor-content-warp">
+                <div class="floor-content-img-h3"></div>
+                <div class="floor-item-title">
+                    Diesel迪赛&nbsp;叁仟良品潮男&nbsp;虎头夏季圆领短
+                </div>
+                <div class="floor-price">￥270</div>
+            </div>
+            <div class="floor-content-warp">
+                <div class="floor-content-img-h4"></div>
+                <div class="floor-item-title">
+                    澳洲bioisland进口孕妇专用海藻油DHA胶
+                </div>
+                <div class="floor-price">￥139</div>
+            </div>
+            <div class="floor-content-warp">
+                <div class="floor-content-img-h5"></div>
+                <div class="floor-item-title">
+                    保税&nbsp;日本盛田屋豆乳面膜乳酪补水面膜
+                </div>
+                <div class="floor-price">￥119</div>
+            </div>
+            <div class="floor-content-warp">
+                <div class="floor-content-img-h6"></div>
+                <div class="floor-item-title">
+                    AVI8真皮原装表带牛皮时尚个性潮流精品
+                </div>
+                <div class="floor-price">￥259</div>
+            </div>
+            <div class="floor-content-warp">
+                <div class="floor-content-img-h7"></div>
+                <div class="floor-item-title">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;【会员专享】LACHESCA高保湿洁
+                </div>
+                <div class="floor-price">￥99</div>
+            </div>
+            <div class="floor-content-warp">
+                <div class="floor-content-img-h8"></div>
+                <div class="floor-item-title">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;美国进口GracelandFruit蓝莓
+                </div>
+                <div class="floor-price">￥39.9</div>
+            </div>
+            <div class="floor-content-warp">
+                <div class="floor-content-img-h9"></div>
+                <div class="floor-item-title">
+                    Adidas&nbsp;Sambarose&nbsp;
+                    W&nbsp;-&nbsp;B37861
+                </div>
+                <div class="floor-price">￥424.32</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!--广告I-->
+<div class="ad1"></div>
+
+<!--商品3-->
+<div class="foods">
+    <div class="foods-top">
+        <div class="foods-logo">
+            <i class="color-mark"></i>
+            <div class="floor-name">
+                <div class="floor-title">
+                    ||&nbsp;&nbsp;美丽人生
+                <div class="floor-sub-name">FASHION&nbsp;&&nbsp;BEAUTY</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="foods-left3">
+            <div class="floor"></div>
+            <div class="detail">
+                <div class="left-title-wrap">
+                    <span class="left-title">大牌直降</span>
+                </div>
+                <div class="right-title-wrap">
+                    <div class="right-title-absolute">
+                        <span class="right-title">海量新款</span>
+                        <span class="right-title">大牌男女鞋</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="foods-right">
+            <div class="gird">
+                <div class="floor-content-warp">
+                    <div class="floor-content-img-h31"></div>
+                    <div class="floor-item-title">
+                        adidas阿迪达斯2019年新款男子EEZAY
+                    </div>
+                    <div class="floor-price">￥131</div>
+                </div>
+                <div class="floor-content-warp">
+                    <div class="floor-content-img-h32"></div>
+                    <div class="floor-item-title">
+                       春秋季环球低帮帆布鞋学生白色休闲韩版
+                    </div>
+                    <div class="floor-price">￥57</div>
+                </div>
+                <div class="floor-content-warp">
+                    <div class="floor-content-img-h33"></div>
+                    <div class="floor-item-title">
+                       壹&nbsp;项链女纯银锁骨链吊坠小众设计银饰首
+                    </div>
+                    <div class="floor-price">￥59</div>
+                </div>
+                <div class="floor-content-warp">
+                    <div class="floor-content-img-h34"></div>
+                    <div class="floor-item-title">
+                       Stussy斯图西巡游反光短裤男女同款纯棉
+                    </div>
+                    <div class="floor-price">￥416</div>
+                </div>
+                <div class="floor-content-warp">
+                    <div class="floor-content-img-h35"></div>
+                    <div class="floor-item-title">
+                        Daphne/达芙妮旗下鞋柜休闲时尚拼色男
+                    </div>
+                    <div class="floor-price">￥49</div>
+                </div>
+            </div>
+            <div class="floor-content-warp">
+                <div class="floor-content-img-h36"></div>
+                <div class="floor-item-title">
+                    COGI/高姿多效修容BB霜会员
+                </div>
+                <div class="floor-price">￥99</div>
+            </div>
+            <div class="floor-content-warp">
+                <div class="floor-content-img-h37"></div>
+                <div class="floor-item-title">
+                  手表带真皮硅胶防水橡胶男代用万国&nbsp;天梭
+                </div>
+                <div class="floor-price">￥138</div>
+            </div>
+            <div class="floor-content-warp">
+                <div class="floor-content-img-h38"></div>
+                <div class="floor-item-title">
+                    唐狮2019夏装新款牛仔裤&nbsp;女青年学生潮流
+                </div>
+                <div class="floor-price">￥199</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!--广告I-->
+<div class="ad2"></div>
+
+<!--商品3-->
+<div class="foods">
+    <div class="foods-top">
+        <div class="foods-logo">
+            <i class="color-mark"></i>
+            <div class="floor-name">
+                <div class="floor-title">
+                    ||&nbsp;&nbsp;美丽人生
+                    <div class="floor-sub-name">FASHION&nbsp;&&nbsp;BEAUTY</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="foods-left3">
+            <div class="floor"></div>
+            <div class="detail">
+                <div class="left-title-wrap">
+                    <span class="left-title">大牌直降</span>
+                </div>
+                <div class="right-title-wrap">
+                    <div class="right-title-absolute">
+                        <span class="right-title">海量新款</span>
+                        <span class="right-title">大牌男女鞋</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="foods-right">
+            <div class="gird">
+                <div class="floor-content-warp">
+                    <div class="floor-content-img-h31"></div>
+                    <div class="floor-item-title">
+                        adidas阿迪达斯2019年新款男子EEZAY
+                    </div>
+                    <div class="floor-price">￥131</div>
+                </div>
+                <div class="floor-content-warp">
+                    <div class="floor-content-img-h32"></div>
+                    <div class="floor-item-title">
+                        春秋季环球低帮帆布鞋学生白色休闲韩版
+                    </div>
+                    <div class="floor-price">￥57</div>
+                </div>
+                <div class="floor-content-warp">
+                    <div class="floor-content-img-h33"></div>
+                    <div class="floor-item-title">
+                        壹&nbsp;项链女纯银锁骨链吊坠小众设计银饰首
+                    </div>
+                    <div class="floor-price">￥59</div>
+                </div>
+                <div class="floor-content-warp">
+                    <div class="floor-content-img-h34"></div>
+                    <div class="floor-item-title">
+                        Stussy斯图西巡游反光短裤男女同款纯棉
+                    </div>
+                    <div class="floor-price">￥416</div>
+                </div>
+                <div class="floor-content-warp">
+                    <div class="floor-content-img-h35"></div>
+                    <div class="floor-item-title">
+                        Daphne/达芙妮旗下鞋柜休闲时尚拼色男
+                    </div>
+                    <div class="floor-price">￥49</div>
+                </div>
+            </div>
+            <div class="floor-content-warp">
+                <div class="floor-content-img-h36"></div>
+                <div class="floor-item-title">
+                    COGI/高姿多效修容BB霜会员
+                </div>
+                <div class="floor-price">￥99</div>
+            </div>
+            <div class="floor-content-warp">
+                <div class="floor-content-img-h37"></div>
+                <div class="floor-item-title">
+                    手表带真皮硅胶防水橡胶男代用万国&nbsp;天梭
+                </div>
+                <div class="floor-price">￥138</div>
+            </div>
+            <div class="floor-content-warp">
+                <div class="floor-content-img-h38"></div>
+                <div class="floor-item-title">
+                    唐狮2019夏装新款牛仔裤&nbsp;女青年学生潮流
+                </div>
+                <div class="floor-price">￥199</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!--广告I-->
+<div class="ad2"></div>
+
+<div class="like">
+    <div class="text-cn">
+        <div class="before-line"></div>
+        <span class="text-cn-icon">&nbsp;&nbsp;猜你喜欢</span>
+        <div class="after-line"></div>
+    </div>
+</div>
+<div class="like-info">
+    <ul class="wonderful-line">
+        <li class="wonderful-item">
+            <a href="" class="card-item">
+                <span class="item-pic1"></span>
+                <span class="item-info">
+                <span class="item-desc">【限量套装每日10:8限量开抢】Huawei/</span>
+                <span class="item-detail">￥5488.0</span>
+            </span>
+            </a>
+        </li>
+        <li class="wonderful-item">
+            <a href="" class="card-item">
+                <span class="item-pic2"></span>
+                <span class="item-info">
+                <span class="item-desc"> Gree/格力KFR-35GW/NhBaD3大</span>
+                <span class="item-detail">￥2849.0</span>
+            </span>
+            </a>
+        </li>
+        <li class="wonderful-item">
+            <a href="" class="card-item">
+                <span class="item-pic3"></span>
+                <span class="item-info">
+                <span class="item-desc"> 科沃斯扫地机器人地宝DJ35只能家用超薄</span>
+                <span class="item-detail">￥1899.0</span>
+            </span>
+            </a>
+        </li>
+        <li class="wonderful-item">
+            <a href="" class="card-item">
+                <span class="item-pic4"></span>
+                <span class="item-info">
+                <span class="item-desc">【5.25&nbsp;0点开抢】OLAY淡斑小白瓶</span>
+                <span class="item-detail">￥359.0</span>
+            </span>
+            </a>
+        </li>
+        <li class="wonderful-item">
+            <a href="" class="card-item">
+                <span class="item-pic5"></span>
+                <span class="item-info">
+                <span class="item-desc">【 资生堂新红腰子讲话傲娇新红妍精华露</span>
+                <span class="item-detail">￥1180.0</span>
+            </span>
+            </a>
+        </li>
+    </ul>
+    <ul class="wonderful-line">
+        <li class="wonderful-item">
+            <a href="" class="card-item">
+                <span class="item-pic6"></span>
+                <span class="item-info">
+                <span class="item-desc">阿迪达斯官方&nbsp;Adidas&nbsp;YEEZY&nbsp;BOOST&nbsp;350</span>
+                <span class="item-detail">￥1899.0</span>
+            </span>
+            </a>
+        </li>
+        <li class="wonderful-item">
+            <a href="" class="card-item">
+                <span class="item-pic7"></span>
+                <span class="item-info">
+                <span class="item-desc">Xiaomi/小米&nbsp;小米电视4A&nbsp;65英寸4k超清</span>
+                <span class="item-detail">￥2999.0</span>
+            </span>
+            </a>
+        </li>
+        <li class="wonderful-item">
+            <a href="" class="card-item">
+                <span class="item-pic8"></span>
+                <span class="item-info">
+                <span class="item-desc"> 全棉时代&nbsp;婴儿棉柔巾纯棉新生儿干湿两用</span>
+                <span class="item-detail">￥243.0</span>
+            </span>
+            </a>
+        </li>
+        <li class="wonderful-item">
+        <a href="" class="card-item">
+            <span class="item-pic9"></span>
+            <span class="item-info">
+                <span class="item-desc"> 亿健精灵ELF跑步机家用款电动走步超静音</span>
+                <span class="item-detail">￥1690.0</span>
+            </span>
+        </a>
+    </li>
+        <li class="wonderful-item">
+        <a href="" class="card-item">
+            <span class="item-pic10"></span>
+            <span class="item-info">
+                <span class="item-desc">【520礼物】雅诗兰黛小棕瓶抗蓝光眼霜</span>
+                <span class="item-detail">￥510.0</span>
+            </span>
+        </a>
+    </li>
+    </ul>
+    <ul class="wonderful-line">
+        <li class="wonderful-item">
+            <a href="" class="card-item">
+                <span class="item-pic1"></span>
+                <span class="item-info">
+                <span class="item-desc">【限量套装每日10:8限量开抢】Huawei/</span>
+                <span class="item-detail">￥5488.0</span>
+            </span>
+            </a>
+        </li>
+        <li class="wonderful-item">
+            <a href="" class="card-item">
+                <span class="item-pic2"></span>
+                <span class="item-info">
+                <span class="item-desc"> Gree/格力KFR-35GW/NhBaD3大</span>
+                <span class="item-detail">￥2849.0</span>
+            </span>
+            </a>
+        </li>
+        <li class="wonderful-item">
+            <a href="" class="card-item">
+                <span class="item-pic3"></span>
+                <span class="item-info">
+                <span class="item-desc"> 科沃斯扫地机器人地宝DJ35只能家用超薄</span>
+                <span class="item-detail">￥1899.0</span>
+            </span>
+            </a>
+        </li>
+        <li class="wonderful-item">
+            <a href="" class="card-item">
+                <span class="item-pic4"></span>
+                <span class="item-info">
+                <span class="item-desc">【5.25&nbsp;0点开抢】OLAY淡斑小白瓶</span>
+                <span class="item-detail">￥359.0</span>
+            </span>
+            </a>
+        </li>
+        <li class="wonderful-item">
+            <a href="" class="card-item">
+                <span class="item-pic5"></span>
+                <span class="item-info">
+                <span class="item-desc">【 资生堂新红腰子讲话傲娇新红妍精华露</span>
+                <span class="item-detail">￥1180.0</span>
+            </span>
+            </a>
+        </li>
+    </ul>
+    <ul class="wonderful-line">
+        <li class="wonderful-item">
+            <a href="" class="card-item">
+                <span class="item-pic6"></span>
+                <span class="item-info">
+                <span class="item-desc">阿迪达斯官方&nbsp;Adidas&nbsp;YEEZY&nbsp;BOOST&nbsp;350</span>
+                <span class="item-detail">￥1899.0</span>
+            </span>
+            </a>
+        </li>
+        <li class="wonderful-item">
+            <a href="" class="card-item">
+                <span class="item-pic7"></span>
+                <span class="item-info">
+                <span class="item-desc">Xiaomi/小米&nbsp;小米电视4A&nbsp;65英寸4k超清</span>
+                <span class="item-detail">￥2999.0</span>
+            </span>
+            </a>
+        </li>
+        <li class="wonderful-item">
+            <a href="" class="card-item">
+                <span class="item-pic8"></span>
+                <span class="item-info">
+                <span class="item-desc"> 全棉时代&nbsp;婴儿棉柔巾纯棉新生儿干湿两用</span>
+                <span class="item-detail">￥243.0</span>
+            </span>
+            </a>
+        </li>
+        <li class="wonderful-item">
+            <a href="" class="card-item">
+                <span class="item-pic9"></span>
+                <span class="item-info">
+                <span class="item-desc"> 亿健精灵ELF跑步机家用款电动走步超静音</span>
+                <span class="item-detail">￥1690.0</span>
+            </span>
+            </a>
+        </li>
+        <li class="wonderful-item">
+            <a href="" class="card-item">
+                <span class="item-pic10"></span>
+                <span class="item-info">
+                <span class="item-desc">【520礼物】雅诗兰黛小棕瓶抗蓝光眼霜</span>
+                <span class="item-detail">￥510.0</span>
+            </span>
+            </a>
+        </li>
+    </ul>
+    <ul class="wonderful-line">
+        <li class="wonderful-item">
+            <a href="" class="card-item">
+                <span class="item-pic1"></span>
+                <span class="item-info">
+                <span class="item-desc">【限量套装每日10:8限量开抢】Huawei/</span>
+                <span class="item-detail">￥5488.0</span>
+            </span>
+            </a>
+        </li>
+        <li class="wonderful-item">
+            <a href="" class="card-item">
+                <span class="item-pic2"></span>
+                <span class="item-info">
+                <span class="item-desc"> Gree/格力KFR-35GW/NhBaD3大</span>
+                <span class="item-detail">￥2849.0</span>
+            </span>
+            </a>
+        </li>
+        <li class="wonderful-item">
+            <a href="" class="card-item">
+                <span class="item-pic3"></span>
+                <span class="item-info">
+                <span class="item-desc"> 科沃斯扫地机器人地宝DJ35只能家用超薄</span>
+                <span class="item-detail">￥1899.0</span>
+            </span>
+            </a>
+        </li>
+        <li class="wonderful-item">
+            <a href="" class="card-item">
+                <span class="item-pic4"></span>
+                <span class="item-info">
+                <span class="item-desc">【5.25&nbsp;0点开抢】OLAY淡斑小白瓶</span>
+                <span class="item-detail">￥359.0</span>
+            </span>
+            </a>
+        </li>
+        <li class="wonderful-item">
+            <a href="" class="card-item">
+                <span class="item-pic5"></span>
+                <span class="item-info">
+                <span class="item-desc">【 资生堂新红腰子讲话傲娇新红妍精华露</span>
+                <span class="item-detail">￥1180.0</span>
+            </span>
+            </a>
+        </li>
+    </ul>
+    <ul class="wonderful-line">
+        <li class="wonderful-item">
+            <a href="" class="card-item">
+                <span class="item-pic6"></span>
+                <span class="item-info">
+                <span class="item-desc">阿迪达斯官方&nbsp;Adidas&nbsp;YEEZY&nbsp;BOOST&nbsp;350</span>
+                <span class="item-detail">￥1899.0</span>
+            </span>
+            </a>
+        </li>
+        <li class="wonderful-item">
+            <a href="" class="card-item">
+                <span class="item-pic7"></span>
+                <span class="item-info">
+                <span class="item-desc">Xiaomi/小米&nbsp;小米电视4A&nbsp;65英寸4k超清</span>
+                <span class="item-detail">￥2999.0</span>
+            </span>
+            </a>
+        </li>
+        <li class="wonderful-item">
+            <a href="" class="card-item">
+                <span class="item-pic8"></span>
+                <span class="item-info">
+                <span class="item-desc"> 全棉时代&nbsp;婴儿棉柔巾纯棉新生儿干湿两用</span>
+                <span class="item-detail">￥243.0</span>
+            </span>
+            </a>
+        </li>
+        <li class="wonderful-item">
+            <a href="" class="card-item">
+                <span class="item-pic9"></span>
+                <span class="item-info">
+                <span class="item-desc"> 亿健精灵ELF跑步机家用款电动走步超静音</span>
+                <span class="item-detail">￥1690.0</span>
+            </span>
+            </a>
+        </li>
+        <li class="wonderful-item">
+            <a href="" class="card-item">
+                <span class="item-pic10"></span>
+                <span class="item-info">
+                <span class="item-desc">【520礼物】雅诗兰黛小棕瓶抗蓝光眼霜</span>
+                <span class="item-detail">￥510.0</span>
+            </span>
+            </a>
+        </li>
+    </ul>
+    <ul class="wonderful-line">
+        <li class="wonderful-item">
+            <a href="" class="card-item">
+                <span class="item-pic1"></span>
+                <span class="item-info">
+                <span class="item-desc">【限量套装每日10:8限量开抢】Huawei/</span>
+                <span class="item-detail">￥5488.0</span>
+            </span>
+            </a>
+        </li>
+        <li class="wonderful-item">
+            <a href="" class="card-item">
+                <span class="item-pic2"></span>
+                <span class="item-info">
+                <span class="item-desc"> Gree/格力KFR-35GW/NhBaD3大</span>
+                <span class="item-detail">￥2849.0</span>
+            </span>
+            </a>
+        </li>
+        <li class="wonderful-item">
+            <a href="" class="card-item">
+                <span class="item-pic3"></span>
+                <span class="item-info">
+                <span class="item-desc"> 科沃斯扫地机器人地宝DJ35只能家用超薄</span>
+                <span class="item-detail">￥1899.0</span>
+            </span>
+            </a>
+        </li>
+        <li class="wonderful-item">
+            <a href="" class="card-item">
+                <span class="item-pic4"></span>
+                <span class="item-info">
+                <span class="item-desc">【5.25&nbsp;0点开抢】OLAY淡斑小白瓶</span>
+                <span class="item-detail">￥359.0</span>
+            </span>
+            </a>
+        </li>
+        <li class="wonderful-item">
+            <a href="" class="card-item">
+                <span class="item-pic5"></span>
+                <span class="item-info">
+                <span class="item-desc">【 资生堂新红腰子讲话傲娇新红妍精华露</span>
+                <span class="item-detail">￥1180.0</span>
+            </span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div class="tm-end">
+    <div class="show-end"></div>
+</div>
+
+<div class="footer-end">
+    <div class="tmall-ensure">
+        <div class="tmall-load"></div>
+    </div>
+    <div class="floor-bottom-end">
+        <div class="floor-bend-1">
+            <div class="d1">
+                <dt>
+                    <span>购物指南</span>
+                </dt>
+                <dd>
+                    <a href="">免费注册</a>
+                    <a href="">开通支付宝</a>
+                    <a href="">支付宝充值</a>
+                </dd>
+            </div>
+            <div class="d1">
+                <dt>
+                    <span>天猫保障</span>
+                </dt>
+                <dd>
+                    <a href="">发票保障</a>
+                    <a href="">售后规则</a>
+                    <a href="">缺货赔付</a>
+                </dd>
+            </div>
+            <div class="d1">
+                <dt>
+                    <span>支付方式</span>
+                </dt>
+                <dd>
+                    <a href="">快捷支付</a>
+                    <a href="">信用卡</a>
+                    <a href="">余额宝</a>
+                    <a href="">蚂蚁花呗</a>
+                    <a href="">货到付款</a>
+                </dd>
+            </div>
+            <div class="d1">
+                <dt>
+                    <span>商家服务</span>
+                </dt>
+                <dd>
+                    <a href="">天猫规则</a>
+                    <a href="">商家入驻</a>
+                    <a href="">商家中心</a>
+                    <a href="">天猫智库</a>
+                    <a href="">物流服务</a>
+                    <a href="">喵言喵语</a>
+                    <a href="">运营服务</a>
+                </dd>
+            </div>
+            <div class="d1">
+                <dt>
+                    <span>手机天猫</span>
+                </dt>
+               <div class="ewm">
+               </div>
+            </div>
+            <div class="cat">
+                <div class="cat-tianmao"></div>
+            </div>
+            <!-- 关于天猫-->
+            <div class="end-buy">
+                <div class="about1">
+                    <p class="tmallinfo">
+                        <a href="">关于天猫</a>
+                        <a href="">帮助中心</a>
+                        <a href="">开放平台</a>
+                        <a href="">诚聘英才</a>
+                        <a href="">联系我们</a>
+                        <a href="">网站合法</a>
+                        <a href="">法律声明</a>
+                        <a href="">隐私权政策</a>
+                        <a href="">知识产权</a>
+                        <a href="">廉正举报</a>
+                        <a href="">规则意见征集</a>
+                    </p>
+                    <p class="otherlink">
+                        <a href="">阿里巴巴集团</a>|
+                        <a href="">淘宝网</a>|
+                        <a href="">天猫</a>|
+                        <a href="">聚划算</a>|
+                        <a href="">全球速卖通</a>|
+                        <a href="">阿里巴巴国际贸易市场</a>|
+                        <a href="">1688</a>|
+                        <a href="">阿里妈妈</a>|
+                        <a href="">飞猪</a>|
+                        <a href="">阿里云计算</a>|
+                        <a href="">AliOS</a>|
+                        <a href="">阿里通信</a>|
+                        <a href="">万网</a>|
+                        <a href="">高德</a>|
+                        <a href="">UC</a>|
+                        <a href="">友盟</a>|
+                        <a href="">虾米</a>|
+                        <a href="">钉钉</a>|
+                        <a href="">支付宝</a>
+                    </p>
+                    <div class="copyright">
+                        增值电信业务经营许可证：
+                        <a href="">
+                            浙B2-20110446
+                        </a>
+                        <span style="margin-right: 65px">市场名称登记：工商网市字3301004119</span>
+                        <span>出版物网络交易平台服务经营备案证：新出发浙备字第001号</span>
+                        <br>
+                        <span style="margin-right: 65px">互联网违法和不良信息举报电话：0571-81683755&nbsp;blxxjb@alibaba-inc.com</span>
+
+                            互联网药品信息服务资格认证编号：
+                            <a href="">浙-&nbsp;(经营性)&nbsp;-2017-0005</a>
+                            <a href="">
+                                <img src="imgs/tubiao1.png" alt="" style="position: relative;top: 5px;vertical-align: baseline">
+                                浙公网安备&nbsp;330100002000120号
+                            </a>
+                            <br>
+                            <span style="margin-right: 65px">医疗器械网络交易服务第三方平台备案：&nbsp;(浙)网械平台备字[2018]第00002号</span>
+                            <span style="margin-right: 65px">互联网药品交易服务资格证书：&nbsp;国A20150001</span>
+                            <br>
+                            <span style="margin-right: 65px">浙江省网络食品销售第三方平台提供者备案：&nbsp;浙网食A33010002</span>
+                            <a href="">12318举报</a>
+                            <br>
+                            <a>©&nbsp;2003-2019&nbsp;TMALL.COM&nbsp;版权所有</a>
+                            <p class="fp-img" style="padding-top: 10px">
+                                <a href="">
+                                    <img src="imgs/tubiao2.jpg" alt="">
+                                    <img src="imgs/tubiao3.jpg" alt="">
+                                </a>
+                            </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--固定块-->
+<div class="fixation-right">
+    <div class="fixation">
+    </div>
+    <div class="fixation2">
+        <div class="tab-logo-nav"></div>
+        <div class="tab-text">主会场</div>
+    </div>
+</div>
+<div class="tab-top-left"></div>
+<div class="tabs-mask">
+    <div class="tab-prof" style="top: 0; margin: 204px 0 0">
+        <div class="tab-prof-img"></div>
+        <div class="tab-prof-nologin">
+            <div class="nologin-img">
+            </div>
+            <span>购</span>
+            <span>物</span>
+            <span>车</span>
+        </div>
+        <div class="tab-prof-image1"></div>
+        <div class="tab-prof-image2"></div>
+        <div class="tab-prof-image3"></div>
+        <div class="tab-prof-image4"></div>
+        <div class="tab-prof-image5"></div>
+        <div class="tab-prof-image6"></div>
+        <div class="tab-prof-image7"></div>
+        <div class="tab-prof-image8"></div>
+    </div>
+</div>
+
+
+<!--左边固定栏-->
+<div class="nav-wrapper">
+    <div class="nav-header">导航</div>
+    <div class="fplift">
+        <a href="" class="mui-lift-nav">
+            <div class="mui-lift-nav-name">
+               天猫超市
+            </div>
+        </a>
+        <a href="" class="mui-lift-nav">
+            <div class="mui-lift-nav-name">
+                天猫国际
+            </div>
+        </a>
+        <a href="" class="mui-lift-nav">
+            <div class="mui-lift-nav-name">
+                美丽人生
+            </div>
+        </a> <a href="" class="mui-lift-nav">
+        <div class="mui-lift-nav-name">
+            潮店酷玩
+        </div>
+    </a> <a href="" class="mui-lift-nav">
+        <div class="mui-lift-nav-name">
+            居家生活
+        </div>
+    </a>
+        <a href="" class="mui-lift-nav">
+            <div class="mui-lift-nav-name">
+                打造爱巢
+            </div>
+        </a>
+        <a href="" class="mui-lift-nav">
+            <div class="mui-lift-nav-name">
+                户外出行
+            </div>
+        </a>
+        <a href="" class="mui-lift-nav">
+            <div class="mui-lift-nav-name">
+                猜你喜欢
+            </div>
+        </a>
+
+        <a href="" class="mui-lift-nav">
+
+            <div class="mui-lift-nav-img">
+                顶部
+            </div>
+        </a>
+    </div>
+</div>
+
+</body>
+</html>

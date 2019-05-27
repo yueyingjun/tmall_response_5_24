@@ -1,0 +1,154 @@
+/*小屏*/
+.container{
+    width: 982px;
+}
+.con-s-1{
+    width: 2.5%;
+}
+.con-s-2{
+    width: 16.667%;
+}
+.con-s-3{
+    width: 25%;
+}
+.con-s-4{
+    width: 33.333%;
+}
+.con-s-5{
+    width: 41.667%;
+}
+.con-s-6{
+    width: 50%;
+}
+.con-s-7{
+    width: 58.333%;
+}
+.con-s-8{
+    width: 66.667%;
+}
+.con-s-9{
+    width: 75%;
+}
+.con-s-10{
+    width: 83.333%;
+}
+.con-s-11{
+    width: 91.667%;
+}
+.con-s-12{
+    width: 100%;
+}
+.con-s-13{
+    width: 2.5%;
+}
+.con-s-14{
+    width: 16.667%;
+}
+.con-s-15{
+    width: 25%;
+}
+.con-s-16{
+    width: 33.333%;
+}
+.con-s-5{
+    width: 41.667%;
+}
+.con-s-6{
+    width: 50%;
+}
+.con-s-7{
+    width: 58.333%;
+}
+.con-s-8{
+    width: 66.667%;
+}
+.con-s-9{
+    width: 75%;
+}
+.con-s-10{
+    width: 83.333%;
+}
+.con-s-11{
+    width: 91.667%;
+}
+.con-s-12{
+    width: 100%;
+}
+.con-s-1{
+    width: 2.5%;
+}
+.con-s-2{
+    width: 16.667%;
+}
+.con-s-3{
+    width: 25%;
+}
+.con-s-4{
+    width: 33.333%;
+}
+.con-s-5{
+    width: 41.667%;
+}
+.con-s-6{
+    width: 50%;
+}
+.con-s-7{
+    width: 58.333%;
+}
+.con-s-8{
+    width: 66.667%;
+}
+.con-s-9{
+    width: 75%;
+}
+.con-s-10{
+    width: 83.333%;
+}
+.con-s-11{
+    width: 91.667%;
+}
+.con-s-12{
+    width: 100%;
+}
+/*大屏*/
+@media screen and (min-width: 1230px){
+    .container{
+        width: 1230px;
+    }
+    .con-l-1{
+        width: 8.333%;
+    }
+    .con-l-2{
+        width: 16.667%;
+    }
+    .con-l-3{
+        width: 25%;
+    }
+    .con-l-4{
+        width: 33.333%;
+    }
+    .con-l-5{
+        width: 41.667%;
+    }
+    .con-l-6{
+        width: 50%;
+    }
+    .con-l-7{
+        width: 58.333%;
+    }
+    .con-l-8{
+        width: 66.667%;
+    }
+    .con-l-9{
+        width: 75%;
+    }
+    .con-l-10{
+        width: 83.333%;
+    }
+    .con-l-11{
+        width: 91.667%;
+    }
+    .con-l-12{
+        width: 100%;
+    }
+}
