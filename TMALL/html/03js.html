@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function unique(arr) {
+            if (!Array.isArray(arr)) {
+                console.log('type error!')
+                return
+            }
+            var array = [];
+            for (var i = 0; i < arr.length; i++) {
+                if (array .indexOf(arr[i]) === -1) {
+                    array .push(arr[i])
+                }
+            }
+            return array;
+        }
+        var arr = [1,1,2,3,4,5,5,6,6,7];
+        console.log(unique(arr))
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -45,7 +45,7 @@
  .lunbo-right-box{
      width: 785px;
      height: 100%;
-     /*border: 1px solid green;*/
+     border: 2px solid green;
      box-sizing: border-box;
      float: left;
      box-sizing: border-box;
@@ -163,7 +163,7 @@
      margin-top: -2px;
  }
  .content-box2{
-     width: 150px;
+     width: 100%;
      height: 100%;
      box-sizing: border-box;
      margin: auto;
@@ -174,7 +174,85 @@
      text-decoration: none;
      line-height: 29px;
      color: white;
+     padding-left: 30px;
  }
+
+
+ /*设置左侧动态导航*/
+ .muban-box{
+     width: 785px;
+     height: 100%;
+     border: 2px solid red;
+     box-sizing: border-box;
+     background-color: white;
+     float: left;
+     box-sizing: border-box;
+     position: relative;
+     display: none;
+ }
+.muban-left{
+    width: 685px;
+    height: 100%;
+    border: 1px solid orange;
+    box-sizing: border-box;
+    float: left;
+}
+.muban-right{
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+.muban-left-item{
+    width: 100%;
+    height: 12.5%;
+    border: 1px solid orange;
+    box-sizing: border-box;
+}
+.muban-left-item-left{
+    width: 150px;
+    height: 100%;
+    /*border: 1px solid blue;*/
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    line-height: 62px;
+    font-size: 16px;
+}
+ .muban-left-item-right{
+     width: 500px;
+     height: 100%;
+     /*border: 3px solid blue;*/
+     box-sizing: border-box;
+     float: left;
+     text-align: center;
+     line-height: 62px;
+     font-size: 16px;
+ }
+ .right-text-box{
+     width: 80px;
+     height: 50%;
+     box-sizing: border-box;
+     float: left;
+     text-align: center;
+    /* border: 1px solid black;*/
+     line-height: 25px;
+     font-size: 14px;
+ }
+/* .right-text-box a{
+     width: 100%;
+     height: 100%;
+     text-align: center;
+     text-decoration: none;
+     color: #999999;
+     font-size: 13px;
+     line-height: 30px;
+ }*/
+
+
+
+
+
+
 
 
  @media screen and (min-width: 1230px){
@@ -183,5 +261,14 @@
      }
      .lunbo-right-box{
          width: 1030px;
+     }
+     .muban-box{
+         width: 1030px;
+     }
+     .muban-left{
+         width: 830px;
+     }
+     .muban-left-item-right{
+         width: 676px;
      }
  }

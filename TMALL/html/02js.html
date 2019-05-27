@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var s=[12,3,7,1,19,24,16,6,8,10,5,33,9];
+        /*冒泡排序*/
+        /*for(var i=0;i<s.length-1;i++){
+            for (var j=0;j<s.length-1-i;j++){
+                if(s[j]>s[j+1]){
+                    var tmp=s[j];
+                    s[j]=s[j+1];
+                    s[j+1]=tmp;
+                }
+            }
+        }*/
+        /*选择排序*/
+       /* for(var i=0;i<s.length-1;i++){
+            for (var j=i+1;j<s.length;j++){
+                if(s[i]>s[j]){
+                    var tmp=s[i];
+                    s[i]=s[j];
+                    s[j]=tmp;
+                }
+            }
+        }*/
+       /*快速排序*/
+
+
+        /*插入排序*/
+        function insertSort(arr) {
+            for (var i = 1; i < arr.length; i++) {
+                var temp = arr[i];
+                var j = i - 1;
+                while (j >= 0 && arr[j] > temp) {
+                    arr[j + 1] = arr[j];
+                    j--;
+                }
+                arr[j + 1] = temp;
+            }
+            return arr;
+        }
+        var arr = [1, 45, 37, 5, 48, 15, 37, 26, 29, 2, 46, 4, 17, 50, 52];
+        console.log(insertSort(arr));
+       /* console.log(s)*/
+    </script>
+</head>
+<body>
+
+</body>
+</html>
