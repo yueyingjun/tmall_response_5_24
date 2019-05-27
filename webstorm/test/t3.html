@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        window.onload=function () {
+            var div1=document.querySelector(".div1")
+            var div2=document.querySelector(".div2")
+            var div3=document.querySelector(".div3")
+            div3.onclick=function () {
+                div1.innerHTML=""
+                div2.innerHTML="aaaa"
+
+            }
+        }
+    </script>
+    <style>
+        .div{
+            width: 1000px;
+            height: 300px;
+        }
+
+        .div1{
+            width: 200px;
+            height: 200px;
+            background-color: #3b8de3;
+            float: left;
+        }
+
+        .div2{
+            width: 200px;
+            height: 200px;
+            margin: auto;background-color: #3b8de3;
+            float: right;
+        }
+
+        .div3{
+            width: 50px;
+            height: 50px;background-color: #e3222d;
+            margin-left: 475px;
+        }
+    </style>
+</head>
+<body>
+<div class="div">
+    <div class="div1">aaaa</div>
+    <div class="div2"></div>
+</div>
+<input type="button" value="按钮">
+<div class="div3"></div>
+</body>
+</html>

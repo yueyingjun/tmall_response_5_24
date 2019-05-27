@@ -1,0 +1,1902 @@
+body{
+    margin: 0;
+}
+
+/*搜索*/
+.whiteBackground{
+    width: 100%;
+    height: 165px;
+    /*background-color: white;*/
+    min-width: 990px;
+    display: block;
+}
+
+.header{
+    width:1180px;
+    height: 100%;
+    margin: auto;
+}
+
+.tmall-logo-img{
+    width: 250px;
+    height: 100%;
+    float: left;
+    /*background: url("../images/tmall-logo.png") no-repeat 0 0;*/
+}
+
+.tmallSearch{
+    width: 930px;
+    height: 100%;
+    float: right;
+
+}
+
+.tmallSearch-top{
+    width: 100%;
+    height: 50%;
+    float: top;
+}
+
+.tmallSearch-top-search{
+    width: 500px;
+    height: 50%;
+    display: block;
+    /*margin-left: 140px;
+    margin-top: 30px;*/
+    padding-left: 140px;
+    padding-top: 30px;
+}
+
+.tmallSearch-bottom{
+    width: 100%;
+    height: 50%;
+    float: bottom;
+}
+
+.tmallSearch-top-search-left{
+    width: 400px;
+    height: 100%;
+    float: left;
+    border: 1px red solid;
+    line-height:40px;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+.tmallSearch-top-search-right{
+    width: 100px;
+    height: 100%;
+    float: right;
+    background-color: red;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+.tmallSearch-top-search-right a{
+    color: white;
+    font-size: 18px;
+    /*line-height: 100%;*/
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.tmallSearch-bottom-index{
+    margin-left: 140px;
+    width: 500px;
+    height: 50%;
+    margin-bottom: 140px;
+
+}
+
+.tmallSearch-bottom-index a{
+    float: left;
+    color: black;
+}
+
+/*导航*/
+
+.navigation{
+    width: 1180px;
+    height: 545px;
+    margin: auto;
+    position: relative;
+    /*border: 1px red solid;*/
+}
+
+.navigation-bar{
+    width: 100%;
+    height: 45px;
+    margin: auto;
+}
+
+.navigation-bar-left{
+    width: 250px;
+    height: 100%;
+    float: left;
+}
+
+.navigation-bar-left-one{
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    float:left;
+    text-align: center;
+
+}
+
+.navigation-bar-left-one a{
+    color: red;
+    line-height: 50px;
+}
+
+.navigation-bar-left-two{
+    width: 50%;
+    height: 100%;
+    background-color: black;
+    float: right;
+    text-align: center;
+}
+
+.navigation-bar-left-two a{
+    color: white;
+    line-height: 50px;
+}
+
+.navigation-bar-right{
+    width: 930px;
+    height: 100%;
+    float: right;
+    text-align: center;
+}
+
+.navigation-bar-right a{
+    width: 70px;
+    height: 100%;
+    float: left;
+    line-height: 50px;
+    color: black;
+}
+
+.navigation-bar-right a:hover{
+    color: red;
+}
+
+.navigation-photo{
+    width: 1180px;
+    height: 500px;
+    margin: auto;
+}
+
+.navigation-photo-type1{
+    width: 250px;
+    height: 500px;
+    background-color: black;
+    background-color: rgba(0,0,0,.55);
+    /*font-size: 20px;*/
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 45px;
+}
+
+.navigation-photo-type1-one{
+    width: 100%;
+    height: 10%;
+}
+
+.navigation-photo-type1-one-right a{
+    line-height: 50px;
+    color: white;
+}
+
+.navigation-photo-type2{
+    width: 250px;
+    height: 500px;
+    background-color: #7f7f7f;
+    /*font-size: 20px;*/
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 45px;
+    /*background: rgba(0,0,0,0.5);*/
+}
+
+/*.navigation-photo-type1-one-right{
+    width: 200px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 20px;
+    border: 1px red solid;
+    box-sizing: border-box;
+}*/
+
+.navigation-photo-lun{
+    height: 500px;
+    width: 930px;
+    float: right;
+}
+
+.lun1{
+    height: 500px;
+    width: 930px;
+    background: url("../images/lun1.jpg") no-repeat;
+    position: absolute;
+    left: 250px;
+    top: 45px;
+    z-index: 4;
+}
+
+.lun2{
+    height: 500px;
+    width: 930px;
+    background: url("../images/lun2.jpg") no-repeat;
+    position: absolute;
+    left: 250px;
+    top: 45px;
+    z-index: 3;
+}
+
+.lun3{
+    height: 500px;
+    width: 930px;
+    background: url("../images/lun3.jpg") no-repeat;
+    position: absolute;
+    left: 250px;
+    top: 45px;
+    z-index: 2;
+}
+
+.lun4{
+    height: 500px;
+    width: 930px;
+    background: url("../images/lun4.jpg") no-repeat;
+    position: absolute;
+    left: 250px;
+    top: 45px;
+    z-index: 1;
+}
+
+.navigation-photo-lun-bottom{
+    width: 220px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    /*background-color: #3b8de3;*/
+    left: 560px;
+    top:500px;
+    z-index: 5;
+}
+
+.navigation-photo-lun-bottom-one{
+    width: 40px;
+    height: 10px;
+    float: left;
+    background-color: white;
+    position: absolute;
+    left: 5px;
+    top:10px;
+    margin: 0 10px;
+}
+
+.navigation-photo-lun-bottom-two{
+    width: 40px;
+    height: 10px;
+    float: left;
+    /*background-color: #3b8de3;*/
+    position: absolute;
+    left: 50px;
+    top:10px;
+    background-color: black;
+    margin: 0 10px;
+
+}
+
+.navigation-photo-lun-bottom-three{
+    width: 40px;
+    height: 10px;
+    float: left;
+    background-color: black;
+    margin: 0 10px;
+    position: absolute;
+    left: 95px;
+    top:10px;
+}
+
+.navigation-photo-lun-bottom-four{
+    width: 40px;
+    height: 10px;
+    float: left;
+    background-color: black;
+    position: absolute;
+    left: 140px;
+    top:10px;
+    margin: 0 10px;
+}
+
+/*导航2*/
+.navigation2{
+    width: 1180px;
+    height: 465px;
+    margin: 40px auto;
+    /*background-color: #3b8de3;*/
+}
+/*左边*/
+.navigation2-left{
+    width: 300px;
+    height: 100%;
+    float: left;
+}
+
+.navigation2-left-top{
+    width: 300px;
+    height: 65px;
+    float: top;
+}
+
+.navigation2-left-top-left{
+    width: 80%;
+    height: 100%;
+    float: left;
+    font-size: 25px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.navigation2-left-top-right{
+    width: 35px;
+    height: 35px;
+    background: url("../images/more.png") no-repeat 0 0;
+    float: right;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.navigation2-left-bottom{
+    width: 300px;
+    height: 400px;
+    float: bottom;
+    background: url("../images/导航2-1.jpg") no-repeat 0 0;
+}
+/*中间*/
+.navigation2-middle{
+    width: 400px;
+    height: 100%;
+    float: left;
+    margin-left: 40px;
+}
+
+.navigation2-middle-top{
+    width: 100%;
+    height: 65px;
+    float: top;
+}
+
+.navigation2-middle-top-left{
+    width: 80%;
+    height: 100%;
+    float: left;
+    font-size: 25px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.navigation2-middle-top-right{
+    width: 35px;
+    height: 35px;
+    background: url("../images/more.png") no-repeat 0 0;
+    float: right;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.navigation2-middle-bottom{
+    width: 100%;
+    height: 100%;
+    float: bottom;
+    background: url("../images/导航2-2.jpg") no-repeat 0 0;
+}
+/*右边*/
+.navigation2-right{
+    width: 400px;
+    height: 100%;
+    float: left;
+    margin-left: 40px;
+}
+
+.navigation2-right-top{
+    width: 400px;
+    height: 65px;
+    float: top;
+}
+
+.navigation2-right-top-left{
+    width: 80%;
+    height: 100%;
+    float: left;
+    font-size: 25px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.navigation2-right-top-right{
+    width: 35px;
+    height: 35px;
+    background: url("../images/more.png") no-repeat 0 0;
+    float: right;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.navigation2-right-bottom{
+    width: 400px;
+    height: 400px;
+    float: bottom;
+    background: url("../images/导航2-3.jpg") no-repeat -100px 0;
+    background-size: 150%;
+}
+
+
+
+
+
+/*美丽人生*/
+.life{
+    width: 1180px;
+    height: 700px;
+    margin: 40px auto;
+    /*background-color: #3b8de3;*/
+}
+
+.life-top{
+    width: 100%;
+    height: 5%;
+    float: top;
+
+}
+
+.life-top-lift{
+    height: 100%;
+    width: 10px;
+    float: left;
+    background-color: #333333;
+}
+
+.life-top-right{
+    height: 100%;
+    width: 50%;
+    float: left;
+    margin-left: 30px;
+    line-height: 40px;
+}
+
+.life-bottom{
+    width: 100%;
+    height: 95%;
+    float: bottom;
+}
+
+.life-bottom-left{
+    height: 100%;
+    width: 300px;
+    float: left;
+    position: relative;
+}
+
+.life-bottom-left-img{
+    height: 100%;
+    width: 100%;
+    background: url("../images/life1.jpg") no-repeat 0 0;
+    background-size: 100%;
+    z-index: 1;
+}
+
+.life-bottom-left-more{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    background: url("../images/more.png") no-repeat 0 0;
+    z-index: 2;
+}
+
+.life-bottom-right{
+    width: 880px;
+    height: 100%;
+    float: right;
+    background-color: #e2e2e2;
+}
+
+.life-bottom-right-one{
+    width: 200px;
+    height: 320px;
+    float: left;
+    margin-left: 20px;
+    background-color: white;
+    /*background-color: #3b8de3;*/
+}
+
+/*.life-bottom-right-one:hover .life-one-top{
+    opacity: 0.7;
+}
+
+.life-bottom-right-two:hover .life-two-top{
+    opacity: 0.7;
+}
+
+.life-bottom-right-three:hover .life-one-top{
+    opacity: 0.7;
+}
+
+.life-bottom-right-four:hover .life-one-top{
+    opacity: 0.7;
+}
+
+.life-bottom-right-one:hover .life-one-top{
+    opacity: 0.7;
+}
+
+.life-bottom-right-five:hover .life-one-top{
+    opacity: 0.7;
+}
+
+.life-bottom-right-six:hover .life-one-top{
+    opacity: 0.7;
+}
+
+.life-bottom-right-seven:hover .life-one-top{
+    opacity: 0.7;
+}
+
+.life-bottom-right-eight:hover .life-one-top{
+    opacity: 0.7;
+}*/
+
+.life-bottom-right-one:hover{
+    box-sizing: border-box;
+    border: 1px red solid;
+}
+
+.life-bottom-right-two:hover{
+    box-sizing: border-box;
+    border: 1px red solid;
+}
+
+.life-one-top{
+    width: 198px;
+    height: 200px;
+    display: block;
+    background: url("../images/life2.jpg") no-repeat 0 0;
+    background-size: 100%;
+}
+
+/*.life-bottom-right-two{
+    width: 200px;
+    height: 340px;
+    float: left;
+    margin-left: 20px;
+    background-color: white;
+    !*border: 1px solid #fffeee;*!
+}
+
+.life-bottom-right-three{
+    width: 200px;
+    height: 340px;
+    float: left;
+    margin-left: 20px;
+    background-color: white;
+    !*border: 1px solid #fffeee;*!
+}
+
+.life-bottom-right-four{
+    width: 200px;
+    height: 340px;
+    float: left;
+    margin-left: 20px;
+    background-color: white;
+    !*border: 1px solid #fffeee;*!
+}*/
+
+.life-two-top{
+    width: 198px;
+    height: 200px;
+    display: block;
+    background: url("../images/life3.gif") no-repeat 0 0;
+    background-size: 100%;
+}
+
+.life-three-top{
+    width: 198px;
+    height: 200px;
+    display: block;
+    background: url("../images/life4.jpg") no-repeat 0 0;
+    background-size: 100%;
+}
+
+.life-four-top{
+    width: 198px;
+    height: 200px;
+    display: block;
+    background: url("../images/life5.jpg") no-repeat 0 0;
+    background-size: 100%;
+}
+
+.life-five-top{
+    width: 198px;
+    height: 200px;
+    display: block;
+    background: url("../images/life6.png") no-repeat 0 0;
+    background-size: 100%;
+}
+
+/*.life-bottom-right-two{
+    width: 200px;
+    height: 340px;
+    float: left;
+    margin-left: 20px;
+    background-color: white;
+    !*border: 1px solid #fffeee;*!
+}
+
+.life-bottom-right-three{
+    width: 200px;
+    height: 340px;
+    float: left;
+    margin-left: 20px;
+    background-color: white;
+    !*border: 1px solid #fffeee;*!
+}
+
+.life-bottom-right-four{
+    width: 200px;
+    height: 340px;
+    float: left;
+    margin-left: 20px;
+    background-color: white;
+    !*border: 1px solid #fffeee;*!
+}*/
+
+.life-six-top{
+    width: 198px;
+    height: 200px;
+    display: block;
+    background: url("../images/life7.jpg") no-repeat 0 0;
+    background-size: 100%;
+}
+
+.life-seven-top{
+    width: 198px;
+    height: 200px;
+    display: block;
+    background: url("../images/life8.gif") no-repeat 0 0;
+    background-size: 100%;
+}
+
+.life-eight-top{
+    width: 198px;
+    height: 200px;
+    display: block;
+    background: url("../images/life9.gif") no-repeat 0 0;
+    background-size: 100%;
+}
+
+.life-one-middle{
+    width: 135px;
+    height: 40px;
+    font-size: 14px;
+    color: #333;
+    line-height: 20px;
+    overflow: hidden;
+    margin: 8px auto
+}
+
+.life-one-bottom{
+    width: 135px;
+    height: 40px;
+    font-size: 18px;
+    color: #FF0036;
+    line-height: 18px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.life-bottom-right-two{
+    width: 200px;
+    height: 320px;
+    float: left;
+    margin-left: 20px;
+    background-color: white;
+    margin-top: 25px;
+}
+
+/*潮电酷玩*/
+.play-bottom-left-img{
+    height: 100%;
+    width: 100%;
+    background: url("../images/play1.jpg") no-repeat 0 0;
+    background-size: 100%;
+    z-index: 1;
+}
+
+.play-one-top{
+    width: 198px;
+    height: 200px;
+    display: block;
+    background: url("../images/play2.jpg") no-repeat 0 0;
+    background-size: 100%;
+}
+
+.play-two-top{
+    width: 198px;
+    height: 200px;
+    display: block;
+    background: url("../images/play3.jpg") no-repeat 0 0;
+    background-size: 100%;
+}
+
+.play-three-top{
+    width: 198px;
+    height: 200px;
+    display: block;
+    background: url("../images/play4.jpg") no-repeat 0 0;
+    background-size: 100%;
+}
+
+.play-four-top{
+    width: 198px;
+    height: 200px;
+    display: block;
+    background: url("../images/play5.jpg") no-repeat 0 0;
+    background-size: 100%;
+}
+
+.play-five-top{
+    width: 198px;
+    height: 200px;
+    display: block;
+    background: url("../images/play6.jpg") no-repeat 0 0;
+    background-size: 100%;
+}
+
+/*.life-bottom-right-two{
+    width: 200px;
+    height: 340px;
+    float: left;
+    margin-left: 20px;
+    background-color: white;
+    !*border: 1px solid #fffeee;*!
+}
+
+.life-bottom-right-three{
+    width: 200px;
+    height: 340px;
+    float: left;
+    margin-left: 20px;
+    background-color: white;
+    !*border: 1px solid #fffeee;*!
+}
+
+.life-bottom-right-four{
+    width: 200px;
+    height: 340px;
+    float: left;
+    margin-left: 20px;
+    background-color: white;
+    !*border: 1px solid #fffeee;*!
+}*/
+
+.play-six-top{
+    width: 198px;
+    height: 200px;
+    display: block;
+    background: url("../images/play7.jpg") no-repeat 0 0;
+    background-size: 100%;
+}
+
+.play-seven-top{
+    width: 198px;
+    height: 200px;
+    display: block;
+    background: url("../images/play8.gif") no-repeat 0 0;
+    background-size: 100%;
+}
+
+.play-eight-top{
+    width: 198px;
+    height: 200px;
+    display: block;
+    background: url("../images/play9.jpg") no-repeat 0 0;
+    background-size: 100%;
+}
+
+
+/*猜你喜欢*/
+.like{
+    width: 1180px;
+    height: 100px;
+    margin: auto;
+    text-align: center;
+
+}
+
+.like div{
+    width: 300px;
+    height: 30px;
+    display: block;
+    margin: auto 500px;
+}
+
+.heart{
+    color: red;
+    width: 30px;
+    height: 30px;
+    float: left;
+    background: url("../images/heart.png") no-repeat 0 0;
+}
+
+.like span{
+    float: left;
+}
+
+.eightList{
+    height: 2640px;
+    width: 1180px;
+    margin: auto;
+    background-color: #e2e2e2;
+}
+
+.like-lists{
+    width: 1180px;
+    height: 320px;
+    margin: 10px auto;
+    background-color: #e2e2e2;
+}
+
+.like-lists-one{
+    width: 220px;
+    height: 320px;
+    float: left;
+    background-color: white;
+    /*background-color: #3b8de3;*/
+}
+
+.like-lists-two{
+    width: 220px;
+    height: 320px;
+    float: left;
+    margin-left: 20px;
+    background-color: white;
+    /*background-color: #3b8de3;*/
+}
+
+.like-lists-one:hover{
+    box-sizing: border-box;
+    border: 1px red solid;
+}
+
+.like-lists-two:hover{
+    box-sizing: border-box;
+    border: 1px red solid;
+}
+
+.like-lists-one-top{
+    width: 218px;
+    height: 200px;
+    display: block;
+    background: url("../images/life2.jpg") no-repeat 0 0;
+    background-size: 100%;
+}
+
+.like-lists-two-top{
+    width: 218px;
+    height: 200px;
+    display: block;
+    background: url("../images/life3.gif") no-repeat 0 0;
+    background-size: 100%;
+}
+
+.like-lists-three-top{
+    width: 218px;
+    height: 200px;
+    display: block;
+    background: url("../images/life4.jpg") no-repeat 0 0;
+    background-size: 100%;
+}
+
+.like-lists-four-top{
+    width: 218px;
+    height: 200px;
+    display: block;
+    background: url("../images/life5.jpg") no-repeat 0 0;
+    background-size: 100%;
+}
+
+.like-lists-five-top{
+    width: 218px;
+    height: 200px;
+    display: block;
+    background: url("../images/life6.png") no-repeat 0 0;
+    background-size: 100%;
+}
+
+.like-lists-one-middle{
+    width: 135px;
+    height: 40px;
+    font-size: 14px;
+    color: #333;
+    line-height: 20px;
+    overflow: hidden;
+    margin: 8px auto
+}
+
+.like-lists-one-bottom{
+    width: 135px;
+    height: 40px;
+    font-size: 18px;
+    color: #FF0036;
+    line-height: 18px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+/*结束*/
+.end{
+    width: 1180px;
+    height: 100px;
+    margin: auto;
+    /*padding: 40px;*/
+    /*background-color: #3b8de3;*/
+    position: relative;
+}
+
+.end div{
+    width: 60px;
+    height: 35px;
+    display: block;
+    padding-top: 100px;
+    margin: auto;
+    background: url("../images/end.png")no-repeat 0 0;
+    position: absolute;
+    left: 560px;
+    top: 30px;
+}
+
+.close{
+    width: 1180px;
+    height: 280px;
+    /*height: 450px;*/
+    margin: auto;
+
+}
+
+.close-top{
+    height: 80px;
+    width: 100%;
+    border-bottom: 1px solid #fcffcc;
+}
+
+.close-top-one{
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+
+.close-top-one-photo{
+    width: 65px;
+    height: 100%;
+    float: left;
+    background: url("../images/e1.jpg") no-repeat 0 0;
+}
+
+.close-top-one-text{
+    width: 200px;
+    height: 100%;
+    float: left;
+    font-size: 20px;
+}
+
+.close-top-one-text-a1{
+    color: black;
+}
+
+.close-top-one-text-a2{
+    color: black;
+}
+
+.close-top-two-photo{
+    width: 65px;
+    height: 100%;
+    float: left;
+    background: url("../images/e2.jpg") no-repeat 0 0;
+}
+
+.close-top-three-photo{
+    width: 65px;
+    height: 100%;
+    float: left;
+    background: url("../images/e3.jpg") no-repeat 0 0;
+}
+
+.close-top-four-photo{
+    width: 65px;
+    height: 100%;
+    float: left;
+    background: url("../images/e4.jpg") no-repeat 0 0;
+}
+
+.close-bottom{
+    height: 200px;
+    width: 100%;
+    float: bottom;
+}
+
+.close-bottom-one{
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+
+.close-bottom-one-a1{
+    width: 100%;
+    height: 20%;
+    float: top;
+}
+
+.close-bottom-one-a2{
+    width: 100%;
+    height: 80%;
+    float: bottom;
+}
+
+.close-bottom-five-a2{
+    width: 100%;
+    height: 80%;
+    display: block;
+    background: url("../images/二维码.png") no-repeat 0 0;
+    background-size: 80%;
+}
+
+/*品牌导航*/
+.pins{
+    width: 1180px;
+    height: 177px;
+    margin: auto;
+    /*position: relative;*/
+}
+
+/*.pinout{
+    width: 1180px;
+    height: 177px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}*/
+
+.pin{
+    width: 100%;
+    height: 33%;
+    float: left;
+    cursor: pointer;
+}
+
+.in{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 50px;
+    display: none;
+}
+
+.p:hover .in{
+    background: rgba(0,0,0,0.5);
+    display: block;
+}
+
+.in a{
+    color: white;
+}
+
+.pin1{
+    width: 10%;
+    height: 100%;
+    float: left;
+    background: url("../images/pin2.png") no-repeat 0 0;
+    background-size: 100%;
+    border: 1px #a7a7a7 solid;
+    box-sizing: border-box;
+}
+
+.pin2{
+    width: 10%;
+    height: 100%;
+    float: left;
+    background: url("../images/pin3.png") no-repeat 0 0;
+    background-size: 100%;
+    border: 1px #a7a7a7 solid;
+    box-sizing: border-box;
+}
+
+.pin3{
+    width: 10%;
+    height: 100%;
+    float: left;
+    background: url("../images/pin4.jpg") no-repeat 0 0;
+    background-size: 100%;
+    border: 1px #a7a7a7 solid;
+    box-sizing: border-box;
+}
+
+.pin4{
+    width: 10%;
+    height: 100%;
+    float: left;
+    background: url("../images/pin5.jpg") no-repeat 0 0;
+    background-size: 100%;
+    border: 1px #a7a7a7 solid;
+    box-sizing: border-box;
+}
+
+.pin5{
+    width: 10%;
+    height: 100%;
+    float: left;
+    background: url("../images/pin6.jpg") no-repeat 0 0;
+    background-size: 100%;
+    border: 1px #a7a7a7 solid;
+    box-sizing: border-box;
+}
+
+.pin6{
+    width: 10%;
+    height: 100%;
+    float: left;
+    background: url("../images/pin7.png") no-repeat 0 0;
+    background-size: 100%;
+    border: 1px #a7a7a7 solid;
+    box-sizing: border-box;
+}
+
+.pin7{
+    width: 10%;
+    height: 100%;
+    float: left;
+    background: url("../images/pin8.png") no-repeat 0 0;
+    background-size: 100%;
+    border: 1px #a7a7a7 solid;
+    box-sizing: border-box;
+}
+
+.pin8{
+    width: 10%;
+    height: 100%;
+    float: left;
+    background: url("../images/pin9.jpg") no-repeat 0 0;
+    background-size: 100%;
+    border: 1px #a7a7a7 solid;
+    box-sizing: border-box;
+}
+
+.pin9{
+    width: 10%;
+    height: 100%;
+    float: left;
+    background: url("../images/pin10.jpg") no-repeat 0 0;
+    background-size: 100%;
+    border: 1px #a7a7a7 solid;
+    box-sizing: border-box;
+}
+
+.pin10{
+    width: 10%;
+    height: 100%;
+    float: left;
+    background: url("../images/pin11.png") no-repeat 0 0;
+    background-size: 100%;
+    border: 1px #a7a7a7 solid;
+    box-sizing: border-box;
+}
+
+.pin11{
+    width: 10%;
+    height: 100%;
+    float: left;
+    background: url("../images/pin12.jpg") no-repeat 0 0;
+    background-size: 100%;
+    border: 1px #a7a7a7 solid;
+    box-sizing: border-box;
+}
+
+.pin12{
+    width: 10%;
+    height: 100%;
+    float: left;
+    background: url("../images/pin13.jpg") no-repeat 0 0;
+    background-size: 100%;
+    border: 1px #a7a7a7 solid;
+    box-sizing: border-box;
+}
+
+.pin13{
+    width: 10%;
+    height: 100%;
+    float: left;
+    background: url("../images/pin14.png") no-repeat 0 0;
+    background-size: 100%;
+    border: 1px #a7a7a7 solid;
+    box-sizing: border-box;
+}
+
+.pin14{
+    width: 10%;
+    height: 100%;
+    float: left;
+    background: url("../images/pin15.jpg") no-repeat 0 0;
+    background-size: 100%;
+    border: 1px #a7a7a7 solid;
+    box-sizing: border-box;
+}
+
+.pin15{
+    width: 10%;
+    height: 100%;
+    float: left;
+    background: url("../images/pin16.png") no-repeat 0 0;
+    background-size: 100%;
+    border: 1px #a7a7a7 solid;
+    box-sizing: border-box;
+}
+
+.pin16{
+    width: 10%;
+    height: 100%;
+    float: left;
+    background: url("../images/pin17.png") no-repeat 0 0;
+    background-size: 100%;
+    border: 1px #a7a7a7 solid;
+    box-sizing: border-box;
+}
+
+.pin17{
+    width: 10%;
+    height: 100%;
+    float: left;
+    background: url("../images/pin18.png") no-repeat 0 0;
+    background-size: 100%;
+    border: 1px #a7a7a7 solid;
+    box-sizing: border-box;
+}
+
+.pin18{
+    width: 10%;
+    height: 100%;
+    float: left;
+    background: url("../images/pin19.png") no-repeat 0 0;
+    background-size: 100%;
+    border: 1px #a7a7a7 solid;
+    box-sizing: border-box;
+}
+
+.pin19{
+    width: 10%;
+    height: 100%;
+    float: left;
+    background: url("../images/pin20.jpg") no-repeat 0 0;
+    background-size: 100%;
+    border: 1px #a7a7a7 solid;
+    box-sizing: border-box;
+}
+
+.pin20{
+    width: 10%;
+    height: 100%;
+    float: left;
+    background: url("../images/pin21.jpg") no-repeat 0 0;
+    background-size: 100%;
+    border: 1px #a7a7a7 solid;
+    box-sizing: border-box;
+}
+
+.pin21{
+    width: 10%;
+    height: 100%;
+    float: left;
+    background: url("../images/pin22.png") no-repeat 0 0;
+    background-size: 100%;
+    border: 1px #a7a7a7 solid;
+    box-sizing: border-box;
+}
+
+.pin22{
+    width: 10%;
+    height: 100%;
+    float: left;
+    background: url("../images/pin23.png") no-repeat 0 0;
+    background-size: 100%;
+    border: 1px #a7a7a7 solid;
+    box-sizing: border-box;
+}
+
+.pin23{
+    width: 10%;
+    height: 100%;
+    float: left;
+    background: url("../images/pin24.png") no-repeat 0 0;
+    background-size: 100%;
+    border: 1px #a7a7a7 solid;
+    box-sizing: border-box;
+}
+
+.pin24{
+    width: 10%;
+    height: 100%;
+    float: left;
+    background: url("../images/pin25.png") no-repeat 0 0;
+    background-size: 100%;
+    border: 1px #a7a7a7 solid;
+    box-sizing: border-box;
+}
+
+.pin25{
+    width: 10%;
+    height: 100%;
+    float: left;
+    background: url("../images/pin26.png") no-repeat 0 0;
+    background-size: 100%;
+    border: 1px #a7a7a7 solid;
+    box-sizing: border-box;
+}
+
+.pin26{
+    width: 10%;
+    height: 100%;
+    float: left;
+    background: url("../images/pin27.png") no-repeat 0 0;
+    background-size: 100%;
+    border: 1px #a7a7a7 solid;
+    box-sizing: border-box;
+}
+
+.pin27{
+    width: 10%;
+    height: 100%;
+    float: left;
+    background: url("../images/pin28.png") no-repeat 0 0;
+    background-size: 100%;
+    border: 1px #a7a7a7 solid;
+    box-sizing: border-box;
+}
+
+.pin28{
+    width: 10%;
+    height: 100%;
+    float: left;
+    background: url("../images/pin29.jpg") no-repeat 0 0;
+    background-size: 100%;
+    border: 1px #a7a7a7 solid;
+    box-sizing: border-box;
+}
+
+.pin29{
+    width: 10%;
+    height: 100%;
+    float: left;
+    background: url("../images/pin10.jpg") no-repeat 0 0;
+    background-size: 100%;
+    border: 1px #a7a7a7 solid;
+    box-sizing: border-box;
+}
+
+.pin30{
+    width: 10%;
+    height: 100%;
+    float: left;
+    background-size: 100%;
+    border: 1px #a7a7a7 solid;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 50px;
+}
+
+.pin30 a{
+    color: #7f7f7f;
+}
+
+.pin30:hover{
+    background-color: red;
+}
+
+.pin30:hover a{
+    color: white;
+}
+
+/*天猫超市*/
+.life-top-name{
+    width: 30%;
+    height: 100%;
+    background: url("../images/天猫超市logo.png") no-repeat 0 0;
+    background-size: 100%;
+    float: left;
+}
+
+.life-top-index{
+    width: 70%;
+    height: 100%;
+    float: right;
+    text-align: center;
+}
+
+.life-top-index a{
+    width:10%;
+    height: 100%;
+    color: black;
+    float: right;
+    /*margin-left: 100px;*/
+}
+
+.life-top-index a:hover{
+    border-bottom: 1px black solid;
+    box-sizing: border-box;
+}
+
+.tmall-img{
+    height: 100%;
+    width: 100%;
+    background: url("../images/tmall.jpg") no-repeat 0 0;
+    background-size: 100%;
+    z-index: 1;
+}
+
+.tmall-three-top{
+    width: 198px;
+    height: 200px;
+    display: block;
+    background: url("../images/tmall1.jpg") no-repeat 0 0;
+    background-size: 100%;
+}
+
+.tmall-four-top{
+    width: 198px;
+    height: 200px;
+    display: block;
+    background: url("../images/tmall2.jpg") no-repeat 0 0;
+    background-size: 100%;
+}
+
+.tmall-five-top{
+    width: 198px;
+    height: 200px;
+    display: block;
+    background: url("../images/tmall3.jpg") no-repeat 0 0;
+    background-size: 100%;
+}
+
+.tmall-six-top{
+    width: 198px;
+    height: 200px;
+    display: block;
+    background: url("../images/tmall4.jpg") no-repeat 0 0;
+    background-size: 100%;
+}
+
+.tmall-seven-top{
+    width: 198px;
+    height: 200px;
+    display: block;
+    background: url("../images/tmall5.gif") no-repeat 0 0;
+    background-size: 100%;
+}
+
+.tmall-eight-top{
+    width: 198px;
+    height: 200px;
+    display: block;
+    background: url("../images/tmall6.jpg") no-repeat 0 0;
+    background-size: 100%;
+}
+
+.tmall-one{
+    width: 420px;
+    height: 320px;
+    float: left;
+    margin-left: 20px;
+    background-color: white;
+    position: relative;
+    /*background-color: #3b8de3;*/
+}
+
+.tmall-one-top{
+    height: 70px;
+    width: 420px;
+    float: top;
+    /*position: absolute;*/
+    /*left: 0;*/
+    /*top: 0;*/
+    /*background-color: blue;*/
+}
+
+.tmall-one-top-left{
+    width: 50%;
+    height: 100%;
+    float: left;
+    line-height: 70px;
+    text-align: center;
+    background-color: #a7a7a7;
+    font-size: 20px;
+}
+
+.tmall-one-top-right{
+    width: 50%;
+    height: 100%;
+    float: right;
+    line-height: 70px;
+    text-align: center;
+    font-size: 20px;
+    background-color: #a7a7a7;
+}
+
+.tmall-one-top-right:hover{
+    background-color: #00B262;
+}
+
+.tmall-one-top-right:hover a{
+    color: white;
+}
+
+.tmall-one-top-left:hover{
+    background-color: #00B262;
+}
+
+.tmall-one-top-left:hover a{
+    color: white;
+}
+
+.tmall-one-bottom{
+    height: 250px;
+    width: 420px;
+    float: bottom;
+    position: absolute;
+    left: 0;
+    top: 70px;
+    background-color: white;
+}
+
+.tmall-one-bottom-left{
+    width: 50%;
+    height: 100%;
+    float: left;
+    font-size: 50px;
+    text-align: center;
+    line-height: 200px;
+}
+
+.tmall-one-bottom-left a{
+    color: #00B262;
+}
+
+.tmall-one-bottom-right{
+    width: 50%;
+    height: 100%;
+    float: right;
+    background: url("../images/tmall-one2.jpg") no-repeat 0 0;
+    background-size: 120%;
+    cursor: pointer;
+}
+
+.tmall-one-bottom-right2{
+    width: 50%;
+    height: 100%;
+    float: right;
+    background: url("../images/tmall-one1.jpg") no-repeat 0 0;
+    background-size: 120%;
+    cursor: pointer;
+}
+
+/*天猫国际*/
+.hk-top-name{
+    width: 30%;
+    height: 100%;
+    background: url("../images/天猫国际.png") no-repeat 0 0;
+    background-size: 100%;
+    float: left;
+}
+/*顶部导航*/
+.tmallStart{
+    width: 100%;
+    height: 55px;display: block;
+    background-color: #f09ad9;
+}
+
+.start{
+    width: 1180px;
+    height: 100%;
+    display: block;
+    margin: auto;
+}
+
+.start-left{
+    width: 50%;
+    height: 100%;
+    float: left;
+    font-size: 20px;
+    line-height: 50px;
+
+}
+
+.start-left a{
+    color: white;
+}
+
+.start-right{
+    width: 50%;
+    height: 100%;
+    float: left;
+    font-size: 20px;
+    line-height: 50px;
+}
+
+.start-right a{
+    color: white;
+}
+
+/*左导航*/
+.left-index{
+    height: 460px;
+    width: 45px;
+    position: fixed;
+    left: 100px;
+    top: 100px;
+}
+
+.left-index-one{
+    width: 100%;
+    height: 45px;
+    display: block;
+    margin-top: 1px;
+    text-align: center;
+    background-color: red;
+    line-height: 40px;
+}
+
+.left-index a{
+    color: #fff;
+}
+
+.left-index-two{
+    width: 100%;
+    height: 45px;
+    display: block;
+    margin-top: 1px;
+    text-align: center;
+    background-color: #666;
+    line-height: 20px;
+}
+
+.left-index-three{
+    width: 100%;
+    height: 45px;
+    display: block;
+    margin-top: 1px;
+    text-align: center;
+    background-color: #666;
+    line-height: 20px;
+}
+
+.left-index-four{
+    width: 100%;
+    height: 45px;
+    display: block;
+    margin-top: 1px;
+    text-align: center;
+    background-color: #666;
+    line-height: 20px;
+}
+
+.left-index-five{
+    width: 100%;
+    height: 45px;
+    display: block;
+    margin-top: 1px;
+    text-align: center;
+    background-color: #666;
+    line-height: 20px;
+}
+
+.left-index-six{
+    width: 100%;
+    height: 45px;
+    display: block;
+    margin-top: 1px;
+    text-align: center;
+    background-color: #666;
+    line-height: 20px;
+}
+
+.left-index-seven{
+    width: 100%;
+    height: 45px;
+    display: block;
+    margin-top: 1px;
+    text-align: center;
+    background-color: #666;
+    line-height: 20px;
+}
+
+.left-index-eight{
+    width: 100%;
+    height: 45px;
+    display: block;
+    margin-top: 1px;
+    text-align: center;
+    background-color: #666;
+    line-height: 20px;
+}
+
+.left-index-nine{
+    width: 100%;
+    height: 45px;
+    display: block;
+    margin-top: 1px;
+    text-align: center;
+    background-color: #666;
+    line-height: 20px;
+}
+
+.left-index-ten{
+    width: 100%;
+    height: 45px;
+    display: block;
+    margin-top: 1px;
+    text-align: center;
+    background-color: #a1a1a1;
+    line-height: 40px;
+}
+
+.left-index-two:hover{
+    background-color: #00B262;
+}
+
+.left-index-three:hover{
+    background-color: black;
+}
+
+.left-index-four:hover{
+    background-color: #f09ad9;
+}
+
+.left-index-five:hover{
+    background-color: #3b8de3;
+}
+
+.left-index-six:hover{
+    background-color: #00B262;
+}
+
+.left-index-seven:hover{
+    background-color: #f09ad9;
+}
+
+.left-index-eight:hover{
+    background-color: #42a0ff;
+}
+
+.left-index-nine:hover{
+    background-color: black;
+}
+
+/*右导航*/
+.right-index{
+    width: 100px;
+    height: 940px;
+    position: fixed;
+    left: 1420px;
+    top: 0;
+    background-color: #f09ad9;
+}
+
+.right-index-520{
+    width: 100%;
+    height: 20%;
+    display: block;
+    margin-top: 94px;
+    background: url("../images/right-index1.png") no-repeat 0 0;
+    background-size: 100%;
+}
+
+.right-index-bottom{
+    width: 100%;
+    height: 70%;
+    float: bottom;
+    background: white;
+}
+
+.right-index-bottom-left{
+    width: 50%;
+    height: 100%;
+    float: left;
+    background: url("../images/right-index8.png") no-repeat 0 0;
+    background-size: 100%;
+}
+
+.right-index-bottom-right{
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+.right-index2{
+    height: 7%;
+    width: 100%;
+    display: block;
+    background: url("../images/right-index2.png") no-repeat 0 0;
+    background-size: 100%;
+    background-color: black;
+}
+
+.right-index3{
+    height: 7%;
+    width: 100%;
+    display: block;
+    background: url("../images/right-index3.png") no-repeat 0 0;
+    background-size: 100%;
+    background-color: black;
+}
+.right-index4{
+    height: 7%;
+    width: 100%;
+    display: block;
+    background: url("../images/right-index4.png") no-repeat 0 0;
+    background-size: 100%;
+    background-color: black;
+}
+.right-index5{
+    height: 7%;
+    width: 100%;
+    display: block;
+    background: url("../images/right-index5.png") no-repeat 0 0;
+    background-size: 100%;
+    background-color: black;
+}
+.right-index6{
+    height: 7%;
+    width: 100%;
+    display: block;
+    background: url("../images/right-index6.png") no-repeat 0 0;
+    background-size: 100%;
+    background-color: black;
+}
+.right-index7{
+    height: 7%;
+    width: 100%;
+    display: block;
+    background: url("../images/right-index7.png") no-repeat 0 0;
+    background-size: 100%;
+    background-color: black;
+}
+.right-index9{
+    height: 7%;
+    width: 100%;
+    display: block;
+    background: url("../images/right-index9.png") no-repeat 0 0;
+    background-size: 100%;
+    background-color: black;
+}
+
+/*透视*/
+.life-bottom-right-one:hover .out{
+    background: rgba(255,255,255,0.3);
+}
+
+.life-bottom-right-two:hover .out{
+    background: rgba(255,255,255,0.3);
+}
+
+.out{
+    width: 198px;
+    height: 200px;
+
+}
+

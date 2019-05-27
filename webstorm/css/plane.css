@@ -1,0 +1,998 @@
+
+body{
+    margin: 0;
+}
+header{
+    width: 1180px;
+    height: 80px;
+    margin: auto;
+}
+
+/*导航*/
+.box{
+    width: 100%;
+    height: 40px;
+    background-color: #3b8de3;
+}
+.con{
+    width: 1180px;
+    height: 100% ;
+    margin: auto;
+}
+.left{
+    width: 690px;
+    float:left;
+
+}
+
+.right{
+    width: 240px;
+    float: right;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+.box a{
+    float: left;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+
+}
+.left a:hover{
+    background: white;
+    color: #3b8de3;
+    border-top: orange solid;
+}
+
+.right a:hover{
+    background: white;
+    color: #3b8de3;
+    border-top: orange solid;
+}
+
+.left a{
+    width: 20%;
+}
+
+.right a{
+    width:33%;
+}
+
+.box .active{
+    background: white;
+    color: #3b8de3;
+    border-top: orange solid;
+}
+
+.login{
+    background: url("../images/img.png") no-repeat;
+    background-position: -312px -500px;
+}
+
+.sanjiao{
+    width: 0;height: 0;
+    border-top: 10px solid white;
+    border-left: 5px solid #3b8de3;
+    border-right: 5px solid #3b8de3;
+    position: absolute;
+    left: 240px;
+    top: 15px;
+}
+/*热门城市*/
+.hot{
+
+    float: left;
+    width: 1180px;
+    height: 20px;
+    margin: auto 180px;
+    color: #000;
+    font-size: 14px;
+
+}
+
+.hot span{
+    margin-left: 10px;
+    float: left;
+    color: black;
+}
+
+.hot a{
+    margin-left: 10px;
+    float: left;
+    text-decoration: none;
+    color: #3b8de3;
+}
+/*轮播图*/
+.wheel-box{
+    margin-top: 20px;
+    flaot:left;
+    /*border: 1px red solid;*/
+    width: 100%;
+    height: 380px;
+    position: relative;
+}
+
+.lun1{
+    width: 100%;
+    height: 100%;
+    background: url("../images/轮播图1.png") no-repeat;
+    position: absolute;
+    left:0;
+    top: 0;
+    z-index: 2;
+}
+
+.lun2{
+    width: 100%;
+    height: 100%;
+    background: url("../images/轮播图2.png") no-repeat;
+    position: absolute;
+    left:0;
+    top: 0;
+    z-index: 1;
+}
+
+.btns{
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    left: 1280px;
+    top: 330px;
+    /*
+    width: 200px; height:20px;
+    position: absolute; right: 20px;bottom: 20px;*/
+
+    z-index: 3;
+
+}
+
+.active{
+    width: 20px;
+    height: 4px;
+    position: absolute;
+    left: 15px;
+    top: 14px;
+    background: orange;
+    float: left;margin: 0 10px;
+
+}
+
+.btn{
+    width: 20px;
+    height: 4px;
+    position: absolute;
+    right: 15px;
+    top: 14px;
+    background: black;
+    float: left;margin: 0 10px;
+    cursor: pointer;
+}
+
+/*订票流程*/
+h3,ul,li{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: normal;
+    list-style: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.piao{
+    width: 1180px;
+    height: 80px;
+    margin: auto;
+    /*border:1px red solid;*/
+    box-sizing: border-box;
+    background: #f7f7f6;
+}
+
+.piao-left{
+    /*border:1px red solid;*/
+    width: 200px;
+    height: 100%;
+    float: left;
+    /*position: relative;*/
+}
+
+.piao-right{/*border:1px red solid;*/
+    width: 970px;
+    height: 100%;
+    float: right;
+    /*position: absolute;
+    left: 0;
+    top: 0;*/
+}
+
+.piao-left h3{
+
+    height: 100%;
+    width: 100%;
+    line-height: 80px;
+    text-align: center;
+}
+
+.icon{/*border:1px red solid;*/
+    width:66px;
+    height:100%;
+    float: left;
+}
+
+.out{/*border:1px red solid;*/
+    width: 100%;
+    height: 60px;
+    background: url("../images/main.png") no-repeat -155px -133px;
+}
+
+.in{/*border:1px red solid;*/
+    width: 100%;
+    height: 60px;
+    background: url("../images/main.png") no-repeat -125px -62px;
+}
+
+.in1{
+    width: 100%;
+    height: 60px;
+    background: url("../images/main.png") no-repeat -180px -65px;
+}
+
+.in2{
+    width: 100%;
+    height: 60px;
+    background: url("../images/main.png") no-repeat 20px -110px;
+}
+
+.in3{
+    width: 100%;
+    height: 60px;
+    background: url("../images/main.png") no-repeat -45px -45px;
+}
+.text1{/*border:1px red solid;*/
+    padding: 14px 0 0 14px;
+    height: 100%;
+    width: 145px;
+    float: left;
+    text-align: center;
+
+}
+
+.in:hover{
+    animation-name: ani;
+    animation-direction: alternate;
+    animation-iteration-count: 10;
+    animation-timing-function: linear;
+    animation-duration: 0.2s;
+}
+
+.in1:hover{
+    animation-name: ani;
+    animation-direction: alternate;
+    animation-iteration-count: 10;
+    animation-timing-function: linear;
+    animation-duration: 0.2s;
+}
+
+.in2:hover{
+    animation-name: ani;
+    animation-direction: alternate;
+    animation-iteration-count: 10;
+    animation-timing-function: linear;
+    animation-duration: 0.2s;
+}
+
+.in3:hover{
+    animation-name: ani;
+    animation-direction: alternate;
+    animation-iteration-count: 10;
+    animation-timing-function: linear;
+    animation-duration: 0.2s;
+}
+
+@keyframes ani {
+    0%{
+        transform: rotate(-30deg);
+    }
+    100%{
+        transform: rotate(30deg);
+    }
+}
+
+.main-wrap{
+    width: 1180px;
+    height: 270px;
+    margin: auto;
+}
+
+.assist-lists{
+    height: 100%;
+    width: 33%;
+    box-sizing: border-box;
+    float: left;
+    text-decoration: none;
+}
+.assist-list1{
+    border: 1px #f6e0ff solid;
+    height: 90px;
+    width: 50%;
+    float:left;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.assist-list2{
+    border: 1px #f6e0ff solid;
+    height: 90px;
+    width: 50%;
+    float:right;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.assist-lists a{
+    /*background: url("../images/main.png") no-repeat -5px -60px;*/
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.news{
+    height: 100%;
+    width: 66%;
+    float: right;
+    box-sizing: border-box;
+    /*border: red 1px solid;*/
+}
+
+.new1{
+    height: 100%;
+    width: 45%;
+    float: left;
+    padding: 0 40px 0 30px;
+}
+
+.new2{
+    width: 45%;
+    height: 100%;
+    float: right;
+}
+
+
+.new1 h3 span{
+    display: block;
+
+    font: 18px/30px Microsoft YaHei;
+
+    float: left;
+}
+
+.new1 a{
+    float: left;
+    padding: 5px;
+    font-size: 17px;
+
+    color: #555;
+
+    padding-right: 15px;
+
+    position: relative;
+
+    text-decoration: none;
+    /*border: 1px red solid;*/
+}
+
+.new2 h3 span{
+    display: block;
+
+    font: 18px/30px Microsoft YaHei;
+
+    float: left;
+}
+
+.new2 a{
+    float: left;
+    padding: 5px;
+    font-size: 18px;
+
+    color: #555;
+
+    padding-right: 15px;
+
+    position: relative;
+
+    text-decoration: none;
+}
+
+
+
+/*!*热门航线*!*/
+.hotLoad{
+    height: 350px;
+    width: 100%;
+    margin: auto;
+    position: absolute;
+}
+
+.load{
+    width: 1180px;
+    height: 40px;
+    margin: auto;
+
+
+}
+
+.title{
+
+    float: left;
+    width: 500px;
+    height: 100%;
+    line-height: 40px;
+    font-size: 28px;
+}
+
+.city{
+
+    padding: auto;
+    float: right;
+    width: 680px;
+    height: 100%;
+    position: relative;
+
+
+}
+.city a{
+    float: left;
+    text-align: center;
+
+    width: 60px;
+    line-height: 40px;
+    color: black;
+    text-decoration: none;
+}
+
+.city a:hover{
+    background: #c8e3fc;
+    color: #3b8de3;
+    border-bottom: #137cfc solid;
+}
+
+.line{
+    width: 100%;
+    height: 2px;
+    border: #FCFAB7 solid 1px;
+    box-sizing: border-box;
+}
+
+.route-lists{
+    width: 1195px;
+    height:300px;
+    /*border: 1px red solid;*/
+    margin-left: 170px;
+    position: absolute;
+    left:0;
+    top:45px;
+}
+
+.route-list1{
+    width: 20%;
+    height: 50%;
+    float: left;
+}
+
+.route-list1 a{
+    width: 220px;
+    height: 143px;
+    display: block;
+    margin-top: 5px;
+    background: url("../images/carl_bg.png") no-repeat 0 0;
+}
+
+.list1-top{
+    width: 170px;
+    height: 33%;
+    float: left;
+    margin-left: 45px;
+}
+
+.list1-top-one{
+    width: 25%;
+    height: 100%;
+    float:left;
+    padding-top: 10px;
+    line-height: 16px;
+}
+
+.list1-top-two{
+    width: 25%;
+    height: 100%;
+    float:left;
+    background: url("../images/img.png") no-repeat -35px -60px;
+    transition: linear;
+}
+
+.list1-top-three{
+    width: 25%;
+    height: 100%;
+    float:left;
+    padding-top: 10px;
+    line-height: 16px;
+}
+
+.list1-middle{
+    width: 100%;
+    height: 33%;
+    float: left;
+}
+
+.list1-middle span{
+    text-align: center;
+    line-height: 50px;
+    margin-top: 10px;
+}
+
+.list1-bottom{
+    width: 170px;
+    margin-left: 45px;
+    height: 33%;
+    float: left;
+}
+
+.list1-bottom-one{
+    /*border: red 1px solid;*/
+    width: 20%;
+    height: 100%;
+    float: left;
+    background: url("../images/img.png") no-repeat -35px -110px;
+}
+
+.list1-bottom-two{
+    width: 20%;
+    height: 100%;
+    float: left;
+
+}
+
+.list1-bottom-three{
+    width: 20%;
+    height: 100%;
+    float: left;
+
+}
+
+.list1-bottom-four{
+    width: 40%;
+    height: 100%;
+    float: left;
+
+}
+
+.route-list1:hover .list1-top-two{
+    transform: translate(5px,0);
+}
+
+/*.two{
+
+    width: 100%;
+
+    position: absolute;
+    left:0px;top:920px;
+    border-top: 2px solid grey;
+}
+.show{
+    width: 100%;
+    height: 400px;
+    margin-left:50px ;
+    position: absolute;
+    left:0px;top:0px;
+}
+.two .show div{
+    width:17%;
+    height: 40%;
+    margin: 10px;
+    pxborder: 1px solid rgba(128, 128, 128, 0.62);
+    background-color: #f1f1f1;
+    float: left;
+}
+.two .show div:hover{
+    background-color: white;
+}
+.two .show div span{
+    width: 100%;height: 30%;
+    float: left;
+    color: #0055AA;
+    margin-top: 8px;
+    text-align: center;
+}
+span .red{
+    color: red;
+}
+span .large{
+    font-size:x-large;
+}
+#s1{
+    z-index: 1;
+}
+.one .active{
+    background-color: #49a2f8;
+    color: #163daa;
+}*/
+
+
+/*热门航空公司*/
+.company{
+    /*border: 1px red solid;*/
+    width: 1180px;
+    height: 40px;
+    /*margin: auto;*/
+}
+
+.tit{
+    color: #555;
+    float: left;
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 28px;
+    width: 295px;
+}
+
+/*热门航空公司*/
+.h5{
+    width: 980px;height: 20px;
+    margin: auto;
+}
+.hk-all{
+    margin: 400px 170px 0 170px;
+    width: 1180px;
+    height: 60px;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(204, 204, 204);
+    position: relative;
+
+}
+.hk-btm{
+    width: 1180px;height: 350px;
+    margin: auto;
+}
+.btm-left{
+    width: 450px;height: 310px;
+    padding: 10px;
+    float: left;
+    position: relative;
+
+}
+.btm-right{
+    width: 700px;height: 310px;
+    float: right;
+}
+.btm-right li{
+    float: left;
+    width: 33%;
+    height: 150px;
+    list-style: none;
+}
+.btm-lt-left span {
+    width: 220px;
+    color: #555;
+    text-align: center;
+    background: #ccc;
+    height: 37px;
+    line-height: 37px;
+    display: block;
+}
+.bt-lt-right p{
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.left-img{
+    width: 220px;height: 200px;
+    background: url("../images/ca3.png") ;
+}
+.bt-lt-info{
+    float: right;
+    color: #555;
+    padding: 0 1px 0 0;
+    width: 192px;
+    position: relative;
+    line-height: 14px;
+}
+.btn-all{
+    width: 450px;
+    height: 230px;
+    margin: 20px auto 30px;
+}
+.btm-lt-left{
+    width: 50%;height: 100%;
+    float: left;
+}
+.bt-lt-right{
+    width: 50%;height: 100%;
+    float: right;
+    background: #f8f6f6;
+}
+.btm-rt-tp-in11{
+    width: 100%;
+    height: 100%;
+    background: url("../images/cz3.png");
+}
+.btm-rt-tp-in12{
+    width: 100%;
+    height: 100%;
+    background: url("../images/mu3.png");
+}
+.btm-rt-tp-in13{
+    width: 100%;
+    height: 100%;
+    background: url("../images/hu3.png");
+}
+.btm-rt-tp-in21{
+    width: 100%;
+    height: 100%;
+    background: url("../images/zh3.png");
+
+}
+.btm-rt-tp-in22{
+    width: 100%;
+    height: 100%;
+    background: url("../images/3u3.png");
+
+}
+.btm-rt-tp-in23{
+    width: 100%;
+    height: 100%;
+    background: url("../images/9c3.png");
+}
+.label{
+    width: 100%;height: 100%;
+    text-align: center;
+    line-height: 270px;
+}
+@keyframes hk-ani {
+    0%{
+        transform:scale(1,1);
+    }
+    100%{
+        transform:scale(1.1,1.1);
+    }
+}
+.btm-rt-tp-in23:hover{
+    animation:hk-ani .5s linear 1 ;
+    animation-direction: alternate;
+    animation-fill-mode:forwards;
+
+}
+.btm-rt-tp-in22:hover{
+    animation:hk-ani .5s linear 1 ;
+    animation-direction: alternate;
+    animation-fill-mode:forwards;
+
+}
+.btm-rt-tp-in21:hover{
+    animation:hk-ani .5s linear 1 ;
+    animation-direction: alternate;
+    animation-fill-mode:forwards;
+
+}
+.btm-rt-tp-in13:hover{
+    animation:hk-ani .5s linear 1 ;
+    animation-direction: alternate;
+    animation-fill-mode:forwards;
+
+}
+.btm-rt-tp-in12:hover{
+    animation:hk-ani .5s linear 1 ;
+    animation-direction: alternate;
+    animation-fill-mode:forwards;
+
+}
+.btm-rt-tp-in11:hover{
+    animation:hk-ani .5s linear 1 ;
+    animation-direction: alternate;
+    animation-fill-mode:forwards;
+
+}
+.left-img:hover{
+    animation:hk-ani .5s linear 1 ;
+    animation-direction: alternate;
+    animation-fill-mode:forwards;
+
+}
+
+/*结尾蓝框*/
+.ends{
+    width: 100%;
+    height: 65px;
+    background: #3b8de3;
+}
+
+.end-center{
+    width: 1180px;
+    height: 100%;
+    margin: auto;
+    /*border: 1px red solid;*/
+}
+
+.e-left{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.e-right{
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+.end1{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.end2{
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+.e1-left{
+    width: 65px;
+    height: 100%;
+    float: left;
+    background: url("../images/footer.png") no-repeat -280px 5px;
+
+}
+
+.e1-right{
+    width: 230px;
+    height: 100%;
+    float: right;
+}
+
+.end3{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.end4{
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+
+.small{
+    width: 65px;
+    height: 100%;
+
+    background: url("../images/footer.png") no-repeat 0px 2px;
+}
+
+.small2{
+    width: 65px;
+    height: 100%;
+    background: url("../images/footer.png") no-repeat -80px 2px;
+}
+
+.small3{
+    width: 65px;
+    height: 100%;
+
+    background: url("../images/footer.png") no-repeat -153px 2px;
+}
+
+.small4{
+    width: 65px;
+    height: 100%;
+
+    background: url("../images/footer.png") no-repeat -220px 2px;
+}
+
+.small:hover{
+    animation-name: ani;
+    animation-direction: alternate;
+    animation-iteration-count: 10;
+    animation-timing-function: linear;
+    animation-duration: 0.2s;
+}
+
+.small4:hover{
+    animation-name: ani;
+    animation-direction: alternate;
+    animation-iteration-count: 10;
+    animation-timing-function: linear;
+    animation-duration: 0.2s;
+}
+
+.small2:hover{
+    animation-name: end23;
+    animation-timing-function: linear;
+    animation-iteration-count: 10;
+    animation-direction: alternate;
+    animation-duration: 0.5s;
+}
+
+.small3:hover{
+    animation-name: end23;
+    animation-timing-function: linear;
+    animation-iteration-count: 10;
+    animation-direction: alternate;
+    animation-duration: 0.5s;
+
+}
+
+@keyframes end23{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.top{
+    width: 100%;
+    height: 50%;
+    float: top;
+    font: 16px/24px Microsoft YaHei;
+    padding-top: 5px;
+    /*padding-left: 58px;*/
+}
+
+.top span{
+    color: white;
+    font-size: 20px;
+}
+
+.bottom span{
+    color: white;
+    font-size: 15px;
+}
+
+.bottom{
+    width: 100%;
+    height: 50%;
+
+}
+
+/*finally*/
+.helpserver {
+    background: #f6f6f6;
+    padding: 28px 0 20px 0;
+}
+.main-wrap {
+    margin: 0 auto;
+    width: 1180px;
+}
+.helpserver .helplist {
+    width: 1180px;
+}
+.helpserver .helplist .help_l {
+    display: inline;
+    float: left;
+    margin: 0 5px 0 10px;
+    width: 177px;
+}
+.helpserver .helplist .help_l strong {
+    font: 16px/20px Microsoft YaHei;
+    color: #545454;
+    padding-bottom: 8px;
+}
+.helpserver .helplist ul li {
+    float: left;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 10px;
+    width: 100px;
+}
+.helpserver .helplist ul li a {
+    color: #666;
+    text-decoration: none;
+}

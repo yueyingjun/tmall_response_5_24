@@ -1,0 +1,609 @@
+body{
+    margin: 0;
+    padding: 0;
+
+}
+
+html{
+    font-size: 26.66666vw;
+}
+
+.header{
+    width: 100vw;
+    height: 0.9rem;
+    border: 1px solid black;
+    background-color: rgb(255, 0, 54);
+}
+
+.header-top{
+    width: 100vw;
+    height: .45rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-top-left{
+    width: 0.3rem;
+    height: .3rem;
+    background: url("../images/tmall-mobile/小图标.png") no-repeat -0.05rem -0.05rem;
+
+}
+
+.header-top-middle{
+    width: 1.18rem;
+    height: .205rem;
+    background: url("../images/tmall-mobile/顶部tmall.png") no-repeat;
+    /*margin-top: 0.15rem;*/
+    background-size: 100%;
+}
+
+.header-top-right{
+    width: .28rem;
+    height: .3rem;
+    font-size: 0.14rem;
+    margin-top: 0.075rem;
+}
+
+.header-top-right a{
+    color: white;
+}
+
+.header-bottom{
+    width: 100vw;
+    height: 0.45rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.search{
+    width: 3.5rem;
+    height: 0.36rem;
+    background-color: white;
+    border-radius: 0.05rem;
+    /*display: flex;*/
+}
+
+.search-left{
+    width: 0.35rem;
+    height: 0.35rem;
+    padding-top: 0.03rem;
+    box-sizing: border-box;
+    float: left;
+    background: url("../images/tmall-mobile/search_03.png") no-repeat -0.1rem -0.1rem;
+
+}
+
+.search-right{
+    width: 2em;
+    height: 0.35rem;
+    float: left;
+
+}
+
+.search-right span{
+    color: #a7a7a7;
+}
+
+a{
+    font-size: 0.14rem;
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+span{
+    display: block;
+    font-size: 0.2rem;
+    line-height: 0.14rem;
+    padding-top: 0.1rem;
+    color: black;
+}
+
+/*导航*/
+.nav{
+    height: 0.75rem;
+    width: 100vw;
+    margin-top: 0.1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+/*.nav-top{
+    width: 100%;
+    height: 1.1rem;
+    float: top;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-bottom{
+    width: 100%;
+    height: 0.4rem;
+    float: bottom;
+    display: flex;
+
+}*/
+
+.nav-p1{
+    width: 18%;
+    height: 100%;
+    font-size: 0.06rem;
+}
+
+.nav-p1-top1{
+    width: 100%;
+    height: 80%;
+    background: url("../images/tmall-mobile/导航1.png") no-repeat;
+    background-size: 100%;
+}
+
+.nav-p1-top2{
+    width: 100%;
+    height: 80%;
+    background: url("../images/tmall-mobile/导航2.png") no-repeat;
+    background-size: 100%;
+}
+
+.nav-p1-top3{
+    width: 100%;
+    height: 80%;
+    background: url("../images/tmall-mobile/导航3.png") no-repeat;
+    background-size: 100%;
+}
+
+.nav-p1-top4{
+    width: 100%;
+    height: 80%;
+    background: url("../images/tmall-mobile/导航4.png") no-repeat;
+    background-size: 100%;
+}
+
+.nav-p1-top5{
+    width: 100%;
+    height: 80%;
+    background: url("../images/tmall-mobile/导航5.png") no-repeat;
+    background-size: 100%;
+}
+
+.nav-p1-bottom{
+    height: 20%;
+    width: 100%;
+    font-size: 0.06rem;
+}
+
+.nav-p1-bottom a{
+    margin: auto;
+}
+
+/*红包*/
+.redPacket{
+    width: 100%;
+    height: 1.8rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.redPacket>img{
+    width: 95%;
+}
+
+/*限时抢购*/
+.time{
+    width: 100%;
+    height: 2.7rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+}
+
+.time-one{
+    background-color: #a7a7a7;
+    width: 1.72rem;
+    height: 1.28rem;
+}
+
+.time-one-top{
+    width: 100%;
+    height: 0.28rem;
+}
+
+.time-one-bottom{
+    width: 100%;
+    height: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.time-one-bottom-left{
+    width: 0.75rem;
+    height: 100%;
+}
+
+.time-one-bottom-right{
+    width: 0.75rem;
+    height: 100%;
+}
+
+.time-one-bottom-left img{
+    width: 100%;
+    padding-bottom: .2rem;
+}
+
+.time-one-bottom-right img{
+    width: 100%;
+    padding-bottom: .2rem;
+}
+
+/*天猫榜单*/
+
+.lists{
+    width: 100%;
+    height: 4.7rem;
+}
+
+.lists-top{
+    width: 100%;
+    height: 0.35rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.lists-top-title{
+    width: 90%;
+    height: 100%;
+}
+/*趋势榜*/
+.lists-middle{
+    width: 100%;
+    height: 1.5rem;
+}
+
+.lists-middle-sort{
+    width: 90%;
+    height: 1.5rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.lists-middle-No2{
+    width: 1.10rem;
+    height: 1.36rem;
+    background-color: #cccccc;
+}
+
+.lists-middle-No3{
+    width: 1.10rem;
+    height: 1.36rem;
+    background-color: #cccccc;
+}
+
+.lists-middle-No1{
+    width: 1.10rem;
+    height: 1.49rem;
+    background-color: #cccccc;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.lists-p{
+    width: 100%;
+    height: 1rem;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /*display: flex;*/
+}
+
+.lists-p1{
+    width: 70%;
+    height: 80%;
+    background: url("../images/tmall-mobile/榜1.png") no-repeat 0 0;
+    background-size: 100%;
+    background-color: #a7a7a7;
+    /*border: 1px red solid;
+    box-sizing: border-box;*/
+}
+
+.decription1{
+    border-radius: 0.2rem;
+    background-color: #4064e3;
+    width: 100%;
+    height: 0.18rem;
+    float: bottom;
+}
+
+.decription1 a{
+    margin-left: .2rem;
+}
+
+.decription2{
+    width: 100%;
+    height: 0.18rem;
+    margin-left: .2rem;
+    float: bottom;
+}
+
+.p1-lefttop{
+    width: 0.315rem;
+    height: 0.255rem;
+    background: url("../images/tmall-mobile/趋势榜.png") no-repeat 0 0;
+    background-size: 100%;
+    position: absolute;
+    left: .1rem;
+    top: 0  ;
+}
+
+.lists-pNo1{
+    width: 100%;
+    height: 1.1rem;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*人气榜*/
+.lists-bottom{
+    width: 100%;
+    height: 2.35rem;
+}
+
+.lists-popular{
+    width: 92%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.lists-popular-top{
+    width: 100%;
+    height: 0.85rem;
+    margin-top: 0.1rem;
+    display: flex;
+    background-color: rgb(228, 228, 228);
+}
+
+.lists-popular-top-left{
+    width: 30%;
+    height: 100%;
+}
+
+.lists-popular-top-left-1{
+    width: 100%;
+    height: 30%;
+    display: flex;
+}
+
+.lists-popular-top-left-1-left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.juxing{
+    width: 100%;
+    height: 80%;
+    background-color: orange;
+}
+
+.sanjiao{
+    width: 0;
+    height: 0;
+    background-color: orange;
+    border-top: 0.1rem solid orange;
+    border-left: 0.255rem solid;
+    border-right: 0.255rem solid;
+}
+
+
+.lists-popular-top-left-1-right{
+    width: 50%;
+    height: 100%;
+}
+
+.lists-popular-top-right{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.smallLun1{
+    width: 0.65rem;
+    height: 0.65rem;
+    background: url("../images/tmall-mobile/人气榜1.png") no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+
+.smallLun2{
+    width: 0.65rem;
+    height: 0.65rem;
+    background: url("../images/tmall-mobile/人气榜2.png") no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+
+.smallLun3{
+    width: 0.65rem;
+    height: 0.65rem;
+    background: url("../images/tmall-mobile/人气榜3.png") no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+
+.smallLun1 img{
+    width: .2rem;
+    position: absolute;
+}
+
+.smallLun2 img{
+    width: .2rem;
+    position: absolute;
+}
+
+.smallLun3 img{
+    width: .2rem;
+    position: absolute;
+}
+
+.lists-popular-bottom{
+    width: 100%;
+    height: 1.55rem;
+    margin-top: 0.1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.popular1{
+    width: 1.70rem;
+    height: 0.75rem;
+    display: flex;
+    background-color: rgb(228, 228, 228);
+}
+
+.popular1-left{
+    width: 1rem;
+    height: 100%;
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    /*align-items: center;*/
+}
+
+.popular1-left-1{
+    width: 100%;
+    height: 20%;
+}
+
+
+.popular1-right{
+    width: 0.65rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.popular1-right img{
+    /*background-color: rgb(185, 185, 185);*/
+    width: 0.65rem;
+}
+
+/*猜你喜欢*/
+.likes{
+    width: 100%;
+    height: 0.4rem;
+}
+
+.likes-title{
+    width: 92%;
+    height: 100%;
+    margin: auto;
+}
+
+.likes-list1{
+    width: 100%;
+    height: 3.15rem;
+    margin-top: 0.2rem;
+}
+
+.likes-list1-center{
+    width: 92%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.likes-list1-left{
+    width: 1.7rem;
+    height: 100%;
+}
+
+.likes-list1-left-1{
+    width: 100%;
+    height: 1.7rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.03);
+}
+
+.likes-list1-left-1 img{
+    width: 1.4rem;
+}
+
+.likes-list1-left-2{
+    width: 50%;
+    height: 0.2rem;
+    background-color: rgb(205, 163, 177);
+    margin-left: 0.1rem;
+}
+
+.likes-list1-left-3{
+    width: 100%;
+    height: 0.6rem;
+    margin-left: 0.1rem;
+}
+
+.likes-list1-left-4{
+    width: 100%;
+    height: 0.2rem;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0.2rem;
+}
+
+.crice{
+    width: 50%;
+    height: 100%;
+}
+
+.crice a{
+    color: red;
+}
+
+.similar{
+    width: 30%;
+    height: 100%;
+    background: rgb(255, 230, 235);
+    border-radius: 0.1rem;
+}
+
+.likes-list1-right{
+    width: 1.7rem;
+    height: 100%;
+}
+
+.likes-list1-right img{
+    width: 1.7rem;
+}
+
+/*轮播图*/
+.luns{
+    width: 100%;
+    height: 1.35rem;
+
+}
+
+.luns-center{
+    width: 92%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+
+.luns-center img{
+    width: 3.5rem;
+}

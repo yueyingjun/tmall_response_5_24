@@ -1,0 +1,2653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>plane tickets</title>
+    <link rel="stylesheet" href="css/plane.css">
+
+    <script>
+
+
+
+        // 热门航线
+        window.onload=function(ev){
+
+            var links=document.querySelectorAll(".city a");
+            var con=document.querySelectorAll(".route-lists");
+
+            for (var i=0;i<links.length;i++){
+                links[i].index=i;
+                links[i].onclick=function (ev) {
+                    for (var j=0;j<con.length;j++){
+                        con[j].style.display="none";
+                    }
+                    con[this.index].style.display="block";
+                }
+            }
+
+            /*var divs=document.querySelectorAll(".all");
+            var shows=document.querySelectorAll(".show");
+            for (var i = 0; i < divs.length; i++) {
+                divs[i].index = i;
+                divs[i].onclick=function(){
+                    for(var n=0;n<shows.length;n++){
+                        shows[n].style.zIndex = "0";
+                        shows[n].style.display = "none";
+                    }
+                    shows[this.index].style.zIndex = "3";
+                    shows[this.index].style.display="block";
+                }
+
+            }*/
+
+
+            // 轮播图
+            var lun = document.querySelectorAll(".lun");
+            var btn=document.querySelectorAll(".btn");
+            var num=0
+            var active=document.querySelector(".active")
+            active.style.background="orange"
+            setInterval(function () {
+
+                if (num == 2) {
+                    num = 0;
+                }
+
+                for (var i = 0; i < lun.length; i++) {
+                    lun[i].style.display = "none"
+                    btn[i].style.background="#000"
+                }
+                lun[num].style.display = "block";
+                btn[num].style.background="orange"
+                num++
+            },4000)
+
+            /*for (var i=0; i < btn.length; i++) {
+                btn[i].index=i;
+                btn[i].onclick=function () {
+                    for (var j = 0; j < lun.length; j++) {
+                        lun[j].style.display="none"
+                    }
+                    lun[this.index].style.display="block"
+                }
+            }*/
+
+            for (var i = 0; i < btn.length; i++) {
+                btn[i].index=i
+                btn[i].onclick=function () {
+                    for (var j = 0; j < lun.length; j ++) {
+                        lun[j].style.display="none"
+                        btn[j].style.background="#000"
+                    }
+                    lun[this.index].style.display="block"
+                    btn[this.index].style.background="orange"
+                }
+            }
+        }
+
+    </script>
+</head>
+<body>
+<header>
+    <img src="images/飞机票.png" alt="">
+    <img src="images/logo.jpg" alt="">
+</header>
+<!--导航-->
+<div class="box">
+    <div class="con">
+        <div class="left">
+            <a href="">首页</a>
+            <a href="">国内航空</a>
+            <a href="">国际航空</a>
+            <a href="">出行咨讯</a>
+            <a href="">出行咨询</a>
+        </div>
+        <div class="right">
+            <a href="" class="login">登录</a>
+            <a href="">注册</a>
+            <a href="">个人信息</a>
+            <div class="sanjiao"></div>
+        </div>
+    </div>
+</div>
+
+<!--热门城市-->
+
+    <div class="hot">
+    <span>hot城市</span>
+    <a href="">深圳</a>
+    <a href="">北京</a>
+    <a href="">上海</a>
+    <a href="">广州</a>
+    <a href="">南京</a>
+    <a href="">天津</a>
+    <a href="">武汉</a>
+    <a href="">长沙</a>
+    <a href="">昆明</a>
+    <a href="">贵阳</a>
+    <a href="">成都</a>
+    <a href="">重庆</a>
+    <a href="">海口</a>
+    <a href="">哈尔滨</a>
+    <a href="">更多</a>
+
+</div>
+
+<!--轮播图-->
+<div class="wheel-box">
+    <div class="lun lun1">
+
+    </div>
+    <div class="lun lun2"></div>
+    <div class="btns">
+        <div class="btn active" style="color: orange"></div>
+        <div class="btn"></div>
+    </div>
+</div>
+
+<!--购票流程-->
+<div class="piao">
+    <div class="piao-left">
+        <h3>购票流程</h3>
+    </div>
+    <div class="piao-right">
+        <div class="icon">
+            <div class="out">
+                <div class="in">
+                </div>
+            </div>
+        </div>
+        <div class="text1">
+            航班查询<br>
+            选择出行航班
+        </div>
+
+        <div class="icon">
+            <div class="out">
+                <div class="in1">
+                </div>
+            </div>
+        </div>
+        <div class="text1">
+            提交订单<br>
+            登记乘机人和联系人
+        </div>
+
+        <div class="icon">
+            <div class="out">
+                <div class="in2">
+                </div>
+            </div>
+        </div>
+        <div class="text1">
+            在线支付<br>
+            支付机票款
+        </div>
+
+        <div class="icon">
+            <div class="out">
+                <div class="in3">
+                </div>
+            </div>
+        </div>
+        <div class="text1">
+            无需取票<br>
+            换取登记牌
+        </div>
+
+    </div>
+</div>
+
+<div class="main-wrap">
+
+            <ul class="assist-lists">
+                <div>
+                    <li class="assist-list1"><a target="_blank"  href="http://www.161580.com/member/order/inflightorderlist.aspx"><span class="my-beginner"></span>
+                        <p>订单管理</p></a></li>
+                    <li class="assist-list2"><a target="_blank"  href="http://www.161580.com/pay"><span class="app"></span>
+                        <p>支付中心</p></a></li>
+                </div>
+                <div>
+                    <li class="assist-list1"><a target="_blank"  href="http://www.161580.com/flight/pricechar.aspx"><span class="apay"></span>
+                        <p>价格趋势</p></a></li>
+                    <li class="assist-list2"><a target="_blank" href="http://www.travelsky.com/"><span class="traffic"></span>
+                        <p>机票验真</p></a></li>
+                </div>
+                <div>
+                    <li class="assist-list1 last-assist"><a target="_blank"  href="http://www.veryzhun.com"><span class="my-insurance"></span>
+                        <p>航班动态</p></a></li>
+                    <li class="assist-list2 last-assist"><a target="_blank" href="http://www.161580.com/News/NewsList/XWZXLB_002.htm"><span class="checkin"></span>
+                        <p>新手指南</p></a></li>
+                </div>
+
+            </ul>
+    <div class="news">
+        <div class="new1">
+            <br>
+            <h3><span>最新资讯</span></h3><br><br><br><br>
+
+                <a href="" title="简单了解一下金鹏航空官网机票购买流程，金鹏航空手机版订票流程介绍" target="_blank">简单了解一下金鹏航空官网机票购买流程</a>
+            <br>
+                <a href="" title="东方航空去哪儿网合作举办“校园旅行家”推广活动" target="_blank">东方航空去哪儿网合作举办“校园旅行家</a>
+            <br>
+                <a href="" title="网上买飞机票为什么只能买9张,10人以上怎么办" target="_blank">网上买飞机票为什么只能买9张,10人</a>
+            <br>
+                <a href="" title="想知道南方航空机票购买流程，南航手机版订票流程介绍" target="_blank">想知道南方航空机票购买流程，南航手机</a>
+
+        </div>
+        <div class="new2">
+            <br>
+            <h3><span>网站公告</span></h3><br><br><br><br>
+            <ul>
+                <li><a href="" title="带你认识飞机经停是什么意思" target="_blank">带你认识飞机经停是什么意思</a></li>
+                <li><a href="" title="12306机票网上订票官网请上民航在线安全有保障" target="_blank">12306机票网上订票官网请上民航在</a></li>
+                <li><a href="" title="1岁婴儿机票怎么买 能够从网上购买婴儿机票吗" target="_blank">1岁婴儿机票怎么买 能够从网上购买婴</a></li>
+                <li><a href="" title="了解订机票用什么软件好对你出门旅游帮助很大" target="_blank">了解订机票用什么软件好对你出门旅游帮</a></li>
+
+            </ul>
+        </div>
+        </div>
+    </div>
+
+</div>
+
+<!--热门航线-->
+<div class="hotLoad">
+    <div class="load">
+        <div class="title">热门航线预定</div>
+        <div class="city">
+            <a href="javascript:;" class="all" >全国</a>
+            <a href="javascript:;" class="all">深圳</a>
+            <a href="javascript:;" class="all">北京</a>
+            <a href="javascript:;" class="all">上海</a>
+            <a href="javascript:;" class="all">广州</a>
+            <a href="javascript:;" class="all">武汉</a>
+            <a href="javascript:;" class="all">成都</a>
+            <a href="javascript:;" class="all">海口</a>
+            <a href="javascript:;" class="all">重庆</a>
+            <a href="javascript:;" class="all">沈阳</a>
+        </div>
+    </div>
+
+    <div class="line">
+    </div>
+
+    <ul class="route-lists">
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">海口</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">武汉</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">南京</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">太原</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">杭州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">郑州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">郑州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">郑州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">郑州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">郑州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+
+    </ul>
+    <ul class="route-lists">
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">深圳</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">海口</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">深圳</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">武汉</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">深圳</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">南京</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">深圳</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">太原</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">深圳</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">杭州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">深圳</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">郑州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">深圳</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">郑州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">深圳</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">郑州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">深圳</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">郑州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">深圳</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">郑州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+
+    </ul>
+    <ul class="route-lists">
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">海口</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">武汉</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">南京</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">太原</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">杭州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">郑州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">郑州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">郑州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">郑州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">郑州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+
+    </ul>
+    <ul class="route-lists">
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">上海</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">海口</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">上海</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">武汉</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">上海</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">南京</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">上海</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">太原</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">上海</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">杭州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">上海</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">郑州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">上海</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">郑州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">上海</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">郑州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">上海</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">郑州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">上海</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">郑州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+
+    </ul>
+    <ul class="route-lists">
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">广州</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">海口</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">广州</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">武汉</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">广州</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">南京</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">广州</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">太原</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">广州</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">杭州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">广州</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">郑州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">广州</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">郑州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">广州</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">郑州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">广州</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">郑州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">广州</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">郑州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+
+    </ul>
+    <ul class="route-lists">
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">海口</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">武汉</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">南京</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">太原</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">杭州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">郑州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">郑州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">郑州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">郑州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">郑州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+
+    </ul>
+    <ul class="route-lists">
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">海口</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">武汉</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">南京</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">太原</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">杭州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">郑州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">郑州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">郑州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">郑州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">郑州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+
+    </ul>
+    <ul class="route-lists">
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">海口</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">武汉</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">南京</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">太原</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">杭州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">郑州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">郑州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">郑州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">郑州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">郑州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+
+    </ul>
+    <ul class="route-lists">
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">海口</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">武汉</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">南京</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">太原</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">杭州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">郑州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">郑州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">郑州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">郑州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">郑州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+
+    </ul>
+    <ul class="route-lists">
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">海口</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">武汉</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">南京</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">太原</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">杭州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">郑州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">郑州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">郑州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">郑州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+        <li class="route-list1">
+            <a href="">
+                <div class="list1-top">
+                    <div class="list1-top-one">北京</div>
+                    <div class="list1-top-two"></div>
+                    <div class="list1-top-three">郑州</div>
+
+                </div>
+                <div class="list1-middle">
+                    <span>12月16日</span>
+                </div>
+                <div class="list1-bottom">
+                    <div class="list1-bottom-one"></div>
+                    <div class="list1-bottom-two">票价</div>
+                    <div class="list1-bottom-three">￥</div>
+                    <div class="list1-bottom-four">357</div>
+                </div>
+            </a>
+
+        </li>
+
+    </ul>
+
+</div>
+
+<!--废弃-->
+<!--<div class="two">
+    <div class="show" id="s1">
+        <div>
+            <span>海口&ndash;&gt;郑州</span>
+            <span>12月16日</span>
+            <span>票价<strong class="red">￥427</strong></span>
+        </div>
+        <div>
+            <span>海口&ndash;&gt;长沙</span>
+            <span>10月15日</span>
+            <span>票价<strong class="red">￥427</strong></span>
+        </div>
+        <div>
+            <span>武汉&ndash;&gt;神农架</span>
+            <span>05月18日</span>
+            <span>票价<strong class="red">￥427</strong></span>
+        </div>
+        <div>
+            <span>银川&ndash;&gt;昆明</span>
+            <span>05月18日</span>
+            <span>票价<strong class="red">￥427</strong></span>
+        </div>
+        <div>
+            <span>太原&ndash;&gt;昆明</span>
+            <span>11月11日</span>
+            <span>票价<strong class="red">￥427</strong></span>
+        </div>
+        <div>
+            <span>南京&ndash;&gt;上海浦东</span>
+            <span>07月03日</span>
+            <span>票价<strong class="red">￥427</strong></span>
+        </div>
+        <div>
+            <span>西安&ndash;&gt;上海浦东</span>
+            <span>01月25日</span>
+            <span>票价<strong class="red">￥427</strong></span>
+        </div>
+        <div>
+            <span>合肥&ndash;&gt;海口</span>
+            <span>05月28日</span>
+            <span>票价<strong class="red">￥427</strong></span>
+        </div>
+        <div>
+            <span>天津&ndash;&gt;三亚</span>
+            <span>05月22日</span>
+            <span>票价<strong class="red">￥427</strong></span>
+        </div>
+        <div>
+            <span>哈尔滨&ndash;&gt;三亚</span>
+            <span>05月15日</span>
+            <span>票价<strong class="red">￥427</strong></span>
+        </div>
+    </div>
+    <div class="show" id="s2">
+        <div>
+            <span>深圳&ndash;&gt;昆明</span>
+            <span>10月09日</span>
+            <span>票价<strong class="red">￥427</strong></span>
+        </div>
+        <div>
+            <span>深圳&ndash;&gt;武汉</span>
+            <span>10月15日</span>
+            <span>票价</span>
+        </div>
+        <div>
+            <span>深圳&ndash;&gt;兰州</span>
+            <span>10月22日</span>
+            <span>票价</span>
+        </div>
+        <div>
+            <span>深圳&ndash;&gt;海口</span>
+            <span>09月11日</span>
+            <span>票价</span>
+        </div>
+        <div>
+            <span>深圳&ndash;&gt;沈阳</span>
+            <span>06月12日</span>
+            <span>票价</span>
+        </div>
+        <div>
+            <span>深圳&ndash;&gt;上海浦东</span>
+            <span>06月07日</span>
+            <span>票价</span>
+        </div>
+        <div>
+            <span>深圳&ndash;&gt;北京</span>
+            <span>05月27日</span>
+            <span>票价</span>
+        </div>
+        <div>
+            <span>深圳&ndash;&gt;重庆</span>
+            <span>10月11日</span>
+            <span>票价</span>
+        </div>
+        <div>
+            <span>深圳&ndash;&gt;成都</span>
+            <span>10月11日</span>
+            <span>票价</span>
+        </div>
+        <div>
+            <span>深圳&ndash;&gt;郑州</span>
+            <span>09月03日</span>
+            <span>票价</span>
+        </div>
+    </div>
+    <div class="show" id="s3">
+        <div>
+            <span>深圳&ndash;&gt;昆明</span>
+            <span>10月09日</span>
+            <span>票价<strong class="red large">￥427</strong></span>
+        </div>
+        <div>
+            <span>深圳&ndash;&gt;武汉</span>
+            <span>10月15日</span>
+            <span>票价<strong class="red large">￥427</strong></span>
+        </div>
+        <div>
+            <span>深圳&ndash;&gt;兰州</span>
+            <span>10月22日</span>
+            <span>票价<strong class="red large">￥427</strong></span>
+        </div>
+        <div>
+            <span>深圳&ndash;&gt;海口</span>
+            <span>09月11日</span>
+            <span>票价<strong class="red large">￥427</strong></span>
+        </div>
+        <div>
+            <span>深圳&ndash;&gt;沈阳</span>
+            <span>06月12日</span>
+            <span>票价<strong class="red large">￥427</strong></span>
+        </div>
+        <div>
+            <span>深圳&ndash;&gt;上海浦东</span>
+            <span>06月07日</span>
+            <span>票价<strong class="red large">￥427</strong></span>
+        </div>
+        <div>
+            <span>深圳&ndash;&gt;北京</span>
+            <span>05月27日</span>
+            <span>票价<strong class="red large">￥427</strong></span>
+        </div>
+        <div>
+            <span>深圳&ndash;&gt;重庆</span>
+            <span>10月11日</span>
+            <span>票价<strong class="red large">￥427</strong></span>
+        </div>
+        <div>
+            <span>深圳&ndash;&gt;成都</span>
+            <span>10月11日</span>
+            <span>票价<strong class="red large">￥427</strong></span>
+        </div>
+        <div>
+            <span>深圳&ndash;&gt;郑州</span>
+            <span>09月03日</span>
+            <span>票价<strong class="red large">￥427</strong></span>
+        </div>
+    </div>
+</div>-->
+
+<!--热门航空公司-->
+<!--<div class="company">
+    <div class="tit">
+        <span>热门航空公司</span>
+    </div>
+
+</div>-->
+
+<div class="mod-hk">
+    <div class="hk-all">
+        <div class="mod-hd">
+            <h2 class="coach-header">
+                热门航空公司
+            </h2>
+        </div>
+    </div>
+    <div class="hk-btm">
+        <div class="btm-left">
+            <div class="btn-all">
+                <div class="btm-lt-left">
+                    <div class="left-img"></div>
+                    <span>中国国际航空公司</span>
+                </div>
+                <div class="bt-lt-right">
+                    <p class="bt-lt-info">&nbsp;&nbsp;中国国际航空股份有限公司简称“国航”，英文名称为“Air China Limited”，简称“Air China”，其前身
+                        中国国际航空公司成立于1988年。根据国务院批准通过的《民航体制改革方案》，2002年10月，中国国际航空公司联合中国航空总公司和中国西南航空公司，成立了中国航空集团公司，并以联合三方的航空运输资源为基础
+                        ，组建新的中国国际航空公司。</p>
+                </div>
+            </div>
+        </div>
+        <div class="btm-right">
+            <ul class="btm-rt-top">
+                <li>
+                    <div class=" btm-rt-tp-in11">
+                        <div class="label">中国南方航空公司</div>
+                    </div>
+                </li>
+                <li>
+                    <div class=" btm-rt-tp-in12">
+                        <div class="label">中国东方航空公司</div>
+                    </div>
+                </li>
+                <li>
+                    <div class=" btm-rt-tp-in13">
+                        <div class="label">海南航空公司</div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="btm-rt-btm">
+                <li>
+                    <div class=" btm-rt-tp-in21">
+                        <div class="label">深圳航空公司</div>
+                    </div>
+                </li>
+                <li>
+                    <div class=" btm-rt-tp-in22">
+                        <div class="label">四川航空公司</div>
+                    </div>
+                </li>
+                <li>
+                    <div class=" btm-rt-tp-in23">
+                        <div class="label">春秋航空公司</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--结尾蓝框-->
+<div class="ends">
+    <div class="end-center">
+        <div class="e-left">
+            <div class="end1">
+                <div class="e1-left">
+<!--                    <div class="big"></div>-->
+                    <div class="small"></div>
+                </div>
+                <div class="e1-right">
+                    <div class="top"><span>支付安全</span></div>
+                    <div class="bottom"><span>在线支付100%认证</span></div>
+                </div>
+            </div>
+            <div class="end2">
+                <div class="e1-left">
+                    <!--                    <div class="big"></div>-->
+                    <div class="small2"></div>
+                </div>
+                <div class="e1-right">
+                    <div class="top"><span>支付安全</span></div>
+                    <div class="bottom"><span>在线支付100%认证</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="e-right">
+            <div class="end3">
+                <div class="e1-left">
+                    <!--                    <div class="big"></div>-->
+                    <div class="small3"></div>
+                </div>
+                <div class="e1-right">
+                    <div class="top"><span>支付安全</span></div>
+                    <div class="bottom"><span>在线支付100%认证</span></div>
+                </div>
+            </div>
+            <div class="end4">
+                <div class="e1-left">
+                    <!--                    <div class="big"></div>-->
+                    <div class="small4"></div>
+                </div>
+                <div class="e1-right">
+                    <div class="top"><span>支付安全</span></div>
+                    <div class="bottom"><span>在线支付100%认证</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--新手上路-->
+<div class="helpserver">
+    <div class="main-wrap">
+        <div class="helplist">
+            <div class="help_l">
+                <strong>新手上路</strong>
+                <ul>
+                    <li><a href="">-查询预订</a></li>
+                    <li><a href="">-订单填写</a></li>
+                    <li><a href="">-支付出票</a></li>
+
+                </ul>
+            </div>
+
+
+
+            <div class="help_l">
+                <strong>付款方式</strong>
+                <ul>
+                    <li><a href="" >-网上银行</a></li>
+                    <li><a href="" >-微信支付</a></li>
+                    <li><a href="" >-信用卡</a></li>
+
+                </ul>
+            </div>
+
+            <div class="help_l">
+                <strong>旅客保障</strong>
+                <ul>
+                    <li><a href="" >-航协认证</a></li>
+                    <li><a href="" >-支付出票</a></li>
+                    <li><a href="">-安全保障</a></li>
+
+                </ul>
+            </div>
+
+            <div class="help_l">
+                <strong>常见问题</strong>
+                <ul>
+                    <li><a href="">-南昌昌北</a></li>
+                    <li><a href="">-不在网上</a></li>
+                    <li><a href="">-呼和浩特</a></li>
+                </ul>
+            </div>
+
+            <div class="help_l">
+                <strong>关于我们</strong>
+                <ul>
+                    <li><a href="">-联系我们</a></li>
+                    <li><a href="">-网站介绍</a></li>
+                    <li><a href="">-公司简介</a></li>
+
+                </ul>
+            </div>
+
+            <div class="help_last">
+                <div class="help_time" style="margin-left:-50px;"><strong style="margin-left:40px">服务热线</strong><p style="margin-left:30px"><span></span><b>4000161580</b></p>
+
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+a[]{$}*10
+</body>
+</html>
