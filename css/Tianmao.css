@@ -401,8 +401,6 @@ ul,li{
     color: orange;
 }
 
-
-
 .lunbo-left-bottom{
     position: relative;
 
@@ -431,6 +429,7 @@ ul,li{
     border-radius: 10px;
     text-align: center;
     line-height: 30px;
+    cursor: pointer;
 }
 
 .lunbo-left-top .one:hover .lunbo-left-bottom-two{
@@ -469,6 +468,91 @@ ul,li{
     color: #ffffff;
     font-size: 14px;
 }
+
+.cedh-nr{
+    background: #FFFFFF;
+    top: 0px;
+    left: 200px;
+    width: 852px;
+    height: 500px;
+    font-weight: normal;
+    display: none;
+    overflow: hidden;
+    position: absolute;
+    z-index:90;
+}
+.cenr-l{
+    float: left;
+    width: 583px;
+    height: 460px;
+    padding: 20px 30px;
+    background: #FFFFFF;
+}
+
+.cenr-l dl dt{
+    float: left;
+    width: 60px;
+    height: 22px;
+    color: #333;
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 30px;
+    position: relative;
+    line-height: 22px;
+}
+.cenr-l dl dd{
+    float: left;
+    width: 493px;
+    padding-bottom: 10.5px;
+    margin-bottom: 10.5px;
+    border-bottom: 1px dashed rgba(0,0,0,0.1);
+}
+.cenr-l dl dd a{
+    float: left;
+    height: 22px;
+    color: #666666;
+    font-size: 14px;
+    text-justify: kashida;
+    line-height: 22px;
+    margin-left: 13px;
+}
+
+.cenr-r{
+    float: right;
+    width: 189px;
+    height: 480px;
+    padding: 10px;
+    background-color: #fafafa;
+}
+.cenr-r a{
+    margin-top: 20px;
+    float: left;
+    width: 73px;
+    height: 37px;
+    overflow: hidden;
+    padding: 5px 10px;
+    margin-right: 10px;
+    margin-bottom: 1px;
+    background-color: #FFFFFF;
+}
+.cenr-r a img{
+    width: 73px;
+    height: 37px;
+}
+.cenr-r a:hover{
+    opacity: 0.8;
+}
+.cenr-r-bottom a{
+    display: block;
+    border-top: 10px solid #fafafa;
+    background-color: #FFFFFF;
+}
+.cenr-r-bottom a img{
+    width: 189px;
+    height: 87px;
+}
+
+
 
 
 
