@@ -1107,6 +1107,14 @@ h1,h2,h3,h4,h5,h6,ul,li{
         margin-left:200px;
         margin-top:-500px;
     }
+    .middle_right_detail{
+        width:645px;
+        height:490px;
+        /*border:1px solid red;*/
+        float:left;
+        background: #fff;
+        margin_top:10px;
+    }
     .middle_right{
         width:850px;
         height:500px;
@@ -1308,6 +1316,29 @@ h1,h2,h3,h4,h5,h6,ul,li{
     }
     .te_left_bottom:hover .te_left_bottom_two{
         display: block;
+    }
+    .middle_right_detail_right{
+        width:520px;
+        height:490px;
+        /*border:1px solid red;*/
+        float:right;
+        margin-top:10px;
+    }
+    .middle_right_detail_right_one{
+        width:500px;
+        height:65px;
+        border-bottom:1px dotted #ccc;
+        margin:auto;
+    }
+    .middle_right_detail_right_one a{
+        text-decoration: none;
+        color:#ccc;
+    }
+    .middle_right_detail_right_two{
+        width500px;
+        height:40px;
+        border-bottom:1px dotted #ccc;
+        margin:auto;
     }
 }
 
