@@ -253,18 +253,88 @@ body{
     z-index: 4;
 
 }
+.lunbo-right1{
+    width: 850px;
+    height: 510px;
+    position: absolute;
+    left: 200px;
+    top: 0px;
+    background: rgba(105,105,105,0.6);
+    background: #ffffff;
+    z-index: 4;
+    display: none;
+}
+.righimod1{
+    width: 640px;
+    height: 100%;
+    float: left;
+}
+.righimod2{
+    width: 210px;
+    height: 100%;
+    float: left;
+    background: rgb(250,250,250);
+}
+.model1item{
+    width: 100%;
+    height: 70px;
+}
+.modelite1right{
+    width: 515px;
+    height: 100%;
+    float: left;
+    border-bottom: 1px  dotted  rgb(229,229,229);
+}
+.modelite1left{
+    width: 125px;
+    height: 100%;
+    float: left;
+    line-height: 50px;
+    text-align: center;
+
+}
+.line-con{
+    width: 100%;
+    height: 70%;
+    margin: 10px 0 0 0;
+}
+.line-con  a{
+    margin-left: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(102,102,102);
+}
+.iconpic{
+    width:200px ;
+    height: 390px;
+    background: #ffffff;
+    margin: 10px 0 0 10px;
+}
+.icpic1{
+    width: 100px;
+    height:48.75px;
+    float: left;
+    background:url("../image/icojpic1.jpg") no-repeat;
+    border: 1px solid rgb(250,250,250);
+    box-sizing: border-box;
+    background-size:100px 48.75px;
+}
+.iconbottom{
+    width: 200px;
+    margin: 10px 0 0 10px;
+    height: 100px;
+    background: url("../image/adfa.jpg") no-repeat;
+    background-size:200px 100px ;
+}
 .lunbo-left-de2{
     width: 100%;
-    height: 15px;
-    margin-top: 17px;
-    margin-left: 10px;
+    height: 6%;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
 }
-.demo2{
-    width: 100%;
-    height: 18px;
-    margin-top: 3px;
-    margin-left: 10px;
-}
+
 .demo1{
     width: 143px;
     height: 30px;
