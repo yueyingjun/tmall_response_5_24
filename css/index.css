@@ -431,8 +431,6 @@ ul,li{
 }
 
 .title{
-  margin-top: 10px;
-  margin-left: 5px;
   width: 90px;
   height:60px;
   float: left;
@@ -651,6 +649,11 @@ ul,li{
   height: 150px;
   line-height: 150px;
   background: url("../img/tejia.png") no-repeat left;
+  cursor: pointer;
+}
+
+.jipiao li:hover{
+  background:url("../img/tejia.png") no-repeat right;
 }
 .jipiao li a{
   text-decoration: none;
@@ -742,6 +745,7 @@ dl,dd{
   float: left;
   height: 340px;
   width: 450px;
+  position: relative;
 }
 
 .gs-con-right{
@@ -749,15 +753,19 @@ dl,dd{
   float: left;
   width: 720px;
   height: 350px;
+  position: relative;
 }
 .gs-con-left ul{
   float: left;
-  position: relative;
+  position: absolute;
+  left: 10px;
+  top: 20px;
   width: 220px;
   height: 245px;
 }
 .gs-con-left ul a{
   text-decoration: none;
+  display: block;
 }
 .gs-con-left li .img:hover img{
   transform:scale(1.05,1.05);
@@ -765,20 +773,13 @@ dl,dd{
 }
 .gs-con-left li .img{
   width: 220px;
-  height: 206px;
-  position: relative;
-  left: 10px;
-  top: 20px;
+  height: 200px;
   overflow: hidden;
 }
 
 .gs-con-left li span{
-  position: relative;
-  left: 5px;
-  top: 5px;
   width: 220px;
   height: 37px;
-  /*border: 1px solid red;*/
   line-height: 37px;
   display: block;
   background: #ccc;
@@ -792,7 +793,6 @@ label{
 }
 
 .gs-con-left .info{
-  /*border: 1px solid blue;*/
   float: right;
   color: #555;
   width: 192px;
@@ -826,17 +826,19 @@ label{
 
 .gs-con-right li .gs-con-right-img:hover img{
   transform:scale(1.05,1.05);
-  transition:all 0.5s linear;
+
 }
 .gs-con-right .gs-con-right-img{
   width:220px;
   height: 160px;
   position: relative;
+  overflow: hidden;
 }
 
 .gs-con-right img{
   width: 220px;
   height: 160px;
+  transition:all 0.5s linear;
 }
 .gs-con-right li{
   float: left;
@@ -868,7 +870,6 @@ label{
   overflow: hidden;
 }
 .jc{
-  /*border:1px solid red;*/
   width:1180px;
   margin: auto;
   height: 350px;
@@ -876,12 +877,10 @@ label{
 
 .main-wrap{
   margin-right: 5px;
-  /*border:1px solid red;*/
   width:340px;
   float: left;
-  height: 40px;
-  border-bottom: 2px solid #ccc;
-  font-family: "微软雅黑";
+  height: 360px;
+  position: relative;
 }
 .main-wrap  li{
   float: left;
@@ -889,16 +888,32 @@ label{
   margin-bottom: 10px;
   width:225px;
   height: 150px;
-  background: url("../img/tejia.png") no-repeat;
+  background: url("../img/tejia.png") no-repeat left;
 }
 
-.main-wrap li a{
+.list1{
+  height: 150px;
+  overflow: hidden;
+  position: absolute;
+  left:0 ;
+  top:55px;
+}
+.list1 a{
   text-decoration: none;
 }
 
+.list_item:hover{
+  background: url("../img/tejia.png") no-repeat right;
+}
+
+
+.main-wrap .item a{
+  text-decoration: none;
+}
+
+
 .mod-hd{
   height: 40px;
-  font-family: "微软雅黑";
   border-bottom: 2px solid #ccc;
 }
 .mod-hd h2{

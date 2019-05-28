@@ -25,12 +25,20 @@ header{
   font-size:0.4rem;
   line-height: 1rem;
 }
-.top a{
-  width:1rem;
-  height: 1rem;
-  border: 1px solid black;
+
+.top-opt-img{
+  width:1.05rem;
+  height: 0.7rem;
+  line-height: 0.8rem;
+  align-items: center;
   color: #000;
   text-decoration: none;
+  margin-left:-0.3rem;
+  background: url("../images/icon.webp") no-repeat 0.2rem 0;
+  background-size:6.2rem;
+}
+.top a{
+  color: #000;
 }
 .top img{
   width:2.32rem ;
@@ -52,7 +60,6 @@ header{
 .search-icon{
   width: 0.3rem;
   height: 0.3rem;
-  border: 1px solid red;
   margin-right: 0.2rem;
 }
 .search-icon img{
@@ -63,7 +70,6 @@ header{
 .pinpai{
   width: 100vw;
   height: 2rem;
-  border: 1px solid red;
   justify-content: space-around;
   display: flex;
   align-items: center;
@@ -73,12 +79,10 @@ header{
 .pinpai-opt{
   width: 1.2rem;
   height: 1.7rem;
-  border: 1px solid red;
 }
 .pinpai-one{
   width:1.2rem;
   height: 1.2rem;
-  border:1px solid red;
   border-radius: 50%;
 }
 /*轮播*/
@@ -87,15 +91,37 @@ header{
   height: 3rem;
   align-items: center;
   display: flex;
+  position: relative;
 }
 .lunbo-con{
   width: 95vw;
+  height: 3rem;
   justify-content: space-around;
   margin: 0 auto;
-  overflow: hidden;
+  display: flex;
+  position: relative;
 }
 .lunbo-con-one{
   width: 95vw;
+  position: absolute;
+  left: 0;
+  top: 0.1rem;
+}
+.lunbo-con-btn{
+  width: 60vw;
+  height: 0.1rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0.4rem;
+}
+.lunbo-con-btn a{
+  display: flex;
+  width: 0.4rem;
+  height: 100%;
+  border: 1px solid white;
+  background: rgba(0,0,0,0.2);
 }
 
 /*
@@ -123,7 +149,6 @@ header{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  border: 1px solid red;
 }
 .xianshi-list{
   width: 48%;
@@ -133,7 +158,6 @@ header{
   display: flex;
   margin-bottom: .2rem;
   overflow: hidden;
-  border: 1px solid black;
 }
 .xianshi-list-con{
   width: 90%;
@@ -155,30 +179,280 @@ header{
 .xianshi-list-con-one span{
   width: 1rem;
   display: block;
-  border: 1px solid red;
   color: red;
   font-size: 0.16rem;
   margin: 0 auto;
 }
 
 /*天猫榜单*/
+.bangdan-con-hd{
+  margin-top:0.4rem;
+  width: 95vw;
+  font-size:0.6rem;
+  font-weight: bold;
+}
+
 .bangdan{
   width: 100vw;
-  height: 7rem;
-  display: flex;
-  margin-top: 0.4rem;
+  height:4.5rem;
   justify-content: space-around;
 }
+
 .bangdan-con{
   width: 95vw;
-  height: 6.5rem;
-  border: 1px solid blue;
-  align-items: center;
+  height:4.3rem;
   margin:0 auto;
+  display: flex;
+  justify-content: space-around;
 }
 .bangdan-con-list{
-  width: 33%;
-  height: 6.5rem;
-  border: 1px solid red;
+   width: 33%;
+   height: 3.8rem;
+   margin-top:0.5rem;
+   background:url("../images/bj-two.png");
+
+ }
+
+.bangdan-con-list1{
+  width: 30%;
+  height:4.3rem;
+  background:url("../images/bj-two.png");
+}
+.bangdan-con .bangdan-con-two{
+  width: 1rem;
+}
+.bangdan-con-one{
+  width:80%;
+  height: 40%;
+  margin:0 auto;
+  background-color: rgba(0,0,0,0.03);
+}
+.bangdan-con-one img{
+  display: block;
+  margin:0 auto;
+  margin-top:0.1rem;
+}
+.bangdan-con-desc{
+  width:95%;
+  height: 0.4rem;
+  background-color: blue;
+  margin: 0 auto;
+  border-radius: 0.1rem;
+  margin-top:0.1rem;
+  font-size:0.25rem;
+  text-align: center;
+}
+.bangdan-con-three{
+  font-size: 0.3rem;
+  text-align: center;
+  margin-top:0.1rem;
+}
+.bangdan-con-desc1{
+  width:95%;
+  height: 0.4rem;
+  background-color: blue;
+  margin: 0 auto;
+  border-radius: 0.1rem;
+  margin-top:0.3rem;
+  font-size:0.25rem;
+  text-align: center;
+}
+.renqi{
+  width:100vw;
+  height:6.9rem;
+  margin-top:0.1rem;
+}
+.renqi-con{
+  width: 95vw;
+  height: 2rem;
+  margin: 0 auto;
+  background: rgb(248,248,248);
+  font-size: 0.3rem;
+  position: relative;
+}
+.renqi-con-left{
+  width:2.5rem;
+  height: 1.9rem;
+  float: left;
+  position: relative;
+}
+.renqi-con-aa{
+  overflow: hidden;
+  height: 1.8rem;
+  display: flex;
+  margin-right: 0.7rem;
+}
+
+.renqi-con-right{
+  width:4.4rem;
+  height: 1.6rem;
+  margin-top: 0.2rem;
+  float: right;
+  display:flex;
+  justify-content: space-around;
+}
+.right-list{
+  width: 31%;
+  height: 100%;
+  position: relative;
+}
+.right-list-imgone{
+  width:1.3rem;
+  height: 1.5rem;
+  margin:0 auto;
+}
+.right-list-imgtwo {
+  width: 0.43rem;
+  height: 0.43rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.renqi-opt{
+  width: 95vw;
+  height: 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.renqi-opt-left{
+  width: 1.92rem;
+  height: 1.4rem;
+  float: left;
+  margin-top:0.2rem;
+  margin-left: 0.1rem;
+}
+.renqi-opt-right{
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-top:0.3rem;
+  float: right;
+  background:rgba(0,0,0,0.03);
+  margin-right:0.1rem;
+}
+.renqi-opt-right img{
+  width: 1.2rem;
+  display: block;
+  margin: 0 auto;
+}
+.renqi-con-img{
+  width: 0.92rem;
+  height:0.42rem;
+  font-size: 0.2rem;
+  background: url("../images/juse.webp") no-repeat;
+}
+.renqi-opt-list{
+  width:48%;
+  height: 2rem;
+  background: rgb(248,248,248);
+}
+.renqi-opt-list span{
+  font-size: 0.25rem;
+  color:rgb(200,157,107);
+}
+.renqi-opt-list p{
+  display: block;
+  font-size: 0.25rem;
+  font-weight: bold;
+  color: #000;
+}
+.renqi-opt-list strong{
+  font-size: 0.2rem;
+  color: rgba(0,0,0,.5);
+}
+
+
+/*猜你喜欢*/
+
+.caini{
+  width: 100vw;
+  height:6rem;
+  justify-content: space-around;
+}
+
+.caini-con{
+  width: 95vw;
+  overflow: hidden;
+  margin:0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.caini-con-list{
+  width: 47%;
+  height: 6.2rem;
+  margin-top:0.1rem;
+  background: white;
+  border: 1px solid #cccccc;
+}
+.caini-con-list1{
+  width: 47%;
+  height: 5.7rem;
+  margin-top:0.1rem;
+  background: white;
+  border: 1px solid #cccccc;
+
+}
+.caini-con-one{
+  width:100%;
+  height: 53%;
+  margin:0 auto 0.2rem;
+  background:rgb(248,248,248);
+}
+.caini-con-one1{
+  width:100%;
+  height: 54%;
+  margin:0 auto 0.2rem;
+  background:rgb(248,248,248);
+}
+
+.caini-con-one img{
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.caini-con-one1 img{
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.caini-con-desc{
+  text-align: center;
+  font-size: 0.35rem;
+  color: #000;
+}
+.caini-con-three{
+  color:red;
+  font-size:0.3rem;
+  width: 1.3rem;
+  height: 0.5rem;
+  margin-top:0.2rem;
+  border:1px solid red;
+}
+.caini-con-four{
+  font-size: 0.35rem;
+  color: red;
+  float: left;
+  margin-top:0.2rem;
+  margin-left: 0.2rem;
+}
+.caini-con-five{
+  width: 1.3rem;
+  height: 0.5rem;
+  background: rgb(255, 213, 216);
+  font-size: 0.35rem;
+  border-radius: 0.2rem;
+  color: red;
+  float:right;
+  text-align: center;
+  margin-top:0.2rem;
+}
+.caini-con-img{
+  width: 3.35rem;
+  height: 6.15rem;
 }
 
