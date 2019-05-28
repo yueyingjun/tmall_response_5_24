@@ -13,6 +13,50 @@ body{
     position: relative;
     width: 100%;
 }
+.xuanxiangka{
+    position: absolute;
+    top: 209px;
+    left: 220px;
+    width: 800px;
+    height: 500px;
+    z-index: 10;
+
+}
+.xuanxiangka .all{
+    height: 100%;
+    width: 100%;
+    background:azure;
+    display: none;
+}
+.xuanxiangka .all-left{
+    height: 100%;
+    width: 550px;
+    float: left;
+
+}
+.xuanxiangka .all-right{
+    height: 100%;
+    width: 250px;
+    float: left;
+}
+.xuanxiangka .all-left td{
+    box-sizing: border-box;
+    border-bottom: 1px dashed gray;
+
+}
+.xuanxiangka .all{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.all-left td a{
+    margin-left: 15px;
+    font-size: 12px;
+}
+.all-left td .red{
+    color: red;
+
+}
 /*上面浮动的导航*/
 .t-float{
     width: 100%;
@@ -249,12 +293,37 @@ body{
     z-index: 10;
     background-color : rgba(56, 56, 56, 0.46);
 }
+.ar-top{
+    height:400px ;
+    width: 100%;
+}
+
+.ar-top tr td{
+    background: url("../images/a22.png") no-repeat;
+    background-size: 100%;
+    width: 50%;
+    height: 15%;
+}
+
+.ar-bot h5,h4{
+    text-align: right;
+    text-align: center;
+}
+.ar-bot h5{
+    color: gray;
+}
+
 .shangpin-left-left a{
     display: block;
     color: white;
-    margin: 15px 15px;
+    text-align: center;
     font-size: 12px;
+    margin-top: 15px;
     z-index: 2;
+}
+.shangpin-left-left a:hover{
+    background: azure;
+    color: red;
 }
 
 .shangpin-left-right{
