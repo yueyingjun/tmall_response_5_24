@@ -446,6 +446,7 @@ ul,ol,li{
     position: absolute;
     background: #fafafa;
     left: 200px;
+    display: none;
 }
 #content1 .subdivision .left{
     width: 650px;height: 100%;

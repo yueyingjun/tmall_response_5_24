@@ -4492,18 +4492,30 @@
         var title1 = document.querySelectorAll("#content1 .cate-lbt .cate2 li")
         var desc = document.querySelectorAll("#content1 .cate-lbt .subdivision")
 
-        for(let i=0;i<title1.length;i++){
+        for(let i=0;i<title1.length;i++) {
             title1[i].index = i;
-            title1[i].onmouseenter=function (){
-               for(let j=0;j<desc.length;j++){
-                   desc[j].style.display="none";
-                   title1[j].style.color="#ffffff";
-                   title1[j].style.background="none";
-               }
-                title1[this.index].style.background="#ffffff";
-                title1[this.index].style.color="blue";
-                desc[this.index].style.display="block";
-            };
+            title1[i].onmouseover = function () {
+                for (let j = 0; j < desc.length; j++) {
+                    desc[j].style.display = "none";
+                    title1[j].style.color = "#ffffff";
+                    title1[j].style.background = "none";
+
+                }
+                title1[this.index].style.background = "#ffffff";
+                title1[this.index].style.color = "blue";
+                desc[this.index].style.display = "block";
+            }
+
+
+            title1[i].onmouseout = function () {
+                for (let j = 0; j < desc.length; j++) {
+                    desc[j].style.display = "none";
+                    title1[j].style.color = "#ffffff";
+                    title1[j].style.background = "none";
+                }
+
+            }
+
         }
     }
 
