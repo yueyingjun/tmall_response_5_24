@@ -1,0 +1,1766 @@
+body{
+    margin: 0;
+    max-width:1500px;
+}
+.site-nav{
+    width: 100%;
+    height: 45px;
+    background: #F9919D;
+}
+
+
+.cont-left{
+    height: 100%;
+    width: 250px;
+    float: left;
+}
+.cont-left span{
+    font-size: 12px;
+    color: #ffffff;
+}
+.cont-left a{
+    line-height: 20px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #ffffff;
+    margin-left: 15px;
+}
+.cont-right{
+    height: 100%;
+    width: 550px;
+    float: right;
+}
+
+.cont-right a{
+    line-height: 30px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #ffffff;
+    margin-left: 15px;
+    float: left;
+}
+.small-a{
+    width:1px;
+    height: 15px;
+    margin-top: 8px;
+    margin-left: 8px;
+    border-right: 1px solid rgb(187,187,187);
+    float: left;
+}
+.small-t{
+    margin-top: 12px;
+    margin-left: 3px;
+    border-top: 6px solid rgb(187,187,187);
+    border-left: 3px solid #F9919D;
+    border-right: 3px solid #F9919D;
+    float: left;
+}
+.sma1{
+    width: 100px;
+    height: 100%;
+    float: left;
+}
+.sma1 a{
+    margin-left: 2px;
+}
+.sma2{
+    width: 70px;
+    height: 100%;
+    float: left;
+}
+.sma2 a{
+    margin-left: 2px;
+}
+.small-b{
+    width: 18px;
+    height: 18px;
+    float: left;
+    background: url("../image/s1.png");
+    margin-top:5px;
+    margin-left: 10px;
+}
+.small-c{
+    width: 18px;
+    height: 18px;
+    float: left;
+    background: url("../image/s2.png");
+    margin-top:5px;
+    margin-left: 10px;
+}
+.small-d{
+    width: 18px;
+    height: 18px;
+    float: left;
+    background: url("../image/s3.png");
+    margin-top:7px;
+    margin-left: 10px;
+}
+.sma3{
+    width: 100px;
+    height: 100%;
+    float: left;
+}
+.sma3 a{
+    margin-left:3px;
+}
+
+.logo{
+    width: 340px;
+    height: 150px;
+    float: left;
+    background: url("../image/s4.png") no-repeat -20px 0px;
+    background-size: 260px 150px ;
+}
+.header-find{
+    margin-top: 38px;
+    width:55%;
+    height: 70px;
+    float: left;
+}
+.find-a{
+    width: 100%;
+    height: 40px;
+
+
+}
+.find-b{
+    width: 100%;
+    height: 30px;
+    overflow: hidden;
+}
+.find-ab{
+    width: 9%;
+    height: 80%;
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+    border-right: 1px  solid rgb(204,204,204);
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(204,204,204);
+}
+.find-aab{
+    color: red;
+}
+.niunai{
+    border: none;
+}
+.find-text{
+    height: 90%;
+    width: 75%;
+    float: left;
+    line-height: 40px;
+    padding-left: 10px;
+    font-size: 13px;
+    color: rgb(151,101,151);
+    border-top: 1px solid  red;
+    border-left: 1px solid  red;
+    border-right: 1px solid  red;
+    border-bottom: 2px solid red;
+}
+.find-bt{
+    width: 20%;
+    height: 100%;
+    background: rgb(255,0,54);
+    float: left;
+    font-size: 18px;
+    line-height: 40px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.inner-con1{
+    width: 400px;
+    height: 38px;
+    float: left;
+}
+
+.inner-left1{
+    width: 25%;
+    height: 100%;
+    background: rgb(198,10,10);
+    text-align: center;
+    float: left;
+    color: #ffffff;
+    line-height: 40px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.inner-left2{
+    width: 25%;
+    height: 100%;
+    font-size: 14px;
+    background: rgb(70,68,68);
+    text-align: center;
+    float: left;
+    color: #ffffff;
+    line-height: 40px;
+    cursor: pointer;
+}
+.inner-left3{
+    width: 25%;
+    height: 100%;
+    margin-top: 3px;
+    background: url("../image/s5.png") no-repeat;
+    background-size: 100px 35px ;
+    float: left;
+}
+.inner-left4{
+    width: 25%;
+    height: 100%;
+    margin-top: 3px;
+    background: url("../image/s6.png") no-repeat;
+    background-size: 100px 35px ;
+    float: left;
+}
+.conn2-text{
+    width:8%;
+    height: 100%;
+    text-decoration: none;
+    color: rgb(51,51,51);
+    line-height: 40px;
+    margin: 10px;
+
+}
+.inner-con2 a:hover{
+    color: red;
+}
+.top{
+    width: 100%;
+    height: 1430px;
+    background: url("../image/p6.png") no-repeat -80px -20px;
+    position: relative;
+}
+/*轮播*/
+
+.lunbo-left{
+    width: 200px;
+    height: 510px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: rgb(67,28,20);
+    z-index: 3;
+    display: none;
+}
+.lunbo-left2{
+    width: 200px;
+    height: 510px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: rgba(105,105,105,0.6);
+    z-index: 4;
+
+}
+.lunbo-right1{
+    width: 850px;
+    height: 510px;
+    position: absolute;
+    left: 200px;
+    top: 0px;
+    background: rgba(105,105,105,0.6);
+    background: #ffffff;
+    z-index: 4;
+    display: none;
+}
+.righimod1{
+    width: 640px;
+    height: 100%;
+    float: left;
+}
+.righimod2{
+    width: 210px;
+    height: 100%;
+    float: left;
+    background: rgb(250,250,250);
+}
+.model1item{
+    width: 100%;
+    height: 70px;
+}
+.modelite1right{
+    width: 515px;
+    height: 100%;
+    float: left;
+    border-bottom: 1px  dotted  rgb(229,229,229);
+}
+.modelite1left{
+    width: 125px;
+    height: 100%;
+    float: left;
+    line-height: 50px;
+    text-align: center;
+
+}
+.line-con{
+    width: 100%;
+    height: 70%;
+    margin: 10px 0 0 0;
+}
+.line-con  a{
+    margin-left: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(102,102,102);
+}
+.iconpic{
+    width:200px ;
+    height: 390px;
+    background: #ffffff;
+    margin: 10px 0 0 10px;
+}
+.icpic1{
+    width: 100px;
+    height:48.75px;
+    float: left;
+    background:url("../image/icojpic1.jpg") no-repeat;
+    border: 1px solid rgb(250,250,250);
+    box-sizing: border-box;
+    background-size:100px 48.75px;
+}
+.iconbottom{
+    width: 200px;
+    margin: 10px 0 0 10px;
+    height: 100px;
+    background: url("../image/adfa.jpg") no-repeat;
+    background-size:200px 100px ;
+}
+.lunbo-left-de2{
+    width: 100%;
+    height: 6%;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.demo1{
+    width: 143px;
+    height: 30px;
+    margin-top: 30px;
+    margin-left: 26px;
+    border: 1px solid rgb(203,12,16);
+    border-radius: 10px;
+}
+.lunbo-left-demo{
+    width: 143px;
+    height: 30px;
+    margin-top: 15px;
+    margin-left: 26px;
+    border: 1px solid  rgb(203,12,16);
+    border-radius: 10px;
+}
+.demo1:hover{
+    background: rgb(203,12,16);
+}
+.lunbo-left-demo:hover{
+    background: rgb(203,12,16);
+}
+.lunbo-left  a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 30px;
+    margin-left: 45px;
+}
+.lunbo-left2 span{
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 30px;
+}
+.pic1{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url("../image/l3.jpg")  no-repeat ;
+    background-size:1215px 510px ;
+    z-index: 1;
+    cursor: pointer;
+}
+.pic2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    background: url("../image/l2.jpg")  no-repeat ;
+    background-size:1215px 510px ;
+}
+.pic3{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url("../image/jp1.jpg")  no-repeat ;
+    background-size:1215px 510px ;cursor: pointer;
+}
+.pic4{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url("../image/l1.jpg")  no-repeat ;
+    background-size:1215px 510px ;cursor: pointer;
+}
+.pic5{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url("../image/l4.jpg")  no-repeat ;
+    background-size:1215px 510px ;cursor: pointer;
+}
+.pic6{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url("../image/l5.jpg")  no-repeat ;
+    background-size:1215px 510px ;cursor: pointer;
+}
+.lunbo-line{
+    width: 230px;
+    height: 20px;
+    position: absolute;
+    top: 470px;
+    left: 530px;
+    z-index: 2;
+}
+.line{
+    width: 26px;
+    height: 5px;
+    float: left;
+    margin: 4px;
+    background: rgb(179,139,136);
+}
+
+/*top  middle*/
+
+
+
+.top-middle-3{
+    width:484px ;
+    height:380px;
+    float: left;
+    margin-left:8px;
+}
+.topmiddle-top{
+    width: 100%;
+    height: 50px;
+    background: #ffffff;
+}
+.topmiddle-bottom1{
+    width: 100%;
+    height: 330px;
+    background: url("../image/top-middle1.jpg");
+    background-size:230px 330px ;
+    cursor: pointer;
+}
+.topmiddle-bottom2{
+    width: 100%;
+    height: 330px;
+    background: url("../image/top-middle2.jpg");
+    background-size:490px 330px ; cursor: pointer;
+}
+.topmiddle-bottom3{
+    width: 100%;
+    height: 330px;
+    background: url("../image/top-middle3.jpg");
+    background-size:477px 330px ; cursor: pointer;
+}
+.topmiddle-top-text1{
+    height: 100%;
+    width: 70px;
+    float: left;
+    padding:15px 0px  15px 8px;
+}
+.topmiddle-top-text2{
+    height: 100%;
+    width: 60px;
+    float: left;
+    padding:15px 0px  15px 0px;
+
+}
+.topmiddle-top-text3{
+    height: 100%;
+    width: 20px;
+    margin-top: 17px;
+    float: right;
+    margin-right: 5px;
+    background: url("../image/p10.png") no-repeat;
+    background-size: 20px 20px;
+    cursor: pointer;
+}
+.topmiddle-top-text4{
+    height: 100%;
+    width: 40px;
+    margin-left:270px;
+    margin-top:16px;
+    float: left;
+}
+/*top-bottom*/
+.boo{
+    width: 100%;
+    height: 330px;
+    background: rgb(245,245,245);
+}
+.top-bac1{
+    width: 130px ;
+    height: 328px;
+    background: rgb(245,245,245);
+    position: absolute;
+    left: 0px;
+    top: 1130px;
+
+}
+.top-bac2{
+    width: 156px ;
+    height: 328px;
+    background: rgb(245,245,245);
+    position: absolute;
+    left: 1344px;
+    top: 1130px;
+
+}
+
+.top-bottom-item-con1{
+    width: 100%;
+    height: 98%;
+    background: rgba(1,1,1,0.7);
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.con1text{
+    width: 80px;
+    height: 20px;
+    padding: 32px    10px 0px 20px;
+    font-size: 13px;
+    color: #ffffff;
+
+}
+.con1enter{
+    width: 70px;
+    margin-left: 26px;
+    margin-top: 5px;
+    height: 20px;
+    background: rgb(250,0,54);
+    border-radius:10px ;
+    font-size: 10px;
+    text-align: center;
+    line-height: 20px;
+}
+.con1enter a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.top-bottom-item:hover .top-bottom-item-con1{
+    display: block;
+}
+/*天猫超市*/
+.middle{
+    width: 100%;
+    height: 5020px;
+    margin-top: 26px;
+    background:rgb(245,245,245);
+    position: relative;
+    padding-top: 5px;
+}
+
+.tianmao-left{
+    width: 240px;
+    height: 100%;
+    background: url("../image/p9.png") no-repeat;
+    background-size:200px 25px ;
+    float: left;
+}
+
+.tianmao-right a{
+    float: left;
+    font-size: 14px;
+    width: 12.5%;
+    text-decoration-color: white;
+    height: 20px;
+    color: rgb(85,85,85);
+}
+
+.middle-mall1-left{
+    width: 100%;
+    height: 100%;
+    background: url("../image/middlemallleft.jpg") no-repeat;
+    background-size: 242px 600px;
+    float: left;
+    position: relative;
+
+}
+.middle-mall3-left3{
+    width: 232px;
+    height: 580px;
+    background: url("../image/mall3.jpg") no-repeat;
+    background-size: 232px 585px;
+    float: left;
+    margin-top: 10px;
+    position: relative;
+}
+.middle-mall3-left4{
+    width: 232px;
+    height: 580px;
+    background: url("../image/mall4.jpg") no-repeat;
+    background-size: 232px 585px;
+    float: left;
+    margin-top: 10px;
+    position: relative;
+
+}
+.middle-mall3-left5{
+    width: 232px;
+    height: 580px;
+    background: url("../image/mall5.png") no-repeat;
+    background-size: 232px 585px;
+    float: left;
+    position: relative;
+    margin-top: 10px;
+}
+.middle-mall3-left6{
+    width: 232px;
+    height: 580px;
+    background: url("../image/mall6.jpg") no-repeat;
+    background-size: 232px 585px;
+    float: left;
+    position: relative;
+    margin-top: 10px;
+}
+.middle-mall3-left7{
+    width: 232px;
+    height: 580px;
+    background: url("../image/mall7.jpg") no-repeat;
+    background-size: 232px 595px;
+    float: left;
+    position: relative;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mall-left-1{
+    width: 200px;
+    height: 70px;
+    position: absolute;
+    left: 0;
+    top: 405px;
+}
+.mallleft11{
+    width: 30%;
+    height: 100%;
+    float: left;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    background: #000000;
+    cursor: pointer;
+}
+.aaa{
+    float: left;
+    margin-left: 10px;
+    line-height: 30px;
+
+}
+.mallleft12{
+    width: 60%;
+    height: 100%;
+    float: left;
+    color:white;
+    font-size: 20px;
+    padding-left: 10px;
+    text-align: center;
+    background: rgba(21,16,14,0.8);
+    cursor: pointer;
+}
+.mall-left-2{
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    background: url("../image/68.png") no-repeat;
+    background-size: 33px 33px;
+    left: 190px;
+    top: 525px;
+    cursor: pointer;
+}
+.mall2-item1{
+    float: left;
+    width:229px;
+    height: 285px;
+    background: url("../image/mall21.png");
+    background-size:229px 285px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.mall2-item2{
+    float: left;
+    width:232px;
+    height: 285px;
+    background:url("../image/mall22.jpg") 0px 30px;
+    margin-left: 15px;
+    background-size:229px 285px;
+    margin-top: 10px;
+}
+.mall2-item2-a{
+    width: 150px;
+    height: 30px;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size:18px;
+}
+.mall2-item2-b{
+    width: 150px;
+    height: 30px;
+    margin-left: 20px;
+    color:rgb(165,69,225);
+    font-size: 14px;
+}
+.mall-left-11{
+    width: 200px;
+    height: 50px;
+    margin-top: 170px;
+}
+.mallleft121{
+    width:130px;
+    height: 100%;
+    background: rgba(21,16,14,0.8);
+    float: left;
+}
+.mallleft111{
+    width:70px;
+    height: 100%;
+    background: black;
+    float: left;
+}
+.mall-left-21{
+    width: 28px;
+    height: 28px;
+    margin-top: 20px;
+    margin-left: 180px;
+    background: url("../image/68.png") no-repeat;
+    background-size: 28px 28px;
+    cursor: pointer;
+}
+.mall-left-11 span{
+    color: #ffffff;
+    margin-top: 5px;
+
+    line-height: 20px;
+}
+.mall2-item6{
+    float: left;
+    width:229px;
+;
+    height: 285px;
+    background:url("../image/mall23.png") no-repeat;
+    margin-left: 15px;
+    margin-top: 10px;
+    background-size:229px 285px;
+}
+.middle-mall1-right{
+    width: 970px;
+    height: 100%;
+    position: absolute;
+    left: 246px;
+    top: 0px;
+}
+.mall1-right-item1{
+    width: 475px;
+    height: 50%;
+    float: left;
+    background: #ffffff;
+    position: relative;
+}
+.mall1-right-item2{
+    width: 476px;
+    height: 50%;
+    float: left;
+    margin-left: 13px ;
+    background: rgb(245,245,245);
+    position: relative;
+}
+.mall1-right-item3{
+    width: 475px;
+    height: 50%;
+    float: left;
+    margin-top: 10px;
+    background: rgb(245,245,245);
+    position: relative;
+}
+.mall1-right-item4{
+    width: 476px;
+    height: 50%;
+    float: left;
+    margin-left: 13px ;
+    margin-top: 10px;
+    background: rgb(245,245,245);
+    position: relative;
+}
+.mall1-right-item1-top{
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+    background: rgb(245,245,245);
+}
+.mall1-right-item1-top a{
+    text-decoration: none;
+    width: 50%;
+    height: 100%;
+    color: #000;
+    float: left;
+    text-align: center;
+    line-height: 60px;
+}
+.mall1-right-item1-bottom{
+    width: 100%;
+    height: 230px;
+    margin-top: 10px;
+    position: relative;
+}
+.mall1-right-item1-bottom-left{
+    width: 280px;
+    height: 70px;
+    background: url("../image/hghg.png") no-repeat;
+    background-size:280px 70px;
+    margin-top: 90px;
+    float: left;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+
+}
+
+.mall1-right-item1-bottom-right{
+    width: 200px;
+    height: 200px;
+    background: url("../image/mallleft1.jpg") no-repeat;
+    background-size:200px 200px ;
+    margin-top: 0px;
+    margin-left: 220px;
+    float: left;
+}
+.mall1-right-item1-bottom-right2{
+    width: 200px;
+    height: 200px;
+    background: url("../image/mallleft2.jpg") no-repeat;
+    background-size:200px 200px ;
+    margin-left: 220px;
+    margin-top: 0px;
+    float: left;
+}
+.mall1jps{
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    margin-top: 5px;
+    background: url("../image/3-23.png") no-repeat;
+    float: left;
+
+}
+.mall1-right-item1-bottom-left-top{
+    width: 100%;
+    font-size: 24px;
+    color: rgb(0,178,98);
+    height: 50%;
+    margin-left: 30px;
+    line-height: 30px;
+}
+.mall1-right-item1-bottom-left-bottom{
+    width: 100%;
+    height: 50%;
+    color: black;
+    margin-left: 30px;
+    font-size: 18px;
+    line-height: 30px;
+}
+.mall1-right-item2-item1{
+    width: 232px;
+    height:100% ;
+    background: #ffffff;
+    float: left;
+}
+.mall1-right-item2-item2{
+    width: 232px;
+    height:100% ;
+    margin-left: 10px;
+    background: #ffffff;
+    float: left;
+}
+.mall1-right-item2-pic{
+    width: 100%;
+    height: 200px;
+    background: url("../image/mall1item21.jpg") no-repeat;
+    margin-left: 20px;
+    background-size:195px 195px ;
+}
+.mall2pic3{
+    width: 90%;
+    height: 200px;
+    background: url("../image/mall23.jpg") no-repeat;
+    margin-left: 20px;
+    background-size:195px 195px ;
+}
+.mall2pic4{
+    width: 90%;
+    height: 200px;
+    background: url("../image/mall24.jpg") no-repeat;
+    margin-left: 20px;
+    background-size:195px 195px ;
+}
+.mall2pic5{
+    width: 90%;
+    height: 200px;
+    background: url("../image/mall25.jpg") no-repeat;
+    margin-left: 20px;
+    background-size:195px 195px ;
+}
+.mall2pic6{
+    width: 90%;
+    height: 200px;
+    background: url("../image/mall26.jpg") no-repeat;
+    margin-left: 20px;
+    background-size:195px 195px ;
+}
+.mall2pic7{
+    width: 90%;
+    height: 200px;
+    background: url("../image/mall27.jpg") no-repeat;
+    margin-left: 20px;
+    background-size:195px 195px ;
+}
+.mall2pic8{
+    width: 90%;
+    height: 200px;
+    background: url("../image/mall28.jpg") no-repeat;
+    margin-left: 20px;
+    background-size:195px 195px ;
+}
+.mall2pic9{
+    width: 90%;
+    height: 200px;
+    background: url("../image/mall29.jpg") no-repeat;
+    margin-left: 20px;
+    background-size:195px 195px ;
+}
+.mall3pic5{
+    width: 90%;
+    height: 200px;
+    background: url("../image/mall35.jpg") no-repeat;
+    margin-left: 20px;
+    background-size:195px 195px ;
+}
+.mall3pic6{
+    width: 90%;
+    height: 200px;
+    background: url("../image/mall36.jpg") no-repeat;
+    margin-left: 20px;
+    background-size:195px 195px ;
+}
+.mall3pic7{
+    width: 90%;
+    height: 200px;
+    background: url("../image/mall37.jpg") no-repeat;
+    margin-left: 20px;
+    background-size:195px 195px ;
+}
+.mall3pic8{
+    width: 90%;
+    height: 200px;
+    background: url("../image/mall38.jpg") no-repeat;
+    margin-left: 20px;
+    background-size:195px 195px ;
+}
+.mall3pic1{
+    width: 90%;
+    height: 200px;
+    background: url("../image/mall31.jpg") no-repeat;
+    margin-left: 20px;
+    background-size:195px 195px ;
+}
+.mall3pic2{
+    width: 90%;
+    height: 200px;
+    background: url("../image/mall32.jpg") no-repeat;
+    margin-left: 20px;
+    background-size:195px 195px ;
+}
+.mall3pic3{
+    width: 90%;
+    height: 200px;
+    background: url("../image/mall33.jpg") no-repeat;
+    margin-left: 20px;
+    background-size:195px 195px ;
+}
+.mall3pic4{
+    width: 90%;
+    height: 200px;
+    background: url("../image/mall34.jpg") no-repeat;
+    margin-left: 20px;
+    background-size:195px 195px ;
+}
+.mall4pic1{
+    width: 90%;
+    height: 200px;
+    background: url("../image/mall41.jpg") no-repeat;
+    margin-left: 20px;
+    background-size:195px 195px ;
+}
+.mall4pic5{
+    width: 90%;
+    height: 200px;
+    background: url("../image/mall45.jpg") no-repeat;
+    margin-left: 20px;
+    background-size:195px 195px ;
+}
+.mall4pic6{
+    width: 90%;
+    height: 200px;
+    background: url("../image/mall46.jpg") no-repeat;
+    margin-left: 20px;
+    background-size:195px 195px ;
+}
+.mall4pic7{
+    width: 90%;
+    height: 200px;
+    background: url("../image/mall47.jpg") no-repeat;
+    margin-left: 20px;
+    background-size:195px 195px ;
+}
+.mall4pic8{
+    width: 90%;
+    height: 200px;
+    background: url("../image/mall48.jpg") no-repeat;
+    margin-left: 20px;
+    background-size:195px 195px ;
+}
+.mall5pic5{
+    width: 90%;
+    height: 200px;
+    background: url("../image/mall55.jpg") no-repeat;
+    margin-left: 20px;
+    background-size:195px 195px ;
+}
+.mall5pic6{
+    width: 90%;
+    height: 200px;
+    background: url("../image/mall56.jpg") no-repeat;
+    margin-left: 20px;
+    background-size:195px 195px ;
+}
+.mall5pic7{
+    width: 90%;
+    height: 200px;
+    background: url("../image/mall57.jpg") no-repeat;
+    margin-left: 20px;
+    background-size:195px 195px ;
+}
+.mall5pic8{
+    width: 90%;
+    height: 200px;
+    background: url("../image/mall58.jpg") no-repeat;
+    margin-left: 20px;
+    background-size:195px 195px ;
+}
+.mall6pic5{
+    width: 90%;
+    height: 200px;
+    background: url("../image/mall65.jpg") no-repeat;
+    margin-left: 20px;
+    background-size:195px 195px ;
+}
+.mall6pic6{
+    width: 90%;
+    height: 200px;
+    background: url("../image/mall66.jpg") no-repeat;
+    margin-left: 20px;
+    background-size:195px 195px ;
+}
+.mall6pic7{
+    width: 90%;
+    height: 200px;
+    background: url("../image/mall67.jpg") no-repeat;
+    margin-left: 20px;
+    background-size:195px 195px ;
+}
+.mall6pic8{
+    width: 90%;
+    height: 200px;
+    background: url("../image/mall68.jpg") no-repeat;
+    margin-left: 20px;
+    background-size:195px 195px ;
+}
+.mall7pic5{
+    width: 90%;
+    height: 200px;
+    background: url("../image/mall75.jpg") no-repeat;
+    margin-left: 20px;
+    background-size:195px 195px ;
+}
+.mall7pic6{
+    width: 90%;
+    height: 200px;
+    background: url("../image/mall76.jpg") no-repeat;
+    margin-left: 20px;
+    background-size:195px 195px ;
+}
+.mall7pic7{
+    width: 90%;
+    height: 200px;
+    background: url("../image/mall77.jpg") no-repeat;
+    margin-left: 20px;
+    background-size:195px 195px ;
+}
+.mall7pic8{
+    width: 90%;
+    height: 200px;
+    background: url("../image/mall78.jpg") no-repeat;
+    margin-left: 20px;
+    background-size:195px 195px ;
+}
+.mall4pic2{
+    width: 90%;
+    height: 200px;
+    background: url("../image/mall42.jpg") no-repeat;
+    margin-left: 20px;
+    background-size:195px 195px ;
+}
+.mall4pic3{
+    width: 90%;
+    height: 200px;
+    background: url("../image/mall43.jpg") no-repeat;
+    margin-left: 20px;
+    background-size:195px 195px ;
+}
+.mall4pic4{
+    width: 90%;
+    height: 200px;
+    background: url("../image/mall44.jpg") no-repeat;
+    margin-left: 20px;
+    background-size:195px 195px ;
+}
+.mall5pic1{
+    width: 90%;
+    height: 200px;
+    background: url("../image/mall51.jpg") no-repeat;
+    margin-left: 20px;
+    background-size:195px 195px ;
+}
+.mall5pic2{
+    width: 90%;
+    height: 200px;
+    background: url("../image/mall52.jpg") no-repeat;
+    margin-left: 20px;
+    background-size:195px 195px ;
+}
+.mall5pic3{
+    width: 90%;
+    height: 200px;
+    background: url("../image/mall53.jpg") no-repeat;
+    margin-left: 20px;
+    background-size:195px 195px ;
+}
+.mall5pic4{
+    width: 90%;
+    height: 200px;
+    background: url("../image/mall54.jpg") no-repeat;
+    margin-left: 20px;
+    background-size:195px 195px ;
+}
+.mall6pic1{
+    width: 90%;
+    height: 200px;
+    background: url("../image/mall61.jpg") no-repeat;
+    margin-left: 20px;
+    background-size:195px 195px ;
+}
+.mall6pic2{
+    width: 90%;
+    height: 200px;
+    background: url("../image/mall62.jpg") no-repeat;
+    margin-left: 20px;
+    background-size:195px 195px ;
+}
+.mall6pic3{
+    width: 90%;
+    height: 200px;
+    background: url("../image/mall63.jpg") no-repeat;
+    margin-left: 20px;
+    background-size:195px 195px ;
+}
+.mall6pic4{
+    width: 90%;
+    height: 200px;
+    background: url("../image/mall64.jpg") no-repeat;
+    margin-left: 20px;
+    background-size:195px 195px ;
+}
+.mall7pic1{
+    width: 90%;
+    height: 200px;
+    background: url("../image/mall71.jpg") no-repeat;
+    margin-left: 20px;
+    background-size:195px 195px ;
+}
+.mall7pic2{
+    width: 90%;
+    height: 200px;
+    background: url("../image/mall72.jpg") no-repeat;
+    margin-left: 20px;
+    background-size:195px 195px ;
+}
+.mall7pic3{
+    width: 90%;
+    height: 200px;
+    background: url("../image/mall73.jpg") no-repeat;
+    margin-left: 20px;
+    background-size:195px 195px ;
+}
+.mall7pic4{
+    width: 90%;
+    height: 200px;
+    background: url("../image/mall74.jpg") no-repeat;
+    margin-left: 20px;
+    background-size:195px 195px ;
+}
+.mall1-right-item2-c1{
+    width:140px;
+    height: 40px;
+    font-size:14px;
+    line-height: 20px;
+    margin-left: 40px;
+    margin-right: 10px;
+    text-align: center;
+}
+.mall1-right-item2-c2{
+    width:40px;
+    height: 20px;
+    font-size:18px;
+    line-height: 20px;
+    margin-left: 90px;
+    margin-right: 10px;
+    text-align: center;
+    margin-top:20px;
+    color: red;
+}
+.mall1-right-item22-pic{
+    width: 100%;
+    height: 200px;
+    background: url("../image/mall1item22.jpg") no-repeat;
+    margin-left: 20px;
+    background-size:195px 195px ;
+}
+.mall1-right-item31-pic{
+    width: 100%;
+    height: 200px;
+    background: url("../image/mall1item31.jpg") no-repeat;
+    margin-left: 20px;
+    background-size:195px 195px ;
+}
+.mall1-right-item32-pic{
+    width: 100%;
+    height: 200px;
+    background: url("../image/mall1item32.jpg") no-repeat;
+    margin-left: 20px;
+    background-size:195px 195px ;
+}
+.mall1-right-item41-pic{
+    width: 100%;
+    height: 200px;
+    background: url("../image/mall1item41.jpg") no-repeat;
+    margin-left: 20px;
+    background-size:195px 195px ;
+}
+.mall1-right-item42-pic{
+    width: 100%;
+    height: 200px;
+    background: url("../image/mall1item42.jpg") no-repeat;
+    margin-left: 20px;
+    background-size:195px 195px ;
+}
+.middle-mall1 .mall-right-item:hover{
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+.mall2-item:hover{
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+.mall2-item2:hover{
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+
+.tianmao-left2{
+    width: 240px;
+    height: 100%;
+    background: url("../image/pp1.png") no-repeat;
+    background-size:200px 25px ;
+    float: left;
+}
+.tianmao-right2{
+    width:300px;
+    float: left;
+    height: 50%;
+    margin-left: 670px;
+}
+.tianmao-right2 a{
+    float: left;
+    font-size: 14px;
+    width: 20%;
+    height: 20px;
+    text-decoration-color: white;
+    color: rgb(85,85,85);
+}
+.tianmao-right2 a:hover{
+    text-decoration-color:black;
+}
+.tianmao-right  a:hover{
+    text-decoration-color:black;
+}
+.row{
+    height: 50%;
+    overflow: hidden;
+}
+
+.mall2-item{
+    float: left;
+    width:229px;
+    height: 285px;
+    background: #ffffff;
+    margin-left: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+
+.me1{
+    width: 90px;
+    height: 20px;
+    float: left;
+    padding-left: 20px;
+
+    border-left: 3px solid  black;
+}
+.me2{
+    width: 280px;
+    height: 20px;
+    font-size: 14px;
+    margin-top: 2px;
+    float: left;
+}
+
+.middle-mall3-left{
+    width: 229px;
+    height: 580px;
+    background: url("../image/middlemallleft.jpg") no-repeat;
+    background-size: 242px 588px;
+    margin-top:10px;
+    float: left;
+}
+
+
+
+
+
+.caini{
+    width: 1215px;
+    height:100px;
+    position: absolute;
+    left: 130px;
+    top: 0;
+
+}
+.cai{
+    width: 250px;
+    height:40px;
+    position: absolute;
+    left: 485px;
+    font-size: 18px;
+    color: rgb(102,102,102);
+    top: 10px;
+}
+.xin-pic{
+    width: 28px;
+    height:28px;
+    position: absolute;
+    left:35px;
+    background:url("../image/xin.png") no-repeat;
+    top: -6px;
+}
+
+.end{
+    width: 100%;
+    height: 80px;
+    margin: auto;
+    background: rgb(245,245,245);
+    position: relative;
+
+}
+.end-pic{
+    width: 80px;
+    height:47px;
+    position: absolute;
+    background: url("../image/p15.png") no-repeat;
+    background-size:80px 47px;
+    left: 685px;
+    top: 20px;
+}
+.bottom{
+    width: 100%;
+    height:585px;
+    background: #ffffff;
+    position: relative;
+}
+.bottom-pic1{
+    width: 1215px;
+    height: 120px;
+    margin: auto;
+    background: url("../image/p12.jpg") no-repeat;
+    background-size:1215px 120px ;
+    margin-left: 130px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.zhinan{
+    width:1215px ;
+    margin: auto;
+    height: 120px;
+    border-top: 1px solid  rgb(237,237,237);
+    position: absolute;
+    left:130px ;
+    top: 120px;
+    z-index: 2;
+}
+.zhinan-item{
+    width: 20%;
+    height: 100%;
+    float: left;
+    box-sizing: border-box;
+}
+.zhinan-t{
+    width: 100px;
+    height: 100%;
+    list-style:none;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.zhinan-t li{
+    font-size: 12px;
+    color: rgb(139,139,139);
+    padding: 3px;
+}
+#erweima{
+    width: 100px;
+    height: 100px;
+    background: url("../image/erweima.png");
+    background-size:100px  100px;
+    margin-left: 0;
+}
+.bottom-end{
+    width: 100%;
+    height: 460px;
+    background: url("../image/p2.png") no-repeat -90px 0px;
+    position: absolute;
+    left:0 ;
+    top: 125px;
+}
+.tianmaopic{
+    width:  1190px;
+    height: 50px;
+    background: #ffffff;
+    position: absolute;
+    left:163px ;
+    top: 166px;
+    border-bottom: 2px solid red;
+    z-index: 1;
+}
+.maopic{
+    width:  85px;
+    height: 50px;
+    margin-left: 40px;
+    margin-top:20px;
+    background: url("../image/maopic.png") no-repeat;
+    background-size:85px 30px;
+
+}
+.tianmaotext{
+    width:  1190px;
+    height: 240px;
+    background: #000000;
+    position: absolute;
+    left:163px ;
+    top: 218px;
+    z-index: 1;
+}
+.tianmaotext p{
+    margin-top: 5px;
+}
+.tianmaotext a{
+    font-size: 12px;
+    margin-right: 5px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.tupian1{
+    width:80px ;
+    height: 50px;
+    background: url("../image/bottom1.jpg") no-repeat;
+    float: left;
+}
+.tupian2{
+    width:80px ;
+    height: 50px;
+    margin-left: 20px;
+    background: url("../image/bottom2.jpg") no-repeat;
+    float: left;
+}
+.aaf{
+    width:20px ;
+    height: 20px;
+    margin-left: 1px;
+    background: url("../image/gongan.png") no-repeat;
+
+    display: inline-block;
+}
+
+
+.fix1{
+    position:fixed;
+    width: 100px;
+    height: 150px;
+    top: 60px;
+    left: 1430px;
+    background: url("../image/p1.png") no-repeat;
+    z-index: 6;cursor: pointer;
+}
+.fix2{
+    position:fixed;
+    width: 100px;
+    height: 150px;
+    top: 0px;
+    left: 1430px;
+    background:#F9919D;
+    z-index: 5;cursor: pointer;
+}
+.fix3{
+    position:fixed;
+    width: 100px;
+    height: 50px;
+    top: 210px;
+    left: 1430px;
+    background:#F9919D;
+    z-index: 5;cursor: pointer;
+}
+.fix4{
+    position:fixed;
+    width: 50px;
+    height: 90px;
+    top: 260px;
+    left: 1440px;
+    background:url("../image/ke.png") no-repeat;
+    z-index: 6;cursor: pointer;
+}
+.fix5{
+    position:fixed;
+    width: 40px;
+    height: 100%;
+    top: 260px;
+    left: 1480px;
+    background: #000000 ;
+    z-index: 7;cursor: pointer;
+}
+.fix3jpg{
+    width: 30px;
+    height: 25px;
+    background: url("../image/p8.png") no-repeat;
+    margin-left: 19px;
+}
+.ac1{
+    position:fixed;
+    width: 50px;
+    height: 40px;
+    top: 260px;
+    left: 1482px;
+
+    z-index: 8; cursor: pointer;
+}
+.right-pic1{
+    width: 100%;
+    height: 100%;
+    background: url("../image/ac1.png") no-repeat ;
+}
+.right-pic3{
+    width: 100%;
+    height: 100%;
+    background: url("../image/ac3.png") no-repeat ;
+}
+.right-pic4{
+    width: 100%;
+    height: 100%;
+    background: url("../image/ac4.png") no-repeat ;
+}
+.right-pic5{
+    width: 100%;
+    height: 100%;
+    background: url("../image/ac5.png") no-repeat ;
+}
+.right-pic6{
+    width: 100%;
+    height: 100%;
+    background: url("../image/ac6.png") no-repeat ;
+}
+.right-pic7{
+    width: 100%;
+    height: 100%;
+    background: url("../image/ac7.png") no-repeat ;
+    opacity:0.5;
+}
+.right-pic8{
+    width: 100%;
+    height: 100%;
+    background: url("../image/ac8.png") no-repeat ;
+}
+.ac2{
+    position:fixed;
+    width: 38px;
+    height: 105px;
+    top: 300px;
+    left: 1482px;
+    border-top: 1px solid rgb(85,85,85);
+    border-bottom: 1px solid rgb(85,85,85);
+    z-index: 8; cursor: pointer;
+}
+.aa5{
+    width: 30px;
+    height: 25px;
+    background: url("../image/ac2.png") no-repeat;
+    margin-right: 10px;
+}
+.ac3{
+    position:fixed;
+    width: 50px;
+    height: 30px;
+    top: 410px;
+    left: 1482px;
+
+    z-index: 8; cursor: pointer;
+}
+.ac4{
+    position:fixed;
+    width: 50px;
+    height: 30px;
+    top: 445px;
+    left: 1482px;
+
+    z-index: 8; cursor: pointer;
+}
+.ac5{
+    position:fixed;
+    width: 50px;
+    height: 30px;
+    top: 485px;
+    left: 1482px;
+
+    z-index: 8; cursor: pointer;
+}
+.ac6{
+    position:fixed;
+    width: 50px;
+    height: 30px;
+    top: 530px;
+    left: 1482px;
+
+    z-index: 8; cursor: pointer;
+}
+.ac7{
+    position:fixed;
+    width: 50px;
+    height: 30px;
+    top: 626px;
+    left: 1482px;
+    z-index: 8; cursor: pointer;
+}
+.ac8{
+    position:fixed;
+    width: 50px;
+    width: 50px;
+    height: 30px;
+    top: 666px;
+    left: 1482px;
+
+
+    z-index: 8;
+    cursor: pointer;
+}
+.ac:hover{
+    background: rgba(255,0,54,0.8);
+}
+
+.leftfix-1{
+    width: 100%;
+    height: 33px;
+    background: red;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 12px;
+    color: #ffffff;
+    line-height:30px;
+}
+.leftfix-2{
+    width: 100%;
+    height: 36px;
+    background: rgb(98,98,98);
+    margin-top:2px;
+    text-align: center;
+    font-size: 12px;
+    color: #ffffff;
+}
+.leftfix-3{
+    width: 100%;
+    height: 36px;
+    background: rgb(171,171,171);
+    margin-top:2px;
+    text-align: center;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+.topjiantou{
+    width: 100%;
+    height: 20px;
+    background: url("../image/jiantout.png") no-repeat -4px 0;
+}
+.leftf:hover{
+    background: green;
+}
+
+
